@@ -1,0 +1,20 @@
+# Python/runtime artifacts
+__pycache__/
+*.py[cod]
+
+# Local/editor artifacts and copied nested repos
+.codex_write_test
+c/
+Concordantes/
+
+# Raw historical sources and packaged downloads
+04_Registro_Historico/**/fuentes/
+*.zip
+*.exe
+*.msi
+
+# OS/editor temporary files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak

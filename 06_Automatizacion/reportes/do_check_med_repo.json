@@ -1,0 +1,2279 @@
+{
+  "report_id": "DO-CHECK-MED-20260702002202",
+  "expediente": "AUT-001",
+  "algoritmo": "DO-CHECK-MED-001",
+  "resultado": "advertencia",
+  "recomendacion": "continuar_sin_transformar",
+  "estado_aau_local": "SUSPENDIDO",
+  "transformacion_permitida": false,
+  "fuentes_minimas": [
+    "CURRENT_STATE.md",
+    "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+    "01_Canon/M-000_Reglas_Fundamentales.md",
+    "01_Canon/M-001_Auditoria_Arquitectonica.md",
+    "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
+    "03_Expedientes/DO-001_DO-CHECK-001.md",
+    "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md",
+    "03_Expedientes/REC-001_Mapa_Reconciliacion_Canon_Baselines.md"
+  ],
+  "aau_bridge": {
+    "fuente_historica": "SRC-013",
+    "presv": [
+      "MED-FUENTES",
+      "MED-ESTATUS",
+      "MED-REFERENCIAS",
+      "MED-HISTORIAL",
+      "MED-NIVELES",
+      "MED-CERRADOS",
+      "MED-REPORTES",
+      "MED-ESTADO",
+      "MED-ASCII"
+    ],
+    "estados": {
+      "APROBADO": "sin hallazgos bloqueantes ni advertencias",
+      "SUSPENDIDO": "hallazgos no bloqueantes; continuar sin transformar",
+      "INCONSISTENTE": "hallazgo bloqueante; bloquear",
+      "NO_AUDITABLE": "fuentes minimas ausentes o entrada insuficiente"
+    }
+  },
+  "summary": {
+    "files_checked": 120,
+    "findings": 91,
+    "by_severity": {
+      "warning": 91
+    },
+    "by_check": {
+      "MED-NIVELES": 59,
+      "MED-HISTORIAL": 19,
+      "MED-REFERENCIAS": 8,
+      "MED-REPORTES": 1,
+      "MED-CERRADOS": 3,
+      "MED-ESTATUS": 1
+    }
+  },
+  "targets": [
+    {
+      "file": "01_Canon/M-000_Reglas_Fundamentales.md",
+      "surface": "canon",
+      "estatus": "Canon",
+      "findings": []
+    },
+    {
+      "file": "01_Canon/M-001_Auditoria_Arquitectonica.md",
+      "surface": "canon",
+      "estatus": "Canon",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "01_Canon/M-001_Auditoria_Arquitectonica.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "8. Indicar si la intervencion modifica documentos, expedientes, estado o Canon."
+        }
+      ]
+    },
+    {
+      "file": "01_Canon/README.md",
+      "surface": "canon",
+      "estatus": "no_clasificado",
+      "findings": []
+    },
+    {
+      "file": "02_Documentos/00_Naturaleza.md",
+      "surface": "documento_oficial",
+      "estatus": "documento oficial semilla",
+      "findings": []
+    },
+    {
+      "file": "02_Documentos/01_Canon.md",
+      "surface": "documento_oficial",
+      "estatus": "documento oficial semilla",
+      "findings": []
+    },
+    {
+      "file": "02_Documentos/02-0_Perimetro_Epistemologico.md",
+      "surface": "documento_oficial",
+      "estatus": "documento oficial semilla",
+      "findings": []
+    },
+    {
+      "file": "02_Documentos/02_Fundamentos_Matematicos.md",
+      "surface": "documento_oficial",
+      "estatus": "documento oficial semilla",
+      "findings": []
+    },
+    {
+      "file": "02_Documentos/03_Ontologia.md",
+      "surface": "documento_oficial",
+      "estatus": "documento oficial semilla",
+      "findings": []
+    },
+    {
+      "file": "02_Documentos/04_Algebra_Operacional.md",
+      "surface": "documento_oficial",
+      "estatus": "reservado",
+      "findings": []
+    },
+    {
+      "file": "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
+      "surface": "documento_oficial",
+      "estatus": "documento oficial de Nivel C",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-HISTORIAL",
+          "kind": "historial_como_autoridad",
+          "file": "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
+          "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+          "evidence": "- importacion de Registro Historico como autoridad vigente"
+        }
+      ]
+    },
+    {
+      "file": "02_Documentos/README.md",
+      "surface": "documento_oficial",
+      "estatus": "no_clasificado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Auditoria_Criterios_Promocion_R4-CANDIDATA.md",
+      "surface": "expediente",
+      "estatus": "auditoria cerrada de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Auditoria_Post-No-Automata_R4-CANDIDATA.md",
+      "surface": "expediente",
+      "estatus": "auditoria cerrada de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Auditoria_R4-CANDIDATA.md",
+      "surface": "expediente",
+      "estatus": "auditoria cerrada de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Casos_Prueba_Auditor.md",
+      "surface": "expediente",
+      "estatus": "abierto",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUD-001_Casos_Prueba_Auditor.md",
+          "detail": "ROADMAP.md",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Contrato_Reportes.md",
+      "surface": "expediente",
+      "estatus": "definicion provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUD-001_Contrato_Reportes.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- promueve el resultado a Canon"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUD-001_Contrato_Reportes.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- promueve el estado resultante a Canon o documento oficial"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUD-001_Contrato_Reportes.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- promueve el estado resultante a Canon o documento oficial"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUD-001_Contrato_Reportes.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- promueve una hipotesis a decision"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Criterios_Promocion_R4-CANDIDATA.md",
+      "surface": "expediente",
+      "estatus": "criterios provisionales de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Auditoria_Post-No-Automata_R4-CANDIDATA.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUD-001_Decision_Auditoria_Post-No-Automata_R4-CANDIDATA.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- promover `R4-CANDIDATA` a Canon"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUD-001_Decision_Auditoria_Post-No-Automata_R4-CANDIDATA.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- promover `R4-CANDIDATA` a documento oficial o Nivel C"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Capa_Reportes_R4-CANDIDATA.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Cierre_Ronda_No_Automata_R4-CANDIDATA.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-HISTORIAL",
+          "kind": "historial_como_autoridad",
+          "file": "03_Expedientes/AUD-001_Decision_Cierre_Ronda_No_Automata_R4-CANDIDATA.md",
+          "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+          "evidence": "- `AUD-SIM-019` y `VAL-019`: expediente que usa Registro Historico como autoridad directa."
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUD-001_Decision_Cierre_Ronda_No_Automata_R4-CANDIDATA.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- promover `R4-CANDIDATA` a Canon"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUD-001_Decision_Cierre_Ronda_No_Automata_R4-CANDIDATA.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- promover `R4-CANDIDATA` a documento oficial o Nivel C"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Estatus_Criterios_Promocion_R4-CANDIDATA.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUD-001_Decision_Estatus_Criterios_Promocion_R4-CANDIDATA.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- promover `R4-CANDIDATA` a Canon"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Estatus_R4-CANDIDATA.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUD-001_Decision_Estatus_R4-CANDIDATA.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- usarla para modificar expedientes cerrados"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Pausa_Operativa_R4-CANDIDATA.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUD-001_Decision_Pausa_Operativa_R4-CANDIDATA.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- promover `R4-CANDIDATA` a Canon, documento oficial, Nivel C o Regla R4 formal"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUD-001_Decision_Pausa_Operativa_R4-CANDIDATA.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar Canon o documentos oficiales"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Ruta_Siguiente_R4-CANDIDATA.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUD-001_Decision_Ruta_Siguiente_R4-CANDIDATA.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- promover `R4-CANDIDATA` a documento oficial o Nivel C"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUD-001_Decision_Ruta_Siguiente_R4-CANDIDATA.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- promover `R4-CANDIDATA` a Canon"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Siguiente_Fase_R4-CANDIDATA.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUD-001_Decision_Siguiente_Fase_R4-CANDIDATA.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- promover `R4-CANDIDATA` a Canon"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUD-001_Decision_Siguiente_Fase_R4-CANDIDATA.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar documentos oficiales o Canon"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Invariantes_R4-AUD.md",
+      "surface": "expediente",
+      "estatus": "sintesis provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-HISTORIAL",
+          "kind": "historial_como_autoridad",
+          "file": "03_Expedientes/AUD-001_Invariantes_R4-AUD.md",
+          "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+          "evidence": "- usar Registro Historico como autoridad directa"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_R4-CANDIDATA.md",
+      "surface": "expediente",
+      "estatus": "hipotesis operativa de expediente por `EST-R4-CANDIDATA-001`",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-HISTORIAL",
+          "kind": "historial_como_autoridad",
+          "file": "03_Expedientes/AUD-001_R4-CANDIDATA.md",
+          "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+          "evidence": "- el Registro Historico se usa como autoridad directa para transformar"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-HISTORIAL",
+          "kind": "historial_como_autoridad",
+          "file": "03_Expedientes/AUD-001_R4-CANDIDATA.md",
+          "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+          "evidence": "- un expediente que usa Registro Historico como autoridad directa en `AUD-SIM-019` y `VAL-019`"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Simulaciones.md",
+      "surface": "expediente",
+      "estatus": "expediente asociado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-HISTORIAL",
+          "kind": "historial_como_autoridad",
+          "file": "03_Expedientes/AUD-001_Simulaciones.md",
+          "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+          "evidence": "- expedientes que usan Registro Historico como autoridad directa"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-HISTORIAL",
+          "kind": "historial_como_autoridad",
+          "file": "03_Expedientes/AUD-001_Simulaciones.md",
+          "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+          "evidence": "- Probar expedientes que usan Registro Historico como autoridad directa. Cumplido posteriormente por `AUD-SIM-019`."
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-HISTORIAL",
+          "kind": "historial_como_autoridad",
+          "file": "03_Expedientes/AUD-001_Simulaciones.md",
+          "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+          "evidence": "## AUD-SIM-019 - R4-CANDIDATA con Registro Historico como autoridad directa"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUD-001_Simulaciones.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "Respuesta esperada: si. La candidata debe impedir `Tr_ejecucion` porque falta decision de nivel y porque la propuesta intenta promover una hipotesis de expediente a regla vigente."
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REPORTES",
+          "kind": "reporte_normalizado_incompleto",
+          "file": "03_Expedientes/AUD-001_Simulaciones.md",
+          "detail": "Faltan campos esperados en una definicion de reporte: descripcion, estatus_afirmacion, deudas_generadas",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Sintesis_Cobertura_No_Automata_R4-CANDIDATA.md",
+      "surface": "expediente",
+      "estatus": "sintesis provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-HISTORIAL",
+          "kind": "historial_como_autoridad",
+          "file": "03_Expedientes/AUD-001_Sintesis_Cobertura_No_Automata_R4-CANDIDATA.md",
+          "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+          "evidence": "| `VAL-019` | expediente con Registro Historico | historial usado como autoridad directa | pasa provisionalmente |"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Validaciones.md",
+      "surface": "expediente",
+      "estatus": "expediente asociado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-HISTORIAL",
+          "kind": "historial_como_autoridad",
+          "file": "03_Expedientes/AUD-001_Validaciones.md",
+          "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+          "evidence": "- expedientes con Registro Historico como autoridad directa"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-HISTORIAL",
+          "kind": "historial_como_autoridad",
+          "file": "03_Expedientes/AUD-001_Validaciones.md",
+          "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+          "evidence": "- Probar `R4-CANDIDATA` con un expediente que usa Registro Historico como autoridad directa. Cumplido por `VAL-019`."
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-HISTORIAL",
+          "kind": "historial_como_autoridad",
+          "file": "03_Expedientes/AUD-001_Validaciones.md",
+          "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+          "evidence": "Objeto evaluado: `R4-CANDIDATA` con expediente que usa Registro Historico como autoridad directa."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUT-001.md",
+      "surface": "expediente",
+      "estatus": "abierto / MVP minimo y fase media provisional aceptados",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUT-001.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar Canon o documentos oficiales;"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Decision_Estatus_MVP.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Decision_Fase_Media.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Mapa_Fase_Media_AAU.md",
+      "surface": "expediente",
+      "estatus": "mapa tecnico provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-HISTORIAL",
+          "kind": "historial_como_autoridad",
+          "file": "03_Expedientes/AUT-001_Mapa_Fase_Media_AAU.md",
+          "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+          "evidence": "- `MED-HISTORIAL`: Registro Historico o `SRC-*` usado como autoridad vigente."
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUT-001_Mapa_Fase_Media_AAU.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar Canon;"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AUT-001_Mapa_Fase_Media_AAU.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar documentos oficiales;"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Validacion_DO-CHECK-MED.md",
+      "surface": "expediente",
+      "estatus": "validacion provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Validacion_DO-CHECK-MIN.md",
+      "surface": "expediente",
+      "estatus": "validacion provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/B-001.5.md",
+      "surface": "expediente",
+      "estatus": "congelado por `CLAS-B-001-5-001`",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/B-001.5_Decision_Clasificacion.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/B-001.5_Decision_Clasificacion.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar Canon o documentos oficiales"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-CERRADOS",
+          "kind": "expediente_cerrado_afectado",
+          "file": "03_Expedientes/B-001.5_Decision_Clasificacion.md",
+          "detail": "La linea parece afectar expediente cerrado: B-001",
+          "evidence": "- reabrir `B-001`"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/B-001.md",
+      "surface": "expediente",
+      "estatus": "cerrado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/CP-001.md",
+      "surface": "expediente",
+      "estatus": "cerrado / no reabrir sin decision explicita",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001.md",
+      "surface": "expediente",
+      "estatus": "cerrado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-HISTORIAL",
+          "kind": "historial_como_autoridad",
+          "file": "03_Expedientes/DO-001.md",
+          "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+          "evidence": "- importacion de Registro Historico como autoridad vigente"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/DO-001_Auditoria_DO-PROP-001.md",
+      "surface": "expediente",
+      "estatus": "auditoria cerrada de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001_Auditoria_SPEC-AUD-001_NIVEL-C.md",
+      "surface": "expediente",
+      "estatus": "auditoria cerrada de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
+      "surface": "expediente",
+      "estatus": "algoritmo provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-HISTORIAL",
+          "kind": "historial_como_autoridad",
+          "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
+          "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+          "evidence": "- usa registro historico como autoridad vigente"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-HISTORIAL",
+          "kind": "historial_como_autoridad",
+          "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
+          "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+          "evidence": "- uso de Registro Historico como autoridad vigente"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- promueve una hipotesis a Canon"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar documentos oficiales"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar expedientes cerrados"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/DO-001_Decision_Alcance_SPEC-AUD-001.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001_Decision_Cierre_DO-001.md",
+      "surface": "expediente",
+      "estatus": "decision de cierre de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001_Decision_DO-CHECK-REPORT.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001_Decision_Modo_Operativo_Auditor.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/DO-001_Decision_Modo_Operativo_Auditor.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar Canon"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/DO-001_Decision_Modo_Operativo_Auditor.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar documentos oficiales"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/DO-001_Decision_Promocion_SPEC-AUD-001.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente con efecto documental",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/DO-001_Decision_Promocion_SPEC-AUD-001.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "Objeto: decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial de Nivel C."
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/DO-001_Decision_Promocion_SPEC-AUD-001.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "Se promueve `SPEC-AUD-001_Candidata` a documento oficial de Nivel C."
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/DO-001_Decision_Promocion_SPEC-AUD-001.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "Tampoco modifica Canon, documentos marco, expedientes cerrados ni problemas abiertos fuera del alcance declarado."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md",
+      "surface": "expediente",
+      "estatus": "regla provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "Permiso v0: requiere decision explicita de nivel canonico o arquitectonico y trazabilidad completa. Ningun reporte, recomendacion o instruccion operativa simple modifica Canon."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/DO-001_SPEC-AUD-001_Candidata.md",
+      "surface": "expediente",
+      "estatus": "especificacion tecnica candidata promovida",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-HISTORIAL",
+          "kind": "historial_como_autoridad",
+          "file": "03_Expedientes/DO-001_SPEC-AUD-001_Candidata.md",
+          "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+          "evidence": "- importacion de Registro Historico como autoridad vigente"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/DO-001_Validaciones_DO-CHECK-001.md",
+      "surface": "expediente",
+      "estatus": "expediente asociado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001_Validaciones_MODO-AUD-001.md",
+      "surface": "expediente",
+      "estatus": "validacion provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/DO-001_Validaciones_MODO-AUD-001.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "Un reporte propone modificar Canon, documento oficial o expediente cerrado."
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/DO-001_Validaciones_MODO-AUD-001.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- Decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial de Nivel C."
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/DO-001_Validaciones_MODO-AUD-001.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- Decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial despues de auditoria."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/DO-001_Validaciones_NIVEL-C-001.md",
+      "surface": "expediente",
+      "estatus": "validacion provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/DO-001_Validaciones_NIVEL-C-001.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- Decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial de Nivel C."
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/DO-001_Validaciones_NIVEL-C-001.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- Decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial despues de auditoria."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/DO-001_Validaciones_PERMISO-ACT-001.md",
+      "surface": "expediente",
+      "estatus": "expediente asociado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001_Validaciones_SPEC-AUD-001.md",
+      "surface": "expediente",
+      "estatus": "validacion provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/DO-001_Validaciones_SPEC-AUD-001.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- Decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial de Nivel C."
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/DO-001_Validaciones_SPEC-AUD-001.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- Decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial despues de auditoria."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/EF-001.md",
+      "surface": "expediente",
+      "estatus": "cerrado / no reabrir sin decision explicita",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/H-Xi.md",
+      "surface": "expediente",
+      "estatus": "hipotesis externa en evaluacion / no admitida como Canon",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/H-Xi.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar Canon;"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/H-Xi.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar documentos oficiales;"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/P-PI.0.md",
+      "surface": "expediente",
+      "estatus": "abierto en pausa operativa por `RUTA-PPI-001`",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/P-PI.1.md",
+      "surface": "expediente",
+      "estatus": "abierto en pausa operativa por `RUTA-PPI-001`",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/P-PI_Auditoria_Criterios_Cierre.md",
+      "surface": "expediente",
+      "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/P-PI_Criterios_Cierre.md",
+      "surface": "expediente",
+      "estatus": "criterios provisionales de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/P-PI_Decision_Estatus_Criterios_Cierre.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/P-PI_Decision_Estatus_Criterios_Cierre.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar Canon o documentos oficiales"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/P-PI_Decision_Ruta_Operativa.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/P-PI_Decision_Ruta_Operativa.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar Canon o documentos oficiales"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/README.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/REC-001.md",
+      "surface": "expediente",
+      "estatus": "cerrado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/REC-001_Auditoria_Reconciliacion.md",
+      "surface": "expediente",
+      "estatus": "auditoria provisional favorable",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/REC-001_Auditoria_Reconciliacion.md",
+          "detail": "v1.0.0/fase2",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/REC-001_Decision_Cierre.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/REC-001_Decision_Cierre.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "Se cierra `REC-001` como reconciliacion inicial de Canon y baselines historicos."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/REC-001_Mapa_Reconciliacion_Canon_Baselines.md",
+      "surface": "expediente",
+      "estatus": "mapa provisional de reconciliacion cerrado por `REC-001_Decision_Cierre.md`",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/REC-001_Mapa_Reconciliacion_Canon_Baselines.md",
+          "detail": "v1.0.0/fase2",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/RH-001.md",
+      "surface": "expediente",
+      "estatus": "cerrado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/RH-001_Auditoria_Procesamiento.md",
+      "surface": "expediente",
+      "estatus": "auditoria provisional favorable",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/RH-001_Auditoria_Procesamiento.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar Canon;"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/RH-001_Auditoria_Procesamiento.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar documentos oficiales;"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-CERRADOS",
+          "kind": "expediente_cerrado_afectado",
+          "file": "03_Expedientes/RH-001_Auditoria_Procesamiento.md",
+          "detail": "La linea parece afectar expediente cerrado: B-001",
+          "evidence": "- reabrir `B-001`, `B-001.5`, `P-PI.0`, `P-PI.1` o `AUD-001`;"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/RH-001_Decision_Cierre.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/RH-001_Decision_Cierre.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- promover contenido de la transcripcion a Canon;"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/RH-001_Decision_Cierre.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar documentos oficiales desde la transcripcion;"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/RH-001_Decision_Cierre.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- reabrir expedientes cerrados o en pausa;"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/RH-002.md",
+      "surface": "expediente",
+      "estatus": "cerrado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/RH-002_Auditoria_Procesamiento.md",
+      "surface": "expediente",
+      "estatus": "auditoria provisional favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/RH-002_Decision_Cierre.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_chatgpt_share_001.md",
+      "surface": "registro_historico",
+      "estatus": "referencia historica externa materializada localmente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "04_Registro_Historico/2026-07-01_chatgpt_share_001.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar Canon por contenido de la conversacion"
+        }
+      ]
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_chatgpt_share_001_transcripcion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico local",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/MANIFEST.md",
+      "surface": "registro_historico",
+      "estatus": "material historico externo preservado",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/README.md",
+      "surface": "registro_historico",
+      "estatus": "lote historico externo materializado",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/RESUMEN_PROCESAMIENTO.md",
+      "surface": "registro_historico",
+      "estatus": "lote historico procesado",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-001_F-000_Proceso_de_Canonizacion.docx_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-002_Pasted_text_10_.txt_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-003_kastapasanda.odt_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-004_Pasted_text_7_.txt_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-005_Pasted_text_5_.txt_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-006_Bitacora_Maestra.md_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-007_Canon_Laboratorio_M-000_v0.1.docx_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-008_Laboratorio_M-000_Estado_Consolidacion_Borrador.docx_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-009_Pasted_text_9_.txt_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-010_BASELINE_Laboratorio_Concordante_v1.0.0.md_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-011_Canon_Laboratorio_M-000_v0.1.pdf_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-012_laboratorio-concordante-v1.0.0.zip_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-013_laboratorio-concordante-v1.0.0-fase2-nucleo-ejecutable.zip_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-017_Laboratorio_Concordante_Resumen_Una_Pagina_-_copia.docx_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-018_Pasted_text_8_-_copia.txt_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-019_Pasted_text_11_-_copia.txt_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-020_DOC-20260630-WA0003__-_copia_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-021_Laboratorio_Concordante_Extended_Abstract_-_copia.docx_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-022_Laboratorio_Concordante_Concept_Note_-_copia.docx_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-023_laboratorio-concordante-v1.5_-_copia.zip_extraccion.md",
+      "surface": "registro_historico",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/fuentes/SRC-006_Bitacora_Maestra.md",
+      "surface": "registro_historico",
+      "estatus": "material_historico_pasivo",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/fuentes/SRC-010_BASELINE_Laboratorio_Concordante_v1.0.0.md",
+      "surface": "registro_historico",
+      "estatus": "material_historico_pasivo",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/zips/SRC-012_laboratorio-concordante-v1.0.0.zip_contenido.md",
+      "surface": "registro_historico",
+      "estatus": "listado historico de paquete zip",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/zips/SRC-013_laboratorio-concordante-v1.0.0-fase2-nucleo-ejecutable.zip_contenido.md",
+      "surface": "registro_historico",
+      "estatus": "listado historico de paquete zip",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/zips/SRC-023_laboratorio-concordante-v1.5_-_copia.zip_contenido.md",
+      "surface": "registro_historico",
+      "estatus": "listado historico de paquete zip",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/README.md",
+      "surface": "registro_historico",
+      "estatus": "no_clasificado",
+      "findings": []
+    },
+    {
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "surface": "estado_operativo",
+      "estatus": "decision operativa",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "ROADMAP.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "Se promueve `SPEC-AUD-001_Candidata` a documento oficial de Nivel C como `02_Documentos/C-001_Especificacion_Tecnica_Auditor.md`."
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "Se cierra `REC-001` como reconciliacion inicial de Canon y baselines historicos."
+        }
+      ]
+    },
+    {
+      "file": "05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_B-001.5.md",
+      "surface": "estado_operativo",
+      "estatus": "decision operativa de prioridad",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_B-001.5.md",
+          "detail": "ROADMAP.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_B-001.5.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar Canon o documentos oficiales"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-CERRADOS",
+          "kind": "expediente_cerrado_afectado",
+          "file": "05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_B-001.5.md",
+          "detail": "La linea parece afectar expediente cerrado: B-001, CP-001, EF-001",
+          "evidence": "- reabrir `B-001`, `CP-001`, `EF-001`, Procedimiento o Auditoria"
+        }
+      ]
+    },
+    {
+      "file": "05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_P-PI.md",
+      "surface": "estado_operativo",
+      "estatus": "decision operativa de prioridad",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_P-PI.md",
+          "detail": "ROADMAP.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_P-PI.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar Canon o documentos oficiales"
+        }
+      ]
+    },
+    {
+      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+      "surface": "estado_operativo",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+          "detail": "ROADMAP.md",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "05_Estado_Proyecto/NIVEL_C_ESPECIFICACIONES.md",
+      "surface": "estado_operativo",
+      "estatus": "definicion local de proyecto",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "05_Estado_Proyecto/NIVEL_C_ESPECIFICACIONES.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar Canon"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "05_Estado_Proyecto/NIVEL_C_ESPECIFICACIONES.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- promover hipotesis a teoremas"
+        }
+      ]
+    },
+    {
+      "file": "05_Estado_Proyecto/README.md",
+      "surface": "estado_operativo",
+      "estatus": "no_clasificado",
+      "findings": []
+    },
+    {
+      "file": "06_Automatizacion/README.md",
+      "surface": "automatizacion",
+      "estatus": "superficie ejecutable provisional",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-HISTORIAL",
+          "kind": "historial_como_autoridad",
+          "file": "06_Automatizacion/README.md",
+          "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+          "evidence": "- usar Registro Historico como autoridad directa;"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "06_Automatizacion/README.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- promover hipotesis;"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "06_Automatizacion/README.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar Canon o documentos oficiales;"
+        }
+      ]
+    },
+    {
+      "file": "CHANGELOG.md",
+      "surface": "estado_operativo",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-HISTORIAL",
+          "kind": "historial_como_autoridad",
+          "file": "CHANGELOG.md",
+          "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+          "evidence": "- Actualizado el estado del proyecto: el siguiente objetivo es probar `R4-CANDIDATA` con un expediente que usa Registro Historico como autoridad directa."
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "CHANGELOG.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- Actualizado el estado del proyecto: el siguiente objetivo es decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial de Nivel C."
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "CHANGELOG.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- Creada `DO-001_Decision_Promocion_SPEC-AUD-001.md` con `PROM-SPEC-AUD-001`: se promueve `SPEC-AUD-001_Candidata` a documento oficial de Nivel C."
+        }
+      ]
+    },
+    {
+      "file": "CURRENT_STATE.md",
+      "surface": "estado_operativo",
+      "estatus": "no_clasificado",
+      "findings": []
+    },
+    {
+      "file": "HANDOFF.md",
+      "surface": "estado_operativo",
+      "estatus": "handoff operativo",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "HANDOFF.md",
+          "detail": "ROADMAP.md",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "HANDOFF_PACKAGE.md",
+      "surface": "estado_operativo",
+      "estatus": "paquete de handoff listo",
+      "findings": []
+    },
+    {
+      "file": "INDEX.md",
+      "surface": "otro",
+      "estatus": "no_clasificado",
+      "findings": []
+    },
+    {
+      "file": "PROMPT_MAESTRO.md",
+      "surface": "otro",
+      "estatus": "no_clasificado",
+      "findings": []
+    },
+    {
+      "file": "README.md",
+      "surface": "estado_operativo",
+      "estatus": "no_clasificado",
+      "findings": []
+    }
+  ],
+  "findings": [
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "01_Canon/M-001_Auditoria_Arquitectonica.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "8. Indicar si la intervencion modifica documentos, expedientes, estado o Canon."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-HISTORIAL",
+      "kind": "historial_como_autoridad",
+      "file": "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
+      "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+      "evidence": "- importacion de Registro Historico como autoridad vigente"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUD-001_Casos_Prueba_Auditor.md",
+      "detail": "ROADMAP.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUD-001_Contrato_Reportes.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- promueve el resultado a Canon"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUD-001_Contrato_Reportes.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- promueve el estado resultante a Canon o documento oficial"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUD-001_Contrato_Reportes.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- promueve el estado resultante a Canon o documento oficial"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUD-001_Contrato_Reportes.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- promueve una hipotesis a decision"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUD-001_Decision_Auditoria_Post-No-Automata_R4-CANDIDATA.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- promover `R4-CANDIDATA` a Canon"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUD-001_Decision_Auditoria_Post-No-Automata_R4-CANDIDATA.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- promover `R4-CANDIDATA` a documento oficial o Nivel C"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-HISTORIAL",
+      "kind": "historial_como_autoridad",
+      "file": "03_Expedientes/AUD-001_Decision_Cierre_Ronda_No_Automata_R4-CANDIDATA.md",
+      "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+      "evidence": "- `AUD-SIM-019` y `VAL-019`: expediente que usa Registro Historico como autoridad directa."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUD-001_Decision_Cierre_Ronda_No_Automata_R4-CANDIDATA.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- promover `R4-CANDIDATA` a Canon"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUD-001_Decision_Cierre_Ronda_No_Automata_R4-CANDIDATA.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- promover `R4-CANDIDATA` a documento oficial o Nivel C"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUD-001_Decision_Estatus_Criterios_Promocion_R4-CANDIDATA.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- promover `R4-CANDIDATA` a Canon"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUD-001_Decision_Estatus_R4-CANDIDATA.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- usarla para modificar expedientes cerrados"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUD-001_Decision_Pausa_Operativa_R4-CANDIDATA.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- promover `R4-CANDIDATA` a Canon, documento oficial, Nivel C o Regla R4 formal"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUD-001_Decision_Pausa_Operativa_R4-CANDIDATA.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar Canon o documentos oficiales"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUD-001_Decision_Ruta_Siguiente_R4-CANDIDATA.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- promover `R4-CANDIDATA` a documento oficial o Nivel C"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUD-001_Decision_Ruta_Siguiente_R4-CANDIDATA.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- promover `R4-CANDIDATA` a Canon"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUD-001_Decision_Siguiente_Fase_R4-CANDIDATA.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- promover `R4-CANDIDATA` a Canon"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUD-001_Decision_Siguiente_Fase_R4-CANDIDATA.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar documentos oficiales o Canon"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-HISTORIAL",
+      "kind": "historial_como_autoridad",
+      "file": "03_Expedientes/AUD-001_Invariantes_R4-AUD.md",
+      "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+      "evidence": "- usar Registro Historico como autoridad directa"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-HISTORIAL",
+      "kind": "historial_como_autoridad",
+      "file": "03_Expedientes/AUD-001_R4-CANDIDATA.md",
+      "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+      "evidence": "- el Registro Historico se usa como autoridad directa para transformar"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-HISTORIAL",
+      "kind": "historial_como_autoridad",
+      "file": "03_Expedientes/AUD-001_R4-CANDIDATA.md",
+      "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+      "evidence": "- un expediente que usa Registro Historico como autoridad directa en `AUD-SIM-019` y `VAL-019`"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-HISTORIAL",
+      "kind": "historial_como_autoridad",
+      "file": "03_Expedientes/AUD-001_Simulaciones.md",
+      "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+      "evidence": "- expedientes que usan Registro Historico como autoridad directa"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-HISTORIAL",
+      "kind": "historial_como_autoridad",
+      "file": "03_Expedientes/AUD-001_Simulaciones.md",
+      "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+      "evidence": "- Probar expedientes que usan Registro Historico como autoridad directa. Cumplido posteriormente por `AUD-SIM-019`."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-HISTORIAL",
+      "kind": "historial_como_autoridad",
+      "file": "03_Expedientes/AUD-001_Simulaciones.md",
+      "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+      "evidence": "## AUD-SIM-019 - R4-CANDIDATA con Registro Historico como autoridad directa"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUD-001_Simulaciones.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "Respuesta esperada: si. La candidata debe impedir `Tr_ejecucion` porque falta decision de nivel y porque la propuesta intenta promover una hipotesis de expediente a regla vigente."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REPORTES",
+      "kind": "reporte_normalizado_incompleto",
+      "file": "03_Expedientes/AUD-001_Simulaciones.md",
+      "detail": "Faltan campos esperados en una definicion de reporte: descripcion, estatus_afirmacion, deudas_generadas",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-HISTORIAL",
+      "kind": "historial_como_autoridad",
+      "file": "03_Expedientes/AUD-001_Sintesis_Cobertura_No_Automata_R4-CANDIDATA.md",
+      "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+      "evidence": "| `VAL-019` | expediente con Registro Historico | historial usado como autoridad directa | pasa provisionalmente |"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-HISTORIAL",
+      "kind": "historial_como_autoridad",
+      "file": "03_Expedientes/AUD-001_Validaciones.md",
+      "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+      "evidence": "- expedientes con Registro Historico como autoridad directa"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-HISTORIAL",
+      "kind": "historial_como_autoridad",
+      "file": "03_Expedientes/AUD-001_Validaciones.md",
+      "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+      "evidence": "- Probar `R4-CANDIDATA` con un expediente que usa Registro Historico como autoridad directa. Cumplido por `VAL-019`."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-HISTORIAL",
+      "kind": "historial_como_autoridad",
+      "file": "03_Expedientes/AUD-001_Validaciones.md",
+      "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+      "evidence": "Objeto evaluado: `R4-CANDIDATA` con expediente que usa Registro Historico como autoridad directa."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUT-001.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar Canon o documentos oficiales;"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-HISTORIAL",
+      "kind": "historial_como_autoridad",
+      "file": "03_Expedientes/AUT-001_Mapa_Fase_Media_AAU.md",
+      "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+      "evidence": "- `MED-HISTORIAL`: Registro Historico o `SRC-*` usado como autoridad vigente."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUT-001_Mapa_Fase_Media_AAU.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar Canon;"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AUT-001_Mapa_Fase_Media_AAU.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar documentos oficiales;"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/B-001.5_Decision_Clasificacion.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar Canon o documentos oficiales"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-CERRADOS",
+      "kind": "expediente_cerrado_afectado",
+      "file": "03_Expedientes/B-001.5_Decision_Clasificacion.md",
+      "detail": "La linea parece afectar expediente cerrado: B-001",
+      "evidence": "- reabrir `B-001`"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-HISTORIAL",
+      "kind": "historial_como_autoridad",
+      "file": "03_Expedientes/DO-001.md",
+      "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+      "evidence": "- importacion de Registro Historico como autoridad vigente"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-HISTORIAL",
+      "kind": "historial_como_autoridad",
+      "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
+      "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+      "evidence": "- usa registro historico como autoridad vigente"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-HISTORIAL",
+      "kind": "historial_como_autoridad",
+      "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
+      "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+      "evidence": "- uso de Registro Historico como autoridad vigente"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- promueve una hipotesis a Canon"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar documentos oficiales"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar expedientes cerrados"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/DO-001_Decision_Modo_Operativo_Auditor.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar Canon"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/DO-001_Decision_Modo_Operativo_Auditor.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar documentos oficiales"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/DO-001_Decision_Promocion_SPEC-AUD-001.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "Objeto: decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial de Nivel C."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/DO-001_Decision_Promocion_SPEC-AUD-001.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "Se promueve `SPEC-AUD-001_Candidata` a documento oficial de Nivel C."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/DO-001_Decision_Promocion_SPEC-AUD-001.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "Tampoco modifica Canon, documentos marco, expedientes cerrados ni problemas abiertos fuera del alcance declarado."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "Permiso v0: requiere decision explicita de nivel canonico o arquitectonico y trazabilidad completa. Ningun reporte, recomendacion o instruccion operativa simple modifica Canon."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-HISTORIAL",
+      "kind": "historial_como_autoridad",
+      "file": "03_Expedientes/DO-001_SPEC-AUD-001_Candidata.md",
+      "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+      "evidence": "- importacion de Registro Historico como autoridad vigente"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/DO-001_Validaciones_MODO-AUD-001.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "Un reporte propone modificar Canon, documento oficial o expediente cerrado."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/DO-001_Validaciones_MODO-AUD-001.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- Decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial de Nivel C."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/DO-001_Validaciones_MODO-AUD-001.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- Decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial despues de auditoria."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/DO-001_Validaciones_NIVEL-C-001.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- Decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial de Nivel C."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/DO-001_Validaciones_NIVEL-C-001.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- Decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial despues de auditoria."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/DO-001_Validaciones_SPEC-AUD-001.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- Decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial de Nivel C."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/DO-001_Validaciones_SPEC-AUD-001.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- Decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial despues de auditoria."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/H-Xi.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar Canon;"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/H-Xi.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar documentos oficiales;"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/P-PI_Decision_Estatus_Criterios_Cierre.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar Canon o documentos oficiales"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/P-PI_Decision_Ruta_Operativa.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar Canon o documentos oficiales"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/REC-001_Auditoria_Reconciliacion.md",
+      "detail": "v1.0.0/fase2",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/REC-001_Decision_Cierre.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "Se cierra `REC-001` como reconciliacion inicial de Canon y baselines historicos."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/REC-001_Mapa_Reconciliacion_Canon_Baselines.md",
+      "detail": "v1.0.0/fase2",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/RH-001_Auditoria_Procesamiento.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar Canon;"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/RH-001_Auditoria_Procesamiento.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar documentos oficiales;"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-CERRADOS",
+      "kind": "expediente_cerrado_afectado",
+      "file": "03_Expedientes/RH-001_Auditoria_Procesamiento.md",
+      "detail": "La linea parece afectar expediente cerrado: B-001",
+      "evidence": "- reabrir `B-001`, `B-001.5`, `P-PI.0`, `P-PI.1` o `AUD-001`;"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/RH-001_Decision_Cierre.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- promover contenido de la transcripcion a Canon;"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/RH-001_Decision_Cierre.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar documentos oficiales desde la transcripcion;"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/RH-001_Decision_Cierre.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- reabrir expedientes cerrados o en pausa;"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "04_Registro_Historico/2026-07-01_chatgpt_share_001.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar Canon por contenido de la conversacion"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "ROADMAP.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "Se promueve `SPEC-AUD-001_Candidata` a documento oficial de Nivel C como `02_Documentos/C-001_Especificacion_Tecnica_Auditor.md`."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "Se cierra `REC-001` como reconciliacion inicial de Canon y baselines historicos."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_B-001.5.md",
+      "detail": "ROADMAP.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_B-001.5.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar Canon o documentos oficiales"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-CERRADOS",
+      "kind": "expediente_cerrado_afectado",
+      "file": "05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_B-001.5.md",
+      "detail": "La linea parece afectar expediente cerrado: B-001, CP-001, EF-001",
+      "evidence": "- reabrir `B-001`, `CP-001`, `EF-001`, Procedimiento o Auditoria"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_P-PI.md",
+      "detail": "ROADMAP.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_P-PI.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar Canon o documentos oficiales"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+      "detail": "ROADMAP.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "05_Estado_Proyecto/NIVEL_C_ESPECIFICACIONES.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar Canon"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "05_Estado_Proyecto/NIVEL_C_ESPECIFICACIONES.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- promover hipotesis a teoremas"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-HISTORIAL",
+      "kind": "historial_como_autoridad",
+      "file": "06_Automatizacion/README.md",
+      "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+      "evidence": "- usar Registro Historico como autoridad directa;"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "06_Automatizacion/README.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- promover hipotesis;"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "06_Automatizacion/README.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar Canon o documentos oficiales;"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-HISTORIAL",
+      "kind": "historial_como_autoridad",
+      "file": "CHANGELOG.md",
+      "detail": "Posible uso del Registro Historico o de SRC como autoridad vigente.",
+      "evidence": "- Actualizado el estado del proyecto: el siguiente objetivo es probar `R4-CANDIDATA` con un expediente que usa Registro Historico como autoridad directa."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "CHANGELOG.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- Actualizado el estado del proyecto: el siguiente objetivo es decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial de Nivel C."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "CHANGELOG.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- Creada `DO-001_Decision_Promocion_SPEC-AUD-001.md` con `PROM-SPEC-AUD-001`: se promueve `SPEC-AUD-001_Candidata` a documento oficial de Nivel C."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "HANDOFF.md",
+      "detail": "ROADMAP.md",
+      "evidence": ""
+    }
+  ]
+}
