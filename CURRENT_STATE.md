@@ -51,6 +51,11 @@ Ultima decision operativa:
 - `RH-001` queda cerrado como procesamiento de registro historico.
 - `P-PI.0` / `P-PI.1` permanecen abiertos en pausa operativa.
 
+Expediente teorico reciente:
+
+- `TCS-001_Teoria_Concordante_de_Sistemas.md`: propuesta teorica inicial para tratar `Concordance` como propiedad auditable de gobernanza de sistemas, no canonizada.
+- `TCS-001_Analisis_Fondo.md`: analisis provisional de fondo; recomienda mantener `TCS-001` abierto y desarrollar definiciones minimas, tipologia de fallos y casos de prueba.
+
 Propuesta provisional promovida:
 
 - `DO-PROP-001` en `03_Expedientes/DO-001.md`, absorbida por `C-001`.
@@ -233,7 +238,7 @@ Proximo objetivo:
 
 Expediente activo inmediato:
 
-- `PSI-001` queda como frente conceptual activo con matriz de patrones no clinicos aceptada; `AUT-001` queda en cierre tecnico provisional con cierre operativo completo pendiente de ejecucion local directa; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `P-PI.0`, `P-PI.1` y `AUD-001` quedan en pausa operativa; `B-001.5` queda congelado.
+- `PSI-001` queda como frente conceptual activo con matriz de patrones no clinicos aceptada; `TCS-001` queda abierto como expediente teorico provisional sin desplazar el frente activo; `AUT-001` queda en cierre tecnico provisional con cierre operativo completo pendiente de ejecucion local directa; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `P-PI.0`, `P-PI.1` y `AUD-001` quedan en pausa operativa; `B-001.5` queda congelado.
 
 NO volver a discutir sin reapertura explicita:
 

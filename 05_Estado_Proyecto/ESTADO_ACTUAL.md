@@ -25,6 +25,7 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 
 - `HXI-001` (pausa operativa; reporte de consistencia aceptado y criterios de admision formal posterior preparados; no admite `H-Xi`)
 - `PSI-001` (frente conceptual activo; matriz de patrones no clinicos aceptada; `A-PSI-001`, `DEF-PSI-ORG-001`, `CRIT-PSI-TR-001`, `EX-PSI-001` a `EX-PSI-005`, `CAS-PSI-001` a `CAS-PSI-006` y `PSI-MAT-PAT-001` siguen provisionales dentro del expediente)
+- `TCS-001` (expediente teorico provisional; `Concordance` tratada como propiedad auditable de gobernanza de sistemas; analisis de fondo registrado; no Canon, no documento oficial)
 - `AUT-001` (cierre tecnico provisional aceptado; cierre operativo completo pendiente de ejecucion directa local con `python`)
 - `P-PI.0` (pausa operativa)
 - `P-PI.1` (pausa operativa)
@@ -193,6 +194,8 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - `PSI-001_Ejemplos_Conceptuales_No_Clinicos.md`: `EX-PSI-001` a `EX-PSI-005`, bateria conceptual provisional no clinica.
 - `PSI-001_Casos_Transformacion_No_Clinicos.md`: `CAS-PSI-001` a `CAS-PSI-006`, serie breve de casos conceptuales no clinicos.
 - `PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md`: `PSI-MAT-PAT-001`, matriz provisional de patrones no clinicos de transformacion.
+- `TCS-001_Teoria_Concordante_de_Sistemas.md`: propuesta teorica inicial para `Concordance Theory`.
+- `TCS-001_Analisis_Fondo.md`: analisis provisional de fondo; identifica tensiones, supuestos ocultos, deudas conceptuales, fallos de concordancia y condiciones candidatas.
 
 ## Matrices provisionales de expediente
 
@@ -338,6 +341,7 @@ Definir una compuerta de frontera para psicopatologia conceptual no clinica dent
 - Deudas condicionadas derivadas de `RH-001`: Protocolo de Admision/`PM-001`, Concordancia, Documento 04, arquitectura multiagente y adjuntos historicos requieren expediente o decision separada antes de usarse.
 - `HXI-001`: en pausa operativa; no continuar admision sin reapertura explicita.
 - `PSI-001`: queda como base conceptual no clinica con matriz de patrones aceptada; no cerrar, promover, abrir psicopatologia ni vincular con `HXI-001` sin decision posterior.
+- `TCS-001`: desarrollar definiciones minimas, tipologia de fallos de concordancia y casos de prueba antes de cualquier promocion teorica.
 - Completar ficha de trazabilidad de `EF-001` si existe material previo.
 - Precisar alcance de `H-B.6` y `H-B.7`.
 - Importar o formalizar `ROADMAP.md`.
