@@ -1171,3 +1171,32 @@ No afirma consistencia global perfecta del repositorio, no autoriza transformaci
 ## Consecuencia
 
 `AUT-001` pasa a expedientes cerrados. Las herramientas quedan conservadas como infraestructura no mutante y cualquier mejora futura requiere nuevo expediente, subexpediente o decision de reapertura.
+
+## D-2026-07-02-030 - Fichas de alcance H-B.6 y H-B.7
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-02.
+
+## Decision
+
+Se aceptan las fichas de alcance local minimo para `H-B.6` y `H-B.7`.
+
+Documento base: `03_Expedientes/HB-001_Decision_Fichas_Alcance_H-B.md`.
+
+Fichas:
+
+- `03_Expedientes/HB-001_Ficha_Alcance_H-B.6.md`
+- `03_Expedientes/HB-001_Ficha_Alcance_H-B.7.md`
+
+## Alcance
+
+La decision precisa que ambas hipotesis siguen activas solo como etiquetas de deuda viva de Nivel B con contenido sustantivo no materializado.
+
+## No cubre
+
+No demuestra, refuta, desarrolla ni diferencia semanticamente `H-B.6` o `H-B.7`; no reabre `B-001`, no descongela `B-001.5`, no modifica Canon ni documentos oficiales y no habilita uso como premisa para R4, `Gamma` o `REPORT_LAYER`.
+
+## Consecuencia
+
+La deuda pendiente deja de ser precisar alcance minimo y pasa a ser buscar fuente local sustantiva o decidir congelamiento, absorcion, cierre o apertura de expediente propio.

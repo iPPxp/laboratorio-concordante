@@ -54,8 +54,8 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 
 ## Hipotesis activas
 
-- `H-B.6`
-- `H-B.7`
+- `H-B.6` (alcance local minimo aceptado por `D-HB-ALC-001`; contenido sustantivo no materializado)
+- `H-B.7` (alcance local minimo aceptado por `D-HB-ALC-001`; contenido sustantivo no materializado)
 
 ## Hipotesis externas materializadas no admitidas
 
@@ -195,6 +195,7 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - `AUT-001_Decision_Refinamiento_DO-LAB-RISK.md` (`D-2026-07-02-020`): acepta `AUT-RISK-REFINE-001`; `riesgo_activo` baja a 0 y `advertencia_controlada` queda en 17.
 - `AUT-001_Decision_Cierre_Tecnico_Provisional.md` (`D-2026-07-02-021`): acepta cierre tecnico provisional sin cierre operativo completo.
 - `AUT-001_Decision_Cierre_Operativo_Completo.md` (`D-2026-07-02-029`): cierra operativamente `AUT-001`.
+- `HB-001_Decision_Fichas_Alcance_H-B.md` (`D-2026-07-02-030`): acepta alcance local minimo de `H-B.6` y `H-B.7` sin contenido sustantivo materializado.
 - `PSI-001_Decision_Estatus_Mapa_Continuidad_Conceptual.md` (`D-2026-07-02-022`): acepta `PSI-MAP-CONT-001` como mapa de continuidad no clinico.
 - `PSI-001_Decision_Estatus_Casos_Transformacion_No_Clinicos.md` (`D-2026-07-02-023`): acepta `CAS-PSI-001` a `CAS-PSI-006` como serie conceptual provisional no clinica.
 - `PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md` (`D-2026-07-02-024`): acepta `PSI-MAT-PAT-001` como matriz provisional no clinica.
@@ -325,6 +326,8 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - `AUD-001_R4-CANDIDATA.md`: hipotesis operativa de expediente basada en los invariantes de `R4-AUD`.
 - `AUD-001_Criterios_Promocion_R4-CANDIDATA.md`: compuerta provisional aceptada para rutas futuras de estatus y promocion.
 - `AUD-001_Sintesis_Cobertura_No_Automata_R4-CANDIDATA.md`: primera ronda no automata sintetizada para decidir auditoria posterior.
+- `HB-001_Ficha_Alcance_H-B.6.md`: ficha de alcance local minimo para `H-B.6`.
+- `HB-001_Ficha_Alcance_H-B.7.md`: ficha de alcance local minimo para `H-B.7`.
 
 ## Ultima decision arquitectonica
 
@@ -332,7 +335,7 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 
 ## Ultima decision operativa
 
-`AUT-001` queda cerrado operativamente por `D-2026-07-02-029` tras ejecucion directa local de `lab_run.py` en alcance clave. `AUD-001` queda completo en version documental/operativa v0 y `SPEC-RFC-AUDITOR-V0` queda promovida a `C-002`. `PSI-001` queda abierto con matriz de patrones no clinicos aceptada; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `P-PI.0` / `P-PI.1` permanecen abiertos en pausa operativa por `RUTA-PPI-001`.
+`H-B.6` y `H-B.7` quedan con alcance local minimo aceptado por `D-2026-07-02-030`; siguen activas solo como deuda viva sin contenido sustantivo materializado. `AUT-001` queda cerrado operativamente por `D-2026-07-02-029` tras ejecucion directa local de `lab_run.py` en alcance clave. `AUD-001` queda completo en version documental/operativa v0 y `SPEC-RFC-AUDITOR-V0` queda promovida a `C-002`. `PSI-001` queda abierto con matriz de patrones no clinicos aceptada; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `P-PI.0` / `P-PI.1` permanecen abiertos en pausa operativa por `RUTA-PPI-001`.
 
 ## Ultimo expediente cerrado
 
@@ -367,7 +370,7 @@ Elegir siguiente ruta posterior a `C-002`: implementacion no mutante conforme al
 - `AUD-001`: no promover `REPORT_LAYER`, `R4-CANDIDATA`, R4 formal ni `Gamma` sin decision posterior.
 - `TCS-001`: desarrollar definiciones minimas, tipologia de fallos de concordancia y casos de prueba antes de cualquier promocion teorica.
 - Completar ficha de trazabilidad de `EF-001` si existe material previo.
-- Precisar alcance de `H-B.6` y `H-B.7`.
+- `H-B.6` / `H-B.7`: alcance local minimo aceptado; falta fuente sustantiva o decision posterior de congelamiento, absorcion, cierre o apertura de expediente propio.
 - Importar o formalizar el roadmap historico de `SRC-023`.
 - Canon v0.1 reconciliado inicialmente por `REC-001`; pendiente solo si se abre `REC-DEUDA-001` o `REC-DEUDA-004`.
 - Decalogo y Regla VII localizados en `SRC-023`; pendiente solo si se abre `REC-DEUDA-002`.

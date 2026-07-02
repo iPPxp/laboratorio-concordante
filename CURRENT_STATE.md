@@ -16,6 +16,7 @@ Ultima decision arquitectonica:
 
 Ultima decision operativa:
 
+- `HB-001_Decision_Fichas_Alcance_H-B.md` (`D-2026-07-02-030`): `H-B.6` y `H-B.7` quedan con alcance local minimo aceptado; siguen como deuda viva sin contenido sustantivo materializado.
 - `AUT-001_Decision_Cierre_Operativo_Completo.md` (`D-2026-07-02-029`): `AUT-001` cerrado operativamente tras ejecucion directa local de `lab_run.py` en alcance clave; quedan herramientas conservadas y deuda documental visible.
 - `AUD-001_Decision_Promocion_SPEC-RFC-AUDITOR-V0.md` (`D-2026-07-02-028`): `SPEC-RFC-AUDITOR-V0` promovida a `C-002_RFC_Operativo_Auditor_v0.md`, documento oficial de Nivel C tipo RFC.
 - `AUD-001_Decision_Estatus_Auditor_v0.md` (`D-2026-07-02-027`): Auditor completo en version documental/operativa v0 dentro de `AUD-001`; no resuelve R4 formal, `Gamma` ni implementacion ejecutable completa.
@@ -157,6 +158,7 @@ Decision provisional registrada:
 - `AUT-001_Decision_Refinamiento_DO-LAB-RISK.md`.
 - `AUT-001_Decision_Cierre_Tecnico_Provisional.md`.
 - `AUT-001_Decision_Cierre_Operativo_Completo.md`.
+- `HB-001_Decision_Fichas_Alcance_H-B.md`.
 - `PSI-001_Decision_Estatus_Mapa_Continuidad_Conceptual.md`.
 - `PSI-001_Decision_Estatus_Casos_Transformacion_No_Clinicos.md`.
 - `PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md`.
@@ -227,6 +229,8 @@ Especificacion candidata de expediente registrada:
 
 - `SPEC-RFC-AUDITOR-V0` en `03_Expedientes/AUD-001_SPEC-RFC-AUDITOR-V0_Candidata.md`, promovida a `C-002`.
 - `REPORT-LAYER-CAND-001` en `03_Expedientes/AUD-001_REPORT_LAYER_Candidata.md`, aceptada como candidata provisional dentro de `AUD-001`; no es Canon, documento oficial ni Nivel C.
+- `ALC-HB6-001` en `03_Expedientes/HB-001_Ficha_Alcance_H-B.6.md`, alcance local minimo de `H-B.6`.
+- `ALC-HB7-001` en `03_Expedientes/HB-001_Ficha_Alcance_H-B.7.md`, alcance local minimo de `H-B.7`.
 
 Algoritmo provisional activo:
 
@@ -260,7 +264,7 @@ Proximo objetivo:
 
 Expediente activo inmediato:
 
-- `AUD-001` queda completo en version documental/operativa v0 y ya produjo `C-002`; permanece abierto solo para rutas posteriores no cubiertas: implementacion, R4 formal, `Gamma`, `REPORT_LAYER` Nivel C o cierre/pausa. `PSI-001` queda abierto con matriz de patrones no clinicos aceptada, sin cierre ni promocion; `TCS-001` queda abierto como expediente teorico provisional; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `P-PI.0` y `P-PI.1` quedan en pausa operativa; `B-001.5` queda congelado.
+- `AUD-001` queda completo en version documental/operativa v0 y ya produjo `C-002`; permanece abierto solo para rutas posteriores no cubiertas: implementacion, R4 formal, `Gamma`, `REPORT_LAYER` Nivel C o cierre/pausa. `H-B.6` y `H-B.7` tienen alcance local minimo aceptado, pero sin contenido sustantivo materializado. `PSI-001` queda abierto con matriz de patrones no clinicos aceptada, sin cierre ni promocion; `TCS-001` queda abierto como expediente teorico provisional; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `P-PI.0` y `P-PI.1` quedan en pausa operativa; `B-001.5` queda congelado.
 - `P-PI.0` / `P-PI.1`: pausa operativa ratificada por `RUTA-PPI-001`; faltan fuentes historicas o documentos previos que consoliden su proposito; Confluencia y Equivalencia de proyecciones permanecen como problemas abiertos.
 
 NO volver a discutir sin reapertura explicita:

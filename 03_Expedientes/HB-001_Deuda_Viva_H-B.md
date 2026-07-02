@@ -22,6 +22,9 @@ Su funcion es impedir que `H-B.6` y `H-B.7` queden como etiquetas activas sin su
 - `05_Estado_Proyecto/ESTADO_ACTUAL.md`
 - `05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_P-PI.md`
 - `03_Expedientes/RH-001.md`
+- `03_Expedientes/HB-001_Ficha_Alcance_H-B.6.md`
+- `03_Expedientes/HB-001_Ficha_Alcance_H-B.7.md`
+- `03_Expedientes/HB-001_Decision_Fichas_Alcance_H-B.md`
 
 ## Estado local actual
 
@@ -29,8 +32,8 @@ Su funcion es impedir que `H-B.6` y `H-B.7` queden como etiquetas activas sin su
 | --- | --- | --- |
 | `B-001` | cerrado | Nivel B queda estabilizado como referencia, no como frente abierto |
 | `B-001.5` | congelado | traza sin material local suficiente para trabajo sustantivo |
-| `H-B.6` | hipotesis activa sin archivo propio | deuda viva de alcance |
-| `H-B.7` | hipotesis activa sin archivo propio | deuda viva de alcance |
+| `H-B.6` | hipotesis activa con ficha de alcance minimo | deuda viva sustantiva |
+| `H-B.7` | hipotesis activa con ficha de alcance minimo | deuda viva sustantiva |
 
 ## Deuda viva
 
@@ -46,10 +49,10 @@ La deuda viva es precisar:
 
 ## Regla de lectura
 
-Mientras esta deuda no se resuelva, `H-B.6` y `H-B.7` pueden citarse solo como:
+Despues de `D-HB-ALC-001`, `H-B.6` y `H-B.7` pueden citarse solo como:
 
 ```text
-hipotesis activas sin alcance local precisado
+hipotesis activas de Nivel B con alcance local minimo; contenido sustantivo no materializado
 ```
 
 No pueden usarse como:
@@ -98,8 +101,8 @@ No se permite:
 
 El frente Nivel B permanece sin reapertura.
 
-## Siguiente paso
+## Resultado posterior
 
-Si se decide trabajar Nivel B, el siguiente paso no es promocion ni reapertura general.
+Las fichas de alcance fueron creadas y aceptadas por `D-HB-ALC-001`.
 
-El siguiente paso es crear una ficha de alcance para `H-B.6` y `H-B.7`, o decidir explicitamente su congelamiento/absorcion/cierre.
+El siguiente paso ya no es precisar alcance minimo. Es buscar fuente local sustantiva o decidir explicitamente congelamiento, absorcion, cierre o apertura de expediente propio.

@@ -402,3 +402,6 @@
 - Ejecutada localmente `06_Automatizacion/lab_run.py --scope claves --format md`: corrida directa `DO-LAB-RUN-20260702-165851` sin bloqueos, con advertencias documentales visibles y recomendacion `mantener_cierre_operativo`.
 - Ajustado `DO-CHECK-MED-001` para aceptar que `AUT-001` figure como abierto o cerrado despues de decision registrada.
 - Creadas `AUT-001_Validacion_Cierre_Operativo_Completo.md` y `AUT-001_Decision_Cierre_Operativo_Completo.md`; registrada `D-2026-07-02-029`: `AUT-001` queda cerrado operativamente.
+
+- Creadas `HB-001_Ficha_Alcance_H-B.6.md` y `HB-001_Ficha_Alcance_H-B.7.md`: ambas precisan alcance local minimo sin contenido sustantivo materializado.
+- Creada `HB-001_Decision_Fichas_Alcance_H-B.md` y registrada `D-2026-07-02-030`: `H-B.6` y `H-B.7` siguen activas solo como deuda viva acotada.
