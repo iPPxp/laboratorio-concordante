@@ -1049,3 +1049,125 @@ No canoniza contenido psicologico, no habilita diagnostico clinico, no abre psic
 ## Consecuencia
 
 El siguiente trabajo recomendado es definir una compuerta de frontera para psicopatologia conceptual no clinica.
+
+## D-2026-07-02-025 - Reactivacion de AUD-001 para REPORT_LAYER
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-02.
+
+## Decision
+
+Se reactiva `AUD-001` de forma acotada para separar `REPORT_LAYER` como candidata provisional de expediente.
+
+Documento base: `03_Expedientes/AUD-001_Decision_Reactivacion_REPORT_LAYER.md`.
+
+## Alcance
+
+La decision permite redactar y auditar `AUD-001_REPORT_LAYER_Candidata.md`, mapear reportes locales de `AUD-001` a una capa abstracta y continuar el frente del Auditor solo en esa ruta.
+
+## No cubre
+
+No promueve `REPORT_LAYER`, no modifica `C-001`, no promueve `R4-CANDIDATA`, no resuelve R4 formal ni `Gamma`, y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+La accion inmediata es redactar, auditar y decidir estatus de `REPORT-LAYER-CAND-001`.
+
+## D-2026-07-02-026 - Estatus de REPORT_LAYER Candidata
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-02.
+
+## Decision
+
+Se acepta `REPORT-LAYER-CAND-001` como candidata provisional de expediente dentro de `AUD-001`.
+
+Documento base: `03_Expedientes/AUD-001_REPORT_LAYER_Candidata.md`. Auditoria: `03_Expedientes/AUD-001_Auditoria_REPORT_LAYER_Candidata.md`. Decision espejo: `03_Expedientes/AUD-001_Decision_Estatus_REPORT_LAYER_Candidata.md`.
+
+## Alcance
+
+La decision permite usar `REPORT_LAYER-CAND-001` dentro de `AUD-001`, mapear reportes locales a clases abstractas y preparar validaciones adicionales.
+
+## No cubre
+
+No convierte `REPORT_LAYER` en especificacion oficial, no modifica documentos oficiales, no promueve `R4-CANDIDATA`, no cierra `AUD-001`, no resuelve R4 formal ni `Gamma`, y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+El siguiente trabajo recomendado es validar `REPORT-LAYER-CAND-001` contra una instancia no automata no reducida a nombres locales de `AUD-001`, o decidir explicitamente que permanece local.
+
+## D-2026-07-02-027 - Completitud documental/operativa del Auditor v0
+
+Estatus: decision de expediente.
+
+Fecha: 2026-07-02.
+
+## Decision
+
+Se acepta que el Auditor queda completo en version documental/operativa v0 dentro de `AUD-001`.
+
+Documento base: `03_Expedientes/AUD-001_Decision_Estatus_Auditor_v0.md`.
+
+## Alcance
+
+La decision cubre la matriz minima `AUD-T00` a `AUD-T09`, contratos de reporte, validaciones hasta `VAL-029`, `REPORT_LAYER` local, puente conceptual con `DO_CHECK_REPORT` y limites de autoridad del Auditor.
+
+## No cubre
+
+No cubre herramienta ejecutable completa, parser real, Regla R4 formal, `Gamma` formal, reversion material, cuarentena materializada, promocion de `REPORT_LAYER` a Nivel C ni cierre de `H-B.6` o `H-B.7`.
+
+## Consecuencia
+
+`AUD-001` queda habilitado para proyectar la completitud v0 a una especificacion tipo RFC, sin cerrar sus deudas formales.
+
+## D-2026-07-02-028 - Promocion de SPEC-RFC-AUDITOR-V0 a C-002
+
+Estatus: decision documental de Nivel C.
+
+Fecha: 2026-07-02.
+
+## Decision
+
+Se promueve `SPEC-RFC-AUDITOR-V0` a documento oficial de Nivel C como `02_Documentos/C-002_RFC_Operativo_Auditor_v0.md`.
+
+Documento base: `03_Expedientes/AUD-001_Decision_Promocion_SPEC-RFC-AUDITOR-V0.md`.
+
+## Alcance
+
+La decision cubre el documento tipo RFC operativo del Auditor v0, su lenguaje normativo local, modelo operacional, permisos, reportes, conformidad y matriz minima de pruebas.
+
+## No cubre
+
+No reemplaza `C-001`, no modifica Canon, no resuelve R4 formal ni `Gamma`, no autoriza implementacion ejecutable completa y no promueve `REPORT_LAYER` a Nivel C.
+
+## Consecuencia
+
+`C-002` queda como referencia oficial para revisar conformidad de lecturas, herramientas o propuestas de implementacion del Auditor v0.
+
+## D-2026-07-02-029 - Cierre operativo completo de AUT-001
+
+Estatus: decision de cierre de expediente.
+
+Fecha: 2026-07-02.
+
+## Decision
+
+Se cierra operativamente `AUT-001`.
+
+Documento base: `03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md`.
+
+Validacion: `03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md`.
+
+## Alcance
+
+La decision cubre la automatizacion no mutante inicial del Laboratorio: chequeo minimo, chequeo medio, tablero, continuidad, corrida unica, clasificacion de riesgos y resumen ejecutivo, con evidencia de ejecucion directa local sobre archivos clave.
+
+## No cubre
+
+No afirma consistencia global perfecta del repositorio, no autoriza transformaciones materiales, no modifica Canon ni documentos oficiales, no cierra expedientes ajenos y no resuelve R4 formal ni `Gamma`.
+
+## Consecuencia
+
+`AUT-001` pasa a expedientes cerrados. Las herramientas quedan conservadas como infraestructura no mutante y cualquier mejora futura requiere nuevo expediente, subexpediente o decision de reapertura.

@@ -19,6 +19,7 @@ KEY_TARGETS = [
     "03_Expedientes/AUT-001.md",
     "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
 ]
+AUT_CLOSE_DECISION = "03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md"
 
 
 def load_module(name: str, path: Path):
@@ -188,8 +189,11 @@ def build_run_report(root: Path, scope: str) -> dict[str, Any]:
             step_entry("continuidad_integrada", "DO-LAB-CONTINUITY-001", continuity_report, "06_Automatizacion/reportes/lab_continuity_report.md", "06_Automatizacion/reportes/lab_continuity_report.json"),
             step_entry("clasificacion_riesgos", "DO-LAB-RISK-001", risk_report, "06_Automatizacion/reportes/lab_risk_report.md", "06_Automatizacion/reportes/lab_risk_report.json"),
         ],
-        "next_action": "Decidir cierre tecnico provisional de AUT-001 con advertencias controladas visibles.",
+        "next_action": "Decidir o mantener el estatus de cierre de AUT-001 con advertencias visibles.",
     }
+    if (root / AUT_CLOSE_DECISION).exists() and run_report["resultado"] in {"ok", "advertencia"}:
+        run_report["recomendacion"] = "mantener_cierre_operativo"
+        run_report["next_action"] = "Mantener cierre operativo de AUT-001 con deuda documental visible."
 
     summary_report = components["summary"].build_report(
         root,
@@ -207,6 +211,8 @@ def build_run_report(root: Path, scope: str) -> dict[str, Any]:
         "headline": summary_report.get("headline"),
     }
     run_report["resultado"], run_report["recomendacion"] = combine_result([min_report, med_report, board_report, continuity_report, risk_report, summary_report])
+    if (root / AUT_CLOSE_DECISION).exists() and run_report["resultado"] in {"ok", "advertencia"}:
+        run_report["recomendacion"] = "mantener_cierre_operativo"
 
     write_json(root, "06_Automatizacion/reportes/lab_run_report.json", run_report)
     write_report(root, "06_Automatizacion/reportes/lab_run_report.md", render_run_md(run_report))

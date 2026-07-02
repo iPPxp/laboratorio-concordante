@@ -1,6 +1,6 @@
 # LAB_STATUS_BOARD
 
-report_id: DO-STATE-BOARD-20260702-005
+report_id: DO-STATE-BOARD-20260702-165850
 expediente: AUT-001
 algoritmo: DO-STATE-BOARD-001
 resultado: ok
@@ -9,23 +9,23 @@ transformacion_permitida: false
 
 ## Estado sintetico
 
-- ultimo expediente cerrado: `REC-001`
-- ultimo expediente tecnico cerrado: `DO-001`
-- ultima decision operativa: `AUT-001_Decision_Tablero_Estado.md`: `DO-STATE-BOARD-001` aceptado como tablero de estado provisional no mutante; `AUT-001` sigue abierto.
-- proximo objetivo: Definir integracion entre `DO-STATE-BOARD-001` y `DO-CHECK-MED-001` para un reporte combinado de continuidad y riesgos.
+- ultimo expediente cerrado: `AUT-001`
+- ultimo expediente tecnico cerrado: `AUT-001`
+- ultima decision operativa: `AUT-001_Decision_Cierre_Operativo_Completo.md` (`D-2026-07-02-029`): `AUT-001` cerrado operativamente tras ejecucion directa local de `lab_run.py` en alcance clave; quedan herramientas conservadas y deuda documental visible.
+- proximo objetivo: Elegir siguiente ruta posterior a `C-002`: implementacion no mutante conforme a RFC, formalizacion de R4/Gamma, o cierre/pausa operativa de `AUD-001`.
 
 ## Expediente activo inmediato
 
-`AUT-001` queda como frente activo inmediato con MVP minimo, fase media y tablero de estado provisional; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `PSI-001` queda abierto con `A-PSI-001`, `DEF-PSI-ORG-001`, `CRIT-PSI-TR-001` y `EX-PSI-001` a `EX-PSI-005` aceptados provisionalmente; `AUT-001` queda abierto con MVP minimo y fase media provisional; `P-PI.0`, `P-PI.1` y `AUD-001` quedan en pausa operativa; `B-001.5` queda congelado.
+`AUD-001` queda completo en version documental/operativa v0 y ya produjo `C-002`; permanece abierto solo para rutas posteriores no cubiertas: implementacion, R4 formal, `Gamma`, `REPORT_LAYER` Nivel C o cierre/pausa. `PSI-001` queda abierto con matriz de patrones no clinicos aceptada, sin cierre ni promocion; `TCS-001` queda abierto como expediente teorico provisional; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `P-PI.0` y `P-PI.1` quedan en pausa operativa; `B-001.5` queda congelado.
 
 ## Expedientes abiertos
 
 - `HXI-001` (pausa operativa; reporte de consistencia aceptado y criterios de admision formal posterior preparados; no admite `H-Xi`)
-- `PSI-001` (frente psicologico inicial; `A-PSI-001`, `DEF-PSI-ORG-001`, `CRIT-PSI-TR-001` y `EX-PSI-001` a `EX-PSI-005` aceptados provisionalmente dentro del expediente)
-- `AUT-001` (MVP minimo, fase media y tablero de estado provisional; frente activo inmediato; pendiente ejecucion directa local)
-- `P-PI.0` (pausa operativa)
-- `P-PI.1` (pausa operativa)
-- `AUD-001` (pausa operativa)
+- `PSI-001` (abierto; matriz de patrones no clinicos aceptada; `A-PSI-001`, `DEF-PSI-ORG-001`, `CRIT-PSI-TR-001`, `EX-PSI-001` a `EX-PSI-005`, `CAS-PSI-001` a `CAS-PSI-006` y `PSI-MAT-PAT-001` siguen provisionales dentro del expediente)
+- `TCS-001` (expediente teorico provisional; `Concordance` tratada como propiedad auditable de gobernanza de sistemas; analisis de fondo registrado; no Canon, no documento oficial)
+- `P-PI.0` (pausa operativa por `RUTA-PPI-001`; proposito pendiente de consolidacion)
+- `P-PI.1` (pausa operativa por `RUTA-PPI-001`; proposito pendiente de consolidacion)
+- `AUD-001` (completo en version documental/operativa v0; produjo `C-002`; queda abierto solo para rutas posteriores como implementacion, R4 formal, `Gamma`, `REPORT_LAYER` Nivel C o cierre/pausa)
 
 ## Automatizacion
 

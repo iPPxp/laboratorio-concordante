@@ -132,16 +132,16 @@ El Auditor no puede demostrar por si mismo confluencia, equivalencia de proyecci
 
 | Caso | Entrada | Hallazgo esperado | Estatus |
 | --- | --- | --- | --- |
-| AUD-T00 | Automata determinista completo, con estados alcanzables y finalidad declarada | Sin hallazgos bloqueantes | pendiente |
+| AUD-T00 | Automata determinista completo, con estados alcanzables y finalidad declarada | Sin hallazgos bloqueantes | validado provisionalmente por `AUD-SIM-023` y `VAL-023` |
 | AUD-T01 | Automata con transicion faltante | Ambiguedad o especificacion incompleta | validado provisionalmente por `AUD-SIM-009` y `VAL-009` |
 | AUD-T02 | Automata con estado final inalcanzable | Hallazgo de posible deuda conceptual | validado provisionalmente por `AUD-SIM-010` y `VAL-010` |
 | AUD-T03 | Automata que declara determinismo pero contiene dos transiciones para el mismo par `(estado, simbolo)` | Contradiccion entre declaracion y estructura | validado provisionalmente por `AUD-SIM-002`, `AUD-SIM-010`, `VAL-002` y `VAL-010` |
 | AUD-T04 | Dos automatas presentados como equivalentes sin algoritmo de equivalencia registrado | Hipotesis promovida indebidamente o dependencia no registrada | validado provisionalmente por `AUD-SIM-010`, `AUD-SIM-012`, `VAL-010` y `VAL-012` |
-| AUD-T05 | Artefacto que ejecuta transformacion sin decision fundada | Violacion de `R4-AUD` | pendiente |
-| AUD-T06 | Artefacto que invoca `Gamma` como resultado formal sin construccion local | Hipotesis promovida indebidamente | pendiente |
+| AUD-T05 | Artefacto que ejecuta transformacion sin decision fundada | Violacion de `R4-AUD` | validado provisionalmente por `AUD-SIM-024` y `VAL-024` |
+| AUD-T06 | Artefacto que invoca `Gamma` como resultado formal sin construccion local | Hipotesis promovida indebidamente | validado provisionalmente por `AUD-SIM-025` y `VAL-025` |
 | AUD-T07 | Artefacto que cita Registro Historico como autoridad directa | Violacion de `M-000.5` | validado provisionalmente por `AUD-SIM-019` y `VAL-019` |
-| AUD-T08 | Expediente que intenta modificar Canon sin decision explicita | Violacion de separacion de niveles | pendiente |
-| AUD-T09 | Documento que introduce termino nuevo sin estatus | Deuda conceptual | pendiente |
+| AUD-T08 | Expediente que intenta modificar Canon sin decision explicita | Violacion de separacion de niveles | validado provisionalmente por `AUD-SIM-026` y `VAL-026` |
+| AUD-T09 | Documento que introduce termino nuevo sin estatus | Deuda conceptual | validado provisionalmente por `AUD-SIM-027` y `VAL-027` |
 
 ## Estructura interna de casos
 
@@ -443,11 +443,11 @@ Criterio de exito: el Auditor no usa "operador concordante" como fundamento.
 | --- | --- |
 | Mapeo (`Mp`) | AUD-T01, AUD-T05, AUD-T09 |
 | Calculo (`Cr`) | AUD-T02, AUD-T03 |
-| Decision (`D`) | AUD-T04 validado provisionalmente por `AUD-SIM-012` y `VAL-012`; AUD-T07 validado provisionalmente por `AUD-SIM-019` y `VAL-019`; AUD-T06 y AUD-T08 pendientes |
-| Transformacion (`Tr`) | AUD-T05, AUD-T08 |
-| Terminacion (`tau`) | AUD-T00 como control; AUD-T10 como caso derivado validado provisionalmente por `AUD-SIM-003`, `AUD-SIM-011`, `VAL-003` y `VAL-011`; algoritmo textual no terminante validado provisionalmente por `AUD-SIM-020` y `VAL-020` |
-| Dependencia no materializada | AUD-T04, AUD-T06 |
-| Separacion de niveles | AUD-T07, AUD-T08 |
+| Decision (`D`) | AUD-T04 validado provisionalmente por `AUD-SIM-012` y `VAL-012`; AUD-T06 validado provisionalmente por `AUD-SIM-025` y `VAL-025`; AUD-T07 validado provisionalmente por `AUD-SIM-019` y `VAL-019`; AUD-T08 validado provisionalmente por `AUD-SIM-026` y `VAL-026`; AUD-T09 validado provisionalmente por `AUD-SIM-027` y `VAL-027` |
+| Transformacion (`Tr`) | AUD-T05 validado provisionalmente por `AUD-SIM-024` y `VAL-024`; AUD-T08 validado provisionalmente por `AUD-SIM-026` y `VAL-026` |
+| Terminacion (`tau`) | AUD-T00 como control validado provisionalmente por `AUD-SIM-023` y `VAL-023`; AUD-T10 como caso derivado validado provisionalmente por `AUD-SIM-003`, `AUD-SIM-011`, `VAL-003` y `VAL-011`; algoritmo textual no terminante validado provisionalmente por `AUD-SIM-020` y `VAL-020` |
+| Dependencia no materializada | AUD-T04 validado provisionalmente por `AUD-SIM-010`, `AUD-SIM-012`, `VAL-010` y `VAL-012`; AUD-T06 validado provisionalmente por `AUD-SIM-025` y `VAL-025` |
+| Separacion de niveles | AUD-T07 validado provisionalmente por `AUD-SIM-019` y `VAL-019`; AUD-T08 validado provisionalmente por `AUD-SIM-026` y `VAL-026` |
 
 ## Caso derivado - Bucle procedural
 
@@ -475,13 +475,17 @@ Cada ejecucion de prueba debe producir:
 
 ## Criterio de cierre
 
-Este expediente puede cerrarse cuando:
+Este expediente puede declararse completo en version documental/operativa v0 cuando:
 
-- existan entradas concretas para `AUD-T00` a `AUD-T09`
-- cada caso tenga salida esperada verificable
-- se haya decidido si el Auditor opera como algoritmo, protocolo o ambos
-- se haya promovido la especificacion tecnica inicial del Auditor a Nivel C
-- se haya actualizado `DO-001` con el resultado
+- existan entradas concretas para `AUD-T00` a `AUD-T09`;
+- cada caso tenga salida esperada verificable;
+- cada caso tenga simulacion y validacion provisional asociada;
+- se haya decidido si el Auditor opera como algoritmo, protocolo o ambos;
+- se haya promovido la especificacion tecnica inicial del Auditor a Nivel C;
+- se haya delimitado `REPORT_LAYER` como capa local o deuda de promocion;
+- se haya actualizado `DO-001` o se haya registrado que el cierre actual no modifica su modo operativo.
+
+Este cierre v0 no equivale a herramienta ejecutable, Regla R4 formal, `Gamma` formal ni promocion de `REPORT_LAYER` a Nivel C.
 
 ## Caso no automata asociado
 
@@ -490,6 +494,14 @@ Este expediente puede cerrarse cuando:
 - `AUD-SIM-019`: prueba `R4-CANDIDATA` con un expediente que usa Registro Historico como autoridad directa.
 - `AUD-SIM-020`: prueba `R4-CANDIDATA` con un algoritmo textual no automata sin condicion de parada.
 - `AUD-SIM-021`: prueba `R4-CANDIDATA` con un documento oficial incompleto. Cubre el caso asociado `AUD-T11`, documento oficial incompleto usado fuera de alcance verificable.
+- `AUD-SIM-022`: prueba `REPORT-LAYER-CAND-001` con un mapa interno de extraccion no automata y sin nombres locales de reportes como base.
+- `AUD-SIM-023`: valida el control positivo `AUD-T00`.
+- `AUD-SIM-024`: valida `AUD-T05`, transformacion sin decision fundada.
+- `AUD-SIM-025`: valida `AUD-T06`, uso formal indebido de `Gamma`.
+- `AUD-SIM-026`: valida `AUD-T08`, modificacion de Canon desde expediente.
+- `AUD-SIM-027`: valida `AUD-T09`, termino nuevo sin estatus.
+- `AUD-SIM-028`: valida el puente conceptual `REPORT_LAYER` / `DO_CHECK_REPORT`.
+- `AUD-SIM-029`: valida la proyeccion de la completitud v0 a documento tipo RFC.
 
 ## Sintesis asociada
 
@@ -508,6 +520,24 @@ Este expediente puede cerrarse cuando:
 - `03_Expedientes/AUD-001_Decision_Estatus_Criterios_Promocion_R4-CANDIDATA.md`: acepta los criterios como compuerta provisional de expediente.
 - `03_Expedientes/AUD-001_Decision_Ruta_Siguiente_R4-CANDIDATA.md`: decide mantener la candidata como hipotesis operativa robustecida.
 - `03_Expedientes/AUD-001_Decision_Pausa_Operativa_R4-CANDIDATA.md`: deja `AUD-001` en pausa operativa sin cerrar el expediente.
+- `03_Expedientes/AUD-001_Decision_Reactivacion_REPORT_LAYER.md`: reactiva `AUD-001` de forma acotada para separar `REPORT_LAYER`.
+- `03_Expedientes/AUD-001_REPORT_LAYER_Candidata.md`: redacta `REPORT-LAYER-CAND-001` como candidata provisional de expediente.
+- `03_Expedientes/AUD-001_Auditoria_REPORT_LAYER_Candidata.md`: audita favorablemente la candidata.
+- `03_Expedientes/AUD-001_Decision_Estatus_REPORT_LAYER_Candidata.md`: acepta la candidata como especificacion provisional de expediente.
+- `03_Expedientes/AUD-001_Origen_REPORT_LAYER.md`: explicita de que superficies internas se extrae la capa abstracta.
+- `03_Expedientes/AUD-001_Simulaciones.md`: incluye `AUD-SIM-022`, prueba de origen interno de `REPORT_LAYER`.
+- `03_Expedientes/AUD-001_Validaciones.md`: incluye `VAL-022`, validacion provisional de `REPORT-LAYER-CAND-001`.
+- `03_Expedientes/AUD-001_Decision_Alcance_REPORT_LAYER.md`: decide que `REPORT_LAYER` permanece local en `AUD-001` por ahora.
+- `03_Expedientes/AUD-001_Compatibilidad_REPORT_LAYER_DO_CHECK.md`: define puente conceptual minimo con `DO_CHECK_REPORT`.
+- `03_Expedientes/AUD-001_Criterios_Completitud_Auditor.md`: define las compuertas de completitud documental/operativa v0.
+- `03_Expedientes/AUD-001_Sintesis_Completitud_Auditor_v0.md`: sintetiza la cobertura alcanzada.
+- `03_Expedientes/AUD-001_Auditoria_Completitud_Auditor_v0.md`: audita la completitud v0 contra las reglas locales.
+- `03_Expedientes/AUD-001_Decision_Estatus_Auditor_v0.md`: registra la decision de estatus v0.
+- `03_Expedientes/AUD-001_SPEC-RFC-AUDITOR-V0_Candidata.md`: prepara el documento tipo RFC del Auditor.
+- `03_Expedientes/AUD-001_Validaciones_SPEC-RFC-AUDITOR-V0.md`: valida la candidata tipo RFC.
+- `03_Expedientes/AUD-001_Auditoria_SPEC-RFC-AUDITOR-V0_NIVEL-C.md`: audita la candidata contra `NIVEL-C-001`.
+- `03_Expedientes/AUD-001_Decision_Promocion_SPEC-RFC-AUDITOR-V0.md`: promueve la candidata a `C-002`.
+- `02_Documentos/C-002_RFC_Operativo_Auditor_v0.md`: documento oficial de Nivel C en formato tipo RFC.
 
 ## Resultado esperado posterior
 
@@ -518,9 +548,13 @@ Si este expediente madura, puede producir:
 - reglas de actualizacion automatica del estado del proyecto
 - criterios de bloqueo para promociones a Canon
 
+Resultado posterior a `COMPAT-RL-DO-CHECK-001`: el puente queda validado teoricamente por `AUD-SIM-028` y `VAL-028` como frontera conceptual suficiente para cierre v0.
+
+Resultado posterior a `D-AUD-V0-001`: la completitud v0 queda proyectada a documento tipo RFC por `AUD-SIM-029`, `VAL-029`, `SPEC-RFC-AUDITOR-V0` y `C-002`.
+
 ## Simulaciones asociadas
 
-- `03_Expedientes/AUD-001_Simulaciones.md`: incluye `AUD-SIM-009` a `AUD-SIM-021`
+- `03_Expedientes/AUD-001_Simulaciones.md`: incluye `AUD-SIM-009` a `AUD-SIM-029`.
 
 ## Contratos asociados
 

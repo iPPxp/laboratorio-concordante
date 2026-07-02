@@ -1,43 +1,43 @@
 {
-  "report_id": "DO-LAB-SUMMARY-20260701-205808",
+  "report_id": "DO-LAB-SUMMARY-20260702-165851",
   "expediente": "AUT-001",
   "algoritmo": "DO-LAB-SUMMARY-001",
   "resultado": "advertencia",
-  "recomendacion": "preparar_cierre_tecnico_provisional",
+  "recomendacion": "mantener_cierre_operativo",
   "transformacion_permitida": false,
-  "headline": "Operativo con advertencias controladas y cierre tecnico provisional preparado.",
+  "headline": "Cierre operativo conservado con deuda documental visible.",
   "state": {
-    "expediente_activo_inmediato": "`AUT-001` queda como frente activo inmediato con automatizacion media provisional, criterios de cierre definidos, riesgos altos tratados y 17 riesgos activos revisados provisionalmente; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `PSI-001` queda abierto con `A-PSI-001`, `DEF-PSI-ORG-001`, `CRIT-PSI-TR-001` y `EX-PSI-001` a `EX-PSI-005` aceptados provisionalmente; `AUT-001` queda abierto con MVP minimo y fase media provisional; `P-PI.0`, `P-PI.1` y `AUD-001` quedan en pausa operativa; `B-001.5` queda congelado.",
-    "proximo_objetivo": "Refinar `DO-LAB-RISK-001` para distinguir prohibiciones, decisiones historicas y definiciones de checks antes de decidir cierre tecnico provisional de `AUT-001`.",
-    "ultima_decision_operativa": "`AUT-001_Decision_Revision_Riesgos_Activos.md` (`D-2026-07-02-019`): revision provisional de 17 riesgos activos aceptada; no hay transformacion real en curso; `AUT-001` sigue abierto.",
+    "expediente_activo_inmediato": "`AUD-001` queda completo en version documental/operativa v0 y ya produjo `C-002`; permanece abierto solo para rutas posteriores no cubiertas: implementacion, R4 formal, `Gamma`, `REPORT_LAYER` Nivel C o cierre/pausa. `PSI-001` queda abierto con matriz de patrones no clinicos aceptada, sin cierre ni promocion; `TCS-001` queda abierto como expediente teorico provisional; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `P-PI.0` y `P-PI.1` quedan en pausa operativa; `B-001.5` queda congelado.",
+    "proximo_objetivo": "Elegir siguiente ruta posterior a `C-002`: implementacion no mutante conforme a RFC, formalizacion de R4/Gamma, o cierre/pausa operativa de `AUD-001`.",
+    "ultima_decision_operativa": "`AUT-001_Decision_Cierre_Operativo_Completo.md` (`D-2026-07-02-029`): `AUT-001` cerrado operativamente tras ejecucion directa local de `lab_run.py` en alcance clave; quedan herramientas conservadas y deuda documental visible.",
     "expedientes_abiertos": [
       "`HXI-001` (pausa operativa; reporte de consistencia aceptado y criterios de admision formal posterior preparados; no admite `H-Xi`)",
-      "`PSI-001` (frente psicologico inicial; `A-PSI-001`, `DEF-PSI-ORG-001`, `CRIT-PSI-TR-001` y `EX-PSI-001` a `EX-PSI-005` aceptados provisionalmente dentro del expediente)",
-      "`AUT-001` (automatizacion media provisional; criterios de cierre definidos, riesgos altos tratados y riesgos activos revisados; frente activo inmediato; pendiente refinamiento de detector o cierre tecnico provisional)",
-      "`P-PI.0` (pausa operativa)",
-      "`P-PI.1` (pausa operativa)",
-      "`AUD-001` (pausa operativa)"
+      "`PSI-001` (abierto; matriz de patrones no clinicos aceptada; `A-PSI-001`, `DEF-PSI-ORG-001`, `CRIT-PSI-TR-001`, `EX-PSI-001` a `EX-PSI-005`, `CAS-PSI-001` a `CAS-PSI-006` y `PSI-MAT-PAT-001` siguen provisionales dentro del expediente)",
+      "`TCS-001` (expediente teorico provisional; `Concordance` tratada como propiedad auditable de gobernanza de sistemas; analisis de fondo registrado; no Canon, no documento oficial)",
+      "`P-PI.0` (pausa operativa por `RUTA-PPI-001`; proposito pendiente de consolidacion)",
+      "`P-PI.1` (pausa operativa por `RUTA-PPI-001`; proposito pendiente de consolidacion)",
+      "`AUD-001` (completo en version documental/operativa v0; produjo `C-002`; queda abierto solo para rutas posteriores como implementacion, R4 formal, `Gamma`, `REPORT_LAYER` Nivel C o cierre/pausa)"
     ]
   },
   "automation": {
     "run_resultado": "advertencia",
-    "run_recomendacion": "preparar_cierre_tecnico_provisional",
+    "run_recomendacion": "mantener_cierre_operativo",
     "steps": [
       {
         "name": "chequeo_minimo",
         "algorithm": "DO-CHECK-MIN-001",
         "resultado": "advertencia",
         "recomendacion": "continuar_sin_transformar",
-        "findings": 23,
+        "findings": 11,
         "markdown": "06_Automatizacion/reportes/do_check_min_repo.md",
         "json": "06_Automatizacion/reportes/do_check_min_repo.json"
       },
       {
         "name": "chequeo_medio",
         "algorithm": "DO-CHECK-MED-001",
-        "resultado": "advertencia",
-        "recomendacion": "continuar_sin_transformar",
-        "findings": 91,
+        "resultado": "ok",
+        "recomendacion": "aprobar_lectura",
+        "findings": 0,
         "markdown": "06_Automatizacion/reportes/do_check_med_repo.md",
         "json": "06_Automatizacion/reportes/do_check_med_repo.json"
       },
@@ -53,9 +53,9 @@
       {
         "name": "continuidad_integrada",
         "algorithm": "DO-LAB-CONTINUITY-001",
-        "resultado": "advertencia",
-        "recomendacion": "continuar_sin_transformar",
-        "findings": 91,
+        "resultado": "ok",
+        "recomendacion": "aprobar_lectura",
+        "findings": 0,
         "markdown": "06_Automatizacion/reportes/lab_continuity_report.md",
         "json": "06_Automatizacion/reportes/lab_continuity_report.json"
       },
@@ -63,56 +63,41 @@
         "name": "clasificacion_riesgos",
         "algorithm": "DO-LAB-RISK-001",
         "resultado": "advertencia_clasificada",
-        "recomendacion": "preparar_cierre_tecnico_provisional",
-        "findings": 82,
+        "recomendacion": "mantener_cierre_operativo",
+        "findings": 11,
         "markdown": "06_Automatizacion/reportes/lab_risk_report.md",
         "json": "06_Automatizacion/reportes/lab_risk_report.json"
       }
     ],
-    "continuity_resultado": "advertencia",
+    "continuity_resultado": "ok",
     "board_resultado": "ok"
   },
   "risk": {
     "resultado": "advertencia_clasificada",
-    "recomendacion": "preparar_cierre_tecnico_provisional",
+    "recomendacion": "mantener_cierre_operativo",
     "by_category": {
-      "advertencia_controlada": 17,
-      "advertencia_heredada": 47,
-      "deuda_documental": 18
+      "deuda_documental": 11
     },
     "by_operational_severity": {
-      "media": 31,
-      "baja": 49,
-      "alta": 2
+      "media": 11
     },
     "by_context_class": {
-      "guardrail": 29,
-      "riesgo_real": 47,
-      "control_auditoria": 1,
-      "meta_check": 1,
-      "decision_registrada": 2,
-      "bitacora_historica": 2
+      "riesgo_real": 11
     },
     "by_treatment_status": {
-      "controlado_por_guardrail": 12,
-      "conservar_deuda_historica": 47,
-      "pendiente_normalizacion_documental": 18,
-      "controlado_por_regla_de_auditoria": 1,
-      "controlado_por_definicion_de_check": 1,
-      "controlado_por_decision_registrada": 1,
-      "controlado_por_historial": 2
+      "pendiente_normalizacion_documental": 11
     },
     "risk_blocks_closure": false,
     "top_active": []
   },
   "sources": {
-    "run": "DO-LAB-RUN-20260701-205808",
-    "risk": "DO-LAB-RISK-20260701-205808",
-    "board": "DO-STATE-BOARD-20260702-005",
-    "continuity": "DO-LAB-CONTINUITY-20260702-004"
+    "run": "DO-LAB-RUN-20260702-165851",
+    "risk": "DO-LAB-RISK-20260702-165851",
+    "board": "DO-STATE-BOARD-20260702-165850",
+    "continuity": "DO-LAB-CONTINUITY-20260702-165851"
   },
   "next_actions": [
-    "Decidir cierre tecnico provisional de AUT-001.",
+    "Mantener cierre operativo de AUT-001 con deuda documental visible.",
     "Mantener advertencias controladas visibles en reportes.",
     "Mantener transformacion_permitida en false hasta decision explicita."
   ]

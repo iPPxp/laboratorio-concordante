@@ -382,3 +382,23 @@
 - Creada `PSI-001_Auditoria_Matriz_Patrones_Transformacion_No_Clinica.md`: auditoria favorable de la matriz.
 - Creada `PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md` y registrada `D-2026-07-02-024`: matriz aceptada provisionalmente dentro de `PSI-001`.
 - Actualizados estado, README y handoff para fijar el siguiente objetivo: compuerta de frontera para psicopatologia conceptual no clinica.
+
+- Creada `AUD-001_Decision_Reactivacion_REPORT_LAYER.md` y registrada `D-2026-07-02-025`: `AUD-001` se reactiva de forma acotada para separar `REPORT_LAYER`.
+- Creada `AUD-001_REPORT_LAYER_Candidata.md` como `REPORT-LAYER-CAND-001`, candidata provisional de expediente para la capa abstracta de reportes.
+- Creada `AUD-001_Auditoria_REPORT_LAYER_Candidata.md`: auditoria favorable de la candidata.
+- Creada `AUD-001_Decision_Estatus_REPORT_LAYER_Candidata.md` y registrada `D-2026-07-02-026`: `REPORT-LAYER-CAND-001` aceptada como candidata provisional dentro de `AUD-001`.
+- Actualizados `AUD-001_R4-CANDIDATA`, criterios de promocion, casos de prueba, estado, README y handoff para fijar el siguiente objetivo: validar `REPORT-LAYER-CAND-001` o decidir que permanece local.
+- Registrado `AUD-001_Origen_REPORT_LAYER.md`, `AUD-SIM-022` y `VAL-022`: `REPORT_LAYER` se extrae de fuentes internas del laboratorio, no de nombres locales ni de historial externo.
+- Registrados `AUD-001_Decision_Alcance_REPORT_LAYER.md` y `AUD-001_Compatibilidad_REPORT_LAYER_DO_CHECK.md`: `REPORT_LAYER` permanece local en `AUD-001` y puede leer `DO_CHECK_REPORT` solo como evidencia conceptual no mutante.
+- Registrados `AUD-SIM-023` a `AUD-SIM-028` y `VAL-023` a `VAL-028`: quedan cubiertos `AUD-T00`, `AUD-T05`, `AUD-T06`, `AUD-T08`, `AUD-T09` y el puente `REPORT_LAYER` / `DO_CHECK_REPORT`.
+- Creado `HB-001_Deuda_Viva_H-B.md` y enlazado desde `B-001`: `H-B.6` y `H-B.7` quedan como deuda viva no bloqueante.
+- Creados `AUD-001_Criterios_Completitud_Auditor.md`, `AUD-001_Sintesis_Completitud_Auditor_v0.md`, `AUD-001_Auditoria_Completitud_Auditor_v0.md` y `AUD-001_Decision_Estatus_Auditor_v0.md`; registrada `D-2026-07-02-027`: Auditor completo en version documental/operativa v0.
+- Registrados `AUD-SIM-029` y `VAL-029`: la completitud v0 puede proyectarse a documento tipo RFC sin resolver R4 formal, `Gamma` ni herramienta ejecutable.
+- Creada `AUD-001_SPEC-RFC-AUDITOR-V0_Candidata.md`, validada y auditada contra `NIVEL-C-001`.
+- Creada `AUD-001_Decision_Promocion_SPEC-RFC-AUDITOR-V0.md` y registrada `D-2026-07-02-028`: `SPEC-RFC-AUDITOR-V0` se promueve a `C-002_RFC_Operativo_Auditor_v0.md`.
+- Creado `02_Documentos/C-002_RFC_Operativo_Auditor_v0.md` como documento oficial de Nivel C en formato tipo RFC.
+- Actualizados estado, README, handoff, paquete de handoff y decisiones para registrar `C-002` y retirar el objetivo anterior de validar `REPORT_LAYER`.
+
+- Ejecutada localmente `06_Automatizacion/lab_run.py --scope claves --format md`: corrida directa `DO-LAB-RUN-20260702-165851` sin bloqueos, con advertencias documentales visibles y recomendacion `mantener_cierre_operativo`.
+- Ajustado `DO-CHECK-MED-001` para aceptar que `AUT-001` figure como abierto o cerrado despues de decision registrada.
+- Creadas `AUT-001_Validacion_Cierre_Operativo_Completo.md` y `AUT-001_Decision_Cierre_Operativo_Completo.md`; registrada `D-2026-07-02-029`: `AUT-001` queda cerrado operativamente.

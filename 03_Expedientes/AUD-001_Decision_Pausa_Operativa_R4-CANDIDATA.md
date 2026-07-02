@@ -10,6 +10,8 @@ Objeto decidido: pausa operativa de `AUD-001` despues de la ruta elegida para `R
 
 Fuente principal: `AUD-001_Decision_Ruta_Siguiente_R4-CANDIDATA.md`.
 
+Decision posterior asociada: `AUD-001_Decision_Reactivacion_REPORT_LAYER.md`.
+
 ## Decision
 
 `AUD-001` queda en pausa operativa.
@@ -39,11 +41,13 @@ Por eso procede pausar `AUD-001` en vez de forzar otra ronda por continuidad ine
 
 La decision permite:
 
-- usar `HANDOFF.md` y `HANDOFF_PACKAGE.md` como punto de entrega operativo
+- usar `HANDOFF.md` y `HANDOFF_PACKAGE.md` como punto de entrega operativo en el momento de esta decision
 - conservar `AUD-001` como expediente abierto y retomable
 - citar `R4-CANDIDATA` solo como hipotesis operativa robustecida dentro de `AUD-001`
 - reactivar `AUD-001` mediante decision explicita posterior
 - elegir otro frente activo del Laboratorio sin cerrar `AUD-001`
+
+Lectura posterior: la reactivacion acotada para `REPORT_LAYER` fue registrada en `AUD-001_Decision_Reactivacion_REPORT_LAYER.md`. `HANDOFF.md` y `HANDOFF_PACKAGE.md` quedaron inactivos hasta nuevo aviso por decision operativa posterior.
 
 ## Alcance no permitido
 
@@ -69,7 +73,9 @@ La decision no permite:
 
 ## Consecuencia operativa
 
-El paquete de handoff queda listo para traspaso operativo.
+En el momento de esta decision, el paquete de handoff quedo listo para traspaso operativo.
+
+Lectura posterior: ese paquete queda inactivo hasta nuevo aviso.
 
 No hay siguiente objetivo obligatorio dentro de `AUD-001`.
 
@@ -96,4 +102,4 @@ Elegir siguiente frente activo del Laboratorio desde deudas de alto nivel.
 
 `R4-CANDIDATA`: hipotesis operativa robustecida.
 
-Handoff: listo para traspaso operativo.
+Handoff: listo para traspaso operativo en el momento de esta decision; inactivo hasta nuevo aviso por lectura posterior.

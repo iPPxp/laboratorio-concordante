@@ -343,8 +343,8 @@ def repository_checks(root: Path, context: dict, existing: set[str]) -> list[dic
     for source in REQUIRED_SOURCES:
         if source not in existing:
             add(findings, "block", "MED-FUENTES", "fuente_minima_ausente", source, "Fuente minima requerida no encontrada.")
-    if "AUT-001" not in context["open_expedientes"]:
-        add(findings, "warning", "MED-ESTADO", "aut_001_no_figura_abierto", "05_Estado_Proyecto/ESTADO_ACTUAL.md", "AUT-001 no aparece como expediente abierto.")
+    if "AUT-001" not in context["open_expedientes"] and "AUT-001" not in context["closed_expedientes"]:
+        add(findings, "warning", "MED-ESTADO", "aut_001_sin_estado_operativo", "05_Estado_Proyecto/ESTADO_ACTUAL.md", "AUT-001 no aparece como expediente abierto ni cerrado.")
     if "REC-001" not in context["closed_expedientes"]:
         add(findings, "warning", "MED-ESTADO", "rec_001_no_figura_cerrado", "05_Estado_Proyecto/ESTADO_ACTUAL.md", "REC-001 no aparece como expediente cerrado.")
     if "REC-DEUDA-003" not in context["estado_text"] and "REC-DEUDA-003" not in context["current_text"]:

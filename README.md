@@ -60,8 +60,8 @@ El repositorio esta organizado en seis zonas principales y algunos archivos raiz
 ### Archivos raiz
 
 - `README.md`: orientacion general del Laboratorio.
-- `HANDOFF.md`: traspaso operativo para retomar el Laboratorio.
-- `HANDOFF_PACKAGE.md`: manifiesto del paquete de handoff.
+- `HANDOFF.md`: traspaso operativo historico, inactivo hasta nuevo aviso.
+- `HANDOFF_PACKAGE.md`: manifiesto historico del paquete de handoff, inactivo hasta nuevo aviso.
 - `INDEX.md`: mapa de lectura y rutas recomendadas.
 - `CURRENT_STATE.md`: estado minimo, disenado para lectura inmediata.
 - `PROMPT_MAESTRO.md`: prompt base para incorporar una IA al trabajo.
@@ -112,18 +112,18 @@ Contiene herramientas ejecutables no mutantes y sus reportes conservados. Su fun
 
 Estado operativo resumido:
 
-- Decision operativa reciente: `PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md`.
-- Decisiones de estabilizacion recientes: `D-2026-07-02-020`, `D-2026-07-02-021`, `D-2026-07-02-022`, `D-2026-07-02-023` y `D-2026-07-02-024`.
-- Ultimo expediente cerrado: `REC-001` (reconciliacion inicial Canon/baselines); ultimo expediente tecnico cerrado: `DO-001`.
-- Ultima decision arquitectonica: `C-001` promovido como Especificacion Tecnica del Auditor.
-- Ultima decision operativa: `PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md` (`D-2026-07-02-024`) acepta `PSI-MAT-PAT-001` como matriz provisional no clinica; `AUT-001` queda en cierre tecnico provisional (`D-2026-07-02-021`) y cierre operativo completo pendiente de ejecucion local directa.
+- Decision operativa reciente: `AUT-001_Decision_Cierre_Operativo_Completo.md`.
+- Decisiones de estabilizacion recientes: `D-2026-07-02-020` a `D-2026-07-02-029`.
+- Ultimo expediente cerrado: `AUT-001`; ultimo expediente tecnico cerrado: `AUT-001`.
+- Ultima decision arquitectonica: `C-002_RFC_Operativo_Auditor_v0.md` promovido como RFC operativo oficial del Auditor v0; complementa `C-001`.
+- Ultima decision operativa: `AUT-001_Decision_Cierre_Operativo_Completo.md` (`D-2026-07-02-029`) cierra operativamente `AUT-001` tras ejecucion directa local de `lab_run.py` en alcance clave.
 - Propuesta provisional promovida: `DO-PROP-001` absorbida por `C-001`.
 - Algoritmo provisional activo: `DO-CHECK-001`; implementaciones activas: `DO-CHECK-MIN-001` en `06_Automatizacion/do_check_min.py`, `DO-CHECK-MED-001` en `06_Automatizacion/do_check_med.py`, `DO-STATE-BOARD-001` en `06_Automatizacion/lab_status_board.py`, `DO-LAB-CONTINUITY-001` en `06_Automatizacion/lab_continuity_report.py`, `DO-LAB-RISK-001` en `06_Automatizacion/lab_risk_classifier.py`, `DO-LAB-SUMMARY-001` en `06_Automatizacion/lab_executive_summary.py` y `DO-LAB-RUN-001` en `06_Automatizacion/lab_run.py`.
-- Refinamiento activo registrado: `AUT-001_Refinamiento_DO-LAB-RISK.md`; cierre tecnico provisional: `AUT-001_Decision_Cierre_Tecnico_Provisional.md`; mapa PSI: `PSI-001_Mapa_Continuidad_Conceptual.md`; casos PSI: `PSI-001_Casos_Transformacion_No_Clinicos.md`; matriz PSI: `PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md`; auditoria matriz PSI: `PSI-001_Auditoria_Matriz_Patrones_Transformacion_No_Clinica.md`.
-- Documento oficial de Nivel C: `C-001_Especificacion_Tecnica_Auditor.md`.
+- Infraestructura `AUT-001` conservada: `AUT-001_Refinamiento_DO-LAB-RISK.md`, `AUT-001_Decision_Cierre_Tecnico_Provisional.md` y `AUT-001_Decision_Cierre_Operativo_Completo.md`; mapa PSI: `PSI-001_Mapa_Continuidad_Conceptual.md`; casos PSI: `PSI-001_Casos_Transformacion_No_Clinicos.md`; matriz PSI: `PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md`; auditoria matriz PSI: `PSI-001_Auditoria_Matriz_Patrones_Transformacion_No_Clinica.md`.
+- Documentos oficiales de Nivel C: `C-001_Especificacion_Tecnica_Auditor.md` y `C-002_RFC_Operativo_Auditor_v0.md`.
 - Especificacion candidata promovida: `SPEC-AUD-001_Candidata` en `03_Expedientes`.
 - Modo operativo del Auditor: mixto, segun `MODO-AUD-001`.
-- Proximo objetivo: Definir una compuerta de frontera para psicopatologia conceptual no clinica dentro de `PSI-001`. `HXI-001` queda abierto en pausa operativa; `P-PI.0`, `P-PI.1` y `AUD-001` quedan en pausa operativa; `B-001.5` queda congelado.
+- Proximo objetivo: elegir la ruta posterior a `C-002`: implementacion no mutante conforme al RFC, formalizacion de R4/Gamma, promocion futura de `REPORT_LAYER` o cierre/pausa operativa de `AUD-001`. `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa; `P-PI.0` y `P-PI.1` quedan en pausa operativa; `B-001.5` queda congelado.
 - No volver a discutir sin reapertura explicita: `EF-001`, `CP-001`, Procedimiento, Auditoria.
 
 Documentos declarados como completos en el punto de partida:
@@ -137,12 +137,11 @@ Nota operativa: este repositorio contiene versiones semilla de esos documentos. 
 
 Expedientes abiertos relevantes:
 
-- `AUT-001` (cierre tecnico provisional aceptado; cierre operativo completo pendiente de ejecucion local directa)
 - `HXI-001` (pausa operativa; reporte de consistencia aceptado sin admision)
-- `PSI-001` (siguiente frente conceptual recomendado; mapa de continuidad conceptual no clinico aceptado)
+- `PSI-001` (abierto; matriz de patrones no clinicos aceptada)
 - `P-PI.0` (pausa operativa)
 - `P-PI.1` (pausa operativa)
-- `AUD-001` (pausa operativa)
+- `AUD-001` (completo en version documental/operativa v0; produjo `C-002`; abierto solo para rutas posteriores)
 
 Hipotesis activas iniciales:
 

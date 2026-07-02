@@ -115,7 +115,9 @@ Criterios minimos:
 - probar al menos una instancia fuera de `AUD-001` o declarar que sigue local
 - auditar contra `M-000` y `M-001`
 
-Estado: bloqueada hasta decision de alcance.
+Estado: reactivada de forma acotada por `AUD-001_Decision_Reactivacion_REPORT_LAYER.md`.
+
+Lectura posterior: `REPORT_LAYER-CAND-001` fue redactada, auditada y aceptada como candidata provisional de expediente. Esto habilita trabajo interno adicional, pero no convierte `REPORT_LAYER` en especificacion oficial ni desbloquea por si solo Nivel C.
 
 ### Ruta E - Derivar propuesta hacia Regla R4 formal
 
@@ -167,6 +169,7 @@ Lectura posterior: la auditoria y decision de estatus de criterios quedaron regi
 
 - Auditar este documento de criterios contra `M-000` y `M-001`. Cumplido posteriormente por `AUD-001_Auditoria_Criterios_Promocion_R4-CANDIDATA.md`.
 - Decidir si la siguiente ruta sera mantener, definir provisionalmente, separar `REPORT_LAYER`, preparar Nivel C, proponer R4 formal o congelar. Cumplido posteriormente por `AUD-001_Decision_Ruta_Siguiente_R4-CANDIDATA.md`.
+- La ruta `REPORT_LAYER` fue reactivada posteriormente de forma acotada por `AUD-001_Decision_Reactivacion_REPORT_LAYER.md`; queda pendiente validar alcance local o no local de `REPORT_LAYER-CAND-001`.
 - Mantener abiertos `R4` formal y `Gamma` hasta definicion local.
 
 ## Veredicto

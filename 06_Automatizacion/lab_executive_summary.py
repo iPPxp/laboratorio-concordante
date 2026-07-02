@@ -16,6 +16,7 @@ BOARD_REPORT = "06_Automatizacion/reportes/lab_status_board.json"
 CONTINUITY_REPORT = "06_Automatizacion/reportes/lab_continuity_report.json"
 CURRENT_STATE = "CURRENT_STATE.md"
 PROJECT_STATE = "05_Estado_Proyecto/ESTADO_ACTUAL.md"
+AUT_CLOSE_DECISION = "03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md"
 
 
 def read_text(path: Path) -> str:
@@ -85,7 +86,7 @@ def risk_top_items(risk_report: dict[str, Any], limit: int = 5) -> list[dict[str
     return sorted(active, key=lambda item: (order.get(item.get("operational_severity", "baja"), 9), item.get("file", "")))[:limit]
 
 
-def executive_result(run_report: dict[str, Any], risk_report: dict[str, Any]) -> tuple[str, str, str]:
+def executive_result(run_report: dict[str, Any], risk_report: dict[str, Any], closure_registered: bool = False) -> tuple[str, str, str]:
     findings = risk_report.get("findings", [])
     active = [item for item in findings if item.get("category") == "riesgo_activo"]
     active_high = [item for item in active if item.get("operational_severity") == "alta"]
@@ -94,6 +95,10 @@ def executive_result(run_report: dict[str, Any], risk_report: dict[str, Any]) ->
         return "atencion_requerida", "revisar_riesgos_altos_sin_transformar", "Operativo con riesgos altos activos; no cerrar."
     if active:
         return "advertencia", "priorizar_riesgos_activos", "Operativo con riesgos activos pendientes."
+    if closure_registered:
+        if run_report.get("resultado") == "ok":
+            return "ok", "mantener_cierre_operativo", "Cierre operativo conservado sin riesgos activos clasificados."
+        return "advertencia", "mantener_cierre_operativo", "Cierre operativo conservado con deuda documental visible."
     if controlled:
         return "advertencia", "preparar_cierre_tecnico_provisional", "Operativo con advertencias controladas y cierre tecnico provisional preparado."
     if run_report.get("resultado") == "advertencia":
@@ -120,9 +125,18 @@ def build_report(
     latest_decision = first_bullet_after(current, "Ultima decision operativa:") or board.get("state", {}).get("ultima_decision_operativa", "")
     open_expedientes = bullets_after(project, "## Expedientes abiertos") or board.get("state", {}).get("expedientes_abiertos", [])
 
-    resultado, recomendacion, headline = executive_result(run, risk)
+    closure_registered = (root / AUT_CLOSE_DECISION).exists()
+    resultado, recomendacion, headline = executive_result(run, risk, closure_registered)
     risk_summary = risk.get("summary", {})
     run_steps = run.get("steps", [])
+
+    next_actions = [
+        "Decidir o mantener cierre de AUT-001.",
+        "Mantener advertencias controladas visibles en reportes.",
+        "Mantener transformacion_permitida en false hasta decision explicita.",
+    ]
+    if closure_registered:
+        next_actions[0] = "Mantener cierre operativo de AUT-001 con deuda documental visible."
 
     return {
         "report_id": "DO-LAB-SUMMARY-" + dt.datetime.now().strftime("%Y%m%d-%H%M%S"),
@@ -161,11 +175,7 @@ def build_report(
             "board": board.get("report_id"),
             "continuity": continuity.get("report_id"),
         },
-        "next_actions": [
-            "Decidir cierre tecnico provisional de AUT-001.",
-            "Mantener advertencias controladas visibles en reportes.",
-            "Mantener transformacion_permitida en false hasta decision explicita.",
-        ],
+        "next_actions": next_actions,
     }
 
 

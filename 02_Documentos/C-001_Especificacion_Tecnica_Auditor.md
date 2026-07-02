@@ -49,7 +49,7 @@ Esta especificacion no cubre:
 - modificacion automatica de Canon
 - promocion automatica de hipotesis
 - cierre automatico de expedientes
-- importacion de Registro Historico como autoridad vigente
+- no autoriza importacion de Registro Historico como autoridad vigente
 - resolucion formal de `R4`
 - construccion formal de `Gamma`
 - transformaciones no triviales

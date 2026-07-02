@@ -15,6 +15,7 @@ REPORT_INPUTS = {
     "minimo": "06_Automatizacion/reportes/do_check_min_repo.json",
     "medio": "06_Automatizacion/reportes/do_check_med_repo.json",
 }
+AUT_CLOSE_DECISION = "03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md"
 
 DOCUMENTARY_KINDS = {
     "referencia_no_materializada",
@@ -321,6 +322,17 @@ def build_report(root: Path) -> dict[str, Any]:
     by_file = dict(Counter(item["file"] for item in classified))
     resultado, recomendacion = result_for(classified)
     active_any = [item for item in classified if item["category"] == "riesgo_activo"]
+    closure_registered = (root / AUT_CLOSE_DECISION).exists()
+    if closure_registered and not active_any and recomendacion in {"preparar_cierre_tecnico_provisional", "normalizar_deuda_documental"}:
+        recomendacion = "mantener_cierre_operativo"
+    next_actions = [
+        "Decidir o mantener cierre de AUT-001 si no quedan riesgos activos reales.",
+        "Mantener advertencias heredadas como deuda historica sin transformar.",
+        "Mantener advertencias controladas visibles; no borrarlas del reporte.",
+        "Normalizar referencias o estatus faltantes solo mediante decision posterior.",
+    ]
+    if closure_registered and not active_any:
+        next_actions[0] = "Mantener cierre operativo de AUT-001 con deuda documental visible."
 
     return {
         "report_id": "DO-LAB-RISK-" + dt.datetime.now().strftime("%Y%m%d-%H%M%S"),
@@ -340,12 +352,7 @@ def build_report(root: Path) -> dict[str, Any]:
             "top_files": dict(sorted(by_file.items(), key=lambda item: item[1], reverse=True)[:15]),
             "risk_blocks_closure": any(item.get("risk_blocks_closure") for item in active_any),
         },
-        "next_actions": [
-            "Decidir cierre tecnico provisional si no quedan riesgos activos reales.",
-            "Mantener advertencias heredadas como deuda historica sin transformar.",
-            "Mantener advertencias controladas visibles; no borrarlas del reporte.",
-            "Normalizar referencias o estatus faltantes solo mediante decision posterior.",
-        ],
+        "next_actions": next_actions,
         "findings": classified,
     }
 

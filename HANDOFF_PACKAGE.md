@@ -1,10 +1,18 @@
 # HANDOFF_PACKAGE - Laboratorio Concordante
 
-Estatus: paquete de handoff listo.
+Estatus: paquete de handoff inactivo hasta nuevo aviso.
 
-Decisiones recientes incluidas: `D-2026-07-02-020`, `D-2026-07-02-021`, `D-2026-07-02-022`, `D-2026-07-02-023` y `D-2026-07-02-024`.
+Decisiones recientes incluidas: `D-2026-07-02-020` a `D-2026-07-02-028`.
 
 Fecha: 2026-07-02.
+
+## Aviso de desactivacion
+
+Este paquete queda congelado como registro historico operativo.
+
+No debe usarse como checklist activo, paquete de entrega ni punto de entrada hasta nueva decision explicita.
+
+Mientras este inactivo, usar `CURRENT_STATE.md`, `05_Estado_Proyecto/ESTADO_ACTUAL.md`, `README.md` e `INDEX.md`.
 
 ## Proposito
 
@@ -31,25 +39,38 @@ El paquete no cambia autoridad: Canon, estado, documentos oficiales, decisiones 
 ## Archivos tecnicos del Auditor
 
 1. `02_Documentos/C-001_Especificacion_Tecnica_Auditor.md`.
-2. `03_Expedientes/AUD-001_Contrato_Reportes.md`.
-3. `03_Expedientes/AUD-001_Simulaciones.md`.
-4. `03_Expedientes/AUD-001_Validaciones.md`.
-5. `03_Expedientes/AUD-001_Casos_Prueba_Auditor.md`.
-6. `03_Expedientes/AUD-001_Invariantes_R4-AUD.md`.
-7. `03_Expedientes/AUD-001_R4-CANDIDATA.md`.
-8. `03_Expedientes/AUD-001_Auditoria_R4-CANDIDATA.md`.
-9. `03_Expedientes/AUD-001_Decision_Estatus_R4-CANDIDATA.md`.
-10. `03_Expedientes/AUD-001_Decision_Capa_Reportes_R4-CANDIDATA.md`.
-11. `03_Expedientes/AUD-001_Sintesis_Cobertura_No_Automata_R4-CANDIDATA.md`.
-12. `03_Expedientes/AUD-001_Decision_Auditoria_Post-No-Automata_R4-CANDIDATA.md`.
-13. `03_Expedientes/AUD-001_Auditoria_Post-No-Automata_R4-CANDIDATA.md`.
-14. `03_Expedientes/AUD-001_Decision_Cierre_Ronda_No_Automata_R4-CANDIDATA.md`.
-15. `03_Expedientes/AUD-001_Decision_Siguiente_Fase_R4-CANDIDATA.md`.
-16. `03_Expedientes/AUD-001_Criterios_Promocion_R4-CANDIDATA.md`.
-17. `03_Expedientes/AUD-001_Auditoria_Criterios_Promocion_R4-CANDIDATA.md`.
-18. `03_Expedientes/AUD-001_Decision_Estatus_Criterios_Promocion_R4-CANDIDATA.md`.
-19. `03_Expedientes/AUD-001_Decision_Ruta_Siguiente_R4-CANDIDATA.md`.
-20. `03_Expedientes/AUD-001_Decision_Pausa_Operativa_R4-CANDIDATA.md`.
+2. `02_Documentos/C-002_RFC_Operativo_Auditor_v0.md`.
+3. `03_Expedientes/AUD-001_Contrato_Reportes.md`.
+4. `03_Expedientes/AUD-001_Simulaciones.md`.
+5. `03_Expedientes/AUD-001_Validaciones.md`.
+6. `03_Expedientes/AUD-001_Casos_Prueba_Auditor.md`.
+7. `03_Expedientes/AUD-001_Invariantes_R4-AUD.md`.
+8. `03_Expedientes/AUD-001_R4-CANDIDATA.md`.
+9. `03_Expedientes/AUD-001_Auditoria_R4-CANDIDATA.md`.
+10. `03_Expedientes/AUD-001_Decision_Estatus_R4-CANDIDATA.md`.
+11. `03_Expedientes/AUD-001_Decision_Capa_Reportes_R4-CANDIDATA.md`.
+12. `03_Expedientes/AUD-001_Sintesis_Cobertura_No_Automata_R4-CANDIDATA.md`.
+13. `03_Expedientes/AUD-001_Decision_Auditoria_Post-No-Automata_R4-CANDIDATA.md`.
+14. `03_Expedientes/AUD-001_Auditoria_Post-No-Automata_R4-CANDIDATA.md`.
+15. `03_Expedientes/AUD-001_Decision_Cierre_Ronda_No_Automata_R4-CANDIDATA.md`.
+16. `03_Expedientes/AUD-001_Decision_Siguiente_Fase_R4-CANDIDATA.md`.
+17. `03_Expedientes/AUD-001_Criterios_Promocion_R4-CANDIDATA.md`.
+18. `03_Expedientes/AUD-001_Auditoria_Criterios_Promocion_R4-CANDIDATA.md`.
+19. `03_Expedientes/AUD-001_Decision_Estatus_Criterios_Promocion_R4-CANDIDATA.md`.
+20. `03_Expedientes/AUD-001_Decision_Ruta_Siguiente_R4-CANDIDATA.md`.
+21. `03_Expedientes/AUD-001_Decision_Pausa_Operativa_R4-CANDIDATA.md`.
+22. `03_Expedientes/AUD-001_Decision_Reactivacion_REPORT_LAYER.md`.
+23. `03_Expedientes/AUD-001_REPORT_LAYER_Candidata.md`.
+24. `03_Expedientes/AUD-001_Auditoria_REPORT_LAYER_Candidata.md`.
+25. `03_Expedientes/AUD-001_Decision_Estatus_REPORT_LAYER_Candidata.md`.
+26. `03_Expedientes/AUD-001_Criterios_Completitud_Auditor.md`.
+27. `03_Expedientes/AUD-001_Sintesis_Completitud_Auditor_v0.md`.
+28. `03_Expedientes/AUD-001_Auditoria_Completitud_Auditor_v0.md`.
+29. `03_Expedientes/AUD-001_Decision_Estatus_Auditor_v0.md`.
+30. `03_Expedientes/AUD-001_SPEC-RFC-AUDITOR-V0_Candidata.md`.
+31. `03_Expedientes/AUD-001_Validaciones_SPEC-RFC-AUDITOR-V0.md`.
+32. `03_Expedientes/AUD-001_Auditoria_SPEC-RFC-AUDITOR-V0_NIVEL-C.md`.
+33. `03_Expedientes/AUD-001_Decision_Promocion_SPEC-RFC-AUDITOR-V0.md`.
 
 ## Archivos de gobierno operativo
 
@@ -165,11 +186,11 @@ El paquete no cambia autoridad: Canon, estado, documentos oficiales, decisiones 
 
 ## Estado de cobertura
 
-- `AUT-001` queda en cierre tecnico provisional; `HXI-001` queda en pausa operativa sin admision de `H-Xi`; `PSI-001` queda como frente conceptual activo con matriz de patrones no clinicos aceptada.
+- `AUD-001` queda completo en version documental/operativa v0 y produjo `C-002`; `AUT-001` queda en cierre tecnico provisional; `HXI-001` queda en pausa operativa sin admision de `H-Xi`; `PSI-001` queda abierto con matriz de patrones no clinicos aceptada.
 - `RH-001` procesa y cierra la transcripcion historica `ChatGPT share 001`; conserva deudas condicionadas sin autorizar cambios de nivel superior.
 - `RH-002` procesa y cierra el lote historico de Descargas.
 - `REC-001` reconcilia inicialmente Canon/baselines y conserva deudas refinadas sin autorizar canonizacion, importacion o apertura de psicologia.
-- `AUD-001` tiene contratos de reportes validados provisionalmente hasta `VAL-016`.
+- `AUD-001` tiene contratos, matriz basal y proyeccion RFC validados provisionalmente hasta `VAL-029`.
 - `R4-CANDIDATA` tiene primera prueba no automata en `AUD-SIM-017` y `VAL-017`.
 - `R4-CANDIDATA` tiene segunda prueba no automata en `AUD-SIM-018` y `VAL-018`.
 - `R4-CANDIDATA` tiene tercera prueba no automata en `AUD-SIM-019` y `VAL-019`.
@@ -179,7 +200,9 @@ El paquete no cambia autoridad: Canon, estado, documentos oficiales, decisiones 
 - La siguiente fase de `R4-CANDIDATA` queda definida como criterios de promocion y frontera formal.
 - Los criterios de promocion estan redactados, auditados y aceptados como compuerta provisional.
 - Ruta siguiente decidida: `R4-CANDIDATA` se mantiene como hipotesis operativa robustecida.
-- `AUD-001` queda en pausa operativa; no cerrado.
+- `AUD-001` fue reactivado de forma acotada para `REPORT_LAYER`; no cerrado.
+- `REPORT-LAYER-CAND-001` queda aceptada como candidata provisional de expediente, con alcance local y puente conceptual a `DO_CHECK_REPORT`.
+- `C-002_RFC_Operativo_Auditor_v0.md` queda como documento oficial de Nivel C.
 - `B-001.5` queda clasificado como expediente congelado.
 - `P-PI.0` / `P-PI.1` quedan abiertos en pausa operativa; no se cierran, congelan ni absorben.
 - No quedan deudas activas tipo `Validar X_REPORT` en los archivos vigentes.
@@ -192,7 +215,7 @@ El paquete no cambia autoridad: Canon, estado, documentos oficiales, decisiones 
 ## Siguiente objetivo
 
 ```text
-Definir una compuerta de frontera para psicopatologia conceptual no clinica dentro de `PSI-001`.
+Elegir siguiente ruta posterior a C-002: implementacion no mutante conforme al RFC, formalizacion de R4/Gamma, promocion futura de REPORT_LAYER o cierre/pausa operativa de AUD-001.
 ```
 
 ## Fuera del paquete
@@ -255,6 +278,11 @@ Definir una compuerta de frontera para psicopatologia conceptual no clinica dent
 - [x] `PSI-MAP-CONT-001` creado, auditado y aceptado como mapa conceptual no clinico.
 - [x] `CAS-PSI-001` a `CAS-PSI-006` creados, auditados y aceptados como serie conceptual provisional no clinica dentro de `PSI-001`.
 - [x] `PSI-MAT-PAT-001` creado, auditado y aceptado como matriz provisional no clinica dentro de `PSI-001`.
+- [x] `AUD-001` reactivado de forma acotada para `REPORT_LAYER`.
+- [x] `REPORT-LAYER-CAND-001` creado, auditado y aceptado como candidata provisional de expediente.
+- [x] Auditor completo en version documental/operativa v0.
+- [x] `SPEC-RFC-AUDITOR-V0` creado, validado, auditado y promovido.
+- [x] `C-002_RFC_Operativo_Auditor_v0.md` creado como documento oficial de Nivel C.
 - [x] Lote historico de Descargas materializado y procesado por `RH-002`.
 - [x] `H-Xi` materializada como hipotesis externa no canonizada desde `SRC-020`.
 - [x] Reconciliacion inicial Canon/baselines registrada y cerrada en `REC-001`.

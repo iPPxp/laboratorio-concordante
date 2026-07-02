@@ -1367,3 +1367,390 @@ No cubre todavia:
 
 - Redactar sintesis de cobertura no automata de `R4-CANDIDATA` y decidir si procede nueva auditoria.
 - Si se busca promocion formal, ampliar pruebas o justificar cierre de la ronda no automata.
+
+## VAL-022 - Validacion de REPORT_LAYER-CAND-001 contra AUD-SIM-022
+
+Estatus: validado provisionalmente.
+
+Objeto evaluado: `REPORT-LAYER-CAND-001`.
+
+Simulacion usada: `AUD-SIM-022`.
+
+## Pregunta
+
+`REPORT-LAYER-CAND-001` puede representar su origen interno dentro del Laboratorio sin depender de los nombres locales de reportes de `AUD-001`?
+
+Respuesta: si, provisionalmente.
+
+## Checklist
+
+| Criterio | Resultado | Evidencia |
+| --- | --- | --- |
+| Usa objeto no automata | pasa | `EXTRACCION-REPORT-LAYER-001` es mapa de procedencia |
+| Usa `REPORT_ITEM` abstracto | pasa | `RL22-MAP`, `RL22-CHECK`, `RL22-TAU`, `RL22-DECISION` |
+| No usa nombres locales como base | pasa | no depende de `MP_FAIL_REPORT`, `CR_FAIL_REPORT`, `D_REPORT` o `TR_*` |
+| Identifica fuente contractual | pasa | `AUD-001_Contrato_Reportes.md` |
+| Aplica filtros normativos | pasa | `M-000` y `M-001` |
+| Aplica filtro tecnico oficial | pasa | `C-001` |
+| Aplica frontera de permiso | pasa | `DO-CHECK`, `PERMISO-ACT-001`, `MODO-AUD-001` |
+| Conserva salida no transformativa | pasa | `transformacion_permitida = false` |
+| No promueve `REPORT_LAYER` | pasa | decision valida solo como candidata provisional |
+| Deja deuda de alcance | pasa | local, Nivel C o expediente propio queda abierto |
+
+## Trazo validado
+
+```text
+EXTRACCION-REPORT-LAYER-001
+-> REPORT_ITEM(mapeo de fuentes internas)
+-> REPORT_ITEM(calculo de regla local de extraccion)
+-> REPORT_ITEM(terminacion exitosa de extraccion)
+-> REPORT_ITEM(decision de aceptar origen para candidata provisional)
+-> transformacion_permitida = false
+```
+
+## Resultado
+
+`REPORT-LAYER-CAND-001` pasa una primera validacion directa como capa abstracta.
+
+La validacion confirma que la capa se saca del Laboratorio por proyeccion desde contratos, reglas y validaciones ya registradas, no por importacion externa ni por promocion de nombres locales.
+
+## Limite de la validacion
+
+Esta validacion no decide alcance superior.
+
+No cubre todavia:
+
+- serializacion ejecutable;
+- compatibilidad con reportes producidos por herramientas futuras;
+- promocion a Nivel C;
+- relacion con Regla R4 formal;
+- relacion con `Gamma`.
+
+## Deudas derivadas
+
+- Decidir si `REPORT_LAYER` permanece local en `AUD-001`, prepara una ruta de Nivel C o requiere expediente propio.
+
+## VAL-023 - Validacion de control positivo AUD-T00 contra AUD-SIM-023
+
+Estatus: validado provisionalmente.
+
+Objeto evaluado: cierre sin hallazgos bloqueantes del Auditor.
+
+Simulacion usada: `AUD-SIM-023`.
+
+## Pregunta
+
+El Auditor puede aprobar un automata limpio sin ejecutar transformaciones ni inventar deuda?
+
+Respuesta: si, provisionalmente.
+
+## Checklist
+
+| Criterio | Resultado | Evidencia |
+| --- | --- | --- |
+| `Mp` acepta la estructura | pasa | todos los estados, simbolos y transiciones son internos a sus conjuntos |
+| `Cr` no detecta contradiccion | pasa | `delta` es total y determinista sobre `Q x Sigma` |
+| `tau` cierra con exito | pasa | conjuntos finitos y recorrido terminado |
+| `D` puede aprobar | pasa | no hay hallazgos bloqueantes |
+| `D = aprobar` no transforma | pasa | `transformacion_permitida = false` |
+| No se inventa deuda | pasa | no hay dependencia ausente en la entrada minima |
+
+## Trazo validado
+
+```text
+Mp ok
+-> Cr sin_hallazgo_bloqueante
+-> tau exito
+-> D aprobar
+-> Tr_ejecucion no ejecutada
+```
+
+## Resultado
+
+`AUD-T00` queda validado como control positivo.
+
+El Auditor no queda definido solo por fallas; tambien reconoce cierre limpio sin transformacion.
+
+## Limite de la validacion
+
+Esta validacion no sustituye pruebas ejecutables sobre parser real ni formatos de archivo.
+
+## VAL-024 - Validacion de transformacion sin decision contra AUD-SIM-024
+
+Estatus: validado provisionalmente.
+
+Objeto evaluado: `R4-AUD` ante `Tr_ejecucion` sin decision fundada.
+
+Simulacion usada: `AUD-SIM-024`.
+
+## Pregunta
+
+El Auditor bloquea una transformacion que intenta reparar una falla de `Mp` sin `D_REPORT` previo?
+
+Respuesta: si, provisionalmente.
+
+## Checklist
+
+| Criterio | Resultado | Evidencia |
+| --- | --- | --- |
+| Detecta falla de `Mp` | pasa | `q1` aparece fuera de `Q` |
+| Impide `Cr` sustantivo | pasa | no hay estructura normalizada valida |
+| Cierra temprano con `tau` | pasa | `bloqueo_temprano` |
+| Restringe `D` | pasa | solo bloquear o escalar |
+| Prohibe `Tr_ejecucion` | pasa | falta decision fundada |
+| Rechaza reparacion implicita | pasa | no anade `q1` automaticamente |
+
+## Trazo validado
+
+```text
+Mp falla
+-> MP_FAIL_REPORT
+-> tau bloqueo_temprano
+-> D bloquear/escalar
+-> Tr_ejecucion prohibida
+```
+
+Intento invalido:
+
+```text
+Tr_ejecucion sin D_REPORT
+-> fallo por autorizacion ausente
+```
+
+## Resultado
+
+`AUD-T05` queda validado como caso directo de violacion de `R4-AUD`.
+
+La validacion confirma que una reparacion plausible no es reparacion permitida.
+
+## Limite de la validacion
+
+No materializa una escritura real; valida la frontera contractual y teorica.
+
+## VAL-025 - Validacion de Gamma no materializada contra AUD-SIM-025
+
+Estatus: validado provisionalmente.
+
+Objeto evaluado: uso formal indebido de `Gamma`.
+
+Simulacion usada: `AUD-SIM-025`.
+
+## Pregunta
+
+El Auditor bloquea una afirmacion que usa `Gamma` como teorema sin definicion local?
+
+Respuesta: si, provisionalmente.
+
+## Checklist
+
+| Criterio | Resultado | Evidencia |
+| --- | --- | --- |
+| Mapea la afirmacion | pasa | texto, estatus y fuente ausente son legibles |
+| Detecta dependencia faltante | pasa | no existe construccion local de `Gamma` |
+| Rechaza estatus de teorema | pasa | la afirmacion baja a hipotesis/deuda |
+| Bloquea decision positiva | pasa | no puede aprobar fundamento formal |
+| Prohibe transformacion | pasa | `transformacion_permitida = false` |
+| No niega ruta futura | pasa | `Gamma` queda como deuda o problema abierto |
+
+## Trazo validado
+
+```text
+Gamma invocada como teorema
+-> dependencia_no_registrada
+-> tau bloqueo_temprano/escalamiento
+-> D bloquear/escalar
+-> Tr_ejecucion prohibida
+```
+
+## Resultado
+
+`AUD-T06` queda validado.
+
+El Auditor puede nombrar una hipotesis futura sin promoverla a resultado formal.
+
+## Limite de la validacion
+
+No evalua una definicion futura de `Gamma`; solo cubre su ausencia local actual dentro del expediente.
+
+## VAL-026 - Validacion de separacion de niveles contra AUD-SIM-026
+
+Estatus: validado provisionalmente.
+
+Objeto evaluado: modificacion de Canon desde expediente.
+
+Simulacion usada: `AUD-SIM-026`.
+
+## Pregunta
+
+El Auditor bloquea una propuesta de modificar Canon desde `AUD-001` sin decision explicita?
+
+Respuesta: si, provisionalmente.
+
+## Checklist
+
+| Criterio | Resultado | Evidencia |
+| --- | --- | --- |
+| Mapea la accion propuesta | pasa | destino canonico, cambio y fundamento son legibles |
+| Detecta frontera de nivel | pasa | expediente no modifica Canon por si mismo |
+| Conserva estatus de `R4-AUD` | pasa | definicion operativa de expediente |
+| Exige decision de nivel | pasa | decision ausente bloquea o escala |
+| Prohibe `Tr_ejecucion` | pasa | no hay permiso operativo |
+| No modifica `M-000` | pasa | salida esperada no mutante |
+
+## Trazo validado
+
+```text
+EXP-CANON-MUTATION
+-> Cr falla por promocion indebida
+-> tau bloqueo_temprano
+-> D bloquear/escalar
+-> Tr_ejecucion prohibida
+```
+
+## Resultado
+
+`AUD-T08` queda validado.
+
+La validacion preserva la separacion entre evidencia de expediente y cambio canonico.
+
+## Limite de la validacion
+
+No decide una ruta futura de promocion; solo bloquea la promocion implicita.
+
+## VAL-027 - Validacion de termino nuevo sin estatus contra AUD-SIM-027
+
+Estatus: validado provisionalmente.
+
+Objeto evaluado: higiene terminologica minima.
+
+Simulacion usada: `AUD-SIM-027`.
+
+## Pregunta
+
+El Auditor detecta un termino nuevo sin definicion ni estatus antes de permitir que funcione como fundamento?
+
+Respuesta: si, provisionalmente.
+
+## Checklist
+
+| Criterio | Resultado | Evidencia |
+| --- | --- | --- |
+| Identifica el termino nuevo | pasa | `operador concordante` |
+| Detecta definicion ausente | pasa | no hay ficha ni seccion local |
+| Detecta estatus ausente | pasa | no esta marcado como definicion, hipotesis o problema abierto |
+| Registra deuda conceptual | pasa | `tau = interrupcion_por_deuda` |
+| Restringe `D` | pasa | continuar sin transformar, bloquear o escalar |
+| Impide uso como fundamento | pasa | no puede aprobar reduccion apoyada en el termino |
+
+## Trazo validado
+
+```text
+termino nuevo sin estatus
+-> deuda_conceptual
+-> tau interrupcion_por_deuda
+-> D no transformativa
+-> Tr_ejecucion prohibida
+```
+
+## Resultado
+
+`AUD-T09` queda validado.
+
+El Auditor exige clasificacion antes de usar vocabulario nuevo como fundamento.
+
+## Limite de la validacion
+
+No define el termino. Solo decide que no puede operar sin definicion o estatus.
+
+## VAL-028 - Validacion de compatibilidad REPORT_LAYER / DO_CHECK_REPORT contra AUD-SIM-028
+
+Estatus: validado provisionalmente.
+
+Objeto evaluado: `COMPAT-RL-DO-CHECK-001`.
+
+Simulacion usada: `AUD-SIM-028`.
+
+## Pregunta
+
+La compatibilidad minima permite leer `DO_CHECK_REPORT` desde `REPORT_LAYER` sin absorberlo ni aumentar permisos?
+
+Respuesta: si, provisionalmente.
+
+## Checklist
+
+| Criterio | Resultado | Evidencia |
+| --- | --- | --- |
+| Usa lectura conceptual | pasa | `DO_CHECK_REPORT` entra como evidencia documental |
+| Proyecta a `REPORT_ITEM` | pasa | `operador_abstracto = calculo` |
+| Conserva no transformacion | pasa | `transformacion_permitida = false` |
+| No emite decision | pasa | `decision_emitida = no_aplica` |
+| No confunde recomendacion con decision | pasa | `aprobar_lectura` no equivale a `aprobar` |
+| No absorbe contrato | pasa | no modifica `AUD-001_Contrato_Reportes.md`, `C-001` ni Canon |
+
+## Trazo validado
+
+```text
+DO_CHECK_REPORT
+-> lectura como evidencia documental
+-> REPORT_ITEM compatible
+-> decision_emitida = no_aplica
+-> transformacion_permitida = false
+```
+
+## Resultado
+
+`COMPAT-RL-DO-CHECK-001` queda validado como puente conceptual suficiente para el cierre v0.
+
+La integracion real con herramientas futuras queda fuera del cierre documental/operativo del Auditor.
+
+## Limite de la validacion
+
+No convierte `DO_CHECK_REPORT` en contrato del Auditor ni promueve `REPORT_LAYER` a Nivel C.
+
+## VAL-029 - Validacion de proyeccion RFC contra AUD-SIM-029
+
+Estatus: validado provisionalmente.
+
+Objeto evaluado: `SPEC-RFC-AUDITOR-V0`.
+
+Simulacion usada: `AUD-SIM-029`.
+
+## Pregunta
+
+La proyeccion de completitud v0 a documento tipo RFC cumple las compuertas locales de proceso?
+
+Respuesta: si, provisionalmente.
+
+## Checklist
+
+| Criterio | Resultado | Evidencia |
+| --- | --- | --- |
+| Parte de completitud v0 | pasa | `D-AUD-V0-001` |
+| Usa candidata de expediente | pasa | `AUD-001_SPEC-RFC-AUDITOR-V0_Candidata.md` |
+| Exige validacion | pasa | `AUD-001_Validaciones_SPEC-RFC-AUDITOR-V0.md` |
+| Exige auditoria de Nivel C | pasa | `AUD-001_Auditoria_SPEC-RFC-AUDITOR-V0_NIVEL-C.md` |
+| Exige decision de promocion | pasa | `AUD-001_Decision_Promocion_SPEC-RFC-AUDITOR-V0.md` |
+| Declara destino oficial | pasa | `02_Documentos/C-002_RFC_Operativo_Auditor_v0.md` |
+| Conserva limites | pasa | R4 formal, `Gamma`, herramienta ejecutable y `REPORT_LAYER` Nivel C fuera de alcance |
+| No modifica Canon | pasa | destino en `02_Documentos`, no en `01_Canon` |
+
+## Trazo validado
+
+```text
+completitud v0
+-> candidata tipo RFC
+-> validacion
+-> auditoria Nivel C
+-> decision de promocion
+-> C-002 oficial
+```
+
+## Resultado
+
+`SPEC-RFC-AUDITOR-V0` queda validada como ruta de proceso para producir un documento tipo RFC.
+
+La validacion no concede autoridad por el nombre RFC; la autoridad viene de Nivel C, auditoria y decision registrada.
+
+## Limite de la validacion
+
+No valida implementacion ejecutable ni conformidad de herramientas futuras.

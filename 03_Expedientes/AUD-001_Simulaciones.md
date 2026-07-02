@@ -2591,3 +2591,689 @@ No promueve `R4-CANDIDATA` a Regla R4 formal ni a documento oficial.
 ## Deudas nuevas
 
 - Redactar sintesis de cobertura no automata de `R4-CANDIDATA` y decidir si procede nueva auditoria.
+
+## AUD-SIM-022 - REPORT_LAYER con mapa interno de extraccion
+
+Estatus: simulacion teorica.
+
+Objeto evaluado: `REPORT-LAYER-CAND-001`.
+
+Relacion con matriz base: primera prueba directa de `REPORT_LAYER` como capa abstracta no reducida a los nombres concretos de reportes locales de `AUD-001`.
+
+## Pregunta
+
+`REPORT-LAYER-CAND-001` puede representar de donde se extrae la capa abstracta dentro del Laboratorio sin convertir los nombres locales de reportes en autoridad general?
+
+Respuesta esperada: si. La capa debe extraerse desde fuentes internas vigentes, usando campos y funciones abstractas, sin promover `OPERATOR_REPORT` ni los reportes especializados a Canon.
+
+## Objeto no automata
+
+```text
+EXTRACCION-REPORT-LAYER-001 = {
+  tipo: mapa_extraccion,
+  objeto: REPORT-LAYER-CAND-001,
+  fuente_contractual: AUD-001_Contrato_Reportes.md,
+  filtros_normativos: [M-000, M-001],
+  filtro_tecnico: C-001_Especificacion_Tecnica_Auditor.md,
+  puente_permiso: [DO-001_DO-CHECK-001.md, DO-001_Regla_Permiso_Actualizacion.md, DO-001_Decision_Modo_Operativo_Auditor.md],
+  pruebas_no_automata: [VAL-017, VAL-018, VAL-019, VAL-020, VAL-021],
+  accion_propuesta: usar REPORT_LAYER como candidata provisional dentro de AUD-001,
+  promocion_solicitada: ninguna
+}
+```
+
+El objeto no es automata ni tabla de transiciones. Es un mapa de procedencia conceptual y documental.
+
+## REPORT_LAYER esperado
+
+La simulacion usa `REPORT_ITEM` con operadores abstractos, no los nombres locales `MP_FAIL_REPORT`, `CR_FAIL_REPORT`, `TAU_REPORT`, `D_REPORT`, `TR_EXECUTION_REPORT` o `REVERSAL_REPORT`.
+
+```text
+REPORT_ITEM RL22-MAP = {
+  report_id: RL22-MAP,
+  objeto: EXTRACCION-REPORT-LAYER-001,
+  operador_abstracto: mapeo,
+  clase_reporte: sin_hallazgo_bloqueante,
+  resultado: ok,
+  tipo_hallazgo: sin_hallazgo_bloqueante,
+  ubicacion: fuentes_internas,
+  descripcion: fuentes internas identificadas para extraer REPORT_LAYER,
+  evidencia: [M-000, M-001, C-001, AUD-001_Contrato_Reportes, AUD-001_Validaciones, DO-001],
+  estatus_afirmacion: expediente,
+  decisiones_permitidas: [aprobar, continuar_sin_transformar, escalar],
+  decision_emitida: no_aplica,
+  transformacion_permitida: false,
+  terminacion_requerida: exito,
+  terminacion_observada: no_aplica,
+  dependencias: [AUD-001_Origen_REPORT_LAYER],
+  deudas_generadas: []
+}
+
+REPORT_ITEM RL22-CHECK = {
+  report_id: RL22-CHECK,
+  objeto: EXTRACCION-REPORT-LAYER-001,
+  operador_abstracto: calculo,
+  clase_reporte: sin_hallazgo_bloqueante,
+  resultado: ok,
+  tipo_hallazgo: sin_hallazgo_bloqueante,
+  ubicacion: regla_local_de_extraccion,
+  descripcion: cada elemento abstracto aparece como campo, regla o invariante en fuente local vigente,
+  evidencia: "campo/regla/invariante + funcion procedural + independencia de dominio automata",
+  estatus_afirmacion: expediente,
+  decisiones_permitidas: [aprobar, continuar_sin_transformar, escalar],
+  decision_emitida: no_aplica,
+  transformacion_permitida: false,
+  terminacion_requerida: exito,
+  terminacion_observada: no_aplica,
+  dependencias: [AUD-001_Origen_REPORT_LAYER, REPORT-LAYER-CAND-001],
+  deudas_generadas: []
+}
+
+REPORT_ITEM RL22-TAU = {
+  report_id: RL22-TAU,
+  objeto: EXTRACCION-REPORT-LAYER-001,
+  operador_abstracto: terminacion,
+  clase_reporte: terminacion,
+  resultado: terminado,
+  tipo_hallazgo: sin_hallazgo_bloqueante,
+  ubicacion: extraccion,
+  descripcion: la extraccion termina porque las fuentes internas estan enumeradas y los descartes quedan declarados,
+  evidencia: "superficies 1 a 5 y lista de elementos descartados",
+  estatus_afirmacion: expediente,
+  decisiones_permitidas: [aprobar, continuar_sin_transformar, escalar],
+  decision_emitida: no_aplica,
+  transformacion_permitida: false,
+  terminacion_requerida: exito,
+  terminacion_observada: exito,
+  dependencias: [RL22-MAP, RL22-CHECK],
+  deudas_generadas: []
+}
+
+REPORT_ITEM RL22-DECISION = {
+  report_id: RL22-DECISION,
+  objeto: EXTRACCION-REPORT-LAYER-001,
+  operador_abstracto: decision,
+  clase_reporte: decision,
+  resultado: terminado,
+  tipo_hallazgo: sin_hallazgo_bloqueante,
+  ubicacion: estatus_REPORT_LAYER,
+  descripcion: aceptar el origen interno como suficiente para candidata provisional, sin promocion oficial,
+  evidencia: [RL22-MAP, RL22-CHECK, RL22-TAU],
+  estatus_afirmacion: decision,
+  decisiones_permitidas: [aprobar, continuar_sin_transformar, escalar],
+  decision_emitida: aprobar,
+  transformacion_permitida: false,
+  terminacion_requerida: exito,
+  terminacion_observada: exito,
+  dependencias: [REPORT-LAYER-CAND-001, AUD-001_Origen_REPORT_LAYER],
+  deudas_generadas: [
+    decidir si REPORT_LAYER permanece local o prepara ruta Nivel C
+  ]
+}
+```
+
+## Resultado esperado
+
+`REPORT-LAYER-CAND-001` se satisface si:
+
+- representa la extraccion con `REPORT_ITEM`, no con nombres locales de reportes;
+- identifica fuentes internas vigentes;
+- filtra los contratos concretos por reglas de autoridad, auditoria y permiso;
+- declara que no hay transformacion material;
+- conserva `transformacion_permitida = false`;
+- deja pendiente la decision de alcance local o Nivel C.
+
+`REPORT-LAYER-CAND-001` falla si:
+
+- trata `OPERATOR_REPORT` como Canon;
+- copia nombres locales como obligatorios fuera de `AUD-001`;
+- omite `M-000`, `M-001` o `C-001` como filtros;
+- usa Registro Historico como fuente directa;
+- usa `R4` formal o `Gamma` como fuente ya disponible;
+- convierte la validacion en promocion oficial.
+
+## Veredicto teorico
+
+La simulacion confirma provisionalmente que `REPORT_LAYER` se puede extraer del Laboratorio sin depender de automatas ni de nombres locales.
+
+La fuente principal de estructura es `AUD-001_Contrato_Reportes.md`, pero la abstraccion solo queda permitida despues de pasar por `M-000`, `M-001`, `C-001`, las validaciones no automata y la frontera de permiso de `DO-001`.
+
+## Limite de la prueba
+
+Esta prueba valida el origen interno y la independencia de nombres locales.
+
+No decide todavia si `REPORT_LAYER` permanece local, si prepara Nivel C o si requiere serializacion ejecutable.
+
+## Deudas nuevas
+
+- Decidir alcance de `REPORT_LAYER`: local de `AUD-001`, candidata a Nivel C o expediente propio.
+
+## AUD-SIM-023 - Control positivo sin hallazgos bloqueantes
+
+Estatus: simulacion teorica.
+
+Relacion con matriz base: instancia directa de `AUD-T00`.
+
+## Pregunta
+
+El Auditor puede cerrar un automata completo y determinista sin inventar hallazgos bloqueantes ni ejecutar transformaciones?
+
+Respuesta esperada: si. El control positivo debe terminar con `D = aprobar` y `transformacion_permitida = false`.
+
+## Entrada de simulacion
+
+```text
+A23-OK = (
+  Q = {q0, q1},
+  Sigma = {0, 1},
+  delta = {
+    (q0, 0) -> q0,
+    (q0, 1) -> q1,
+    (q1, 0) -> q0,
+    (q1, 1) -> q1
+  },
+  q0 = q0,
+  F = {q1}
+)
+
+Declaracion: automata determinista completo.
+Estatus de afirmacion: definicion de prueba.
+```
+
+## Trazo de ejecucion esperado
+
+```text
+Entrada: A23-OK
+
+1. Mp(A23-OK)
+   Resultado: ok.
+   Motivo: todos los estados, simbolos y transiciones pertenecen a sus conjuntos declarados.
+
+2. Cr(A23-OK)
+   Resultado: sin_hallazgo_bloqueante.
+   Motivo: `delta` es total sobre Q x Sigma, no contradice determinismo y `q1` es alcanzable.
+
+3. tau
+   Resultado: exito.
+   Motivo: la verificacion termina sobre conjuntos finitos y sin deuda de cierre.
+
+4. D
+   Resultado: aprobar.
+   Motivo: no hay reportes bloqueantes y la terminacion es exitosa.
+
+5. Tr
+   Resultado: no ejecutada.
+   Motivo: `D = aprobar` no autoriza transformacion.
+```
+
+## Resultado de R4-AUD
+
+`R4-AUD` se satisface si el Auditor:
+
+- emite cierre sin hallazgos bloqueantes;
+- no fabrica deuda conceptual donde no existe;
+- distingue `D = aprobar` de `Tr_ejecucion`;
+- conserva `transformacion_permitida = false`;
+- no modifica la representacion de `A23-OK`.
+
+`R4-AUD` se viola si el Auditor:
+
+- inventa una deuda para justificar trabajo posterior;
+- ejecuta una normalizacion no solicitada;
+- trata aprobacion como permiso de transformar;
+- degrada el automata sin evidencia local;
+- omite la evidencia de cierre de `tau`.
+
+## Veredicto teorico
+
+La simulacion confirma que el Auditor no es solo un detector de bloqueos.
+
+Tambien debe reconocer un caso limpio y cerrarlo sin transformar el artefacto.
+
+## Limite de la prueba
+
+Esta prueba cubre un automata pequeno, total y determinista.
+
+No cubre automatas grandes, formatos de archivo reales ni equivalencia entre automatas.
+
+## AUD-SIM-024 - Transformacion ejecutada sin decision fundada
+
+Estatus: simulacion teorica.
+
+Relacion con matriz base: instancia directa de `AUD-T05`.
+
+## Pregunta
+
+Si un artefacto intenta reparar una falla de mapeo mediante `Tr_ejecucion` sin `D_REPORT` previo, debe el Auditor bloquear la cadena?
+
+Respuesta esperada: si. La transformacion sin decision fundada viola `R4-AUD`.
+
+## Entrada de simulacion
+
+```text
+A24-TR-NO-D = (
+  Q = {q0},
+  Sigma = {a},
+  delta = {
+    (q0, a) -> q1
+  },
+  q0 = q0,
+  F = {q1}
+)
+
+Transformacion intentada:
+  anadir q1 a Q y aceptar el cambio.
+
+Decision previa:
+  ausente.
+```
+
+## Falla detectada
+
+`Mp` no puede producir una estructura valida porque `q1` aparece en `delta` y `F`, pero no pertenece a `Q`.
+
+La transformacion intentada elige una reparacion posible sin decision fundada.
+
+## Trazo de ejecucion esperado
+
+```text
+Entrada: A24-TR-NO-D
+
+1. Mp(A24-TR-NO-D)
+   Resultado: falla.
+   Reporte esperado: MP_FAIL_REPORT.
+
+2. Cr
+   Resultado: no autorizado.
+   Motivo: no existe estructura normalizada valida.
+
+3. tau
+   Resultado: bloqueo_temprano.
+
+4. D
+   Resultado: bloquear o escalar.
+   Motivo: la falla de Mp no permite reparacion implicita.
+
+5. Tr_ejecucion
+   Resultado: prohibida.
+   Si se intenta, debe registrarse como fallo por autorizacion ausente.
+```
+
+## Resultado de R4-AUD
+
+`R4-AUD` se satisface si el Auditor:
+
+- registra la falla de `Mp`;
+- bloquea o escala antes de cualquier ejecucion;
+- rechaza la reparacion implicita `anadir q1`;
+- conserva alternativas como no decididas;
+- reporta cualquier intento de `Tr_ejecucion` como fallo.
+
+`R4-AUD` se viola si el Auditor:
+
+- anade `q1` a `Q` sin decision;
+- acepta el cambio como correccion evidente;
+- ejecuta `Cr` como si `Mp` hubiera sido valido;
+- usa una propuesta como decision;
+- registra la ejecucion como valida sin autorizacion.
+
+## Veredicto teorico
+
+La simulacion cierra el caso base de transformacion no fundada.
+
+`R4-AUD` bloquea la cadena porque la reparacion posible no es todavia una reparacion decidida.
+
+## AUD-SIM-025 - Gamma invocada como resultado formal
+
+Estatus: simulacion teorica.
+
+Relacion con matriz base: instancia directa de `AUD-T06`.
+
+## Pregunta
+
+Si un artefacto invoca `Gamma` como resultado formal sin construccion local, debe el Auditor tratarlo como hipotesis promovida indebidamente?
+
+Respuesta esperada: si. `Gamma` permanece como deuda conceptual mientras no exista definicion local vigente.
+
+## Objeto no automata
+
+```text
+GAMMA-FORMAL-CLAIM = {
+  afirmacion: "Gamma(A) produce la generalizacion canonica del automata A",
+  estatus_declarado: teorema,
+  fuente_local: ausente,
+  construccion_local: ausente,
+  accion_propuesta: usar el resultado como fundamento formal
+}
+```
+
+## Lectura esperada por operadores
+
+```text
+Mp(GAMMA-FORMAL-CLAIM) = ok
+  Motivo: la afirmacion, el estatus declarado y la fuente ausente son legibles.
+
+Cr(GAMMA-FORMAL-CLAIM) = falla
+  Motivo: falta definicion local, construccion o dependencia registrada para Gamma.
+
+tau = bloqueo_temprano o escalamiento
+  Motivo: no hay cierre formal responsable.
+
+D = bloquear o escalar
+  Motivo: no puede sostenerse estatus de teorema.
+
+Tr_ejecucion = prohibida
+  Motivo: no existe decision fundada ni permiso operativo.
+```
+
+## Resultado de R4-AUD
+
+`R4-AUD` se satisface si el Auditor:
+
+- detecta `Gamma` como dependencia no materializada;
+- degrada el resultado a hipotesis, deuda conceptual o problema abierto;
+- bloquea la promocion a teorema;
+- conserva el uso futuro de `Gamma` como ruta pendiente;
+- prohibe transformacion basada en esa afirmacion.
+
+`R4-AUD` se viola si el Auditor:
+
+- acepta `Gamma` como construccion formal disponible;
+- usa una mencion previa como prueba;
+- transforma documentos o contratos desde `Gamma`;
+- registra el resultado como Canon;
+- omite la dependencia faltante.
+
+## Veredicto teorico
+
+La simulacion confirma que el Auditor puede nombrar `Gamma` sin validarla.
+
+Nombrarla no la convierte en resultado formal.
+
+## AUD-SIM-026 - Modificacion de Canon desde expediente
+
+Estatus: simulacion teorica.
+
+Relacion con matriz base: instancia directa de `AUD-T08`.
+
+## Pregunta
+
+Si un expediente intenta modificar Canon sin decision explicita de nivel, debe el Auditor bloquear la transformacion?
+
+Respuesta esperada: si. La separacion de niveles impide que `AUD-001` modifique `M-000` por si mismo.
+
+## Objeto no automata
+
+```text
+EXP-CANON-MUTATION = {
+  expediente: AUD-001,
+  accion_propuesta: modificar 01_Canon/M-000_Reglas_Fundamentales.md,
+  cambio_sugerido: incorporar R4-AUD como regla canonica,
+  fundamento_declarado: AUD-001_Casos_Prueba_Auditor.md,
+  decision_de_nivel: ausente,
+  permiso_operativo: ausente
+}
+```
+
+## Lectura esperada por operadores
+
+```text
+Mp(EXP-CANON-MUTATION) = ok
+  Motivo: la accion propuesta y sus fuentes son legibles.
+
+Cr(EXP-CANON-MUTATION) = falla
+  Motivo: detecta promocion indebida desde expediente a Canon.
+
+tau = bloqueo_temprano
+  Motivo: la cadena puede cerrarse sin ejecutar cambio.
+
+D = bloquear o escalar
+  Motivo: falta decision explicita de nivel.
+
+Tr_ejecucion = prohibida
+  Motivo: no existe autorizacion para modificar Canon.
+```
+
+## Resultado de R4-AUD
+
+`R4-AUD` se satisface si el Auditor:
+
+- conserva `R4-AUD` como definicion operativa de expediente;
+- impide que una prueba modifique Canon;
+- exige decision de nivel para cualquier cambio canonico;
+- bloquea o escala la accion propuesta;
+- no modifica `M-000`.
+
+`R4-AUD` se viola si el Auditor:
+
+- edita Canon desde evidencia de expediente;
+- confunde auditoria favorable con promocion canonica;
+- trata `R4-AUD` como R4 formal;
+- registra el cambio como vigente sin decision;
+- usa `Tr_ejecucion` para saltar la frontera de niveles.
+
+## Veredicto teorico
+
+La simulacion confirma la frontera entre validar una regla de expediente y modificar Canon.
+
+El Auditor puede recomendar una ruta de promocion, pero no ejecutar la promocion.
+
+## AUD-SIM-027 - Termino nuevo sin estatus
+
+Estatus: simulacion teorica.
+
+Relacion con matriz base: instancia directa de `AUD-T09`.
+
+## Pregunta
+
+Si un documento introduce un termino nuevo sin definicion ni estatus, debe el Auditor registrarlo como deuda conceptual antes de permitir que opere como fundamento?
+
+Respuesta esperada: si. El termino puede conservarse solo si se etiqueta su estatus.
+
+## Objeto no automata
+
+```text
+TERM-NO-STATUS = {
+  texto: "El operador concordante resuelve la reduccion.",
+  termino_nuevo: operador concordante,
+  definicion: ausente,
+  estatus: ausente,
+  accion_propuesta: usar el termino como fundamento operativo
+}
+```
+
+## Lectura esperada por operadores
+
+```text
+Mp(TERM-NO-STATUS) = ok con deuda semantica
+  Motivo: el texto es legible, pero el termino nuevo no tiene ficha ni estatus.
+
+Cr(TERM-NO-STATUS) = falla como fundamento
+  Motivo: no hay definicion que permita usar el termino en calculo o decision.
+
+tau = interrupcion_por_deuda
+  Motivo: la lectura cierra registrando deuda conceptual.
+
+D = continuar_sin_transformar, bloquear o escalar
+  Motivo: el termino no puede fundar aprobacion ni cambio.
+
+Tr_propuesta = permitida solo como anotacion no ejecutiva
+  Motivo: puede proponer clasificar el termino.
+
+Tr_ejecucion = prohibida
+  Motivo: no hay decision fundada que use el termino.
+```
+
+## Resultado de R4-AUD
+
+`R4-AUD` se satisface si el Auditor:
+
+- identifica el termino nuevo;
+- exige definicion o estatus;
+- registra deuda conceptual;
+- impide usar el termino como fundamento;
+- permite solo anotacion no ejecutiva o escalamiento.
+
+`R4-AUD` se viola si el Auditor:
+
+- usa el termino como si ya estuviera definido;
+- infiere una definicion por contexto;
+- aprueba una reduccion apoyada en el termino;
+- transforma documentos para incorporar el termino sin decision;
+- oculta la deuda conceptual.
+
+## Veredicto teorico
+
+La simulacion confirma que el Auditor tambien cubre higiene terminologica.
+
+Un termino nuevo puede entrar como propuesta, pero no como fundamento vigente sin estatus.
+
+## AUD-SIM-028 - Lectura conceptual de DO_CHECK_REPORT desde REPORT_LAYER
+
+Estatus: simulacion teorica.
+
+Objeto evaluado: `COMPAT-RL-DO-CHECK-001`.
+
+Relacion con matriz base: cierre del alcance de `REPORT_LAYER` frente a `DO_CHECK_REPORT`.
+
+## Pregunta
+
+Puede `REPORT_LAYER` leer un `DO_CHECK_REPORT` sin absorberlo, sin emitir decision propia y sin convertir recomendaciones en transformaciones?
+
+Respuesta esperada: si. La compatibilidad es solo de lectura documental no mutante.
+
+## Objeto no automata
+
+```text
+DO-CHECK-RL-READ-001 = {
+  tipo: reporte_do_check,
+  report_id: DOCHK-OK-001,
+  resultado: sin_hallazgo_bloqueante,
+  recomendacion: aprobar_lectura,
+  cambios_propuestos: [],
+  transformacion_permitida: false
+}
+```
+
+## Proyeccion permitida
+
+```text
+REPORT_ITEM RL28-CHECK = {
+  report_id: DOCHK-OK-001,
+  operador_abstracto: calculo,
+  clase_reporte: sin_hallazgo_bloqueante,
+  resultado: sin_hallazgo_bloqueante,
+  decision_emitida: no_aplica,
+  transformacion_permitida: false,
+  evidencia: DO_CHECK_REPORT como entrada documental
+}
+```
+
+## Resultado esperado
+
+`REPORT_LAYER` puede leer `DO_CHECK_REPORT` si:
+
+- conserva `transformacion_permitida = false`;
+- proyecta `recomendacion` solo como decision permitida o evidencia, no como decision emitida;
+- no trata `aprobar_lectura` como `aprobar`;
+- no convierte `cambios_propuestos` en `Tr_ejecucion`;
+- no mueve `DO_CHECK_REPORT` a `AUD-001_Contrato_Reportes.md`, `C-001` o Canon.
+
+## Resultado de R4-AUD
+
+`R4-AUD` se satisface si el puente:
+
+- permanece conceptual;
+- no aumenta permisos;
+- no integra contratos por implicacion;
+- conserva la frontera entre recomendacion y decision;
+- deja cualquier integracion real para decision futura.
+
+`R4-AUD` se viola si el puente:
+
+- absorbe `DO_CHECK_REPORT` como reporte del Auditor;
+- convierte una recomendacion en decision;
+- habilita transformaciones;
+- trata una lectura correcta como aprobacion material;
+- promueve `REPORT_LAYER` a Nivel C sin decision.
+
+## Veredicto teorico
+
+La simulacion confirma que `COMPAT-RL-DO-CHECK-001` basta para el cierre v0 del alcance de reportes.
+
+No hace falta una integracion real para declarar completo el Auditor documental/operativo v0; esa integracion queda como deuda posterior si se construye herramienta ejecutable.
+
+## AUD-SIM-029 - Proyeccion a documento tipo RFC
+
+Estatus: simulacion teorica.
+
+Objeto evaluado: `SPEC-RFC-AUDITOR-V0`.
+
+Relacion con matriz base: prueba de proceso posterior a la completitud v0.
+
+## Pregunta
+
+La completitud documental/operativa v0 del Auditor puede proyectarse a un documento tipo RFC sin promover R4 formal, `Gamma`, `REPORT_LAYER` Nivel C ni herramienta ejecutable completa?
+
+Respuesta esperada: si. La proyeccion debe producir una especificacion de uso, conformidad y seguridad operativa con limites explicitos.
+
+## Objeto no automata
+
+```text
+RFC-AUDITOR-PROJECTION = {
+  fuente_base: AUD-001_Decision_Estatus_Auditor_v0,
+  criterio: COMP-AUD-V0-CRIT-001,
+  sintesis: SYN-AUD-V0-001,
+  auditoria: AUDIT-AUD-V0-001,
+  destino_candidato: AUD-001_SPEC-RFC-AUDITOR-V0_Candidata.md,
+  destino_oficial_posible: 02_Documentos/C-002_RFC_Operativo_Auditor_v0.md,
+  promocion_solicitada: Nivel C,
+  alcance: documento tipo RFC operativo
+}
+```
+
+## Lectura esperada por operadores
+
+```text
+Mp(RFC-AUDITOR-PROJECTION) = ok
+  Motivo: identifica fuentes, criterio, destino candidato y destino oficial posible.
+
+Cr(RFC-AUDITOR-PROJECTION) = sin_hallazgo_bloqueante
+  Motivo: el contenido permitido por NIVEL-C-001 incluye procedimientos, contratos, interfaces, pruebas y condiciones de ejecucion.
+
+tau = exito
+  Motivo: las compuertas de completitud v0 estan enumeradas y auditadas.
+
+D = continuar_con_cambio_acotado
+  Motivo: se autoriza redactar y promover solo el documento tipo RFC, sin modificar Canon ni cerrar deudas externas.
+
+Tr_ejecucion = permitida solo como escritura documental acotada
+  Motivo: crear el archivo oficial C-002 despues de candidata, validacion, auditoria y decision.
+```
+
+## Condiciones de exito
+
+La proyeccion pasa si:
+
+- existe candidata en `03_Expedientes`;
+- la candidata cita fuentes normativas locales;
+- la candidata conserva limites de v0;
+- existe validacion de contenido;
+- existe auditoria contra `M-000`, `M-001` y `NIVEL-C-001`;
+- existe decision de promocion;
+- el documento oficial queda en `02_Documentos`;
+- el documento oficial no modifica Canon ni resuelve R4/Gamma por redaccion.
+
+La proyeccion falla si:
+
+- salta directamente de expediente a documento oficial sin auditoria;
+- usa la palabra RFC para aumentar autoridad fuera de Nivel C;
+- promueve `REPORT_LAYER` a especificacion oficial;
+- convierte recomendaciones en decisiones;
+- autoriza implementacion ejecutable completa.
+
+## Veredicto teorico
+
+La simulacion permite avanzar hacia un documento tipo RFC si el proceso conserva las compuertas de Nivel C.
+
+El documento resultante puede ser oficial como especificacion tecnica, pero su alcance debe seguir siendo v0 y no mutante por defecto.

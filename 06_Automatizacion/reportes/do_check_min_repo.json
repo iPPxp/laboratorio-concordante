@@ -1,9 +1,11 @@
 {
-  "report_id": "DO-CHECK-MIN-20260701171932",
+  "report_id": "DO-CHECK-MIN-20260702-165850",
   "expediente": "AUT-001",
+  "algoritmo": "DO-CHECK-MIN-001",
   "resultado": "advertencia",
   "recomendacion": "continuar_sin_transformar",
   "transformacion_permitida": false,
+  "scope": "claves",
   "fuentes_minimas": [
     "CURRENT_STATE.md",
     "05_Estado_Proyecto/ESTADO_ACTUAL.md",
@@ -12,230 +14,18 @@
     "03_Expedientes/DO-001_DO-CHECK-001.md"
   ],
   "summary": {
-    "files_checked": 81,
-    "findings": 23
+    "files_checked": 4,
+    "findings": 11
   },
   "targets": [
     {
-      "file": "01_Canon/M-000_Reglas_Fundamentales.md",
-      "estatus": "Canon",
-      "findings": []
-    },
-    {
-      "file": "01_Canon/M-001_Auditoria_Arquitectonica.md",
-      "estatus": "Canon",
-      "findings": []
-    },
-    {
-      "file": "01_Canon/README.md",
-      "estatus": "no_clasificado",
-      "findings": []
-    },
-    {
-      "file": "02_Documentos/00_Naturaleza.md",
-      "estatus": "documento oficial semilla",
-      "findings": []
-    },
-    {
-      "file": "02_Documentos/01_Canon.md",
-      "estatus": "documento oficial semilla",
-      "findings": []
-    },
-    {
-      "file": "02_Documentos/02-0_Perimetro_Epistemologico.md",
-      "estatus": "documento oficial semilla",
-      "findings": []
-    },
-    {
-      "file": "02_Documentos/02_Fundamentos_Matematicos.md",
-      "estatus": "documento oficial semilla",
-      "findings": []
-    },
-    {
-      "file": "02_Documentos/03_Ontologia.md",
-      "estatus": "documento oficial semilla",
-      "findings": []
-    },
-    {
-      "file": "02_Documentos/04_Algebra_Operacional.md",
-      "estatus": "reservado",
-      "findings": []
-    },
-    {
       "file": "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
       "estatus": "documento oficial de Nivel C",
-      "findings": [
-        {
-          "severity": "warning",
-          "kind": "historial_como_autoridad_posible",
-          "file": "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
-          "detail": "- importacion de Registro Historico como autoridad vigente"
-        }
-      ]
-    },
-    {
-      "file": "02_Documentos/README.md",
-      "estatus": "no_clasificado",
       "findings": []
-    },
-    {
-      "file": "03_Expedientes/AUD-001_Auditoria_Criterios_Promocion_R4-CANDIDATA.md",
-      "estatus": "auditoria cerrada de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/AUD-001_Auditoria_Post-No-Automata_R4-CANDIDATA.md",
-      "estatus": "auditoria cerrada de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/AUD-001_Auditoria_R4-CANDIDATA.md",
-      "estatus": "auditoria cerrada de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/AUD-001_Casos_Prueba_Auditor.md",
-      "estatus": "abierto",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/AUD-001_Contrato_Reportes.md",
-      "estatus": "definicion provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/AUD-001_Criterios_Promocion_R4-CANDIDATA.md",
-      "estatus": "criterios provisionales de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/AUD-001_Decision_Auditoria_Post-No-Automata_R4-CANDIDATA.md",
-      "estatus": "decision provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/AUD-001_Decision_Capa_Reportes_R4-CANDIDATA.md",
-      "estatus": "decision provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/AUD-001_Decision_Cierre_Ronda_No_Automata_R4-CANDIDATA.md",
-      "estatus": "decision provisional de expediente",
-      "findings": [
-        {
-          "severity": "warning",
-          "kind": "historial_como_autoridad_posible",
-          "file": "03_Expedientes/AUD-001_Decision_Cierre_Ronda_No_Automata_R4-CANDIDATA.md",
-          "detail": "- `AUD-SIM-019` y `VAL-019`: expediente que usa Registro Historico como autoridad directa."
-        }
-      ]
-    },
-    {
-      "file": "03_Expedientes/AUD-001_Decision_Estatus_Criterios_Promocion_R4-CANDIDATA.md",
-      "estatus": "decision provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/AUD-001_Decision_Estatus_R4-CANDIDATA.md",
-      "estatus": "decision provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/AUD-001_Decision_Pausa_Operativa_R4-CANDIDATA.md",
-      "estatus": "decision provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/AUD-001_Decision_Ruta_Siguiente_R4-CANDIDATA.md",
-      "estatus": "decision provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/AUD-001_Decision_Siguiente_Fase_R4-CANDIDATA.md",
-      "estatus": "decision provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/AUD-001_Invariantes_R4-AUD.md",
-      "estatus": "sintesis provisional de expediente",
-      "findings": [
-        {
-          "severity": "warning",
-          "kind": "historial_como_autoridad_posible",
-          "file": "03_Expedientes/AUD-001_Invariantes_R4-AUD.md",
-          "detail": "- usar Registro Historico como autoridad directa"
-        }
-      ]
-    },
-    {
-      "file": "03_Expedientes/AUD-001_R4-CANDIDATA.md",
-      "estatus": "hipotesis operativa de expediente por `EST-R4-CANDIDATA-001`",
-      "findings": [
-        {
-          "severity": "warning",
-          "kind": "historial_como_autoridad_posible",
-          "file": "03_Expedientes/AUD-001_R4-CANDIDATA.md",
-          "detail": "- el Registro Historico se usa como autoridad directa para transformar"
-        },
-        {
-          "severity": "warning",
-          "kind": "historial_como_autoridad_posible",
-          "file": "03_Expedientes/AUD-001_R4-CANDIDATA.md",
-          "detail": "- un expediente que usa Registro Historico como autoridad directa en `AUD-SIM-019` y `VAL-019`"
-        }
-      ]
-    },
-    {
-      "file": "03_Expedientes/AUD-001_Simulaciones.md",
-      "estatus": "expediente asociado",
-      "findings": [
-        {
-          "severity": "warning",
-          "kind": "historial_como_autoridad_posible",
-          "file": "03_Expedientes/AUD-001_Simulaciones.md",
-          "detail": "- expedientes que usan Registro Historico como autoridad directa"
-        },
-        {
-          "severity": "warning",
-          "kind": "historial_como_autoridad_posible",
-          "file": "03_Expedientes/AUD-001_Simulaciones.md",
-          "detail": "## AUD-SIM-019 - R4-CANDIDATA con Registro Historico como autoridad directa"
-        }
-      ]
-    },
-    {
-      "file": "03_Expedientes/AUD-001_Sintesis_Cobertura_No_Automata_R4-CANDIDATA.md",
-      "estatus": "sintesis provisional de expediente",
-      "findings": [
-        {
-          "severity": "warning",
-          "kind": "historial_como_autoridad_posible",
-          "file": "03_Expedientes/AUD-001_Sintesis_Cobertura_No_Automata_R4-CANDIDATA.md",
-          "detail": "| `VAL-019` | expediente con Registro Historico | historial usado como autoridad directa | pasa provisionalmente |"
-        }
-      ]
-    },
-    {
-      "file": "03_Expedientes/AUD-001_Validaciones.md",
-      "estatus": "expediente asociado",
-      "findings": [
-        {
-          "severity": "warning",
-          "kind": "historial_como_autoridad_posible",
-          "file": "03_Expedientes/AUD-001_Validaciones.md",
-          "detail": "- expedientes con Registro Historico como autoridad directa"
-        },
-        {
-          "severity": "warning",
-          "kind": "historial_como_autoridad_posible",
-          "file": "03_Expedientes/AUD-001_Validaciones.md",
-          "detail": "Objeto evaluado: `R4-CANDIDATA` con expediente que usa Registro Historico como autoridad directa."
-        }
-      ]
     },
     {
       "file": "03_Expedientes/AUT-001.md",
-      "estatus": "abierto / MVP minimo provisional aceptado",
+      "estatus": "cerrado operativamente por decision registrada",
       "findings": [
         {
           "severity": "warning",
@@ -254,387 +44,70 @@
           "kind": "referencia_no_materializada",
           "file": "03_Expedientes/AUT-001.md",
           "detail": "06_Automatizacion/reportes/do_check_min_repo.md"
-        }
-      ]
-    },
-    {
-      "file": "03_Expedientes/AUT-001_Decision_Estatus_MVP.md",
-      "estatus": "decision provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/AUT-001_Validacion_DO-CHECK-MIN.md",
-      "estatus": "validacion provisional de expediente",
-      "findings": [
-        {
-          "severity": "warning",
-          "kind": "referencia_no_materializada",
-          "file": "03_Expedientes/AUT-001_Validacion_DO-CHECK-MIN.md",
-          "detail": "06_Automatizacion/reportes/do_check_min_claves.md"
         },
         {
           "severity": "warning",
           "kind": "referencia_no_materializada",
-          "file": "03_Expedientes/AUT-001_Validacion_DO-CHECK-MIN.md",
-          "detail": "06_Automatizacion/reportes/do_check_min_repo.md"
-        }
-      ]
-    },
-    {
-      "file": "03_Expedientes/B-001.5.md",
-      "estatus": "congelado por `CLAS-B-001-5-001`",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/B-001.5_Decision_Clasificacion.md",
-      "estatus": "decision provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/B-001.md",
-      "estatus": "cerrado",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/CP-001.md",
-      "estatus": "cerrado / no reabrir sin decision explicita",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/DO-001.md",
-      "estatus": "cerrado",
-      "findings": [
-        {
-          "severity": "warning",
-          "kind": "historial_como_autoridad_posible",
-          "file": "03_Expedientes/DO-001.md",
-          "detail": "- importacion de Registro Historico como autoridad vigente"
-        }
-      ]
-    },
-    {
-      "file": "03_Expedientes/DO-001_Auditoria_DO-PROP-001.md",
-      "estatus": "auditoria cerrada de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/DO-001_Auditoria_SPEC-AUD-001_NIVEL-C.md",
-      "estatus": "auditoria cerrada de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
-      "estatus": "algoritmo provisional de expediente",
-      "findings": [
-        {
-          "severity": "warning",
-          "kind": "historial_como_autoridad_posible",
-          "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
-          "detail": "- usa registro historico como autoridad vigente"
+          "file": "03_Expedientes/AUT-001.md",
+          "detail": "06_Automatizacion/reportes/do_check_med_claves.md"
         },
         {
           "severity": "warning",
-          "kind": "historial_como_autoridad_posible",
-          "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
-          "detail": "- uso de Registro Historico como autoridad vigente"
-        }
-      ]
-    },
-    {
-      "file": "03_Expedientes/DO-001_Decision_Alcance_SPEC-AUD-001.md",
-      "estatus": "decision provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/DO-001_Decision_Cierre_DO-001.md",
-      "estatus": "decision de cierre de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/DO-001_Decision_DO-CHECK-REPORT.md",
-      "estatus": "decision provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/DO-001_Decision_Modo_Operativo_Auditor.md",
-      "estatus": "decision provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/DO-001_Decision_Promocion_SPEC-AUD-001.md",
-      "estatus": "decision provisional de expediente con efecto documental",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md",
-      "estatus": "regla provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/DO-001_SPEC-AUD-001_Candidata.md",
-      "estatus": "especificacion tecnica candidata promovida",
-      "findings": [
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001.md",
+          "detail": "06_Automatizacion/reportes/do_check_med_repo.md"
+        },
         {
           "severity": "warning",
-          "kind": "historial_como_autoridad_posible",
-          "file": "03_Expedientes/DO-001_SPEC-AUD-001_Candidata.md",
-          "detail": "- importacion de Registro Historico como autoridad vigente"
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001.md",
+          "detail": "06_Automatizacion/reportes/lab_status_board.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001.md",
+          "detail": "06_Automatizacion/reportes/lab_continuity_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001.md",
+          "detail": "06_Automatizacion/reportes/lab_risk_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001.md",
+          "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001.md",
+          "detail": "06_Automatizacion/reportes/lab_run_report.md"
         }
       ]
-    },
-    {
-      "file": "03_Expedientes/DO-001_Validaciones_DO-CHECK-001.md",
-      "estatus": "expediente asociado",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/DO-001_Validaciones_MODO-AUD-001.md",
-      "estatus": "validacion provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/DO-001_Validaciones_NIVEL-C-001.md",
-      "estatus": "validacion provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/DO-001_Validaciones_PERMISO-ACT-001.md",
-      "estatus": "expediente asociado",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/DO-001_Validaciones_SPEC-AUD-001.md",
-      "estatus": "validacion provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/EF-001.md",
-      "estatus": "cerrado / no reabrir sin decision explicita",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/P-PI.0.md",
-      "estatus": "abierto en pausa operativa por `RUTA-PPI-001`",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/P-PI.1.md",
-      "estatus": "abierto en pausa operativa por `RUTA-PPI-001`",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/P-PI_Auditoria_Criterios_Cierre.md",
-      "estatus": "auditoria provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/P-PI_Criterios_Cierre.md",
-      "estatus": "criterios provisionales de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/P-PI_Decision_Estatus_Criterios_Cierre.md",
-      "estatus": "decision provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/P-PI_Decision_Ruta_Operativa.md",
-      "estatus": "decision provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/README.md",
-      "estatus": "no_clasificado",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/RH-001.md",
-      "estatus": "cerrado",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/RH-001_Auditoria_Procesamiento.md",
-      "estatus": "auditoria provisional favorable",
-      "findings": []
-    },
-    {
-      "file": "03_Expedientes/RH-001_Decision_Cierre.md",
-      "estatus": "decision provisional de expediente",
-      "findings": []
-    },
-    {
-      "file": "04_Registro_Historico/2026-07-01_chatgpt_share_001.md",
-      "estatus": "referencia historica externa materializada localmente",
-      "findings": []
-    },
-    {
-      "file": "04_Registro_Historico/2026-07-01_chatgpt_share_001_transcripcion.md",
-      "estatus": "material historico local",
-      "findings": []
-    },
-    {
-      "file": "04_Registro_Historico/README.md",
-      "estatus": "no_clasificado",
-      "findings": []
-    },
-    {
-      "file": "05_Estado_Proyecto/DECISIONES.md",
-      "estatus": "decision operativa",
-      "findings": []
-    },
-    {
-      "file": "05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_B-001.5.md",
-      "estatus": "decision operativa de prioridad",
-      "findings": []
-    },
-    {
-      "file": "05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_P-PI.md",
-      "estatus": "decision operativa de prioridad",
-      "findings": []
     },
     {
       "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
-      "estatus": "no_clasificado",
+      "estatus": "estado operativo vigente",
       "findings": [
         {
           "severity": "warning",
-          "kind": "estatus_ausente",
+          "kind": "referencia_no_materializada",
           "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
-          "detail": "No hay campo Estatus en las primeras 30 lineas."
+          "detail": "06_Automatizacion/reportes/lab_status_board.md"
         }
       ]
-    },
-    {
-      "file": "05_Estado_Proyecto/NIVEL_C_ESPECIFICACIONES.md",
-      "estatus": "definicion local de proyecto",
-      "findings": []
-    },
-    {
-      "file": "05_Estado_Proyecto/README.md",
-      "estatus": "no_clasificado",
-      "findings": []
-    },
-    {
-      "file": "06_Automatizacion/README.md",
-      "estatus": "superficie ejecutable provisional",
-      "findings": [
-        {
-          "severity": "warning",
-          "kind": "referencia_no_materializada",
-          "file": "06_Automatizacion/README.md",
-          "detail": "reportes/do_check_min_claves.md"
-        },
-        {
-          "severity": "warning",
-          "kind": "referencia_no_materializada",
-          "file": "06_Automatizacion/README.md",
-          "detail": "reportes/do_check_min_repo.md"
-        },
-        {
-          "severity": "warning",
-          "kind": "historial_como_autoridad_posible",
-          "file": "06_Automatizacion/README.md",
-          "detail": "- usar Registro Historico como autoridad directa;"
-        }
-      ]
-    },
-    {
-      "file": "CHANGELOG.md",
-      "estatus": "no_clasificado",
-      "findings": []
     },
     {
       "file": "CURRENT_STATE.md",
       "estatus": "no_clasificado",
       "findings": []
-    },
-    {
-      "file": "HANDOFF.md",
-      "estatus": "handoff operativo",
-      "findings": []
-    },
-    {
-      "file": "HANDOFF_PACKAGE.md",
-      "estatus": "paquete de handoff listo",
-      "findings": []
-    },
-    {
-      "file": "INDEX.md",
-      "estatus": "no_clasificado",
-      "findings": []
-    },
-    {
-      "file": "PROMPT_MAESTRO.md",
-      "estatus": "no_clasificado",
-      "findings": []
-    },
-    {
-      "file": "README.md",
-      "estatus": "no_clasificado",
-      "findings": []
     }
   ],
   "findings": [
-    {
-      "severity": "warning",
-      "kind": "historial_como_autoridad_posible",
-      "file": "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
-      "detail": "- importacion de Registro Historico como autoridad vigente"
-    },
-    {
-      "severity": "warning",
-      "kind": "historial_como_autoridad_posible",
-      "file": "03_Expedientes/AUD-001_Decision_Cierre_Ronda_No_Automata_R4-CANDIDATA.md",
-      "detail": "- `AUD-SIM-019` y `VAL-019`: expediente que usa Registro Historico como autoridad directa."
-    },
-    {
-      "severity": "warning",
-      "kind": "historial_como_autoridad_posible",
-      "file": "03_Expedientes/AUD-001_Invariantes_R4-AUD.md",
-      "detail": "- usar Registro Historico como autoridad directa"
-    },
-    {
-      "severity": "warning",
-      "kind": "historial_como_autoridad_posible",
-      "file": "03_Expedientes/AUD-001_R4-CANDIDATA.md",
-      "detail": "- el Registro Historico se usa como autoridad directa para transformar"
-    },
-    {
-      "severity": "warning",
-      "kind": "historial_como_autoridad_posible",
-      "file": "03_Expedientes/AUD-001_R4-CANDIDATA.md",
-      "detail": "- un expediente que usa Registro Historico como autoridad directa en `AUD-SIM-019` y `VAL-019`"
-    },
-    {
-      "severity": "warning",
-      "kind": "historial_como_autoridad_posible",
-      "file": "03_Expedientes/AUD-001_Simulaciones.md",
-      "detail": "- expedientes que usan Registro Historico como autoridad directa"
-    },
-    {
-      "severity": "warning",
-      "kind": "historial_como_autoridad_posible",
-      "file": "03_Expedientes/AUD-001_Simulaciones.md",
-      "detail": "## AUD-SIM-019 - R4-CANDIDATA con Registro Historico como autoridad directa"
-    },
-    {
-      "severity": "warning",
-      "kind": "historial_como_autoridad_posible",
-      "file": "03_Expedientes/AUD-001_Sintesis_Cobertura_No_Automata_R4-CANDIDATA.md",
-      "detail": "| `VAL-019` | expediente con Registro Historico | historial usado como autoridad directa | pasa provisionalmente |"
-    },
-    {
-      "severity": "warning",
-      "kind": "historial_como_autoridad_posible",
-      "file": "03_Expedientes/AUD-001_Validaciones.md",
-      "detail": "- expedientes con Registro Historico como autoridad directa"
-    },
-    {
-      "severity": "warning",
-      "kind": "historial_como_autoridad_posible",
-      "file": "03_Expedientes/AUD-001_Validaciones.md",
-      "detail": "Objeto evaluado: `R4-CANDIDATA` con expediente que usa Registro Historico como autoridad directa."
-    },
     {
       "severity": "warning",
       "kind": "referencia_no_materializada",
@@ -656,63 +129,50 @@
     {
       "severity": "warning",
       "kind": "referencia_no_materializada",
-      "file": "03_Expedientes/AUT-001_Validacion_DO-CHECK-MIN.md",
-      "detail": "06_Automatizacion/reportes/do_check_min_claves.md"
+      "file": "03_Expedientes/AUT-001.md",
+      "detail": "06_Automatizacion/reportes/do_check_med_claves.md"
     },
     {
       "severity": "warning",
       "kind": "referencia_no_materializada",
-      "file": "03_Expedientes/AUT-001_Validacion_DO-CHECK-MIN.md",
-      "detail": "06_Automatizacion/reportes/do_check_min_repo.md"
+      "file": "03_Expedientes/AUT-001.md",
+      "detail": "06_Automatizacion/reportes/do_check_med_repo.md"
     },
     {
       "severity": "warning",
-      "kind": "historial_como_autoridad_posible",
-      "file": "03_Expedientes/DO-001.md",
-      "detail": "- importacion de Registro Historico como autoridad vigente"
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001.md",
+      "detail": "06_Automatizacion/reportes/lab_status_board.md"
     },
     {
       "severity": "warning",
-      "kind": "historial_como_autoridad_posible",
-      "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
-      "detail": "- usa registro historico como autoridad vigente"
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001.md",
+      "detail": "06_Automatizacion/reportes/lab_continuity_report.md"
     },
     {
       "severity": "warning",
-      "kind": "historial_como_autoridad_posible",
-      "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
-      "detail": "- uso de Registro Historico como autoridad vigente"
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001.md",
+      "detail": "06_Automatizacion/reportes/lab_risk_report.md"
     },
     {
       "severity": "warning",
-      "kind": "historial_como_autoridad_posible",
-      "file": "03_Expedientes/DO-001_SPEC-AUD-001_Candidata.md",
-      "detail": "- importacion de Registro Historico como autoridad vigente"
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001.md",
+      "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
     },
     {
       "severity": "warning",
-      "kind": "estatus_ausente",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001.md",
+      "detail": "06_Automatizacion/reportes/lab_run_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
       "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
-      "detail": "No hay campo Estatus en las primeras 30 lineas."
-    },
-    {
-      "severity": "warning",
-      "kind": "referencia_no_materializada",
-      "file": "06_Automatizacion/README.md",
-      "detail": "reportes/do_check_min_claves.md"
-    },
-    {
-      "severity": "warning",
-      "kind": "referencia_no_materializada",
-      "file": "06_Automatizacion/README.md",
-      "detail": "reportes/do_check_min_repo.md"
-    },
-    {
-      "severity": "warning",
-      "kind": "historial_como_autoridad_posible",
-      "file": "06_Automatizacion/README.md",
-      "detail": "- usar Registro Historico como autoridad directa;"
+      "detail": "06_Automatizacion/reportes/lab_status_board.md"
     }
-  ],
-  "nota_validacion": "Generado con ejecucion equivalente en entorno interno porque la politica local bloqueo el lanzamiento de procesos externos."
+  ]
 }

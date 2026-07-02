@@ -125,6 +125,10 @@ Por `CAPA-REPORTES-R4-001`, los nombres concretos de reportes de `AUD-001` perma
 
 `R4-CANDIDATA` puede usar una capa abstracta equivalente: `REPORT_LAYER`, entendida como reportes normalizados suficientes para fundar decision, permiso, ejecucion y recuperacion.
 
+Lectura posterior: `REPORT_LAYER` fue separado como candidata provisional de expediente en `AUD-001_REPORT_LAYER_Candidata.md`, auditado en `AUD-001_Auditoria_REPORT_LAYER_Candidata.md` y aceptado por `AUD-001_Decision_Estatus_REPORT_LAYER_Candidata.md`.
+
+Esta lectura no promueve `REPORT_LAYER` a documento oficial ni modifica el estatus de `R4-CANDIDATA`.
+
 ## Relacion con reportes de AUD-001
 
 La candidata depende de los reportes normalizados validados en `AUD-001`:
@@ -223,14 +227,22 @@ Decision de ruta asociada: `03_Expedientes/AUD-001_Decision_Ruta_Siguiente_R4-CA
 
 Decision de pausa asociada: `03_Expedientes/AUD-001_Decision_Pausa_Operativa_R4-CANDIDATA.md`.
 
+Decision de reactivacion asociada: `03_Expedientes/AUD-001_Decision_Reactivacion_REPORT_LAYER.md`.
+
+REPORT_LAYER asociado: `03_Expedientes/AUD-001_REPORT_LAYER_Candidata.md`.
+
+Auditoria de REPORT_LAYER asociada: `03_Expedientes/AUD-001_Auditoria_REPORT_LAYER_Candidata.md`.
+
+Decision de estatus de REPORT_LAYER asociada: `03_Expedientes/AUD-001_Decision_Estatus_REPORT_LAYER_Candidata.md`.
+
 ## Deudas antes de promocion
 
 Antes de cualquier promocion fuera de `AUD-001`, falta:
 
-- reactivar `AUD-001` mediante decision explicita si se busca una ruta futura
-- decidir si una ruta futura reabre definicion provisional, Nivel C, `REPORT_LAYER`, R4 formal o congelamiento
+- reactivar `AUD-001` mediante decision explicita si se busca una ruta futura. Cumplido de forma acotada para `REPORT_LAYER` por `AUD-001_Decision_Reactivacion_REPORT_LAYER.md`
+- decidir si una ruta futura reabre definicion provisional, Nivel C, `REPORT_LAYER`, R4 formal o congelamiento. Cumplido solo para ruta `REPORT_LAYER`; las demas siguen abiertas
 - decidir si requiere documento de Nivel C o expediente adicional
-- definir si la capa de reportes de `AUD-001` se generaliza o permanece como implementacion local del Auditor
+- definir si la capa de reportes de `AUD-001` se generaliza o permanece como implementacion local del Auditor. Parcialmente avanzado por `REPORT-LAYER-CAND-001`; pendiente validacion de alcance
 - ampliar pruebas no automatas o justificar cierre provisional de la primera ronda
 - precisar relacion con la futura Regla R4 formal
 

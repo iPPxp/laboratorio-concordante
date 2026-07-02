@@ -1,20 +1,20 @@
 # LAB_RUN_REPORT
 
-report_id: DO-LAB-RUN-20260701-205808
+report_id: DO-LAB-RUN-20260702-165851
 expediente: AUT-001
 algoritmo: DO-LAB-RUN-001
 resultado: advertencia
-recomendacion: preparar_cierre_tecnico_provisional
+recomendacion: mantener_cierre_operativo
 transformacion_permitida: false
-scope: repo
+scope: claves
 
 ## Pasos
 
-- DO-CHECK-MIN-001: advertencia (23 hallazgos)
-- DO-CHECK-MED-001: advertencia (91 hallazgos)
+- DO-CHECK-MIN-001: advertencia (11 hallazgos)
+- DO-CHECK-MED-001: ok (0 hallazgos)
 - DO-STATE-BOARD-001: ok (0 hallazgos)
-- DO-LAB-CONTINUITY-001: advertencia (91 hallazgos)
-- DO-LAB-RISK-001: advertencia_clasificada (82 hallazgos)
+- DO-LAB-CONTINUITY-001: ok (0 hallazgos)
+- DO-LAB-RISK-001: advertencia_clasificada (11 hallazgos)
 - DO-LAB-SUMMARY-001: advertencia (0 hallazgos)
 
 ## Reportes generados
@@ -34,4 +34,4 @@ scope: repo
 
 ## Siguiente accion
 
-- Decidir cierre tecnico provisional de AUT-001 con advertencias controladas visibles.
+- Mantener cierre operativo de AUT-001 con deuda documental visible.
