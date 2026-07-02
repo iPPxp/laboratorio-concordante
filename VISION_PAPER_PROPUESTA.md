@@ -45,7 +45,31 @@ This vision paper outlines the problem, the central concept of concordance, the 
 
 ---
 
-## 1. The Problem: Systems Without Concordance
+## 1. Foundational Principles
+
+The Laboratorio Concordante adopts a minimal set of foundational axioms. These axioms are not intended as immutable truths, but as operational assumptions that define the initial scope of Concordance Theory. They remain open to revision through explicit methodological procedures.
+
+**Axiom I - Operational systems generate claims.** Every operational system continuously produces explicit or implicit claims regarding its state, environment, objectives or expected behavior. Without claims, governance has no object.
+
+**Axiom II - Claims possess status.** Every claim has an epistemic or operational status. Status may be provisional, validated, rejected, historical, executable or canonical. Governance begins by preserving the distinction between these statuses.
+
+**Axiom III - Authority derives from status.** Authority does not emerge from repetition, convenience or computational generation. Authority is explicitly assigned through recognized governance mechanisms.
+
+**Axiom IV - Decisions require explicit authority.** No recommendation, observation, inference or automated output becomes a decision unless an authorized governance process transforms it into one.
+
+**Axiom V - Traceability precedes accountability.** A system cannot be accountable for actions whose origin, justification or authorization cannot be reconstructed.
+
+**Axiom VI - Automation never implies authorization.** Automation may assist governance. Automation never replaces governance.
+
+**Axiom VII - Governance remains revisable.** Methods themselves remain subject to inspection, criticism and controlled revision. No component of the governance framework is permanently exempt from audit.
+
+**Axiom VIII - Concordance is preserved through explicit revision.** Stable systems are not those that avoid change. Stable systems are those capable of changing without losing the coherence of their authority structure.
+
+These axioms shift the role of Concordance from a descriptive concept to the beginning of a theory. They define the object of inquiry: systems that produce claims, assign status, distribute authority, authorize decisions, preserve traceability, use automation and revise themselves without dissolving their own governance structure.
+
+---
+
+## 2. The Problem: Systems Without Concordance
 
 Modern systems are no longer governed by a single actor, document, model or institution. They are shaped by distributed interactions among people, software, data, policies, models, platforms, organizations and artificial agents. A research laboratory works through documents, hypotheses, protocols and decisions. A company works through strategies, metrics, tools and institutional memory. An AI-enabled organization works through prompts, model outputs, human approvals, automated workflows and shifting accountability.
 
@@ -61,7 +85,7 @@ The central question of the Laboratorio Concordante is therefore:
 
 ---
 
-## 2. Why Existing Methodologies Are Insufficient
+## 3. Why Existing Methodologies Are Insufficient
 
 Existing methodologies provide valuable tools. Science has criteria such as consistency, explanatory power, prediction, falsifiability and peer review. Engineering has verification, validation, standards and safety protocols. Organizations have governance frameworks, audits and quality systems. Software has version control, testing and review workflows. AI governance has emerging practices for evaluation, monitoring, alignment and responsible deployment.
 
@@ -75,11 +99,13 @@ The Laboratorio Concordante addresses this gap by treating methodology itself as
 
 ---
 
-## 3. Core Concept: Concordance
+## 4. Core Concept: Concordance
 
-Concordance is not mere agreement. It is not consensus, harmony or uniformity. In the context of systems governance, concordance is the capacity of a heterogeneous system to preserve coherent relations among its components while remaining open to revision.
+Agreement may exist without concordance. Likewise, concordance may exist despite disagreement. Concordance concerns the governance of disagreement rather than its elimination.
 
-**Definition.** Concordance is the measurable or auditable capacity of agents, institutions, models and computational processes to maintain coherent behavior under changing constraints, while preserving traceability, permission boundaries and revision paths.
+**Definition.** Concordance is an observable and auditable property of heterogeneous systems describing their capacity to preserve coherent relationships among knowledge, authority, permissions, decisions, responsibilities and computational processes while adapting to changing constraints.
+
+Concordance is therefore not a measure of agreement. It is a property of governance.
 
 This definition has several implications.
 
@@ -97,7 +123,55 @@ This concept gives the Laboratory its identity. The Laboratory is not merely bui
 
 ---
 
-## 4. Research Philosophy
+## 5. Distinguishing Related Concepts
+
+Concordance becomes clearer when distinguished from adjacent governance terms.
+
+| Concept | Primary Question |
+| --- | --- |
+| Management | How is work executed? |
+| Coordination | How do activities interact? |
+| Control | How is behavior constrained? |
+| Compliance | Are rules being followed? |
+| Alignment | Are objectives compatible? |
+| Governance | Who possesses legitimate authority? |
+| Concordance | Does the system preserve coherent authority under change? |
+
+This distinction matters because many systems can be managed, coordinated, controlled, compliant or aligned while still failing to preserve coherent authority under change. Concordance names that missing layer.
+
+---
+
+## 6. Core Research Ontology
+
+The initial research ontology of Concordance Theory can be expressed as a minimal hierarchy:
+
+```text
+System
+|
++-- Agent
++-- Institution
++-- Model
++-- Constraint
++-- Protocol
++-- Claim
+|   |
+|   +-- Evidence
+|   +-- Status
+|   +-- Decision
+|
++-- Governance
+    |
+    +-- Authority
+    +-- Permission
+    +-- Accountability
+    +-- Concordance
+```
+
+This ontology is not yet a formal model. It is a working map for research. Its purpose is to make explicit which entities Concordance Theory must define, relate and eventually operationalize.
+
+---
+
+## 7. Research Philosophy
 
 The Laboratorio Concordante is built on a conservative principle: speed is valuable, but traceability is more valuable when systems become complex. The Laboratory does not reject creativity, intuition or exploration. It gives them a place. Conversation may generate material; research dossiers may explore it; historical records may preserve it; official documents may stabilize it; Canon may constrain it.
 
@@ -120,7 +194,7 @@ The research philosophy is therefore neither anti-automation nor automation-firs
 
 ---
 
-## 5. Proposed Architecture
+## 8. Proposed Architecture
 
 The current architecture of the Laboratory has six primary layers.
 
@@ -167,7 +241,7 @@ The key point is that information flow is not authority flow. Lower levels may i
 
 ---
 
-## 6. The Auditor
+## 9. The Auditor
 
 The Auditor is the first technical expression of the Laboratory's governance philosophy. It is not an autonomous authority. It is a specification and tool surface for checking status, traceability, dependencies, permissions and bounded transformations.
 
@@ -195,7 +269,7 @@ This boundary is essential. In many AI-enabled systems, automation becomes power
 
 ---
 
-## 7. Early Results
+## 10. Early Results
 
 The Laboratory has already produced a working internal structure.
 
@@ -217,7 +291,7 @@ These results are early, but they demonstrate feasibility. The Laboratory can tr
 
 ---
 
-## 8. Strategic Research Agenda
+## 11. Strategic Research Agenda
 
 The Laboratory's research agenda can be organized into five domains.
 
@@ -243,7 +317,7 @@ The long-term research questions include:
 
 ---
 
-## 9. Three-Year Roadmap
+## 12. Three-Year Roadmap
 
 **Year 1: Stabilization and Demonstration.** The first year should stabilize the Laboratory's public foundation. This includes completing official documents, refining the definition of concordance, validating the Auditor through reproducible local runs, creating a public curated repository, preparing a sponsor-facing package and designing a minimal interface for state, dossiers, decisions and reports.
 
@@ -253,7 +327,7 @@ The long-term research questions include:
 
 ---
 
-## 10. Support Sought
+## 13. Support Sought
 
 The Laboratory seeks support in five forms.
 
@@ -271,7 +345,7 @@ The ideal sponsor is not merely a funder. It is a partner with a real governance
 
 ---
 
-## 11. Commercialization Strategy
+## 14. Commercialization Strategy
 
 The strongest commercialization path is hybrid.
 
@@ -295,7 +369,7 @@ The commercial promise should be precise:
 
 ---
 
-## 12. Closing Vision
+## 15. Closing Vision
 
 The next generation of complex systems will not be governed by intelligence alone. Intelligence can generate options. It can summarize, classify, infer and recommend. But governance requires more than intelligence. It requires memory with status, action with permission, change with traceability and disagreement with procedure.
 
@@ -308,4 +382,3 @@ The Laboratory begins with its own repository because it treats itself as the fi
 This is the founding wager of the Laboratorio Concordante:
 
 > A system that cannot explain the status of its own claims cannot responsibly govern its actions. A system that can preserve concordance under change can become a new kind of institution.
-
