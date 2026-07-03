@@ -80,7 +80,7 @@ Las siguientes deudas permanecen vivas, pero no bloquean la completitud v0 porqu
 - Regla R4 formal;
 - `Gamma` formal;
 - suite ejecutable completa;
-- parser y serializacion real, con JSON pausado temporalmente;
+- parser real y serializacion formal completa; JSON operativo queda reactivado para el Auditor v0 no mutante;
 - reversion material;
 - cuarentena materializada;
 - promocion de `REPORT_LAYER` a Nivel C;

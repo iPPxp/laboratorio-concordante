@@ -1,6 +1,9 @@
 import unittest
 import contextlib
 import io
+import json
+import os
+import tempfile
 from pathlib import Path
 import sys
 
@@ -107,25 +110,36 @@ class AuditorV0Tests(unittest.TestCase):
 
         self.assertEqual(errors, ["AUDITOR-V0-001-AUD-TXX-D-01: transformacion_permitida debe ser false"])
 
-    def test_json_output_is_paused(self) -> None:
-        stderr = io.StringIO()
+    def test_json_output_is_active(self) -> None:
+        stdout = io.StringIO()
 
-        with contextlib.redirect_stderr(stderr):
-            with self.assertRaises(SystemExit) as error:
-                auditor_v0.main(["--format", "json"])
+        with contextlib.redirect_stdout(stdout):
+            code = auditor_v0.main(["--format", "json"])
 
-        self.assertEqual(error.exception.code, 2)
-        self.assertIn("JSON pausado temporalmente", stderr.getvalue())
+        report = json.loads(stdout.getvalue())
+        self.assertEqual(code, 0)
+        self.assertTrue(report["conforme_c002"])
+        self.assertEqual(report["summary"]["schema_errors"], [])
 
-    def test_external_json_cases_are_paused(self) -> None:
-        stderr = io.StringIO()
+    def test_external_json_cases_are_active(self) -> None:
+        stdout = io.StringIO()
 
-        with contextlib.redirect_stderr(stderr):
-            with self.assertRaises(SystemExit) as error:
-                auditor_v0.main(["--case-file", "casos.json"])
+        with tempfile.TemporaryDirectory(dir=ROOT / "06_Automatizacion") as tmpdir:
+            case_path = Path(tmpdir) / "casos.json"
+            case_path.write_text(json.dumps({"cases": auditor_v0.DEFAULT_CASES}), encoding="utf-8")
+            rel_path = str(case_path.relative_to(ROOT))
+            cwd = Path.cwd()
+            try:
+                os.chdir(ROOT)
+                with contextlib.redirect_stdout(stdout):
+                    code = auditor_v0.main(["--format", "json", "--case-file", rel_path])
+            finally:
+                os.chdir(cwd)
 
-        self.assertEqual(error.exception.code, 2)
-        self.assertIn("JSON pausado temporalmente", stderr.getvalue())
+        report = json.loads(stdout.getvalue())
+        self.assertEqual(code, 0)
+        self.assertTrue(report["conforme_c002"])
+        self.assertEqual(report["summary"]["cases_checked"], 10)
 
 
 if __name__ == "__main__":

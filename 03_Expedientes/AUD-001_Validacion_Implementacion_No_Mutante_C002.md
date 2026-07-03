@@ -4,6 +4,8 @@ Estatus: validacion ejecutada.
 
 Fecha: 2026-07-02.
 
+Actualizacion: 2026-07-03.
+
 Expediente padre: `AUD-001`.
 
 Implementacion revisada: `06_Automatizacion/auditor_v0.py`.
@@ -13,10 +15,11 @@ Implementacion revisada: `06_Automatizacion/auditor_v0.py`.
 ```powershell
 python 06_Automatizacion/auditor_v0.py --format md
 python 06_Automatizacion/auditor_v0.py --format md --output 06_Automatizacion/reportes/auditor_v0_report.md
+python 06_Automatizacion/auditor_v0.py --format json --output 06_Automatizacion/reportes/auditor_v0_report.json
 python -m unittest 06_Automatizacion/test_auditor_v0.py
 ```
 
-La salida JSON y la carga externa por `--case-file` quedan pausadas temporalmente y cubiertas por pruebas de rechazo temprano.
+La salida JSON y la carga externa por `--case-file` quedan reactivadas y cubiertas por pruebas unitarias de salida estructurada y caso externo.
 
 ## Resultado observado
 
@@ -29,7 +32,7 @@ La salida JSON y la carga externa por `--case-file` quedan pausadas temporalment
 - Casos `bloqueado`: `7`.
 - Reportes de operador: `11`.
 - Errores de esquema: `0`.
-- Pruebas unitarias vigentes: `8`.
+- Pruebas unitarias vigentes: `9`.
 
 ## Cobertura por caso
 
@@ -49,8 +52,7 @@ La salida JSON y la carga externa por `--case-file` quedan pausadas temporalment
 ## Evidencia generada
 
 - `06_Automatizacion/reportes/auditor_v0_report.md`
-
-`06_Automatizacion/reportes/auditor_v0_report.json` queda como evidencia historica no regenerada mientras dure la pausa JSON.
+- `06_Automatizacion/reportes/auditor_v0_report.json`
 
 ## Conclusiones
 
@@ -58,4 +60,4 @@ La implementacion cubre la matriz minima de `C-002` en modo no mutante.
 
 Los reportes emitidos conservan decision restringida y no habilitan transformacion.
 
-La prueba unitaria confirma que los diez casos obligatorios permanecen cubiertos, que ningun reporte autoriza transformacion y que la pausa JSON bloquea salida estructurada externa.
+La prueba unitaria confirma que los diez casos obligatorios permanecen cubiertos, que ningun reporte autoriza transformacion, que la salida JSON es valida y que `--case-file` acepta casos externos dentro del repositorio.

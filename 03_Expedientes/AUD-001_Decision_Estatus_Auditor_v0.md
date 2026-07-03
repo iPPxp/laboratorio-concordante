@@ -6,6 +6,8 @@ ID: `D-AUD-V0-001`.
 
 Fecha: 2026-07-02.
 
+Actualizacion: 2026-07-03.
+
 Objeto decidido: completitud documental/operativa v0 del Auditor.
 
 ## Decision
@@ -19,7 +21,7 @@ Se acepta que el Auditor queda completo en version documental/operativa v0 dentr
 - `AUDIT-AUD-V0-001` audita favorablemente la sintesis.
 - `AUD-T00` a `AUD-T09` tienen simulacion y validacion provisional.
 - `COMPAT-RL-DO-CHECK-001` queda validado como puente conceptual por `VAL-028`.
-- `AUDITOR-V0-001` existe como implementacion no mutante inicial, con JSON pausado temporalmente.
+- `AUDITOR-V0-001` existe como implementacion no mutante inicial, con JSON reactivado por decision explicita.
 
 ## Alcance aprobado
 
@@ -41,7 +43,7 @@ La decision no aprueba:
 
 - herramienta mutante o suite ejecutable completa;
 - parser real;
-- salida JSON externa mientras la pausa temporal siga vigente;
+- salida JSON como permiso transformativo o autoridad decisional;
 - escritura automatica;
 - modificacion de Canon;
 - Regla R4 formal;
@@ -63,4 +65,4 @@ La actualizacion global de estado, referencias, identificadores, ASCII y diff se
 
 La candidata `SPEC-RFC-AUDITOR-V0` ya fue validada, auditada contra `NIVEL-C-001` y promovida como `02_Documentos/C-002_RFC_Operativo_Auditor_v0.md`.
 
-No queda pendiente preparar el RFC; los frentes posteriores son endurecimiento no mutante, eventual reactivacion JSON con decision explicita y suite ejecutable completa.
+No queda pendiente preparar el RFC; los frentes posteriores son endurecimiento no mutante, fixtures externos documentales y suite ejecutable completa.

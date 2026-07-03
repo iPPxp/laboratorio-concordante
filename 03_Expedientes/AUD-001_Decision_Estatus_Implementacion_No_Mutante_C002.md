@@ -4,6 +4,8 @@ Estatus: decision operativa de expediente.
 
 Fecha: 2026-07-02.
 
+Actualizacion: 2026-07-03.
+
 Expediente padre: `AUD-001`.
 
 ## Decision
@@ -26,7 +28,8 @@ La decision cubre:
 
 - ejecucion local del auditor en modo no mutante;
 - generacion de reportes Markdown;
-- salida JSON pausada temporalmente hasta reactivacion explicita;
+- generacion de reportes JSON;
+- carga opcional de casos JSON por `--case-file`;
 - conservacion de evidencia en `06_Automatizacion/reportes/`;
 - uso de la implementacion como base de pruebas para siguientes iteraciones.
 
@@ -45,7 +48,7 @@ Esta decision no autoriza:
 
 El siguiente frente tecnico queda en pruebas externas y endurecimiento de contrato:
 
-- fixtures externos cuando se reactive JSON;
+- fixtures externos documentales;
 - pruebas de entradas mal formadas;
 - validacion de esquema de reportes;
 - integracion posterior con herramientas de estado sin introducir mutacion.

@@ -1,5 +1,5 @@
 {
-  "report_id": "AUDITOR-V0-20260702-183317",
+  "report_id": "AUDITOR-V0-20260702-193445",
   "expediente": "AUD-001",
   "algoritmo": "AUDITOR-V0-001",
   "base_normativa": "C-002",
@@ -34,7 +34,8 @@
       "contradiccion": 1,
       "dependencia_no_registrada": 3,
       "violacion_r4_aud": 2
-    }
+    },
+    "schema_errors": []
   },
   "cases": [
     {

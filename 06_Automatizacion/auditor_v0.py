@@ -13,7 +13,6 @@ from typing import Any
 
 EXPEDIENTE = "AUD-001"
 ALGORITHM = "AUDITOR-V0-001"
-JSON_PAUSED = True
 CASE_IDS = [f"AUD-T{index:02d}" for index in range(10)]
 SOURCES = [
     "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
@@ -661,8 +660,6 @@ def result_for_reports(reports: list[dict[str, Any]]) -> str:
 def load_cases(root: Path, case_file: str | None) -> list[Any]:
     if not case_file:
         return DEFAULT_CASES
-    if JSON_PAUSED:
-        raise SystemExit("JSON pausado temporalmente: use casos internos hasta reactivacion.")
     path = root / case_file
     assert_inside(root, path)
     loaded = json.loads(path.read_text(encoding="utf-8"))
@@ -817,15 +814,10 @@ def render_md(report: dict[str, Any]) -> str:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Auditor v0 no mutante conforme C-002.")
-    parser.add_argument("--case-file", help="Archivo JSON opcional con casos a evaluar, pausado temporalmente.")
+    parser.add_argument("--case-file", help="Archivo JSON opcional con casos a evaluar.")
     parser.add_argument("--format", choices=("json", "md"), default="md")
     parser.add_argument("--output", help="Ruta de salida del reporte.")
     args = parser.parse_args(argv)
-
-    if JSON_PAUSED and args.format == "json":
-        parser.error("JSON pausado temporalmente: use --format md.")
-    if JSON_PAUSED and args.case_file:
-        parser.error("JSON pausado temporalmente: use casos internos hasta reactivacion.")
 
     root = Path.cwd()
     report = build_report(root, args.case_file)
