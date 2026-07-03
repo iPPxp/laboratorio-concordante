@@ -29,10 +29,12 @@ La implementacion ejecuta lectura acotada, clasificacion de casos y emision de r
 `auditor_v0.py` implementa:
 
 - matriz minima `AUD-T00` a `AUD-T09`;
-- reportes `AUDITOR_V0_REPORT` en Markdown y JSON;
+- reportes `AUDITOR_V0_REPORT` en Markdown;
+- salida JSON pausada temporalmente hasta reactivacion explicita;
 - reportes por operador compatibles con `OPERATOR_REPORT`;
 - modo no mutante con `transformacion_permitida = false`;
-- carga opcional de casos por `--case-file`;
+- matriz interna como fuente vigente de casos;
+- carga opcional de casos por `--case-file` pausada temporalmente junto con JSON;
 - salida por consola o por `--output`;
 - validacion de ruta de salida dentro del repositorio.
 
@@ -41,9 +43,10 @@ La implementacion ejecuta lectura acotada, clasificacion de casos y emision de r
 ```powershell
 python 06_Automatizacion/auditor_v0.py --format md
 python 06_Automatizacion/auditor_v0.py --format md --output 06_Automatizacion/reportes/auditor_v0_report.md
-python 06_Automatizacion/auditor_v0.py --format json --output 06_Automatizacion/reportes/auditor_v0_report.json
 python -m unittest 06_Automatizacion/test_auditor_v0.py
 ```
+
+Mientras JSON este pausado, `--format json` y `--case-file` deben fallar temprano.
 
 ## No cubre
 
@@ -59,8 +62,9 @@ Esta implementacion no cubre:
 
 ## Deuda viva
 
-- estabilizar un esquema formal para archivos externos de casos;
-- ampliar pruebas de casos externos;
+- reactivar JSON solo con decision explicita;
+- estabilizar un esquema formal para archivos externos de casos cuando JSON se reactive;
+- ampliar pruebas de casos externos cuando JSON se reactive;
 - definir fixtures documentales fuera de automatas;
 - conectar la salida con tableros sin convertir reportes en autoridad;
 - mantener `REPORT_LAYER` como lectura local mientras no exista promocion propia.

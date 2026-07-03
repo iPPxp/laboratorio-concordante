@@ -19,6 +19,7 @@ Se acepta que el Auditor queda completo en version documental/operativa v0 dentr
 - `AUDIT-AUD-V0-001` audita favorablemente la sintesis.
 - `AUD-T00` a `AUD-T09` tienen simulacion y validacion provisional.
 - `COMPAT-RL-DO-CHECK-001` queda validado como puente conceptual por `VAL-028`.
+- `AUDITOR-V0-001` existe como implementacion no mutante inicial, con JSON pausado temporalmente.
 
 ## Alcance aprobado
 
@@ -32,13 +33,15 @@ La decision aprueba:
 - la cobertura no automata de `R4-CANDIDATA`;
 - el uso local de `REPORT_LAYER` como capa provisional;
 - la lectura conceptual de `DO_CHECK_REPORT`.
+- la implementacion no mutante inicial como apoyo operativo acotado.
 
 ## Alcance no aprobado
 
 La decision no aprueba:
 
-- herramienta ejecutable;
+- herramienta mutante o suite ejecutable completa;
 - parser real;
+- salida JSON externa mientras la pausa temporal siga vigente;
 - escritura automatica;
 - modificacion de Canon;
 - Regla R4 formal;

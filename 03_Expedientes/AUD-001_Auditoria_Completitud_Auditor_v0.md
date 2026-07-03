@@ -45,7 +45,8 @@ La sintesis declara completitud solo para el nivel documental/operativo y conser
 
 ## Riesgos residuales
 
-- Una herramienta ejecutable futura puede descubrir bordes no cubiertos por simulaciones teoricas.
+- Iteraciones ejecutables futuras pueden descubrir bordes no cubiertos por simulaciones teoricas.
+- La salida JSON y la carga externa de casos requieren reactivacion explicita antes de usarse como evidencia vigente.
 - La integracion real de `DO_CHECK_REPORT` requerira contrato o adaptador propio.
 - Promover `REPORT_LAYER` a Nivel C exigira decision posterior.
 - R4 formal y `Gamma` siguen fuera del cierre v0.

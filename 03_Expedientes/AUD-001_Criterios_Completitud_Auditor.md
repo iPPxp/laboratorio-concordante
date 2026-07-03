@@ -8,7 +8,7 @@ Objeto: completitud documental/operativa v0 del Auditor.
 
 ## Proposito
 
-Definir que significa "Auditor completo" dentro de `AUD-001` sin confundirlo con herramienta ejecutable, Regla R4 formal, `Gamma` formal o promocion de `REPORT_LAYER` a Nivel C.
+Definir que significa "Auditor completo" dentro de `AUD-001` sin confundirlo con suite ejecutable completa, Regla R4 formal, `Gamma` formal o promocion de `REPORT_LAYER` a Nivel C.
 
 ## Fuentes locales
 
@@ -55,8 +55,9 @@ El Auditor queda completo en version documental/operativa v0 cuando existe una d
 
 La completitud v0 no incluye:
 
-- suite ejecutable;
+- suite ejecutable completa;
 - parser real de archivos;
+- serializacion JSON externa mientras la pausa temporal siga vigente;
 - escritura automatica en expedientes o Canon;
 - reversion material o cuarentena materializada;
 - Regla R4 formal;

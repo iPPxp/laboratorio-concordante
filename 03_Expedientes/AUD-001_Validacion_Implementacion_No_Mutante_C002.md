@@ -13,9 +13,10 @@ Implementacion revisada: `06_Automatizacion/auditor_v0.py`.
 ```powershell
 python 06_Automatizacion/auditor_v0.py --format md
 python 06_Automatizacion/auditor_v0.py --format md --output 06_Automatizacion/reportes/auditor_v0_report.md
-python 06_Automatizacion/auditor_v0.py --format json --output 06_Automatizacion/reportes/auditor_v0_report.json
 python -m unittest 06_Automatizacion/test_auditor_v0.py
 ```
+
+La salida JSON y la carga externa por `--case-file` quedan pausadas temporalmente y cubiertas por pruebas de rechazo temprano.
 
 ## Resultado observado
 
@@ -27,6 +28,8 @@ python -m unittest 06_Automatizacion/test_auditor_v0.py
 - Casos `advertencia`: `2`.
 - Casos `bloqueado`: `7`.
 - Reportes de operador: `11`.
+- Errores de esquema: `0`.
+- Pruebas unitarias vigentes: `8`.
 
 ## Cobertura por caso
 
@@ -46,7 +49,8 @@ python -m unittest 06_Automatizacion/test_auditor_v0.py
 ## Evidencia generada
 
 - `06_Automatizacion/reportes/auditor_v0_report.md`
-- `06_Automatizacion/reportes/auditor_v0_report.json`
+
+`06_Automatizacion/reportes/auditor_v0_report.json` queda como evidencia historica no regenerada mientras dure la pausa JSON.
 
 ## Conclusiones
 
@@ -54,4 +58,4 @@ La implementacion cubre la matriz minima de `C-002` en modo no mutante.
 
 Los reportes emitidos conservan decision restringida y no habilitan transformacion.
 
-La prueba unitaria confirma que los diez casos obligatorios permanecen cubiertos y que ningun reporte autoriza transformacion.
+La prueba unitaria confirma que los diez casos obligatorios permanecen cubiertos, que ningun reporte autoriza transformacion y que la pausa JSON bloquea salida estructurada externa.

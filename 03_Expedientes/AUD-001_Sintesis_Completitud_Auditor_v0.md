@@ -10,7 +10,7 @@ Objeto: cobertura documental/operativa del Auditor.
 
 Sintetizar la evidencia de que el Auditor esta completo en version v0 dentro de `AUD-001`.
 
-Esta sintesis no cierra deudas formales de R4, `Gamma`, implementacion ejecutable ni promocion de `REPORT_LAYER`.
+Esta sintesis no cierra deudas formales de R4, `Gamma`, suite ejecutable completa ni promocion de `REPORT_LAYER`.
 
 ## Criterio usado
 
@@ -79,8 +79,8 @@ Las siguientes deudas permanecen vivas, pero no bloquean la completitud v0 porqu
 - `H-B.6` y `H-B.7`, registradas en `HB-001_Deuda_Viva_H-B.md`;
 - Regla R4 formal;
 - `Gamma` formal;
-- suite ejecutable;
-- parser y serializacion real;
+- suite ejecutable completa;
+- parser y serializacion real, con JSON pausado temporalmente;
 - reversion material;
 - cuarentena materializada;
 - promocion de `REPORT_LAYER` a Nivel C;
@@ -92,4 +92,4 @@ El Auditor esta completo en version documental/operativa v0 dentro de `AUD-001`.
 
 La completitud significa que sus contratos, casos minimos, limites de decision, frontera no mutante y deudas vivas estan documentados y validados provisionalmente.
 
-No significa que exista todavia una herramienta ejecutable ni que las hipotesis formales pendientes hayan sido resueltas.
+No significa que exista todavia una suite ejecutable completa ni que las hipotesis formales pendientes hayan sido resueltas.

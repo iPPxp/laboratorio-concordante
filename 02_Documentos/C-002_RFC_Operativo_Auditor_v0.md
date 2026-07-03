@@ -205,6 +205,10 @@ Una herramienta no mutante es conforme si:
 - no decide autoridad;
 - no promueve estatus.
 
+La implementacion local de referencia `06_Automatizacion/auditor_v0.py` opera en modo no mutante.
+
+Mientras la salida JSON este pausada temporalmente, esa implementacion DEBE usar la matriz interna `AUD-T00` a `AUD-T09`, emitir salida Markdown y rechazar carga externa por `--case-file` o salida `--format json`.
+
 Una herramienta mutante futura solo sera conforme si ademas implementa `PERMISO-ACT-001`, evidencia antes/despues, verificacion posterior y manejo de fallo.
 
 ## 14. Matriz minima de pruebas
