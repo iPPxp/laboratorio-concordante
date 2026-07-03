@@ -26,6 +26,7 @@ Este endurecimiento agrega validacion interna sin activar transformaciones.
 - Reactivacion controlada de salida JSON y carga externa JSON desde la interfaz de linea de comando.
 - Integracion de errores de forma de caso en `schema_errors`.
 - Esquema operativo inicial para archivos externos de casos.
+- Fixture documental parcial para entradas no automata.
 - Pruebas unitarias para entradas mal formadas, duplicados y permiso indebido de transformacion.
 - Pruebas unitarias para salida JSON y carga externa por `--case-file`.
 
@@ -38,6 +39,7 @@ Este endurecimiento agrega validacion interna sin activar transformaciones.
 - Los reportes no cierran `AUD-001`.
 - No se promueve `REPORT_LAYER`.
 - La salida JSON no autoriza transformaciones ni sustituye decisiones.
+- Un fixture documental parcial no satisface `C-002` completo si omite `AUD-T00` a `AUD-T09`.
 
 ## Pruebas esperadas
 
@@ -50,7 +52,6 @@ python 06_Automatizacion/auditor_v0.py --format json
 
 ## Deuda siguiente
 
-- Ampliar fixtures externos documentales.
+- Ampliar fixtures externos documentales mas alla del primer lote parcial.
 - Endurecer variantes del esquema por tipo de caso.
 - Separar esquema formal de reportes en documento propio si `AUD-001` lo requiere.
-- Ampliar entradas documentales no automata.

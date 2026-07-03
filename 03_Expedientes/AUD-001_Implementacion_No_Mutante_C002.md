@@ -37,6 +37,7 @@ La implementacion ejecuta lectura acotada, clasificacion de casos y emision de r
 - matriz interna como fuente vigente de casos;
 - carga opcional de casos JSON por `--case-file`;
 - fixture externo `06_Automatizacion/fixtures/auditor_v0_cases.json`;
+- fixture documental parcial `06_Automatizacion/fixtures/auditor_v0_documental_cases.json`;
 - esquema operativo `06_Automatizacion/fixtures/auditor_v0_case_schema.json`;
 - salida por consola o por `--output`;
 - validacion de ruta de salida dentro del repositorio.
@@ -48,10 +49,13 @@ python 06_Automatizacion/auditor_v0.py --format md
 python 06_Automatizacion/auditor_v0.py --format md --output 06_Automatizacion/reportes/auditor_v0_report.md
 python 06_Automatizacion/auditor_v0.py --format json --output 06_Automatizacion/reportes/auditor_v0_report.json
 python 06_Automatizacion/auditor_v0.py --format json --case-file 06_Automatizacion/fixtures/auditor_v0_cases.json
+python 06_Automatizacion/auditor_v0.py --format json --case-file 06_Automatizacion/fixtures/auditor_v0_documental_cases.json
 python -m unittest 06_Automatizacion/test_auditor_v0.py
 ```
 
 `--format json` y `--case-file` quedan reactivados por `AUD-001_Decision_Reactivacion_JSON_Auditor_v0.md`.
+
+El fixture documental es parcial y debe devolver codigo distinto de cero si se ejecuta por CLI, porque omite los casos obligatorios `AUD-T00` a `AUD-T09`. Esa no conformidad es esperada y no implica permiso de transformacion.
 
 ## No cubre
 
@@ -68,7 +72,6 @@ Esta implementacion no cubre:
 ## Deuda viva
 
 - endurecer variantes del esquema por tipo de caso;
-- ampliar fixtures documentales externos mas alla de la matriz minima;
-- definir fixtures documentales fuera de automatas;
+- ampliar fixtures documentales externos mas alla del primer lote parcial;
 - conectar la salida con tableros sin convertir reportes en autoridad;
 - mantener `REPORT_LAYER` como lectura local mientras no exista promocion propia.

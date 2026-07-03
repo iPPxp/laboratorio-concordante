@@ -1,0 +1,38 @@
+{
+  "fixture_id": "AUDITOR-V0-DOCUMENTAL-FIXTURE-001",
+  "status": "partial_non_mutant_fixture",
+  "cases": [
+    {
+      "id": "AUD-DOC01",
+      "kind": "claim",
+      "claim_status": "hipotesis",
+      "claim": "Una equivalencia local queda aceptada por inspeccion",
+      "required_dependency": "demostracion local o algoritmo registrado de equivalencia",
+      "dependency_materialized": false
+    },
+    {
+      "id": "AUD-DOC02",
+      "kind": "authority",
+      "claim_status": "decision",
+      "claim": "Una conversacion historica funda una decision vigente",
+      "source": "04_Registro_Historico/nota_no_promovida.md",
+      "registered_decision": false
+    },
+    {
+      "id": "AUD-DOC03",
+      "kind": "level_change",
+      "claim_status": "expediente",
+      "surface": "01_Canon/M-000_Reglas_Fundamentales.md",
+      "action": "modificar Canon desde expediente AUD-001",
+      "registered_decision": false
+    },
+    {
+      "id": "AUD-DOC04",
+      "kind": "term",
+      "claim_status": "no_clasificado",
+      "text": "El operador concordante resuelve la reduccion documental.",
+      "term": "operador concordante",
+      "term_status": ""
+    }
+  ]
+}

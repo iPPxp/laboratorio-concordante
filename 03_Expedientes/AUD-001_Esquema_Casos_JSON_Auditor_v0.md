@@ -10,6 +10,8 @@ Artefacto ejecutable: `06_Automatizacion/fixtures/auditor_v0_case_schema.json`.
 
 Fixture asociado: `06_Automatizacion/fixtures/auditor_v0_cases.json`.
 
+Fixture documental asociado: `06_Automatizacion/fixtures/auditor_v0_documental_cases.json`.
+
 ## Decision tecnica
 
 Se declara `AUDITOR-V0-CASE-SCHEMA-001` como esquema inicial para archivos externos de casos del Auditor v0.
@@ -28,6 +30,8 @@ El esquema documenta la forma externa esperada.
 
 La conformidad operativa sigue decidida por `auditor_v0.py`, que ademas registra `schema_errors` y mantiene `transformacion_permitida = false`.
 
+El fixture documental es parcial: valida casos `claim`, `authority`, `level_change` y `term` fuera de la matriz obligatoria. Por diseno debe emitir reportes no mutantes y quedar con `conforme_c002 = false` mientras no incluya `AUD-T00` a `AUD-T09`.
+
 ## No autoriza
 
 Este esquema no autoriza transformaciones, no cierra `AUD-001`, no promueve `REPORT_LAYER` y no sustituye `C-002`.
@@ -35,5 +39,5 @@ Este esquema no autoriza transformaciones, no cierra `AUD-001`, no promueve `REP
 ## Deuda posterior
 
 - Endurecer variantes por `kind`.
-- Agregar fixtures documentales externos.
+- Ampliar fixtures documentales externos con mas superficies de expediente.
 - Decidir si el esquema debe promoverse a documento de Nivel C o permanecer como artefacto operativo.

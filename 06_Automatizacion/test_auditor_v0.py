@@ -147,6 +147,31 @@ class AuditorV0Tests(unittest.TestCase):
         self.assertIn("case", schema["$defs"])
         self.assertIn("automaton", schema["$defs"])
 
+    def test_documental_fixture_runs_as_partial_non_mutant(self) -> None:
+        rel_path = "06_Automatizacion/fixtures/auditor_v0_documental_cases.json"
+
+        report = auditor_v0.build_report(ROOT, rel_path)
+        results = {case["case_id"]: case["resultado"] for case in report["cases"]}
+
+        self.assertFalse(report["conforme_c002"])
+        self.assertFalse(report["transformacion_permitida"])
+        self.assertEqual(report["summary"]["cases_checked"], 4)
+        self.assertEqual(report["summary"]["mandatory_missing"], auditor_v0.CASE_IDS)
+        self.assertEqual(report["summary"]["schema_errors"], [])
+        self.assertEqual(
+            results,
+            {
+                "AUD-DOC01": "bloqueado",
+                "AUD-DOC02": "bloqueado",
+                "AUD-DOC03": "bloqueado",
+                "AUD-DOC04": "advertencia",
+            },
+        )
+        self.assertTrue(all(not case["transformacion_permitida"] for case in report["cases"]))
+        self.assertTrue(
+            all(not item["transformacion_permitida"] for case in report["cases"] for item in case["reports"])
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
