@@ -24,3 +24,5 @@ Los reportes no autorizan cambios, no cierran expedientes y no sustituyen decisi
 - `lab_executive_summary.json`
 - `lab_run_report.md`
 - `lab_run_report.json`
+- `auditor_v0_report.md`
+- `auditor_v0_report.json`

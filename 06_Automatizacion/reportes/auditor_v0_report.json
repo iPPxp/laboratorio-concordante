@@ -1,0 +1,458 @@
+{
+  "report_id": "AUDITOR-V0-20260702-183317",
+  "expediente": "AUD-001",
+  "algoritmo": "AUDITOR-V0-001",
+  "base_normativa": "C-002",
+  "modo": "no_mutante",
+  "transformacion_permitida": false,
+  "conforme_c002": true,
+  "fuentes": [
+    "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
+    "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
+    "03_Expedientes/AUD-001_Casos_Prueba_Auditor.md",
+    "03_Expedientes/AUD-001_Contrato_Reportes.md",
+    "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md"
+  ],
+  "summary": {
+    "cases_checked": 10,
+    "mandatory_cases": 10,
+    "mandatory_missing": [],
+    "ok": 1,
+    "advertencia": 2,
+    "bloqueado": 7,
+    "operator_reports": 11,
+    "by_operator": {
+      "D": 5,
+      "Mp": 3,
+      "Cr": 2,
+      "Tr": 1
+    },
+    "by_tipo": {
+      "sin_hallazgo_bloqueante": 1,
+      "ambiguedad": 1,
+      "deuda_conceptual": 3,
+      "contradiccion": 1,
+      "dependencia_no_registrada": 3,
+      "violacion_r4_aud": 2
+    }
+  },
+  "cases": [
+    {
+      "case_id": "AUD-T00",
+      "kind": "automaton",
+      "resultado": "ok",
+      "transformacion_permitida": false,
+      "reports": [
+        {
+          "report_id": "AUDITOR-V0-001-AUD-T00-D-01",
+          "expediente": "AUD-001",
+          "caso": "AUD-T00",
+          "operador": "D",
+          "resultado": "ok",
+          "tipo": "sin_hallazgo_bloqueante",
+          "ubicacion": "integracion",
+          "descripcion": "La lectura no detecta hallazgos bloqueantes.",
+          "evidencia": "Mp, Cr, tau y D conservan separacion; Tr no se ejecuta.",
+          "estatus_afirmacion": "definicion",
+          "alternativas_no_decididas": [],
+          "decision_permitida": [
+            "aprobar",
+            "continuar_sin_transformar"
+          ],
+          "decision_emitida": "aprobar",
+          "transformacion_permitida": false,
+          "tau_requerido": "exito",
+          "tau_estado": "exito",
+          "dependencias": [
+            "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
+            "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
+            "03_Expedientes/AUD-001_Casos_Prueba_Auditor.md",
+            "03_Expedientes/AUD-001_Contrato_Reportes.md",
+            "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md"
+          ],
+          "deudas_generadas": []
+        }
+      ]
+    },
+    {
+      "case_id": "AUD-T01",
+      "kind": "automaton",
+      "resultado": "bloqueado",
+      "transformacion_permitida": false,
+      "reports": [
+        {
+          "report_id": "AUDITOR-V0-001-AUD-T01-Mp-01",
+          "expediente": "AUD-001",
+          "caso": "AUD-T01",
+          "operador": "Mp",
+          "resultado": "falla",
+          "tipo": "ambiguedad",
+          "ubicacion": "delta",
+          "descripcion": "El automata declara completitud, pero faltan transiciones.",
+          "evidencia": "(q1, 1)",
+          "estatus_afirmacion": "definicion",
+          "alternativas_no_decididas": [],
+          "decision_permitida": [
+            "bloquear",
+            "continuar_sin_transformar"
+          ],
+          "decision_emitida": "bloquear",
+          "transformacion_permitida": false,
+          "tau_requerido": "bloqueo_temprano",
+          "tau_estado": "bloqueo_temprano",
+          "dependencias": [
+            "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
+            "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
+            "03_Expedientes/AUD-001_Casos_Prueba_Auditor.md",
+            "03_Expedientes/AUD-001_Contrato_Reportes.md",
+            "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md"
+          ],
+          "deudas_generadas": [
+            "completar delta o retirar declaracion de completitud"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "AUD-T02",
+      "kind": "automaton",
+      "resultado": "advertencia",
+      "transformacion_permitida": false,
+      "reports": [
+        {
+          "report_id": "AUDITOR-V0-001-AUD-T02-Cr-01",
+          "expediente": "AUD-001",
+          "caso": "AUD-T02",
+          "operador": "Cr",
+          "resultado": "escalado",
+          "tipo": "deuda_conceptual",
+          "ubicacion": "F",
+          "descripcion": "Existe estado final inalcanzable desde el estado inicial.",
+          "evidencia": "q2",
+          "estatus_afirmacion": "definicion",
+          "alternativas_no_decididas": [],
+          "decision_permitida": [
+            "escalar",
+            "continuar_sin_transformar"
+          ],
+          "decision_emitida": "escalar",
+          "transformacion_permitida": false,
+          "tau_requerido": "escalamiento",
+          "tau_estado": "escalamiento",
+          "dependencias": [
+            "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
+            "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
+            "03_Expedientes/AUD-001_Casos_Prueba_Auditor.md",
+            "03_Expedientes/AUD-001_Contrato_Reportes.md",
+            "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md"
+          ],
+          "deudas_generadas": [
+            "justificar finalidad o corregir alcanzabilidad"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "AUD-T03",
+      "kind": "automaton",
+      "resultado": "bloqueado",
+      "transformacion_permitida": false,
+      "reports": [
+        {
+          "report_id": "AUDITOR-V0-001-AUD-T03-Cr-01",
+          "expediente": "AUD-001",
+          "caso": "AUD-T03",
+          "operador": "Cr",
+          "resultado": "falla",
+          "tipo": "contradiccion",
+          "ubicacion": "delta",
+          "descripcion": "La declaracion de determinismo contradice transiciones duplicadas.",
+          "evidencia": "(q0, x)",
+          "estatus_afirmacion": "definicion",
+          "alternativas_no_decididas": [],
+          "decision_permitida": [
+            "bloquear"
+          ],
+          "decision_emitida": "bloquear",
+          "transformacion_permitida": false,
+          "tau_requerido": "bloqueo_temprano",
+          "tau_estado": "bloqueo_temprano",
+          "dependencias": [
+            "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
+            "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
+            "03_Expedientes/AUD-001_Casos_Prueba_Auditor.md",
+            "03_Expedientes/AUD-001_Contrato_Reportes.md",
+            "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md"
+          ],
+          "deudas_generadas": [
+            "resolver contradiccion de determinismo"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "AUD-T04",
+      "kind": "claim",
+      "resultado": "bloqueado",
+      "transformacion_permitida": false,
+      "reports": [
+        {
+          "report_id": "AUDITOR-V0-001-AUD-T04-D-01",
+          "expediente": "AUD-001",
+          "caso": "AUD-T04",
+          "operador": "D",
+          "resultado": "bloqueado",
+          "tipo": "dependencia_no_registrada",
+          "ubicacion": "afirmacion",
+          "descripcion": "La afirmacion requiere una dependencia local no materializada.",
+          "evidencia": "A4a equivale a A4b; falta: algoritmo local de equivalencia o demostracion",
+          "estatus_afirmacion": "hipotesis",
+          "alternativas_no_decididas": [],
+          "decision_permitida": [
+            "bloquear",
+            "continuar_sin_transformar"
+          ],
+          "decision_emitida": "bloquear",
+          "transformacion_permitida": false,
+          "tau_requerido": "bloqueo_temprano",
+          "tau_estado": "bloqueo_temprano",
+          "dependencias": [
+            "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
+            "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
+            "03_Expedientes/AUD-001_Casos_Prueba_Auditor.md",
+            "03_Expedientes/AUD-001_Contrato_Reportes.md",
+            "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md"
+          ],
+          "deudas_generadas": [
+            "algoritmo local de equivalencia o demostracion"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "AUD-T05",
+      "kind": "automaton",
+      "resultado": "bloqueado",
+      "transformacion_permitida": false,
+      "reports": [
+        {
+          "report_id": "AUDITOR-V0-001-AUD-T05-Mp-01",
+          "expediente": "AUD-001",
+          "caso": "AUD-T05",
+          "operador": "Mp",
+          "resultado": "falla",
+          "tipo": "dependencia_no_registrada",
+          "ubicacion": "automata",
+          "descripcion": "El mapeo referencia estados o simbolos no declarados.",
+          "evidencia": "estado final fuera de Q: q1; destino fuera de Q: q1",
+          "estatus_afirmacion": "expediente",
+          "alternativas_no_decididas": [],
+          "decision_permitida": [
+            "bloquear",
+            "escalar",
+            "continuar_sin_transformar"
+          ],
+          "decision_emitida": "bloquear",
+          "transformacion_permitida": false,
+          "tau_requerido": "bloqueo_temprano",
+          "tau_estado": "bloqueo_temprano",
+          "dependencias": [
+            "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
+            "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
+            "03_Expedientes/AUD-001_Casos_Prueba_Auditor.md",
+            "03_Expedientes/AUD-001_Contrato_Reportes.md",
+            "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md"
+          ],
+          "deudas_generadas": [
+            "normalizar declaracion del automata antes de calcular"
+          ]
+        },
+        {
+          "report_id": "AUDITOR-V0-001-AUD-T05-Tr-02",
+          "expediente": "AUD-001",
+          "caso": "AUD-T05",
+          "operador": "Tr",
+          "resultado": "bloqueado",
+          "tipo": "violacion_r4_aud",
+          "ubicacion": "transformacion",
+          "descripcion": "Se detecta transformacion ejecutada sin decision fundada.",
+          "evidencia": "anadir q1 a Q y aceptar el cambio",
+          "estatus_afirmacion": "expediente",
+          "alternativas_no_decididas": [],
+          "decision_permitida": [
+            "bloquear"
+          ],
+          "decision_emitida": "bloquear",
+          "transformacion_permitida": false,
+          "tau_requerido": "bloqueo_temprano",
+          "tau_estado": "bloqueo_temprano",
+          "dependencias": [
+            "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
+            "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
+            "03_Expedientes/AUD-001_Casos_Prueba_Auditor.md",
+            "03_Expedientes/AUD-001_Contrato_Reportes.md",
+            "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md"
+          ],
+          "deudas_generadas": [
+            "registrar permiso valido antes de cualquier ejecucion"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "AUD-T06",
+      "kind": "claim",
+      "resultado": "bloqueado",
+      "transformacion_permitida": false,
+      "reports": [
+        {
+          "report_id": "AUDITOR-V0-001-AUD-T06-D-01",
+          "expediente": "AUD-001",
+          "caso": "AUD-T06",
+          "operador": "D",
+          "resultado": "bloqueado",
+          "tipo": "deuda_conceptual",
+          "ubicacion": "afirmacion",
+          "descripcion": "La afirmacion promueve una construccion formal sin definicion local.",
+          "evidencia": "Gamma(A) produce la generalizacion canonica del automata A; falta: definicion local de Gamma",
+          "estatus_afirmacion": "teorema",
+          "alternativas_no_decididas": [],
+          "decision_permitida": [
+            "bloquear",
+            "continuar_sin_transformar"
+          ],
+          "decision_emitida": "bloquear",
+          "transformacion_permitida": false,
+          "tau_requerido": "bloqueo_temprano",
+          "tau_estado": "bloqueo_temprano",
+          "dependencias": [
+            "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
+            "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
+            "03_Expedientes/AUD-001_Casos_Prueba_Auditor.md",
+            "03_Expedientes/AUD-001_Contrato_Reportes.md",
+            "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md"
+          ],
+          "deudas_generadas": [
+            "definicion local de Gamma"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "AUD-T07",
+      "kind": "authority",
+      "resultado": "bloqueado",
+      "transformacion_permitida": false,
+      "reports": [
+        {
+          "report_id": "AUDITOR-V0-001-AUD-T07-D-01",
+          "expediente": "AUD-001",
+          "caso": "AUD-T07",
+          "operador": "D",
+          "resultado": "bloqueado",
+          "tipo": "dependencia_no_registrada",
+          "ubicacion": "fuente",
+          "descripcion": "El Registro Historico aparece como autoridad directa sin decision registrada.",
+          "evidencia": "04_Registro_Historico",
+          "estatus_afirmacion": "decision",
+          "alternativas_no_decididas": [],
+          "decision_permitida": [
+            "bloquear",
+            "escalar"
+          ],
+          "decision_emitida": "bloquear",
+          "transformacion_permitida": false,
+          "tau_requerido": "bloqueo_temprano",
+          "tau_estado": "bloqueo_temprano",
+          "dependencias": [
+            "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
+            "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
+            "03_Expedientes/AUD-001_Casos_Prueba_Auditor.md",
+            "03_Expedientes/AUD-001_Contrato_Reportes.md",
+            "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md"
+          ],
+          "deudas_generadas": [
+            "convertir pista historica en decision o documento vigente antes de usarla"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "AUD-T08",
+      "kind": "level_change",
+      "resultado": "bloqueado",
+      "transformacion_permitida": false,
+      "reports": [
+        {
+          "report_id": "AUDITOR-V0-001-AUD-T08-D-01",
+          "expediente": "AUD-001",
+          "caso": "AUD-T08",
+          "operador": "D",
+          "resultado": "bloqueado",
+          "tipo": "violacion_r4_aud",
+          "ubicacion": "01_Canon/M-000_Reglas_Fundamentales.md",
+          "descripcion": "Un expediente intenta modificar Canon sin decision explicita.",
+          "evidencia": "modificar M-000 para incorporar R4-AUD",
+          "estatus_afirmacion": "expediente",
+          "alternativas_no_decididas": [],
+          "decision_permitida": [
+            "bloquear"
+          ],
+          "decision_emitida": "bloquear",
+          "transformacion_permitida": false,
+          "tau_requerido": "bloqueo_temprano",
+          "tau_estado": "bloqueo_temprano",
+          "dependencias": [
+            "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
+            "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
+            "03_Expedientes/AUD-001_Casos_Prueba_Auditor.md",
+            "03_Expedientes/AUD-001_Contrato_Reportes.md",
+            "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md"
+          ],
+          "deudas_generadas": [
+            "mantener R4-AUD dentro de AUD-001 hasta decision superior"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "AUD-T09",
+      "kind": "term",
+      "resultado": "advertencia",
+      "transformacion_permitida": false,
+      "reports": [
+        {
+          "report_id": "AUDITOR-V0-001-AUD-T09-Mp-01",
+          "expediente": "AUD-001",
+          "caso": "AUD-T09",
+          "operador": "Mp",
+          "resultado": "escalado",
+          "tipo": "deuda_conceptual",
+          "ubicacion": "termino",
+          "descripcion": "El texto introduce un termino nuevo sin estatus declarado.",
+          "evidencia": "operador concordante",
+          "estatus_afirmacion": "no_clasificado",
+          "alternativas_no_decididas": [],
+          "decision_permitida": [
+            "escalar",
+            "continuar_sin_transformar"
+          ],
+          "decision_emitida": "continuar_sin_transformar",
+          "transformacion_permitida": false,
+          "tau_requerido": "interrupcion_por_deuda",
+          "tau_estado": "interrupcion_por_deuda",
+          "dependencias": [
+            "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
+            "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
+            "03_Expedientes/AUD-001_Casos_Prueba_Auditor.md",
+            "03_Expedientes/AUD-001_Contrato_Reportes.md",
+            "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md"
+          ],
+          "deudas_generadas": [
+            "declarar estatus de operador concordante"
+          ]
+        }
+      ]
+    }
+  ]
+}

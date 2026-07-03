@@ -13,6 +13,7 @@ Esta carpeta contiene herramientas no mutantes del Laboratorio Concordante.
 - `lab_risk_classifier.py`: clasificador no mutante de advertencias heredadas, deuda documental y riesgos activos.
 - `lab_executive_summary.py`: resumen ejecutivo automatico no mutante del Laboratorio.
 - `lab_run.py`: comando unico no mutante para corrida local de laboratorio.
+- `auditor_v0.py`: implementacion inicial no mutante del Auditor v0 conforme `C-002`.
 
 ## Regla de uso
 
@@ -83,6 +84,18 @@ Para ejecutar la corrida unificada:
 python 06_Automatizacion/lab_run.py
 ```
 
+Para ejecutar el Auditor v0 no mutante:
+
+```powershell
+python 06_Automatizacion/auditor_v0.py --format md --output 06_Automatizacion/reportes/auditor_v0_report.md
+```
+
+Para validar la implementacion:
+
+```powershell
+python -m unittest 06_Automatizacion/test_auditor_v0.py
+```
+
 ## Reportes iniciales
 
 - `reportes/do_check_min_claves.md`: revision minima de archivos clave.
@@ -101,6 +114,8 @@ python 06_Automatizacion/lab_run.py
 - `reportes/lab_executive_summary.json`: resumen ejecutivo en formato estructurado.
 - `reportes/lab_run_report.md`: corrida unificada en formato Markdown.
 - `reportes/lab_run_report.json`: corrida unificada en formato estructurado.
+- `reportes/auditor_v0_report.md`: reporte del Auditor v0 no mutante.
+- `reportes/auditor_v0_report.json`: reporte estructurado del Auditor v0 no mutante.
 
 ## Estado
 
@@ -108,4 +123,4 @@ Esta superficie pertenece a `AUT-001`.
 
 `DO-CHECK-MIN-001` queda aceptado como MVP minimo provisional.
 
-`DO-CHECK-MED-001` queda aceptado como fase media provisional. `DO-STATE-BOARD-001` queda aceptado como tablero de estado provisional. `DO-LAB-CONTINUITY-001` queda aceptado como continuidad integrada provisional. `DO-LAB-RUN-001` queda aceptado como comando unico provisional. `DO-LAB-RISK-001` queda aceptado como clasificador de riesgos provisional. `DO-LAB-SUMMARY-001` queda aceptado como resumen ejecutivo provisional. Ninguna herramienta transforma, autoriza cambios o cierra `AUT-001`.
+`DO-CHECK-MED-001` queda aceptado como fase media provisional. `DO-STATE-BOARD-001` queda aceptado como tablero de estado provisional. `DO-LAB-CONTINUITY-001` queda aceptado como continuidad integrada provisional. `DO-LAB-RUN-001` queda aceptado como comando unico provisional. `DO-LAB-RISK-001` queda aceptado como clasificador de riesgos provisional. `DO-LAB-SUMMARY-001` queda aceptado como resumen ejecutivo provisional. `AUDITOR-V0-001` queda aceptado como implementacion inicial no mutante conforme `C-002`. Ninguna herramienta transforma, autoriza cambios o cierra `AUT-001`.
