@@ -25,6 +25,7 @@ Este endurecimiento agrega validacion interna sin activar transformaciones.
 - Registro de `schema_errors` en el resumen del reporte.
 - Reactivacion controlada de salida JSON y carga externa JSON desde la interfaz de linea de comando.
 - Integracion de errores de forma de caso en `schema_errors`.
+- Esquema operativo inicial para archivos externos de casos.
 - Pruebas unitarias para entradas mal formadas, duplicados y permiso indebido de transformacion.
 - Pruebas unitarias para salida JSON y carga externa por `--case-file`.
 
@@ -50,5 +51,6 @@ python 06_Automatizacion/auditor_v0.py --format json
 ## Deuda siguiente
 
 - Ampliar fixtures externos documentales.
+- Endurecer variantes del esquema por tipo de caso.
 - Separar esquema formal de reportes en documento propio si `AUD-001` lo requiere.
 - Ampliar entradas documentales no automata.

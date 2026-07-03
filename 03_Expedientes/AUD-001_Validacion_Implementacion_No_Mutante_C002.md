@@ -33,7 +33,7 @@ La salida JSON y la carga externa por `--case-file` quedan reactivadas y cubiert
 - Casos `bloqueado`: `7`.
 - Reportes de operador: `11`.
 - Errores de esquema: `0`.
-- Pruebas unitarias vigentes: `9`.
+- Pruebas unitarias vigentes: `10`.
 
 ## Cobertura por caso
 
@@ -55,6 +55,7 @@ La salida JSON y la carga externa por `--case-file` quedan reactivadas y cubiert
 - `06_Automatizacion/reportes/auditor_v0_report.md`
 - `06_Automatizacion/reportes/auditor_v0_report.json`
 - `06_Automatizacion/fixtures/auditor_v0_cases.json`
+- `06_Automatizacion/fixtures/auditor_v0_case_schema.json`
 
 ## Conclusiones
 
@@ -62,4 +63,4 @@ La implementacion cubre la matriz minima de `C-002` en modo no mutante.
 
 Los reportes emitidos conservan decision restringida y no habilitan transformacion.
 
-La prueba unitaria confirma que los diez casos obligatorios permanecen cubiertos, que ningun reporte autoriza transformacion, que la salida JSON es valida y que `--case-file` acepta casos externos dentro del repositorio.
+La prueba unitaria confirma que los diez casos obligatorios permanecen cubiertos, que ningun reporte autoriza transformacion, que la salida JSON es valida, que `--case-file` acepta casos externos dentro del repositorio y que el artefacto de esquema queda declarado.

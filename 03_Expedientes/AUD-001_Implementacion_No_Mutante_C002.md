@@ -37,6 +37,7 @@ La implementacion ejecuta lectura acotada, clasificacion de casos y emision de r
 - matriz interna como fuente vigente de casos;
 - carga opcional de casos JSON por `--case-file`;
 - fixture externo `06_Automatizacion/fixtures/auditor_v0_cases.json`;
+- esquema operativo `06_Automatizacion/fixtures/auditor_v0_case_schema.json`;
 - salida por consola o por `--output`;
 - validacion de ruta de salida dentro del repositorio.
 
@@ -66,7 +67,7 @@ Esta implementacion no cubre:
 
 ## Deuda viva
 
-- estabilizar un esquema formal para archivos externos de casos;
+- endurecer variantes del esquema por tipo de caso;
 - ampliar fixtures documentales externos mas alla de la matriz minima;
 - definir fixtures documentales fuera de automatas;
 - conectar la salida con tableros sin convertir reportes en autoridad;

@@ -137,6 +137,16 @@ class AuditorV0Tests(unittest.TestCase):
         self.assertTrue(report["conforme_c002"])
         self.assertEqual(report["summary"]["cases_checked"], 10)
 
+    def test_external_case_schema_artifact_is_declared(self) -> None:
+        schema_path = ROOT / "06_Automatizacion" / "fixtures" / "auditor_v0_case_schema.json"
+
+        schema = json.loads(schema_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(schema["$id"], "AUDITOR-V0-CASE-SCHEMA-001")
+        self.assertEqual(schema["required"], ["cases"])
+        self.assertIn("case", schema["$defs"])
+        self.assertIn("automaton", schema["$defs"])
+
 
 if __name__ == "__main__":
     unittest.main()

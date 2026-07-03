@@ -121,6 +121,7 @@ python -m unittest 06_Automatizacion/test_auditor_v0.py
 - `reportes/auditor_v0_report.md`: reporte del Auditor v0 no mutante.
 - `reportes/auditor_v0_report.json`: reporte estructurado del Auditor v0 no mutante.
 - `fixtures/auditor_v0_cases.json`: matriz externa completa del Auditor v0.
+- `fixtures/auditor_v0_case_schema.json`: esquema operativo inicial de casos externos del Auditor v0.
 
 ## Estado
 

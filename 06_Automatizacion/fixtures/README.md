@@ -7,5 +7,6 @@ Esta carpeta conserva entradas externas para validar herramientas de `06_Automat
 ## Auditor v0
 
 - `auditor_v0_cases.json`: matriz externa completa `AUD-T00` a `AUD-T09`.
+- `auditor_v0_case_schema.json`: esquema operativo inicial `AUDITOR-V0-CASE-SCHEMA-001`.
 
 Los fixtures no autorizan transformaciones, no sustituyen decisiones registradas y no cierran expedientes.
