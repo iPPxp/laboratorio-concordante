@@ -25,7 +25,8 @@ La aceptacion queda limitada a lectura, evaluacion de la matriz minima `AUD-T00`
 La decision cubre:
 
 - ejecucion local del auditor en modo no mutante;
-- generacion de reportes Markdown y JSON;
+- generacion de reportes Markdown;
+- salida JSON pausada temporalmente hasta reactivacion explicita;
 - conservacion de evidencia en `06_Automatizacion/reportes/`;
 - uso de la implementacion como base de pruebas para siguientes iteraciones.
 

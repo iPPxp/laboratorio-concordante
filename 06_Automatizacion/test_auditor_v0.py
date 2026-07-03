@@ -1,4 +1,6 @@
 import unittest
+import contextlib
+import io
 from pathlib import Path
 import sys
 
@@ -81,6 +83,26 @@ class AuditorV0Tests(unittest.TestCase):
         errors = auditor_v0.report_schema_errors([bad_report])
 
         self.assertEqual(errors, ["AUDITOR-V0-001-AUD-TXX-D-01: transformacion_permitida debe ser false"])
+
+    def test_json_output_is_paused(self) -> None:
+        stderr = io.StringIO()
+
+        with contextlib.redirect_stderr(stderr):
+            with self.assertRaises(SystemExit) as error:
+                auditor_v0.main(["--format", "json"])
+
+        self.assertEqual(error.exception.code, 2)
+        self.assertIn("JSON pausado temporalmente", stderr.getvalue())
+
+    def test_external_json_cases_are_paused(self) -> None:
+        stderr = io.StringIO()
+
+        with contextlib.redirect_stderr(stderr):
+            with self.assertRaises(SystemExit) as error:
+                auditor_v0.main(["--case-file", "casos.json"])
+
+        self.assertEqual(error.exception.code, 2)
+        self.assertIn("JSON pausado temporalmente", stderr.getvalue())
 
 
 if __name__ == "__main__":
