@@ -22,6 +22,7 @@ Este endurecimiento agrega validacion interna sin activar transformaciones y sin
 - Deteccion de `case_id` duplicado.
 - Registro de `schema_errors` en el resumen del reporte.
 - Bloqueo temporal de salida JSON y carga externa JSON desde la interfaz de linea de comando.
+- Integracion de errores de forma de caso en `schema_errors`.
 - Pruebas unitarias para entradas mal formadas, duplicados y permiso indebido de transformacion.
 
 ## Invariantes conservadas
@@ -29,6 +30,7 @@ Este endurecimiento agrega validacion interna sin activar transformaciones y sin
 - `transformacion_permitida` permanece `false`.
 - `Tr_ejecucion` no queda habilitado.
 - Los diez casos obligatorios siguen cubiertos.
+- Un caso obligatorio mal formado bloquea la conformidad global aunque emita reporte seguro.
 - Los reportes no cierran `AUD-001`.
 - No se promueve `REPORT_LAYER`.
 - No se crean, cargan ni emiten artefactos JSON durante la pausa temporal de JSON.

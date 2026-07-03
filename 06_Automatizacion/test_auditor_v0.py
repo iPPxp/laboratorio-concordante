@@ -56,6 +56,29 @@ class AuditorV0Tests(unittest.TestCase):
         self.assertIn("id ausente", result["reports"][0]["evidencia"])
         self.assertFalse(result["transformacion_permitida"])
 
+    def test_malformed_mandatory_case_breaks_conformity(self) -> None:
+        cases = list(auditor_v0.DEFAULT_CASES)
+        cases[0] = {
+            "id": "AUD-T00",
+            "kind": "automaton",
+            "declaration": {"deterministic": True, "complete": True},
+            "automaton": {
+                "states": ["q0"],
+                "alphabet": ["a"],
+                "initial": "q0",
+                "finals": ["q0"],
+                "transitions": [["q0", "a", 1]],
+            },
+        }
+
+        report = auditor_v0.build_report_from_cases(cases)
+
+        self.assertFalse(report["conforme_c002"])
+        self.assertIn(
+            "AUD-T00: cada transicion debe tener forma [origen, simbolo, destino] de textos",
+            report["summary"]["schema_errors"],
+        )
+
     def test_duplicate_case_ids_break_conformity(self) -> None:
         report = auditor_v0.build_report_from_cases([auditor_v0.DEFAULT_CASES[0], auditor_v0.DEFAULT_CASES[0]])
 

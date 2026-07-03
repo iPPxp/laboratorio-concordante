@@ -273,13 +273,23 @@ def case_validation_errors(case: Any) -> list[str]:
             for field in ("states", "alphabet", "finals", "transitions"):
                 if not isinstance(automaton.get(field), list):
                     errors.append(f"automaton.{field} debe ser lista")
+            for field in ("states", "alphabet", "finals"):
+                values = automaton.get(field)
+                if isinstance(values, list) and any(not isinstance(value, str) or not value for value in values):
+                    errors.append(f"automaton.{field} debe contener textos")
             if not isinstance(automaton.get("initial"), str):
                 errors.append("automaton.initial debe ser texto")
             transitions = automaton.get("transitions", [])
             if isinstance(transitions, list):
-                bad = [item for item in transitions if not isinstance(item, list) or len(item) != 3]
+                bad = [
+                    item
+                    for item in transitions
+                    if not isinstance(item, list)
+                    or len(item) != 3
+                    or any(not isinstance(value, str) or not value for value in item)
+                ]
                 if bad:
-                    errors.append("cada transicion debe tener forma [origen, simbolo, destino]")
+                    errors.append("cada transicion debe tener forma [origen, simbolo, destino] de textos")
     return errors
 
 
@@ -676,6 +686,17 @@ def duplicate_case_ids(cases: list[Any]) -> list[str]:
     return sorted(duplicates)
 
 
+def case_schema_errors(cases: list[Any]) -> list[str]:
+    errors: list[str] = []
+    for index, case in enumerate(cases):
+        if isinstance(case, dict) and isinstance(case.get("id"), str) and case.get("id"):
+            case_name = case["id"]
+        else:
+            case_name = f"caso[{index}]"
+        errors.extend(f"{case_name}: {error}" for error in case_validation_errors(case))
+    return errors
+
+
 def report_schema_errors(reports: list[dict[str, Any]]) -> list[str]:
     errors: list[str] = []
     for report in reports:
@@ -713,7 +734,8 @@ def build_report_from_cases(cases: list[Any]) -> dict[str, Any]:
     covered = sorted({case["case_id"] for case in evaluated})
     missing = [case_id for case_id in CASE_IDS if case_id not in covered]
     duplicates = duplicate_case_ids(cases)
-    schema_errors = report_schema_errors(all_reports)
+    schema_errors = case_schema_errors(cases)
+    schema_errors.extend(report_schema_errors(all_reports))
     schema_errors.extend(f"case_id duplicado: {case_id}" for case_id in duplicates)
     blocking = [case for case in evaluated if case["resultado"] == "bloqueado"]
     warnings = [case for case in evaluated if case["resultado"] == "advertencia"]
