@@ -123,7 +123,7 @@ Estado operativo resumido:
 - Documentos oficiales de Nivel C: `C-001_Especificacion_Tecnica_Auditor.md` y `C-002_RFC_Operativo_Auditor_v0.md`.
 - Especificacion candidata promovida: `SPEC-AUD-001_Candidata` en `03_Expedientes`.
 - Modo operativo del Auditor: mixto, segun `MODO-AUD-001`.
-- Proximo objetivo: preparar decision de estatus acotado para `P-PI.0` / `P-PI.1`; `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001` quedan ejecutados provisionalmente. `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa; `P-PI.0` y `P-PI.1` quedan activos de forma acotada; `B-001.5` queda congelado; los vision papers quedan inactivos.
+- Proximo objetivo: mantener seguimiento acotado del frente `P-PI.0` / `P-PI.1`; `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001` quedan ejecutados provisionalmente y la decision de estatus ya quedo registrada. `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa; `P-PI.0` y `P-PI.1` quedan activos de forma acotada; `B-001.5` queda congelado; los vision papers quedan inactivos.
 - No volver a discutir sin reapertura explicita: `EF-001`, `CP-001`, Procedimiento, Auditoria.
 
 Documentos declarados como completos en el punto de partida:

@@ -24,6 +24,7 @@ Decision de estatus asociada: `03_Expedientes/P-PI_Decision_Estatus_Criterios_Ci
 Decision de ruta asociada: `03_Expedientes/P-PI_Decision_Ruta_Operativa.md`.
 
 Decision de reactivacion asociada: `03_Expedientes/P-PI_Decision_Reactivacion_Frente_Matematico.md`.
+Decision de estatus asociada: `03_Expedientes/P-PI_Decision_Estatus_Frente_Matematico_Acotado.md`.
 
 Marco inicial asociado: `03_Expedientes/P-PI_Marco_Inicial_Confluencia_Equivalencia.md`.
 

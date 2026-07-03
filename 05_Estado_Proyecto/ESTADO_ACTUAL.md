@@ -345,7 +345,7 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 
 ## Ultima decision operativa
 
-`P-PI.0` / `P-PI.1` quedan reactivados como frente matematico acotado por `D-2026-07-02-032`; `P-PI.0` trabaja Equivalencia de proyecciones y `P-PI.1` trabaja Confluencia sin resolver ambos problemas. Los vision papers quedan inactivos por `D-2026-07-02-031`. `H-B.6` y `H-B.7` quedan con alcance local minimo aceptado por `D-2026-07-02-030`; siguen activas solo como deuda viva sin contenido sustantivo materializado. `AUT-001` queda cerrado operativamente por `D-2026-07-02-029`. `AUD-001` queda completo en version documental/operativa v0 y `SPEC-RFC-AUDITOR-V0` queda promovida a `C-002`.
+`P-PI_Decision_Estatus_Frente_Matematico_Acotado.md` (`D-2026-07-03-001`): `P-PI.0` y `P-PI.1` quedan confirmados como activos acotados tras los casos `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001`; la decision estabiliza el frente sin cerrar Confluencia ni Equivalencia de proyecciones.
 
 ## Ultimo expediente cerrado
 
@@ -355,7 +355,7 @@ Ultimo expediente tecnico cerrado: `AUT-001`
 
 ## Proximo objetivo
 
-Preparar decision de estatus acotado para `P-PI.0` / `P-PI.1` tras `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001`.
+Mantener seguimiento acotado del frente `P-PI.0` / `P-PI.1` con los tres casos ejecutados y sus deudas abiertas.
 
 ## No volver a discutir sin reapertura explicita
 

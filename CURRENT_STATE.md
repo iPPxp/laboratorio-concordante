@@ -268,11 +268,11 @@ Especificacion candidata promovida:
 
 Proximo objetivo:
 
-- Preparar decision de estatus acotado para `P-PI.0` / `P-PI.1` tras `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001`.
+- Mantener seguimiento acotado del frente `P-PI.0` / `P-PI.1` con los tres casos ejecutados y sus deudas abiertas.
 
 Expediente activo inmediato:
 
-- `P-PI.0` / `P-PI.1` quedan como frente activo acotado: `P-PI.0` para Equivalencia de proyecciones y `P-PI.1` para Confluencia. `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001` quedan ejecutados provisionalmente; falta decision de estatus acotado del frente. `AUD-001` queda completo en version documental/operativa v0 y ya produjo `C-002`; permanece abierto solo para rutas posteriores no cubiertas. `H-B.6` y `H-B.7` tienen alcance local minimo aceptado, pero sin contenido sustantivo materializado. `PSI-001` queda abierto con matriz de patrones no clinicos aceptada, sin cierre ni promocion; `TCS-001` queda abierto como expediente teorico provisional; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `B-001.5` queda congelado.
+- `P-PI.0` / `P-PI.1` quedan como frente activo acotado: `P-PI.0` para Equivalencia de proyecciones y `P-PI.1` para Confluencia. `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001` quedan ejecutados provisionalmente; la decision de estatus acotado ya quedo registrada. `AUD-001` queda completo en version documental/operativa v0 y ya produjo `C-002`; permanece abierto solo para rutas posteriores no cubiertas. `H-B.6` y `H-B.7` tienen alcance local minimo aceptado, pero sin contenido sustantivo materializado. `PSI-001` queda abierto con matriz de patrones no clinicos aceptada, sin cierre ni promocion; `TCS-001` queda abierto como expediente teorico provisional; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `B-001.5` queda congelado.
 - Vision papers: `VISION_PAPER_PROPUESTA.md` y `VISION_PAPER_FINAL_REFERENCIAS.md` quedan inactivos hasta nuevo aviso.
 
 NO volver a discutir sin reapertura explicita:
