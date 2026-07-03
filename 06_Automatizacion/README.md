@@ -89,6 +89,7 @@ Para ejecutar el Auditor v0 no mutante:
 ```powershell
 python 06_Automatizacion/auditor_v0.py --format md --output 06_Automatizacion/reportes/auditor_v0_report.md
 python 06_Automatizacion/auditor_v0.py --format json --output 06_Automatizacion/reportes/auditor_v0_report.json
+python 06_Automatizacion/auditor_v0.py --format json --case-file 06_Automatizacion/fixtures/auditor_v0_cases.json
 ```
 
 En el Auditor v0, la salida JSON y la carga externa por `--case-file` estan reactivadas en modo no mutante.
@@ -119,6 +120,7 @@ python -m unittest 06_Automatizacion/test_auditor_v0.py
 - `reportes/lab_run_report.json`: corrida unificada en formato estructurado.
 - `reportes/auditor_v0_report.md`: reporte del Auditor v0 no mutante.
 - `reportes/auditor_v0_report.json`: reporte estructurado del Auditor v0 no mutante.
+- `fixtures/auditor_v0_cases.json`: matriz externa completa del Auditor v0.
 
 ## Estado
 

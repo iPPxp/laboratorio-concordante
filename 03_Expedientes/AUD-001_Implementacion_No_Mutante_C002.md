@@ -36,6 +36,7 @@ La implementacion ejecuta lectura acotada, clasificacion de casos y emision de r
 - modo no mutante con `transformacion_permitida = false`;
 - matriz interna como fuente vigente de casos;
 - carga opcional de casos JSON por `--case-file`;
+- fixture externo `06_Automatizacion/fixtures/auditor_v0_cases.json`;
 - salida por consola o por `--output`;
 - validacion de ruta de salida dentro del repositorio.
 
@@ -45,6 +46,7 @@ La implementacion ejecuta lectura acotada, clasificacion de casos y emision de r
 python 06_Automatizacion/auditor_v0.py --format md
 python 06_Automatizacion/auditor_v0.py --format md --output 06_Automatizacion/reportes/auditor_v0_report.md
 python 06_Automatizacion/auditor_v0.py --format json --output 06_Automatizacion/reportes/auditor_v0_report.json
+python 06_Automatizacion/auditor_v0.py --format json --case-file 06_Automatizacion/fixtures/auditor_v0_cases.json
 python -m unittest 06_Automatizacion/test_auditor_v0.py
 ```
 
@@ -65,7 +67,7 @@ Esta implementacion no cubre:
 ## Deuda viva
 
 - estabilizar un esquema formal para archivos externos de casos;
-- ampliar fixtures documentales externos;
+- ampliar fixtures documentales externos mas alla de la matriz minima;
 - definir fixtures documentales fuera de automatas;
 - conectar la salida con tableros sin convertir reportes en autoridad;
 - mantener `REPORT_LAYER` como lectura local mientras no exista promocion propia.

@@ -1,0 +1,243 @@
+{
+  "cases": [
+    {
+      "id": "AUD-T00",
+      "kind": "automaton",
+      "claim_status": "definicion",
+      "declaration": {
+        "deterministic": true,
+        "complete": true
+      },
+      "automaton": {
+        "states": [
+          "q0",
+          "q1"
+        ],
+        "alphabet": [
+          "0",
+          "1"
+        ],
+        "initial": "q0",
+        "finals": [
+          "q1"
+        ],
+        "transitions": [
+          [
+            "q0",
+            "0",
+            "q0"
+          ],
+          [
+            "q0",
+            "1",
+            "q1"
+          ],
+          [
+            "q1",
+            "0",
+            "q0"
+          ],
+          [
+            "q1",
+            "1",
+            "q1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "AUD-T01",
+      "kind": "automaton",
+      "claim_status": "definicion",
+      "declaration": {
+        "deterministic": true,
+        "complete": true
+      },
+      "automaton": {
+        "states": [
+          "q0",
+          "q1"
+        ],
+        "alphabet": [
+          "0",
+          "1"
+        ],
+        "initial": "q0",
+        "finals": [
+          "q1"
+        ],
+        "transitions": [
+          [
+            "q0",
+            "0",
+            "q0"
+          ],
+          [
+            "q0",
+            "1",
+            "q1"
+          ],
+          [
+            "q1",
+            "0",
+            "q0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "AUD-T02",
+      "kind": "automaton",
+      "claim_status": "definicion",
+      "declaration": {
+        "deterministic": true,
+        "complete": false
+      },
+      "automaton": {
+        "states": [
+          "q0",
+          "q1",
+          "q2"
+        ],
+        "alphabet": [
+          "a"
+        ],
+        "initial": "q0",
+        "finals": [
+          "q2"
+        ],
+        "transitions": [
+          [
+            "q0",
+            "a",
+            "q1"
+          ],
+          [
+            "q1",
+            "a",
+            "q1"
+          ],
+          [
+            "q2",
+            "a",
+            "q2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "AUD-T03",
+      "kind": "automaton",
+      "claim_status": "definicion",
+      "declaration": {
+        "deterministic": true,
+        "complete": false
+      },
+      "automaton": {
+        "states": [
+          "q0",
+          "q1"
+        ],
+        "alphabet": [
+          "x"
+        ],
+        "initial": "q0",
+        "finals": [
+          "q1"
+        ],
+        "transitions": [
+          [
+            "q0",
+            "x",
+            "q0"
+          ],
+          [
+            "q0",
+            "x",
+            "q1"
+          ],
+          [
+            "q1",
+            "x",
+            "q1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "AUD-T04",
+      "kind": "claim",
+      "claim_status": "hipotesis",
+      "claim": "A4a equivale a A4b",
+      "justification": "se ve por inspeccion",
+      "required_dependency": "algoritmo local de equivalencia o demostracion",
+      "dependency_materialized": false
+    },
+    {
+      "id": "AUD-T05",
+      "kind": "automaton",
+      "claim_status": "expediente",
+      "declaration": {
+        "deterministic": true,
+        "complete": false
+      },
+      "automaton": {
+        "states": [
+          "q0"
+        ],
+        "alphabet": [
+          "a"
+        ],
+        "initial": "q0",
+        "finals": [
+          "q1"
+        ],
+        "transitions": [
+          [
+            "q0",
+            "a",
+            "q1"
+          ]
+        ]
+      },
+      "transformation": {
+        "executed": true,
+        "decision_emitida": "ausente",
+        "description": "anadir q1 a Q y aceptar el cambio"
+      }
+    },
+    {
+      "id": "AUD-T06",
+      "kind": "claim",
+      "claim_status": "teorema",
+      "claim": "Gamma(A) produce la generalizacion canonica del automata A",
+      "required_dependency": "definicion local de Gamma",
+      "dependency_materialized": false,
+      "forbidden_promotion": "Gamma formal"
+    },
+    {
+      "id": "AUD-T07",
+      "kind": "authority",
+      "claim_status": "decision",
+      "claim": "resultado vigente fundado en conversacion historica",
+      "source": "04_Registro_Historico",
+      "registered_decision": false
+    },
+    {
+      "id": "AUD-T08",
+      "kind": "level_change",
+      "claim_status": "expediente",
+      "surface": "01_Canon/M-000_Reglas_Fundamentales.md",
+      "action": "modificar M-000 para incorporar R4-AUD",
+      "registered_decision": false
+    },
+    {
+      "id": "AUD-T09",
+      "kind": "term",
+      "claim_status": "no_clasificado",
+      "text": "El operador concordante resuelve la reduccion.",
+      "term": "operador concordante",
+      "term_status": ""
+    }
+  ]
+}

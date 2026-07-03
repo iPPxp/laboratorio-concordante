@@ -49,6 +49,6 @@ python 06_Automatizacion/auditor_v0.py --format json
 
 ## Deuda siguiente
 
-- Agregar fixtures externos documentales.
+- Ampliar fixtures externos documentales.
 - Separar esquema formal de reportes en documento propio si `AUD-001` lo requiere.
 - Ampliar entradas documentales no automata.

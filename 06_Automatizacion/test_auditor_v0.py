@@ -3,7 +3,6 @@ import contextlib
 import io
 import json
 import os
-import tempfile
 from pathlib import Path
 import sys
 
@@ -123,18 +122,15 @@ class AuditorV0Tests(unittest.TestCase):
 
     def test_external_json_cases_are_active(self) -> None:
         stdout = io.StringIO()
+        rel_path = "06_Automatizacion/fixtures/auditor_v0_cases.json"
 
-        with tempfile.TemporaryDirectory(dir=ROOT / "06_Automatizacion") as tmpdir:
-            case_path = Path(tmpdir) / "casos.json"
-            case_path.write_text(json.dumps({"cases": auditor_v0.DEFAULT_CASES}), encoding="utf-8")
-            rel_path = str(case_path.relative_to(ROOT))
-            cwd = Path.cwd()
-            try:
-                os.chdir(ROOT)
-                with contextlib.redirect_stdout(stdout):
-                    code = auditor_v0.main(["--format", "json", "--case-file", rel_path])
-            finally:
-                os.chdir(cwd)
+        cwd = Path.cwd()
+        try:
+            os.chdir(ROOT)
+            with contextlib.redirect_stdout(stdout):
+                code = auditor_v0.main(["--format", "json", "--case-file", rel_path])
+        finally:
+            os.chdir(cwd)
 
         report = json.loads(stdout.getvalue())
         self.assertEqual(code, 0)

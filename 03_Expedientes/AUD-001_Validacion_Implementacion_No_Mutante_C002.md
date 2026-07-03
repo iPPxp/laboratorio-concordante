@@ -16,6 +16,7 @@ Implementacion revisada: `06_Automatizacion/auditor_v0.py`.
 python 06_Automatizacion/auditor_v0.py --format md
 python 06_Automatizacion/auditor_v0.py --format md --output 06_Automatizacion/reportes/auditor_v0_report.md
 python 06_Automatizacion/auditor_v0.py --format json --output 06_Automatizacion/reportes/auditor_v0_report.json
+python 06_Automatizacion/auditor_v0.py --format json --case-file 06_Automatizacion/fixtures/auditor_v0_cases.json
 python -m unittest 06_Automatizacion/test_auditor_v0.py
 ```
 
@@ -53,6 +54,7 @@ La salida JSON y la carga externa por `--case-file` quedan reactivadas y cubiert
 
 - `06_Automatizacion/reportes/auditor_v0_report.md`
 - `06_Automatizacion/reportes/auditor_v0_report.json`
+- `06_Automatizacion/fixtures/auditor_v0_cases.json`
 
 ## Conclusiones
 

@@ -17,6 +17,7 @@ La reactivacion cubre:
 - `--format json`;
 - `--case-file` para archivos JSON dentro del repositorio;
 - regeneracion de `06_Automatizacion/reportes/auditor_v0_report.json`;
+- fixture externo `06_Automatizacion/fixtures/auditor_v0_cases.json`;
 - pruebas unitarias de salida JSON y carga externa.
 
 ## Alcance
@@ -35,5 +36,5 @@ La reactivacion no convierte JSON en autoridad decisional, no habilita `Tr_ejecu
 ## Deuda posterior
 
 - Definir esquema formal de casos externos.
-- Agregar fixtures documentales externos.
+- Ampliar fixtures documentales externos mas alla de la matriz minima.
 - Separar contrato ejecutable de `OPERATOR_REPORT` si `AUD-001` lo requiere.
