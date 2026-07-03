@@ -20,6 +20,8 @@ Definir que significa "Auditor completo" dentro de `AUD-001` sin confundirlo con
 - `03_Expedientes/AUD-001_R4-CANDIDATA.md`
 - `03_Expedientes/AUD-001_REPORT_LAYER_Candidata.md`
 - `03_Expedientes/AUD-001_Compatibilidad_REPORT_LAYER_DO_CHECK.md`
+- `03_Expedientes/AUD-001_Implementacion_No_Mutante_C002.md`
+- `03_Expedientes/AUD-001_Validacion_Implementacion_No_Mutante_C002.md`
 - `03_Expedientes/HB-001_Deuda_Viva_H-B.md`
 - `03_Expedientes/DO-001_DO-CHECK-001.md`
 - `03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md`
@@ -50,6 +52,7 @@ El Auditor queda completo en version documental/operativa v0 cuando existe una d
 | C6 | `REPORT_LAYER` | `REPORT-LAYER-CAND-001`, `VAL-022`, `VAL-028` | capa abstracta local y puente conceptual con `DO_CHECK_REPORT` |
 | C7 | Deuda viva | `HB-001_Deuda_Viva_H-B.md` y deudas de R4/Gamma | las deudas no bloquean v0 porque no se usan como fundamento |
 | C8 | Limites declarados | este documento y sintesis asociada | lo no incluido queda fuera del cierre v0 |
+| C9 | Referencia ejecutable no mutante | `AUDITOR-V0-001`, JSON reactivado, fixtures externos y adaptador `DO_CHECK_REPORT` | apoyo operativo sin transformacion ni autoridad decisional |
 
 ## Exclusiones
 
@@ -57,7 +60,7 @@ La completitud v0 no incluye:
 
 - suite ejecutable completa;
 - parser real de archivos;
-- serializacion JSON externa mientras la pausa temporal siga vigente;
+- serializacion formal completa fuera del JSON operativo vigente;
 - escritura automatica en expedientes o Canon;
 - reversion material o cuarentena materializada;
 - Regla R4 formal;
@@ -68,7 +71,7 @@ La completitud v0 no incluye:
 
 ## Regla de decision
 
-Si las compuertas C1 a C8 pasan, `AUD-001` puede declarar completo el Auditor v0 en alcance documental/operativo.
+Si las compuertas C1 a C9 pasan, `AUD-001` puede declarar completo el Auditor v0 en alcance documental/operativo.
 
 Si alguna compuerta falla, el expediente debe conservar estatus abierto y registrar la deuda concreta antes de declarar completitud.
 

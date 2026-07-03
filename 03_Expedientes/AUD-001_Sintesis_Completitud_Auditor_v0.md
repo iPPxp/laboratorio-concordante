@@ -72,6 +72,22 @@ Resultado: `REPORT_LAYER` es suficiente como capa local de expediente para el ci
 
 No queda promovido a Nivel C.
 
+## Cobertura ejecutable no mutante
+
+`AUDITOR-V0-001` queda cubierto por:
+
+- implementacion `06_Automatizacion/auditor_v0.py`;
+- salida Markdown y JSON;
+- carga externa por `--case-file`;
+- matriz externa completa `06_Automatizacion/fixtures/auditor_v0_cases.json`;
+- fixture documental parcial `06_Automatizacion/fixtures/auditor_v0_documental_cases.json`;
+- esquema operativo `AUDITOR-V0-CASE-SCHEMA-001`;
+- validacion de campos requeridos por `kind`;
+- adaptador no mutante `06_Automatizacion/auditor_do_check_adapter.py`;
+- pruebas unitarias del Auditor y del adaptador.
+
+Resultado: existe una referencia ejecutable no mutante para apoyar el cierre operativo v0 sin convertir salidas en autoridad ni habilitar transformaciones.
+
 ## Deudas vivas no bloqueantes
 
 Las siguientes deudas permanecen vivas, pero no bloquean la completitud v0 porque no se usan como fundamento positivo:
@@ -79,7 +95,7 @@ Las siguientes deudas permanecen vivas, pero no bloquean la completitud v0 porqu
 - `H-B.6` y `H-B.7`, registradas en `HB-001_Deuda_Viva_H-B.md`;
 - Regla R4 formal;
 - `Gamma` formal;
-- suite ejecutable completa;
+- suite ejecutable completa mas alla de la referencia no mutante v0;
 - parser real y serializacion formal completa; JSON operativo queda reactivado para el Auditor v0 no mutante;
 - reversion material;
 - cuarentena materializada;

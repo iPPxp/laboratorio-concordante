@@ -21,7 +21,7 @@ Se acepta que el Auditor queda completo en version documental/operativa v0 dentr
 - `AUDIT-AUD-V0-001` audita favorablemente la sintesis.
 - `AUD-T00` a `AUD-T09` tienen simulacion y validacion provisional.
 - `COMPAT-RL-DO-CHECK-001` queda validado como puente conceptual por `VAL-028`.
-- `AUDITOR-V0-001` existe como implementacion no mutante inicial, con JSON reactivado por decision explicita.
+- `AUDITOR-V0-001` existe como implementacion no mutante, con JSON reactivado, fixtures externos, esquema operativo, validacion por `kind` y adaptador no mutante para `DO_CHECK_REPORT`.
 
 ## Alcance aprobado
 
@@ -35,7 +35,9 @@ La decision aprueba:
 - la cobertura no automata de `R4-CANDIDATA`;
 - el uso local de `REPORT_LAYER` como capa provisional;
 - la lectura conceptual de `DO_CHECK_REPORT`;
-- la implementacion no mutante inicial como apoyo operativo acotado.
+- la implementacion no mutante como apoyo operativo acotado;
+- el fixture documental parcial como prueba de entradas no automata sin conformidad completa;
+- el esquema operativo de casos externos.
 
 ## Alcance no aprobado
 
@@ -65,4 +67,6 @@ La actualizacion global de estado, referencias, identificadores, ASCII y diff se
 
 La candidata `SPEC-RFC-AUDITOR-V0` ya fue validada, auditada contra `NIVEL-C-001` y promovida como `02_Documentos/C-002_RFC_Operativo_Auditor_v0.md`.
 
-No queda pendiente preparar el RFC; los frentes posteriores son endurecimiento no mutante, fixtures externos documentales y suite ejecutable completa.
+`C-002` fue actualizado el 2026-07-03 para reflejar JSON, fixtures externos, esquema por `kind` y adaptador `DO_CHECK_REPORT`.
+
+No queda pendiente preparar el RFC ni endurecer la referencia no mutante v0. Los frentes posteriores pertenecen a suite ejecutable completa, parser real, formalizacion de R4 o `Gamma`, promocion eventual de `REPORT_LAYER` y cierre de deudas superiores.
