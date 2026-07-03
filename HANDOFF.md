@@ -4,6 +4,8 @@ Estatus: inactivo hasta nuevo aviso.
 
 Fecha: 2026-07-02.
 
+Nota posterior: `PSI-001` fue independizado por `D-2026-07-03-006` como proyecto `Psicologia Concordante`. Este archivo queda historico/inactivo y no debe tratar `PSI-001` como frente activo interno del Laboratorio.
+
 ## Aviso de desactivacion
 
 Este archivo queda congelado como registro historico operativo.
@@ -124,10 +126,10 @@ El manifiesto del paquete esta en `HANDOFF_PACKAGE.md`, tambien inactivo hasta n
 
 ## Estado corto
 
-- Frente recomendado inmediato: elegir ruta posterior a `C-002` dentro de `AUD-001`: implementacion no mutante conforme al RFC, formalizacion de R4/Gamma, promocion futura de `REPORT_LAYER` o cierre/pausa operativa. `PSI-001` queda abierto con matriz no clinica aceptada; `AUT-001` queda en cierre tecnico provisional; `HXI-001` queda en pausa operativa sin admision.
+- Frente recomendado inmediato: elegir ruta posterior a `C-002` dentro de `AUD-001`: implementacion no mutante conforme al RFC, formalizacion de R4/Gamma, promocion futura de `REPORT_LAYER` o cierre/pausa operativa. `PSI-001` quedo posteriormente independizado por `D-2026-07-03-006`; `AUT-001` queda en cierre tecnico provisional; `HXI-001` queda en pausa operativa sin admision.
 - Ultimo expediente cerrado: `REC-001` (reconciliacion inicial Canon/baselines); ultimo expediente tecnico cerrado: `DO-001`.
 - Documentos oficiales de Nivel C activos: `C-001_Especificacion_Tecnica_Auditor.md` y `C-002_RFC_Operativo_Auditor_v0.md`.
-- Expediente activo recomendado: `AUD-001` queda completo en version documental/operativa v0 y produjo `C-002`; permanece abierto para rutas posteriores. `PSI-001` queda abierto con matriz de patrones no clinicos aceptada; `AUT-001` queda en cierre tecnico provisional; `HXI-001` queda en pausa operativa; `P-PI.0` y `P-PI.1` quedan en pausa operativa; `B-001.5` queda congelado.
+- Expediente activo recomendado: `AUD-001` queda completo en version documental/operativa v0 y produjo `C-002`; permanece abierto para rutas posteriores. `PSI-001` quedo posteriormente independizado por `D-2026-07-03-006`; `AUT-001` queda en cierre tecnico provisional; `HXI-001` queda en pausa operativa; `P-PI.0` y `P-PI.1` quedan en pausa operativa; `B-001.5` queda congelado.
 - Algoritmo provisional activo: `DO-CHECK-001`.
 - Implementaciones activas: `DO-CHECK-MIN-001` en `06_Automatizacion/do_check_min.py`, `DO-CHECK-MED-001` en `06_Automatizacion/do_check_med.py`, `DO-STATE-BOARD-001` en `06_Automatizacion/lab_status_board.py` y `DO-LAB-CONTINUITY-001` en `06_Automatizacion/lab_continuity_report.py`, `DO-LAB-RISK-001` en `06_Automatizacion/lab_risk_classifier.py`, `DO-LAB-SUMMARY-001` en `06_Automatizacion/lab_executive_summary.py` y `DO-LAB-RUN-001` en `06_Automatizacion/lab_run.py`.
 - Regla provisional activa: `PERMISO-ACT-001`.
@@ -361,4 +363,4 @@ Ruta sugerida inmediata:
 
 ## Estado de handoff
 
-Listo para traspaso operativo con `AUD-001` completo en version documental/operativa v0 y `C-002` creado, `PSI-001` abierto con matriz no clinica aceptada, `AUT-001` en cierre tecnico provisional, `HXI-001` en pausa operativa, `REC-001` cerrado, `RH-002` cerrado, `RH-001` cerrado y `P-PI.0` / `P-PI.1` en pausa operativa.
+Listo para traspaso operativo con `AUD-001` completo en version documental/operativa v0 y `C-002` creado, `PSI-001` posteriormente independizado por `D-2026-07-03-006`, `AUT-001` en cierre tecnico provisional, `HXI-001` en pausa operativa, `REC-001` cerrado, `RH-002` cerrado, `RH-001` cerrado y `P-PI.0` / `P-PI.1` en pausa operativa.

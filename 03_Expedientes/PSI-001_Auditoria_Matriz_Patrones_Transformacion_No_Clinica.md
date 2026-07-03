@@ -32,7 +32,7 @@ No queda canonizada, no queda promovida a documento oficial y no adquiere uso cl
 
 ## Deudas no bloqueantes
 
-- Definir compuerta de frontera para psicopatologia conceptual no clinica.
+- Decidir si los casos abstractos de frontera aceptados posteriormente requieren matriz propia.
 - Decidir si `no auditable` queda como salida estable general de `PSI-001`.
 - Precisar si rigidez, fragmentacion y bloqueo requieren casos propios antes de cualquier subfrente psicopatologico.
 - Mantener `HXI-001` en pausa hasta decision posterior explicita.

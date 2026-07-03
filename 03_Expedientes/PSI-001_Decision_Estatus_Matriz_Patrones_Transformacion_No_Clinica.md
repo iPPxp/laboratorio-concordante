@@ -39,4 +39,8 @@ La decision no cubre:
 
 `PSI-001` ya dispone de una matriz interna para leer transformaciones no clinicas.
 
-El siguiente objetivo limpio es definir una compuerta de frontera para psicopatologia conceptual no clinica, antes de abrir cualquier subfrente psicopatologico.
+La compuerta de frontera para psicopatologia conceptual no clinica quedo definida posteriormente en `PSI-001_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md` y aceptada por `D-2026-07-03-003`.
+
+Los primeros casos abstractos de frontera quedaron creados posteriormente en `PSI-001_Casos_Frontera_Conceptual_No_Clinica.md`.
+
+La matriz provisional de frontera quedo creada posteriormente en `PSI-001_Matriz_Frontera_Conceptual_No_Clinica.md`, sin abrir subfrente patologico, clinico ni canonico.

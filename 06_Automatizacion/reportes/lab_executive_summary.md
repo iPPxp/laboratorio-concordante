@@ -1,6 +1,6 @@
 # LAB_EXECUTIVE_SUMMARY
 
-report_id: DO-LAB-SUMMARY-20260702-165851
+report_id: DO-LAB-SUMMARY-20260703-102934
 expediente: AUT-001
 algoritmo: DO-LAB-SUMMARY-001
 resultado: advertencia
@@ -15,9 +15,9 @@ transformacion_permitida: false
 
 ## Estado operativo
 
-- frente activo: `AUD-001` queda completo en version documental/operativa v0 y ya produjo `C-002`; permanece abierto solo para rutas posteriores no cubiertas: implementacion, R4 formal, `Gamma`, `REPORT_LAYER` Nivel C o cierre/pausa. `PSI-001` queda abierto con matriz de patrones no clinicos aceptada, sin cierre ni promocion; `TCS-001` queda abierto como expediente teorico provisional; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `P-PI.0` y `P-PI.1` quedan en pausa operativa; `B-001.5` queda congelado.
-- ultima decision: `AUT-001_Decision_Cierre_Operativo_Completo.md` (`D-2026-07-02-029`): `AUT-001` cerrado operativamente tras ejecucion directa local de `lab_run.py` en alcance clave; quedan herramientas conservadas y deuda documental visible.
-- proximo objetivo: Elegir siguiente ruta posterior a `C-002`: implementacion no mutante conforme a RFC, formalizacion de R4/Gamma, o cierre/pausa operativa de `AUD-001`.
+- frente activo: `P-PI.0` / `P-PI.1` quedan cerrados como frentes de trabajo por `D-2026-07-03-002`; `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001` quedan como evidencia ejecutada; Confluencia y Equivalencia de proyecciones siguen abiertas como problemas de fondo. `AUD-001` queda completo en version documental/operativa v0 y ya produjo `C-002`; permanece abierto solo para rutas posteriores no cubiertas; la suite ejecutable completa queda encuadrada en `AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md`, la ruta de `parser real` queda acotada en `AUD-001_Ficha_Alcance_Parser_Real.md` y la ruta de `R4` formal queda acotada en `AUD-001_Ficha_Alcance_R4_Formal.md`. `H-B.6` y `H-B.7` tienen alcance local minimo aceptado, pero sin contenido sustantivo materializado. `PSI-001` queda abierto con matriz de patrones no clinicos y compuerta de frontera conceptual no clinica aceptadas, sin cierre, promocion ni apertura de psicopatologia; `TCS-001` queda abierto como expediente teorico provisional; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `B-001.5` queda congelado.
+- ultima decision: `PSI-001_Decision_Estatus_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md` (`D-2026-07-03-003`): `PSI-FRON-PSICOPAT-001` queda aceptada como compuerta provisional de frontera conceptual no clinica dentro de `PSI-001`; no abre subfrente psicopatologico ni habilita uso clinico.
+- proximo objetivo: Acotar la ruta de `Gamma` del Auditor dentro de `AUD-001`; cualquier paso posterior a `Gamma` requiere decision explicita.
 
 ## Riesgos clasificados
 
@@ -48,6 +48,7 @@ transformacion_permitida: false
 - DO-STATE-BOARD-001: ok (0 hallazgos)
 - DO-LAB-CONTINUITY-001: ok (0 hallazgos)
 - DO-LAB-RISK-001: advertencia_clasificada (11 hallazgos)
+- DO-LAB-SUMMARY-001: advertencia (0 hallazgos)
 
 ## Siguientes acciones
 

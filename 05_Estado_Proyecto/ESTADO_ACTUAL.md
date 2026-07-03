@@ -14,7 +14,7 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 
 ## Documentos oficiales de Nivel C
 
-- [x] `C-002_RFC_Operativo_Auditor_v0.md`: RFC operativo oficial del Auditor v0; complementa `C-001`.
+- [x] `C-002_RFC_Operativo_Auditor_v0.md`: RFC operativo oficial del Auditor v0; complementa `C-001` y quedo alineado el 2026-07-03 con JSON, fixtures y adaptador no mutante.
 - [x] `C-001_Especificacion_Tecnica_Auditor.md`: especificacion tecnica oficial inicial del Auditor.
 
 ## Consolidacion en este repositorio
@@ -27,14 +27,16 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 ## Expedientes abiertos
 
 - `HXI-001` (pausa operativa; reporte de consistencia aceptado y criterios de admision formal posterior preparados; no admite `H-Xi`)
-- `PSI-001` (abierto; matriz de patrones no clinicos aceptada; `A-PSI-001`, `DEF-PSI-ORG-001`, `CRIT-PSI-TR-001`, `EX-PSI-001` a `EX-PSI-005`, `CAS-PSI-001` a `CAS-PSI-006` y `PSI-MAT-PAT-001` siguen provisionales dentro del expediente)
 - `TCS-001` (expediente teorico provisional; `Concordance` tratada como propiedad auditable de gobernanza de sistemas; analisis de fondo registrado; no Canon, no documento oficial)
-- `P-PI.0` (activo acotado para Equivalencia de proyecciones por `D-2026-07-02-032`)
-- `P-PI.1` (activo acotado para Confluencia por `D-2026-07-02-032`)
-- `AUD-001` (completo en version documental/operativa v0; produjo `C-002`; queda abierto solo para rutas posteriores como implementacion, R4 formal, `Gamma`, `REPORT_LAYER` Nivel C o cierre/pausa)
+- `AUD-001` (completo en version documental/operativa v0; implementacion no mutante `AUDITOR-V0-001` aceptada; JSON reactivado; `REPORT_LAYER` local y compatibilidad con `DO_CHECK_REPORT` definidas; suite ejecutable completa encuadrada en `AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md`; parser real acotado en `AUD-001_Ficha_Alcance_Parser_Real.md`; R4 formal acotado en `AUD-001_Ficha_Alcance_R4_Formal.md`; `Gamma` acotado en `AUD-001_Ficha_Alcance_Gamma.md`)
+
+## Expedientes transferidos
+
+- `PSI-001` (independizado por `D-2026-07-03-006` como proyecto `Psicologia Concordante`; el Laboratorio conserva copia de traspaso, sin continuidad activa interna)
 
 ## Expedientes cerrados
 
+- `P-PI.0` / `P-PI.1`
 - `B-001`
 - `CP-001`
 - `EF-001`
@@ -98,6 +100,9 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - `PSI-MAP-CONT-001`: mapa de continuidad conceptual no clinica en `03_Expedientes/PSI-001_Mapa_Continuidad_Conceptual.md`.
 - `PSI-CAS-TR-001`: serie de casos de transformacion no clinicos en `03_Expedientes/PSI-001_Casos_Transformacion_No_Clinicos.md`.
 - `PSI-MAT-PAT-001`: matriz de patrones no clinicos en `03_Expedientes/PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md`.
+- `PSI-FRON-PSICOPAT-001`: compuerta de frontera conceptual no clinica en `03_Expedientes/PSI-001_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md`.
+- `PSI-FRON-CAS-001` a `PSI-FRON-CAS-006`: casos abstractos de frontera conceptual no clinica en `03_Expedientes/PSI-001_Casos_Frontera_Conceptual_No_Clinica.md`.
+- `PSI-FRON-MAT-001`: matriz provisional de frontera conceptual no clinica en `03_Expedientes/PSI-001_Matriz_Frontera_Conceptual_No_Clinica.md`; transferida junto con `PSI-001` al proyecto independiente.
 
 ## Auditorias provisionales registradas
 
@@ -111,6 +116,9 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - `PSI-001_Auditoria_Mapa_Continuidad_Conceptual.md`: auditoria favorable para aceptar `PSI-MAP-CONT-001` como mapa de continuidad no clinico.
 - `PSI-001_Auditoria_Casos_Transformacion_No_Clinicos.md`: auditoria favorable para aceptar `CAS-PSI-001` a `CAS-PSI-006` como serie conceptual provisional no clinica.
 - `PSI-001_Auditoria_Matriz_Patrones_Transformacion_No_Clinica.md`: auditoria favorable para aceptar `PSI-MAT-PAT-001` como matriz provisional no clinica.
+- `PSI-001_Auditoria_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md`: auditoria favorable para aceptar `PSI-FRON-PSICOPAT-001` como compuerta provisional no clinica.
+- `PSI-001_Auditoria_Casos_Frontera_Conceptual_No_Clinica.md`: auditoria favorable para aceptar `PSI-FRON-CAS-001` a `PSI-FRON-CAS-006` como serie provisional no clinica.
+- `PSI-001_Auditoria_Matriz_Frontera_Conceptual_No_Clinica.md`: auditoria favorable para aceptar `PSI-FRON-MAT-001` como matriz provisional no clinica.
 - `HXI-001_Auditoria_Apertura.md`: auditoria favorable para abrir `HXI-001` como evaluacion separada no admisoria.
 - `HXI-001_Auditoria_Mapa_Preliminar.md`: auditoria favorable para aceptar el mapa preliminar `H-Xi` / `R` como guia operativa no admisoria.
 - `HXI-001_Auditoria_Matriz_Pruebas.md`: auditoria favorable para aceptar la matriz `HXI-R` como guia operativa no admisoria.
@@ -157,7 +165,10 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - `AUD-001_Decision_Estatus_REPORT_LAYER_Candidata.md` (`D-2026-07-02-026`): acepta `REPORT-LAYER-CAND-001` como candidata provisional de expediente.
 - `AUD-001_Decision_Estatus_Auditor_v0.md` (`D-2026-07-02-027`): acepta al Auditor como completo en version documental/operativa v0.
 - `AUD-001_Decision_Promocion_SPEC-RFC-AUDITOR-V0.md` (`D-2026-07-02-028`): promueve `SPEC-RFC-AUDITOR-V0` a `C-002_RFC_Operativo_Auditor_v0.md`.
+- `AUD-001_Decision_Estatus_Implementacion_No_Mutante_C002.md`: acepta `auditor_v0.py` como implementacion inicial no mutante de `AUDITOR-V0-001`.
 - `AUD-001_Decision_Reactivacion_REPORT_LAYER.md` (`D-2026-07-02-025`): reactiva `AUD-001` de forma acotada para separar `REPORT_LAYER`.
+- `AUD-001_Origen_REPORT_LAYER.md`: fija el origen local de `REPORT_LAYER` desde `M-000`, `M-001`, `C-001`, contratos de reportes, validaciones, simulaciones y frontera de permiso; no depende de `Gamma` ni de R4 formal.
+- `AUD-001_Decision_Reactivacion_JSON_Auditor_v0.md`: reactiva la salida JSON y la carga externa `--case-file` para `AUDITOR-V0-001`.
 - `AUD-001_Decision_Pausa_Operativa_R4-CANDIDATA.md`: deja `AUD-001` en pausa operativa; no cierra el expediente ni promueve `R4-CANDIDATA`.
 - `AUD-001_Decision_Ruta_Siguiente_R4-CANDIDATA.md`: mantiene `R4-CANDIDATA` como hipotesis operativa robustecida dentro de `AUD-001`; no abre ruta de promocion formal.
 - `AUD-001_Decision_Estatus_Criterios_Promocion_R4-CANDIDATA.md`: acepta criterios de promocion como compuerta provisional de expediente; no elige ruta futura.
@@ -202,6 +213,10 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - `PSI-001_Decision_Estatus_Mapa_Continuidad_Conceptual.md` (`D-2026-07-02-022`): acepta `PSI-MAP-CONT-001` como mapa de continuidad no clinico.
 - `PSI-001_Decision_Estatus_Casos_Transformacion_No_Clinicos.md` (`D-2026-07-02-023`): acepta `CAS-PSI-001` a `CAS-PSI-006` como serie conceptual provisional no clinica.
 - `PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md` (`D-2026-07-02-024`): acepta `PSI-MAT-PAT-001` como matriz provisional no clinica.
+- `PSI-001_Decision_Estatus_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md` (`D-2026-07-03-003`): acepta `PSI-FRON-PSICOPAT-001` como compuerta provisional de frontera conceptual no clinica; no abre psicopatologia.
+- `PSI-001_Decision_Estatus_Casos_Frontera_Conceptual_No_Clinica.md` (`D-2026-07-03-004`): acepta `PSI-FRON-CAS-001` a `PSI-FRON-CAS-006` como serie provisional de casos abstractos de frontera conceptual no clinica; no abre psicopatologia.
+- `PSI-001_Decision_Estatus_Matriz_Frontera_Conceptual_No_Clinica.md` (`D-2026-07-03-005`): acepta `PSI-FRON-MAT-001` como matriz provisional no clinica; no abre subfrente patologico, clinico ni canonico.
+- `PSI-001_Decision_Independizacion_Proyecto.md` (`D-2026-07-03-006`): independiza `PSI-001` como proyecto `Psicologia Concordante`; el Laboratorio conserva solo copia de traspaso.
 - `AUT-001_Decision_Fase_Media.md`: acepta `DO-CHECK-MED-001` como automatizacion media provisional, sin cerrar `AUT-001`.
 
 ## Mapas preliminares de expediente
@@ -213,6 +228,9 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - `PSI-001_Ejemplos_Conceptuales_No_Clinicos.md`: `EX-PSI-001` a `EX-PSI-005`, bateria conceptual provisional no clinica.
 - `PSI-001_Casos_Transformacion_No_Clinicos.md`: `CAS-PSI-001` a `CAS-PSI-006`, serie breve de casos conceptuales no clinicos.
 - `PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md`: `PSI-MAT-PAT-001`, matriz provisional de patrones no clinicos de transformacion.
+- `PSI-001_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md`: `PSI-FRON-PSICOPAT-001`, compuerta provisional no clinica antes de cualquier subfrente psicopatologico.
+- `PSI-001_Casos_Frontera_Conceptual_No_Clinica.md`: `PSI-FRON-CAS-001` a `PSI-FRON-CAS-006`, primera serie de casos abstractos de frontera conceptual no clinica.
+- `PSI-001_Matriz_Frontera_Conceptual_No_Clinica.md`: `PSI-FRON-MAT-001`, matriz provisional no clinica de frontera conceptual.
 - `TCS-001_Teoria_Concordante_de_Sistemas.md`: propuesta teorica inicial para `Concordance Theory`.
 - `TCS-001_Analisis_Fondo.md`: analisis provisional de fondo; identifica tensiones, supuestos ocultos, deudas conceptuales, fallos de concordancia y condiciones candidatas.
 
@@ -299,6 +317,7 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - `VAL-027`: termino nuevo sin estatus `AUD-T09` validado provisionalmente contra `AUD-SIM-027`.
 - `VAL-028`: puente `REPORT_LAYER` / `DO_CHECK_REPORT` validado provisionalmente contra `AUD-SIM-028`.
 - `VAL-029`: proyeccion a documento tipo RFC validada provisionalmente contra `AUD-SIM-029`.
+- `AUD-001_Validacion_Implementacion_No_Mutante_C002.md`: validacion ejecutada de la implementacion no mutante `AUDITOR-V0-001` y del fixture documental parcial.
 - `DO-VAL-001`: `DO_CHECK_REPORT` validado provisionalmente contra `DO-001.md`.
 - `DO-VAL-002`: `DO_CHECK_REPORT` validado provisionalmente contra `AUD-001_Casos_Prueba_Auditor.md`.
 - `DO-VAL-003`: `DO_CHECK_REPORT` validado provisionalmente contra `CURRENT_STATE.md`.
@@ -325,6 +344,9 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 
 - `P-PI_PPI-CONF-001_Rutas_Estado_Operativo.md`: caso ejecutado provisional de Confluencia local.
 - `P-PI_PPI-EQ-002_Completitud_A_C002.md`: caso ejecutado provisional de Equivalencia de proyecciones hacia `C-002`.
+- `PSI-001_Matriz_Frontera_Conceptual_No_Clinica.md`: matriz provisional `PSI-FRON-MAT-001` para sintetizar frontera conceptual no clinica sin abrir subfrente patologico, clinico ni canonico.
+- `PSI-001_Casos_Frontera_Conceptual_No_Clinica.md`: serie provisional `PSI-FRON-CAS-001` a `PSI-FRON-CAS-006` para probar la compuerta de frontera conceptual no clinica.
+- `PSI-001_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md`: compuerta provisional `PSI-FRON-PSICOPAT-001` para filtrar frontera conceptual no clinica antes de cualquier subfrente psicopatologico.
 - `PSI-001_Mapa_Continuidad_Conceptual.md`: mapa provisional no clinico para continuidad conceptual de `PSI-001`.
 - `P-PI_PPI-EQ-001_REPORT_LAYER_DO_CHECK.md`: caso ejecutado provisional de Equivalencia de proyecciones.
 - `P-PI_Marco_Inicial_Confluencia_Equivalencia.md`: marco provisional `PPI-MARCO-CORE-001` para Equivalencia de proyecciones y Confluencia.
@@ -345,17 +367,24 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 
 ## Ultima decision operativa
 
-`P-PI_Decision_Estatus_Frente_Matematico_Acotado.md` (`D-2026-07-03-001`): `P-PI.0` y `P-PI.1` quedan confirmados como activos acotados tras los casos `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001`; la decision estabiliza el frente sin cerrar Confluencia ni Equivalencia de proyecciones.
+`PSI-001_Decision_Independizacion_Proyecto.md` (`D-2026-07-03-006`): `PSI-001` queda independizado como proyecto propio `Psicologia Concordante`; el Laboratorio conserva solo copia de traspaso y no continua psicologia como frente activo interno.
+`PSI-001_Decision_Estatus_Matriz_Frontera_Conceptual_No_Clinica.md` (`D-2026-07-03-005`): `PSI-FRON-MAT-001` queda aceptada como matriz provisional no clinica; `PSI-FRON-CAS-005` queda reformulado, `PSI-FRON-CAS-006` bloqueado y no se abre subfrente patologico, clinico ni canonico.
+`PSI-001_Decision_Estatus_Casos_Frontera_Conceptual_No_Clinica.md` (`D-2026-07-03-004`): `PSI-FRON-CAS-001` a `PSI-FRON-CAS-006` quedan aceptados como primera serie provisional de casos abstractos de frontera conceptual no clinica; decision historica previa a la independizacion por `D-2026-07-03-006`.
+`PSI-001_Decision_Estatus_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md` (`D-2026-07-03-003`): `PSI-FRON-PSICOPAT-001` queda aceptada como compuerta provisional no clinica; decision historica previa a la independizacion por `D-2026-07-03-006`.
+`P-PI_Decision_Cierre_Frente_Matematico_Acotado.md` (`D-2026-07-03-002`): `P-PI.0` y `P-PI.1` quedan cerrados como frentes de trabajo; Confluencia y Equivalencia de proyecciones siguen abiertas como problemas de fondo.
+`P-PI_Decision_Estatus_Frente_Matematico_Acotado.md` (`D-2026-07-03-001`): `P-PI.0` y `P-PI.1` quedaban confirmados como activos acotados tras los casos `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001`; la decision estabilizo el frente sin cerrar Confluencia ni Equivalencia de proyecciones.
 
 ## Ultimo expediente cerrado
 
-`AUT-001`
+`P-PI.0` / `P-PI.1`
 
 Ultimo expediente tecnico cerrado: `AUT-001`
 
 ## Proximo objetivo
 
-Mantener seguimiento acotado del frente `P-PI.0` / `P-PI.1` con los tres casos ejecutados y sus deudas abiertas.
+Acotar la ruta de `Gamma` del Auditor dentro de `AUD-001`; cualquier paso posterior a `Gamma` requiere decision explicita.
+
+`PSI-001` ya no se continua dentro del Laboratorio; cualquier continuidad de psicologia vive en el proyecto independiente `Psicologia Concordante`.
 
 ## No volver a discutir sin reapertura explicita
 
@@ -375,9 +404,9 @@ Mantener seguimiento acotado del frente `P-PI.0` / `P-PI.1` con los tres casos e
 - Consolidar contenido real de documentos 00, 01, 02 y 03 desde fuentes previas.
 - Deudas condicionadas derivadas de `RH-001`: Protocolo de Admision/`PM-001`, Concordancia, Documento 04, arquitectura multiagente y adjuntos historicos requieren expediente o decision separada antes de usarse.
 - `HXI-001`: en pausa operativa; no continuar admision sin reapertura explicita.
-- `P-PI.0` / `P-PI.1`: activos de forma acotada; `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001` ejecutados provisionalmente; falta decision de estatus acotado; Confluencia y Equivalencia de proyecciones permanecen abiertas.
+- `P-PI.0` / `P-PI.1`: cerrados como frentes de trabajo; `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001` quedan como evidencia ejecutada; Confluencia y Equivalencia de proyecciones permanecen abiertas como problemas de fondo.
 - Vision papers: `VISION_PAPER_PROPUESTA.md` y `VISION_PAPER_FINAL_REFERENCIAS.md` quedan inactivos hasta nueva decision; no usarlos como autoridad, agenda o fuente para promocion.
-- `PSI-001`: queda como base conceptual no clinica con matriz de patrones aceptada; no cerrar, promover, abrir psicopatologia ni vincular con `HXI-001` sin decision posterior.
+- `PSI-001`: transferido a proyecto independiente; deuda local restante: decidir si la copia de traspaso se conserva, archiva o elimina, y no usarla como frente activo interno del Laboratorio.
 - `AUD-001`: no promover `REPORT_LAYER`, `R4-CANDIDATA`, R4 formal ni `Gamma` sin decision posterior.
 - `TCS-001`: desarrollar definiciones minimas, tipologia de fallos de concordancia y casos de prueba antes de cualquier promocion teorica.
 - Completar ficha de trazabilidad de `EF-001` si existe material previo.

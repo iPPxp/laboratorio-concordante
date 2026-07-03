@@ -97,4 +97,8 @@ Esa frontera debera estudiar patrones como rigidez, fragmentacion, bloqueo, sufr
 
 `PSI-MAT-PAT-001` queda como matriz provisional de patrones no clinicos de transformacion dentro de `PSI-001`.
 
-La siguiente pieza natural es definir una compuerta de frontera para psicopatologia conceptual no clinica, antes de abrir cualquier subfrente psicopatologico.
+La compuerta de frontera para psicopatologia conceptual no clinica quedo definida posteriormente como `PSI-FRON-PSICOPAT-001`.
+
+Los primeros casos abstractos de frontera quedaron creados posteriormente en `PSI-001_Casos_Frontera_Conceptual_No_Clinica.md`.
+
+La matriz provisional de frontera quedo creada posteriormente en `PSI-001_Matriz_Frontera_Conceptual_No_Clinica.md`, antes de cualquier subfrente patologico, clinico o canonico.

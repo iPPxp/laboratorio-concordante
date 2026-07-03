@@ -1048,7 +1048,7 @@ No canoniza contenido psicologico, no habilita diagnostico clinico, no abre psic
 
 ## Consecuencia
 
-El siguiente trabajo recomendado es definir una compuerta de frontera para psicopatologia conceptual no clinica.
+La compuerta de frontera para psicopatologia conceptual no clinica quedo cumplida por `D-2026-07-03-003`, la primera serie de casos abstractos quedo cumplida por `D-2026-07-03-004` y la matriz provisional de frontera quedo cumplida por `D-2026-07-03-005`. El siguiente trabajo recomendado dentro de `PSI-001` es solo refinamiento interno no clinico, sin expansion patologica, clinica ni canonica.
 
 ## D-2026-07-02-025 - Reactivacion de AUD-001 para REPORT_LAYER
 
@@ -1256,3 +1256,121 @@ No cierra Confluencia, no cierra Equivalencia de proyecciones, no modifica Canon
 ## Consecuencia
 
 El siguiente objetivo es ejecutar `PPI-EQ-001` como primer caso de Equivalencia de proyecciones y preparar `PPI-CONF-001` solo despues de declarar una relacion `~_C`.
+
+## D-2026-07-03-003 - Compuerta de frontera psicopatologica conceptual no clinica PSI-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-03.
+
+## Decision
+
+Se acepta `PSI-FRON-PSICOPAT-001` como compuerta provisional de frontera para psicopatologia conceptual no clinica dentro de `PSI-001`.
+
+Documento base: `03_Expedientes/PSI-001_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md`.
+
+Auditoria: `03_Expedientes/PSI-001_Auditoria_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md`.
+
+Decision espejo: `03_Expedientes/PSI-001_Decision_Estatus_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md`.
+
+## Alcance
+
+La decision permite usar la compuerta para evaluar propuestas abstractas de frontera conceptual no clinica, estabilizar `no auditable` como salida de seguridad y preparar casos abstractos posteriores dentro de `PSI-001`.
+
+## No cubre
+
+No abre un subfrente psicopatologico, no habilita uso clinico, diagnostico, tratamiento, consejo profesional, evaluacion de personas reales, clasificacion de trastornos, canonizacion, modificacion de documentos oficiales, admision de `H-Xi`, `P-107` o Concordancia, reapertura de `HXI-001` ni cierre de `PSI-001`.
+
+## Consecuencia
+
+`PSI-001` quedaba abierto con compuerta de frontera aceptada en esta decision. La primera serie de casos abstractos de frontera quedo creada posteriormente por `D-2026-07-03-004`; el frente fue independizado despues por `D-2026-07-03-006`.
+
+## D-2026-07-03-004 - Casos de frontera conceptual no clinica PSI-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-03.
+
+## Decision
+
+Se acepta `PSI-FRON-CAS-001` a `PSI-FRON-CAS-006` como primera serie provisional de casos abstractos de frontera conceptual no clinica dentro de `PSI-001`.
+
+Documento base: `03_Expedientes/PSI-001_Casos_Frontera_Conceptual_No_Clinica.md`.
+
+Auditoria: `03_Expedientes/PSI-001_Auditoria_Casos_Frontera_Conceptual_No_Clinica.md`.
+
+Decision espejo: `03_Expedientes/PSI-001_Decision_Estatus_Casos_Frontera_Conceptual_No_Clinica.md`.
+
+Compuerta aplicada: `PSI-FRON-PSICOPAT-001`.
+
+## Alcance
+
+La decision permite usar la serie para probar la compuerta de frontera aceptada por `D-2026-07-03-003`, conservar tres casos admisibles, devolver un caso ordinario a `PSI-001`, exigir reformulacion de un caso insuficientemente formal y bloquear un caso por uso clinico o personal.
+
+## No cubre
+
+No abre subfrente psicopatologico, no habilita uso clinico, diagnostico, tratamiento, consejo profesional, evaluacion de personas reales, clasificacion de trastornos, canonizacion, modificacion de documentos oficiales, admision de `H-Xi`, `P-107` o Concordancia, reapertura de `HXI-001` ni cierre de `PSI-001`.
+
+## Consecuencia
+
+`PSI-001` quedaba abierto con primera serie de casos de frontera aceptada en esta decision. La matriz provisional de frontera quedo creada posteriormente por `D-2026-07-03-005`; el frente fue independizado despues por `D-2026-07-03-006`.
+
+## D-2026-07-03-005 - Matriz de frontera conceptual no clinica PSI-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-03.
+
+## Decision
+
+Se acepta `PSI-FRON-MAT-001` como matriz provisional no clinica de frontera conceptual dentro de `PSI-001`.
+
+Documento base: `03_Expedientes/PSI-001_Matriz_Frontera_Conceptual_No_Clinica.md`.
+
+Auditoria: `03_Expedientes/PSI-001_Auditoria_Matriz_Frontera_Conceptual_No_Clinica.md`.
+
+Decision espejo: `03_Expedientes/PSI-001_Decision_Estatus_Matriz_Frontera_Conceptual_No_Clinica.md`.
+
+## Alcance
+
+La decision permite usar `PSI-FRON-MAT-001` para sintetizar cuatro patrones abstractos: rigidez relacional, fragmentacion de unidad, bloqueo de transicion y tension relacional.
+
+Tambien deja `PSI-FRON-CAS-005` reformulado como tension relacional formalizada, mantiene `PSI-FRON-CAS-006` bloqueado como control negativo y conserva `PSI-FRON-CAS-004` devuelto a `PSI-001`.
+
+## No cubre
+
+No abre subfrente patologico o psicopatologico, no habilita uso clinico, diagnostico, tratamiento, consejo profesional, recomendacion de conducta, evaluacion de personas reales, clasificacion de trastornos, canonizacion, modificacion de documentos oficiales, admision de `H-Xi`, `P-107` o Concordancia, reapertura de `HXI-001` ni cierre de `PSI-001`.
+
+## Consecuencia
+
+`PSI-001` quedaba abierto con matriz provisional de frontera conceptual no clinica aceptada en esta decision. La expansion patologica, clinica y canonica quedaba detenida; posteriormente el frente fue independizado por `D-2026-07-03-006`.
+
+## D-2026-07-03-006 - Independizacion de PSI-001
+
+Estatus: decision provisional de transferencia.
+
+Fecha: 2026-07-03.
+
+## Decision
+
+Se independiza `PSI-001` como proyecto propio bajo el nombre operativo `Psicologia Concordante`.
+
+Documento de decision: `03_Expedientes/PSI-001_Decision_Independizacion_Proyecto.md`.
+
+La fuente activa posterior queda fuera del Laboratorio, en un repositorio independiente y privado. El Laboratorio conserva una copia local de traspaso para trazabilidad historica, pero no debe usarla como superficie normal de trabajo.
+
+## Alcance
+
+La decision transfiere el paquete documental `PSI-001*`: expediente principal, axioma candidato, definicion, criterio, ejemplos, casos, matrices, compuerta, auditorias y decisiones internas.
+
+## No cubre
+
+No canoniza contenido, no modifica documentos oficiales, no habilita uso clinico, no abre subfrente patologico o psicopatologico, no admite `H-Xi`, `P-107` ni Concordancia y no reabre `HXI-001`.
+
+## Consecuencia
+
+Dentro del Laboratorio, `PSI-001` queda como frente transferido / independizado. Las continuidades sustantivas de psicologia solo deben trabajarse en el proyecto independiente.
+
+El proximo objetivo interno del Laboratorio vuelve a `AUD-001`, `Gamma`, definicion formal de `R4`, Confluencia y Equivalencia de proyecciones.
+
+Deudas abiertas: decidir si la copia de traspaso se conserva, archiva o elimina; mantener visible que la fuente activa ya no esta en el Laboratorio; no usar Canon, documentos oficiales ni automatizaciones del Laboratorio como autoridad directa para el proyecto independiente sin decision puente posterior.

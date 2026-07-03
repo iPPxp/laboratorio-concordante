@@ -112,18 +112,18 @@ Contiene herramientas ejecutables no mutantes y sus reportes conservados. Su fun
 
 Estado operativo resumido:
 
-- Decision operativa reciente: `P-PI_Decision_Reactivacion_Frente_Matematico.md`.
-- Decisiones de estabilizacion recientes: `D-2026-07-02-020` a `D-2026-07-02-029`.
-- Ultimo expediente cerrado: `AUT-001`; ultimo expediente tecnico cerrado: `AUT-001`.
-- Ultima decision arquitectonica: `C-002_RFC_Operativo_Auditor_v0.md` promovido como RFC operativo oficial del Auditor v0; complementa `C-001`.
-- Ultima decision operativa: `P-PI_Decision_Reactivacion_Frente_Matematico.md` (`D-2026-07-02-032`) reactiva `P-PI.0` para Equivalencia de proyecciones y `P-PI.1` para Confluencia; `DECISION_Desactivacion_Vision_Papers.md` (`D-2026-07-02-031`) desactiva ambos vision papers.
+- Decision operativa reciente: `PSI-001_Decision_Independizacion_Proyecto.md`.
+- Decisiones de estabilizacion recientes: `D-2026-07-02-020` a `D-2026-07-03-006`.
+- Ultimo expediente cerrado: `P-PI.0` / `P-PI.1`; ultimo expediente tecnico cerrado: `AUT-001`.
+- Ultima decision arquitectonica: `C-002_RFC_Operativo_Auditor_v0.md` promovido como RFC operativo oficial del Auditor v0; complementa `C-001` y quedo alineado el 2026-07-03 con JSON, fixtures y adaptador no mutante.
+- Ultima decision operativa: `PSI-001_Decision_Independizacion_Proyecto.md` (`D-2026-07-03-006`) independiza `PSI-001` como proyecto propio `Psicologia Concordante`; el Laboratorio conserva solo copia de traspaso y no continua psicologia como frente activo interno.
 - Propuesta provisional promovida: `DO-PROP-001` absorbida por `C-001`.
 - Algoritmo provisional activo: `DO-CHECK-001`; implementaciones activas: `DO-CHECK-MIN-001` en `06_Automatizacion/do_check_min.py`, `DO-CHECK-MED-001` en `06_Automatizacion/do_check_med.py`, `DO-STATE-BOARD-001` en `06_Automatizacion/lab_status_board.py`, `DO-LAB-CONTINUITY-001` en `06_Automatizacion/lab_continuity_report.py`, `DO-LAB-RISK-001` en `06_Automatizacion/lab_risk_classifier.py`, `DO-LAB-SUMMARY-001` en `06_Automatizacion/lab_executive_summary.py` y `DO-LAB-RUN-001` en `06_Automatizacion/lab_run.py`.
-- Infraestructura `AUT-001` conservada: `AUT-001_Refinamiento_DO-LAB-RISK.md`, `AUT-001_Decision_Cierre_Tecnico_Provisional.md` y `AUT-001_Decision_Cierre_Operativo_Completo.md`; mapa PSI: `PSI-001_Mapa_Continuidad_Conceptual.md`; casos PSI: `PSI-001_Casos_Transformacion_No_Clinicos.md`; matriz PSI: `PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md`; auditoria matriz PSI: `PSI-001_Auditoria_Matriz_Patrones_Transformacion_No_Clinica.md`.
+- Infraestructura `AUT-001` conservada: `AUT-001_Refinamiento_DO-LAB-RISK.md`, `AUT-001_Decision_Cierre_Tecnico_Provisional.md` y `AUT-001_Decision_Cierre_Operativo_Completo.md`; paquete PSI conservado solo como copia de traspaso tras su independizacion: `PSI-001_Mapa_Continuidad_Conceptual.md`, `PSI-001_Casos_Transformacion_No_Clinicos.md`, `PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md`, `PSI-001_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md`, `PSI-001_Casos_Frontera_Conceptual_No_Clinica.md` y `PSI-001_Matriz_Frontera_Conceptual_No_Clinica.md`.
 - Documentos oficiales de Nivel C: `C-001_Especificacion_Tecnica_Auditor.md` y `C-002_RFC_Operativo_Auditor_v0.md`.
 - Especificacion candidata promovida: `SPEC-AUD-001_Candidata` en `03_Expedientes`.
 - Modo operativo del Auditor: mixto, segun `MODO-AUD-001`.
-- Proximo objetivo: mantener seguimiento acotado del frente `P-PI.0` / `P-PI.1`; `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001` quedan ejecutados provisionalmente y la decision de estatus ya quedo registrada. `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa; `P-PI.0` y `P-PI.1` quedan activos de forma acotada; `B-001.5` queda congelado; los vision papers quedan inactivos.
+- Proximo objetivo: acotar la ruta de `Gamma` del Auditor dentro de `AUD-001`; cualquier paso posterior a `Gamma` requiere decision explicita. `P-PI.0` / `P-PI.1` ya quedan cerrados como frentes de trabajo; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa; `PSI-001` queda independizado fuera del Laboratorio; `B-001.5` queda congelado; los vision papers quedan inactivos.
 - No volver a discutir sin reapertura explicita: `EF-001`, `CP-001`, Procedimiento, Auditoria.
 
 Documentos declarados como completos en el punto de partida:
@@ -138,10 +138,11 @@ Nota operativa: este repositorio contiene versiones semilla de esos documentos. 
 Expedientes abiertos relevantes:
 
 - `HXI-001` (pausa operativa; reporte de consistencia aceptado sin admision)
-- `PSI-001` (abierto; matriz de patrones no clinicos aceptada)
-- `P-PI.0` (activo acotado; Equivalencia de proyecciones)
-- `P-PI.1` (activo acotado; Confluencia)
-- `AUD-001` (completo en version documental/operativa v0; produjo `C-002`; abierto solo para rutas posteriores)
+- `AUD-001` (completo en version documental/operativa v0; implementacion no mutante `AUDITOR-V0-001` aceptada; JSON reactivado; `REPORT_LAYER` local y compatibilidad con `DO_CHECK_REPORT` definidas; origen local de `REPORT_LAYER` fijado en `AUD-001_Origen_REPORT_LAYER.md`; suite ejecutable completa encuadrada en `AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md`; parser real acotado en `AUD-001_Ficha_Alcance_Parser_Real.md`; R4 formal acotado en `AUD-001_Ficha_Alcance_R4_Formal.md`; Gamma acotado en `AUD-001_Ficha_Alcance_Gamma.md`)
+
+Expedientes transferidos:
+
+- `PSI-001` (independizado como proyecto `Psicologia Concordante`; copia local de traspaso conservada, sin continuidad activa dentro del Laboratorio)
 
 Hipotesis activas iniciales:
 

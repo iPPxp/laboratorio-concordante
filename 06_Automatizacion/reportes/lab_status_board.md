@@ -1,6 +1,6 @@
 # LAB_STATUS_BOARD
 
-report_id: DO-STATE-BOARD-20260702-165850
+report_id: DO-STATE-BOARD-20260703-102933
 expediente: AUT-001
 algoritmo: DO-STATE-BOARD-001
 resultado: ok
@@ -9,23 +9,21 @@ transformacion_permitida: false
 
 ## Estado sintetico
 
-- ultimo expediente cerrado: `AUT-001`
+- ultimo expediente cerrado: `P-PI.0` / `P-PI.1`
 - ultimo expediente tecnico cerrado: `AUT-001`
-- ultima decision operativa: `AUT-001_Decision_Cierre_Operativo_Completo.md` (`D-2026-07-02-029`): `AUT-001` cerrado operativamente tras ejecucion directa local de `lab_run.py` en alcance clave; quedan herramientas conservadas y deuda documental visible.
-- proximo objetivo: Elegir siguiente ruta posterior a `C-002`: implementacion no mutante conforme a RFC, formalizacion de R4/Gamma, o cierre/pausa operativa de `AUD-001`.
+- ultima decision operativa: `PSI-001_Decision_Estatus_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md` (`D-2026-07-03-003`): `PSI-FRON-PSICOPAT-001` queda aceptada como compuerta provisional de frontera conceptual no clinica dentro de `PSI-001`; no abre subfrente psicopatologico ni habilita uso clinico.
+- proximo objetivo: Acotar la ruta de `Gamma` del Auditor dentro de `AUD-001`; cualquier paso posterior a `Gamma` requiere decision explicita.
 
 ## Expediente activo inmediato
 
-`AUD-001` queda completo en version documental/operativa v0 y ya produjo `C-002`; permanece abierto solo para rutas posteriores no cubiertas: implementacion, R4 formal, `Gamma`, `REPORT_LAYER` Nivel C o cierre/pausa. `PSI-001` queda abierto con matriz de patrones no clinicos aceptada, sin cierre ni promocion; `TCS-001` queda abierto como expediente teorico provisional; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `P-PI.0` y `P-PI.1` quedan en pausa operativa; `B-001.5` queda congelado.
+`P-PI.0` / `P-PI.1` quedan cerrados como frentes de trabajo por `D-2026-07-03-002`; `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001` quedan como evidencia ejecutada; Confluencia y Equivalencia de proyecciones siguen abiertas como problemas de fondo. `AUD-001` queda completo en version documental/operativa v0 y ya produjo `C-002`; permanece abierto solo para rutas posteriores no cubiertas; la suite ejecutable completa queda encuadrada en `AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md`, la ruta de `parser real` queda acotada en `AUD-001_Ficha_Alcance_Parser_Real.md` y la ruta de `R4` formal queda acotada en `AUD-001_Ficha_Alcance_R4_Formal.md`. `H-B.6` y `H-B.7` tienen alcance local minimo aceptado, pero sin contenido sustantivo materializado. `PSI-001` queda abierto con matriz de patrones no clinicos y compuerta de frontera conceptual no clinica aceptadas, sin cierre, promocion ni apertura de psicopatologia; `TCS-001` queda abierto como expediente teorico provisional; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `B-001.5` queda congelado.
 
 ## Expedientes abiertos
 
 - `HXI-001` (pausa operativa; reporte de consistencia aceptado y criterios de admision formal posterior preparados; no admite `H-Xi`)
-- `PSI-001` (abierto; matriz de patrones no clinicos aceptada; `A-PSI-001`, `DEF-PSI-ORG-001`, `CRIT-PSI-TR-001`, `EX-PSI-001` a `EX-PSI-005`, `CAS-PSI-001` a `CAS-PSI-006` y `PSI-MAT-PAT-001` siguen provisionales dentro del expediente)
+- `PSI-001` (abierto; matriz de patrones no clinicos y compuerta de frontera conceptual no clinica aceptadas; `A-PSI-001`, `DEF-PSI-ORG-001`, `CRIT-PSI-TR-001`, `EX-PSI-001` a `EX-PSI-005`, `CAS-PSI-001` a `CAS-PSI-006`, `PSI-MAT-PAT-001` y `PSI-FRON-PSICOPAT-001` siguen provisionales dentro del expediente)
 - `TCS-001` (expediente teorico provisional; `Concordance` tratada como propiedad auditable de gobernanza de sistemas; analisis de fondo registrado; no Canon, no documento oficial)
-- `P-PI.0` (pausa operativa por `RUTA-PPI-001`; proposito pendiente de consolidacion)
-- `P-PI.1` (pausa operativa por `RUTA-PPI-001`; proposito pendiente de consolidacion)
-- `AUD-001` (completo en version documental/operativa v0; produjo `C-002`; queda abierto solo para rutas posteriores como implementacion, R4 formal, `Gamma`, `REPORT_LAYER` Nivel C o cierre/pausa)
+- `AUD-001` (completo en version documental/operativa v0; implementacion no mutante `AUDITOR-V0-001` aceptada; JSON reactivado; `REPORT_LAYER` local y compatibilidad con `DO_CHECK_REPORT` definidas; suite ejecutable completa encuadrada en `AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md`; parser real acotado en `AUD-001_Ficha_Alcance_Parser_Real.md`; R4 formal acotado en `AUD-001_Ficha_Alcance_R4_Formal.md`; abierto solo para rutas posteriores como `Gamma`)
 
 ## Automatizacion
 

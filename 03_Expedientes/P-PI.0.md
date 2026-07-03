@@ -2,7 +2,7 @@
 
 Nombre de archivo portable: `P-PI.0.md`.
 
-Estatus: activo acotado por `D-2026-07-02-032`.
+Estatus: cerrado como frente de trabajo por `D-2026-07-03-002`.
 
 ## Proposito
 
@@ -25,6 +25,7 @@ Decision de ruta asociada: `03_Expedientes/P-PI_Decision_Ruta_Operativa.md`.
 
 Decision de reactivacion asociada: `03_Expedientes/P-PI_Decision_Reactivacion_Frente_Matematico.md`.
 Decision de estatus asociada: `03_Expedientes/P-PI_Decision_Estatus_Frente_Matematico_Acotado.md`.
+Decision de cierre asociada: `03_Expedientes/P-PI_Decision_Cierre_Frente_Matematico_Acotado.md`.
 
 Marco inicial asociado: `03_Expedientes/P-PI_Marco_Inicial_Confluencia_Equivalencia.md`.
 
@@ -32,19 +33,22 @@ Caso ejecutado asociado: `03_Expedientes/P-PI_PPI-EQ-001_REPORT_LAYER_DO_CHECK.m
 
 Caso ejecutado asociado: `03_Expedientes/P-PI_PPI-EQ-002_Completitud_A_C002.md`.
 
-## Ruta operativa vigente
+## Cierre de trabajo
 
-El expediente queda activo de forma acotada para trabajar Equivalencia de proyecciones.
+El expediente queda cerrado como frente de trabajo.
 
-La accion local inmediata es preparar una decision de estatus acotado de `P-PI.0` / `P-PI.1` tras los casos `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001`.
+No hay accion local inmediata.
 
-Esta reactivacion no cierra el expediente, no resuelve Confluencia y no resuelve Equivalencia de proyecciones.
+Cualquier reapertura futura requiere decision separada.
+
+El cierre no resuelve Confluencia ni Equivalencia de proyecciones.
 
 ## Deudas abiertas
 
 - Consolidar el proposito desde fuentes historicas o documentos previos registrados localmente.
 - Mantener Confluencia como problema abierto hasta tratamiento propio.
 - Mantener Equivalencia de proyecciones como problema abierto hasta tratamiento propio.
-- No cerrar, congelar ni absorber este expediente sin decision separada.
-- Usar `PPI-EQ-001` y `PPI-EQ-002` solo como casos locales de equivalencia bajo contexto; no promocionarlos como cierre general del problema.
-- No tratar `PPI-CONF-001` como cierre general de Confluencia.
+- Conservar `PPI-EQ-001` como evidencia local ejecutada.
+- Conservar `PPI-EQ-002` como evidencia local ejecutada.
+- Conservar `PPI-CONF-001` como evidencia local ejecutada.
+- No reabrir sin decision separada.
