@@ -18,6 +18,7 @@ class AuditorV0Tests(unittest.TestCase):
         self.assertFalse(report["transformacion_permitida"])
         self.assertEqual(summary["cases_checked"], 10)
         self.assertEqual(summary["mandatory_missing"], [])
+        self.assertEqual(summary["schema_errors"], [])
         self.assertEqual(summary["operator_reports"], 11)
 
     def test_all_reports_are_non_mutant(self) -> None:
@@ -42,6 +43,44 @@ class AuditorV0Tests(unittest.TestCase):
         self.assertEqual(results["AUD-T07"], "bloqueado")
         self.assertEqual(results["AUD-T08"], "bloqueado")
         self.assertEqual(results["AUD-T09"], "advertencia")
+
+    def test_malformed_case_is_blocked_without_crash(self) -> None:
+        case = {"kind": "automaton", "automaton": {"transitions": [["q0", "a"]]}}
+
+        result = auditor_v0.evaluate_case(case)
+
+        self.assertEqual(result["resultado"], "bloqueado")
+        self.assertEqual(result["reports"][0]["operador"], "Mp")
+        self.assertIn("id ausente", result["reports"][0]["evidencia"])
+        self.assertFalse(result["transformacion_permitida"])
+
+    def test_duplicate_case_ids_break_conformity(self) -> None:
+        report = auditor_v0.build_report_from_cases([auditor_v0.DEFAULT_CASES[0], auditor_v0.DEFAULT_CASES[0]])
+
+        self.assertFalse(report["conforme_c002"])
+        self.assertIn("case_id duplicado: AUD-T00", report["summary"]["schema_errors"])
+
+    def test_report_schema_validator_rejects_mutation_permission(self) -> None:
+        bad_report = auditor_v0.op_report(
+            "AUD-TXX",
+            "D",
+            1,
+            "ok",
+            "sin_hallazgo_bloqueante",
+            "integracion",
+            "reporte de prueba",
+            "evidencia",
+            "definicion",
+            ["aprobar"],
+            "aprobar",
+            "exito",
+            "exito",
+        )
+        bad_report["transformacion_permitida"] = True
+
+        errors = auditor_v0.report_schema_errors([bad_report])
+
+        self.assertEqual(errors, ["AUDITOR-V0-001-AUD-TXX-D-01: transformacion_permitida debe ser false"])
 
 
 if __name__ == "__main__":

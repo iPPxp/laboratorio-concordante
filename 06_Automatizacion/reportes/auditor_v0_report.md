@@ -1,6 +1,6 @@
 # AUDITOR_V0_REPORT
 
-report_id: AUDITOR-V0-20260702-183317
+report_id: AUDITOR-V0-20260702-185608
 expediente: AUD-001
 algoritmo: AUDITOR-V0-001
 base_normativa: C-002
@@ -16,6 +16,7 @@ transformacion_permitida: false
 - advertencia: 2
 - bloqueado: 7
 - reportes de operador: 11
+- errores de esquema: 0
 
 ## Casos
 

@@ -44,7 +44,7 @@ Esta decision no autoriza:
 
 El siguiente frente tecnico queda en pruebas externas y endurecimiento de contrato:
 
-- fixtures JSON externos;
+- fixtures externos cuando se reactive JSON;
 - pruebas de entradas mal formadas;
 - validacion de esquema de reportes;
 - integracion posterior con herramientas de estado sin introducir mutacion.

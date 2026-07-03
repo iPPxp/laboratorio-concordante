@@ -21,6 +21,49 @@ SOURCES = [
     "03_Expedientes/AUD-001_Contrato_Reportes.md",
     "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md",
 ]
+CASE_KINDS = {"automaton", "claim", "authority", "level_change", "term"}
+REPORT_FIELDS = {
+    "report_id",
+    "expediente",
+    "caso",
+    "operador",
+    "resultado",
+    "tipo",
+    "ubicacion",
+    "descripcion",
+    "evidencia",
+    "estatus_afirmacion",
+    "alternativas_no_decididas",
+    "decision_permitida",
+    "decision_emitida",
+    "transformacion_permitida",
+    "tau_requerido",
+    "tau_estado",
+    "dependencias",
+    "deudas_generadas",
+}
+OPERADORES = {"Mp", "Cr", "D", "Tr", "tau"}
+RESULTADOS = {"ok", "falla", "no_autorizado", "bloqueado", "escalado", "terminado", "ejecutado"}
+TIPOS = {
+    "deuda_conceptual",
+    "contradiccion",
+    "ambiguedad",
+    "dependencia_no_registrada",
+    "violacion_r4_aud",
+    "sin_hallazgo_bloqueante",
+    "cambio_acotado",
+    "fallo_ejecucion",
+    "reversion",
+}
+DECISIONES = {
+    "aprobar",
+    "bloquear",
+    "escalar",
+    "continuar_sin_transformar",
+    "continuar_con_cambio_acotado",
+    "no_aplica",
+}
+TAU_ESTADOS = {"exito", "bloqueo_temprano", "no_terminacion", "interrupcion_por_deuda", "escalamiento", "no_aplica"}
 
 
 DEFAULT_CASES: list[dict[str, Any]] = [
@@ -209,6 +252,68 @@ def op_report(
 
 def transition_tuples(case: dict[str, Any]) -> list[tuple[str, str, str]]:
     return [tuple(item) for item in case["automaton"].get("transitions", [])]
+
+
+def case_validation_errors(case: Any) -> list[str]:
+    if not isinstance(case, dict):
+        return ["caso no es objeto"]
+    errors: list[str] = []
+    case_id = case.get("id")
+    kind = case.get("kind")
+    if not isinstance(case_id, str) or not case_id:
+        errors.append("id ausente o invalido")
+    if kind not in CASE_KINDS:
+        errors.append(f"kind no reconocido: {kind}")
+    if kind == "automaton":
+        automaton = case.get("automaton")
+        if not isinstance(automaton, dict):
+            errors.append("automaton ausente o invalido")
+        else:
+            for field in ("states", "alphabet", "finals", "transitions"):
+                if not isinstance(automaton.get(field), list):
+                    errors.append(f"automaton.{field} debe ser lista")
+            if not isinstance(automaton.get("initial"), str):
+                errors.append("automaton.initial debe ser texto")
+            transitions = automaton.get("transitions", [])
+            if isinstance(transitions, list):
+                bad = [item for item in transitions if not isinstance(item, list) or len(item) != 3]
+                if bad:
+                    errors.append("cada transicion debe tener forma [origen, simbolo, destino]")
+    return errors
+
+
+def validation_failure(case: Any, errors: list[str]) -> dict[str, Any]:
+    if isinstance(case, dict):
+        case_id = case.get("id") if isinstance(case.get("id"), str) and case.get("id") else "AUD-TXX"
+        kind = case.get("kind", "invalido")
+    else:
+        case_id = "AUD-TXX"
+        kind = "invalido"
+    reports = [
+        op_report(
+            case_id,
+            "Mp",
+            1,
+            "falla",
+            "deuda_conceptual",
+            "caso",
+            "Caso mal formado para el Auditor v0.",
+            "; ".join(errors),
+            "no_clasificado",
+            ["bloquear"],
+            "bloquear",
+            "bloqueo_temprano",
+            "bloqueo_temprano",
+            deudas_generadas=["normalizar caso antes de evaluar"],
+        )
+    ]
+    return {
+        "case_id": case_id,
+        "kind": kind,
+        "resultado": "bloqueado",
+        "transformacion_permitida": False,
+        "reports": reports,
+    }
 
 
 def automaton_findings(case: dict[str, Any]) -> list[dict[str, Any]]:
@@ -489,7 +594,11 @@ def term_findings(case: dict[str, Any]) -> list[dict[str, Any]]:
     return []
 
 
-def evaluate_case(case: dict[str, Any]) -> dict[str, Any]:
+def evaluate_case(case: Any) -> dict[str, Any]:
+    errors = case_validation_errors(case)
+    if errors:
+        return validation_failure(case, errors)
+
     kind = case.get("kind")
     if kind == "automaton":
         reports = automaton_findings(case)
@@ -538,7 +647,7 @@ def result_for_reports(reports: list[dict[str, Any]]) -> str:
     return "ok"
 
 
-def load_cases(root: Path, case_file: str | None) -> list[dict[str, Any]]:
+def load_cases(root: Path, case_file: str | None) -> list[Any]:
     if not case_file:
         return DEFAULT_CASES
     path = root / case_file
@@ -551,12 +660,58 @@ def load_cases(root: Path, case_file: str | None) -> list[dict[str, Any]]:
     return loaded
 
 
-def build_report(root: Path, case_file: str | None = None) -> dict[str, Any]:
-    cases = load_cases(root, case_file)
+def duplicate_case_ids(cases: list[Any]) -> list[str]:
+    seen: set[str] = set()
+    duplicates: set[str] = set()
+    for case in cases:
+        if not isinstance(case, dict) or not isinstance(case.get("id"), str):
+            continue
+        case_id = case["id"]
+        if case_id in seen:
+            duplicates.add(case_id)
+        seen.add(case_id)
+    return sorted(duplicates)
+
+
+def report_schema_errors(reports: list[dict[str, Any]]) -> list[str]:
+    errors: list[str] = []
+    for report in reports:
+        report_name = str(report.get("report_id", "reporte_sin_id"))
+        missing = sorted(REPORT_FIELDS - set(report))
+        if missing:
+            errors.append(f"{report_name}: campos faltantes {', '.join(missing)}")
+            continue
+        if report["operador"] not in OPERADORES:
+            errors.append(f"{report_name}: operador invalido {report['operador']}")
+        if report["resultado"] not in RESULTADOS:
+            errors.append(f"{report_name}: resultado invalido {report['resultado']}")
+        if report["tipo"] not in TIPOS:
+            errors.append(f"{report_name}: tipo invalido {report['tipo']}")
+        if report["decision_emitida"] not in DECISIONES:
+            errors.append(f"{report_name}: decision_emitida invalida {report['decision_emitida']}")
+        if report["tau_estado"] not in TAU_ESTADOS:
+            errors.append(f"{report_name}: tau_estado invalido {report['tau_estado']}")
+        if report["transformacion_permitida"] is not False:
+            errors.append(f"{report_name}: transformacion_permitida debe ser false")
+        for field in ("alternativas_no_decididas", "decision_permitida", "dependencias", "deudas_generadas"):
+            if not isinstance(report[field], list):
+                errors.append(f"{report_name}: {field} debe ser lista")
+        permitted = report.get("decision_permitida", [])
+        if isinstance(permitted, list):
+            for decision in permitted:
+                if decision not in DECISIONES - {"no_aplica"}:
+                    errors.append(f"{report_name}: decision_permitida invalida {decision}")
+    return errors
+
+
+def build_report_from_cases(cases: list[Any]) -> dict[str, Any]:
     evaluated = [evaluate_case(case) for case in cases]
     all_reports = [report for case in evaluated for report in case["reports"]]
     covered = sorted({case["case_id"] for case in evaluated})
     missing = [case_id for case_id in CASE_IDS if case_id not in covered]
+    duplicates = duplicate_case_ids(cases)
+    schema_errors = report_schema_errors(all_reports)
+    schema_errors.extend(f"case_id duplicado: {case_id}" for case_id in duplicates)
     blocking = [case for case in evaluated if case["resultado"] == "bloqueado"]
     warnings = [case for case in evaluated if case["resultado"] == "advertencia"]
     return {
@@ -566,7 +721,7 @@ def build_report(root: Path, case_file: str | None = None) -> dict[str, Any]:
         "base_normativa": "C-002",
         "modo": "no_mutante",
         "transformacion_permitida": False,
-        "conforme_c002": not missing and all(not report["transformacion_permitida"] for report in all_reports),
+        "conforme_c002": not missing and not schema_errors and all(not report["transformacion_permitida"] for report in all_reports),
         "fuentes": SOURCES,
         "summary": {
             "cases_checked": len(evaluated),
@@ -578,9 +733,14 @@ def build_report(root: Path, case_file: str | None = None) -> dict[str, Any]:
             "operator_reports": len(all_reports),
             "by_operator": dict(Counter(report["operador"] for report in all_reports)),
             "by_tipo": dict(Counter(report["tipo"] for report in all_reports)),
+            "schema_errors": schema_errors,
         },
         "cases": evaluated,
     }
+
+
+def build_report(root: Path, case_file: str | None = None) -> dict[str, Any]:
+    return build_report_from_cases(load_cases(root, case_file))
 
 
 def render_md(report: dict[str, Any]) -> str:
@@ -604,6 +764,7 @@ def render_md(report: dict[str, Any]) -> str:
         f"- advertencia: {summary['advertencia']}",
         f"- bloqueado: {summary['bloqueado']}",
         f"- reportes de operador: {summary['operator_reports']}",
+        f"- errores de esquema: {len(summary['schema_errors'])}",
         "",
         "## Casos",
         "",
@@ -619,6 +780,10 @@ def render_md(report: dict[str, Any]) -> str:
                 + f"Decision: {item['decision_emitida']}. "
                 + f"Transformacion: {str(item['transformacion_permitida']).lower()}."
             )
+        lines.append("")
+    if summary["schema_errors"]:
+        lines.extend(["## Errores de esquema", ""])
+        lines.extend(f"- {error}" for error in summary["schema_errors"])
         lines.append("")
     lines.extend(["## Fuentes", ""])
     lines.extend(f"- {source}" for source in report["fuentes"])
