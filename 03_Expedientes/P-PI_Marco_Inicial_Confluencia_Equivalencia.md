@@ -174,7 +174,7 @@ Estatus: ejecutado provisionalmente en `P-PI_PPI-EQ-001_REPORT_LAYER_DO_CHECK.md
 
 Caso candidato para evaluar la proyeccion desde completitud documental/operativa del Auditor hacia `C-002_RFC_Operativo_Auditor_v0.md`.
 
-Estatus: caso pendiente, no ejecutado en este documento.
+Estatus: ejecutado provisionalmente en `P-PI_PPI-EQ-002_Completitud_A_C002.md`.
 
 ### `PPI-CONF-001` - Rutas convergentes hacia estado operativo
 
@@ -205,7 +205,7 @@ Un avance posterior en `P-PI.1` debe producir al menos:
 - Definir formalmente que tipos de objeto pueden ser `S`.
 - Definir si `~_C` debe ser reflexiva, simetrica o transitiva en cada contexto.
 - Distinguir equivalencia operacional, equivalencia documental y equivalencia matematica.
-- Crear casos ejecutados para `PPI-EQ-002` y `PPI-CONF-001`; `PPI-EQ-001` queda ejecutado provisionalmente.
+- Crear caso ejecutado para `PPI-CONF-001`; `PPI-EQ-001` y `PPI-EQ-002` quedan ejecutados provisionalmente.
 - Decidir si este marco debe permanecer local o preparar una futura seccion de `02_Fundamentos_Matematicos.md`.
 
 ## Veredicto

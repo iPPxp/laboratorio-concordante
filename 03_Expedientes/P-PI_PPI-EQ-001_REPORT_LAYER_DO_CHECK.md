@@ -143,7 +143,7 @@ En ese contexto, el dictamen responsable seria bloqueo o equivalencia no demostr
 
 ## Deudas conservadas
 
-- Ejecutar `PPI-EQ-002`.
+- `PPI-EQ-002` queda cumplido por `P-PI_PPI-EQ-002_Completitud_A_C002.md`; falta usar ambos casos en `PPI-CONF-001`.
 - Definir si futuros contextos requieren propiedades formales de `~_C`.
 - Si se busca equivalencia fuerte de trazabilidad, ampliar el adaptador o declarar un contexto mas estricto.
 - Mantener `REPORT_LAYER` local pre-C hasta decision separada.
@@ -154,4 +154,4 @@ En ese contexto, el dictamen responsable seria bloqueo o equivalencia no demostr
 
 No cierra Equivalencia de proyecciones como problema general.
 
-No habilita Confluencia todavia.
+Habilita Confluencia solo junto con `PPI-EQ-002`, como insumo local para `PPI-CONF-001`.

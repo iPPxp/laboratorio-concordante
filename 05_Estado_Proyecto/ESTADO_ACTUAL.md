@@ -268,6 +268,7 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 
 ## Validaciones provisionales activas
 
+- `PPI-EQ-002`: equivalencia documental-operativa entre completitud v0 del Auditor y `C-002` validada provisionalmente bajo contexto `C_AUD_RFC_OPERATIVO`.
 - `VAL-001`: `MP_FAIL_REPORT` validado provisionalmente contra `AUD-SIM-001`.
 - `VAL-002`: `CR_FAIL_REPORT` validado provisionalmente contra `AUD-SIM-002`.
 - `VAL-003`: `TAU_REPORT` validado provisionalmente contra `AUD-SIM-003`.
@@ -321,6 +322,7 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 
 ## Sintesis provisionales activas
 
+- `P-PI_PPI-EQ-002_Completitud_A_C002.md`: caso ejecutado provisional de Equivalencia de proyecciones hacia `C-002`.
 - `PSI-001_Mapa_Continuidad_Conceptual.md`: mapa provisional no clinico para continuidad conceptual de `PSI-001`.
 - `P-PI_PPI-EQ-001_REPORT_LAYER_DO_CHECK.md`: caso ejecutado provisional de Equivalencia de proyecciones.
 - `P-PI_Marco_Inicial_Confluencia_Equivalencia.md`: marco provisional `PPI-MARCO-CORE-001` para Equivalencia de proyecciones y Confluencia.
@@ -351,7 +353,7 @@ Ultimo expediente tecnico cerrado: `AUT-001`
 
 ## Proximo objetivo
 
-Ejecutar `PPI-EQ-002` como segundo caso de Equivalencia de proyecciones dentro de `P-PI.0`, usando la relacion contextual `~_C` declarada en `PPI-EQ-001`.
+Ejecutar `PPI-CONF-001` como primer caso local de Confluencia dentro de `P-PI.1`, usando `PPI-EQ-001` y `PPI-EQ-002` como relaciones contextuales disponibles.
 
 ## No volver a discutir sin reapertura explicita
 
@@ -371,7 +373,7 @@ Ejecutar `PPI-EQ-002` como segundo caso de Equivalencia de proyecciones dentro d
 - Consolidar contenido real de documentos 00, 01, 02 y 03 desde fuentes previas.
 - Deudas condicionadas derivadas de `RH-001`: Protocolo de Admision/`PM-001`, Concordancia, Documento 04, arquitectura multiagente y adjuntos historicos requieren expediente o decision separada antes de usarse.
 - `HXI-001`: en pausa operativa; no continuar admision sin reapertura explicita.
-- `P-PI.0` / `P-PI.1`: activos de forma acotada; `PPI-EQ-001` ejecutado provisionalmente, falta `PPI-EQ-002` y luego `PPI-CONF-001`; Confluencia y Equivalencia de proyecciones permanecen abiertas.
+- `P-PI.0` / `P-PI.1`: activos de forma acotada; `PPI-EQ-001` y `PPI-EQ-002` ejecutados provisionalmente, falta `PPI-CONF-001`; Confluencia y Equivalencia de proyecciones permanecen abiertas.
 - Vision papers: `VISION_PAPER_PROPUESTA.md` y `VISION_PAPER_FINAL_REFERENCIAS.md` quedan inactivos hasta nueva decision; no usarlos como autoridad, agenda o fuente para promocion.
 - `PSI-001`: queda como base conceptual no clinica con matriz de patrones aceptada; no cerrar, promover, abrir psicopatologia ni vincular con `HXI-001` sin decision posterior.
 - `AUD-001`: no promover `REPORT_LAYER`, `R4-CANDIDATA`, R4 formal ni `Gamma` sin decision posterior.
