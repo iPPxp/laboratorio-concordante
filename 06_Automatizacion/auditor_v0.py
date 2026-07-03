@@ -22,6 +22,28 @@ SOURCES = [
     "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md",
 ]
 CASE_KINDS = {"automaton", "claim", "authority", "level_change", "term"}
+REQUIRED_FIELDS_BY_KIND = {
+    "claim": {
+        "claim": "text_non_empty",
+        "required_dependency": "text_non_empty",
+        "dependency_materialized": "bool",
+    },
+    "authority": {
+        "claim": "text_non_empty",
+        "source": "text_non_empty",
+        "registered_decision": "bool",
+    },
+    "level_change": {
+        "surface": "text_non_empty",
+        "action": "text_non_empty",
+        "registered_decision": "bool",
+    },
+    "term": {
+        "text": "text_non_empty",
+        "term": "text_non_empty",
+        "term_status": "text",
+    },
+}
 REPORT_FIELDS = {
     "report_id",
     "expediente",
@@ -264,6 +286,14 @@ def case_validation_errors(case: Any) -> list[str]:
         errors.append("id ausente o invalido")
     if kind not in CASE_KINDS:
         errors.append(f"kind no reconocido: {kind}")
+    for field, expected in REQUIRED_FIELDS_BY_KIND.get(kind, {}).items():
+        value = case.get(field)
+        if expected == "bool" and not isinstance(value, bool):
+            errors.append(f"{field} ausente o debe ser booleano")
+        elif expected == "text" and not isinstance(value, str):
+            errors.append(f"{field} ausente o debe ser texto")
+        elif expected == "text_non_empty" and (not isinstance(value, str) or not value):
+            errors.append(f"{field} ausente o debe ser texto no vacio")
     if kind == "automaton":
         automaton = case.get("automaton")
         if not isinstance(automaton, dict):

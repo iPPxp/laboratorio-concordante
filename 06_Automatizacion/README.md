@@ -94,7 +94,7 @@ python 06_Automatizacion/auditor_v0.py --format json --case-file 06_Automatizaci
 python 06_Automatizacion/auditor_v0.py --format json --case-file 06_Automatizacion/fixtures/auditor_v0_documental_cases.json
 ```
 
-En el Auditor v0, la salida JSON y la carga externa por `--case-file` estan reactivadas en modo no mutante.
+En el Auditor v0, la salida JSON y la carga externa por `--case-file` estan reactivadas en modo no mutante. El esquema externo declara variantes por `kind` y la implementacion bloquea casos documentales mal formados.
 
 El fixture documental es una corrida parcial; debe conservar `transformacion_permitida = false` y no declara conformidad `C-002` completa.
 

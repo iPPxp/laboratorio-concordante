@@ -25,6 +25,8 @@ La salida JSON y la carga externa por `--case-file` quedan reactivadas y cubiert
 
 El fixture documental externo se valida como ejecucion parcial no mutante: emite cuatro casos documentales y conserva `conforme_c002 = false` porque no contiene la matriz obligatoria completa.
 
+La validacion de forma ahora cubre campos requeridos por `kind` en casos documentales.
+
 ## Resultado observado
 
 - `conforme_c002`: `true`.
@@ -36,7 +38,7 @@ El fixture documental externo se valida como ejecucion parcial no mutante: emite
 - Casos `bloqueado`: `7`.
 - Reportes de operador: `11`.
 - Errores de esquema: `0`.
-- Pruebas unitarias vigentes: `11`.
+- Pruebas unitarias vigentes: `12`.
 - Fixture documental parcial: `4` casos, `0` errores de esquema, transformacion no permitida.
 
 ## Cobertura por caso
@@ -68,4 +70,4 @@ La implementacion cubre la matriz minima de `C-002` en modo no mutante.
 
 Los reportes emitidos conservan decision restringida y no habilitan transformacion.
 
-La prueba unitaria confirma que los diez casos obligatorios permanecen cubiertos, que ningun reporte autoriza transformacion, que la salida JSON es valida, que `--case-file` acepta casos externos dentro del repositorio, que el artefacto de esquema queda declarado y que el fixture documental parcial no se confunde con conformidad completa `C-002`.
+La prueba unitaria confirma que los diez casos obligatorios permanecen cubiertos, que ningun reporte autoriza transformacion, que la salida JSON es valida, que `--case-file` acepta casos externos dentro del repositorio, que el artefacto de esquema queda declarado, que el fixture documental parcial no se confunde con conformidad completa `C-002` y que un caso documental mal formado rompe conformidad sin autorizar transformacion.

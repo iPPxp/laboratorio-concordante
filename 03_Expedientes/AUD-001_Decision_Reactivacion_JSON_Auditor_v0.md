@@ -18,6 +18,7 @@ La reactivacion cubre:
 - `--case-file` para archivos JSON dentro del repositorio;
 - regeneracion de `06_Automatizacion/reportes/auditor_v0_report.json`;
 - fixture externo `06_Automatizacion/fixtures/auditor_v0_cases.json`;
+- fixture documental parcial `06_Automatizacion/fixtures/auditor_v0_documental_cases.json`;
 - esquema operativo `06_Automatizacion/fixtures/auditor_v0_case_schema.json`;
 - pruebas unitarias de salida JSON y carga externa.
 
@@ -32,10 +33,11 @@ La reactivacion no convierte JSON en autoridad decisional, no habilita `Tr_ejecu
 - Todo reporte JSON debe conservar `transformacion_permitida = false`.
 - Los casos externos deben quedar dentro del repositorio.
 - Los errores de forma de caso deben entrar en `schema_errors`.
+- Los campos requeridos por `kind` deben validarse antes de evaluar casos documentales.
 - Una entrada mal formada puede emitir reporte seguro, pero no puede sostener `conforme_c002 = true`.
 
 ## Deuda posterior
 
-- Endurecer variantes del esquema por tipo de caso.
-- Ampliar fixtures documentales externos mas alla de la matriz minima.
+- Ampliar validaciones semanticas por tipo de caso.
+- Ampliar fixtures documentales externos mas alla del primer lote parcial.
 - Separar contrato ejecutable de `OPERATOR_REPORT` si `AUD-001` lo requiere.

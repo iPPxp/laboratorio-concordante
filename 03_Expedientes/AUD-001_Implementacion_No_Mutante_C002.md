@@ -41,6 +41,7 @@ La implementacion ejecuta lectura acotada, clasificacion de casos y emision de r
 - esquema operativo `06_Automatizacion/fixtures/auditor_v0_case_schema.json`;
 - salida por consola o por `--output`;
 - validacion de ruta de salida dentro del repositorio.
+- validacion de campos requeridos por `kind` para casos documentales.
 
 ## Comandos
 
@@ -71,7 +72,7 @@ Esta implementacion no cubre:
 
 ## Deuda viva
 
-- endurecer variantes del esquema por tipo de caso;
+- ampliar validaciones semanticas por tipo de caso;
 - ampliar fixtures documentales externos mas alla del primer lote parcial;
 - conectar la salida con tableros sin convertir reportes en autoridad;
 - mantener `REPORT_LAYER` como lectura local mientras no exista promocion propia.

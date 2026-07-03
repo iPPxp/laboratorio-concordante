@@ -8,6 +8,14 @@
   ],
   "additionalProperties": false,
   "properties": {
+    "fixture_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "minLength": 1
+    },
     "cases": {
       "type": "array",
       "minItems": 1,
@@ -57,37 +65,45 @@
           "$ref": "#/$defs/automaton"
         },
         "claim": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "justification": {
           "type": "string"
         },
         "required_dependency": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "dependency_materialized": {
           "type": "boolean"
         },
         "forbidden_promotion": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "source": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "registered_decision": {
           "type": "boolean"
         },
         "surface": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "action": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "text": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "term": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "term_status": {
           "type": "string"
@@ -124,6 +140,82 @@
           "then": {
             "required": [
               "automaton"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "claim"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "claim",
+              "required_dependency",
+              "dependency_materialized"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "authority"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "claim",
+              "source",
+              "registered_decision"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "level_change"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "surface",
+              "action",
+              "registered_decision"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "term"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "text",
+              "term",
+              "term_status"
             ]
           }
         }

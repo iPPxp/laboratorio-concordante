@@ -141,11 +141,18 @@ class AuditorV0Tests(unittest.TestCase):
         schema_path = ROOT / "06_Automatizacion" / "fixtures" / "auditor_v0_case_schema.json"
 
         schema = json.loads(schema_path.read_text(encoding="utf-8"))
+        kind_branches = [
+            branch["if"]["properties"]["kind"]["const"]
+            for branch in schema["$defs"]["case"]["allOf"]
+        ]
 
         self.assertEqual(schema["$id"], "AUDITOR-V0-CASE-SCHEMA-001")
         self.assertEqual(schema["required"], ["cases"])
+        self.assertIn("fixture_id", schema["properties"])
+        self.assertIn("status", schema["properties"])
         self.assertIn("case", schema["$defs"])
         self.assertIn("automaton", schema["$defs"])
+        self.assertEqual(kind_branches, ["automaton", "claim", "authority", "level_change", "term"])
 
     def test_documental_fixture_runs_as_partial_non_mutant(self) -> None:
         rel_path = "06_Automatizacion/fixtures/auditor_v0_documental_cases.json"
@@ -168,6 +175,28 @@ class AuditorV0Tests(unittest.TestCase):
             },
         )
         self.assertTrue(all(not case["transformacion_permitida"] for case in report["cases"]))
+        self.assertTrue(
+            all(not item["transformacion_permitida"] for case in report["cases"] for item in case["reports"])
+        )
+
+    def test_documental_case_shape_errors_break_conformity(self) -> None:
+        report = auditor_v0.build_report_from_cases(
+            [
+                {
+                    "id": "AUD-DOC-BAD",
+                    "kind": "claim",
+                    "claim": "afirmacion sin dependencia materializada",
+                    "required_dependency": "dependencia documental",
+                }
+            ]
+        )
+
+        self.assertFalse(report["conforme_c002"])
+        self.assertEqual(report["cases"][0]["resultado"], "bloqueado")
+        self.assertIn(
+            "AUD-DOC-BAD: dependency_materialized ausente o debe ser booleano",
+            report["summary"]["schema_errors"],
+        )
         self.assertTrue(
             all(not item["transformacion_permitida"] for case in report["cases"] for item in case["reports"])
         )
