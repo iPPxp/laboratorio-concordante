@@ -1,21 +1,21 @@
 # LAB_RUN_REPORT
 
-report_id: DO-LAB-RUN-20260702-165851
+report_id: DO-LAB-RUN-20260703-135812
 expediente: AUT-001
 algoritmo: DO-LAB-RUN-001
 resultado: advertencia
 recomendacion: mantener_cierre_operativo
 transformacion_permitida: false
-scope: claves
+scope: repo
 
 ## Pasos
 
-- DO-CHECK-MIN-001: advertencia (11 hallazgos)
-- DO-CHECK-MED-001: ok (0 hallazgos)
+- DO-CHECK-MIN-001: advertencia (139 hallazgos)
+- DO-CHECK-MED-001: advertencia (236 hallazgos)
 - DO-STATE-BOARD-001: ok (0 hallazgos)
-- DO-LAB-CONTINUITY-001: ok (0 hallazgos)
-- DO-LAB-RISK-001: advertencia_clasificada (11 hallazgos)
-- DO-LAB-SUMMARY-001: advertencia (0 hallazgos)
+- DO-LAB-CONTINUITY-001: advertencia (236 hallazgos)
+- DO-LAB-RISK-001: riesgo_controlado (250 hallazgos)
+- DO-LAB-SUMMARY-001: atencion_requerida (0 hallazgos)
 
 ## Reportes generados
 

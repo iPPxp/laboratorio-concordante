@@ -138,7 +138,7 @@ El Auditor no puede demostrar por si mismo confluencia, equivalencia de proyecci
 | AUD-T03 | Automata que declara determinismo pero contiene dos transiciones para el mismo par `(estado, simbolo)` | Contradiccion entre declaracion y estructura | validado provisionalmente por `AUD-SIM-002`, `AUD-SIM-010`, `VAL-002` y `VAL-010` |
 | AUD-T04 | Dos automatas presentados como equivalentes sin algoritmo de equivalencia registrado | Hipotesis promovida indebidamente o dependencia no registrada | validado provisionalmente por `AUD-SIM-010`, `AUD-SIM-012`, `VAL-010` y `VAL-012` |
 | AUD-T05 | Artefacto que ejecuta transformacion sin decision fundada | Violacion de `R4-AUD` | validado provisionalmente por `AUD-SIM-024` y `VAL-024` |
-| AUD-T06 | Artefacto que invoca `Gamma` como resultado formal sin construccion local | Hipotesis promovida indebidamente | validado provisionalmente por `AUD-SIM-025` y `VAL-025` |
+| AUD-T06 | Artefacto que invoca `Gamma` como resultado formal sin construccion local suficiente | Hipotesis promovida indebidamente | validado provisionalmente por `AUD-SIM-025` y `VAL-025`; lectura posterior: `GAMMA-DEF-001` aporta definicion local provisional, no construccion formal |
 | AUD-T07 | Artefacto que cita Registro Historico como autoridad directa | Violacion de `M-000.5` | validado provisionalmente por `AUD-SIM-019` y `VAL-019` |
 | AUD-T08 | Expediente que intenta modificar Canon sin decision explicita | Violacion de separacion de niveles | validado provisionalmente por `AUD-SIM-026` y `VAL-026` |
 | AUD-T09 | Documento que introduce termino nuevo sin estatus | Deuda conceptual | validado provisionalmente por `AUD-SIM-027` y `VAL-027` |
@@ -346,7 +346,7 @@ Criterio de exito: el Auditor registra deuda conceptual; no repara el automata a
 
 ## AUD-T06 - Gamma invocada como resultado formal
 
-Objetivo: detectar uso de `Gamma` como construccion formal sin archivo local que la defina.
+Objetivo: detectar uso de `Gamma` como construccion formal sin archivo local suficiente que la defina, delimite, valide y decida.
 
 Componente aislado: `D`.
 
@@ -354,19 +354,21 @@ Entrada minima:
 
 ```text
 Afirmacion: Gamma(A) produce la generalizacion canonica del automata A.
-Fuente local: ausente.
+Fuente local: ausente o insuficiente para el estatus declarado.
 Estatus declarado: teorema.
 ```
 
 Resultado esperado:
 
 - Hallazgo: hipotesis promovida indebidamente.
-- Dependencia faltante: definicion local de `Gamma`.
+- Dependencia faltante: definicion, construccion o validacion local suficiente de `Gamma` para el estatus declarado.
 - `D`: bloquear.
 
 Transformacion permitida: no.
 
 Criterio de exito: el Auditor degrada el uso de `Gamma` a deuda conceptual o hipotesis, no a teorema.
+
+Lectura posterior: `GAMMA-DEF-001` en `AUD-001_Gamma_Ruta1_Definicion_Local.md` cumple una definicion local provisional minima. `GAMMA-FORMAL-AUD-001` construye despues una forma formal local de expediente. Ninguna de las dos basta para aceptar `Gamma` como teorema global, Canon, Nivel C o permiso de transformacion; por tanto `AUD-T06` sigue valido para invocaciones con estatus excesivo.
 
 ## AUD-T07 - Autoridad historica indebida
 
@@ -446,7 +448,7 @@ Criterio de exito: el Auditor no usa "operador concordante" como fundamento.
 | Decision (`D`) | AUD-T04 validado provisionalmente por `AUD-SIM-012` y `VAL-012`; AUD-T06 validado provisionalmente por `AUD-SIM-025` y `VAL-025`; AUD-T07 validado provisionalmente por `AUD-SIM-019` y `VAL-019`; AUD-T08 validado provisionalmente por `AUD-SIM-026` y `VAL-026`; AUD-T09 validado provisionalmente por `AUD-SIM-027` y `VAL-027` |
 | Transformacion (`Tr`) | AUD-T05 validado provisionalmente por `AUD-SIM-024` y `VAL-024`; AUD-T08 validado provisionalmente por `AUD-SIM-026` y `VAL-026` |
 | Terminacion (`tau`) | AUD-T00 como control validado provisionalmente por `AUD-SIM-023` y `VAL-023`; AUD-T10 como caso derivado validado provisionalmente por `AUD-SIM-003`, `AUD-SIM-011`, `VAL-003` y `VAL-011`; algoritmo textual no terminante validado provisionalmente por `AUD-SIM-020` y `VAL-020` |
-| Dependencia no materializada | AUD-T04 validado provisionalmente por `AUD-SIM-010`, `AUD-SIM-012`, `VAL-010` y `VAL-012`; AUD-T06 validado provisionalmente por `AUD-SIM-025` y `VAL-025` |
+| Dependencia no materializada o insuficiente | AUD-T04 validado provisionalmente por `AUD-SIM-010`, `AUD-SIM-012`, `VAL-010` y `VAL-012`; AUD-T06 validado provisionalmente por `AUD-SIM-025` y `VAL-025`, con lectura posterior de `GAMMA-DEF-001` como definicion local provisional no formal |
 | Separacion de niveles | AUD-T07 validado provisionalmente por `AUD-SIM-019` y `VAL-019`; AUD-T08 validado provisionalmente por `AUD-SIM-026` y `VAL-026` |
 
 ## Caso derivado - Bucle procedural
@@ -497,11 +499,13 @@ Este cierre v0 no equivale a suite ejecutable completa, Regla R4 formal, `Gamma`
 - `AUD-SIM-022`: prueba `REPORT-LAYER-CAND-001` con un mapa interno de extraccion no automata y sin nombres locales de reportes como base.
 - `AUD-SIM-023`: valida el control positivo `AUD-T00`.
 - `AUD-SIM-024`: valida `AUD-T05`, transformacion sin decision fundada.
-- `AUD-SIM-025`: valida `AUD-T06`, uso formal indebido de `Gamma`.
+- `AUD-SIM-025`: valida `AUD-T06`, uso formal indebido de `Gamma`; lectura posterior: `GAMMA-DEF-001` no invalida el bloqueo de estatus excesivo.
 - `AUD-SIM-026`: valida `AUD-T08`, modificacion de Canon desde expediente.
 - `AUD-SIM-027`: valida `AUD-T09`, termino nuevo sin estatus.
 - `AUD-SIM-028`: valida el puente conceptual `REPORT_LAYER` / `DO_CHECK_REPORT`.
 - `AUD-SIM-029`: valida la proyeccion de la completitud v0 a documento tipo RFC.
+- `AUD-SIM-030`: valida `Gamma_1` contra un caso positivo acotado con `R4-CANDIDATA` como evidencia local; no construye `Gamma` formal ni R4 formal.
+- `AUD-SIM-031`: valida `Gamma_1` con `REPORT_LAYER` / `DO_CHECK_REPORT` como segunda prueba positiva fuera de `R4-CANDIDATA`; sostiene `GAMMA-FORMAL-AUD-001` sin promover `REPORT_LAYER`.
 
 ## Sintesis asociada
 
@@ -554,7 +558,7 @@ Resultado posterior a `D-AUD-V0-001`: la completitud v0 queda proyectada a docum
 
 ## Simulaciones asociadas
 
-- `03_Expedientes/AUD-001_Simulaciones.md`: incluye `AUD-SIM-009` a `AUD-SIM-029`.
+- `03_Expedientes/AUD-001_Simulaciones.md`: incluye `AUD-SIM-009` a `AUD-SIM-031`.
 
 ## Contratos asociados
 

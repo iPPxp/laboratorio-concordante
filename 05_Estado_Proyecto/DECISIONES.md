@@ -1357,7 +1357,7 @@ Se independiza `PSI-001` como proyecto propio bajo el nombre operativo `Psicolog
 
 Documento de decision: `03_Expedientes/PSI-001_Decision_Independizacion_Proyecto.md`.
 
-La fuente activa posterior queda fuera del Laboratorio, en un repositorio independiente y privado. El Laboratorio conserva una copia local de traspaso para trazabilidad historica, pero no debe usarla como superficie normal de trabajo.
+La fuente activa posterior queda fuera del Laboratorio, en un repositorio independiente y privado. La copia local de traspaso existio solo de forma transitoria y fue eliminada posteriormente por `D-2026-07-03-012`.
 
 ## Alcance
 
@@ -1373,4 +1373,443 @@ Dentro del Laboratorio, `PSI-001` queda como frente transferido / independizado.
 
 El proximo objetivo interno del Laboratorio vuelve a `AUD-001`, `Gamma`, definicion formal de `R4`, Confluencia y Equivalencia de proyecciones.
 
-Deudas abiertas: decidir si la copia de traspaso se conserva, archiva o elimina; mantener visible que la fuente activa ya no esta en el Laboratorio; no usar Canon, documentos oficiales ni automatizaciones del Laboratorio como autoridad directa para el proyecto independiente sin decision puente posterior.
+Actualizacion posterior: la deuda sobre conservar, archivar o eliminar la copia queda resuelta por `D-2026-07-03-012`, que elimina `PSI-001*` del Laboratorio. Permanece abierto mantener visible que la fuente activa ya no esta en el Laboratorio y no usar Canon, documentos oficiales ni automatizaciones del Laboratorio como autoridad directa para el proyecto independiente sin decision puente posterior.
+
+## D-2026-07-03-007 - Gamma ruta 1 como definicion local provisional
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-03.
+
+## Decision
+
+Se acepta `GAMMA-DEF-001` como definicion local provisional de `Gamma` en ruta 1 dentro de `AUD-001`.
+
+Documento base: `03_Expedientes/AUD-001_Gamma_Ruta1_Definicion_Local.md`.
+
+Auditoria: `03_Expedientes/AUD-001_Auditoria_Gamma_Ruta1_Definicion_Local.md`.
+
+Decision espejo: `03_Expedientes/AUD-001_Decision_Estatus_Gamma_Ruta1_Definicion_Local.md`.
+
+## Alcance
+
+La decision permite usar `Gamma_1(E, C) = G` solo como mecanismo local de expediente para producir salidas provisionales: hipotesis operativas, definiciones o criterios provisionales, deudas refinadas o problemas abiertos delimitados.
+
+La definicion exige evidencia local `E`, contexto declarado `C`, invariantes, restricciones, estatus provisional y salida segura.
+
+## No cubre
+
+No construye `Gamma` formal, no convierte `Gamma` en teorema, no modifica Canon, no modifica `C-001` ni `C-002`, no crea Nivel C, no resuelve R4 formal, no promueve `REPORT_LAYER`, no autoriza transformaciones materiales y no invalida `AUD-SIM-025` / `VAL-025` para usos de estatus excesivo.
+
+## Consecuencia
+
+La deuda "definir localmente `Gamma`" queda atendida solo en grado minimo provisional de expediente. En ese momento permanecia abierta la construccion formal completa de `Gamma`; quedo atendida localmente despues por `D-2026-07-03-010`.
+
+Actualizacion operativa posterior: `AUD-SIM-030` y `VAL-030` validan `Gamma_1` contra un primer caso positivo acotado; `AUD-SIM-025` / `VAL-025` quedan revisados como control negativo de estatus excesivo; `REL-GAMMA-R4-001` precisa que `R4-CANDIDATA` puede ser evidencia local para `Gamma_1`, pero no equivale a Regla R4 formal.
+
+## D-2026-07-03-008 - Apertura de AO-001 para Algebra Operacional
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-03.
+
+## Decision
+
+Se abre `AO-001` como expediente preparatorio de la futura Algebra Operacional del Laboratorio Concordante.
+
+Documento base: `03_Expedientes/AO-001_Decision_Apertura.md`.
+
+Marco inicial: `03_Expedientes/AO-001_Marco_Inicial_Algebra_Operacional.md`.
+
+Documento destino eventual: `02_Documentos/04_Algebra_Operacional.md`.
+
+## Alcance
+
+La decision permite preparar notacion operacional para artefactos, estatus, evidencia, reportes, decisiones, permisos, invariantes, transformaciones y salidas de seguridad.
+
+Tambien permite usar `C-001`, `C-002`, `R4-CANDIDATA` y `GAMMA-DEF-001` como fuentes locales de vocabulario operacional, sin promoverlos de estatus.
+
+## No cubre
+
+No llena el Documento 04 como contenido oficial, no modifica Canon, no promueve `R4-CANDIDATA`, no construye `R4` formal, no construye `Gamma` formal, no promueve `GAMMA-DEF-001`, no autoriza transformaciones materiales y no cierra Confluencia ni Equivalencia de proyecciones.
+
+## Consecuencia
+
+`AO-001` queda abierto como expediente preparatorio.
+
+`04_Algebra_Operacional.md` permanece reservado, con nota de estado hacia `AO-001`.
+
+El siguiente paso recomendado es auditar el marco inicial contra `M-000`, `M-001`, `C-001` y `C-002` antes de cualquier incorporacion al Documento 04.
+
+## D-2026-07-03-009 - Estatus del marco inicial de AO-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-03.
+
+## Decision
+
+Se acepta `AO-MARCO-001` como marco inicial provisional de Algebra Operacional dentro de `AO-001`.
+
+Documento base: `03_Expedientes/AO-001_Marco_Inicial_Algebra_Operacional.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Marco_Inicial_Algebra_Operacional.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Estatus_Marco_Inicial_Algebra_Operacional.md`.
+
+## Alcance
+
+La decision acepta objetos candidatos, operadores candidatos, invariantes operacionales iniciales, formas de salida, antipatrones, preguntas abiertas y criterio de avance.
+
+## No cubre
+
+No incorpora contenido sustantivo al Documento 04, no modifica Canon, no modifica `C-001` ni `C-002`, no construye R4 formal, no construye `Gamma` formal, no promueve `GAMMA-DEF-001`, no autoriza transformaciones materiales y no cierra Confluencia ni Equivalencia de proyecciones.
+
+## Consecuencia
+
+`AO-001` queda abierto con primer marco provisional aceptado.
+
+El Documento 04 permanece reservado.
+
+El siguiente paso recomendado es crear una bateria minima de casos `AO-CASE` para probar los operadores candidatos.
+
+## D-2026-07-03-010 - R4 formal local y Gamma formal local
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-03.
+
+## Decision
+
+Se acepta `R4-FORMAL-AUD-001` como construccion formal local de `R4` dentro de `AUD-001`.
+
+Se acepta `GAMMA-FORMAL-AUD-001` como construccion formal local de `Gamma` dentro de `AUD-001`.
+
+Se acepta `VAL-031` como segunda prueba positiva de `Gamma_1`, fuera de `R4-CANDIDATA`.
+
+Documento base: `03_Expedientes/AUD-001_R4_Formal_Local.md`, `03_Expedientes/AUD-001_Gamma_Formal_Local.md`, `03_Expedientes/AUD-001_Simulaciones.md` y `03_Expedientes/AUD-001_Validaciones.md`.
+
+Auditoria: `03_Expedientes/AUD-001_Auditoria_R4_Gamma_Formal_Local.md`.
+
+Decision espejo: `03_Expedientes/AUD-001_Decision_Estatus_R4_Gamma_Formal_Local.md`.
+
+## Alcance
+
+La decision permite usar `R4-FORMAL-AUD-001`, `GAMMA-FORMAL-AUD-001` y `VAL-031` como artefactos formales locales de `AUD-001`.
+
+`R4-FORMAL-AUD-001` define trazas, decision fundada, ejecucion valida y teorema local de seguridad.
+
+`GAMMA-FORMAL-AUD-001` define `Gamma` como operador parcial local de generalizacion controlada.
+
+`VAL-031` prueba `Gamma_1` con `REPORT_LAYER` / `DO_CHECK_REPORT`.
+
+## No cubre
+
+No modifica Canon, no modifica `C-001` ni `C-002`, no promueve R4 a regla canonica ni documento oficial, no promueve `Gamma` a teoria global ni Nivel C, no promueve `REPORT_LAYER`, no autoriza transformaciones materiales, no cierra Confluencia ni Equivalencia de proyecciones y no exporta autoridad fuera de `AUD-001`.
+
+## Consecuencia
+
+Las deudas de construir formalmente R4 y `Gamma` dentro de `AUD-001` quedan atendidas localmente.
+
+Permanecen abiertas promocion, exportacion, implementacion ejecutable, pruebas fuera de `AUD-001` y uso eventual en Confluencia o Equivalencia de proyecciones.
+
+## D-2026-07-03-011 - Consolidacion documentos 00-04
+
+Estatus: decision documental.
+
+Fecha: 2026-07-03.
+
+## Decision
+
+Se incorporan versiones completas desde fuentes previas a:
+
+- `02_Documentos/00_Naturaleza.md`
+- `02_Documentos/01_Canon.md`
+- `02_Documentos/02_Fundamentos_Matematicos.md`
+- `02_Documentos/03_Ontologia.md`
+
+Se actualiza `02_Documentos/04_Algebra_Operacional.md` como version inicial consolidada.
+
+Documento base: `03_Expedientes/DOCS-001.md`.
+
+Auditoria: `03_Expedientes/DOCS-001_Auditoria_Consolidacion_Documentos_00-04.md`.
+
+Decision espejo: `03_Expedientes/DOCS-001_Decision_Consolidacion_Documentos_00-04.md`.
+
+## Alcance
+
+La decision permite tratar documentos 00-03 como versiones consolidadas oficiales y Documento 04 como version inicial consolidada de Algebra Operacional.
+
+## No cubre
+
+No modifica archivos de `01_Canon`.
+
+No canoniza reglas historicas por nombre.
+
+No promueve `R4-FORMAL-AUD-001` ni `GAMMA-FORMAL-AUD-001` fuera de `AUD-001`.
+
+No admite `H-Xi`.
+
+No canoniza `Xi`, `Omega`, `Phi`, `Psi`, `P-108`, `P-200` ni Concordancia.
+
+No autoriza transformaciones materiales.
+
+No cierra Confluencia ni Equivalencia de proyecciones.
+
+## Consecuencia
+
+La deuda de consolidar contenido real de documentos 00, 01, 02 y 03 desde fuentes previas queda atendida.
+
+La deuda de preparacion auditable del Documento 04 queda atendida en grado de version inicial consolidada.
+
+El siguiente trabajo recomendado es crear `AO-CASE` para probar los operadores del Documento 04.
+
+## D-2026-07-03-012 - Eliminacion de copia local PSI-001
+
+Estatus: decision operativa de limpieza.
+
+Fecha: 2026-07-03.
+
+## Decision
+
+Se elimina del Laboratorio la copia local de traspaso de `PSI-001`.
+
+Documento de decision: `03_Expedientes/PSI-TRASPASO-001_Decision_Eliminacion_Copia.md`.
+
+## Alcance
+
+La decision cubre la eliminacion de los archivos locales `03_Expedientes/PSI-001*` que habian quedado como copia de traspaso despues de la independizacion.
+
+El proyecto activo de psicologia permanece fuera del Laboratorio, en `Psicologia Concordante`.
+
+## No cubre
+
+No elimina ni modifica el proyecto independiente, no reabre psicologia dentro del Laboratorio, no abre subfrente patologico, clinico ni canonico, no habilita uso clinico y no borra la trazabilidad historica agregada.
+
+## Consecuencia
+
+`PSI-001` deja de existir como copia local de trabajo o traspaso dentro de `03_Expedientes`.
+
+El Laboratorio puede mencionar `PSI-001` solo como antecedente historico transferido o dependencia externa, mediante decision puente si se requiere contenido sustantivo.
+
+Resultado posterior inicial: `DO-LAB-RUN-001` fue regenerado y quedo bloqueado por referencias historicas no materializadas a `PSI-001*`. Esa deuda queda atendida despues por `D-2026-07-03-015`; la salida regenerada queda en `advertencia`, no en bloqueo, sin restaurar la copia local.
+
+## D-2026-07-03-013 - Congelamiento de H-B.6 y H-B.7
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-03.
+
+## Decision
+
+`H-B.6` y `H-B.7` quedan congeladas como brotes alternos y originales historicos.
+
+Documento de decision: `03_Expedientes/HB-001_Decision_Congelamiento_Brotes_Alternos.md`.
+
+## Alcance
+
+La decision usa las fichas de alcance minimo y la deuda viva `HB-001` como evidencia de que no hay contenido sustantivo local materializado.
+
+`H-B.6` y `H-B.7` dejan de figurar como hipotesis activas.
+
+## No cubre
+
+No demuestra, refuta ni desarrolla las hipotesis; no diferencia semanticamente ambas; no reabre `B-001`; no descongela `B-001.5`; no modifica Canon ni documentos oficiales; no habilita uso como premisa para `REPORT_LAYER`, R4 formal, `Gamma`, Confluencia o Equivalencia de proyecciones.
+
+## Consecuencia
+
+Las fichas `ALC-HB6-001` y `ALC-HB7-001` quedan como registros historicos congelados.
+
+La deuda restante es condicional: solo vuelve si aparece fuente verificable y decision explicita de reactivacion.
+
+## D-2026-07-03-014 - Prueba externa local de Gamma_1
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-03.
+
+## Decision
+
+Se acepta `GAMMA-EXT-AO-001` como prueba positiva externa local de `Gamma_1` dentro de `AO-001`.
+
+Documento base: `03_Expedientes/AO-001_Prueba_Gamma_Externa.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Prueba_Gamma_Externa.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Estatus_Prueba_Gamma_Externa.md`.
+
+## Alcance
+
+La decision acepta que `Gamma_1` puede operar fuera de `AUD-001` cuando la evidencia, el contexto, el testigo, las restricciones, las deudas y las salidas de seguridad estan declarados.
+
+La salida aceptada es `G_AO_OP-GOV-001`, con estatus de criterio formal local de expediente dentro de `AO-001`.
+
+## No cubre
+
+No promueve `Gamma` a Canon, Nivel C, teoria global o documento oficial; no exporta `GAMMA-FORMAL-AUD-001` como autoridad general; no modifica Documento 04; no sustituye `AO-CASE`; no cierra Confluencia ni Equivalencia de proyecciones; no autoriza transformaciones materiales.
+
+## Consecuencia
+
+La deuda de prueba externa de `Gamma_1` queda atendida en grado minimo local.
+
+Actualizacion posterior: la bateria `AO-CASE` queda atendida en grado minimo local por `D-2026-07-03-016`; el uso de R4/Gamma como puente queda acotado por `D-2026-07-03-017` y `D-2026-07-03-018`.
+
+Permanecen abiertas promocion/exportacion general de `Gamma`, formalizacion completa de operadores del Documento 04 y cierre global de Confluencia o Equivalencia de proyecciones.
+
+## D-2026-07-03-015 - Referencias historicas transferidas
+
+Estatus: decision tecnica aceptada.
+
+Fecha: 2026-07-03.
+
+## Decision
+
+Se acepta `AUT-002` como expediente tecnico minimo para tratar referencias historicas transferidas sin reabrir `AUT-001`.
+
+Se acepta la clasificacion `referencia_historica_transferida` para referencias a `PSI-001*` eliminadas por `D-2026-07-03-012`.
+
+Documento base: `03_Expedientes/AUT-002.md`.
+
+Auditoria: `03_Expedientes/AUT-002_Auditoria_Referencias_Historicas_Transferidas.md`.
+
+Decision espejo: `03_Expedientes/AUT-002_Decision_Referencias_Historicas_Transferidas.md`.
+
+## Alcance
+
+La decision permite regenerar reportes sin exigir restaurar la copia local de `PSI-001`.
+
+Tambien permite refinar falsos bloqueos de historial en controles negativos, simulaciones, validaciones, restricciones o secciones "No cubre".
+
+## No cubre
+
+No reabre `AUT-001`, no restaura `PSI-001*`, no reabre psicologia dentro del Laboratorio, no abre frente clinico o patologico, no convierte Registro Historico en fuente normativa y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+La deuda de detector/historial creada por la eliminacion local de `PSI-001*` queda atendida en grado operativo minimo.
+
+Permanece abierta la necesidad de decision puente si alguna ruta futura requiere contenido sustantivo de psicologia.
+
+## D-2026-07-03-016 - Casos de prueba de Algebra Operacional
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-03.
+
+## Decision
+
+Se acepta `AO-CASE-BAT-001` como bateria minima provisional de casos de prueba para Algebra Operacional.
+
+Documento base: `03_Expedientes/AO-001_Casos_Prueba_Algebra_Operacional.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Casos_Prueba_Algebra_Operacional.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Estatus_Casos_Prueba_Algebra_Operacional.md`.
+
+## Alcance
+
+La decision acepta `AO-CASE-001` a `AO-CASE-006` para probar lectura no mutante, separacion decision/transformacion, deuda activa, uso local de `Gamma_1` y referencia historica transferida.
+
+## No cubre
+
+No modifica Documento 04, no modifica Canon, no promueve `G_AO_OP-GOV-001`, no exporta R4/Gamma, no cierra Confluencia ni Equivalencia de proyecciones y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+La deuda "crear `AO-CASE`" queda atendida en grado minimo local.
+
+Permanece abierta la formalizacion posterior del Documento 04.
+
+## D-2026-07-03-017 - Criterios de uso R4/Gamma fuera de AUD-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-03.
+
+## Decision
+
+Se acepta `AO-R4-GAMMA-USE-001` como criterio provisional para usar R4/Gamma fuera de `AUD-001` solo en grado local controlado.
+
+Documento base: `03_Expedientes/AO-001_Criterios_Uso_R4_Gamma_Fuera_AUD.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Criterios_Uso_R4_Gamma_Fuera_AUD.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Criterios_Uso_R4_Gamma_Fuera_AUD.md`.
+
+## Alcance
+
+La decision permite tres usos: referencia formal local, prueba local controlada y puente de problema.
+
+## No cubre
+
+No promueve `R4-FORMAL-AUD-001`, no promueve `GAMMA-FORMAL-AUD-001`, no crea Nivel C, no modifica Canon, no autoriza transformaciones materiales y no cierra Confluencia ni Equivalencia de proyecciones.
+
+## Consecuencia
+
+`AO-001` puede usar R4/Gamma como herramientas locales para el puente de Confluencia y Equivalencia de proyecciones.
+
+La promocion/exportacion general permanece abierta.
+
+## D-2026-07-03-018 - Puente local de Confluencia y Equivalencia
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-03.
+
+## Decision
+
+Se acepta `AO-PPI-BRIDGE-001` como avance sustantivo local sobre Confluencia y Equivalencia de proyecciones.
+
+Se aceptan `AO-PPI-EQ-001` y `AO-PPI-CONF-001` como pruebas locales provisionales.
+
+Documento base: `03_Expedientes/AO-001_Puente_Confluencia_Equivalencia.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Puente_Confluencia_Equivalencia.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Estatus_Puente_Confluencia_Equivalencia.md`.
+
+## Alcance
+
+La decision permite tratar el puente como evidencia local dentro de `AO-001` y orientar formalizacion posterior de Documento 04 o de una futura capa de reportes.
+
+## No cubre
+
+No reabre `P-PI.0`, no reabre `P-PI.1`, no cierra Confluencia global, no cierra Equivalencia global de proyecciones, no promueve R4/Gamma, no modifica Documento 04 y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+Confluencia y Equivalencia de proyecciones dejan de estar solo como deudas abstractas y pasan a tener pruebas locales conectadas con `AO-001`.
+
+Las deudas globales permanecen abiertas.
+
+## D-2026-07-03-019 - Paquete minimo TCS-001
+
+Estatus: decision teorica provisional.
+
+Fecha: 2026-07-03.
+
+## Decision
+
+Se acepta el paquete minimo de `TCS-001` como avance teorico provisional no canonico.
+
+Se aceptan `TCS-DEF-MIN-001`, `TCS-FAIL-TYP-001` y `TCS-CASE-BAT-001`.
+
+Documento base: `03_Expedientes/TCS-001_Definiciones_Minimas.md`, `03_Expedientes/TCS-001_Tipologia_Fallos_Concordancia.md` y `03_Expedientes/TCS-001_Casos_Prueba.md`.
+
+Auditoria: `03_Expedientes/TCS-001_Auditoria_Paquete_Minimo.md`.
+
+Decision espejo: `03_Expedientes/TCS-001_Decision_Estatus_Paquete_Minimo.md`.
+
+## Alcance
+
+La decision permite trabajar `TCS-001` como marco teorico provisional con definiciones, fallos y casos iniciales.
+
+## No cubre
+
+No canoniza `Concordance`, no modifica Canon, no crea Nivel C, no convierte `TCS-001` en teoria completa, no usa vision papers como fuente activa y no abre frente clinico, patologico ni institucional externo.
+
+## Consecuencia
+
+La deuda inmediata de `TCS-001` queda atendida en grado minimo provisional.
+
+Permanecen abiertas la formalizacion, los casos externos, la metrica de concordancia y la relacion con dominios regulados.

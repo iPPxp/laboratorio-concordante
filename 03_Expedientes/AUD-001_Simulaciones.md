@@ -2937,7 +2937,7 @@ Relacion con matriz base: instancia directa de `AUD-T06`.
 
 Si un artefacto invoca `Gamma` como resultado formal sin construccion local, debe el Auditor tratarlo como hipotesis promovida indebidamente?
 
-Respuesta esperada: si. `Gamma` permanece como deuda conceptual mientras no exista definicion local vigente.
+Respuesta esperada: si. `Gamma` permanece como deuda conceptual mientras no exista definicion local vigente o mientras la definicion existente sea insuficiente para el estatus declarado.
 
 ## Objeto no automata
 
@@ -2945,8 +2945,8 @@ Respuesta esperada: si. `Gamma` permanece como deuda conceptual mientras no exis
 GAMMA-FORMAL-CLAIM = {
   afirmacion: "Gamma(A) produce la generalizacion canonica del automata A",
   estatus_declarado: teorema,
-  fuente_local: ausente,
-  construccion_local: ausente,
+  fuente_local: ausente_o_insuficiente,
+  construccion_local: ausente_o_insuficiente,
   accion_propuesta: usar el resultado como fundamento formal
 }
 ```
@@ -2958,7 +2958,7 @@ Mp(GAMMA-FORMAL-CLAIM) = ok
   Motivo: la afirmacion, el estatus declarado y la fuente ausente son legibles.
 
 Cr(GAMMA-FORMAL-CLAIM) = falla
-  Motivo: falta definicion local, construccion o dependencia registrada para Gamma.
+  Motivo: falta definicion local, construccion o dependencia registrada suficiente para Gamma.
 
 tau = bloqueo_temprano o escalamiento
   Motivo: no hay cierre formal responsable.
@@ -2993,6 +2993,10 @@ Tr_ejecucion = prohibida
 La simulacion confirma que el Auditor puede nombrar `Gamma` sin validarla.
 
 Nombrarla no la convierte en resultado formal.
+
+Lectura posterior: `GAMMA-DEF-001` en `AUD-001_Gamma_Ruta1_Definicion_Local.md` aporta una definicion local provisional de ruta 1. Esta definicion no vuelve valida la afirmacion `GAMMA-FORMAL-CLAIM`, porque el objeto declara estatus de teorema y pretende una generalizacion canonica. Para pasar, una aplicacion futura debe usar `Gamma_1(E, C) = G` con evidencia, contexto, invariantes, limites y estatus provisional.
+
+Revision posterior a `AUD-SIM-030` / `VAL-030`: este caso permanece como control negativo. El objeto falla no porque toda mencion de `Gamma` este prohibida, sino porque declara una salida formal y canonica sin construccion formal suficiente. El caso positivo permitido queda separado en `AUD-SIM-030`, donde `Gamma_1` opera solo como generalizacion candidata provisional y no produce permisos materiales.
 
 ## AUD-SIM-026 - Modificacion de Canon desde expediente
 
@@ -3281,3 +3285,252 @@ La proyeccion falla si:
 La simulacion permite avanzar hacia un documento tipo RFC si el proceso conserva las compuertas de Nivel C.
 
 El documento resultante puede ser oficial como especificacion tecnica, pero su alcance debe seguir siendo v0 y no mutante por defecto.
+
+## AUD-SIM-030 - Gamma_1 con evidencia local positiva
+
+Estatus: simulacion teorica.
+
+Objeto evaluado: `GAMMA-R1-CASE-001`.
+
+Relacion con matriz base: control positivo acotado para `GAMMA-DEF-001`.
+
+## Pregunta
+
+Puede `Gamma_1(E, C) = G` producir una generalizacion candidata provisional cuando la evidencia local, el contexto, los invariantes, las restricciones y el estatus estan declarados?
+
+Respuesta esperada: si, de forma acotada. La salida debe quedar como candidata provisional de expediente, no como teorema, Canon, Regla R4 formal, Nivel C ni permiso de transformacion.
+
+## Evidencia local
+
+```text
+E = {
+  evidencia_base: AUD-001_R4-CANDIDATA.md,
+  fuentes_de_apoyo: [
+    AUD-001_Sintesis_Cobertura_No_Automata_R4-CANDIDATA.md,
+    AUD-001_Auditoria_Post-No-Automata_R4-CANDIDATA.md,
+    AUD-001_Decision_Cierre_Ronda_No_Automata_R4-CANDIDATA.md,
+    VAL-017,
+    VAL-018,
+    VAL-019,
+    VAL-020,
+    VAL-021
+  ],
+  estatus: hipotesis_operativa_de_expediente
+}
+```
+
+## Contexto declarado
+
+```text
+C = {
+  dominio: procedimientos auditables con reportes, decision y transformacion,
+  objetivo: extraer una forma procedimental candidata,
+  nivel: expediente,
+  permiso_material: ninguno
+}
+```
+
+## Invariantes a conservar
+
+- ninguna transformacion ejecutada ocurre sin decision fundada;
+- la decision fundada requiere reportes suficientes;
+- los reportes requieren calculo, verificacion o falla normalizada;
+- la cadena requiere terminacion segura;
+- la ejecucion requiere alcance autorizado, evidencia previa, evidencia posterior y verificacion;
+- el resultado no aumenta permisos ni autoridad documental.
+
+## Restricciones declaradas
+
+- no se generalizan detalles de automatas como `Q`, `Sigma`, `delta`, `q0` o `F`;
+- no se generaliza determinismo como propiedad universal;
+- no se cierra R4 formal;
+- no se cierra `Gamma` formal;
+- no se modifica Canon, `C-001` ni `C-002`;
+- no se promueve `REPORT_LAYER`.
+
+## Lectura esperada por operadores
+
+```text
+Mp(GAMMA-R1-CASE-001) = ok
+  Motivo: evidencia, contexto, estatus, invariantes y restricciones son legibles.
+
+Cr(GAMMA-R1-CASE-001) = sin_hallazgo_bloqueante_con_deudas
+  Motivo: la salida conserva estatus provisional y no aumenta permisos.
+
+tau = cierre_provisional
+  Motivo: la aplicacion puede cerrarse como validacion teorica no mutante.
+
+D = registrar_generalizacion_candidata
+  Motivo: se registra una salida provisional, no una promocion formal.
+
+Tr_ejecucion = no_aplica
+  Motivo: no hay cambio material ni permiso operativo.
+```
+
+## Salida esperada
+
+```text
+G_R4_PROC-CAND-001 = {
+  tipo: hipotesis_operativa_de_expediente,
+  base: R4-CANDIDATA,
+  contexto: procedimientos auditables con reportes, decision y transformacion,
+  afirmacion: "transformar requiere decision fundada, reportes suficientes, terminacion segura, permiso acotado, evidencia y verificacion posterior",
+  estatus: provisional,
+  permiso_material: ninguno,
+  deudas: [R4_formal, Gamma_formal, prueba_fuera_de_AUD-001]
+}
+```
+
+## Resultado de R4-AUD
+
+`R4-AUD` se satisface si el Auditor:
+
+- registra `Gamma_1` como aplicacion provisional;
+- conserva el estatus de `R4-CANDIDATA`;
+- mantiene visible que R4 formal es deuda separada;
+- no convierte la salida en Canon, teorema ni Nivel C;
+- no habilita transformaciones materiales.
+
+`R4-AUD` se viola si el Auditor:
+
+- trata `G_R4_PROC-CAND-001` como Regla R4 formal;
+- declara que `Gamma` quedo construido formalmente;
+- usa la generalizacion como permiso de transformacion;
+- modifica documentos oficiales por implicacion;
+- borra las deudas abiertas.
+
+## Veredicto teorico
+
+`Gamma_1` pasa este caso positivo acotado.
+
+La salida valida es una generalizacion candidata controlada, no una demostracion formal.
+
+Lectura frente a `AUD-SIM-025`: `AUD-SIM-025` bloquea una invocacion formal indebida; `AUD-SIM-030` valida una aplicacion provisional con evidencia, contexto, invariantes, restricciones y estatus declarados.
+
+## AUD-SIM-031 - Gamma_1 con REPORT_LAYER y DO_CHECK_REPORT
+
+Estatus: simulacion teorica.
+
+Objeto evaluado: `GAMMA-R1-CASE-002`.
+
+Relacion con matriz base: segundo control positivo de `Gamma_1`, fuera de `R4-CANDIDATA`.
+
+## Pregunta
+
+Puede `Gamma_1(E, C)` generalizar la compatibilidad `REPORT_LAYER` / `DO_CHECK_REPORT` hacia un criterio formal local de lectura no mutante sin absorber contratos ni aumentar permisos?
+
+Respuesta esperada: si. La salida debe ser un criterio formal local de expediente, no contrato oficial ni permiso de transformacion.
+
+## Evidencia local
+
+```text
+E = {
+  evidencia_base: AUD-001_Compatibilidad_REPORT_LAYER_DO_CHECK.md,
+  fuentes_de_apoyo: [
+    AUD-001_REPORT_LAYER_Candidata.md,
+    AUD-001_Origen_REPORT_LAYER.md,
+    AUD-SIM-028,
+    VAL-028,
+    C-002_RFC_Operativo_Auditor_v0.md
+  ],
+  estatus: compatibilidad_provisional_validada
+}
+```
+
+## Contexto declarado
+
+```text
+C = {
+  dominio: lectura no mutante de reportes externos o auxiliares,
+  objetivo: extraer criterio formal local de compatibilidad de lectura,
+  nivel: expediente,
+  permiso_material: ninguno
+}
+```
+
+## Testigo de generalizacion
+
+```text
+W = {
+  proyeccion: DO_CHECK_REPORT -> REPORT_ITEM compatible,
+  invariantes: [
+    recomendacion_no_es_decision,
+    cambios_propuestos_no_son_Tr_ejecucion,
+    transformacion_permitida_permanece_false,
+    lectura_no_absorbe_contrato,
+    evidencia_documental_se_conserva
+  ],
+  restricciones: [
+    no_promover_REPORT_LAYER_a_Nivel_C,
+    no_mover_DO_CHECK_REPORT_a_contrato_AUD,
+    no_emitir_decision,
+    no_autorizar_transformacion
+  ],
+  deudas: [
+    integracion_ejecutable_futura,
+    pruebas_fuera_de_AUD-001,
+    posible_especificacion_REPORT_LAYER_si_se_exporta
+  ],
+  salida_segura: gamma_degradada_a_deuda
+}
+```
+
+## Lectura esperada por operadores
+
+```text
+Mp(GAMMA-R1-CASE-002) = ok
+  Motivo: evidencia, contexto y testigo son legibles.
+
+Cr(GAMMA-R1-CASE-002) = sin_hallazgo_bloqueante_con_deudas
+  Motivo: la proyeccion preserva permisos y no absorbe contratos.
+
+tau = cierre_provisional
+  Motivo: la prueba es documental no mutante.
+
+D = registrar_criterio_formal_local
+  Motivo: se registra un criterio interno, sin promocion de nivel.
+
+Tr_ejecucion = no_aplica
+  Motivo: no hay cambio material ni permiso operativo.
+```
+
+## Salida esperada
+
+```text
+G_REPORT_READ-FORMAL-001 = {
+  tipo: criterio_formal_local_de_expediente,
+  base: REPORT_LAYER / DO_CHECK_REPORT,
+  afirmacion: "un reporte auxiliar puede leerse como REPORT_ITEM si conserva evidencia, resultado, recomendacion como no decision, permiso falso y ausencia de ejecucion",
+  estatus: formal_local,
+  permiso_material: ninguno,
+  deudas: [
+    integracion_ejecutable_futura,
+    pruebas_fuera_de_AUD-001,
+    especificacion_REPORT_LAYER_si_se_exporta
+  ]
+}
+```
+
+## Resultado de Gamma formal
+
+`GAMMA-FORMAL-AUD-001` se satisface si:
+
+- `E` usa fuentes locales;
+- `C` declara dominio, objetivo, nivel y permiso;
+- `W` declara proyeccion, invariantes, restricciones, deudas y salida segura;
+- la salida conserva permiso `ninguno`;
+- la salida queda en estatus formal local de expediente.
+
+`GAMMA-FORMAL-AUD-001` falla si:
+
+- convierte recomendacion en decision;
+- absorbe `DO_CHECK_REPORT` como contrato del Auditor;
+- promueve `REPORT_LAYER` a Nivel C;
+- autoriza transformacion material;
+- oculta las deudas de integracion.
+
+## Veredicto teorico
+
+`Gamma_1` pasa un segundo caso positivo.
+
+La prueba muestra que `Gamma_1` ya no depende solo de `R4-CANDIDATA`: tambien puede generalizar una compatibilidad de reportes hacia un criterio formal local no mutante.

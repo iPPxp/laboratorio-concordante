@@ -69,15 +69,50 @@ CONTROL_CONTEXT_TOKENS = (
     "violacion",
     "bloquea",
     "bloquear",
+    "bloqueado",
     "prueba",
+    "probar",
     "simulacion",
+    "simulaciones",
     "caso",
+    "casos",
     "validado",
+    "validada",
+    "validar",
     "validacion",
     "criterio",
     "fallo",
     "red flag",
+    "cumplido",
+    "objeto evaluado",
+    "control negativo",
+    "fuera de autoridad",
+    "aud-t",
+    "aud-sim",
+    "val-",
+    "med-historial",
+    "evidencia:",
+    "importacion de",
 )
+CONTROL_SECTION_TOKENS = (
+    "no cubre",
+    "no puede",
+    "que no prueba",
+    "fuera de alcance",
+    "restricciones",
+    "prohibiciones",
+    "antipatrones",
+    "riesgos",
+    "casos",
+    "validaciones",
+    "simulaciones",
+    "control negativo",
+    "bloqueo",
+    "controles",
+    "hallazgos",
+    "deudas",
+)
+TRANSFERRED_PSI_PREFIX = "03_Expedientes/PSI-001"
 REPORT_REQUIRED_TERMS = (
     "report_id",
     "expediente",
@@ -206,15 +241,43 @@ def references_in(text: str) -> list[str]:
     return [clean_ref(ref) for ref in refs if looks_like_local_path(clean_ref(ref))]
 
 
-def has_negation_context(line: str) -> bool:
+def is_control_section(heading: str) -> bool:
+    low = heading.lower()
+    return any(token in low for token in CONTROL_SECTION_TOKENS)
+
+
+def iter_lines_with_heading(text: str):
+    heading = ""
+    for line in text.splitlines():
+        stripped = line.strip()
+        if stripped.startswith("#"):
+            heading = stripped.lstrip("#").strip()
+        yield line, heading
+
+
+def has_negation_context(line: str, heading: str = "") -> bool:
     low = line.lower()
-    return any(token in low for token in NEGATION_TOKENS) or any(token in low for token in CONTROL_CONTEXT_TOKENS)
+    return (
+        is_control_section(heading)
+        or low.strip().startswith("- reabrir ")
+        or any(token in low for token in NEGATION_TOKENS)
+        or any(token in low for token in CONTROL_CONTEXT_TOKENS)
+    )
+
+
+def is_transferred_psi_ref(ref: str) -> bool:
+    normalized = ref.lstrip("./")
+    name = Path(normalized).name
+    return (
+        normalized.startswith(TRANSFERRED_PSI_PREFIX)
+        or (name.startswith("PSI-001") and name.endswith(".md"))
+    )
 
 
 def check_historical_authority(text: str, file_rel: str, findings):
     if file_rel.startswith("04_Registro_Historico/"):
         return
-    for line in text.splitlines():
+    for line, heading in iter_lines_with_heading(text):
         low = line.lower()
         mentions_history = (
             "registro historico" in low
@@ -231,12 +294,14 @@ def check_historical_authority(text: str, file_rel: str, findings):
                 "fundamento positivo",
             )
         )
-        if mentions_history and authority_language and not has_negation_context(line):
+        if mentions_history and authority_language and not has_negation_context(line, heading):
+            severity = "block" if surface_of(file_rel) in {"canon", "documento_oficial", "estado_operativo"} else "warning"
+            kind = "historial_como_autoridad" if severity == "block" else "historial_como_autoridad_controlada"
             add(
                 findings,
-                "block",
+                severity,
                 "MED-HISTORIAL",
-                "historial_como_autoridad",
+                kind,
                 file_rel,
                 "Posible uso del Registro Historico o de SRC como autoridad vigente.",
                 line.strip(),
@@ -244,8 +309,8 @@ def check_historical_authority(text: str, file_rel: str, findings):
 
 
 def check_sensitive_actions(text: str, file_rel: str, findings):
-    for line in text.splitlines():
-        if SENSITIVE_ACTION_RE.search(line) and not has_negation_context(line):
+    for line, heading in iter_lines_with_heading(text):
+        if SENSITIVE_ACTION_RE.search(line) and not has_negation_context(line, heading):
             add(
                 findings,
                 "warning",
@@ -275,17 +340,18 @@ def check_report_contract(text: str, file_rel: str, findings):
 def check_closed_exp_reopen(text: str, file_rel: str, findings, closed_expedientes: set[str]):
     if not closed_expedientes:
         return
-    for line in text.splitlines():
+    for line, heading in iter_lines_with_heading(text):
         low = line.lower()
         if not any(token in low for token in ("reabrir", "reabre", "modificar")):
             continue
-        if has_negation_context(line):
+        if has_negation_context(line, heading):
             continue
         affected = sorted(exp for exp in closed_expedientes if exp.lower() in low)
         if affected:
+            severity = "block" if surface_of(file_rel) in {"canon", "documento_oficial", "estado_operativo"} or "_Decision" in Path(file_rel).name else "warning"
             add(
                 findings,
-                "block",
+                severity,
                 "MED-CERRADOS",
                 "expediente_cerrado_afectado",
                 file_rel,
@@ -323,6 +389,17 @@ def check_file(path: Path, root: Path, existing: set[str], context: dict) -> dic
         exact_exists = normalized in existing or (root / normalized).exists()
         basename_exists = "/" not in normalized and Path(normalized).name in existing_names
         if normalized and not exact_exists and not basename_exists:
+            if is_transferred_psi_ref(normalized):
+                add(
+                    findings,
+                    "warning",
+                    "MED-REFERENCIAS",
+                    "referencia_historica_transferida",
+                    file_rel,
+                    "Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local.",
+                    normalized,
+                )
+                continue
             add(findings, "warning", "MED-REFERENCIAS", "referencia_no_materializada", file_rel, normalized)
 
     check_historical_authority(text, file_rel, findings)

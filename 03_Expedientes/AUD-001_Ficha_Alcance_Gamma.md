@@ -66,6 +66,28 @@ Mientras esas condiciones no existan, `Gamma` sigue siendo deuda futura, no requ
 
 `AUD-001` sigue completo en version documental/operativa v0 sin `Gamma`.
 
+## Ruta 1 activada
+
+La primera ruta acotada quedo materializada posteriormente en `AUD-001_Gamma_Ruta1_Definicion_Local.md`.
+
+Resultado: `GAMMA-DEF-001` define localmente `Gamma` como `Gamma_1(E, C) = G`, una operacion de generalizacion controlada con evidencia, contexto, invariantes, restricciones, deudas y salida segura.
+
+Esta activacion no construye `Gamma` formal, no modifica `C-001` ni `C-002`, no promueve `Gamma` a Nivel C y no cierra la deuda de construccion formal.
+
+La ruta posterior quedo atendida provisionalmente por `AUD-SIM-030` y `VAL-030`, que validan `Gamma_1` contra un caso positivo acotado y distinguen esa aplicacion del bloqueo conservado por `AUD-SIM-025` y `VAL-025`.
+
+La relacion con R4 formal quedo precisada en `AUD-001_Relacion_Gamma_Ruta1_R4_Formal.md`: `R4-CANDIDATA` puede ser evidencia local para `Gamma_1`, pero la salida no equivale a Regla R4 formal.
+
+## Ruta formal local construida
+
+La construccion formal local quedo materializada posteriormente en `AUD-001_Gamma_Formal_Local.md`.
+
+Resultado: `GAMMA-FORMAL-AUD-001` define `Gamma` como operador parcial local de generalizacion controlada, con paquetes de evidencia, contexto, testigo, bien formacion, salidas seguras y teoremas locales de conservacion de permiso y trazabilidad.
+
+La segunda prueba positiva de `Gamma_1` quedo registrada en `AUD-SIM-031` y `VAL-031`, usando `REPORT_LAYER` / `DO_CHECK_REPORT` como evidencia fuera de `R4-CANDIDATA`.
+
+Esta construccion fue auditada en `AUD-001_Auditoria_R4_Gamma_Formal_Local.md` y aceptada localmente por `AUD-001_Decision_Estatus_R4_Gamma_Formal_Local.md` (`D-2026-07-03-010`).
+
 ## Veredicto
 
-La ruta de `Gamma` queda abierta y acotada como siguiente deuda estructural, lista para trabajo posterior si se decide abrirla.
+La ruta de `Gamma` formal local dentro de `AUD-001` queda construida. Permanece abierta cualquier promocion, exportacion, canonizacion, implementacion ejecutable o prueba fuera de `AUD-001`.

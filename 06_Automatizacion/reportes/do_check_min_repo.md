@@ -1,6 +1,6 @@
 # DO_CHECK_REPORT minimo
 
-report_id: DO-CHECK-MIN-20260702-165850
+report_id: DO-CHECK-MIN-20260703-135757
 expediente: AUT-001
 resultado: advertencia
 recomendacion: continuar_sin_transformar
@@ -8,11 +8,29 @@ transformacion_permitida: false
 
 ## Resumen
 
-- archivos revisados: 4
-- hallazgos: 11
+- archivos revisados: 261
+- hallazgos: 139
 
 ## Hallazgos
 
+- [warning] 02_Documentos/C-002_RFC_Operativo_Auditor_v0.md - historial_como_autoridad_posible: - `AUD-T07`: Registro Historico como autoridad directa;
+- [warning] 03_Expedientes/AUD-001_Auditoria_REPORT_LAYER_Candidata.md - historial_como_autoridad_posible: - conserva Registro Historico fuera de autoridad directa.
+- [warning] 03_Expedientes/AUD-001_Decision_Cierre_Ronda_No_Automata_R4-CANDIDATA.md - historial_como_autoridad_posible: - `AUD-SIM-019` y `VAL-019`: expediente que usa Registro Historico como autoridad directa.
+- [warning] 03_Expedientes/AUD-001_Ficha_Alcance_Gamma.md - historial_como_autoridad_posible: - usar el Registro Historico como autoridad directa;
+- [warning] 03_Expedientes/AUD-001_Ficha_Alcance_R4_Formal.md - historial_como_autoridad_posible: - usar el Registro Historico como autoridad directa;
+- [warning] 03_Expedientes/AUD-001_Invariantes_R4-AUD.md - historial_como_autoridad_posible: - usar Registro Historico como autoridad directa
+- [warning] 03_Expedientes/AUD-001_Origen_REPORT_LAYER.md - historial_como_autoridad_posible: - `VAL-019`: expediente con Registro Historico exige distinguir traza de autoridad vigente.
+- [warning] 03_Expedientes/AUD-001_R4-CANDIDATA.md - historial_como_autoridad_posible: - el Registro Historico se usa como autoridad directa para transformar
+- [warning] 03_Expedientes/AUD-001_R4-CANDIDATA.md - historial_como_autoridad_posible: - un expediente que usa Registro Historico como autoridad directa en `AUD-SIM-019` y `VAL-019`
+- [warning] 03_Expedientes/AUD-001_Simulaciones.md - historial_como_autoridad_posible: - expedientes que usan Registro Historico como autoridad directa
+- [warning] 03_Expedientes/AUD-001_Simulaciones.md - historial_como_autoridad_posible: - Probar expedientes que usan Registro Historico como autoridad directa. Cumplido posteriormente por `AUD-SIM-019`.
+- [warning] 03_Expedientes/AUD-001_Simulaciones.md - historial_como_autoridad_posible: ## AUD-SIM-019 - R4-CANDIDATA con Registro Historico como autoridad directa
+- [warning] 03_Expedientes/AUD-001_Sintesis_Cobertura_No_Automata_R4-CANDIDATA.md - historial_como_autoridad_posible: | `VAL-019` | expediente con Registro Historico | historial usado como autoridad directa | pasa provisionalmente |
+- [warning] 03_Expedientes/AUD-001_Sintesis_Completitud_Auditor_v0.md - historial_como_autoridad_posible: - expediente que usa Registro Historico como autoridad directa;
+- [warning] 03_Expedientes/AUD-001_Validacion_Implementacion_No_Mutante_C002.md - referencia_no_materializada: 06_Automatizacion/reportes/auditor_v0_report.md
+- [warning] 03_Expedientes/AUD-001_Validaciones.md - historial_como_autoridad_posible: - expedientes con Registro Historico como autoridad directa
+- [warning] 03_Expedientes/AUD-001_Validaciones.md - historial_como_autoridad_posible: - Probar `R4-CANDIDATA` con un expediente que usa Registro Historico como autoridad directa. Cumplido por `VAL-019`.
+- [warning] 03_Expedientes/AUD-001_Validaciones.md - historial_como_autoridad_posible: Objeto evaluado: `R4-CANDIDATA` con expediente que usa Registro Historico como autoridad directa.
 - [warning] 03_Expedientes/AUT-001.md - referencia_no_materializada: 06_Automatizacion/reportes/README.md
 - [warning] 03_Expedientes/AUT-001.md - referencia_no_materializada: 06_Automatizacion/reportes/do_check_min_claves.md
 - [warning] 03_Expedientes/AUT-001.md - referencia_no_materializada: 06_Automatizacion/reportes/do_check_min_repo.md
@@ -23,4 +41,114 @@ transformacion_permitida: false
 - [warning] 03_Expedientes/AUT-001.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_risk_report.md
 - [warning] 03_Expedientes/AUT-001.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_executive_summary.md
 - [warning] 03_Expedientes/AUT-001.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
+- [warning] 03_Expedientes/AUT-001_Clasificacion_Advertencias_Riesgos.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_risk_report.md
+- [warning] 03_Expedientes/AUT-001_Comando_Unico_LAB.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
+- [warning] 03_Expedientes/AUT-001_Continuidad_Laboratorio.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_continuity_report.md
+- [warning] 03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
+- [warning] 03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_risk_report.md
+- [warning] 03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md - referencia_no_materializada: 06_Automatizacion/reportes/do_check_med_claves.md
+- [warning] 03_Expedientes/AUT-001_Mapa_Fase_Media_AAU.md - historial_como_autoridad_posible: - `MED-HISTORIAL`: Registro Historico o `SRC-*` usado como autoridad vigente.
+- [warning] 03_Expedientes/AUT-001_Matriz_Revision_Riesgos_Activos.md - historial_como_autoridad_posible: | `AUT-RISK-ACT-001` | media | `02_Documentos/C-001_Especificacion_Tecnica_Auditor.md:52` | `C-001` declara fuera de alcance la importacion del Registro Historico como autoridad vigente. | `controlado_por_guardrail`; sugerir rebaja a advertencia de control. |
+- [warning] 03_Expedientes/AUT-001_Resumen_Ejecutivo_LAB.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_executive_summary.md
+- [warning] 03_Expedientes/AUT-001_Tablero_Estado_LAB.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_status_board.md
+- [warning] 03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
+- [warning] 03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md - referencia_no_materializada: 06_Automatizacion/reportes/do_check_min_claves.md
+- [warning] 03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md - referencia_no_materializada: 06_Automatizacion/reportes/do_check_med_claves.md
+- [warning] 03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_continuity_report.md
+- [warning] 03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_risk_report.md
+- [warning] 03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_executive_summary.md
+- [warning] 03_Expedientes/AUT-001_Validacion_DO-CHECK-MED.md - referencia_no_materializada: 06_Automatizacion/reportes/do_check_med_claves.md
+- [warning] 03_Expedientes/AUT-001_Validacion_DO-CHECK-MED.md - referencia_no_materializada: 06_Automatizacion/reportes/do_check_med_repo.md
+- [warning] 03_Expedientes/AUT-001_Validacion_DO-CHECK-MIN.md - referencia_no_materializada: 06_Automatizacion/reportes/do_check_min_claves.md
+- [warning] 03_Expedientes/AUT-001_Validacion_DO-CHECK-MIN.md - referencia_no_materializada: 06_Automatizacion/reportes/do_check_min_repo.md
+- [warning] 03_Expedientes/AUT-001_Validacion_DO-STATE-BOARD.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_status_board.md
+- [warning] 03_Expedientes/AUT-002.md - historial_como_autoridad_posible: - una decision vigente use Registro Historico como autoridad directa;
+- [warning] 03_Expedientes/DO-001.md - historial_como_autoridad_posible: - importacion de Registro Historico como autoridad vigente
+- [warning] 03_Expedientes/DO-001_DO-CHECK-001.md - historial_como_autoridad_posible: - usa registro historico como autoridad vigente
+- [warning] 03_Expedientes/DO-001_DO-CHECK-001.md - historial_como_autoridad_posible: - uso de Registro Historico como autoridad vigente
+- [warning] 03_Expedientes/DO-001_SPEC-AUD-001_Candidata.md - historial_como_autoridad_posible: - importacion de Registro Historico como autoridad vigente
+- [warning] 03_Expedientes/HB-001_Deuda_Viva_H-B.md - historial_como_autoridad_posible: - usar Registro Historico como autoridad directa;
+- [warning] 03_Expedientes/HXI-001.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Criterio_Transformacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 03_Expedientes/HXI-001.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Ejemplos_Conceptuales_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Casos_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Casos_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Casos_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Matriz_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Matriz_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Matriz_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Independizacion_Proyecto.md (PSI-001 transferido; no restaurar copia local)
 - [warning] 05_Estado_Proyecto/ESTADO_ACTUAL.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_status_board.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/do_check_min_claves.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/do_check_min_repo.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/do_check_med_claves.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/do_check_med_repo.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/lab_status_board.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/lab_continuity_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/lab_risk_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/lab_executive_summary.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/lab_run_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/auditor_v0_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/auditor_do_check_adapter_report.md
+- [warning] 06_Automatizacion/README.md - historial_como_autoridad_posible: - usar Registro Historico como autoridad directa;
+- [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_status_board.md
+- [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_continuity_report.md
+- [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
+- [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_risk_report.md
+- [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_executive_summary.md
+- [warning] CHANGELOG.md - historial_como_autoridad_posible: - Actualizado el estado del proyecto: el siguiente objetivo es probar `R4-CANDIDATA` con un expediente que usa Registro Historico como autoridad directa.
+- [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Definicion_Organizacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Definicion_Organizacion.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Definicion_Organizacion.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Criterio_Transformacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Criterio_Transformacion.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Criterio_Transformacion.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Ejemplos_Conceptuales_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Ejemplos_Conceptuales.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Ejemplos_Conceptuales.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_continuity_report.md
+- [warning] HANDOFF_PACKAGE.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
+- [warning] HANDOFF_PACKAGE.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_risk_report.md
+- [warning] HANDOFF_PACKAGE.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_executive_summary.md
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Criterios_Admision.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_A-PSI-001.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_A-PSI-001.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Definicion_Organizacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Definicion_Organizacion.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Definicion_Organizacion.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Criterio_Transformacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Criterio_Transformacion.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Criterio_Transformacion.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Ejemplos_Conceptuales_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Ejemplos_Conceptuales.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Ejemplos_Conceptuales.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)

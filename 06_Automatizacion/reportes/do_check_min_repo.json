@@ -1,11 +1,11 @@
 {
-  "report_id": "DO-CHECK-MIN-20260702-165850",
+  "report_id": "DO-CHECK-MIN-20260703-135757",
   "expediente": "AUT-001",
   "algoritmo": "DO-CHECK-MIN-001",
   "resultado": "advertencia",
   "recomendacion": "continuar_sin_transformar",
   "transformacion_permitida": false,
-  "scope": "claves",
+  "scope": "repo",
   "fuentes_minimas": [
     "CURRENT_STATE.md",
     "05_Estado_Proyecto/ESTADO_ACTUAL.md",
@@ -14,13 +14,549 @@
     "03_Expedientes/DO-001_DO-CHECK-001.md"
   ],
   "summary": {
-    "files_checked": 4,
-    "findings": 11
+    "files_checked": 261,
+    "findings": 139
   },
   "targets": [
     {
+      "file": "01_Canon/M-000_Reglas_Fundamentales.md",
+      "estatus": "Canon",
+      "findings": []
+    },
+    {
+      "file": "01_Canon/M-001_Auditoria_Arquitectonica.md",
+      "estatus": "Canon",
+      "findings": []
+    },
+    {
+      "file": "01_Canon/README.md",
+      "estatus": "no_clasificado",
+      "findings": []
+    },
+    {
+      "file": "02_Documentos/00_Naturaleza.md",
+      "estatus": "documento oficial consolidado",
+      "findings": []
+    },
+    {
+      "file": "02_Documentos/01_Canon.md",
+      "estatus": "documento oficial consolidado",
+      "findings": []
+    },
+    {
+      "file": "02_Documentos/02-0_Perimetro_Epistemologico.md",
+      "estatus": "documento oficial semilla",
+      "findings": []
+    },
+    {
+      "file": "02_Documentos/02_Fundamentos_Matematicos.md",
+      "estatus": "documento oficial consolidado",
+      "findings": []
+    },
+    {
+      "file": "02_Documentos/03_Ontologia.md",
+      "estatus": "documento oficial consolidado",
+      "findings": []
+    },
+    {
+      "file": "02_Documentos/04_Algebra_Operacional.md",
+      "estatus": "documento oficial actualizado, version inicial consolidada",
+      "findings": []
+    },
+    {
       "file": "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
       "estatus": "documento oficial de Nivel C",
+      "findings": []
+    },
+    {
+      "file": "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
+      "estatus": "documento oficial de Nivel C",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
+          "detail": "- `AUD-T07`: Registro Historico como autoridad directa;"
+        }
+      ]
+    },
+    {
+      "file": "02_Documentos/README.md",
+      "estatus": "no_clasificado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001.md",
+      "estatus": "abierto",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Casos_Prueba_Algebra_Operacional.md",
+      "estatus": "auditoria favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Criterios_Uso_R4_Gamma_Fuera_AUD.md",
+      "estatus": "auditoria favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Marco_Inicial_Algebra_Operacional.md",
+      "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Prueba_Gamma_Externa.md",
+      "estatus": "auditoria provisional favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Puente_Confluencia_Equivalencia.md",
+      "estatus": "auditoria favorable con deudas abiertas",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Casos_Prueba_Algebra_Operacional.md",
+      "estatus": "bateria provisional aceptada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Criterios_Uso_R4_Gamma_Fuera_AUD.md",
+      "estatus": "criterios provisionales aceptados",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Apertura.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Criterios_Uso_R4_Gamma_Fuera_AUD.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Estatus_Casos_Prueba_Algebra_Operacional.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Estatus_Marco_Inicial_Algebra_Operacional.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Estatus_Prueba_Gamma_Externa.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Estatus_Puente_Confluencia_Equivalencia.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Marco_Inicial_Algebra_Operacional.md",
+      "estatus": "marco inicial provisional aceptado por `D-2026-07-03-009`",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Prueba_Gamma_Externa.md",
+      "estatus": "prueba provisional externa local",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Puente_Confluencia_Equivalencia.md",
+      "estatus": "puente provisional aceptado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Actualizacion_C002_JSON_Fixtures_Adapter.md",
+      "estatus": "actualizacion documental de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Adaptador_DO_CHECK_REPORT.md",
+      "estatus": "especificacion operativa inicial",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Auditoria_Completitud_Auditor_v0.md",
+      "estatus": "auditoria de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Auditoria_Criterios_Promocion_R4-CANDIDATA.md",
+      "estatus": "auditoria cerrada de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Auditoria_Gamma_Ruta1_Definicion_Local.md",
+      "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Auditoria_Post-No-Automata_R4-CANDIDATA.md",
+      "estatus": "auditoria cerrada de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Auditoria_R4-CANDIDATA.md",
+      "estatus": "auditoria cerrada de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Auditoria_R4_Gamma_Formal_Local.md",
+      "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Auditoria_REPORT_LAYER_Candidata.md",
+      "estatus": "auditoria provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/AUD-001_Auditoria_REPORT_LAYER_Candidata.md",
+          "detail": "- conserva Registro Historico fuera de autoridad directa."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Auditoria_SPEC-RFC-AUDITOR-V0_NIVEL-C.md",
+      "estatus": "auditoria de Nivel C",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Casos_Prueba_Auditor.md",
+      "estatus": "abierto",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Compatibilidad_REPORT_LAYER_DO_CHECK.md",
+      "estatus": "puente conceptual provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Contrato_Reportes.md",
+      "estatus": "definicion provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Criterios_Completitud_Auditor.md",
+      "estatus": "criterios provisionales de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Criterios_Promocion_R4-CANDIDATA.md",
+      "estatus": "criterios provisionales de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Alcance_REPORT_LAYER.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Auditoria_Post-No-Automata_R4-CANDIDATA.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Capa_Reportes_R4-CANDIDATA.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Cierre_Ronda_No_Automata_R4-CANDIDATA.md",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/AUD-001_Decision_Cierre_Ronda_No_Automata_R4-CANDIDATA.md",
+          "detail": "- `AUD-SIM-019` y `VAL-019`: expediente que usa Registro Historico como autoridad directa."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Estatus_Auditor_v0.md",
+      "estatus": "decision de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Estatus_Criterios_Promocion_R4-CANDIDATA.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Estatus_Gamma_Ruta1_Definicion_Local.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Estatus_Implementacion_No_Mutante_C002.md",
+      "estatus": "decision operativa de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Estatus_R4-CANDIDATA.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Estatus_R4_Gamma_Formal_Local.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Estatus_REPORT_LAYER_Candidata.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Pausa_Operativa_R4-CANDIDATA.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Promocion_SPEC-RFC-AUDITOR-V0.md",
+      "estatus": "decision de expediente con efecto documental",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Reactivacion_JSON_Auditor_v0.md",
+      "estatus": "decision operativa de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Reactivacion_REPORT_LAYER.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Ruta_Siguiente_R4-CANDIDATA.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Decision_Siguiente_Fase_R4-CANDIDATA.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Endurecimiento_Auditor_v0.md",
+      "estatus": "endurecimiento tecnico inicial",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Esquema_Casos_JSON_Auditor_v0.md",
+      "estatus": "esquema operativo inicial",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Ficha_Alcance_Gamma.md",
+      "estatus": "ficha de alcance futura",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/AUD-001_Ficha_Alcance_Gamma.md",
+          "detail": "- usar el Registro Historico como autoridad directa;"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Ficha_Alcance_Parser_Real.md",
+      "estatus": "ficha de alcance futura",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Ficha_Alcance_R4_Formal.md",
+      "estatus": "ficha de alcance futura",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/AUD-001_Ficha_Alcance_R4_Formal.md",
+          "detail": "- usar el Registro Historico como autoridad directa;"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Ficha_Alcance_REPORT_LAYER_Pre-C.md",
+      "estatus": "ficha de alcance local",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md",
+      "estatus": "ficha de alcance futura",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Gamma_Formal_Local.md",
+      "estatus": "construccion formal local de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Gamma_Ruta1_Definicion_Local.md",
+      "estatus": "definicion provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Implementacion_No_Mutante_C002.md",
+      "estatus": "implementacion inicial de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Invariantes_R4-AUD.md",
+      "estatus": "sintesis provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/AUD-001_Invariantes_R4-AUD.md",
+          "detail": "- usar Registro Historico como autoridad directa"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Origen_REPORT_LAYER.md",
+      "estatus": "mapa provisional de extraccion de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/AUD-001_Origen_REPORT_LAYER.md",
+          "detail": "- `VAL-019`: expediente con Registro Historico exige distinguir traza de autoridad vigente."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_R4-CANDIDATA.md",
+      "estatus": "hipotesis operativa de expediente por `EST-R4-CANDIDATA-001`",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/AUD-001_R4-CANDIDATA.md",
+          "detail": "- el Registro Historico se usa como autoridad directa para transformar"
+        },
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/AUD-001_R4-CANDIDATA.md",
+          "detail": "- un expediente que usa Registro Historico como autoridad directa en `AUD-SIM-019` y `VAL-019`"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_R4_Formal_Local.md",
+      "estatus": "construccion formal local de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Relacion_Gamma_Ruta1_R4_Formal.md",
+      "estatus": "relacion provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_REPORT_LAYER_Candidata.md",
+      "estatus": "especificacion candidata provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Simulaciones.md",
+      "estatus": "expediente asociado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/AUD-001_Simulaciones.md",
+          "detail": "- expedientes que usan Registro Historico como autoridad directa"
+        },
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/AUD-001_Simulaciones.md",
+          "detail": "- Probar expedientes que usan Registro Historico como autoridad directa. Cumplido posteriormente por `AUD-SIM-019`."
+        },
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/AUD-001_Simulaciones.md",
+          "detail": "## AUD-SIM-019 - R4-CANDIDATA con Registro Historico como autoridad directa"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Sintesis_Cobertura_No_Automata_R4-CANDIDATA.md",
+      "estatus": "sintesis provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/AUD-001_Sintesis_Cobertura_No_Automata_R4-CANDIDATA.md",
+          "detail": "| `VAL-019` | expediente con Registro Historico | historial usado como autoridad directa | pasa provisionalmente |"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Sintesis_Completitud_Auditor_v0.md",
+      "estatus": "sintesis de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/AUD-001_Sintesis_Completitud_Auditor_v0.md",
+          "detail": "- expediente que usa Registro Historico como autoridad directa;"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_SPEC-RFC-AUDITOR-V0_Candidata.md",
+      "estatus": "especificacion candidata de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Validacion_Implementacion_No_Mutante_C002.md",
+      "estatus": "validacion ejecutada",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUD-001_Validacion_Implementacion_No_Mutante_C002.md",
+          "detail": "06_Automatizacion/reportes/auditor_v0_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Validaciones.md",
+      "estatus": "expediente asociado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/AUD-001_Validaciones.md",
+          "detail": "- expedientes con Registro Historico como autoridad directa"
+        },
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/AUD-001_Validaciones.md",
+          "detail": "- Probar `R4-CANDIDATA` con un expediente que usa Registro Historico como autoridad directa. Cumplido por `VAL-019`."
+        },
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/AUD-001_Validaciones.md",
+          "detail": "Objeto evaluado: `R4-CANDIDATA` con expediente que usa Registro Historico como autoridad directa."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUD-001_Validaciones_SPEC-RFC-AUDITOR-V0.md",
+      "estatus": "validacion de expediente",
       "findings": []
     },
     {
@@ -90,6 +626,1112 @@
       ]
     },
     {
+      "file": "03_Expedientes/AUT-001_Clasificacion_Advertencias_Riesgos.md",
+      "estatus": "especificacion provisional aceptada para clasificacion no mutante",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Clasificacion_Advertencias_Riesgos.md",
+          "detail": "06_Automatizacion/reportes/lab_risk_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Comando_Unico_LAB.md",
+      "estatus": "especificacion provisional aceptada para corrida local unificada",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Comando_Unico_LAB.md",
+          "detail": "06_Automatizacion/reportes/lab_run_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Continuidad_Laboratorio.md",
+      "estatus": "especificacion provisional aceptada para automatizacion media inicial",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Continuidad_Laboratorio.md",
+          "detail": "06_Automatizacion/reportes/lab_continuity_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Criterios_Cierre_Fase_Media.md",
+      "estatus": "criterios provisionales aceptables para decision posterior",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md",
+      "estatus": "decision de cierre de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md",
+          "detail": "06_Automatizacion/reportes/lab_run_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md",
+          "detail": "06_Automatizacion/reportes/lab_risk_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md",
+          "detail": "06_Automatizacion/reportes/do_check_med_claves.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Decision_Cierre_Riesgos.md",
+      "estatus": "decision provisional aceptada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Decision_Cierre_Tecnico_Provisional.md",
+      "estatus": "cierre tecnico provisional aceptado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Decision_Comando_Unico_LAB.md",
+      "estatus": "decision provisional aceptada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Decision_Continuidad_Laboratorio.md",
+      "estatus": "decision provisional aceptada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Decision_Estatus_MVP.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Decision_Fase_Media.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Decision_Reactivacion_Automatizacion.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Decision_Refinamiento_DO-LAB-RISK.md",
+      "estatus": "decision provisional aceptada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Decision_Resumen_Ejecutivo.md",
+      "estatus": "decision provisional aceptada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Decision_Revision_Riesgos_Activos.md",
+      "estatus": "decision provisional aceptada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Decision_Riesgos_Advertencias.md",
+      "estatus": "decision provisional aceptada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Decision_Tablero_Estado.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Mapa_Fase_Media_AAU.md",
+      "estatus": "mapa tecnico provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/AUT-001_Mapa_Fase_Media_AAU.md",
+          "detail": "- `MED-HISTORIAL`: Registro Historico o `SRC-*` usado como autoridad vigente."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Matriz_Revision_Riesgos_Activos.md",
+      "estatus": "revision provisional no mutante",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/AUT-001_Matriz_Revision_Riesgos_Activos.md",
+          "detail": "| `AUT-RISK-ACT-001` | media | `02_Documentos/C-001_Especificacion_Tecnica_Auditor.md:52` | `C-001` declara fuera de alcance la importacion del Registro Historico como autoridad vigente. | `controlado_por_guardrail`; sugerir rebaja a advertencia de control. |"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Refinamiento_DO-LAB-RISK.md",
+      "estatus": "refinamiento provisional implementado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Resumen_Ejecutivo_LAB.md",
+      "estatus": "especificacion provisional aceptada para sintesis ejecutiva no mutante",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Resumen_Ejecutivo_LAB.md",
+          "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Tablero_Estado_LAB.md",
+      "estatus": "especificacion provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Tablero_Estado_LAB.md",
+          "detail": "06_Automatizacion/reportes/lab_status_board.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Tratamiento_Riesgos_Altos.md",
+      "estatus": "tratamiento provisional no mutante aceptable para decision posterior",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md",
+      "estatus": "validacion favorable",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md",
+          "detail": "06_Automatizacion/reportes/lab_run_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md",
+          "detail": "06_Automatizacion/reportes/do_check_min_claves.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md",
+          "detail": "06_Automatizacion/reportes/do_check_med_claves.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md",
+          "detail": "06_Automatizacion/reportes/lab_continuity_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md",
+          "detail": "06_Automatizacion/reportes/lab_risk_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md",
+          "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Validacion_Cierre_Riesgos.md",
+      "estatus": "validacion provisional favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Validacion_Cierre_Tecnico_Provisional.md",
+      "estatus": "validacion provisional favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Validacion_DO-CHECK-MED.md",
+      "estatus": "validacion provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Validacion_DO-CHECK-MED.md",
+          "detail": "06_Automatizacion/reportes/do_check_med_claves.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Validacion_DO-CHECK-MED.md",
+          "detail": "06_Automatizacion/reportes/do_check_med_repo.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Validacion_DO-CHECK-MIN.md",
+      "estatus": "validacion provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Validacion_DO-CHECK-MIN.md",
+          "detail": "06_Automatizacion/reportes/do_check_min_claves.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Validacion_DO-CHECK-MIN.md",
+          "detail": "06_Automatizacion/reportes/do_check_min_repo.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Validacion_DO-LAB-CONTINUITY.md",
+      "estatus": "validacion provisional favorable con advertencias heredadas",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Validacion_DO-LAB-RISK.md",
+      "estatus": "validacion provisional favorable con ejecucion directa local pendiente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Validacion_DO-LAB-RUN.md",
+      "estatus": "validacion provisional favorable con ejecucion directa local pendiente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Validacion_DO-LAB-SUMMARY.md",
+      "estatus": "validacion provisional favorable con ejecucion directa local pendiente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Validacion_DO-STATE-BOARD.md",
+      "estatus": "validacion provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Validacion_DO-STATE-BOARD.md",
+          "detail": "06_Automatizacion/reportes/lab_status_board.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Validacion_Refinamiento_DO-LAB-RISK.md",
+      "estatus": "validacion provisional favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Validacion_Revision_Riesgos_Activos.md",
+      "estatus": "validacion provisional favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-002.md",
+      "estatus": "expediente tecnico abierto y aceptado en alcance minimo",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/AUT-002.md",
+          "detail": "- una decision vigente use Registro Historico como autoridad directa;"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AUT-002_Auditoria_Referencias_Historicas_Transferidas.md",
+      "estatus": "auditoria favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-002_Decision_Referencias_Historicas_Transferidas.md",
+      "estatus": "decision tecnica aceptada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/B-001.5.md",
+      "estatus": "congelado por `CLAS-B-001-5-001`",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/B-001.5_Decision_Clasificacion.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/B-001.md",
+      "estatus": "cerrado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/CP-001.md",
+      "estatus": "cerrado / no reabrir sin decision explicita",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001.md",
+      "estatus": "cerrado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/DO-001.md",
+          "detail": "- importacion de Registro Historico como autoridad vigente"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/DO-001_Auditoria_DO-PROP-001.md",
+      "estatus": "auditoria cerrada de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001_Auditoria_SPEC-AUD-001_NIVEL-C.md",
+      "estatus": "auditoria cerrada de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001_Decision_Alcance_SPEC-AUD-001.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001_Decision_Cierre_DO-001.md",
+      "estatus": "decision de cierre de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001_Decision_DO-CHECK-REPORT.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001_Decision_Modo_Operativo_Auditor.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001_Decision_Promocion_SPEC-AUD-001.md",
+      "estatus": "decision provisional de expediente con efecto documental",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
+      "estatus": "algoritmo provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
+          "detail": "- usa registro historico como autoridad vigente"
+        },
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
+          "detail": "- uso de Registro Historico como autoridad vigente"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/DO-001_Regla_Permiso_Actualizacion.md",
+      "estatus": "regla provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001_SPEC-AUD-001_Candidata.md",
+      "estatus": "especificacion tecnica candidata promovida",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/DO-001_SPEC-AUD-001_Candidata.md",
+          "detail": "- importacion de Registro Historico como autoridad vigente"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/DO-001_Validaciones_DO-CHECK-001.md",
+      "estatus": "expediente asociado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001_Validaciones_MODO-AUD-001.md",
+      "estatus": "validacion provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001_Validaciones_NIVEL-C-001.md",
+      "estatus": "validacion provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001_Validaciones_PERMISO-ACT-001.md",
+      "estatus": "expediente asociado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DO-001_Validaciones_SPEC-AUD-001.md",
+      "estatus": "validacion provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DOCS-001.md",
+      "estatus": "expediente cerrado por `D-2026-07-03-011`",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DOCS-001_Auditoria_Consolidacion_Documentos_00-04.md",
+      "estatus": "auditoria favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/DOCS-001_Decision_Consolidacion_Documentos_00-04.md",
+      "estatus": "decision documental",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/EF-001.md",
+      "estatus": "cerrado / no reabrir sin decision explicita",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/H-Xi.md",
+      "estatus": "hipotesis externa en evaluacion / expediente `HXI-001` abierto / no admitida como Canon",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HB-001_Decision_Congelamiento_Brotes_Alternos.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HB-001_Decision_Fichas_Alcance_H-B.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HB-001_Deuda_Viva_H-B.md",
+      "estatus": "deuda historica congelada",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "03_Expedientes/HB-001_Deuda_Viva_H-B.md",
+          "detail": "- usar Registro Historico como autoridad directa;"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/HB-001_Ficha_Alcance_H-B.6.md",
+      "estatus": "ficha de alcance historica congelada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HB-001_Ficha_Alcance_H-B.7.md",
+      "estatus": "ficha de alcance historica congelada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001.md",
+      "estatus": "abierto en pausa operativa / sin admision de `H-Xi`",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "03_Expedientes/HXI-001.md",
+          "detail": "03_Expedientes/PSI-001_Criterio_Transformacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "03_Expedientes/HXI-001.md",
+          "detail": "03_Expedientes/PSI-001_Ejemplos_Conceptuales_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Auditoria_Apertura.md",
+      "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Auditoria_Criterios_Admision_Formal.md",
+      "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Auditoria_Dictamen_Utilidad_Local.md",
+      "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Auditoria_Mapa_Preliminar.md",
+      "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Auditoria_Matriz_Pruebas.md",
+      "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Auditoria_Notacion_Minima_Xi-R.md",
+      "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Auditoria_Reporte_Consistencia.md",
+      "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Criterios_Admision_Formal_H-Xi.md",
+      "estatus": "criterios provisionales de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Criterios_Evaluacion.md",
+      "estatus": "criterios provisionales de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Decision_Apertura.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Decision_Estatus_Criterios_Admision_Formal.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Decision_Estatus_Dictamen_Utilidad_Local.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Decision_Estatus_Mapa_Preliminar.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Decision_Estatus_Matriz_Pruebas.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Decision_Estatus_Notacion_Minima_Xi-R.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Decision_Estatus_Reporte_Consistencia.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Decision_Pausa_Operativa.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Decision_Preparacion_Admision_Formal.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Decision_Ruta_Operativa.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Dictamen_Utilidad_Local_Xi.md",
+      "estatus": "dictamen provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Mapa_Preliminar_PSI-R.md",
+      "estatus": "mapa preliminar operativo de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Matriz_Pruebas_HXI-R.md",
+      "estatus": "matriz provisional operativa de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Notacion_Minima_Xi-R.md",
+      "estatus": "notacion provisional operativa de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Reporte_Consistencia_Notacion_Xi-R.md",
+      "estatus": "reporte provisional operativo de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/P-PI.0.md",
+      "estatus": "cerrado como frente de trabajo por `D-2026-07-03-002`",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/P-PI.1.md",
+      "estatus": "cerrado como frente de trabajo por `D-2026-07-03-002`",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/P-PI_Auditoria_Criterios_Cierre.md",
+      "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/P-PI_Auditoria_Marco_Inicial_Confluencia_Equivalencia.md",
+      "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/P-PI_Criterios_Cierre.md",
+      "estatus": "criterios provisionales de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/P-PI_Decision_Cierre_Frente_Matematico_Acotado.md",
+      "estatus": "decision de cierre de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/P-PI_Decision_Estatus_Criterios_Cierre.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/P-PI_Decision_Estatus_Frente_Matematico_Acotado.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/P-PI_Decision_Reactivacion_Frente_Matematico.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/P-PI_Decision_Ruta_Operativa.md",
+      "estatus": "decision provisional de expediente, superada operativamente para trabajo acotado por `D-2026-07-02-032`",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/P-PI_Marco_Inicial_Confluencia_Equivalencia.md",
+      "estatus": "marco provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/P-PI_PPI-CONF-001_Rutas_Estado_Operativo.md",
+      "estatus": "caso ejecutado provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/P-PI_PPI-EQ-001_REPORT_LAYER_DO_CHECK.md",
+      "estatus": "caso ejecutado provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/P-PI_PPI-EQ-002_Completitud_A_C002.md",
+      "estatus": "caso ejecutado provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/PSI-TRASPASO-001_Decision_Eliminacion_Copia.md",
+      "estatus": "decision operativa de limpieza",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/README.md",
+      "estatus": "no_clasificado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/REC-001.md",
+      "estatus": "cerrado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/REC-001_Auditoria_Reconciliacion.md",
+      "estatus": "auditoria provisional favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/REC-001_Decision_Cierre.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/REC-001_Mapa_Reconciliacion_Canon_Baselines.md",
+      "estatus": "mapa provisional de reconciliacion cerrado por `REC-001_Decision_Cierre.md`",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/RH-001.md",
+      "estatus": "cerrado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/RH-001_Auditoria_Procesamiento.md",
+      "estatus": "auditoria provisional favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/RH-001_Decision_Cierre.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/RH-002.md",
+      "estatus": "cerrado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/RH-002_Auditoria_Procesamiento.md",
+      "estatus": "auditoria provisional favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/RH-002_Decision_Cierre.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/TCS-001_Analisis_Fondo.md",
+      "estatus": "analisis provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/TCS-001_Auditoria_Paquete_Minimo.md",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/TCS-001_Casos_Prueba.md",
+      "estatus": "casos provisionales de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/TCS-001_Decision_Estatus_Paquete_Minimo.md",
+      "estatus": "decision teorica provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/TCS-001_Definiciones_Minimas.md",
+      "estatus": "definiciones provisionales de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/TCS-001_Teoria_Concordante_de_Sistemas.md",
+      "estatus": "propuesta teorica inicial de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/TCS-001_Tipologia_Fallos_Concordancia.md",
+      "estatus": "tipologia provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_chatgpt_share_001.md",
+      "estatus": "referencia historica externa materializada localmente",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_chatgpt_share_001_transcripcion.md",
+      "estatus": "material historico local",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-001_F-000_Proceso_de_Canonizacion.docx_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-002_Pasted_text_10_.txt_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-003_kastapasanda.odt_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-004_Pasted_text_7_.txt_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-005_Pasted_text_5_.txt_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-006_Bitacora_Maestra.md_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-007_Canon_Laboratorio_M-000_v0.1.docx_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-008_Laboratorio_M-000_Estado_Consolidacion_Borrador.docx_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-009_Pasted_text_9_.txt_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-010_BASELINE_Laboratorio_Concordante_v1.0.0.md_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-011_Canon_Laboratorio_M-000_v0.1.pdf_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-012_laboratorio-concordante-v1.0.0.zip_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-013_laboratorio-concordante-v1.0.0-fase2-nucleo-ejecutable.zip_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-017_Laboratorio_Concordante_Resumen_Una_Pagina_-_copia.docx_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-018_Pasted_text_8_-_copia.txt_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-019_Pasted_text_11_-_copia.txt_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-020_DOC-20260630-WA0003__-_copia_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-021_Laboratorio_Concordante_Extended_Abstract_-_copia.docx_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-022_Laboratorio_Concordante_Concept_Note_-_copia.docx_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/extracciones/SRC-023_laboratorio-concordante-v1.5_-_copia.zip_extraccion.md",
+      "estatus": "material historico extraido automaticamente; no autoridad directa",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/fuentes/SRC-006_Bitacora_Maestra.md",
+      "estatus": "material_historico_pasivo",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/fuentes/SRC-010_BASELINE_Laboratorio_Concordante_v1.0.0.md",
+      "estatus": "material_historico_pasivo",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/MANIFEST.md",
+      "estatus": "material historico externo preservado",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/README.md",
+      "estatus": "lote historico externo materializado",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/RESUMEN_PROCESAMIENTO.md",
+      "estatus": "lote historico procesado",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/zips/SRC-012_laboratorio-concordante-v1.0.0.zip_contenido.md",
+      "estatus": "listado historico de paquete zip",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/zips/SRC-013_laboratorio-concordante-v1.0.0-fase2-nucleo-ejecutable.zip_contenido.md",
+      "estatus": "listado historico de paquete zip",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/2026-07-01_descargas_usuario_001/zips/SRC-023_laboratorio-concordante-v1.5_-_copia.zip_contenido.md",
+      "estatus": "listado historico de paquete zip",
+      "findings": []
+    },
+    {
+      "file": "04_Registro_Historico/README.md",
+      "estatus": "no_clasificado",
+      "findings": []
+    },
+    {
+      "file": "05_Estado_Proyecto/DECISION_Desactivacion_Vision_Papers.md",
+      "estatus": "decision operativa de prioridad",
+      "findings": []
+    },
+    {
+      "file": "05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_B-001.5.md",
+      "estatus": "decision operativa de prioridad",
+      "findings": []
+    },
+    {
+      "file": "05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_P-PI.md",
+      "estatus": "decision operativa de prioridad",
+      "findings": []
+    },
+    {
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "estatus": "decision operativa",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "03_Expedientes/PSI-001_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Estatus_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "03_Expedientes/PSI-001_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "03_Expedientes/PSI-001_Auditoria_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Estatus_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "03_Expedientes/PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "03_Expedientes/PSI-001_Auditoria_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "03_Expedientes/PSI-001_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "03_Expedientes/PSI-001_Auditoria_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Estatus_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "03_Expedientes/PSI-001_Casos_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "03_Expedientes/PSI-001_Auditoria_Casos_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Estatus_Casos_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "03_Expedientes/PSI-001_Matriz_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "03_Expedientes/PSI-001_Auditoria_Matriz_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Estatus_Matriz_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Independizacion_Proyecto.md (PSI-001 transferido; no restaurar copia local)"
+        }
+      ]
+    },
+    {
       "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
       "estatus": "estado operativo vigente",
       "findings": [
@@ -102,12 +1744,567 @@
       ]
     },
     {
+      "file": "05_Estado_Proyecto/NIVEL_C_ESPECIFICACIONES.md",
+      "estatus": "definicion local de proyecto",
+      "findings": []
+    },
+    {
+      "file": "05_Estado_Proyecto/PLAN_Frentes_Beneficiosos_Estabilidad.md",
+      "estatus": "plan implementado provisionalmente",
+      "findings": []
+    },
+    {
+      "file": "05_Estado_Proyecto/README.md",
+      "estatus": "no_clasificado",
+      "findings": []
+    },
+    {
+      "file": "06_Automatizacion/fixtures/README.md",
+      "estatus": "fixtures ejecutables no mutantes",
+      "findings": []
+    },
+    {
+      "file": "06_Automatizacion/README.md",
+      "estatus": "superficie ejecutable provisional",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/do_check_min_claves.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/do_check_min_repo.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/do_check_med_claves.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/do_check_med_repo.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/lab_status_board.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/lab_continuity_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/lab_risk_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/lab_executive_summary.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/lab_run_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/auditor_v0_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/auditor_do_check_adapter_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "06_Automatizacion/README.md",
+          "detail": "- usar Registro Historico como autoridad directa;"
+        }
+      ]
+    },
+    {
+      "file": "CHANGELOG.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "CHANGELOG.md",
+          "detail": "06_Automatizacion/reportes/lab_status_board.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "CHANGELOG.md",
+          "detail": "06_Automatizacion/reportes/lab_continuity_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "CHANGELOG.md",
+          "detail": "06_Automatizacion/reportes/lab_run_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "CHANGELOG.md",
+          "detail": "06_Automatizacion/reportes/lab_risk_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "CHANGELOG.md",
+          "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "historial_como_autoridad_posible",
+          "file": "CHANGELOG.md",
+          "detail": "- Actualizado el estado del proyecto: el siguiente objetivo es probar `R4-CANDIDATA` con un expediente que usa Registro Historico como autoridad directa."
+        }
+      ]
+    },
+    {
       "file": "CURRENT_STATE.md",
       "estatus": "no_clasificado",
+      "findings": []
+    },
+    {
+      "file": "HANDOFF.md",
+      "estatus": "inactivo hasta nuevo aviso",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF.md",
+          "detail": "03_Expedientes/PSI-001.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF.md",
+          "detail": "03_Expedientes/PSI-001_Definicion_Organizacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF.md",
+          "detail": "03_Expedientes/PSI-001_Auditoria_Definicion_Organizacion.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Estatus_Definicion_Organizacion.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF.md",
+          "detail": "03_Expedientes/PSI-001_Criterio_Transformacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF.md",
+          "detail": "03_Expedientes/PSI-001_Auditoria_Criterio_Transformacion.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Estatus_Criterio_Transformacion.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF.md",
+          "detail": "03_Expedientes/PSI-001_Ejemplos_Conceptuales_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF.md",
+          "detail": "03_Expedientes/PSI-001_Auditoria_Ejemplos_Conceptuales.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Estatus_Ejemplos_Conceptuales.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF.md",
+          "detail": "03_Expedientes/PSI-001_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF.md",
+          "detail": "03_Expedientes/PSI-001_Auditoria_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Estatus_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF.md",
+          "detail": "03_Expedientes/PSI-001_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF.md",
+          "detail": "03_Expedientes/PSI-001_Auditoria_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Estatus_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF.md",
+          "detail": "03_Expedientes/PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF.md",
+          "detail": "03_Expedientes/PSI-001_Auditoria_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+        }
+      ]
+    },
+    {
+      "file": "HANDOFF_PACKAGE.md",
+      "estatus": "paquete de handoff inactivo hasta nuevo aviso",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "06_Automatizacion/reportes/lab_continuity_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "06_Automatizacion/reportes/lab_run_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "06_Automatizacion/reportes/lab_risk_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Criterios_Admision.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Auditoria_A-PSI-001.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Estatus_A-PSI-001.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Definicion_Organizacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Auditoria_Definicion_Organizacion.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Estatus_Definicion_Organizacion.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Criterio_Transformacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Auditoria_Criterio_Transformacion.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Estatus_Criterio_Transformacion.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Ejemplos_Conceptuales_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Auditoria_Ejemplos_Conceptuales.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Estatus_Ejemplos_Conceptuales.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Auditoria_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Estatus_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Auditoria_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Estatus_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Auditoria_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_historica_transferida",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "03_Expedientes/PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+        }
+      ]
+    },
+    {
+      "file": "INDEX.md",
+      "estatus": "no_clasificado",
+      "findings": []
+    },
+    {
+      "file": "PROMPT_MAESTRO.md",
+      "estatus": "no_clasificado",
+      "findings": []
+    },
+    {
+      "file": "README.md",
+      "estatus": "no_clasificado",
+      "findings": []
+    },
+    {
+      "file": "VISION_PAPER_FINAL_REFERENCIAS.md",
+      "estatus": "no_clasificado",
+      "findings": []
+    },
+    {
+      "file": "VISION_PAPER_PROPUESTA.md",
+      "estatus": "inactivo hasta nuevo aviso por `D-2026-07-02-031`. Propuesta editorial conservada; no sustituye Canon, documentos oficiales, decisiones registradas ni expedientes activos del Laboratorio",
       "findings": []
     }
   ],
   "findings": [
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
+      "detail": "- `AUD-T07`: Registro Historico como autoridad directa;"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/AUD-001_Auditoria_REPORT_LAYER_Candidata.md",
+      "detail": "- conserva Registro Historico fuera de autoridad directa."
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/AUD-001_Decision_Cierre_Ronda_No_Automata_R4-CANDIDATA.md",
+      "detail": "- `AUD-SIM-019` y `VAL-019`: expediente que usa Registro Historico como autoridad directa."
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/AUD-001_Ficha_Alcance_Gamma.md",
+      "detail": "- usar el Registro Historico como autoridad directa;"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/AUD-001_Ficha_Alcance_R4_Formal.md",
+      "detail": "- usar el Registro Historico como autoridad directa;"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/AUD-001_Invariantes_R4-AUD.md",
+      "detail": "- usar Registro Historico como autoridad directa"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/AUD-001_Origen_REPORT_LAYER.md",
+      "detail": "- `VAL-019`: expediente con Registro Historico exige distinguir traza de autoridad vigente."
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/AUD-001_R4-CANDIDATA.md",
+      "detail": "- el Registro Historico se usa como autoridad directa para transformar"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/AUD-001_R4-CANDIDATA.md",
+      "detail": "- un expediente que usa Registro Historico como autoridad directa en `AUD-SIM-019` y `VAL-019`"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/AUD-001_Simulaciones.md",
+      "detail": "- expedientes que usan Registro Historico como autoridad directa"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/AUD-001_Simulaciones.md",
+      "detail": "- Probar expedientes que usan Registro Historico como autoridad directa. Cumplido posteriormente por `AUD-SIM-019`."
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/AUD-001_Simulaciones.md",
+      "detail": "## AUD-SIM-019 - R4-CANDIDATA con Registro Historico como autoridad directa"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/AUD-001_Sintesis_Cobertura_No_Automata_R4-CANDIDATA.md",
+      "detail": "| `VAL-019` | expediente con Registro Historico | historial usado como autoridad directa | pasa provisionalmente |"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/AUD-001_Sintesis_Completitud_Auditor_v0.md",
+      "detail": "- expediente que usa Registro Historico como autoridad directa;"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUD-001_Validacion_Implementacion_No_Mutante_C002.md",
+      "detail": "06_Automatizacion/reportes/auditor_v0_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/AUD-001_Validaciones.md",
+      "detail": "- expedientes con Registro Historico como autoridad directa"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/AUD-001_Validaciones.md",
+      "detail": "- Probar `R4-CANDIDATA` con un expediente que usa Registro Historico como autoridad directa. Cumplido por `VAL-019`."
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/AUD-001_Validaciones.md",
+      "detail": "Objeto evaluado: `R4-CANDIDATA` con expediente que usa Registro Historico como autoridad directa."
+    },
     {
       "severity": "warning",
       "kind": "referencia_no_materializada",
@@ -171,8 +2368,668 @@
     {
       "severity": "warning",
       "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Clasificacion_Advertencias_Riesgos.md",
+      "detail": "06_Automatizacion/reportes/lab_risk_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Comando_Unico_LAB.md",
+      "detail": "06_Automatizacion/reportes/lab_run_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Continuidad_Laboratorio.md",
+      "detail": "06_Automatizacion/reportes/lab_continuity_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md",
+      "detail": "06_Automatizacion/reportes/lab_run_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md",
+      "detail": "06_Automatizacion/reportes/lab_risk_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md",
+      "detail": "06_Automatizacion/reportes/do_check_med_claves.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/AUT-001_Mapa_Fase_Media_AAU.md",
+      "detail": "- `MED-HISTORIAL`: Registro Historico o `SRC-*` usado como autoridad vigente."
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/AUT-001_Matriz_Revision_Riesgos_Activos.md",
+      "detail": "| `AUT-RISK-ACT-001` | media | `02_Documentos/C-001_Especificacion_Tecnica_Auditor.md:52` | `C-001` declara fuera de alcance la importacion del Registro Historico como autoridad vigente. | `controlado_por_guardrail`; sugerir rebaja a advertencia de control. |"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Resumen_Ejecutivo_LAB.md",
+      "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Tablero_Estado_LAB.md",
+      "detail": "06_Automatizacion/reportes/lab_status_board.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md",
+      "detail": "06_Automatizacion/reportes/lab_run_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md",
+      "detail": "06_Automatizacion/reportes/do_check_min_claves.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md",
+      "detail": "06_Automatizacion/reportes/do_check_med_claves.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md",
+      "detail": "06_Automatizacion/reportes/lab_continuity_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md",
+      "detail": "06_Automatizacion/reportes/lab_risk_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md",
+      "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Validacion_DO-CHECK-MED.md",
+      "detail": "06_Automatizacion/reportes/do_check_med_claves.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Validacion_DO-CHECK-MED.md",
+      "detail": "06_Automatizacion/reportes/do_check_med_repo.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Validacion_DO-CHECK-MIN.md",
+      "detail": "06_Automatizacion/reportes/do_check_min_claves.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Validacion_DO-CHECK-MIN.md",
+      "detail": "06_Automatizacion/reportes/do_check_min_repo.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Validacion_DO-STATE-BOARD.md",
+      "detail": "06_Automatizacion/reportes/lab_status_board.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/AUT-002.md",
+      "detail": "- una decision vigente use Registro Historico como autoridad directa;"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/DO-001.md",
+      "detail": "- importacion de Registro Historico como autoridad vigente"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
+      "detail": "- usa registro historico como autoridad vigente"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/DO-001_DO-CHECK-001.md",
+      "detail": "- uso de Registro Historico como autoridad vigente"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/DO-001_SPEC-AUD-001_Candidata.md",
+      "detail": "- importacion de Registro Historico como autoridad vigente"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "03_Expedientes/HB-001_Deuda_Viva_H-B.md",
+      "detail": "- usar Registro Historico como autoridad directa;"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "03_Expedientes/HXI-001.md",
+      "detail": "03_Expedientes/PSI-001_Criterio_Transformacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "03_Expedientes/HXI-001.md",
+      "detail": "03_Expedientes/PSI-001_Ejemplos_Conceptuales_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "03_Expedientes/PSI-001_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Estatus_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "03_Expedientes/PSI-001_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "03_Expedientes/PSI-001_Auditoria_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Estatus_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "03_Expedientes/PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "03_Expedientes/PSI-001_Auditoria_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "03_Expedientes/PSI-001_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "03_Expedientes/PSI-001_Auditoria_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Estatus_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "03_Expedientes/PSI-001_Casos_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "03_Expedientes/PSI-001_Auditoria_Casos_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Estatus_Casos_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "03_Expedientes/PSI-001_Matriz_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "03_Expedientes/PSI-001_Auditoria_Matriz_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Estatus_Matriz_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Independizacion_Proyecto.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
       "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
       "detail": "06_Automatizacion/reportes/lab_status_board.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/do_check_min_claves.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/do_check_min_repo.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/do_check_med_claves.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/do_check_med_repo.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/lab_status_board.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/lab_continuity_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/lab_risk_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/lab_executive_summary.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/lab_run_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/auditor_v0_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/auditor_do_check_adapter_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "06_Automatizacion/README.md",
+      "detail": "- usar Registro Historico como autoridad directa;"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "CHANGELOG.md",
+      "detail": "06_Automatizacion/reportes/lab_status_board.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "CHANGELOG.md",
+      "detail": "06_Automatizacion/reportes/lab_continuity_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "CHANGELOG.md",
+      "detail": "06_Automatizacion/reportes/lab_run_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "CHANGELOG.md",
+      "detail": "06_Automatizacion/reportes/lab_risk_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "CHANGELOG.md",
+      "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "historial_como_autoridad_posible",
+      "file": "CHANGELOG.md",
+      "detail": "- Actualizado el estado del proyecto: el siguiente objetivo es probar `R4-CANDIDATA` con un expediente que usa Registro Historico como autoridad directa."
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF.md",
+      "detail": "03_Expedientes/PSI-001.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF.md",
+      "detail": "03_Expedientes/PSI-001_Definicion_Organizacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF.md",
+      "detail": "03_Expedientes/PSI-001_Auditoria_Definicion_Organizacion.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Estatus_Definicion_Organizacion.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF.md",
+      "detail": "03_Expedientes/PSI-001_Criterio_Transformacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF.md",
+      "detail": "03_Expedientes/PSI-001_Auditoria_Criterio_Transformacion.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Estatus_Criterio_Transformacion.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF.md",
+      "detail": "03_Expedientes/PSI-001_Ejemplos_Conceptuales_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF.md",
+      "detail": "03_Expedientes/PSI-001_Auditoria_Ejemplos_Conceptuales.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Estatus_Ejemplos_Conceptuales.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF.md",
+      "detail": "03_Expedientes/PSI-001_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF.md",
+      "detail": "03_Expedientes/PSI-001_Auditoria_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Estatus_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF.md",
+      "detail": "03_Expedientes/PSI-001_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF.md",
+      "detail": "03_Expedientes/PSI-001_Auditoria_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Estatus_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF.md",
+      "detail": "03_Expedientes/PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF.md",
+      "detail": "03_Expedientes/PSI-001_Auditoria_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "06_Automatizacion/reportes/lab_continuity_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "06_Automatizacion/reportes/lab_run_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "06_Automatizacion/reportes/lab_risk_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Criterios_Admision.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Auditoria_A-PSI-001.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Estatus_A-PSI-001.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Definicion_Organizacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Auditoria_Definicion_Organizacion.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Estatus_Definicion_Organizacion.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Criterio_Transformacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Auditoria_Criterio_Transformacion.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Estatus_Criterio_Transformacion.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Ejemplos_Conceptuales_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Auditoria_Ejemplos_Conceptuales.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Estatus_Ejemplos_Conceptuales.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Auditoria_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Estatus_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Auditoria_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Estatus_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Auditoria_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_historica_transferida",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "03_Expedientes/PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
     }
   ]
 }

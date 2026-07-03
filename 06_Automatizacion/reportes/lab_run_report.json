@@ -1,27 +1,27 @@
 {
-  "report_id": "DO-LAB-RUN-20260702-165851",
+  "report_id": "DO-LAB-RUN-20260703-135812",
   "expediente": "AUT-001",
   "algoritmo": "DO-LAB-RUN-001",
   "resultado": "advertencia",
   "recomendacion": "mantener_cierre_operativo",
   "transformacion_permitida": false,
-  "scope": "claves",
+  "scope": "repo",
   "steps": [
     {
       "name": "chequeo_minimo",
       "algorithm": "DO-CHECK-MIN-001",
       "resultado": "advertencia",
       "recomendacion": "continuar_sin_transformar",
-      "findings": 11,
+      "findings": 139,
       "markdown": "06_Automatizacion/reportes/do_check_min_repo.md",
       "json": "06_Automatizacion/reportes/do_check_min_repo.json"
     },
     {
       "name": "chequeo_medio",
       "algorithm": "DO-CHECK-MED-001",
-      "resultado": "ok",
-      "recomendacion": "aprobar_lectura",
-      "findings": 0,
+      "resultado": "advertencia",
+      "recomendacion": "continuar_sin_transformar",
+      "findings": 236,
       "markdown": "06_Automatizacion/reportes/do_check_med_repo.md",
       "json": "06_Automatizacion/reportes/do_check_med_repo.json"
     },
@@ -37,26 +37,26 @@
     {
       "name": "continuidad_integrada",
       "algorithm": "DO-LAB-CONTINUITY-001",
-      "resultado": "ok",
-      "recomendacion": "aprobar_lectura",
-      "findings": 0,
+      "resultado": "advertencia",
+      "recomendacion": "continuar_sin_transformar",
+      "findings": 236,
       "markdown": "06_Automatizacion/reportes/lab_continuity_report.md",
       "json": "06_Automatizacion/reportes/lab_continuity_report.json"
     },
     {
       "name": "clasificacion_riesgos",
       "algorithm": "DO-LAB-RISK-001",
-      "resultado": "advertencia_clasificada",
-      "recomendacion": "mantener_cierre_operativo",
-      "findings": 11,
+      "resultado": "riesgo_controlado",
+      "recomendacion": "revisar_riesgos_activos_sin_transformar",
+      "findings": 250,
       "markdown": "06_Automatizacion/reportes/lab_risk_report.md",
       "json": "06_Automatizacion/reportes/lab_risk_report.json"
     },
     {
       "name": "resumen_ejecutivo",
       "algorithm": "DO-LAB-SUMMARY-001",
-      "resultado": "advertencia",
-      "recomendacion": "mantener_cierre_operativo",
+      "resultado": "atencion_requerida",
+      "recomendacion": "revisar_riesgos_altos_sin_transformar",
       "findings": 0,
       "markdown": "06_Automatizacion/reportes/lab_executive_summary.md",
       "json": "06_Automatizacion/reportes/lab_executive_summary.json"
@@ -64,8 +64,8 @@
   ],
   "next_action": "Mantener cierre operativo de AUT-001 con deuda documental visible.",
   "executive_summary": {
-    "resultado": "advertencia",
-    "recomendacion": "mantener_cierre_operativo",
-    "headline": "Cierre operativo conservado con deuda documental visible."
+    "resultado": "atencion_requerida",
+    "recomendacion": "revisar_riesgos_altos_sin_transformar",
+    "headline": "Operativo con riesgos altos activos; no cerrar."
   }
 }

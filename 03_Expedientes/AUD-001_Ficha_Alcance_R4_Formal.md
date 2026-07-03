@@ -26,6 +26,8 @@ No convierte `R4-CANDIDATA` en Canon.
 
 No resuelve `Gamma` por si misma.
 
+Precision posterior: `AUD-001_Relacion_Gamma_Ruta1_R4_Formal.md` fija que `Gamma_1` puede usar `R4-CANDIDATA` como evidencia local para producir una candidata provisional, pero esa salida no constituye Regla R4 formal.
+
 ## Alcance permitido
 
 La ruta de R4 formal puede incluir:
@@ -33,6 +35,7 @@ La ruta de R4 formal puede incluir:
 - definicion local de la forma general de la regla;
 - especificacion de premisas, restricciones y efecto esperado;
 - relacion precisa entre `R4-CANDIDATA` y la forma general;
+- revision de `REL-GAMMA-R4-001` si se usa `Gamma_1` para preparar una candidata generalizada;
 - criterios para distinguir hipotesis operativa, compuerta provisional y regla formal;
 - pruebas o demostraciones internas sobre ejemplos ya registrados;
 - delimitacion de casos no cubiertos por la candidata.
@@ -64,8 +67,18 @@ Si este frente se abre de forma real, probablemente requiera:
 
 Mientras esas condiciones no existan, `R4` formal sigue siendo deuda futura, no requisito de completitud v0.
 
-`AUD-001` sigue completo en version documental/operativa v0 sin R4 formal.
+`AUD-001` seguia completo en version documental/operativa v0 sin R4 formal. La construccion local posterior de `R4-FORMAL-AUD-001` no modifica ese cierre v0 ni promueve documentos oficiales.
+
+## Ruta formal local construida
+
+La ruta formal local quedo materializada posteriormente en `AUD-001_R4_Formal_Local.md`.
+
+Resultado: `R4-FORMAL-AUD-001` define una Regla R4 formal local sobre trazas, decision fundada, ejecucion valida, evidencia previa/posterior e invariantes verificados.
+
+Esta construccion fue auditada en `AUD-001_Auditoria_R4_Gamma_Formal_Local.md` y aceptada localmente por `AUD-001_Decision_Estatus_R4_Gamma_Formal_Local.md` (`D-2026-07-03-010`).
+
+La construccion no modifica Canon, no modifica `C-001` ni `C-002`, no promueve `R4` a documento oficial y no autoriza transformaciones materiales.
 
 ## Veredicto
 
-La ruta de `R4` formal queda abierta como siguiente deuda estructural, lista para trabajo posterior si se decide abrirla.
+La ruta de `R4` formal local dentro de `AUD-001` queda construida. Permanece abierta cualquier promocion, exportacion, canonizacion, implementacion ejecutable o prueba fuera de `AUD-001`.

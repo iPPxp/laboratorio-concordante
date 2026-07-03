@@ -29,6 +29,7 @@ ALLOWED_NON_ASCII_PREFIXES = (
 PASSIVE_HISTORICAL_PREFIXES = (
     "04_Registro_Historico/2026-07-01_descargas_usuario_001/",
 )
+TRANSFERRED_PSI_PREFIX = "03_Expedientes/PSI-001"
 STATUS_PREFIXES = (
     "01_Canon/",
     "02_Documentos/",
@@ -63,6 +64,14 @@ def status_of(text: str) -> str:
 def add(findings, severity, kind, file, detail):
     findings.append({"severity": severity, "kind": kind, "file": file, "detail": detail})
 
+def is_transferred_psi_ref(ref: str) -> bool:
+    normalized = ref.lstrip("./")
+    name = Path(normalized).name
+    return (
+        normalized.startswith(TRANSFERRED_PSI_PREFIX)
+        or (name.startswith("PSI-001") and name.endswith(".md"))
+    )
+
 def check_file(path: Path, root: Path, existing: set[str]):
     file_rel = rel(path, root)
     text = read(path)
@@ -79,6 +88,15 @@ def check_file(path: Path, root: Path, existing: set[str]):
         if ref.startswith("http"):
             continue
         if "/" in ref and ref not in existing:
+            if is_transferred_psi_ref(ref):
+                add(
+                    findings,
+                    "warning",
+                    "referencia_historica_transferida",
+                    file_rel,
+                    f"{ref} (PSI-001 transferido; no restaurar copia local)",
+                )
+                continue
             add(findings, "warning", "referencia_no_materializada", file_rel, ref)
     if not file_rel.startswith("04_Registro_Historico/"):
         for line in text.splitlines():

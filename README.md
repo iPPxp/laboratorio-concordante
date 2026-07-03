@@ -112,48 +112,62 @@ Contiene herramientas ejecutables no mutantes y sus reportes conservados. Su fun
 
 Estado operativo resumido:
 
-- Decision operativa reciente: `PSI-001_Decision_Independizacion_Proyecto.md`.
-- Decisiones de estabilizacion recientes: `D-2026-07-02-020` a `D-2026-07-03-006`.
-- Ultimo expediente cerrado: `P-PI.0` / `P-PI.1`; ultimo expediente tecnico cerrado: `AUT-001`.
+- Decision operativa reciente: `TCS-001_Decision_Estatus_Paquete_Minimo.md`.
+- Decisiones de estabilizacion recientes: `D-2026-07-02-020` a `D-2026-07-03-019`.
+- Ultimo expediente cerrado: `DOCS-001`; ultimo expediente tecnico cerrado: `AUT-001`.
 - Ultima decision arquitectonica: `C-002_RFC_Operativo_Auditor_v0.md` promovido como RFC operativo oficial del Auditor v0; complementa `C-001` y quedo alineado el 2026-07-03 con JSON, fixtures y adaptador no mutante.
-- Ultima decision operativa: `PSI-001_Decision_Independizacion_Proyecto.md` (`D-2026-07-03-006`) independiza `PSI-001` como proyecto propio `Psicologia Concordante`; el Laboratorio conserva solo copia de traspaso y no continua psicologia como frente activo interno.
+- Ultima decision operativa: `TCS-001_Decision_Estatus_Paquete_Minimo.md` (`D-2026-07-03-019`) acepta `TCS-DEF-MIN-001`, `TCS-FAIL-TYP-001` y `TCS-CASE-BAT-001` como paquete teorico minimo provisional; no canoniza `Concordance`, no crea Nivel C ni usa vision papers como fuente activa.
+- Avance AO reciente: `AO-001_Decision_Estatus_Casos_Prueba_Algebra_Operacional.md` (`D-2026-07-03-016`), `AO-001_Decision_Criterios_Uso_R4_Gamma_Fuera_AUD.md` (`D-2026-07-03-017`) y `AO-001_Decision_Estatus_Puente_Confluencia_Equivalencia.md` (`D-2026-07-03-018`) aceptan `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001` y `AO-PPI-BRIDGE-001` como avance local no canonico.
+- Saneamiento tecnico reciente: `AUT-002_Decision_Referencias_Historicas_Transferidas.md` (`D-2026-07-03-015`) acepta `referencia_historica_transferida` para `PSI-001*` eliminado y refina falsos bloqueos de historial en controles negativos.
+- Limpieza reciente: `PSI-TRASPASO-001_Decision_Eliminacion_Copia.md` (`D-2026-07-03-012`) elimina la copia local de traspaso de `PSI-001`; `HB-001_Decision_Congelamiento_Brotes_Alternos.md` (`D-2026-07-03-013`) congela `H-B.6` y `H-B.7` como brotes alternos y originales historicos.
+- Decision documental reciente: `DOCS-001_Decision_Consolidacion_Documentos_00-04.md` (`D-2026-07-03-011`) consolida documentos 00-03 desde fuentes previas y actualiza el Documento 04 como version inicial de Algebra Operacional; no promueve Canon ni autoriza transformaciones materiales.
+- Decision formal local reciente: `AUD-001_Decision_Estatus_R4_Gamma_Formal_Local.md` (`D-2026-07-03-010`) acepta `R4-FORMAL-AUD-001` y `GAMMA-FORMAL-AUD-001` como construcciones formales locales de `AUD-001`, y `VAL-031` como segunda prueba positiva de `Gamma_1`.
 - Propuesta provisional promovida: `DO-PROP-001` absorbida por `C-001`.
+- Definicion provisional activa: `GAMMA-DEF-001` en `AUD-001_Gamma_Ruta1_Definicion_Local.md`, vigente solo dentro de `AUD-001`; primer caso positivo validado por `VAL-030` contra `AUD-SIM-030`.
+- Relacion provisional activa: `REL-GAMMA-R4-001` precisa que `R4-CANDIDATA` puede ser evidencia local para `Gamma_1`, sin equivaler a Regla R4 formal.
+- Construcciones formales locales activas: `R4-FORMAL-AUD-001` en `AUD-001_R4_Formal_Local.md` y `GAMMA-FORMAL-AUD-001` en `AUD-001_Gamma_Formal_Local.md`.
+- Expediente preparatorio activo: `AO-001` para Algebra Operacional; `AO-MARCO-001` fue incorporado al Documento 04 como version inicial consolidada, `GAMMA-EXT-AO-001` prueba `Gamma_1` fuera de `AUD-001` en grado local, `AO-CASE-BAT-001` prueba operadores minimos, `AO-R4-GAMMA-USE-001` acota el uso de R4/Gamma fuera de `AUD-001` y `AO-PPI-BRIDGE-001` avanza localmente Confluencia y Equivalencia de proyecciones.
 - Algoritmo provisional activo: `DO-CHECK-001`; implementaciones activas: `DO-CHECK-MIN-001` en `06_Automatizacion/do_check_min.py`, `DO-CHECK-MED-001` en `06_Automatizacion/do_check_med.py`, `DO-STATE-BOARD-001` en `06_Automatizacion/lab_status_board.py`, `DO-LAB-CONTINUITY-001` en `06_Automatizacion/lab_continuity_report.py`, `DO-LAB-RISK-001` en `06_Automatizacion/lab_risk_classifier.py`, `DO-LAB-SUMMARY-001` en `06_Automatizacion/lab_executive_summary.py` y `DO-LAB-RUN-001` en `06_Automatizacion/lab_run.py`.
-- Infraestructura `AUT-001` conservada: `AUT-001_Refinamiento_DO-LAB-RISK.md`, `AUT-001_Decision_Cierre_Tecnico_Provisional.md` y `AUT-001_Decision_Cierre_Operativo_Completo.md`; paquete PSI conservado solo como copia de traspaso tras su independizacion: `PSI-001_Mapa_Continuidad_Conceptual.md`, `PSI-001_Casos_Transformacion_No_Clinicos.md`, `PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md`, `PSI-001_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md`, `PSI-001_Casos_Frontera_Conceptual_No_Clinica.md` y `PSI-001_Matriz_Frontera_Conceptual_No_Clinica.md`.
+- Infraestructura `AUT-001` conservada: `AUT-001_Refinamiento_DO-LAB-RISK.md`, `AUT-001_Decision_Cierre_Tecnico_Provisional.md` y `AUT-001_Decision_Cierre_Operativo_Completo.md`; la copia local de traspaso `PSI-001*` fue eliminada del Laboratorio por `D-2026-07-03-012`.
 - Documentos oficiales de Nivel C: `C-001_Especificacion_Tecnica_Auditor.md` y `C-002_RFC_Operativo_Auditor_v0.md`.
 - Especificacion candidata promovida: `SPEC-AUD-001_Candidata` en `03_Expedientes`.
 - Modo operativo del Auditor: mixto, segun `MODO-AUD-001`.
-- Proximo objetivo: acotar la ruta de `Gamma` del Auditor dentro de `AUD-001`; cualquier paso posterior a `Gamma` requiere decision explicita. `P-PI.0` / `P-PI.1` ya quedan cerrados como frentes de trabajo; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa; `PSI-001` queda independizado fuera del Laboratorio; `B-001.5` queda congelado; los vision papers quedan inactivos.
+- Proximo objetivo: profundizar Confluencia global, Equivalencia global de proyecciones y formalizacion posterior de Documento 04 desde el puente local `AO-PPI-BRIDGE-001`; madurar `TCS-001` con metrica, casos externos y conflicto de autoridades. `P-PI.0` / `P-PI.1` quedan cerrados como frentes de trabajo; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa; `PSI-001` queda fuera del Laboratorio sin copia local de traspaso; `H-B.6` y `H-B.7` quedan congeladas; `B-001.5` queda congelado; los vision papers quedan inactivos.
 - No volver a discutir sin reapertura explicita: `EF-001`, `CP-001`, Procedimiento, Auditoria.
 
-Documentos declarados como completos en el punto de partida:
+Documentos oficiales consolidados:
 
-- Documento 00: completo.
-- Documento 01: completo.
-- Documento 02: completo.
-- Documento 03: completo.
+- Documento 00: Naturaleza, consolidado desde fuentes previas.
+- Documento 01: Canon, consolidado desde fuentes previas.
+- Documento 02: Fundamentos Matematicos, consolidado desde fuentes previas.
+- Documento 03: Ontologia, consolidado desde fuentes previas.
+- Documento 04: Algebra Operacional, actualizado como version inicial consolidada.
 
-Nota operativa: este repositorio contiene versiones semilla de esos documentos. La completitud anterior debe importarse desde las fuentes previas antes de tratar estos archivos como versiones sustantivas completas.
+Nota operativa: la consolidacion esta registrada por `D-2026-07-03-011`. Cualquier promocion futura a Canon o Nivel C requiere expediente y decision separada.
 
 Expedientes abiertos relevantes:
 
 - `HXI-001` (pausa operativa; reporte de consistencia aceptado sin admision)
-- `AUD-001` (completo en version documental/operativa v0; implementacion no mutante `AUDITOR-V0-001` aceptada; JSON reactivado; `REPORT_LAYER` local y compatibilidad con `DO_CHECK_REPORT` definidas; origen local de `REPORT_LAYER` fijado en `AUD-001_Origen_REPORT_LAYER.md`; suite ejecutable completa encuadrada en `AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md`; parser real acotado en `AUD-001_Ficha_Alcance_Parser_Real.md`; R4 formal acotado en `AUD-001_Ficha_Alcance_R4_Formal.md`; Gamma acotado en `AUD-001_Ficha_Alcance_Gamma.md`)
+- `AUD-001` (completo en version documental/operativa v0; implementacion no mutante `AUDITOR-V0-001` aceptada; JSON reactivado; `REPORT_LAYER` local y compatibilidad con `DO_CHECK_REPORT` definidas; origen local de `REPORT_LAYER` fijado en `AUD-001_Origen_REPORT_LAYER.md`; suite ejecutable completa encuadrada en `AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md`; parser real acotado en `AUD-001_Ficha_Alcance_Parser_Real.md`; R4 formal local construido en `AUD-001_R4_Formal_Local.md`; Gamma formal local construido en `AUD-001_Gamma_Formal_Local.md`; `Gamma_1` probado por `VAL-030`, `VAL-031` y `GAMMA-EXT-AO-001`)
+- `AO-001` (expediente preparatorio abierto para Algebra Operacional; `AO-MARCO-001` incorporado al Documento 04; `GAMMA-EXT-AO-001`, `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001` y `AO-PPI-BRIDGE-001` aceptados como avance local no canonico)
+- `TCS-001` (expediente teorico provisional; paquete minimo `TCS-DEF-MIN-001`, `TCS-FAIL-TYP-001` y `TCS-CASE-BAT-001` aceptado sin canonizacion)
 
 Expedientes transferidos:
 
-- `PSI-001` (independizado como proyecto `Psicologia Concordante`; copia local de traspaso conservada, sin continuidad activa dentro del Laboratorio)
+- `PSI-001` (independizado como proyecto `Psicologia Concordante`; copia local de traspaso eliminada por `D-2026-07-03-012`, sin continuidad activa dentro del Laboratorio)
 
-Hipotesis activas iniciales:
+Hipotesis congeladas:
 
-- `H-B.6`
-- `H-B.7`
+- `H-B.6` (brote alterno y original historico)
+- `H-B.7` (brote alterno y original historico)
 
 Problemas abiertos relevantes:
 
 - Confluencia.
 - Equivalencia de proyecciones.
-- Definicion formal completa de `R4`.
-- Construccion formal de `Gamma`.
+- Promocion o exportacion general fuera de `AUD-001` de `R4-FORMAL-AUD-001`.
+- Promocion o exportacion general fuera de pruebas locales controladas de `GAMMA-FORMAL-AUD-001`.
+- Formalizacion posterior del Documento 04 - Algebra Operacional.
+- Maduracion de `TCS-001` mas alla del paquete minimo provisional.
 
 Este estado debe validarse y enriquecerse a medida que se incorporen documentos previos, expedientes completos o conversaciones historicas.

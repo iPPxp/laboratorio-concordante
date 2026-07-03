@@ -1,6 +1,6 @@
 # HB-001 - Deuda viva de H-B
 
-Estatus: deuda conceptual viva de alcance.
+Estatus: deuda historica congelada.
 
 ID: `DEUDA-HB-001`.
 
@@ -106,3 +106,21 @@ El frente Nivel B permanece sin reapertura.
 Las fichas de alcance fueron creadas y aceptadas por `D-HB-ALC-001`.
 
 El siguiente paso ya no es precisar alcance minimo. Es buscar fuente local sustantiva o decidir explicitamente congelamiento, absorcion, cierre o apertura de expediente propio.
+
+## Resultado posterior 2026-07-03
+
+Por `D-2026-07-03-013`, `H-B.6` y `H-B.7` quedan congeladas como brotes alternos y originales historicos.
+
+Dejan de ser deuda viva activa y pasan a traza congelada.
+
+Formula de cita posterior:
+
+```text
+H-B.6 / H-B.7 = brotes alternos congelados de Nivel B; originales historicos sin contenido sustantivo local materializado.
+```
+
+Las deudas restantes son solo condicionales:
+
+- no existe fuente local sustantiva;
+- no existe diferencia semantica local entre ambas;
+- cualquier reactivacion requiere fuente verificable y decision explicita.

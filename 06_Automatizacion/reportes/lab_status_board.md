@@ -1,6 +1,6 @@
 # LAB_STATUS_BOARD
 
-report_id: DO-STATE-BOARD-20260703-102933
+report_id: DO-STATE-BOARD-20260703-135805
 expediente: AUT-001
 algoritmo: DO-STATE-BOARD-001
 resultado: ok
@@ -9,21 +9,22 @@ transformacion_permitida: false
 
 ## Estado sintetico
 
-- ultimo expediente cerrado: `P-PI.0` / `P-PI.1`
+- ultimo expediente cerrado: `DOCS-001`
 - ultimo expediente tecnico cerrado: `AUT-001`
-- ultima decision operativa: `PSI-001_Decision_Estatus_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md` (`D-2026-07-03-003`): `PSI-FRON-PSICOPAT-001` queda aceptada como compuerta provisional de frontera conceptual no clinica dentro de `PSI-001`; no abre subfrente psicopatologico ni habilita uso clinico.
-- proximo objetivo: Acotar la ruta de `Gamma` del Auditor dentro de `AUD-001`; cualquier paso posterior a `Gamma` requiere decision explicita.
+- ultima decision operativa: `TCS-001_Decision_Estatus_Paquete_Minimo.md` (`D-2026-07-03-019`): acepta `TCS-DEF-MIN-001`, `TCS-FAIL-TYP-001` y `TCS-CASE-BAT-001` como paquete teorico minimo provisional; no canoniza `Concordance`, no crea Nivel C y no usa vision papers como fuente activa.
+- proximo objetivo: Profundizar `AO-PPI-BRIDGE-001` hacia pruebas de Confluencia global y Equivalencia global de proyecciones sin reabrir `P-PI.0` / `P-PI.1`.
 
 ## Expediente activo inmediato
 
-`P-PI.0` / `P-PI.1` quedan cerrados como frentes de trabajo por `D-2026-07-03-002`; `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001` quedan como evidencia ejecutada; Confluencia y Equivalencia de proyecciones siguen abiertas como problemas de fondo. `AUD-001` queda completo en version documental/operativa v0 y ya produjo `C-002`; permanece abierto solo para rutas posteriores no cubiertas; la suite ejecutable completa queda encuadrada en `AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md`, la ruta de `parser real` queda acotada en `AUD-001_Ficha_Alcance_Parser_Real.md` y la ruta de `R4` formal queda acotada en `AUD-001_Ficha_Alcance_R4_Formal.md`. `H-B.6` y `H-B.7` tienen alcance local minimo aceptado, pero sin contenido sustantivo materializado. `PSI-001` queda abierto con matriz de patrones no clinicos y compuerta de frontera conceptual no clinica aceptadas, sin cierre, promocion ni apertura de psicopatologia; `TCS-001` queda abierto como expediente teorico provisional; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `B-001.5` queda congelado.
+`AO-001` queda como frente operativo principal para profundizar `AO-PPI-BRIDGE-001`, formalizacion posterior de Documento 04 y relacion eventual con `REPORT_LAYER`.
 
 ## Expedientes abiertos
 
 - `HXI-001` (pausa operativa; reporte de consistencia aceptado y criterios de admision formal posterior preparados; no admite `H-Xi`)
-- `PSI-001` (abierto; matriz de patrones no clinicos y compuerta de frontera conceptual no clinica aceptadas; `A-PSI-001`, `DEF-PSI-ORG-001`, `CRIT-PSI-TR-001`, `EX-PSI-001` a `EX-PSI-005`, `CAS-PSI-001` a `CAS-PSI-006`, `PSI-MAT-PAT-001` y `PSI-FRON-PSICOPAT-001` siguen provisionales dentro del expediente)
-- `TCS-001` (expediente teorico provisional; `Concordance` tratada como propiedad auditable de gobernanza de sistemas; analisis de fondo registrado; no Canon, no documento oficial)
-- `AUD-001` (completo en version documental/operativa v0; implementacion no mutante `AUDITOR-V0-001` aceptada; JSON reactivado; `REPORT_LAYER` local y compatibilidad con `DO_CHECK_REPORT` definidas; suite ejecutable completa encuadrada en `AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md`; parser real acotado en `AUD-001_Ficha_Alcance_Parser_Real.md`; R4 formal acotado en `AUD-001_Ficha_Alcance_R4_Formal.md`; abierto solo para rutas posteriores como `Gamma`)
+- `TCS-001` (expediente teorico provisional; paquete minimo `TCS-DEF-MIN-001`, `TCS-FAIL-TYP-001` y `TCS-CASE-BAT-001` aceptado por `D-2026-07-03-019`; no Canon, no documento oficial)
+- `AUT-002` (mantenimiento tecnico minimo de referencias historicas transferidas; aceptado por `D-2026-07-03-015`; no reabre `AUT-001`)
+- `AUD-001` (completo en version documental/operativa v0; implementacion no mutante `AUDITOR-V0-001` aceptada; JSON reactivado; `REPORT_LAYER` local y compatibilidad con `DO_CHECK_REPORT` definidas; suite ejecutable completa encuadrada en `AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md`; parser real acotado en `AUD-001_Ficha_Alcance_Parser_Real.md`; `R4-FORMAL-AUD-001` construido localmente; `GAMMA-FORMAL-AUD-001` construido localmente; `Gamma_1` probado por `VAL-030`, `VAL-031` y `GAMMA-EXT-AO-001`)
+- `AO-001` (expediente preparatorio abierto para Algebra Operacional; `AO-MARCO-001`, `GAMMA-EXT-AO-001`, `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001` y `AO-PPI-BRIDGE-001` aceptados localmente; sigue abierto para formalizacion posterior y pruebas globales no resueltas)
 
 ## Automatizacion
 

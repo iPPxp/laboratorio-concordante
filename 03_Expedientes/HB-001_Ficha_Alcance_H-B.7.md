@@ -1,6 +1,6 @@
 # HB-001 - Ficha de alcance H-B.7
 
-Estatus: ficha de alcance provisional.
+Estatus: ficha de alcance historica congelada.
 
 ID: `ALC-HB7-001`.
 
@@ -64,4 +64,10 @@ H-B.7 = hipotesis activa de Nivel B con alcance local minimo; contenido sustanti
 
 ## Veredicto
 
-`H-B.7` queda con alcance local minimo. Sigue siendo hipotesis activa solo como etiqueta de deuda viva; no queda habilitada como premisa sustantiva.
+`H-B.7` queda con alcance local minimo.
+
+## Resultado posterior
+
+Por `D-2026-07-03-013`, `H-B.7` deja de figurar como hipotesis activa y queda congelada como brote alterno y original historico.
+
+No queda habilitada como premisa sustantiva.

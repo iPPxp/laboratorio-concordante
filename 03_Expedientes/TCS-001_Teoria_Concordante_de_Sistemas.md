@@ -153,6 +153,16 @@ La teoria no se deduce automaticamente de estas capas, pero puede formalizarlas.
 - casos de prueba no triviales fuera del propio Laboratorio;
 - criterios para distinguir teoria, metodologia y plataforma.
 
+## Avance provisional 2026-07-03
+
+El paquete minimo aceptado por `D-2026-07-03-019` atiende el primer nivel de esta deuda:
+
+- `TCS-001_Definiciones_Minimas.md`: `TCS-DEF-MIN-001`.
+- `TCS-001_Tipologia_Fallos_Concordancia.md`: `TCS-FAIL-TYP-001`.
+- `TCS-001_Casos_Prueba.md`: `TCS-CASE-BAT-001`.
+
+El paquete no canoniza `Concordance`, no crea Nivel C y no convierte `TCS-001` en teoria completa.
+
 ## Riesgos conceptuales
 
 - Convertir `Concordance` en sinonimo decorativo de alineacion.
@@ -163,13 +173,14 @@ La teoria no se deduce automaticamente de estas capas, pero puede formalizarlas.
 
 ## Siguiente accion recomendada
 
-Redactar una auditoria inicial de `TCS-001` contra:
+Extender `TCS-001` desde el paquete minimo aceptado hacia:
 
-- `01_Canon/M-000_Reglas_Fundamentales.md`;
-- `01_Canon/M-001_Auditoria_Arquitectonica.md`;
-- `02_Documentos/C-001_Especificacion_Tecnica_Auditor.md`;
-- `02_Documentos/C-002_RFC_Operativo_Auditor_v0.md`.
+- metricas o semantica formal de concordancia;
+- casos externos;
+- conflicto entre autoridades validas;
+- relacion con dominios regulados;
+- distincion entre teoria, metodologia y plataforma.
 
 `VISION_PAPER_PROPUESTA.md` y `VISION_PAPER_FINAL_REFERENCIAS.md` quedan inactivos por `D-2026-07-02-031` y no deben usarse como fuente activa para esta auditoria.
 
-La auditoria debe decidir si `TCS-001` queda como propuesta teorica abierta, si requiere division en varios expedientes o si debe coordinarse con `P-PI` sin depender de vision papers.
+`TCS-001` queda como propuesta teorica abierta y provisional; cualquier promocion futura requiere auditoria y decision separada.

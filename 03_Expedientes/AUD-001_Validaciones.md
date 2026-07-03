@@ -1537,7 +1537,7 @@ Simulacion usada: `AUD-SIM-025`.
 
 ## Pregunta
 
-El Auditor bloquea una afirmacion que usa `Gamma` como teorema sin definicion local?
+El Auditor bloquea una afirmacion que usa `Gamma` como teorema sin definicion local suficiente?
 
 Respuesta: si, provisionalmente.
 
@@ -1546,7 +1546,7 @@ Respuesta: si, provisionalmente.
 | Criterio | Resultado | Evidencia |
 | --- | --- | --- |
 | Mapea la afirmacion | pasa | texto, estatus y fuente ausente son legibles |
-| Detecta dependencia faltante | pasa | no existe construccion local de `Gamma` |
+| Detecta dependencia faltante o insuficiente | pasa | no existe construccion local suficiente de `Gamma` para estatus de teorema |
 | Rechaza estatus de teorema | pasa | la afirmacion baja a hipotesis/deuda |
 | Bloquea decision positiva | pasa | no puede aprobar fundamento formal |
 | Prohibe transformacion | pasa | `transformacion_permitida = false` |
@@ -1556,7 +1556,7 @@ Respuesta: si, provisionalmente.
 
 ```text
 Gamma invocada como teorema
--> dependencia_no_registrada
+-> dependencia_no_registrada_o_insuficiente
 -> tau bloqueo_temprano/escalamiento
 -> D bloquear/escalar
 -> Tr_ejecucion prohibida
@@ -1570,7 +1570,11 @@ El Auditor puede nombrar una hipotesis futura sin promoverla a resultado formal.
 
 ## Limite de la validacion
 
-No evalua una definicion futura de `Gamma`; solo cubre su ausencia local actual dentro del expediente.
+La lectura original cubria la ausencia local de `Gamma`.
+
+Lectura posterior: `GAMMA-DEF-001` aporta una definicion local provisional y `GAMMA-FORMAL-AUD-001` aporta despues construccion formal local de expediente. Por tanto `VAL-025` sigue vigente para bloquear usos de `Gamma` como teorema global, Canon, resultado formal fuera de alcance local o permiso de transformacion.
+
+Revision posterior a `VAL-030`: `VAL-025` queda como control negativo de estatus excesivo. La validacion positiva de `Gamma_1` no revoca esta validacion; solo distingue entre una generalizacion candidata provisional permitida y una invocacion formal indebida bloqueada.
 
 ## VAL-026 - Validacion de separacion de niveles contra AUD-SIM-026
 
@@ -1754,3 +1758,128 @@ La validacion no concede autoridad por el nombre RFC; la autoridad viene de Nive
 ## Limite de la validacion
 
 No valida suite ejecutable completa ni conformidad de herramientas futuras.
+
+## VAL-030 - Validacion positiva de Gamma_1 contra AUD-SIM-030
+
+Estatus: validado provisionalmente.
+
+Objeto evaluado: `GAMMA-R1-CASE-001`.
+
+Simulacion usada: `AUD-SIM-030`.
+
+## Pregunta
+
+`Gamma_1(E, C) = G` puede producir una generalizacion candidata provisional cuando la evidencia, el contexto, los invariantes, las restricciones y el estatus estan declarados?
+
+Respuesta: si, provisionalmente.
+
+## Checklist
+
+| Criterio | Resultado | Evidencia |
+| --- | --- | --- |
+| Declara evidencia local | pasa | `E` usa `AUD-001_R4-CANDIDATA.md` y su ronda no automata |
+| Declara estatus de la evidencia | pasa | `R4-CANDIDATA` queda como hipotesis operativa de expediente |
+| Declara contexto | pasa | procedimientos auditables con reportes, decision y transformacion |
+| Declara invariantes | pasa | decision fundada, reportes, terminacion, permiso acotado, evidencia y verificacion |
+| Declara restricciones | pasa | no generaliza automatas completos ni promueve R4 formal |
+| Conserva estatus provisional | pasa | salida `G_R4_PROC-CAND-001` queda como hipotesis operativa |
+| No aumenta permisos | pasa | `permiso_material = ninguno` y `Tr_ejecucion = no_aplica` |
+| Conserva deudas | pasa | R4 formal, `Gamma` formal y pruebas fuera de `AUD-001` siguen abiertas |
+
+## Trazo validado
+
+```text
+R4-CANDIDATA + ronda no automata
+-> Gamma_1(E, C)
+-> G_R4_PROC-CAND-001
+-> D registrar_generalizacion_candidata
+-> Tr_ejecucion no_aplica
+```
+
+## Resultado
+
+`GAMMA-DEF-001` queda validada contra un primer caso positivo acotado.
+
+La validacion demuestra que `Gamma_1` no es un nombre vacio dentro de `AUD-001`: puede operar como generalizacion controlada cuando sus entradas y limites estan declarados.
+
+## Revision de AUD-SIM-025
+
+`AUD-SIM-025` permanece vigente como control negativo.
+
+La diferencia queda asi:
+
+| Caso | Salida |
+| --- | --- |
+| `AUD-SIM-025` | bloquea `Gamma` como teorema, Canon o generalizacion formal |
+| `AUD-SIM-030` | acepta `Gamma_1` como generalizacion candidata provisional |
+
+## Relacion con R4 formal
+
+La validacion permite usar `Gamma_1` para extraer `G_R4_PROC-CAND-001` desde `R4-CANDIDATA`.
+
+No valida R4 formal. R4 formal requiere construccion propia, premisas generales, dominio, condiciones de satisfaccion, condiciones de violacion, prueba o validacion independiente y decision de estatus.
+
+## Limite de la validacion
+
+No construye `Gamma` formal, no prueba R4 formal, no modifica `C-001` ni `C-002`, no promueve `REPORT_LAYER`, no habilita transformaciones materiales y no exporta autoridad fuera de `AUD-001`.
+
+Lectura posterior: `D-2026-07-03-010` construye R4 formal local y `Gamma` formal local despues de esta validacion. `VAL-030` conserva su valor como primer caso positivo acotado de `Gamma_1`, no como cierre por si mismo.
+
+## VAL-031 - Segunda prueba de Gamma_1 contra REPORT_LAYER / DO_CHECK_REPORT
+
+Estatus: validado provisionalmente.
+
+Objeto evaluado: `GAMMA-R1-CASE-002`.
+
+Simulacion usada: `AUD-SIM-031`.
+
+## Pregunta
+
+`Gamma_1(E, C)` puede generalizar la compatibilidad `REPORT_LAYER` / `DO_CHECK_REPORT` hacia un criterio formal local de lectura no mutante?
+
+Respuesta: si, provisionalmente.
+
+## Checklist
+
+| Criterio | Resultado | Evidencia |
+| --- | --- | --- |
+| Declara evidencia local | pasa | `AUD-001_Compatibilidad_REPORT_LAYER_DO_CHECK.md`, `AUD-SIM-028`, `VAL-028` y `C-002` |
+| Declara contexto | pasa | lectura no mutante de reportes externos o auxiliares |
+| Declara testigo | pasa | proyeccion, invariantes, restricciones, deudas y salida segura |
+| Conserva recomendacion como no decision | pasa | `recomendacion_no_es_decision` |
+| Conserva permiso falso | pasa | `transformacion_permitida_permanece_false` |
+| No absorbe contrato | pasa | `DO_CHECK_REPORT` no entra a contrato `AUD-001` |
+| No promueve `REPORT_LAYER` | pasa | no Nivel C, no documento oficial |
+| Produce salida formal local | pasa | `G_REPORT_READ-FORMAL-001` |
+
+## Trazo validado
+
+```text
+REPORT_LAYER / DO_CHECK_REPORT
+-> Gamma_1(E, C, W)
+-> G_REPORT_READ-FORMAL-001
+-> D registrar_criterio_formal_local
+-> Tr_ejecucion no_aplica
+```
+
+## Resultado
+
+`Gamma_1` queda probado en un segundo caso positivo y fuera de `R4-CANDIDATA`.
+
+La salida `G_REPORT_READ-FORMAL-001` puede usarse como criterio formal local para lectura no mutante de reportes auxiliares compatibles.
+
+## Relacion con Gamma formal
+
+`VAL-031` satisface las condiciones de `GAMMA-FORMAL-AUD-001`:
+
+- fuentes locales;
+- contexto declarado;
+- testigo explicito;
+- invariantes no vacios;
+- restricciones de nivel;
+- salida de seguridad;
+- permiso material nulo.
+
+## Limite de la validacion
+
+No implementa adaptador ejecutable nuevo, no promueve `REPORT_LAYER`, no integra `DO_CHECK_REPORT` al contrato del Auditor y no exporta autoridad fuera de `AUD-001`.

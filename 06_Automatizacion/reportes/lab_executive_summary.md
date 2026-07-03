@@ -1,54 +1,62 @@
 # LAB_EXECUTIVE_SUMMARY
 
-report_id: DO-LAB-SUMMARY-20260703-102934
+report_id: DO-LAB-SUMMARY-20260703-135812
 expediente: AUT-001
 algoritmo: DO-LAB-SUMMARY-001
-resultado: advertencia
-recomendacion: mantener_cierre_operativo
+resultado: atencion_requerida
+recomendacion: revisar_riesgos_altos_sin_transformar
 transformacion_permitida: false
 
 ## Lectura ejecutiva
 
-- Cierre operativo conservado con deuda documental visible.
+- Operativo con riesgos altos activos; no cerrar.
 - corrida unificada: advertencia / mantener_cierre_operativo
-- clasificacion de riesgos: advertencia_clasificada / mantener_cierre_operativo
+- clasificacion de riesgos: riesgo_controlado / revisar_riesgos_activos_sin_transformar
 
 ## Estado operativo
 
-- frente activo: `P-PI.0` / `P-PI.1` quedan cerrados como frentes de trabajo por `D-2026-07-03-002`; `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001` quedan como evidencia ejecutada; Confluencia y Equivalencia de proyecciones siguen abiertas como problemas de fondo. `AUD-001` queda completo en version documental/operativa v0 y ya produjo `C-002`; permanece abierto solo para rutas posteriores no cubiertas; la suite ejecutable completa queda encuadrada en `AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md`, la ruta de `parser real` queda acotada en `AUD-001_Ficha_Alcance_Parser_Real.md` y la ruta de `R4` formal queda acotada en `AUD-001_Ficha_Alcance_R4_Formal.md`. `H-B.6` y `H-B.7` tienen alcance local minimo aceptado, pero sin contenido sustantivo materializado. `PSI-001` queda abierto con matriz de patrones no clinicos y compuerta de frontera conceptual no clinica aceptadas, sin cierre, promocion ni apertura de psicopatologia; `TCS-001` queda abierto como expediente teorico provisional; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `B-001.5` queda congelado.
-- ultima decision: `PSI-001_Decision_Estatus_Compuerta_Frontera_Psicopatologia_Conceptual_No_Clinica.md` (`D-2026-07-03-003`): `PSI-FRON-PSICOPAT-001` queda aceptada como compuerta provisional de frontera conceptual no clinica dentro de `PSI-001`; no abre subfrente psicopatologico ni habilita uso clinico.
-- proximo objetivo: Acotar la ruta de `Gamma` del Auditor dentro de `AUD-001`; cualquier paso posterior a `Gamma` requiere decision explicita.
+- frente activo: `AO-001` queda como frente operativo principal para profundizar `AO-PPI-BRIDGE-001`, formalizacion posterior de Documento 04 y relacion eventual con `REPORT_LAYER`.
+- ultima decision: `TCS-001_Decision_Estatus_Paquete_Minimo.md` (`D-2026-07-03-019`): acepta `TCS-DEF-MIN-001`, `TCS-FAIL-TYP-001` y `TCS-CASE-BAT-001` como paquete teorico minimo provisional; no canoniza `Concordance`, no crea Nivel C y no usa vision papers como fuente activa.
+- proximo objetivo: Profundizar `AO-PPI-BRIDGE-001` hacia pruebas de Confluencia global y Equivalencia global de proyecciones sin reabrir `P-PI.0` / `P-PI.1`.
 
 ## Riesgos clasificados
 
-- riesgo_activo: 0
-- advertencia_controlada: 0
-- deuda_documental: 11
-- advertencia_heredada: 0
-- observacion: 0
+- riesgo_activo: 7
+- advertencia_controlada: 16
+- deuda_documental: 107
+- advertencia_heredada: 59
+- observacion: 61
 
 ## Contexto de riesgos
 
-- riesgo_real: 11
+- bitacora_historica: 9
+- control_auditoria: 1
+- decision_registrada: 21
+- guardrail: 38
+- meta_check: 12
+- riesgo_real: 169
 
 ## Severidad
 
-- alta: 0
-- media: 11
-- baja: 0
+- alta: 3
+- media: 116
+- baja: 131
 
 ## Riesgos activos principales
 
-- Sin riesgos activos principales.
+- [alta] 02_Documentos/00_Naturaleza.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: Un expediente puede proponer. Una auditoria puede evaluar. Una decision puede aceptar, cerrar, congelar, rechazar o incorporar. Un documento oficial estabiliza contenido. El Canon limita como puede cambiar todo lo anterior.
+- [alta] 02_Documentos/C-002_RFC_Operativo_Auditor_v0.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - modificar Canon por inferencia;
+- [media] 02_Documentos/C-002_RFC_Operativo_Auditor_v0.md - historial_como_autoridad_posible: - `AUD-T07`: Registro Historico como autoridad directa;
+- [media] 03_Expedientes/AUT-001_Mapa_Fase_Media_AAU.md - historial_como_autoridad_posible: - `MED-HISTORIAL`: Registro Historico o `SRC-*` usado como autoridad vigente.
+- [media] 03_Expedientes/AUT-001_Validacion_Cierre_Riesgos.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - Ningun tratamiento modifica Canon, documentos oficiales o expedientes cerrados.
 
 ## Automatizacion
 
-- DO-CHECK-MIN-001: advertencia (11 hallazgos)
-- DO-CHECK-MED-001: ok (0 hallazgos)
+- DO-CHECK-MIN-001: advertencia (139 hallazgos)
+- DO-CHECK-MED-001: advertencia (236 hallazgos)
 - DO-STATE-BOARD-001: ok (0 hallazgos)
-- DO-LAB-CONTINUITY-001: ok (0 hallazgos)
-- DO-LAB-RISK-001: advertencia_clasificada (11 hallazgos)
-- DO-LAB-SUMMARY-001: advertencia (0 hallazgos)
+- DO-LAB-CONTINUITY-001: advertencia (236 hallazgos)
+- DO-LAB-RISK-001: riesgo_controlado (250 hallazgos)
 
 ## Siguientes acciones
 

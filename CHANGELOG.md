@@ -405,3 +405,20 @@
 
 - Creadas `HB-001_Ficha_Alcance_H-B.6.md` y `HB-001_Ficha_Alcance_H-B.7.md`: ambas precisan alcance local minimo sin contenido sustantivo materializado.
 - Creada `HB-001_Decision_Fichas_Alcance_H-B.md` y registrada `D-2026-07-02-030`: `H-B.6` y `H-B.7` siguen activas solo como deuda viva acotada.
+
+## 2026-07-03
+
+- Creado `DOCS-001` para consolidar documentos oficiales 00-04 desde fuentes previas.
+- Reemplazadas las versiones semilla de `00_Naturaleza.md`, `01_Canon.md`, `02_Fundamentos_Matematicos.md` y `03_Ontologia.md` por versiones consolidadas.
+- Actualizado `04_Algebra_Operacional.md` como version inicial consolidada desde `AO-001`, AAU/R4, Gamma y fuentes historicas de mutaciones/modelos.
+- Creada `DOCS-001_Auditoria_Consolidacion_Documentos_00-04.md` y decision `D-2026-07-03-011`.
+- Actualizados `CURRENT_STATE.md`, `ESTADO_ACTUAL.md`, `README.md` y `DECISIONES.md` para retirar la deuda de consolidacion documental y dejar `AO-CASE` como siguiente prueba del Documento 04.
+
+- Creado `AUT-002` como mantenimiento tecnico minimo para referencias historicas transferidas.
+- Refinados `DO-CHECK-MIN-001` y `DO-CHECK-MED-001` para distinguir `referencia_historica_transferida` y evitar falsos bloqueos en secciones de prueba, simulacion, restriccion o "No cubre".
+- Registrada decision `D-2026-07-03-015`: no se restaura `PSI-001*`; queda deuda de decision puente si se requiere contenido psicologico externo.
+- Creado `AO-001_Casos_Prueba_Algebra_Operacional.md` con `AO-CASE-001` a `AO-CASE-006`, auditado y aceptado por `D-2026-07-03-016`.
+- Creado `AO-001_Criterios_Uso_R4_Gamma_Fuera_AUD.md`, auditado y aceptado por `D-2026-07-03-017`.
+- Creado `AO-001_Puente_Confluencia_Equivalencia.md` con `AO-PPI-EQ-001` y `AO-PPI-CONF-001`, auditado y aceptado por `D-2026-07-03-018`.
+- Creado paquete minimo `TCS-001` con definiciones, tipologia de fallos y casos de prueba; auditado y aceptado por `D-2026-07-03-019`.
+- Actualizados `AO-001.md`, `TCS-001_Teoria_Concordante_de_Sistemas.md`, `CURRENT_STATE.md`, `ESTADO_ACTUAL.md`, `README.md` y `DECISIONES.md` para registrar el avance local y dejar abiertas Confluencia global, Equivalencia global, promocion/exportacion de R4/Gamma, formalizacion posterior de Documento 04 y maduracion de `TCS-001`.
