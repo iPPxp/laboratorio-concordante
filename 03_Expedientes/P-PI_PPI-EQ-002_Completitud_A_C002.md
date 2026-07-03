@@ -142,7 +142,7 @@ En ese contexto, el dictamen responsable es equivalencia no demostrada.
 
 ## Deudas conservadas
 
-- Ejecutar `PPI-CONF-001` usando `PPI-EQ-001` y `PPI-EQ-002` como relaciones contextuales disponibles.
+- `PPI-CONF-001` queda cumplido por `P-PI_PPI-CONF-001_Rutas_Estado_Operativo.md`; los tres casos siguen siendo locales y provisionales.
 - No usar `C-002` como permiso de transformacion.
 - No promover `REPORT_LAYER` a Nivel C sin ruta separada.
 - Mantener R4 formal y `Gamma` como problemas abiertos.
@@ -153,4 +153,4 @@ En ese contexto, el dictamen responsable es equivalencia no demostrada.
 
 No cierra Equivalencia de proyecciones como problema general.
 
-Habilita preparar `PPI-CONF-001`.
+Queda usado junto con `PPI-EQ-001` como insumo local de `PPI-CONF-001`.

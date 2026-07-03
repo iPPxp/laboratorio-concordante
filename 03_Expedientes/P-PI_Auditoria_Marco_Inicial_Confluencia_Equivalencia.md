@@ -36,7 +36,7 @@ La auditoria no demuestra Confluencia ni Equivalencia de proyecciones.
 | Confluencia sigue abierta | problema abierto |
 | `P-PI.0` se asigna localmente a equivalencia de proyecciones | decision operativa provisional |
 | `P-PI.1` se asigna localmente a confluencia | decision operativa provisional |
-| Los casos `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001` no estaban ejecutados al momento de esta auditoria | deuda conceptual parcialmente atendida despues por `PPI-EQ-001` y `PPI-EQ-002` |
+| Los casos `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001` no estaban ejecutados al momento de esta auditoria | deuda conceptual atendida despues por los tres casos locales |
 
 ## Hallazgos
 
@@ -60,7 +60,7 @@ La aceptacion solo habilita trabajo acotado: casos de proyeccion y confluencia l
 
 ## Deudas conceptuales
 
-- Ejecutar `PPI-CONF-001`; `PPI-EQ-001` y `PPI-EQ-002` quedan ejecutados provisionalmente despues de esta auditoria.
+- Casos iniciales ejecutados despues de esta auditoria: `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001`; falta decision de estatus si se quiere pausar, cerrar o continuar el frente.
 - Formalizar propiedades de `~_C` solo despues de casos locales.
 - No trasladar definiciones al Documento 02 sin auditoria y decision separada.
 - Mantener inactivos los vision papers como fuentes de autoridad.

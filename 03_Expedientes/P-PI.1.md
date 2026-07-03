@@ -32,11 +32,13 @@ Casos de equivalencia disponibles:
 - `03_Expedientes/P-PI_PPI-EQ-001_REPORT_LAYER_DO_CHECK.md`
 - `03_Expedientes/P-PI_PPI-EQ-002_Completitud_A_C002.md`
 
+Caso de confluencia asociado: `03_Expedientes/P-PI_PPI-CONF-001_Rutas_Estado_Operativo.md`.
+
 ## Ruta operativa vigente
 
 El expediente queda activo de forma acotada para trabajar Confluencia.
 
-La accion local inmediata es ejecutar `PPI-CONF-001` como caso de confluencia local derivado de relaciones de equivalencia de proyecciones ya declaradas.
+La accion local inmediata es preparar una decision de estatus acotado de `P-PI.0` / `P-PI.1` tras los casos locales ya ejecutados.
 
 Esta reactivacion no cierra el expediente, no resuelve Confluencia y no resuelve Equivalencia de proyecciones.
 
@@ -46,4 +48,4 @@ Esta reactivacion no cierra el expediente, no resuelve Confluencia y no resuelve
 - Mantener Confluencia como problema abierto hasta tratamiento propio.
 - Mantener Equivalencia de proyecciones como problema abierto hasta tratamiento propio.
 - No cerrar, congelar ni absorber este expediente sin decision separada.
-- Ejecutar `PPI-CONF-001` usando `PPI-EQ-001` y `PPI-EQ-002` solo como relaciones locales `~_C`.
+- Usar `PPI-CONF-001` solo como confluencia local de continuidad operativa; no promocionarlo como confluencia formal global.

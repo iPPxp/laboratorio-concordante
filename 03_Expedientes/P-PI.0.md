@@ -35,7 +35,7 @@ Caso ejecutado asociado: `03_Expedientes/P-PI_PPI-EQ-002_Completitud_A_C002.md`.
 
 El expediente queda activo de forma acotada para trabajar Equivalencia de proyecciones.
 
-La accion local inmediata es preparar `PPI-CONF-001` desde `P-PI.1`, usando `PPI-EQ-001` y `PPI-EQ-002` como relaciones contextuales ya declaradas.
+La accion local inmediata es preparar una decision de estatus acotado de `P-PI.0` / `P-PI.1` tras los casos `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001`.
 
 Esta reactivacion no cierra el expediente, no resuelve Confluencia y no resuelve Equivalencia de proyecciones.
 
@@ -46,3 +46,4 @@ Esta reactivacion no cierra el expediente, no resuelve Confluencia y no resuelve
 - Mantener Equivalencia de proyecciones como problema abierto hasta tratamiento propio.
 - No cerrar, congelar ni absorber este expediente sin decision separada.
 - Usar `PPI-EQ-001` y `PPI-EQ-002` solo como casos locales de equivalencia bajo contexto; no promocionarlos como cierre general del problema.
+- No tratar `PPI-CONF-001` como cierre general de Confluencia.

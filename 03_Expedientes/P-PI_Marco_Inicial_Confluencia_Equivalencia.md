@@ -180,7 +180,7 @@ Estatus: ejecutado provisionalmente en `P-PI_PPI-EQ-002_Completitud_A_C002.md`.
 
 Caso candidato para comparar dos rutas validas que actualizan estado del proyecto y verificar si conservan los mismos observables criticos.
 
-Estatus: caso pendiente, no ejecutado en este documento.
+Estatus: ejecutado provisionalmente en `P-PI_PPI-CONF-001_Rutas_Estado_Operativo.md`.
 
 ## Criterios de avance
 
@@ -205,7 +205,7 @@ Un avance posterior en `P-PI.1` debe producir al menos:
 - Definir formalmente que tipos de objeto pueden ser `S`.
 - Definir si `~_C` debe ser reflexiva, simetrica o transitiva en cada contexto.
 - Distinguir equivalencia operacional, equivalencia documental y equivalencia matematica.
-- Crear caso ejecutado para `PPI-CONF-001`; `PPI-EQ-001` y `PPI-EQ-002` quedan ejecutados provisionalmente.
+- Los casos iniciales `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001` quedan ejecutados provisionalmente; faltan formalizaciones posteriores si se decide continuar.
 - Decidir si este marco debe permanecer local o preparar una futura seccion de `02_Fundamentos_Matematicos.md`.
 
 ## Veredicto
