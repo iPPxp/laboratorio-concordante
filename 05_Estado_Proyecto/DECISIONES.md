@@ -1200,3 +1200,59 @@ No demuestra, refuta, desarrolla ni diferencia semanticamente `H-B.6` o `H-B.7`;
 ## Consecuencia
 
 La deuda pendiente deja de ser precisar alcance minimo y pasa a ser buscar fuente local sustantiva o decidir congelamiento, absorcion, cierre o apertura de expediente propio.
+
+## D-2026-07-02-031 - Desactivacion de vision papers
+
+Estatus: decision operativa de prioridad.
+
+Fecha: 2026-07-02.
+
+## Decision
+
+Se desactivan `VISION_PAPER_PROPUESTA.md` y `VISION_PAPER_FINAL_REFERENCIAS.md` hasta nuevo aviso.
+
+Documento base: `05_Estado_Proyecto/DECISION_Desactivacion_Vision_Papers.md`.
+
+## Alcance
+
+La decision conserva ambos archivos como borradores editoriales locales, pero los retira de autoridad, agenda y ruta operativa vigente.
+
+## No cubre
+
+No elimina los archivos, no los publica, no los promueve a documento oficial, no los usa como fuente para `TCS-001`, `P-PI`, `R4`, `Gamma` o `REPORT_LAYER`, y no modifica Canon ni documentos oficiales.
+
+## Consecuencia
+
+El avance inmediato se traslada a frentes sustantivos, especialmente `P-PI.0` / `P-PI.1`.
+
+## D-2026-07-02-032 - Reactivacion matematica acotada de P-PI
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-02.
+
+## Decision
+
+Se reactiva `P-PI.0` / `P-PI.1` como frente matematico acotado.
+
+Documento base: `03_Expedientes/P-PI_Decision_Reactivacion_Frente_Matematico.md`.
+
+Marco aceptado: `03_Expedientes/P-PI_Marco_Inicial_Confluencia_Equivalencia.md`.
+
+Auditoria: `03_Expedientes/P-PI_Auditoria_Marco_Inicial_Confluencia_Equivalencia.md`.
+
+## Alcance
+
+`P-PI.0` queda activo acotado para Equivalencia de proyecciones.
+
+`P-PI.1` queda activo acotado para Confluencia.
+
+`PPI-MARCO-CORE-001` queda aceptado como marco provisional de expediente.
+
+## No cubre
+
+No cierra Confluencia, no cierra Equivalencia de proyecciones, no modifica Canon ni documentos oficiales, no reactiva vision papers, no usa historial como autoridad directa y no promueve el marco al Documento 02.
+
+## Consecuencia
+
+El siguiente objetivo es ejecutar `PPI-EQ-001` como primer caso de Equivalencia de proyecciones y preparar `PPI-CONF-001` solo despues de declarar una relacion `~_C`.

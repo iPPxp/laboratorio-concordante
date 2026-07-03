@@ -112,18 +112,18 @@ Contiene herramientas ejecutables no mutantes y sus reportes conservados. Su fun
 
 Estado operativo resumido:
 
-- Decision operativa reciente: `AUT-001_Decision_Cierre_Operativo_Completo.md`.
+- Decision operativa reciente: `P-PI_Decision_Reactivacion_Frente_Matematico.md`.
 - Decisiones de estabilizacion recientes: `D-2026-07-02-020` a `D-2026-07-02-029`.
 - Ultimo expediente cerrado: `AUT-001`; ultimo expediente tecnico cerrado: `AUT-001`.
 - Ultima decision arquitectonica: `C-002_RFC_Operativo_Auditor_v0.md` promovido como RFC operativo oficial del Auditor v0; complementa `C-001`.
-- Ultima decision operativa: `AUT-001_Decision_Cierre_Operativo_Completo.md` (`D-2026-07-02-029`) cierra operativamente `AUT-001` tras ejecucion directa local de `lab_run.py` en alcance clave.
+- Ultima decision operativa: `P-PI_Decision_Reactivacion_Frente_Matematico.md` (`D-2026-07-02-032`) reactiva `P-PI.0` para Equivalencia de proyecciones y `P-PI.1` para Confluencia; `DECISION_Desactivacion_Vision_Papers.md` (`D-2026-07-02-031`) desactiva ambos vision papers.
 - Propuesta provisional promovida: `DO-PROP-001` absorbida por `C-001`.
 - Algoritmo provisional activo: `DO-CHECK-001`; implementaciones activas: `DO-CHECK-MIN-001` en `06_Automatizacion/do_check_min.py`, `DO-CHECK-MED-001` en `06_Automatizacion/do_check_med.py`, `DO-STATE-BOARD-001` en `06_Automatizacion/lab_status_board.py`, `DO-LAB-CONTINUITY-001` en `06_Automatizacion/lab_continuity_report.py`, `DO-LAB-RISK-001` en `06_Automatizacion/lab_risk_classifier.py`, `DO-LAB-SUMMARY-001` en `06_Automatizacion/lab_executive_summary.py` y `DO-LAB-RUN-001` en `06_Automatizacion/lab_run.py`.
 - Infraestructura `AUT-001` conservada: `AUT-001_Refinamiento_DO-LAB-RISK.md`, `AUT-001_Decision_Cierre_Tecnico_Provisional.md` y `AUT-001_Decision_Cierre_Operativo_Completo.md`; mapa PSI: `PSI-001_Mapa_Continuidad_Conceptual.md`; casos PSI: `PSI-001_Casos_Transformacion_No_Clinicos.md`; matriz PSI: `PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md`; auditoria matriz PSI: `PSI-001_Auditoria_Matriz_Patrones_Transformacion_No_Clinica.md`.
 - Documentos oficiales de Nivel C: `C-001_Especificacion_Tecnica_Auditor.md` y `C-002_RFC_Operativo_Auditor_v0.md`.
 - Especificacion candidata promovida: `SPEC-AUD-001_Candidata` en `03_Expedientes`.
 - Modo operativo del Auditor: mixto, segun `MODO-AUD-001`.
-- Proximo objetivo: elegir la ruta posterior a `C-002`: implementacion no mutante conforme al RFC, formalizacion de R4/Gamma, promocion futura de `REPORT_LAYER` o cierre/pausa operativa de `AUD-001`. `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa; `P-PI.0` y `P-PI.1` quedan en pausa operativa; `B-001.5` queda congelado.
+- Proximo objetivo: ejecutar `PPI-EQ-001` como primer caso de Equivalencia de proyecciones dentro de `P-PI.0`. `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa; `P-PI.0` y `P-PI.1` quedan activos de forma acotada; `B-001.5` queda congelado; los vision papers quedan inactivos.
 - No volver a discutir sin reapertura explicita: `EF-001`, `CP-001`, Procedimiento, Auditoria.
 
 Documentos declarados como completos en el punto de partida:
@@ -139,8 +139,8 @@ Expedientes abiertos relevantes:
 
 - `HXI-001` (pausa operativa; reporte de consistencia aceptado sin admision)
 - `PSI-001` (abierto; matriz de patrones no clinicos aceptada)
-- `P-PI.0` (pausa operativa)
-- `P-PI.1` (pausa operativa)
+- `P-PI.0` (activo acotado; Equivalencia de proyecciones)
+- `P-PI.1` (activo acotado; Confluencia)
 - `AUD-001` (completo en version documental/operativa v0; produjo `C-002`; abierto solo para rutas posteriores)
 
 Hipotesis activas iniciales:

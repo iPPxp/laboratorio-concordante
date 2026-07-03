@@ -2,7 +2,7 @@
 
 Nombre de archivo portable: `P-PI.1.md`.
 
-Estatus: abierto en pausa operativa por `RUTA-PPI-001`.
+Estatus: activo acotado por `D-2026-07-02-032`.
 
 ## Proposito
 
@@ -23,11 +23,22 @@ Decision de estatus asociada: `03_Expedientes/P-PI_Decision_Estatus_Criterios_Ci
 
 Decision de ruta asociada: `03_Expedientes/P-PI_Decision_Ruta_Operativa.md`.
 
+Decision de reactivacion asociada: `03_Expedientes/P-PI_Decision_Reactivacion_Frente_Matematico.md`.
+
+Marco inicial asociado: `03_Expedientes/P-PI_Marco_Inicial_Confluencia_Equivalencia.md`.
+
 ## Ruta operativa vigente
 
-El expediente permanece abierto en pausa operativa.
+El expediente queda activo de forma acotada para trabajar Confluencia.
 
-No hay accion local inmediata mientras falte material historico registrado o una decision posterior que defina trabajo concreto.
+La accion local inmediata es preparar y ejecutar un caso de confluencia local derivado de relaciones de equivalencia de proyecciones ya declaradas.
 
-La pausa no cierra el expediente, no resuelve Confluencia y no resuelve Equivalencia de proyecciones.
+Esta reactivacion no cierra el expediente, no resuelve Confluencia y no resuelve Equivalencia de proyecciones.
 
+## Deudas abiertas
+
+- Consolidar el proposito desde fuentes historicas o documentos previos registrados localmente.
+- Mantener Confluencia como problema abierto hasta tratamiento propio.
+- Mantener Equivalencia de proyecciones como problema abierto hasta tratamiento propio.
+- No cerrar, congelar ni absorber este expediente sin decision separada.
+- Ejecutar `PPI-CONF-001` solo despues de declarar al menos una relacion `~_C` en `P-PI.0`.

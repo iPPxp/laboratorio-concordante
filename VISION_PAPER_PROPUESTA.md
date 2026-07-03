@@ -6,7 +6,19 @@
 
 Fecha: 2026-07-02
 
-Estatus: propuesta de vision paper institucional. No sustituye Canon, documentos oficiales ni decisiones registradas del Laboratorio.
+Estatus: inactivo hasta nuevo aviso por `D-2026-07-02-031`. Propuesta editorial conservada; no sustituye Canon, documentos oficiales, decisiones registradas ni expedientes activos del Laboratorio.
+
+## Nota de desactivacion
+
+Este archivo queda fuera de la ruta operativa vigente.
+
+Mientras permanezca inactivo:
+
+- no funciona como fuente de autoridad;
+- no fija agenda del Laboratorio;
+- no desplaza expedientes activos;
+- no debe usarse para promocionar `TCS-001`, `P-PI`, `R4`, `Gamma` ni `REPORT_LAYER`;
+- solo puede leerse como borrador editorial historico-local si una decision posterior lo reactiva.
 
 ---
 

@@ -16,6 +16,8 @@ Ultima decision arquitectonica:
 
 Ultima decision operativa:
 
+- `P-PI_Decision_Reactivacion_Frente_Matematico.md` (`D-2026-07-02-032`): `P-PI.0` queda activo acotado para Equivalencia de proyecciones y `P-PI.1` queda activo acotado para Confluencia; `PPI-MARCO-CORE-001` aceptado como marco provisional sin resolver los problemas.
+- `DECISION_Desactivacion_Vision_Papers.md` (`D-2026-07-02-031`): `VISION_PAPER_PROPUESTA.md` y `VISION_PAPER_FINAL_REFERENCIAS.md` quedan inactivos hasta nuevo aviso; no son autoridad ni agenda vigente.
 - `HB-001_Decision_Fichas_Alcance_H-B.md` (`D-2026-07-02-030`): `H-B.6` y `H-B.7` quedan con alcance local minimo aceptado; siguen como deuda viva sin contenido sustantivo materializado.
 - `AUT-001_Decision_Cierre_Operativo_Completo.md` (`D-2026-07-02-029`): `AUT-001` cerrado operativamente tras ejecucion directa local de `lab_run.py` en alcance clave; quedan herramientas conservadas y deuda documental visible.
 - `AUD-001_Decision_Promocion_SPEC-RFC-AUDITOR-V0.md` (`D-2026-07-02-028`): `SPEC-RFC-AUDITOR-V0` promovida a `C-002_RFC_Operativo_Auditor_v0.md`, documento oficial de Nivel C tipo RFC.
@@ -55,7 +57,7 @@ Ultima decision operativa:
 - `RH-002_Decision_Cierre.md`: lote historico de Descargas procesado y cerrado sin modificar Canon ni documentos oficiales.
 - `AUT-001_Decision_Estatus_MVP.md`: automatizacion minima provisional aceptada sin cerrar `AUT-001`.
 - `RH-001` queda cerrado como procesamiento de registro historico.
-- `P-PI.0` / `P-PI.1` permanecen abiertos en pausa operativa por `RUTA-PPI-001`; la compuerta aceptada fue aplicada explicitamente y conserva deudas abiertas.
+- `P-PI.0` / `P-PI.1` quedan reactivados de forma acotada por `D-2026-07-02-032`; Confluencia y Equivalencia de proyecciones siguen abiertas.
 
 Expediente teorico reciente:
 
@@ -89,6 +91,7 @@ Auditoria provisional registrada:
 - `HXI-001_Auditoria_Criterios_Admision_Formal.md`.
 - `HXI-001_Auditoria_Reporte_Consistencia.md`.
 - `AUT-001_Validacion_DO-STATE-BOARD.md`.
+- `P-PI_Auditoria_Marco_Inicial_Confluencia_Equivalencia.md`.
 - `P-PI_Auditoria_Criterios_Cierre.md`.
 - `DO-001_Auditoria_DO-PROP-001.md`.
 - `DO-001_Auditoria_SPEC-AUD-001_NIVEL-C.md`.
@@ -116,6 +119,8 @@ Validacion provisional registrada:
 
 Decision provisional registrada:
 
+- `P-PI_Decision_Reactivacion_Frente_Matematico.md`: reactiva `P-PI.0` / `P-PI.1` de forma acotada para Equivalencia de proyecciones y Confluencia.
+- `DECISION_Desactivacion_Vision_Papers.md`: desactiva ambos vision papers hasta nuevo aviso.
 - `AUD-001_Decision_Promocion_SPEC-RFC-AUDITOR-V0.md`.
 - `AUD-001_Decision_Estatus_Auditor_v0.md`.
 - `AUD-001_Decision_Estatus_REPORT_LAYER_Candidata.md`.
@@ -123,7 +128,7 @@ Decision provisional registrada:
 - `RH-001_Decision_Cierre.md`.
 - `RH-002_Decision_Cierre.md`.
 - `REC-001_Decision_Cierre.md`.
-- `P-PI_Decision_Ruta_Operativa.md`: `P-PI.0` y `P-PI.1` quedan abiertos en pausa operativa; no se cierran, congelan ni absorben.
+- `P-PI_Decision_Ruta_Operativa.md`: decision previa de pausa operativa; superada operativamente por `D-2026-07-02-032` solo para trabajo acotado.
 - `P-PI_Decision_Estatus_Criterios_Cierre.md`.
 - `DO-001_Decision_DO-CHECK-REPORT.md`.
 - `DO-001_Decision_Modo_Operativo_Auditor.md`.
@@ -260,12 +265,12 @@ Especificacion candidata promovida:
 
 Proximo objetivo:
 
-- Elegir siguiente ruta posterior a `C-002`: implementacion no mutante conforme a RFC, formalizacion de R4/Gamma, o cierre/pausa operativa de `AUD-001`.
+- Ejecutar `PPI-EQ-001` como primer caso de Equivalencia de proyecciones dentro de `P-PI.0`, manteniendo `P-PI.1` preparado para Confluencia despues de declarar una relacion `~_C`.
 
 Expediente activo inmediato:
 
-- `AUD-001` queda completo en version documental/operativa v0 y ya produjo `C-002`; permanece abierto solo para rutas posteriores no cubiertas: implementacion, R4 formal, `Gamma`, `REPORT_LAYER` Nivel C o cierre/pausa. `H-B.6` y `H-B.7` tienen alcance local minimo aceptado, pero sin contenido sustantivo materializado. `PSI-001` queda abierto con matriz de patrones no clinicos aceptada, sin cierre ni promocion; `TCS-001` queda abierto como expediente teorico provisional; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `P-PI.0` y `P-PI.1` quedan en pausa operativa; `B-001.5` queda congelado.
-- `P-PI.0` / `P-PI.1`: pausa operativa ratificada por `RUTA-PPI-001`; faltan fuentes historicas o documentos previos que consoliden su proposito; Confluencia y Equivalencia de proyecciones permanecen como problemas abiertos.
+- `P-PI.0` / `P-PI.1` quedan como frente activo acotado: `P-PI.0` para Equivalencia de proyecciones y `P-PI.1` para Confluencia. `AUD-001` queda completo en version documental/operativa v0 y ya produjo `C-002`; permanece abierto solo para rutas posteriores no cubiertas. `H-B.6` y `H-B.7` tienen alcance local minimo aceptado, pero sin contenido sustantivo materializado. `PSI-001` queda abierto con matriz de patrones no clinicos aceptada, sin cierre ni promocion; `TCS-001` queda abierto como expediente teorico provisional; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `B-001.5` queda congelado.
+- Vision papers: `VISION_PAPER_PROPUESTA.md` y `VISION_PAPER_FINAL_REFERENCIAS.md` quedan inactivos hasta nuevo aviso.
 
 NO volver a discutir sin reapertura explicita:
 

@@ -12,7 +12,7 @@ Este archivo es el mapa de entrada del Laboratorio Concordante.
 6. Leer `01_Canon/M-001_Auditoria_Arquitectonica.md`.
 7. Leer solo los documentos o expedientes necesarios para la tarea.
 
-Nota: `HANDOFF.md` y `HANDOFF_PACKAGE.md` estan inactivos hasta nuevo aviso.
+Nota: `HANDOFF.md`, `HANDOFF_PACKAGE.md`, `VISION_PAPER_PROPUESTA.md` y `VISION_PAPER_FINAL_REFERENCIAS.md` estan inactivos hasta nuevo aviso.
 
 ## Zonas del repositorio
 

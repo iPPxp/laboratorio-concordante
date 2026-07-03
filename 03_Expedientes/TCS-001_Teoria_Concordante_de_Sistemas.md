@@ -168,7 +168,8 @@ Redactar una auditoria inicial de `TCS-001` contra:
 - `01_Canon/M-000_Reglas_Fundamentales.md`;
 - `01_Canon/M-001_Auditoria_Arquitectonica.md`;
 - `02_Documentos/C-001_Especificacion_Tecnica_Auditor.md`;
-- `VISION_PAPER_PROPUESTA.md`.
+- `02_Documentos/C-002_RFC_Operativo_Auditor_v0.md`.
 
-La auditoria debe decidir si `TCS-001` queda como propuesta teorica abierta, si requiere division en varios expedientes o si debe transformarse en una seccion formal del vision paper.
+`VISION_PAPER_PROPUESTA.md` y `VISION_PAPER_FINAL_REFERENCIAS.md` quedan inactivos por `D-2026-07-02-031` y no deben usarse como fuente activa para esta auditoria.
 
+La auditoria debe decidir si `TCS-001` queda como propuesta teorica abierta, si requiere division en varios expedientes o si debe coordinarse con `P-PI` sin depender de vision papers.
