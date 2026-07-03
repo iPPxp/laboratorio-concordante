@@ -1,0 +1,42 @@
+{
+  "report_id": "AUDITOR-DO-CHECK-ADAPTER-20260702-203608",
+  "expediente": "AUD-001",
+  "algoritmo": "AUDITOR-DO-CHECK-ADAPTER-001",
+  "modo": "no_mutante",
+  "fuente_report_id": "DO-CHECK-MED-LIVE-20260702-165850",
+  "fuente_algoritmo": "DO-CHECK-MED-001",
+  "resultado_fuente": "ok",
+  "recomendacion_fuente": "aprobar_lectura",
+  "decision_emitida": "no_aplica",
+  "transformacion_permitida": false,
+  "conforme_c002": true,
+  "summary": {
+    "source_findings": 0,
+    "report_items": 1,
+    "adapter_errors": []
+  },
+  "report_items": [
+    {
+      "report_item_id": "AUDITOR-DO-CHECK-ADAPTER-001-DO-CHECK-MED-LIVE-20260702-165850-000",
+      "fuente_report_id": "DO-CHECK-MED-LIVE-20260702-165850",
+      "fuente_algoritmo": "DO-CHECK-MED-001",
+      "operador_abstracto": "calculo",
+      "clase_reporte": "sin_hallazgo_bloqueante",
+      "objeto": "DO_CHECK_REPORT",
+      "resultado": "ok",
+      "tipo_hallazgo": "sin_hallazgo_bloqueante",
+      "ubicacion": "reporte",
+      "descripcion": "DO_CHECK_REPORT sin hallazgos proyectado como evidencia no mutante.",
+      "evidencia": "DO-CHECK-MED-LIVE-20260702-165850",
+      "estatus_afirmacion": "no_clasificado",
+      "dependencias": [],
+      "deudas_generadas": [],
+      "decisiones_permitidas": [
+        "aprobar_lectura",
+        "continuar_sin_transformar"
+      ],
+      "decision_emitida": "no_aplica",
+      "transformacion_permitida": false
+    }
+  ]
+}

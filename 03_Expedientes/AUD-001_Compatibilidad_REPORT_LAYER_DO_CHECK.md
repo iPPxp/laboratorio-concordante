@@ -123,8 +123,10 @@ El puente no permite:
 
 La compatibilidad actual queda limitada a lectura y comparacion.
 
-No hay integracion contractual completa.
+La primera integracion operativa no mutante queda materializada por `AUDITOR-DO-CHECK-ADAPTER-001`.
+
+No hay integracion contractual completa ni absorcion de `DO_CHECK_REPORT` en `OPERATOR_REPORT`.
 
 ## Siguiente paso
 
-Si se busca integracion real, abrir una decision separada para ampliar el contrato de `AUD-001` o crear una especificacion de adaptador.
+Si se busca integracion contractual completa, abrir una decision separada para ampliar el contrato de `AUD-001`.

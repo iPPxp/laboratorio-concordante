@@ -14,6 +14,7 @@ Esta carpeta contiene herramientas no mutantes del Laboratorio Concordante.
 - `lab_executive_summary.py`: resumen ejecutivo automatico no mutante del Laboratorio.
 - `lab_run.py`: comando unico no mutante para corrida local de laboratorio.
 - `auditor_v0.py`: implementacion inicial no mutante del Auditor v0 conforme `C-002`.
+- `auditor_do_check_adapter.py`: adaptador no mutante de `DO_CHECK_REPORT` a `REPORT_ITEM`.
 
 ## Regla de uso
 
@@ -94,10 +95,18 @@ python 06_Automatizacion/auditor_v0.py --format json --case-file 06_Automatizaci
 
 En el Auditor v0, la salida JSON y la carga externa por `--case-file` estan reactivadas en modo no mutante.
 
+Para adaptar `DO_CHECK_REPORT` a `REPORT_ITEM`:
+
+```powershell
+python 06_Automatizacion/auditor_do_check_adapter.py 06_Automatizacion/reportes/do_check_med_repo.json --format md --output 06_Automatizacion/reportes/auditor_do_check_adapter_report.md
+python 06_Automatizacion/auditor_do_check_adapter.py 06_Automatizacion/reportes/do_check_med_repo.json --format json --output 06_Automatizacion/reportes/auditor_do_check_adapter_report.json
+```
+
 Para validar la implementacion:
 
 ```powershell
 python -m unittest 06_Automatizacion/test_auditor_v0.py
+python -m unittest 06_Automatizacion/test_auditor_do_check_adapter.py
 ```
 
 ## Reportes iniciales
@@ -120,6 +129,8 @@ python -m unittest 06_Automatizacion/test_auditor_v0.py
 - `reportes/lab_run_report.json`: corrida unificada en formato estructurado.
 - `reportes/auditor_v0_report.md`: reporte del Auditor v0 no mutante.
 - `reportes/auditor_v0_report.json`: reporte estructurado del Auditor v0 no mutante.
+- `reportes/auditor_do_check_adapter_report.md`: reporte del adaptador `DO_CHECK_REPORT`.
+- `reportes/auditor_do_check_adapter_report.json`: reporte estructurado del adaptador `DO_CHECK_REPORT`.
 - `fixtures/auditor_v0_cases.json`: matriz externa completa del Auditor v0.
 - `fixtures/auditor_v0_case_schema.json`: esquema operativo inicial de casos externos del Auditor v0.
 
