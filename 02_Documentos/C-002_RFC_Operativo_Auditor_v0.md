@@ -6,6 +6,8 @@ Formato: tipo RFC local.
 
 Fecha: 2026-07-02.
 
+Actualizacion: 2026-07-03.
+
 Identificador: `C-002`.
 
 Fuente de promocion: `03_Expedientes/AUD-001_Decision_Promocion_SPEC-RFC-AUDITOR-V0.md`.
@@ -185,6 +187,10 @@ La cuarentena en `C-002` es documental salvo decision operativa posterior.
 
 La compatibilidad con `REPORT_LAYER` es conceptual y no absorbe `DO_CHECK_REPORT` en `AUD-001_Contrato_Reportes.md`.
 
+La implementacion de referencia PUEDE usar un adaptador no mutante para traducir `DO_CHECK_REPORT` a `REPORT_ITEM` operativo.
+
+Ese adaptador NO DEBE emitir `OPERATOR_REPORT`, NO DEBE decidir autoridad, NO DEBE permitir transformacion y NO DEBE convertir recomendaciones en decisiones.
+
 ## 13. Conformidad
 
 Una revision documental es conforme si:
@@ -211,6 +217,19 @@ Con JSON reactivado, esa implementacion PUEDE usar la matriz interna `AUD-T00` a
 
 La salida JSON PUEDE emitirse por `--format json`, pero no autoriza transformaciones, no sustituye decisiones registradas y DEBE conservar `transformacion_permitida = false` salvo decision futura de herramienta mutante.
 
+Los archivos externos de casos PUEDEN declararse contra el esquema operativo `AUDITOR-V0-CASE-SCHEMA-001`.
+
+El esquema DEBE distinguir variantes por `kind` y la implementacion DEBE registrar errores de forma en `schema_errors`.
+
+Un fixture parcial PUEDE ejecutarse para validar clases de entradas, pero NO DEBE declarar `conforme_c002 = true` si omite los casos obligatorios `AUD-T00` a `AUD-T09`.
+
+Una herramienta de referencia conforme DEBE cumplir simultaneamente:
+
+- todos los casos obligatorios presentes;
+- cero `schema_errors`;
+- `transformacion_permitida = false` en reporte global, casos y reportes internos;
+- ninguna recomendacion tratada como decision de autoridad.
+
 Una herramienta mutante futura solo sera conforme si ademas implementa `PERMISO-ACT-001`, evidencia antes/despues, verificacion posterior y manejo de fallo.
 
 ## 14. Matriz minima de pruebas
@@ -229,6 +248,12 @@ La conformidad v0 DEBE cubrir al menos:
 - `AUD-T09`: termino nuevo sin estatus.
 
 La cobertura vigente esta registrada en `AUD-001_Validaciones.md` hasta `VAL-029`.
+
+La matriz externa completa vigente esta en `06_Automatizacion/fixtures/auditor_v0_cases.json`.
+
+El fixture documental parcial vigente esta en `06_Automatizacion/fixtures/auditor_v0_documental_cases.json`.
+
+El esquema operativo vigente esta en `06_Automatizacion/fixtures/auditor_v0_case_schema.json`.
 
 ## 15. Seguridad operacional
 
