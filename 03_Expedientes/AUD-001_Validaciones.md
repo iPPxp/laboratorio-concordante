@@ -1050,7 +1050,7 @@ No cubre todavia:
 
 ## Deudas derivadas
 
-- Definir permiso operativo para reversion material si se implementa herramienta ejecutable.
+- Definir permiso operativo para reversion material si se implementa herramienta mutante o suite ejecutable completa.
 - Definir formato futuro para cuarentena materializada si sale del estatus documental.
 
 ## VAL-017 - Validacion de R4-CANDIDATA contra AUD-SIM-017
@@ -1731,7 +1731,7 @@ Respuesta: si, provisionalmente.
 | Exige auditoria de Nivel C | pasa | `AUD-001_Auditoria_SPEC-RFC-AUDITOR-V0_NIVEL-C.md` |
 | Exige decision de promocion | pasa | `AUD-001_Decision_Promocion_SPEC-RFC-AUDITOR-V0.md` |
 | Declara destino oficial | pasa | `02_Documentos/C-002_RFC_Operativo_Auditor_v0.md` |
-| Conserva limites | pasa | R4 formal, `Gamma`, herramienta ejecutable y `REPORT_LAYER` Nivel C fuera de alcance |
+| Conserva limites | pasa | R4 formal, `Gamma`, suite ejecutable completa y `REPORT_LAYER` Nivel C fuera de alcance |
 | No modifica Canon | pasa | destino en `02_Documentos`, no en `01_Canon` |
 
 ## Trazo validado
@@ -1747,10 +1747,10 @@ completitud v0
 
 ## Resultado
 
-`SPEC-RFC-AUDITOR-V0` queda validada como ruta de proceso para producir un documento tipo RFC.
+`SPEC-RFC-AUDITOR-V0` queda validada como ruta de proceso para producir un documento tipo RFC, ya materializado como `C-002`.
 
 La validacion no concede autoridad por el nombre RFC; la autoridad viene de Nivel C, auditoria y decision registrada.
 
 ## Limite de la validacion
 
-No valida implementacion ejecutable ni conformidad de herramientas futuras.
+No valida suite ejecutable completa ni conformidad de herramientas futuras.

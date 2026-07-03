@@ -53,7 +53,7 @@ La decision no permite:
 
 - Validar `REPORT_LAYER-CAND-001` contra una instancia no automata no reducida a nombres locales de `AUD-001`, o decidir que permanece local.
 - Decidir si una ruta futura busca Nivel C o se mantiene como expediente.
-- Definir serializacion solo si se busca herramienta ejecutable.
+- Definir serializacion solo si se busca suite ejecutable completa.
 - Mantener `R4` formal y `Gamma` como problemas abiertos.
 
 ## Consecuencia operativa

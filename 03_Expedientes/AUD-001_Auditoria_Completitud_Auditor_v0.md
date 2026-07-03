@@ -32,7 +32,7 @@ Respuesta: si, con alcance acotado.
 | No usa Registro Historico como autoridad directa | pasa | cubierto por `AUD-SIM-019` y `VAL-019` |
 | No promueve `Gamma` | pasa | `AUD-SIM-025` y `VAL-025` lo bloquean como formal |
 | Cubre matriz minima | pasa | `AUD-T00` a `AUD-T09` tienen simulacion y validacion |
-| Declara limites | pasa | suite ejecutable, R4 formal y promociones quedan fuera |
+| Declara limites | pasa | suite ejecutable completa, R4 formal y promociones quedan fuera |
 | Conserva modo no mutante | pasa | `DO_CHECK_REPORT` solo se lee conceptualmente |
 | Registra deuda viva de H-B | pasa | `HB-001_Deuda_Viva_H-B.md` |
 | No aumenta permisos por `REPORT_LAYER` | pasa | `VAL-022` y `VAL-028` |

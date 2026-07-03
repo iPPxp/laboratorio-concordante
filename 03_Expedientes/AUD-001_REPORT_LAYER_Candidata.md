@@ -258,7 +258,7 @@ Antes de cualquier promocion fuera de `AUD-001`, falta:
 - auditar esta candidata contra `M-000` y `M-001`;
 - decidir si `REPORT_LAYER` permanece local o se prepara como Nivel C;
 - probar al menos una instancia no reducida a nombres locales de `AUD-001`, o declarar explicitamente que sigue siendo capa local. Cumplido provisionalmente como origen interno por `AUD-SIM-022` y `VAL-022`; queda pendiente decidir alcance;
-- definir serializacion si se busca herramienta ejecutable;
+- definir serializacion si se busca suite ejecutable completa;
 - decidir relacion con `C-001` antes de modificar documentos oficiales.
 
 ## Veredicto de redaccion

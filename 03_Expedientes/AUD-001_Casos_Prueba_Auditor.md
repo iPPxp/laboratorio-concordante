@@ -485,7 +485,7 @@ Este expediente puede declararse completo en version documental/operativa v0 cua
 - se haya delimitado `REPORT_LAYER` como capa local o deuda de promocion;
 - se haya actualizado `DO-001` o se haya registrado que el cierre actual no modifica su modo operativo.
 
-Este cierre v0 no equivale a herramienta ejecutable, Regla R4 formal, `Gamma` formal ni promocion de `REPORT_LAYER` a Nivel C.
+Este cierre v0 no equivale a suite ejecutable completa, Regla R4 formal, `Gamma` formal ni promocion de `REPORT_LAYER` a Nivel C.
 
 ## Caso no automata asociado
 

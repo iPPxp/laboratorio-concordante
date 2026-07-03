@@ -3201,7 +3201,7 @@ REPORT_ITEM RL28-CHECK = {
 
 La simulacion confirma que `COMPAT-RL-DO-CHECK-001` basta para el cierre v0 del alcance de reportes.
 
-No hace falta una integracion real para declarar completo el Auditor documental/operativo v0; esa integracion queda como deuda posterior si se construye herramienta ejecutable.
+No hace falta una integracion real para declarar completo el Auditor documental/operativo v0; esa integracion queda como deuda posterior si se construye suite ejecutable completa.
 
 ## AUD-SIM-029 - Proyeccion a documento tipo RFC
 

@@ -32,7 +32,7 @@ La decision aprueba:
 - el control positivo sin transformacion;
 - la cobertura no automata de `R4-CANDIDATA`;
 - el uso local de `REPORT_LAYER` como capa provisional;
-- la lectura conceptual de `DO_CHECK_REPORT`.
+- la lectura conceptual de `DO_CHECK_REPORT`;
 - la implementacion no mutante inicial como apoyo operativo acotado.
 
 ## Alcance no aprobado
@@ -59,6 +59,8 @@ Las deudas vivas quedan registradas como rutas posteriores, no como bloqueos de 
 
 La actualizacion global de estado, referencias, identificadores, ASCII y diff se conserva para la pasada final de sesion.
 
-## Siguiente paso natural
+## Paso RFC ejecutado
 
-Preparar una candidata de documento tipo RFC del Auditor y auditarla contra `NIVEL-C-001` antes de cualquier promocion a `02_Documentos`.
+La candidata `SPEC-RFC-AUDITOR-V0` ya fue validada, auditada contra `NIVEL-C-001` y promovida como `02_Documentos/C-002_RFC_Operativo_Auditor_v0.md`.
+
+No queda pendiente preparar el RFC; los frentes posteriores son endurecimiento no mutante, eventual reactivacion JSON con decision explicita y suite ejecutable completa.
