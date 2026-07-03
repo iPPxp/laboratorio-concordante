@@ -129,4 +129,6 @@ No hay integracion contractual completa ni absorcion de `DO_CHECK_REPORT` en `OP
 
 ## Siguiente paso
 
+Lectura posterior: `ALC-REPORT-LAYER-002` conserva esta compatibilidad como frontera local pre-C.
+
 Si se busca integracion contractual completa, abrir una decision separada para ampliar el contrato de `AUD-001`.

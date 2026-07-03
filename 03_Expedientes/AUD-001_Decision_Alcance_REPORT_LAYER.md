@@ -4,6 +4,8 @@ Estatus: decision provisional de expediente.
 
 ID: `ALC-REPORT-LAYER-001`.
 
+Actualizacion posterior: `ALC-REPORT-LAYER-002`.
+
 Expediente padre: `AUD-001`.
 
 Objeto decidido: alcance actual de `REPORT-LAYER-CAND-001`.
@@ -122,7 +124,7 @@ Definir compatibilidad minima entre `REPORT_LAYER` y `DO_CHECK_REPORT` solo como
 
 Objetivo cumplido posteriormente por `AUD-001_Compatibilidad_REPORT_LAYER_DO_CHECK.md`.
 
-Siguiente paso vigente: decidir si se requiere una validacion teorica del puente o si basta conservarlo como frontera conceptual.
+Lectura posterior: `ALC-REPORT-LAYER-002` cierra el alcance operativo v0 como capa local pre-C. `REPORT_LAYER` no se promueve a Nivel C propio; queda incorporado por referencia en `C-002` y abierto solo para serializacion futura o uso interfrente.
 
 ## Veredicto
 

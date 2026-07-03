@@ -2721,7 +2721,9 @@ REPORT_ITEM RL22-DECISION = {
 - filtra los contratos concretos por reglas de autoridad, auditoria y permiso;
 - declara que no hay transformacion material;
 - conserva `transformacion_permitida = false`;
-- deja pendiente la decision de alcance local o Nivel C.
+- en el momento de la simulacion, el alcance local o Nivel C aun no estaba decidido.
+
+Lectura posterior: esa decision de alcance quedo resuelta para el cierre v0 por `ALC-REPORT-LAYER-002`; `REPORT_LAYER` permanece local pre-C.
 
 `REPORT-LAYER-CAND-001` falla si:
 
@@ -2744,9 +2746,11 @@ Esta prueba valida el origen interno y la independencia de nombres locales.
 
 No decide todavia si `REPORT_LAYER` permanece local, si prepara Nivel C o si requiere serializacion ejecutable.
 
+Lectura posterior: `ALC-REPORT-LAYER-002` decide permanencia local pre-C para v0. Nivel C y serializacion quedan como rutas futuras condicionadas.
+
 ## Deudas nuevas
 
-- Decidir alcance de `REPORT_LAYER`: local de `AUD-001`, candidata a Nivel C o expediente propio.
+- Alcance v0 decidido por `ALC-REPORT-LAYER-002`; solo queda deuda futura si aparece uso interfrente, Nivel C propio o serializacion ejecutable.
 
 ## AUD-SIM-023 - Control positivo sin hallazgos bloqueantes
 

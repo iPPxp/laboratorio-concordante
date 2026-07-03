@@ -235,6 +235,8 @@ Auditoria de REPORT_LAYER asociada: `03_Expedientes/AUD-001_Auditoria_REPORT_LAY
 
 Decision de estatus de REPORT_LAYER asociada: `03_Expedientes/AUD-001_Decision_Estatus_REPORT_LAYER_Candidata.md`.
 
+Ficha de alcance REPORT_LAYER asociada: `03_Expedientes/AUD-001_Ficha_Alcance_REPORT_LAYER_Pre-C.md`.
+
 ## Deudas antes de promocion
 
 Antes de cualquier promocion fuera de `AUD-001`, falta:
@@ -242,7 +244,7 @@ Antes de cualquier promocion fuera de `AUD-001`, falta:
 - reactivar `AUD-001` mediante decision explicita si se busca una ruta futura. Cumplido de forma acotada para `REPORT_LAYER` por `AUD-001_Decision_Reactivacion_REPORT_LAYER.md`
 - decidir si una ruta futura reabre definicion provisional, Nivel C, `REPORT_LAYER`, R4 formal o congelamiento. Cumplido solo para ruta `REPORT_LAYER`; las demas siguen abiertas
 - decidir si requiere documento de Nivel C o expediente adicional
-- definir si la capa de reportes de `AUD-001` se generaliza o permanece como implementacion local del Auditor. Parcialmente avanzado por `REPORT-LAYER-CAND-001`; pendiente validacion de alcance
+- definir si la capa de reportes de `AUD-001` se generaliza o permanece como implementacion local del Auditor. Cumplido para alcance v0 por `ALC-REPORT-LAYER-002`; cualquier generalizacion futura requiere uso interfrente o ruta Nivel C
 - ampliar pruebas no automatas o justificar cierre provisional de la primera ronda
 - precisar relacion con la futura Regla R4 formal
 

@@ -18,6 +18,8 @@ Decision de alcance asociada: `03_Expedientes/AUD-001_Decision_Alcance_REPORT_LA
 
 Compatibilidad asociada: `03_Expedientes/AUD-001_Compatibilidad_REPORT_LAYER_DO_CHECK.md`.
 
+Ficha de alcance posterior: `03_Expedientes/AUD-001_Ficha_Alcance_REPORT_LAYER_Pre-C.md`.
+
 ## Proposito
 
 Definir una forma abstracta minima para la capa de reportes que `R4-CANDIDATA` necesita cuando deja de hablar solo de los reportes locales de `AUD-001`.
@@ -255,9 +257,8 @@ Esta candidata no cubre:
 
 Antes de cualquier promocion fuera de `AUD-001`, falta:
 
-- auditar esta candidata contra `M-000` y `M-001`;
-- decidir si `REPORT_LAYER` permanece local o se prepara como Nivel C;
-- probar al menos una instancia no reducida a nombres locales de `AUD-001`, o declarar explicitamente que sigue siendo capa local. Cumplido provisionalmente como origen interno por `AUD-SIM-022` y `VAL-022`; queda pendiente decidir alcance;
+- decidir si aparece uso estable fuera de `AUD-001`;
+- declarar alcance exportable independiente si se busca Nivel C propio;
 - definir serializacion si se busca suite ejecutable completa;
 - decidir relacion con `C-001` antes de modificar documentos oficiales.
 
@@ -271,4 +272,6 @@ No queda aprobada como especificacion oficial.
 
 Objetivo cumplido posteriormente por `AUD-001_Auditoria_REPORT_LAYER_Candidata.md` y `AUD-001_Decision_Estatus_REPORT_LAYER_Candidata.md`.
 
-Siguiente paso vigente: decidir si se requiere una validacion teorica del puente `REPORT_LAYER` / `DO_CHECK_REPORT` o si basta conservarlo como frontera conceptual.
+Objetivo posterior cumplido por `COMPAT-RL-DO-CHECK-001`, `AUDITOR-DO-CHECK-ADAPTER-001` y `ALC-REPORT-LAYER-002`.
+
+Siguiente paso vigente: ninguno dentro del cierre v0 del Auditor. Cualquier reapertura debe ser por serializacion, uso interfrente o ruta formal de Nivel C.

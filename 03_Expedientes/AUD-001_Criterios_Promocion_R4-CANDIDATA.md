@@ -169,7 +169,7 @@ Lectura posterior: la auditoria y decision de estatus de criterios quedaron regi
 
 - Auditar este documento de criterios contra `M-000` y `M-001`. Cumplido posteriormente por `AUD-001_Auditoria_Criterios_Promocion_R4-CANDIDATA.md`.
 - Decidir si la siguiente ruta sera mantener, definir provisionalmente, separar `REPORT_LAYER`, preparar Nivel C, proponer R4 formal o congelar. Cumplido posteriormente por `AUD-001_Decision_Ruta_Siguiente_R4-CANDIDATA.md`.
-- La ruta `REPORT_LAYER` fue reactivada posteriormente de forma acotada por `AUD-001_Decision_Reactivacion_REPORT_LAYER.md`; queda pendiente validar alcance local o no local de `REPORT_LAYER-CAND-001`.
+- La ruta `REPORT_LAYER` fue reactivada posteriormente de forma acotada por `AUD-001_Decision_Reactivacion_REPORT_LAYER.md`; su alcance local pre-C quedo fijado por `ALC-REPORT-LAYER-002`.
 - Mantener abiertos `R4` formal y `Gamma` hasta definicion local.
 
 ## Veredicto
