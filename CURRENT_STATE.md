@@ -98,6 +98,7 @@ Auditoria provisional registrada:
 
 Validacion provisional registrada:
 
+- `P-PI_PPI-EQ-001_REPORT_LAYER_DO_CHECK.md`: equivalencia minima `REPORT_LAYER` / `DO_CHECK_REPORT` bajo contexto `C_AUD_LECTURA_MIN`; no demuestra equivalencia fuerte de trazabilidad.
 - `AUD-001_Validaciones_SPEC-RFC-AUDITOR-V0.md`.
 - `DO-001_Validaciones_DO-CHECK-001.md`.
 - `DO-001_Validaciones_PERMISO-ACT-001.md`.
@@ -265,11 +266,11 @@ Especificacion candidata promovida:
 
 Proximo objetivo:
 
-- Ejecutar `PPI-EQ-001` como primer caso de Equivalencia de proyecciones dentro de `P-PI.0`, manteniendo `P-PI.1` preparado para Confluencia despues de declarar una relacion `~_C`.
+- Ejecutar `PPI-EQ-002` como segundo caso de Equivalencia de proyecciones dentro de `P-PI.0`, usando la relacion contextual `~_C` declarada en `PPI-EQ-001`.
 
 Expediente activo inmediato:
 
-- `P-PI.0` / `P-PI.1` quedan como frente activo acotado: `P-PI.0` para Equivalencia de proyecciones y `P-PI.1` para Confluencia. `AUD-001` queda completo en version documental/operativa v0 y ya produjo `C-002`; permanece abierto solo para rutas posteriores no cubiertas. `H-B.6` y `H-B.7` tienen alcance local minimo aceptado, pero sin contenido sustantivo materializado. `PSI-001` queda abierto con matriz de patrones no clinicos aceptada, sin cierre ni promocion; `TCS-001` queda abierto como expediente teorico provisional; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `B-001.5` queda congelado.
+- `P-PI.0` / `P-PI.1` quedan como frente activo acotado: `P-PI.0` para Equivalencia de proyecciones y `P-PI.1` para Confluencia. `PPI-EQ-001` queda ejecutado provisionalmente; falta `PPI-EQ-002` y luego `PPI-CONF-001`. `AUD-001` queda completo en version documental/operativa v0 y ya produjo `C-002`; permanece abierto solo para rutas posteriores no cubiertas. `H-B.6` y `H-B.7` tienen alcance local minimo aceptado, pero sin contenido sustantivo materializado. `PSI-001` queda abierto con matriz de patrones no clinicos aceptada, sin cierre ni promocion; `TCS-001` queda abierto como expediente teorico provisional; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en pausa operativa, sin admision de `H-Xi`; `B-001.5` queda congelado.
 - Vision papers: `VISION_PAPER_PROPUESTA.md` y `VISION_PAPER_FINAL_REFERENCIAS.md` quedan inactivos hasta nuevo aviso.
 
 NO volver a discutir sin reapertura explicita:

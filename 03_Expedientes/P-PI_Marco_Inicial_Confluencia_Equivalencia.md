@@ -168,7 +168,7 @@ Por eso el orden operativo recomendado es:
 
 Caso candidato para evaluar si dos superficies de reporte conservan observables de auditoria equivalentes bajo un contexto acotado.
 
-Estatus: caso pendiente, no ejecutado en este documento.
+Estatus: ejecutado provisionalmente en `P-PI_PPI-EQ-001_REPORT_LAYER_DO_CHECK.md`.
 
 ### `PPI-EQ-002` - Proyeccion de completitud v0 a RFC
 
@@ -205,7 +205,7 @@ Un avance posterior en `P-PI.1` debe producir al menos:
 - Definir formalmente que tipos de objeto pueden ser `S`.
 - Definir si `~_C` debe ser reflexiva, simetrica o transitiva en cada contexto.
 - Distinguir equivalencia operacional, equivalencia documental y equivalencia matematica.
-- Crear casos ejecutados para `PPI-EQ-001`, `PPI-EQ-002` y `PPI-CONF-001`.
+- Crear casos ejecutados para `PPI-EQ-002` y `PPI-CONF-001`; `PPI-EQ-001` queda ejecutado provisionalmente.
 - Decidir si este marco debe permanecer local o preparar una futura seccion de `02_Fundamentos_Matematicos.md`.
 
 ## Veredicto

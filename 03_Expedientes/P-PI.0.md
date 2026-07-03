@@ -27,11 +27,13 @@ Decision de reactivacion asociada: `03_Expedientes/P-PI_Decision_Reactivacion_Fr
 
 Marco inicial asociado: `03_Expedientes/P-PI_Marco_Inicial_Confluencia_Equivalencia.md`.
 
+Caso ejecutado asociado: `03_Expedientes/P-PI_PPI-EQ-001_REPORT_LAYER_DO_CHECK.md`.
+
 ## Ruta operativa vigente
 
 El expediente queda activo de forma acotada para trabajar Equivalencia de proyecciones.
 
-La accion local inmediata es ejecutar casos de equivalencia de proyecciones derivados de `PPI-MARCO-CORE-001`.
+La accion local inmediata es ejecutar `PPI-EQ-002` despues del cierre provisional de `PPI-EQ-001`.
 
 Esta reactivacion no cierra el expediente, no resuelve Confluencia y no resuelve Equivalencia de proyecciones.
 
@@ -41,4 +43,4 @@ Esta reactivacion no cierra el expediente, no resuelve Confluencia y no resuelve
 - Mantener Confluencia como problema abierto hasta tratamiento propio.
 - Mantener Equivalencia de proyecciones como problema abierto hasta tratamiento propio.
 - No cerrar, congelar ni absorber este expediente sin decision separada.
-- Ejecutar `PPI-EQ-001` y `PPI-EQ-002` antes de cualquier promocion formal.
+- Ejecutar `PPI-EQ-002` antes de cualquier promocion formal; `PPI-EQ-001` queda ejecutado provisionalmente.

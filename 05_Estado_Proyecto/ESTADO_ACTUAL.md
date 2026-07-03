@@ -317,10 +317,12 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - `AUT-VAL-009`: refinamiento contextual de `DO-LAB-RISK-001` validado provisionalmente; 0 riesgos activos y 17 advertencias controladas.
 - `AUT-VAL-010`: cierre tecnico provisional de `AUT-001` validado provisionalmente.
 - `AUT-VAL-011`: cierre operativo completo de `AUT-001` validado favorablemente con ejecucion directa local.
+- `PPI-EQ-001`: equivalencia minima `REPORT_LAYER` / `DO_CHECK_REPORT` validada provisionalmente bajo contexto `C_AUD_LECTURA_MIN`.
 
 ## Sintesis provisionales activas
 
 - `PSI-001_Mapa_Continuidad_Conceptual.md`: mapa provisional no clinico para continuidad conceptual de `PSI-001`.
+- `P-PI_PPI-EQ-001_REPORT_LAYER_DO_CHECK.md`: caso ejecutado provisional de Equivalencia de proyecciones.
 - `P-PI_Marco_Inicial_Confluencia_Equivalencia.md`: marco provisional `PPI-MARCO-CORE-001` para Equivalencia de proyecciones y Confluencia.
 - `P-PI_Criterios_Cierre.md`: criterios provisionales auditados y aceptados como compuerta para cerrar, pausar, congelar, absorber o mantener abiertos `P-PI.0` y `P-PI.1`; aplicada inicialmente en `P-PI_Decision_Ruta_Operativa.md`.
 - `AUD-001_REPORT_LAYER_Candidata.md`: `REPORT-LAYER-CAND-001`, candidata provisional para capa abstracta de reportes dentro de `AUD-001`.
@@ -349,7 +351,7 @@ Ultimo expediente tecnico cerrado: `AUT-001`
 
 ## Proximo objetivo
 
-Ejecutar `PPI-EQ-001` como primer caso de Equivalencia de proyecciones dentro de `P-PI.0`, manteniendo `P-PI.1` preparado para Confluencia despues de declarar una relacion `~_C`.
+Ejecutar `PPI-EQ-002` como segundo caso de Equivalencia de proyecciones dentro de `P-PI.0`, usando la relacion contextual `~_C` declarada en `PPI-EQ-001`.
 
 ## No volver a discutir sin reapertura explicita
 
@@ -369,7 +371,7 @@ Ejecutar `PPI-EQ-001` como primer caso de Equivalencia de proyecciones dentro de
 - Consolidar contenido real de documentos 00, 01, 02 y 03 desde fuentes previas.
 - Deudas condicionadas derivadas de `RH-001`: Protocolo de Admision/`PM-001`, Concordancia, Documento 04, arquitectura multiagente y adjuntos historicos requieren expediente o decision separada antes de usarse.
 - `HXI-001`: en pausa operativa; no continuar admision sin reapertura explicita.
-- `P-PI.0` / `P-PI.1`: activos de forma acotada; ejecutar `PPI-EQ-001`, `PPI-EQ-002` y luego `PPI-CONF-001`; Confluencia y Equivalencia de proyecciones permanecen abiertas.
+- `P-PI.0` / `P-PI.1`: activos de forma acotada; `PPI-EQ-001` ejecutado provisionalmente, falta `PPI-EQ-002` y luego `PPI-CONF-001`; Confluencia y Equivalencia de proyecciones permanecen abiertas.
 - Vision papers: `VISION_PAPER_PROPUESTA.md` y `VISION_PAPER_FINAL_REFERENCIAS.md` quedan inactivos hasta nueva decision; no usarlos como autoridad, agenda o fuente para promocion.
 - `PSI-001`: queda como base conceptual no clinica con matriz de patrones aceptada; no cerrar, promover, abrir psicopatologia ni vincular con `HXI-001` sin decision posterior.
 - `AUD-001`: no promover `REPORT_LAYER`, `R4-CANDIDATA`, R4 formal ni `Gamma` sin decision posterior.
