@@ -70,10 +70,21 @@ CONTROLLED_CONTEXT_CLASSES = {
 GUARDRAIL_MARKERS = (
     "no puede",
     "no permite",
+    "no debe",
+    "ningun ",
+    "ninguna ",
     "fuera de alcance",
     "no cubre",
     "contenido prohibido",
     "no autoriza",
+    "debe rechazarse",
+    "debe rechazarse o bloquearse",
+    "matriz minima de pruebas",
+    "aud-t",
+    "med-historial",
+    "principio de autoridad",
+    "orden local de autoridad",
+    "puede proponer",
 )
 
 

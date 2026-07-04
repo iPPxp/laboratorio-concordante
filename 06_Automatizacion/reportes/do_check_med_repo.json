@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-CHECK-MED-LIVE-20260703-135805",
+  "report_id": "DO-CHECK-MED-LIVE-20260703-201430",
   "expediente": "AUT-001",
   "algoritmo": "DO-CHECK-MED-001",
   "resultado": "advertencia",
@@ -8,13 +8,13 @@
   "transformacion_permitida": false,
   "scope": "repo",
   "summary": {
-    "files_checked": 261,
-    "findings": 236,
+    "files_checked": 264,
+    "findings": 237,
     "by_severity": {
-      "warning": 236
+      "warning": 237
     },
     "by_check": {
-      "MED-REFERENCIAS": 158,
+      "MED-REFERENCIAS": 159,
       "MED-NIVELES": 67,
       "MED-HISTORIAL": 11
     }
@@ -1687,6 +1687,12 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AUT-001_Decision_Refinamiento_Contexto_Guardrails.md",
+      "surface": "expediente",
+      "estatus": "decision tecnica aceptada",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AUT-001_Decision_Refinamiento_DO-LAB-RISK.md",
       "surface": "expediente",
       "estatus": "decision provisional aceptada",
@@ -1858,6 +1864,21 @@
       ]
     },
     {
+      "file": "03_Expedientes/AUT-001_Refinamiento_Contexto_Guardrails.md",
+      "surface": "expediente",
+      "estatus": "refinamiento provisional implementado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AUT-001_Refinamiento_Contexto_Guardrails.md",
+          "detail": "advertencia / mantener_cierre_operativo",
+          "evidence": ""
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/AUT-001_Refinamiento_DO-LAB-RISK.md",
       "surface": "expediente",
       "estatus": "refinamiento provisional implementado",
@@ -1957,6 +1978,12 @@
       "file": "03_Expedientes/AUT-001_Validacion_DO-STATE-BOARD.md",
       "surface": "expediente",
       "estatus": "validacion provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Validacion_Refinamiento_Contexto_Guardrails.md",
+      "surface": "expediente",
+      "estatus": "validacion favorable",
       "findings": []
     },
     {
@@ -4667,6 +4694,14 @@
       "file": "03_Expedientes/AUT-001_Matriz_Revision_Riesgos_Activos.md",
       "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
       "evidence": "| `AUT-RISK-ACT-003` | alta | `01_Canon/M-001_Auditoria_Arquitectonica.md:20` | Regla de auditoria que exige indicar si una intervencion modifica documentos, expedientes, estado o Canon. | `controlado_por_guardrail`; ya tratado como riesgo alto controlado. |"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Refinamiento_Contexto_Guardrails.md",
+      "detail": "advertencia / mantener_cierre_operativo",
+      "evidence": ""
     },
     {
       "severity": "warning",

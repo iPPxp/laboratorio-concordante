@@ -1,6 +1,6 @@
 # DO_CHECK_REPORT medio
 
-report_id: DO-CHECK-MED-LIVE-20260703-135805
+report_id: DO-CHECK-MED-LIVE-20260703-201430
 expediente: AUT-001
 algoritmo: DO-CHECK-MED-001
 resultado: advertencia
@@ -10,10 +10,10 @@ transformacion_permitida: false
 
 ## Resumen
 
-- archivos revisados: 261
-- hallazgos: 236
+- archivos revisados: 264
+- hallazgos: 237
 - bloques: 0
-- advertencias: 236
+- advertencias: 237
 - informativos: 0
 
 ## Puente AAU
@@ -166,6 +166,7 @@ transformacion_permitida: false
 - [warning] MED-REFERENCIAS 03_Expedientes/AUT-001_Matriz_Revision_Riesgos_Activos.md - referencia_no_materializada: 06_Automatizacion/README.md:27
 - [warning] MED-REFERENCIAS 03_Expedientes/AUT-001_Matriz_Revision_Riesgos_Activos.md - referencia_no_materializada: 06_Automatizacion/README.md:25
 - [warning] MED-NIVELES 03_Expedientes/AUT-001_Matriz_Revision_Riesgos_Activos.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: | `AUT-RISK-ACT-003` | alta | `01_Canon/M-001_Auditoria_Arquitectonica.md:20` | Regla de auditoria que exige indicar si una intervencion modifica documentos, expedientes, estado o Canon. | `controlado_por_guardrail`; ya tratado como riesgo alto controlado. |
+- [warning] MED-REFERENCIAS 03_Expedientes/AUT-001_Refinamiento_Contexto_Guardrails.md - referencia_no_materializada: advertencia / mantener_cierre_operativo
 - [warning] MED-REFERENCIAS 03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md - referencia_no_materializada: python 06_Automatizacion/lab_run.py --scope claves --format md
 - [warning] MED-NIVELES 03_Expedientes/AUT-001_Validacion_Cierre_Riesgos.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - Ningun tratamiento modifica Canon, documentos oficiales o expedientes cerrados.
 - [warning] MED-NIVELES 03_Expedientes/AUT-001_Validacion_Revision_Riesgos_Activos.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - Ningun tratamiento modifica Canon, documentos oficiales, expedientes cerrados ni reportes generados.

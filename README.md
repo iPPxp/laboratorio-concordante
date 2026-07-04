@@ -112,11 +112,12 @@ Contiene herramientas ejecutables no mutantes y sus reportes conservados. Su fun
 
 Estado operativo resumido:
 
-- Decision operativa reciente: `TCS-001_Decision_Estatus_Paquete_Minimo.md`.
-- Decisiones de estabilizacion recientes: `D-2026-07-02-020` a `D-2026-07-03-019`.
+- Decision operativa reciente: `AUT-001_Decision_Refinamiento_Contexto_Guardrails.md`.
+- Decisiones de estabilizacion recientes: `D-2026-07-02-020` a `D-2026-07-03-020`.
 - Ultimo expediente cerrado: `DOCS-001`; ultimo expediente tecnico cerrado: `AUT-001`.
 - Ultima decision arquitectonica: `C-002_RFC_Operativo_Auditor_v0.md` promovido como RFC operativo oficial del Auditor v0; complementa `C-001` y quedo alineado el 2026-07-03 con JSON, fixtures y adaptador no mutante.
-- Ultima decision operativa: `TCS-001_Decision_Estatus_Paquete_Minimo.md` (`D-2026-07-03-019`) acepta `TCS-DEF-MIN-001`, `TCS-FAIL-TYP-001` y `TCS-CASE-BAT-001` como paquete teorico minimo provisional; no canoniza `Concordance`, no crea Nivel C ni usa vision papers como fuente activa.
+- Ultima decision operativa: `AUT-001_Decision_Refinamiento_Contexto_Guardrails.md` (`D-2026-07-03-020`) acepta `AUT-RISK-REFINE-002` para reclasificar falsos riesgos activos de guardrails como advertencias controladas; no borra hallazgos, no reabre `AUT-001` ni autoriza transformaciones.
+- Decision teorica reciente: `TCS-001_Decision_Estatus_Paquete_Minimo.md` (`D-2026-07-03-019`) acepta `TCS-DEF-MIN-001`, `TCS-FAIL-TYP-001` y `TCS-CASE-BAT-001` como paquete teorico minimo provisional; no canoniza `Concordance`, no crea Nivel C ni usa vision papers como fuente activa.
 - Avance AO reciente: `AO-001_Decision_Estatus_Casos_Prueba_Algebra_Operacional.md` (`D-2026-07-03-016`), `AO-001_Decision_Criterios_Uso_R4_Gamma_Fuera_AUD.md` (`D-2026-07-03-017`) y `AO-001_Decision_Estatus_Puente_Confluencia_Equivalencia.md` (`D-2026-07-03-018`) aceptan `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001` y `AO-PPI-BRIDGE-001` como avance local no canonico.
 - Saneamiento tecnico reciente: `AUT-002_Decision_Referencias_Historicas_Transferidas.md` (`D-2026-07-03-015`) acepta `referencia_historica_transferida` para `PSI-001*` eliminado y refina falsos bloqueos de historial en controles negativos.
 - Limpieza reciente: `PSI-TRASPASO-001_Decision_Eliminacion_Copia.md` (`D-2026-07-03-012`) elimina la copia local de traspaso de `PSI-001`; `HB-001_Decision_Congelamiento_Brotes_Alternos.md` (`D-2026-07-03-013`) congela `H-B.6` y `H-B.7` como brotes alternos y originales historicos.

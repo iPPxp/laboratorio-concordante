@@ -1,15 +1,15 @@
 {
-  "report_id": "DO-LAB-SUMMARY-20260703-135812",
+  "report_id": "DO-LAB-SUMMARY-20260703-201432",
   "expediente": "AUT-001",
   "algoritmo": "DO-LAB-SUMMARY-001",
-  "resultado": "atencion_requerida",
-  "recomendacion": "revisar_riesgos_altos_sin_transformar",
+  "resultado": "advertencia",
+  "recomendacion": "mantener_cierre_operativo",
   "transformacion_permitida": false,
-  "headline": "Operativo con riesgos altos activos; no cerrar.",
+  "headline": "Cierre operativo conservado con deuda documental visible.",
   "state": {
     "expediente_activo_inmediato": "`AO-001` queda como frente operativo principal para profundizar `AO-PPI-BRIDGE-001`, formalizacion posterior de Documento 04 y relacion eventual con `REPORT_LAYER`.",
     "proximo_objetivo": "Profundizar `AO-PPI-BRIDGE-001` hacia pruebas de Confluencia global y Equivalencia global de proyecciones sin reabrir `P-PI.0` / `P-PI.1`.",
-    "ultima_decision_operativa": "`TCS-001_Decision_Estatus_Paquete_Minimo.md` (`D-2026-07-03-019`): acepta `TCS-DEF-MIN-001`, `TCS-FAIL-TYP-001` y `TCS-CASE-BAT-001` como paquete teorico minimo provisional; no canoniza `Concordance`, no crea Nivel C y no usa vision papers como fuente activa.",
+    "ultima_decision_operativa": "`AUT-001_Decision_Refinamiento_Contexto_Guardrails.md` (`D-2026-07-03-020`): acepta `AUT-RISK-REFINE-002` y `AUT-VAL-012` para reclasificar falsos riesgos activos de guardrails como advertencias controladas; no reabre `AUT-001` ni borra hallazgos.",
     "expedientes_abiertos": [
       "`HXI-001` (pausa operativa; reporte de consistencia aceptado y criterios de admision formal posterior preparados; no admite `H-Xi`)",
       "`TCS-001` (expediente teorico provisional; paquete minimo `TCS-DEF-MIN-001`, `TCS-FAIL-TYP-001` y `TCS-CASE-BAT-001` aceptado por `D-2026-07-03-019`; no Canon, no documento oficial)",
@@ -36,7 +36,7 @@
         "algorithm": "DO-CHECK-MED-001",
         "resultado": "advertencia",
         "recomendacion": "continuar_sin_transformar",
-        "findings": 236,
+        "findings": 237,
         "markdown": "06_Automatizacion/reportes/do_check_med_repo.md",
         "json": "06_Automatizacion/reportes/do_check_med_repo.json"
       },
@@ -54,16 +54,16 @@
         "algorithm": "DO-LAB-CONTINUITY-001",
         "resultado": "advertencia",
         "recomendacion": "continuar_sin_transformar",
-        "findings": 236,
+        "findings": 237,
         "markdown": "06_Automatizacion/reportes/lab_continuity_report.md",
         "json": "06_Automatizacion/reportes/lab_continuity_report.json"
       },
       {
         "name": "clasificacion_riesgos",
         "algorithm": "DO-LAB-RISK-001",
-        "resultado": "riesgo_controlado",
-        "recomendacion": "revisar_riesgos_activos_sin_transformar",
-        "findings": 250,
+        "resultado": "advertencia_clasificada",
+        "recomendacion": "mantener_cierre_operativo",
+        "findings": 251,
         "markdown": "06_Automatizacion/reportes/lab_risk_report.md",
         "json": "06_Automatizacion/reportes/lab_risk_report.json"
       }
@@ -72,419 +72,45 @@
     "board_resultado": "ok"
   },
   "risk": {
-    "resultado": "riesgo_controlado",
-    "recomendacion": "revisar_riesgos_activos_sin_transformar",
+    "resultado": "advertencia_clasificada",
+    "recomendacion": "mantener_cierre_operativo",
     "by_category": {
-      "riesgo_activo": 7,
+      "advertencia_controlada": 23,
       "advertencia_heredada": 59,
-      "deuda_documental": 107,
-      "advertencia_controlada": 16,
+      "deuda_documental": 108,
       "observacion": 61
     },
     "by_operational_severity": {
-      "media": 116,
+      "media": 117,
       "baja": 131,
       "alta": 3
     },
     "by_context_class": {
-      "riesgo_real": 169,
-      "guardrail": 38,
+      "guardrail": 49,
+      "riesgo_real": 159,
       "decision_registrada": 21,
       "bitacora_historica": 9,
       "control_auditoria": 1,
       "meta_check": 12
     },
     "by_treatment_status": {
-      "pendiente_revision_operativa": 7,
+      "controlado_por_guardrail": 18,
       "conservar_deuda_historica": 59,
-      "pendiente_normalizacion_documental": 107,
-      "controlado_por_guardrail": 11,
+      "pendiente_normalizacion_documental": 108,
       "conservado_sin_tratamiento": 61,
       "controlado_por_historial": 2,
       "controlado_por_regla_de_auditoria": 1,
       "controlado_por_definicion_de_check": 1,
       "controlado_por_decision_registrada": 1
     },
-    "risk_blocks_closure": true,
-    "top_active": [
-      {
-        "source": "medio",
-        "severity": "warning",
-        "check_id": "MED-NIVELES",
-        "kind": "accion_de_nivel_sensible",
-        "file": "02_Documentos/00_Naturaleza.md",
-        "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
-        "evidence": "Un expediente puede proponer. Una auditoria puede evaluar. Una decision puede aceptar, cerrar, congelar, rechazar o incorporar. Un documento oficial estabiliza contenido. El Canon limita como puede cambiar todo lo anterior.",
-        "category": "riesgo_activo",
-        "category_label": "Riesgo activo",
-        "operational_severity": "alta",
-        "active_file": true,
-        "inherited_file": false,
-        "context_class": "riesgo_real",
-        "treatment_status": "pendiente_revision_operativa",
-        "risk_blocks_closure": true,
-        "source_context": {
-          "matched_line": 88,
-          "lines": [
-            {
-              "line": 82,
-              "text": "5. Expedientes."
-            },
-            {
-              "line": 83,
-              "text": "6. Automatizacion y reportes ejecutables como evidencia operativa."
-            },
-            {
-              "line": 84,
-              "text": "7. Registro historico."
-            },
-            {
-              "line": 85,
-              "text": ""
-            },
-            {
-              "line": 86,
-              "text": "El registro historico explica el origen de una idea, pero no la convierte en autoridad vigente."
-            },
-            {
-              "line": 87,
-              "text": ""
-            },
-            {
-              "line": 88,
-              "text": "Un expediente puede proponer. Una auditoria puede evaluar. Una decision puede aceptar, cerrar, congelar, rechazar o incorporar. Un documento oficial estabiliza contenido. El Canon limita como puede cambiar todo lo anterior."
-            },
-            {
-              "line": 89,
-              "text": ""
-            },
-            {
-              "line": 90,
-              "text": "## Separacion de niveles"
-            },
-            {
-              "line": 91,
-              "text": ""
-            },
-            {
-              "line": 92,
-              "text": "El Laboratorio existe para evitar que niveles distintos se mezclen:"
-            },
-            {
-              "line": 93,
-              "text": ""
-            },
-            {
-              "line": 94,
-              "text": "- una intuicion no es una definicion;"
-            }
-          ]
-        },
-        "rationale": "La linea toca Canon, documento oficial, estado o superficie activa."
-      },
-      {
-        "source": "medio",
-        "severity": "warning",
-        "check_id": "MED-NIVELES",
-        "kind": "accion_de_nivel_sensible",
-        "file": "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
-        "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
-        "evidence": "- modificar Canon por inferencia;",
-        "category": "riesgo_activo",
-        "category_label": "Riesgo activo",
-        "operational_severity": "alta",
-        "active_file": true,
-        "inherited_file": false,
-        "context_class": "riesgo_real",
-        "treatment_status": "pendiente_revision_operativa",
-        "risk_blocks_closure": true,
-        "source_context": {
-          "matched_line": 163,
-          "lines": [
-            {
-              "line": 157,
-              "text": "- evidencia previa;"
-            },
-            {
-              "line": 158,
-              "text": "- evidencia posterior;"
-            },
-            {
-              "line": 159,
-              "text": "- verificacion posterior."
-            },
-            {
-              "line": 160,
-              "text": ""
-            },
-            {
-              "line": 161,
-              "text": "El Auditor NO DEBE:"
-            },
-            {
-              "line": 162,
-              "text": ""
-            },
-            {
-              "line": 163,
-              "text": "- modificar Canon por inferencia;"
-            },
-            {
-              "line": 164,
-              "text": "- modificar documentos oficiales sin decision registrada;"
-            },
-            {
-              "line": 165,
-              "text": "- cerrar expedientes sin decision explicita;"
-            },
-            {
-              "line": 166,
-              "text": "- reparar una deuda conceptual por intuicion;"
-            },
-            {
-              "line": 167,
-              "text": "- usar historial como estado previo local;"
-            },
-            {
-              "line": 168,
-              "text": "- reintentar una ejecucion fallida sin nueva autorizacion."
-            },
-            {
-              "line": 169,
-              "text": ""
-            }
-          ]
-        },
-        "rationale": "La linea toca Canon, documento oficial, estado o superficie activa."
-      },
-      {
-        "source": "minimo",
-        "severity": "warning",
-        "check_id": "minimo",
-        "kind": "historial_como_autoridad_posible",
-        "file": "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
-        "detail": "- `AUD-T07`: Registro Historico como autoridad directa;",
-        "evidence": "",
-        "category": "riesgo_activo",
-        "category_label": "Riesgo activo",
-        "operational_severity": "media",
-        "active_file": true,
-        "inherited_file": false,
-        "context_class": "riesgo_real",
-        "treatment_status": "pendiente_revision_operativa",
-        "risk_blocks_closure": true,
-        "source_context": {
-          "matched_line": 246,
-          "lines": [
-            {
-              "line": 240,
-              "text": "- `AUD-T01`: transicion faltante;"
-            },
-            {
-              "line": 241,
-              "text": "- `AUD-T02`: estado final inalcanzable;"
-            },
-            {
-              "line": 242,
-              "text": "- `AUD-T03`: contradiccion de determinismo;"
-            },
-            {
-              "line": 243,
-              "text": "- `AUD-T04`: equivalencia sin algoritmo;"
-            },
-            {
-              "line": 244,
-              "text": "- `AUD-T05`: transformacion sin decision;"
-            },
-            {
-              "line": 245,
-              "text": "- `AUD-T06`: `Gamma` no materializada;"
-            },
-            {
-              "line": 246,
-              "text": "- `AUD-T07`: Registro Historico como autoridad directa;"
-            },
-            {
-              "line": 247,
-              "text": "- `AUD-T08`: modificacion de Canon desde expediente;"
-            },
-            {
-              "line": 248,
-              "text": "- `AUD-T09`: termino nuevo sin estatus."
-            },
-            {
-              "line": 249,
-              "text": ""
-            },
-            {
-              "line": 250,
-              "text": "La cobertura vigente esta registrada en `AUD-001_Validaciones.md` hasta `VAL-029`."
-            },
-            {
-              "line": 251,
-              "text": ""
-            },
-            {
-              "line": 252,
-              "text": "La matriz externa completa vigente esta en `06_Automatizacion/fixtures/auditor_v0_cases.json`."
-            }
-          ]
-        },
-        "rationale": "Aparece en superficie vigente o tecnica activa; revisar que el historial no opere como autoridad."
-      },
-      {
-        "source": "minimo",
-        "severity": "warning",
-        "check_id": "minimo",
-        "kind": "historial_como_autoridad_posible",
-        "file": "03_Expedientes/AUT-001_Mapa_Fase_Media_AAU.md",
-        "detail": "- `MED-HISTORIAL`: Registro Historico o `SRC-*` usado como autoridad vigente.",
-        "evidence": "",
-        "category": "riesgo_activo",
-        "category_label": "Riesgo activo",
-        "operational_severity": "media",
-        "active_file": true,
-        "inherited_file": false,
-        "context_class": "riesgo_real",
-        "treatment_status": "pendiente_revision_operativa",
-        "risk_blocks_closure": true,
-        "source_context": {
-          "matched_line": 43,
-          "lines": [
-            {
-              "line": 37,
-              "text": ""
-            },
-            {
-              "line": 38,
-              "text": "`DO-CHECK-MED-001` debe revisar:"
-            },
-            {
-              "line": 39,
-              "text": ""
-            },
-            {
-              "line": 40,
-              "text": "- `MED-FUENTES`: fuentes minimas disponibles."
-            },
-            {
-              "line": 41,
-              "text": "- `MED-ESTATUS`: estatus visible en superficies que lo requieren."
-            },
-            {
-              "line": 42,
-              "text": "- `MED-REFERENCIAS`: referencias locales materializadas."
-            },
-            {
-              "line": 43,
-              "text": "- `MED-HISTORIAL`: Registro Historico o `SRC-*` usado como autoridad vigente."
-            },
-            {
-              "line": 44,
-              "text": "- `MED-NIVELES`: acciones sensibles sobre Canon, documentos oficiales, expedientes cerrados o hipotesis."
-            },
-            {
-              "line": 45,
-              "text": "- `MED-CERRADOS`: intento de afectar expedientes cerrados."
-            },
-            {
-              "line": 46,
-              "text": "- `MED-REPORTES`: definiciones de reportes normalizados con campos minimos."
-            },
-            {
-              "line": 47,
-              "text": "- `MED-ESTADO`: consistencia minima del estado operativo."
-            },
-            {
-              "line": 48,
-              "text": "- `MED-ASCII`: politica ASCII fuera de zonas historicas permitidas."
-            },
-            {
-              "line": 49,
-              "text": ""
-            }
-          ]
-        },
-        "rationale": "Aparece en superficie vigente o tecnica activa; revisar que el historial no opere como autoridad."
-      },
-      {
-        "source": "medio",
-        "severity": "warning",
-        "check_id": "MED-NIVELES",
-        "kind": "accion_de_nivel_sensible",
-        "file": "03_Expedientes/AUT-001_Validacion_Cierre_Riesgos.md",
-        "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
-        "evidence": "- Ningun tratamiento modifica Canon, documentos oficiales o expedientes cerrados.",
-        "category": "riesgo_activo",
-        "category_label": "Riesgo activo",
-        "operational_severity": "media",
-        "active_file": true,
-        "inherited_file": false,
-        "context_class": "riesgo_real",
-        "treatment_status": "pendiente_revision_operativa",
-        "risk_blocks_closure": true,
-        "source_context": {
-          "matched_line": 17,
-          "lines": [
-            {
-              "line": 11,
-              "text": ""
-            },
-            {
-              "line": 12,
-              "text": "## Resultado"
-            },
-            {
-              "line": 13,
-              "text": ""
-            },
-            {
-              "line": 14,
-              "text": "- Los criterios separan cierre tecnico provisional y cierre operativo completo."
-            },
-            {
-              "line": 15,
-              "text": "- El cierre tecnico provisional no oculta la deuda de ejecucion local."
-            },
-            {
-              "line": 16,
-              "text": "- Los 2 riesgos altos quedan tratados como controlados provisionalmente."
-            },
-            {
-              "line": 17,
-              "text": "- Ningun tratamiento modifica Canon, documentos oficiales o expedientes cerrados."
-            },
-            {
-              "line": 18,
-              "text": "- `AUT-001` sigue abierto."
-            },
-            {
-              "line": 19,
-              "text": ""
-            },
-            {
-              "line": 20,
-              "text": "## Salvedad"
-            },
-            {
-              "line": 21,
-              "text": ""
-            },
-            {
-              "line": 22,
-              "text": "La validacion no cierra `AUT-001`; solo deja lista una decision posterior de cierre tecnico provisional o continuidad de refinamiento."
-            }
-          ]
-        },
-        "rationale": "La linea toca Canon, documento oficial, estado o superficie activa."
-      }
-    ]
+    "risk_blocks_closure": false,
+    "top_active": []
   },
   "sources": {
-    "run": "DO-LAB-RUN-20260703-135812",
-    "risk": "DO-LAB-RISK-20260703-135812",
-    "board": "DO-STATE-BOARD-20260703-135805",
-    "continuity": "DO-LAB-CONTINUITY-20260703-135811"
+    "run": "DO-LAB-RUN-20260703-201432",
+    "risk": "DO-LAB-RISK-20260703-201432",
+    "board": "DO-STATE-BOARD-20260703-201430",
+    "continuity": "DO-LAB-CONTINUITY-20260703-201432"
   },
   "next_actions": [
     "Mantener cierre operativo de AUT-001 con deuda documental visible.",

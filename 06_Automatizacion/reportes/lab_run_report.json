@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-LAB-RUN-20260703-135812",
+  "report_id": "DO-LAB-RUN-20260703-201432",
   "expediente": "AUT-001",
   "algoritmo": "DO-LAB-RUN-001",
   "resultado": "advertencia",
@@ -21,7 +21,7 @@
       "algorithm": "DO-CHECK-MED-001",
       "resultado": "advertencia",
       "recomendacion": "continuar_sin_transformar",
-      "findings": 236,
+      "findings": 237,
       "markdown": "06_Automatizacion/reportes/do_check_med_repo.md",
       "json": "06_Automatizacion/reportes/do_check_med_repo.json"
     },
@@ -39,24 +39,24 @@
       "algorithm": "DO-LAB-CONTINUITY-001",
       "resultado": "advertencia",
       "recomendacion": "continuar_sin_transformar",
-      "findings": 236,
+      "findings": 237,
       "markdown": "06_Automatizacion/reportes/lab_continuity_report.md",
       "json": "06_Automatizacion/reportes/lab_continuity_report.json"
     },
     {
       "name": "clasificacion_riesgos",
       "algorithm": "DO-LAB-RISK-001",
-      "resultado": "riesgo_controlado",
-      "recomendacion": "revisar_riesgos_activos_sin_transformar",
-      "findings": 250,
+      "resultado": "advertencia_clasificada",
+      "recomendacion": "mantener_cierre_operativo",
+      "findings": 251,
       "markdown": "06_Automatizacion/reportes/lab_risk_report.md",
       "json": "06_Automatizacion/reportes/lab_risk_report.json"
     },
     {
       "name": "resumen_ejecutivo",
       "algorithm": "DO-LAB-SUMMARY-001",
-      "resultado": "atencion_requerida",
-      "recomendacion": "revisar_riesgos_altos_sin_transformar",
+      "resultado": "advertencia",
+      "recomendacion": "mantener_cierre_operativo",
       "findings": 0,
       "markdown": "06_Automatizacion/reportes/lab_executive_summary.md",
       "json": "06_Automatizacion/reportes/lab_executive_summary.json"
@@ -64,8 +64,8 @@
   ],
   "next_action": "Mantener cierre operativo de AUT-001 con deuda documental visible.",
   "executive_summary": {
-    "resultado": "atencion_requerida",
-    "recomendacion": "revisar_riesgos_altos_sin_transformar",
-    "headline": "Operativo con riesgos altos activos; no cerrar."
+    "resultado": "advertencia",
+    "recomendacion": "mantener_cierre_operativo",
+    "headline": "Cierre operativo conservado con deuda documental visible."
   }
 }

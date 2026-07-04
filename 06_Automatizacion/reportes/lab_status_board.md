@@ -1,6 +1,6 @@
 # LAB_STATUS_BOARD
 
-report_id: DO-STATE-BOARD-20260703-135805
+report_id: DO-STATE-BOARD-20260703-201430
 expediente: AUT-001
 algoritmo: DO-STATE-BOARD-001
 resultado: ok
@@ -11,7 +11,7 @@ transformacion_permitida: false
 
 - ultimo expediente cerrado: `DOCS-001`
 - ultimo expediente tecnico cerrado: `AUT-001`
-- ultima decision operativa: `TCS-001_Decision_Estatus_Paquete_Minimo.md` (`D-2026-07-03-019`): acepta `TCS-DEF-MIN-001`, `TCS-FAIL-TYP-001` y `TCS-CASE-BAT-001` como paquete teorico minimo provisional; no canoniza `Concordance`, no crea Nivel C y no usa vision papers como fuente activa.
+- ultima decision operativa: `AUT-001_Decision_Refinamiento_Contexto_Guardrails.md` (`D-2026-07-03-020`): acepta `AUT-RISK-REFINE-002` y `AUT-VAL-012` para reclasificar falsos riesgos activos de guardrails como advertencias controladas; no reabre `AUT-001` ni borra hallazgos.
 - proximo objetivo: Profundizar `AO-PPI-BRIDGE-001` hacia pruebas de Confluencia global y Equivalencia global de proyecciones sin reabrir `P-PI.0` / `P-PI.1`.
 
 ## Expediente activo inmediato

@@ -24,6 +24,7 @@ Ultima decision arquitectonica:
 
 Ultima decision operativa:
 
+- `AUT-001_Decision_Refinamiento_Contexto_Guardrails.md` (`D-2026-07-03-020`): acepta `AUT-RISK-REFINE-002` y `AUT-VAL-012` para reclasificar falsos riesgos activos de guardrails como advertencias controladas; no reabre `AUT-001` ni borra hallazgos.
 - `TCS-001_Decision_Estatus_Paquete_Minimo.md` (`D-2026-07-03-019`): acepta `TCS-DEF-MIN-001`, `TCS-FAIL-TYP-001` y `TCS-CASE-BAT-001` como paquete teorico minimo provisional; no canoniza `Concordance`, no crea Nivel C y no usa vision papers como fuente activa.
 - `AO-001_Decision_Estatus_Puente_Confluencia_Equivalencia.md` (`D-2026-07-03-018`): acepta `AO-PPI-BRIDGE-001`, `AO-PPI-EQ-001` y `AO-PPI-CONF-001` como avance local sobre Confluencia y Equivalencia de proyecciones; no reabre `P-PI.0` / `P-PI.1` ni cierra problemas globales.
 - `AO-001_Decision_Criterios_Uso_R4_Gamma_Fuera_AUD.md` (`D-2026-07-03-017`): acepta `AO-R4-GAMMA-USE-001` para usar R4/Gamma fuera de `AUD-001` solo como referencia formal local, prueba local controlada o puente de problema.
@@ -158,6 +159,7 @@ Validacion provisional registrada:
 - `AUT-001_Validacion_Cierre_Riesgos.md`.
 - `AUT-001_Validacion_Revision_Riesgos_Activos.md`.
 - `AUT-001_Validacion_Refinamiento_DO-LAB-RISK.md`.
+- `AUT-001_Validacion_Refinamiento_Contexto_Guardrails.md`.
 - `AUT-001_Validacion_Cierre_Tecnico_Provisional.md`.
 - `AUT-001_Validacion_Cierre_Operativo_Completo.md`.
 
@@ -319,6 +321,7 @@ Algoritmo provisional activo:
 - `AUT-RISK-TREAT-001` en `03_Expedientes/AUT-001_Tratamiento_Riesgos_Altos.md`.
 - `AUT-RISK-ACT-REVIEW-001` en `03_Expedientes/AUT-001_Matriz_Revision_Riesgos_Activos.md`.
 - `AUT-RISK-REFINE-001` en `03_Expedientes/AUT-001_Refinamiento_DO-LAB-RISK.md`.
+- `AUT-RISK-REFINE-002` en `03_Expedientes/AUT-001_Refinamiento_Contexto_Guardrails.md`.
 - `AUT-CLOSE-TECH-001` en `03_Expedientes/AUT-001_Decision_Cierre_Tecnico_Provisional.md`.
 - `CIERRE-AUT-001` en `03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md`.
 - `DO-LAB-RUN-001` en `06_Automatizacion/lab_run.py`.
@@ -338,7 +341,7 @@ Proximo objetivo:
 - Decidir en expediente separado si algun resultado de `AO-001` debe incorporarse formalmente al Documento 04 o a una especificacion futura de `REPORT_LAYER`.
 - Madurar `TCS-001` mas alla del paquete minimo con metrica, casos externos y tratamiento de conflicto entre autoridades validas.
 - `PSI-001` ya no se continua dentro del Laboratorio y no tiene copia local de traspaso; cualquier continuidad de psicologia vive en el proyecto independiente `Psicologia Concordante`.
-- Reportes automatizados regenerados tras `AUT-002`: `DO-LAB-RUN-001` queda en `advertencia` con recomendacion `mantener_cierre_operativo`; las referencias historicas transferidas ya no bloquean la corrida.
+- Reportes automatizados regenerados tras `AUT-RISK-REFINE-002`: `DO-LAB-RUN-001` queda en `advertencia` con recomendacion `mantener_cierre_operativo`; `DO-LAB-RISK-001` queda con `riesgo_activo: 0` y `risk_blocks_closure: false`.
 
 Expediente activo inmediato:
 

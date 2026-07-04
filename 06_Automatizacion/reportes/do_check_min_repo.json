@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-CHECK-MIN-20260703-135757",
+  "report_id": "DO-CHECK-MIN-20260703-201427",
   "expediente": "AUT-001",
   "algoritmo": "DO-CHECK-MIN-001",
   "resultado": "advertencia",
@@ -14,7 +14,7 @@
     "03_Expedientes/DO-001_DO-CHECK-001.md"
   ],
   "summary": {
-    "files_checked": 261,
+    "files_checked": 264,
     "findings": 139
   },
   "targets": [
@@ -726,6 +726,11 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AUT-001_Decision_Refinamiento_Contexto_Guardrails.md",
+      "estatus": "decision tecnica aceptada",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AUT-001_Decision_Refinamiento_DO-LAB-RISK.md",
       "estatus": "decision provisional aceptada",
       "findings": []
@@ -773,6 +778,11 @@
           "detail": "| `AUT-RISK-ACT-001` | media | `02_Documentos/C-001_Especificacion_Tecnica_Auditor.md:52` | `C-001` declara fuera de alcance la importacion del Registro Historico como autoridad vigente. | `controlado_por_guardrail`; sugerir rebaja a advertencia de control. |"
         }
       ]
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Refinamiento_Contexto_Guardrails.md",
+      "estatus": "refinamiento provisional implementado",
+      "findings": []
     },
     {
       "file": "03_Expedientes/AUT-001_Refinamiento_DO-LAB-RISK.md",
@@ -927,6 +937,11 @@
           "detail": "06_Automatizacion/reportes/lab_status_board.md"
         }
       ]
+    },
+    {
+      "file": "03_Expedientes/AUT-001_Validacion_Refinamiento_Contexto_Guardrails.md",
+      "estatus": "validacion favorable",
+      "findings": []
     },
     {
       "file": "03_Expedientes/AUT-001_Validacion_Refinamiento_DO-LAB-RISK.md",

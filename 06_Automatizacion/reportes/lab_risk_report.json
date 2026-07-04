@@ -1,51 +1,49 @@
 {
-  "report_id": "DO-LAB-RISK-20260703-135812",
+  "report_id": "DO-LAB-RISK-20260703-201432",
   "expediente": "AUT-001",
   "algoritmo": "DO-LAB-RISK-001",
-  "resultado": "riesgo_controlado",
-  "recomendacion": "revisar_riesgos_activos_sin_transformar",
+  "resultado": "advertencia_clasificada",
+  "recomendacion": "mantener_cierre_operativo",
   "transformacion_permitida": false,
   "source_reports": {
     "minimo": {
       "path": "06_Automatizacion/reportes/do_check_min_repo.json",
-      "report_id": "DO-CHECK-MIN-20260703-135757",
+      "report_id": "DO-CHECK-MIN-20260703-201427",
       "resultado": "advertencia",
       "findings": 139
     },
     "medio": {
       "path": "06_Automatizacion/reportes/do_check_med_repo.json",
-      "report_id": "DO-CHECK-MED-LIVE-20260703-135805",
+      "report_id": "DO-CHECK-MED-LIVE-20260703-201430",
       "resultado": "advertencia",
-      "findings": 236
+      "findings": 237
     }
   },
   "summary": {
-    "findings_considered": 250,
+    "findings_considered": 251,
     "by_category": {
-      "riesgo_activo": 7,
+      "advertencia_controlada": 23,
       "advertencia_heredada": 59,
-      "deuda_documental": 107,
-      "advertencia_controlada": 16,
+      "deuda_documental": 108,
       "observacion": 61
     },
     "by_operational_severity": {
-      "media": 116,
+      "media": 117,
       "baja": 131,
       "alta": 3
     },
     "by_context_class": {
-      "riesgo_real": 169,
-      "guardrail": 38,
+      "guardrail": 49,
+      "riesgo_real": 159,
       "decision_registrada": 21,
       "bitacora_historica": 9,
       "control_auditoria": 1,
       "meta_check": 12
     },
     "by_treatment_status": {
-      "pendiente_revision_operativa": 7,
+      "controlado_por_guardrail": 18,
       "conservar_deuda_historica": 59,
-      "pendiente_normalizacion_documental": 107,
-      "controlado_por_guardrail": 11,
+      "pendiente_normalizacion_documental": 108,
       "conservado_sin_tratamiento": 61,
       "controlado_por_historial": 2,
       "controlado_por_regla_de_auditoria": 1,
@@ -54,7 +52,7 @@
     },
     "by_check": {
       "minimo": 139,
-      "MED-REFERENCIAS": 56,
+      "MED-REFERENCIAS": 57,
       "MED-NIVELES": 45,
       "MED-HISTORIAL": 10
     },
@@ -75,10 +73,10 @@
       "03_Expedientes/HB-001_Deuda_Viva_H-B.md": 3,
       "03_Expedientes/HXI-001.md": 3
     },
-    "risk_blocks_closure": true
+    "risk_blocks_closure": false
   },
   "next_actions": [
-    "Decidir o mantener cierre de AUT-001 si no quedan riesgos activos reales.",
+    "Mantener cierre operativo de AUT-001 con deuda documental visible.",
     "Mantener advertencias heredadas como deuda historica sin transformar.",
     "Mantener advertencias controladas visibles; no borrarlas del reporte.",
     "Normalizar referencias o estatus faltantes solo mediante decision posterior."
@@ -92,14 +90,14 @@
       "file": "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
       "detail": "- `AUD-T07`: Registro Historico como autoridad directa;",
       "evidence": "",
-      "category": "riesgo_activo",
-      "category_label": "Riesgo activo",
+      "category": "advertencia_controlada",
+      "category_label": "Advertencia controlada",
       "operational_severity": "media",
       "active_file": true,
       "inherited_file": false,
-      "context_class": "riesgo_real",
-      "treatment_status": "pendiente_revision_operativa",
-      "risk_blocks_closure": true,
+      "context_class": "guardrail",
+      "treatment_status": "controlado_por_guardrail",
+      "risk_blocks_closure": false,
       "source_context": {
         "matched_line": 246,
         "lines": [
@@ -157,7 +155,7 @@
           }
         ]
       },
-      "rationale": "Aparece en superficie vigente o tecnica activa; revisar que el historial no opere como autoridad."
+      "rationale": "Aparece en superficie vigente, pero el contexto la controla como guardrail, historial o definicion interna."
     },
     {
       "source": "minimo",
@@ -472,7 +470,7 @@
       "operational_severity": "baja",
       "active_file": false,
       "inherited_file": true,
-      "context_class": "riesgo_real",
+      "context_class": "guardrail",
       "treatment_status": "conservar_deuda_historica",
       "risk_blocks_closure": false,
       "source_context": {
@@ -2622,14 +2620,14 @@
       "file": "03_Expedientes/AUT-001_Mapa_Fase_Media_AAU.md",
       "detail": "- `MED-HISTORIAL`: Registro Historico o `SRC-*` usado como autoridad vigente.",
       "evidence": "",
-      "category": "riesgo_activo",
-      "category_label": "Riesgo activo",
+      "category": "advertencia_controlada",
+      "category_label": "Advertencia controlada",
       "operational_severity": "media",
       "active_file": true,
       "inherited_file": false,
-      "context_class": "riesgo_real",
-      "treatment_status": "pendiente_revision_operativa",
-      "risk_blocks_closure": true,
+      "context_class": "guardrail",
+      "treatment_status": "controlado_por_guardrail",
+      "risk_blocks_closure": false,
       "source_context": {
         "matched_line": 43,
         "lines": [
@@ -2687,7 +2685,7 @@
           }
         ]
       },
-      "rationale": "Aparece en superficie vigente o tecnica activa; revisar que el historial no opere como autoridad."
+      "rationale": "Aparece en superficie vigente, pero el contexto la controla como guardrail, historial o definicion interna."
     },
     {
       "source": "minimo",
@@ -4626,51 +4624,39 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 281,
+        "matched_line": 284,
         "lines": [
           {
-            "line": 275,
-            "text": ""
-          },
-          {
-            "line": 276,
-            "text": "- `HXI-001_Reporte_Consistencia_Notacion_Xi-R.md`: reporte favorable de aplicacion de `Xi_eval(R0, R1)` a `HXI-R-001` a `HXI-R-005`; cumple requisito previo sin admitir `H-Xi`."
-          },
-          {
-            "line": 277,
-            "text": ""
-          },
-          {
             "line": 278,
-            "text": "## Tableros de automatizacion"
+            "text": ""
           },
           {
             "line": 279,
-            "text": ""
+            "text": "- `HXI-001_Reporte_Consistencia_Notacion_Xi-R.md`: reporte favorable de aplicacion de `Xi_eval(R0, R1)` a `HXI-R-001` a `HXI-R-005`; cumple requisito previo sin admitir `H-Xi`."
           },
           {
             "line": 280,
-            "text": "- `06_Automatizacion/lab_status_board.py`: tablero no mutante `DO-STATE-BOARD-001`."
+            "text": ""
           },
           {
             "line": 281,
-            "text": "- `06_Automatizacion/reportes/lab_status_board.md`: reporte Markdown conservado."
+            "text": "## Tableros de automatizacion"
           },
           {
             "line": 282,
-            "text": "- `06_Automatizacion/reportes/lab_status_board.json`: reporte JSON conservado."
+            "text": ""
           },
           {
             "line": 283,
-            "text": ""
+            "text": "- `06_Automatizacion/lab_status_board.py`: tablero no mutante `DO-STATE-BOARD-001`."
           },
           {
             "line": 284,
-            "text": ""
+            "text": "- `06_Automatizacion/reportes/lab_status_board.md`: reporte Markdown conservado."
           },
           {
             "line": 285,
-            "text": "- `EX-PSI-001` a `EX-PSI-005`: antecedentes historicos transferidos; sin archivo local activo tras `D-2026-07-03-012`."
+            "text": "- `06_Automatizacion/reportes/lab_status_board.json`: reporte JSON conservado."
           },
           {
             "line": 286,
@@ -4678,6 +4664,18 @@
           },
           {
             "line": 287,
+            "text": ""
+          },
+          {
+            "line": 288,
+            "text": "- `EX-PSI-001` a `EX-PSI-005`: antecedentes historicos transferidos; sin archivo local activo tras `D-2026-07-03-012`."
+          },
+          {
+            "line": 289,
+            "text": ""
+          },
+          {
+            "line": 290,
             "text": "## Criterios de evaluacion de expediente"
           }
         ]
@@ -7769,14 +7767,14 @@
       "file": "02_Documentos/00_Naturaleza.md",
       "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
       "evidence": "Un expediente puede proponer. Una auditoria puede evaluar. Una decision puede aceptar, cerrar, congelar, rechazar o incorporar. Un documento oficial estabiliza contenido. El Canon limita como puede cambiar todo lo anterior.",
-      "category": "riesgo_activo",
-      "category_label": "Riesgo activo",
+      "category": "advertencia_controlada",
+      "category_label": "Advertencia controlada",
       "operational_severity": "alta",
       "active_file": true,
       "inherited_file": false,
-      "context_class": "riesgo_real",
-      "treatment_status": "pendiente_revision_operativa",
-      "risk_blocks_closure": true,
+      "context_class": "guardrail",
+      "treatment_status": "controlado_por_guardrail",
+      "risk_blocks_closure": false,
       "source_context": {
         "matched_line": 88,
         "lines": [
@@ -7834,7 +7832,7 @@
           }
         ]
       },
-      "rationale": "La linea toca Canon, documento oficial, estado o superficie activa."
+      "rationale": "La linea toca superficie sensible, pero el contexto la controla como prohibicion, decision registrada o regla de auditoria."
     },
     {
       "source": "medio",
@@ -7844,14 +7842,14 @@
       "file": "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
       "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
       "evidence": "- modificar Canon por inferencia;",
-      "category": "riesgo_activo",
-      "category_label": "Riesgo activo",
+      "category": "advertencia_controlada",
+      "category_label": "Advertencia controlada",
       "operational_severity": "alta",
       "active_file": true,
       "inherited_file": false,
-      "context_class": "riesgo_real",
-      "treatment_status": "pendiente_revision_operativa",
-      "risk_blocks_closure": true,
+      "context_class": "guardrail",
+      "treatment_status": "controlado_por_guardrail",
+      "risk_blocks_closure": false,
       "source_context": {
         "matched_line": 163,
         "lines": [
@@ -7909,7 +7907,7 @@
           }
         ]
       },
-      "rationale": "La linea toca Canon, documento oficial, estado o superficie activa."
+      "rationale": "La linea toca superficie sensible, pero el contexto la controla como prohibicion, decision registrada o regla de auditoria."
     },
     {
       "source": "medio",
@@ -9274,7 +9272,7 @@
       "operational_severity": "baja",
       "active_file": false,
       "inherited_file": true,
-      "context_class": "riesgo_real",
+      "context_class": "guardrail",
       "treatment_status": "conservar_deuda_historica",
       "risk_blocks_closure": false,
       "source_context": {
@@ -10841,6 +10839,57 @@
       "severity": "warning",
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AUT-001_Refinamiento_Contexto_Guardrails.md",
+      "detail": "advertencia / mantener_cierre_operativo",
+      "evidence": "",
+      "category": "deuda_documental",
+      "category_label": "Deuda documental",
+      "operational_severity": "media",
+      "active_file": true,
+      "inherited_file": false,
+      "context_class": "riesgo_real",
+      "treatment_status": "pendiente_normalizacion_documental",
+      "risk_blocks_closure": false,
+      "source_context": {
+        "matched_line": 67,
+        "lines": [
+          {
+            "line": 61,
+            "text": "No cierra deudas conceptuales globales."
+          },
+          {
+            "line": 62,
+            "text": ""
+          },
+          {
+            "line": 63,
+            "text": "## Resultado esperado"
+          },
+          {
+            "line": 64,
+            "text": ""
+          },
+          {
+            "line": 65,
+            "text": "`DO-LAB-RISK-001` debe volver a `riesgo_activo: 0` si no aparecen riesgos operativos nuevos."
+          },
+          {
+            "line": 66,
+            "text": ""
+          },
+          {
+            "line": 67,
+            "text": "`DO-LAB-RUN-001` debe mantener `advertencia / mantener_cierre_operativo` con deuda documental visible."
+          }
+        ]
+      },
+      "rationale": "Hallazgo documental o de normalizacion; requiere orden, no transformacion inmediata."
+    },
+    {
+      "source": "medio",
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
       "file": "03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md",
       "detail": "python 06_Automatizacion/lab_run.py --scope claves --format md",
       "evidence": "",
@@ -10919,14 +10968,14 @@
       "file": "03_Expedientes/AUT-001_Validacion_Cierre_Riesgos.md",
       "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
       "evidence": "- Ningun tratamiento modifica Canon, documentos oficiales o expedientes cerrados.",
-      "category": "riesgo_activo",
-      "category_label": "Riesgo activo",
+      "category": "advertencia_controlada",
+      "category_label": "Advertencia controlada",
       "operational_severity": "media",
       "active_file": true,
       "inherited_file": false,
-      "context_class": "riesgo_real",
-      "treatment_status": "pendiente_revision_operativa",
-      "risk_blocks_closure": true,
+      "context_class": "guardrail",
+      "treatment_status": "controlado_por_guardrail",
+      "risk_blocks_closure": false,
       "source_context": {
         "matched_line": 17,
         "lines": [
@@ -10980,7 +11029,7 @@
           }
         ]
       },
-      "rationale": "La linea toca Canon, documento oficial, estado o superficie activa."
+      "rationale": "La linea toca superficie sensible, pero el contexto la controla como prohibicion, decision registrada o regla de auditoria."
     },
     {
       "source": "medio",
@@ -10990,14 +11039,14 @@
       "file": "03_Expedientes/AUT-001_Validacion_Revision_Riesgos_Activos.md",
       "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
       "evidence": "- Ningun tratamiento modifica Canon, documentos oficiales, expedientes cerrados ni reportes generados.",
-      "category": "riesgo_activo",
-      "category_label": "Riesgo activo",
+      "category": "advertencia_controlada",
+      "category_label": "Advertencia controlada",
       "operational_severity": "media",
       "active_file": true,
       "inherited_file": false,
-      "context_class": "riesgo_real",
-      "treatment_status": "pendiente_revision_operativa",
-      "risk_blocks_closure": true,
+      "context_class": "guardrail",
+      "treatment_status": "controlado_por_guardrail",
+      "risk_blocks_closure": false,
       "source_context": {
         "matched_line": 18,
         "lines": [
@@ -11055,7 +11104,7 @@
           }
         ]
       },
-      "rationale": "La linea toca Canon, documento oficial, estado o superficie activa."
+      "rationale": "La linea toca superficie sensible, pero el contexto la controla como prohibicion, decision registrada o regla de auditoria."
     },
     {
       "source": "medio",
@@ -12040,14 +12089,14 @@
       "file": "03_Expedientes/HXI-001_Criterios_Evaluacion.md",
       "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
       "evidence": "- modifica Canon o documentos oficiales;",
-      "category": "riesgo_activo",
-      "category_label": "Riesgo activo",
+      "category": "advertencia_controlada",
+      "category_label": "Advertencia controlada",
       "operational_severity": "media",
       "active_file": false,
       "inherited_file": false,
-      "context_class": "riesgo_real",
-      "treatment_status": "pendiente_revision_operativa",
-      "risk_blocks_closure": true,
+      "context_class": "guardrail",
+      "treatment_status": "controlado_por_guardrail",
+      "risk_blocks_closure": false,
       "source_context": {
         "matched_line": 41,
         "lines": [
@@ -12105,7 +12154,7 @@
           }
         ]
       },
-      "rationale": "La linea toca Canon, documento oficial, estado o superficie activa."
+      "rationale": "La linea toca superficie sensible, pero el contexto la controla como prohibicion, decision registrada o regla de auditoria."
     },
     {
       "source": "medio",
@@ -13300,7 +13349,7 @@
       "operational_severity": "media",
       "active_file": true,
       "inherited_file": false,
-      "context_class": "riesgo_real",
+      "context_class": "guardrail",
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
@@ -13450,7 +13499,7 @@
       "operational_severity": "media",
       "active_file": true,
       "inherited_file": false,
-      "context_class": "riesgo_real",
+      "context_class": "guardrail",
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {

@@ -422,3 +422,5 @@
 - Creado `AO-001_Puente_Confluencia_Equivalencia.md` con `AO-PPI-EQ-001` y `AO-PPI-CONF-001`, auditado y aceptado por `D-2026-07-03-018`.
 - Creado paquete minimo `TCS-001` con definiciones, tipologia de fallos y casos de prueba; auditado y aceptado por `D-2026-07-03-019`.
 - Actualizados `AO-001.md`, `TCS-001_Teoria_Concordante_de_Sistemas.md`, `CURRENT_STATE.md`, `ESTADO_ACTUAL.md`, `README.md` y `DECISIONES.md` para registrar el avance local y dejar abiertas Confluencia global, Equivalencia global, promocion/exportacion de R4/Gamma, formalizacion posterior de Documento 04 y maduracion de `TCS-001`.
+- Refinado `DO-LAB-RISK-001` con `AUT-RISK-REFINE-002` para reconocer guardrails documentados, matrices de prueba y validaciones negativas como advertencias controladas.
+- Creadas validacion y decision `AUT-001_Validacion_Refinamiento_Contexto_Guardrails.md` y `AUT-001_Decision_Refinamiento_Contexto_Guardrails.md`; registrada `D-2026-07-03-020`.

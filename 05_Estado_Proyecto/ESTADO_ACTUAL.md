@@ -119,6 +119,7 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - `AUT-RISK-TREAT-001`: tratamiento inicial de riesgos altos en `03_Expedientes/AUT-001_Tratamiento_Riesgos_Altos.md`.
 - `AUT-RISK-ACT-REVIEW-001`: matriz de revision de riesgos activos en `03_Expedientes/AUT-001_Matriz_Revision_Riesgos_Activos.md`.
 - `AUT-RISK-REFINE-001`: refinamiento contextual de riesgos en `03_Expedientes/AUT-001_Refinamiento_DO-LAB-RISK.md`.
+- `AUT-RISK-REFINE-002`: refinamiento de contexto de guardrails en `03_Expedientes/AUT-001_Refinamiento_Contexto_Guardrails.md`.
 - `AUT-CLOSE-TECH-001`: cierre tecnico provisional en `03_Expedientes/AUT-001_Decision_Cierre_Tecnico_Provisional.md`.
 - No hay algoritmos, matrices ni compuertas PSI activas dentro del Laboratorio; el paquete local `PSI-001*` fue eliminado por `D-2026-07-03-012`.
 
@@ -153,6 +154,7 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - `AUT-001_Validacion_Cierre_Riesgos.md`: validacion provisional favorable de criterios de cierre y riesgos altos.
 - `AUT-001_Validacion_Revision_Riesgos_Activos.md`: validacion provisional favorable de la revision de 17 riesgos activos.
 - `AUT-001_Validacion_Refinamiento_DO-LAB-RISK.md`: validacion provisional favorable del refinamiento de riesgos controlados.
+- `AUT-001_Validacion_Refinamiento_Contexto_Guardrails.md`: validacion favorable del refinamiento de guardrails.
 - `AUT-001_Validacion_Cierre_Tecnico_Provisional.md`: validacion provisional favorable del cierre tecnico provisional.
 - `AUT-001_Validacion_Cierre_Operativo_Completo.md`: validacion favorable del cierre operativo completo de `AUT-001`.
 - `P-PI_Auditoria_Marco_Inicial_Confluencia_Equivalencia.md`: auditoria favorable del marco inicial `PPI-MARCO-CORE-001`; no resuelve Confluencia ni Equivalencia de proyecciones.
@@ -174,6 +176,7 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 
 ## Decisiones provisionales de expediente
 
+- `AUT-001_Decision_Refinamiento_Contexto_Guardrails.md` (`D-2026-07-03-020`): acepta `AUT-RISK-REFINE-002` y `AUT-VAL-012`; no reabre `AUT-001`.
 - `TCS-001_Decision_Estatus_Paquete_Minimo.md` (`D-2026-07-03-019`): acepta el paquete minimo provisional de `TCS-001`; no canoniza `Concordance`.
 - `AO-001_Decision_Estatus_Puente_Confluencia_Equivalencia.md` (`D-2026-07-03-018`): acepta `AO-PPI-BRIDGE-001`, `AO-PPI-EQ-001` y `AO-PPI-CONF-001` como avance local.
 - `AO-001_Decision_Criterios_Uso_R4_Gamma_Fuera_AUD.md` (`D-2026-07-03-017`): acepta `AO-R4-GAMMA-USE-001` como criterio local de uso controlado.
@@ -401,6 +404,7 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 
 ## Ultima decision operativa
 
+`AUT-001_Decision_Refinamiento_Contexto_Guardrails.md` (`D-2026-07-03-020`): se acepta `AUT-RISK-REFINE-002` para reclasificar falsos riesgos activos de guardrails como advertencias controladas; no borra hallazgos, no reabre `AUT-001` y no autoriza transformaciones.
 `TCS-001_Decision_Estatus_Paquete_Minimo.md` (`D-2026-07-03-019`): se acepta el paquete minimo provisional de `TCS-001`; no canoniza `Concordance`, no crea Nivel C y no usa vision papers como fuente activa.
 `AO-001_Decision_Estatus_Puente_Confluencia_Equivalencia.md` (`D-2026-07-03-018`): se acepta `AO-PPI-BRIDGE-001` como avance local sobre Confluencia y Equivalencia de proyecciones; no cierra problemas globales.
 `AO-001_Decision_Criterios_Uso_R4_Gamma_Fuera_AUD.md` (`D-2026-07-03-017`): se acepta `AO-R4-GAMMA-USE-001` como criterio local de uso controlado fuera de `AUD-001`.

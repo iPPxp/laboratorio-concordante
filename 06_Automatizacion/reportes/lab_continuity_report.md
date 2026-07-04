@@ -1,6 +1,6 @@
 # LAB_CONTINUITY_REPORT
 
-report_id: DO-LAB-CONTINUITY-20260703-135811
+report_id: DO-LAB-CONTINUITY-20260703-201432
 expediente: AUT-001
 algoritmo: DO-LAB-CONTINUITY-001
 resultado: advertencia
@@ -12,14 +12,14 @@ scope: repo
 
 - expediente activo inmediato: `AO-001` queda como frente operativo principal para profundizar `AO-PPI-BRIDGE-001`, formalizacion posterior de Documento 04 y relacion eventual con `REPORT_LAYER`.
 - proximo objetivo: Profundizar `AO-PPI-BRIDGE-001` hacia pruebas de Confluencia global y Equivalencia global de proyecciones sin reabrir `P-PI.0` / `P-PI.1`.
-- ultima decision operativa: `TCS-001_Decision_Estatus_Paquete_Minimo.md` (`D-2026-07-03-019`): acepta `TCS-DEF-MIN-001`, `TCS-FAIL-TYP-001` y `TCS-CASE-BAT-001` como paquete teorico minimo provisional; no canoniza `Concordance`, no crea Nivel C y no usa vision papers como fuente activa.
+- ultima decision operativa: `AUT-001_Decision_Refinamiento_Contexto_Guardrails.md` (`D-2026-07-03-020`): acepta `AUT-RISK-REFINE-002` y `AUT-VAL-012` para reclasificar falsos riesgos activos de guardrails como advertencias controladas; no reabre `AUT-001` ni borra hallazgos.
 
 ## Cobertura integrada
 
 - tablero: ok (0 hallazgos)
-- chequeo medio: advertencia (261 archivos, 236 hallazgos)
+- chequeo medio: advertencia (264 archivos, 237 hallazgos)
 - automatizaciones presentes: 7/7
-- hallazgos combinados: 236
+- hallazgos combinados: 237
 
 ## Riesgos
 
@@ -63,7 +63,7 @@ scope: repo
 - [warning] DO-CHECK-MED-001 HANDOFF.md - referencia_historica_transferida: Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local. | evidencia: 03_Expedientes/PSI-001_Auditoria_Casos_Transformacion_No_Clinicos.md
 - [warning] DO-CHECK-MED-001 HANDOFF.md - referencia_historica_transferida: Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local. | evidencia: 03_Expedientes/PSI-001_Decision_Estatus_Casos_Transformacion_No_Clinicos.md
 - [warning] DO-CHECK-MED-001 HANDOFF.md - referencia_historica_transferida: Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local. | evidencia: 03_Expedientes/PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md
-- ... 196 hallazgos adicionales en JSON.
+- ... 197 hallazgos adicionales en JSON.
 
 ## Siguientes acciones
 

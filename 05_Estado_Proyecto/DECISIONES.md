@@ -1813,3 +1813,35 @@ No canoniza `Concordance`, no modifica Canon, no crea Nivel C, no convierte `TCS
 La deuda inmediata de `TCS-001` queda atendida en grado minimo provisional.
 
 Permanecen abiertas la formalizacion, los casos externos, la metrica de concordancia y la relacion con dominios regulados.
+
+## D-2026-07-03-020 - Refinamiento de contexto de guardrails AUT-001
+
+Estatus: decision tecnica aceptada.
+
+Fecha: 2026-07-03.
+
+## Decision
+
+Se acepta `AUT-RISK-REFINE-002` como refinamiento de contexto de guardrails para `DO-LAB-RISK-001`.
+
+Se acepta `AUT-VAL-012` como validacion favorable.
+
+Documento base: `03_Expedientes/AUT-001_Refinamiento_Contexto_Guardrails.md`.
+
+Validacion: `03_Expedientes/AUT-001_Validacion_Refinamiento_Contexto_Guardrails.md`.
+
+Decision espejo: `03_Expedientes/AUT-001_Decision_Refinamiento_Contexto_Guardrails.md`.
+
+## Alcance
+
+La decision permite clasificar como advertencia controlada las menciones sensibles que aparecen en matrices de prueba, criterios de rechazo, prohibiciones explicitas, validaciones que niegan transformacion o reglas de autoridad.
+
+## No cubre
+
+No borra hallazgos, no modifica Canon, no modifica documentos oficiales, no reabre `AUT-001`, no autoriza transformaciones materiales y no cierra deudas documentales o conceptuales.
+
+## Consecuencia
+
+`DO-LAB-RISK-001` queda refinado para mantener `riesgo_activo: 0` cuando los hallazgos pertenecen a guardrails ya documentados.
+
+`AUT-001` conserva cierre operativo con deuda documental visible.

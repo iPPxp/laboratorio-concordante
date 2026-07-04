@@ -1,24 +1,24 @@
 # LAB_RISK_REPORT
 
-report_id: DO-LAB-RISK-20260703-135812
+report_id: DO-LAB-RISK-20260703-201432
 expediente: AUT-001
 algoritmo: DO-LAB-RISK-001
-resultado: riesgo_controlado
-recomendacion: revisar_riesgos_activos_sin_transformar
+resultado: advertencia_clasificada
+recomendacion: mantener_cierre_operativo
 transformacion_permitida: false
 
 ## Resumen por categoria
 
-- riesgo_activo: 7
-- advertencia_controlada: 16
-- deuda_documental: 107
+- riesgo_activo: 0
+- advertencia_controlada: 23
+- deuda_documental: 108
 - advertencia_heredada: 59
 - observacion: 61
 
 ## Resumen por severidad
 
 - alta: 3
-- media: 116
+- media: 117
 - baja: 131
 
 ## Resumen por contexto
@@ -26,31 +26,32 @@ transformacion_permitida: false
 - bitacora_historica: 9
 - control_auditoria: 1
 - decision_registrada: 21
-- guardrail: 38
+- guardrail: 49
 - meta_check: 12
-- riesgo_real: 169
+- riesgo_real: 159
 
 ## Riesgos activos
 
-- [media] minimo 02_Documentos/C-002_RFC_Operativo_Auditor_v0.md - historial_como_autoridad_posible: - `AUD-T07`: Registro Historico como autoridad directa; | contexto: riesgo_real
-- [media] minimo 03_Expedientes/AUT-001_Mapa_Fase_Media_AAU.md - historial_como_autoridad_posible: - `MED-HISTORIAL`: Registro Historico o `SRC-*` usado como autoridad vigente. | contexto: riesgo_real
-- [alta] MED-NIVELES 02_Documentos/00_Naturaleza.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | contexto: riesgo_real | evidencia: Un expediente puede proponer. Una auditoria puede evaluar. Una decision puede aceptar, cerrar, congelar, rechazar o incorporar. Un documento oficial estabiliza contenido. El Canon limita como puede cambiar todo lo anterior.
-- [alta] MED-NIVELES 02_Documentos/C-002_RFC_Operativo_Auditor_v0.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | contexto: riesgo_real | evidencia: - modificar Canon por inferencia;
-- [media] MED-NIVELES 03_Expedientes/AUT-001_Validacion_Cierre_Riesgos.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | contexto: riesgo_real | evidencia: - Ningun tratamiento modifica Canon, documentos oficiales o expedientes cerrados.
-- [media] MED-NIVELES 03_Expedientes/AUT-001_Validacion_Revision_Riesgos_Activos.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | contexto: riesgo_real | evidencia: - Ningun tratamiento modifica Canon, documentos oficiales, expedientes cerrados ni reportes generados.
-- [media] MED-NIVELES 03_Expedientes/HXI-001_Criterios_Evaluacion.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | contexto: riesgo_real | evidencia: - modifica Canon o documentos oficiales;
+- Sin riesgos activos clasificados.
 
 ## Advertencias controladas
 
+- [media] minimo 02_Documentos/C-002_RFC_Operativo_Auditor_v0.md - historial_como_autoridad_posible: controlado_por_guardrail | contexto: guardrail
+- [media] minimo 03_Expedientes/AUT-001_Mapa_Fase_Media_AAU.md - historial_como_autoridad_posible: controlado_por_guardrail | contexto: guardrail
 - [media] minimo 03_Expedientes/AUT-001_Matriz_Revision_Riesgos_Activos.md - historial_como_autoridad_posible: controlado_por_guardrail | contexto: guardrail
 - [media] minimo 06_Automatizacion/README.md - historial_como_autoridad_posible: controlado_por_guardrail | contexto: guardrail
 - [media] minimo CHANGELOG.md - historial_como_autoridad_posible: controlado_por_historial | contexto: bitacora_historica
 - [media] MED-NIVELES CHANGELOG.md - accion_de_nivel_sensible: controlado_por_historial | contexto: bitacora_historica | evidencia: - Actualizado el estado del proyecto: el siguiente objetivo es decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial de Nivel C.
 - [alta] MED-NIVELES 01_Canon/M-001_Auditoria_Arquitectonica.md - accion_de_nivel_sensible: controlado_por_regla_de_auditoria | contexto: control_auditoria | evidencia: 8. Indicar si la intervencion modifica documentos, expedientes, estado o Canon.
+- [alta] MED-NIVELES 02_Documentos/00_Naturaleza.md - accion_de_nivel_sensible: controlado_por_guardrail | contexto: guardrail | evidencia: Un expediente puede proponer. Una auditoria puede evaluar. Una decision puede aceptar, cerrar, congelar, rechazar o incorporar. Un documento oficial estabiliza contenido. El Canon limita como puede cambiar todo lo anterior.
+- [alta] MED-NIVELES 02_Documentos/C-002_RFC_Operativo_Auditor_v0.md - accion_de_nivel_sensible: controlado_por_guardrail | contexto: guardrail | evidencia: - modificar Canon por inferencia;
 - [media] MED-NIVELES 03_Expedientes/AO-001.md - accion_de_nivel_sensible: controlado_por_guardrail | contexto: guardrail | evidencia: - modificar Canon;
 - [media] MED-NIVELES 03_Expedientes/AUT-001_Matriz_Revision_Riesgos_Activos.md - accion_de_nivel_sensible: controlado_por_definicion_de_check | contexto: meta_check | evidencia: | `AUT-RISK-ACT-003` | alta | `01_Canon/M-001_Auditoria_Arquitectonica.md:20` | Regla de auditoria que exige indicar si una intervencion modifica documentos, expedientes, estado o Canon. | `controlado_por_guardrail`; ya tratado como riesgo alto controlado. |
+- [media] MED-NIVELES 03_Expedientes/AUT-001_Validacion_Cierre_Riesgos.md - accion_de_nivel_sensible: controlado_por_guardrail | contexto: guardrail | evidencia: - Ningun tratamiento modifica Canon, documentos oficiales o expedientes cerrados.
+- [media] MED-NIVELES 03_Expedientes/AUT-001_Validacion_Revision_Riesgos_Activos.md - accion_de_nivel_sensible: controlado_por_guardrail | contexto: guardrail | evidencia: - Ningun tratamiento modifica Canon, documentos oficiales, expedientes cerrados ni reportes generados.
 - [media] MED-NIVELES 03_Expedientes/H-Xi.md - accion_de_nivel_sensible: controlado_por_guardrail | contexto: guardrail | evidencia: - modificar Canon;
 - [media] MED-NIVELES 03_Expedientes/HB-001_Deuda_Viva_H-B.md - accion_de_nivel_sensible: controlado_por_guardrail | contexto: guardrail | evidencia: - fundamento para modificar Canon;
+- [media] MED-NIVELES 03_Expedientes/HXI-001_Criterios_Evaluacion.md - accion_de_nivel_sensible: controlado_por_guardrail | contexto: guardrail | evidencia: - modifica Canon o documentos oficiales;
 - [media] MED-NIVELES 05_Estado_Proyecto/DECISIONES.md - accion_de_nivel_sensible: controlado_por_decision_registrada | contexto: decision_registrada | evidencia: Se promueve `SPEC-AUD-001_Candidata` a documento oficial de Nivel C como `02_Documentos/C-001_Especificacion_Tecnica_Auditor.md`.
 - [media] MED-NIVELES 05_Estado_Proyecto/DECISION_Desactivacion_Vision_Papers.md - accion_de_nivel_sensible: controlado_por_guardrail | contexto: guardrail | evidencia: - usarlos como fuente para modificar Canon o documentos oficiales;
 - [media] MED-NIVELES 05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_B-001.5.md - accion_de_nivel_sensible: controlado_por_guardrail | contexto: guardrail | evidencia: - modificar Canon o documentos oficiales
@@ -81,7 +82,7 @@ transformacion_permitida: false
 - [media] 03_Expedientes/AUT-001_Resumen_Ejecutivo_LAB.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_executive_summary.md
 - [media] 03_Expedientes/AUT-001_Tablero_Estado_LAB.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_status_board.md
 - [media] 03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
-- ... 87 deudas documentales adicionales en JSON.
+- ... 88 deudas documentales adicionales en JSON.
 
 ## Advertencias heredadas
 
@@ -89,7 +90,7 @@ transformacion_permitida: false
 
 ## Siguientes acciones
 
-- Decidir o mantener cierre de AUT-001 si no quedan riesgos activos reales.
+- Mantener cierre operativo de AUT-001 con deuda documental visible.
 - Mantener advertencias heredadas como deuda historica sin transformar.
 - Mantener advertencias controladas visibles; no borrarlas del reporte.
 - Normalizar referencias o estatus faltantes solo mediante decision posterior.

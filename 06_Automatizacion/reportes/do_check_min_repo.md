@@ -1,6 +1,6 @@
 # DO_CHECK_REPORT minimo
 
-report_id: DO-CHECK-MIN-20260703-135757
+report_id: DO-CHECK-MIN-20260703-201427
 expediente: AUT-001
 resultado: advertencia
 recomendacion: continuar_sin_transformar
@@ -8,7 +8,7 @@ transformacion_permitida: false
 
 ## Resumen
 
-- archivos revisados: 261
+- archivos revisados: 264
 - hallazgos: 139
 
 ## Hallazgos
