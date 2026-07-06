@@ -6,6 +6,40 @@ Fecha: 2026-07-02.
 
 Nota posterior: `PSI-001` fue independizado por `D-2026-07-03-006` como proyecto `Psicologia Concordante`. Este archivo queda historico/inactivo y no debe tratar `PSI-001` como frente activo interno del Laboratorio.
 
+Nota posterior 2026-07-05: `HXI-001` fue reabierto operativamente por `D-2026-07-05-001` para aplicar la compuerta de admision formal posterior; no admite `H-Xi`, no canoniza `Xi` y no reabre `PSI-001`.
+
+Nota posterior 2026-07-05-002: la compuerta fue aplicada por `D-2026-07-05-002` con resultado `mantener_Xi_eval`; `H-Xi` no se admite.
+
+Nota posterior 2026-07-05-003: `HXI-001` queda abierto en mantenimiento local por `D-2026-07-05-003`; conserva `Xi_eval` y deja de ser frente activo inmediato.
+
+Nota posterior 2026-07-05-004: `R001-TABLE-CHECK-001` queda integrado por `D-2026-07-05-004` como herramienta local no mutante; no canoniza `Xi`, no admite `H-Xi`, no cierra `P-200` ni resuelve `P-107`.
+
+Nota posterior 2026-07-05-005: `R001-TB-001` queda aceptado por `D-2026-07-05-005` como relacion formal local entre `R001-TABLE-CHECK-001` y `AO-PPI-BRIDGE-001`; no cierra Equivalencia global ni Confluencia global.
+
+Nota posterior 2026-07-05-006: `AO-DOC04-FORM-CHK-001` y `AO-CONF-EXT-OPTIONS-001` quedan aceptados por `D-2026-07-05-006`; esta ruta queda continuada por `D-2026-07-05-007` y por la incorporacion acotada `D-2026-07-05-008`.
+
+Nota posterior 2026-07-05-007: `AO-EXT-CONF-EXEC-001` queda aceptado por `D-2026-07-05-007`; `EXT-CONF-001` fue ejecutado y `EXT-CONF-002` agregado como segunda prueba externa no regulada. Las deudas globales de Confluencia, Equivalencia, Documento 04, R4/Gamma y `TCS-001` siguen abiertas.
+
+Nota posterior 2026-07-05-010: `AO-DOC04-FORM-001` queda aceptado por `D-2026-07-05-008` e incorpora `Pi_tb` / `Eq_tb` al Documento 04 solo en grado acotado; `AO-R4-GAMMA-EXPORT-GATE-001` queda aceptado por `D-2026-07-05-009` y bloquea exportacion general de R4/Gamma; `TCS-MAT-PROV-001` queda aceptado por `D-2026-07-05-010` como maduracion provisional no canonica.
+
+Nota posterior 2026-07-05-015: `MOC-001` queda abierto y avanzado por `D-2026-07-05-011` a `D-2026-07-05-015` como expediente integrador no canonico, no clinico y no regulado; conserva `Xi_eval` solo como operador local, no admite `H-Xi`, integra `MOC-EVAL-001` como simulacion no mutante y deja cualquier estudio empirico real para decision posterior.
+
+Nota posterior 2026-07-05-017: `MOC-ROUTE-EXEC-001` queda aceptada por `D-2026-07-05-016` como primera ruta valida ejecutada favorablemente; `MOC-NEXT-ROUTES-001` queda aceptada por `D-2026-07-05-017` y recomienda `MOC-ROUTE-002`, ampliar bateria sintetica no clinica con desacuerdos justificados y casos limite.
+
+Nota posterior 2026-07-05-019: `MOC-ROUTE-002` queda aceptada por `D-2026-07-05-018` con 11 casos aprobados, 0 fallos y 2 desacuerdos justificados; `MOC-NEXT-ROUTES-002` queda aceptada por `D-2026-07-05-019` y recomienda `MOC-ROUTE-003`, puente formal `MOC/TCS`.
+
+Nota posterior 2026-07-05-021: `MOC-ROUTE-003` queda aceptada por `D-2026-07-05-020` como puente formal `MOC/TCS`; `MOC-NEXT-ROUTES-003` queda aceptada por `D-2026-07-05-021` y recomienda `MOC-ROUTE-004`, puente formal `MOC/AO`.
+
+Nota posterior 2026-07-05-023: `MOC-ROUTE-004` queda aceptada por `D-2026-07-05-022` como puente formal local `MOC/AO`; `MOC-EVAL-001` emite `operator_trace`, `Pi_moc_trace` y `ao_bridge` como evidencia local de regla ganadora sin cerrar problemas globales; `MOC-NEXT-ROUTES-004` queda aceptada por `D-2026-07-05-023` y recomienda `MOC-ROUTE-005`, refinamiento del protocolo de evaluadores.
+
+Nota posterior 2026-07-05-025: `MOC-ROUTE-005` queda ejecutada por `D-2026-07-05-024` como refinamiento del protocolo de evaluadores; `MOC-EVAL-001` emite `protocol_v02` y `protocol_v02_summary`; `MOC-NEXT-ROUTES-005` queda aceptada por `D-2026-07-05-025` y recomienda `MOC-ROUTE-006`, preparacion documental de piloto empirico futuro sin ejecucion real.
+
+Nota posterior 2026-07-06-002: `MOC-ROUTE-006` queda preparada por `D-2026-07-06-001` como protocolo documental de piloto empirico futuro, sin ejecucion real; `MOC-NEXT-ROUTES-006` queda aceptada por `D-2026-07-06-002` y recomienda `MOC-ROUTE-007`, compuerta de autorizacion o no autorizacion del piloto futuro sin ejecutarlo.
+
+Nota posterior 2026-07-06-003: `MOC-ROUTE-007` queda ejecutada por `D-2026-07-06-003` como compuerta de no autorizacion de ejecucion; `piloto_autorizado = false`. La siguiente ruta recomendada es `MOC-ROUTE-008`, preparar paquete documental pre-ejecucion sin reclutamiento, sin respuestas reales y sin datos personales.
+
+Nota posterior 2026-07-06-004: `MOC-ROUTE-008` queda ejecutada por `D-2026-07-06-004` como paquete documental pre-ejecucion; quedan preparados semantica provisional, tabla de operaciones, casos congelados, plantilla y reglas/protocolo congelados. La siguiente ruta recomendada es `MOC-ROUTE-009`, metodo de registro sin datos personales y matriz de auditoria.
+
 ## Aviso de desactivacion
 
 Este archivo queda congelado como registro historico operativo.
@@ -126,10 +160,10 @@ El manifiesto del paquete esta en `HANDOFF_PACKAGE.md`, tambien inactivo hasta n
 
 ## Estado corto
 
-- Frente recomendado inmediato: elegir ruta posterior a `C-002` dentro de `AUD-001`: implementacion no mutante conforme al RFC, formalizacion de R4/Gamma, promocion futura de `REPORT_LAYER` o cierre/pausa operativa. `PSI-001` quedo posteriormente independizado por `D-2026-07-03-006`; `AUT-001` queda en cierre tecnico provisional; `HXI-001` queda en pausa operativa sin admision.
+- Frente recomendado inmediato vigente por nota posterior: ejecutar `MOC-ROUTE-009`, preparando metodo de registro sin datos personales y matriz de auditoria de piloto sin reclutamiento ni respuestas reales; conservar `AO-001`, Confluencia, Equivalencia de proyecciones, `AO-DOC04-FORM-001`, exportacion R4/Gamma bloqueada y maduracion posterior de `TCS-001`. `PSI-001` quedo posteriormente independizado por `D-2026-07-03-006`; `AUT-001` queda cerrado operativamente; `HXI-001` conserva `Xi_eval` en mantenimiento local sin admitir `H-Xi`.
 - Ultimo expediente cerrado: `REC-001` (reconciliacion inicial Canon/baselines); ultimo expediente tecnico cerrado: `DO-001`.
 - Documentos oficiales de Nivel C activos: `C-001_Especificacion_Tecnica_Auditor.md` y `C-002_RFC_Operativo_Auditor_v0.md`.
-- Expediente activo recomendado: `AUD-001` queda completo en version documental/operativa v0 y produjo `C-002`; permanece abierto para rutas posteriores. `PSI-001` quedo posteriormente independizado por `D-2026-07-03-006`; `AUT-001` queda en cierre tecnico provisional; `HXI-001` queda en pausa operativa; `P-PI.0` y `P-PI.1` quedan en pausa operativa; `B-001.5` queda congelado.
+- Expediente activo recomendado vigente por nota posterior: `AO-001` vuelve como frente operativo principal; `HXI-001` queda abierto en mantenimiento local con `Xi_eval`. `AUD-001` queda completo en version documental/operativa v0 y produjo `C-002`; `PSI-001` quedo independizado; `AUT-001` queda cerrado operativamente; `P-PI.0` y `P-PI.1` quedan cerrados como frentes de trabajo; `B-001.5` queda congelado.
 - Algoritmo provisional activo: `DO-CHECK-001`.
 - Implementaciones activas: `DO-CHECK-MIN-001` en `06_Automatizacion/do_check_min.py`, `DO-CHECK-MED-001` en `06_Automatizacion/do_check_med.py`, `DO-STATE-BOARD-001` en `06_Automatizacion/lab_status_board.py` y `DO-LAB-CONTINUITY-001` en `06_Automatizacion/lab_continuity_report.py`, `DO-LAB-RISK-001` en `06_Automatizacion/lab_risk_classifier.py`, `DO-LAB-SUMMARY-001` en `06_Automatizacion/lab_executive_summary.py` y `DO-LAB-RUN-001` en `06_Automatizacion/lab_run.py`.
 - Regla provisional activa: `PERMISO-ACT-001`.
@@ -192,7 +226,7 @@ Las simulaciones asociadas van de `AUD-SIM-001` a `AUD-SIM-016`.
 - Consolidar contenido real de documentos 00, 01, 02 y 03 desde fuentes previas.
 - Deudas condicionadas derivadas de `RH-001`: Protocolo de Admision/`PM-001`, Concordancia, Documento 04, arquitectura multiagente y adjuntos historicos requieren expediente o decision separada antes de usarse.
 - Deudas refinadas por `REC-001`: gobierno vs nucleo matematico, reglas metodologicas historicas, AAU historico, GDI/R4/Gamma, e hipotesis como `H-Xi`/Concordancia requieren expediente o decision separada antes de usarse.
-- `HXI-001`: pausa operativa; no continuar admision sin reapertura explicita.
+- `HXI-001`: abierto en mantenimiento local por `D-2026-07-05-003`; conserva `Xi_eval`, mantiene `H-Xi` no admitida y no es frente activo inmediato.
 - `P-PI.0` / `P-PI.1`: pausa operativa ratificada; falta consolidar proposito desde fuentes historicas o documentos previos; no cerrar, congelar ni absorber sin decision separada.
 - `AUD-001`: no promover `REPORT_LAYER`, `R4-CANDIDATA`, R4 formal ni `Gamma` sin decision posterior; cualquier herramienta futura debe declarar conformidad contra `C-002`.
 - Completar ficha de trazabilidad de `EF-001` si existe material previo.
@@ -363,4 +397,4 @@ Ruta sugerida inmediata:
 
 ## Estado de handoff
 
-Listo para traspaso operativo con `AUD-001` completo en version documental/operativa v0 y `C-002` creado, `PSI-001` posteriormente independizado por `D-2026-07-03-006`, `AUT-001` en cierre tecnico provisional, `HXI-001` en pausa operativa, `REC-001` cerrado, `RH-002` cerrado, `RH-001` cerrado y `P-PI.0` / `P-PI.1` en pausa operativa.
+Listo para traspaso operativo historico con nota posterior: `MOC-001` queda abierto y avanzado por `D-2026-07-05-011` a `D-2026-07-06-004`; `MOC-ROUTE-008` queda ejecutada como paquete pre-ejecucion y la siguiente ruta recomendada es `MOC-ROUTE-009`; `HXI-001` fue reabierto por `D-2026-07-05-001`, su compuerta fue aplicada por `D-2026-07-05-002` con resultado `mantener_Xi_eval` y queda abierto en mantenimiento local por `D-2026-07-05-003`; `AUD-001` esta completo en version documental/operativa v0 y `C-002` creado, `PSI-001` posteriormente independizado por `D-2026-07-03-006`, `AUT-001` cerrado operativamente, `REC-001` cerrado, `RH-002` cerrado, `RH-001` cerrado y `P-PI.0` / `P-PI.1` cerrados como frentes de trabajo.

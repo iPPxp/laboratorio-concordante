@@ -269,6 +269,46 @@ para toda observacion admisible O
 
 Estatus: problema abierto. No demuestra equivalencia formal total ni sustituye el frente de Equivalencia de proyecciones.
 
+## Proyeccion tabular local bajo testigo
+
+Incorporacion acotada por `D-2026-07-05-008`, desde `R001-TB-001`, `AO-DOC04-FORM-CHK-001` y `AO-EXT-CONF-EXEC-001`.
+
+Sea:
+
+```text
+C = (Omega, Phi, Pi, T)
+```
+
+donde:
+
+- `Omega` es el soporte observado;
+- `Phi` es la regla de lectura;
+- `Pi` es el conjunto de piezas visibles;
+- `T` es la relacion efectiva de transiciones.
+
+Sea `O_adm` un conjunto no vacio de observaciones admitidas y declaradas como testigo.
+
+La proyeccion tabular local es:
+
+```text
+Pi_tb(C, O_adm) = {(o, Phi(o)) | o en O_adm}
+```
+
+Dos configuraciones `C1` y `C2` son equivalentes bajo el testigo `O_adm` si y solo si:
+
+```text
+Eq_tb(C1, C2, O_adm) <=> Pi_tb(C1, O_adm) = Pi_tb(C2, O_adm)
+```
+
+Lectura operacional:
+
+- `Pi_tb` es una instancia local de proyeccion operacional bajo testigo declarado.
+- `Eq_tb` es una equivalencia local, no una equivalencia global.
+- Si `O_adm` solo prueba pertenencia de dominio, la salida es equivalencia trivial y no cierre fuerte.
+- Todo uso debe conservar testigo, estatus, evidencia, salida segura, ausencia de permiso material y deuda abierta.
+
+Esta construccion no cierra `P-200`, `P-107`, Confluencia global ni Equivalencia global de proyecciones.
+
 ## Invariantes operacionales
 
 ### AO-I1 - Separacion de niveles

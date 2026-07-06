@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-CHECK-MIN-20260703-201427",
+  "report_id": "DO-CHECK-MIN-20260705-190700",
   "expediente": "AUT-001",
   "algoritmo": "DO-CHECK-MIN-001",
   "resultado": "advertencia",
@@ -14,8 +14,8 @@
     "03_Expedientes/DO-001_DO-CHECK-001.md"
   ],
   "summary": {
-    "files_checked": 264,
-    "findings": 139
+    "files_checked": 359,
+    "findings": 162
   },
   "targets": [
     {
@@ -96,8 +96,23 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Auditoria_Compuerta_Exportacion_R4_Gamma.md",
+      "estatus": "auditoria favorable de bloqueo controlado",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Auditoria_Criterios_Uso_R4_Gamma_Fuera_AUD.md",
       "estatus": "auditoria favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Formalizacion_Acotada_Doc04.md",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Formalizacion_Doc04_Confluencia_Externa.md",
+      "estatus": "auditoria provisional favorable con ruta defensiva",
       "findings": []
     },
     {
@@ -107,6 +122,11 @@
     },
     {
       "file": "03_Expedientes/AO-001_Auditoria_Prueba_Gamma_Externa.md",
+      "estatus": "auditoria provisional favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Pruebas_Externas_Confluencia.md",
       "estatus": "auditoria provisional favorable",
       "findings": []
     },
@@ -121,12 +141,22 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Compuerta_Exportacion_R4_Gamma.md",
+      "estatus": "compuerta provisional aplicada",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Criterios_Uso_R4_Gamma_Fuera_AUD.md",
       "estatus": "criterios provisionales aceptados",
       "findings": []
     },
     {
       "file": "03_Expedientes/AO-001_Decision_Apertura.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Compuerta_Exportacion_R4_Gamma.md",
       "estatus": "decision provisional de expediente",
       "findings": []
     },
@@ -151,8 +181,33 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Decision_Estatus_Pruebas_Externas_Confluencia.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Decision_Estatus_Puente_Confluencia_Equivalencia.md",
       "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Formalizacion_Acotada_Doc04.md",
+      "estatus": "decision documental acotada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Ruta_Formalizacion_Doc04_Confluencia_Externa.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Evaluacion_Formalizacion_Doc04_R001_TB.md",
+      "estatus": "evaluacion provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Formalizacion_Acotada_Doc04_R001_TB.md",
+      "estatus": "incorporacion documental acotada",
       "findings": []
     },
     {
@@ -161,8 +216,18 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Opciones_Prueba_Confluencia_Externa.md",
+      "estatus": "opciones provisionales de prueba",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Prueba_Gamma_Externa.md",
       "estatus": "prueba provisional externa local",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Pruebas_Externas_Confluencia.md",
+      "estatus": "validacion provisional ejecutada",
       "findings": []
     },
     {
@@ -1124,7 +1189,7 @@
     },
     {
       "file": "03_Expedientes/H-Xi.md",
-      "estatus": "hipotesis externa en evaluacion / expediente `HXI-001` abierto / no admitida como Canon",
+      "estatus": "hipotesis externa en evaluacion / expediente `HXI-001` abierto en mantenimiento local / no admitida como Canon",
       "findings": []
     },
     {
@@ -1161,25 +1226,17 @@
     },
     {
       "file": "03_Expedientes/HXI-001.md",
-      "estatus": "abierto en pausa operativa / sin admision de `H-Xi`",
-      "findings": [
-        {
-          "severity": "warning",
-          "kind": "referencia_historica_transferida",
-          "file": "03_Expedientes/HXI-001.md",
-          "detail": "03_Expedientes/PSI-001_Criterio_Transformacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)"
-        },
-        {
-          "severity": "warning",
-          "kind": "referencia_historica_transferida",
-          "file": "03_Expedientes/HXI-001.md",
-          "detail": "03_Expedientes/PSI-001_Ejemplos_Conceptuales_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
-        }
-      ]
+      "estatus": "abierto en mantenimiento local / `Xi_eval` conservado / sin admision de `H-Xi`",
+      "findings": []
     },
     {
       "file": "03_Expedientes/HXI-001_Auditoria_Apertura.md",
       "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Auditoria_Compuerta_Admision_Formal.md",
+      "estatus": "auditoria provisional favorable",
       "findings": []
     },
     {
@@ -1190,6 +1247,11 @@
     {
       "file": "03_Expedientes/HXI-001_Auditoria_Dictamen_Utilidad_Local.md",
       "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Auditoria_Mantenimiento_Local.md",
+      "estatus": "auditoria provisional favorable",
       "findings": []
     },
     {
@@ -1205,6 +1267,11 @@
     {
       "file": "03_Expedientes/HXI-001_Auditoria_Notacion_Minima_Xi-R.md",
       "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Auditoria_Reapertura_Operativa.md",
+      "estatus": "auditoria provisional favorable con restricciones",
       "findings": []
     },
     {
@@ -1258,12 +1325,27 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/HXI-001_Decision_Mantenimiento_Local.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/HXI-001_Decision_Pausa_Operativa.md",
       "estatus": "decision provisional de expediente",
       "findings": []
     },
     {
       "file": "03_Expedientes/HXI-001_Decision_Preparacion_Admision_Formal.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Decision_Reapertura_Operativa.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Decision_Resultado_Compuerta_Admision_Formal.md",
       "estatus": "decision provisional de expediente",
       "findings": []
     },
@@ -1275,6 +1357,16 @@
     {
       "file": "03_Expedientes/HXI-001_Dictamen_Utilidad_Local_Xi.md",
       "estatus": "dictamen provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Evaluacion_Compuerta_Admision_Formal.md",
+      "estatus": "evaluacion provisional de compuerta aplicada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Mantenimiento_Local.md",
+      "estatus": "regimen de mantenimiento local de expediente",
       "findings": []
     },
     {
@@ -1293,8 +1385,455 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/HXI-001_Reapertura_Operativa.md",
+      "estatus": "reapertura operativa de expediente",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/HXI-001_Reporte_Consistencia_Notacion_Xi-R.md",
       "estatus": "reporte provisional operativo de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001.md",
+      "estatus": "expediente integrador abierto",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001.md",
+          "detail": "06_Automatizacion/reportes/moc_eval_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Apertura.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Auditoria_Apertura.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Compuerta_Autorizacion_Ejecucion_Piloto.md",
+      "estatus": "auditoria favorable a no autorizacion de ejecucion",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Auditoria_Compuerta_Autorizacion_Ejecucion_Piloto.md",
+          "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Disenio_Estudio_Empirico.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Auditoria_Disenio_Estudio_Empirico.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Ejecucion_Ruta_002.md",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Ejecucion_Ruta_005.md",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Ejecucion_Ruta_Valida_001.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Auditoria_Ejecucion_Ruta_Valida_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Formalizacion_Xi_eval.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Auditoria_Formalizacion_Xi_eval.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Metricas_Protocolo.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Auditoria_Metricas_Protocolo.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Paquete_PreEjecucion_Piloto.md",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Protocolo_Piloto_Empirico_Futuro.md",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Puente_Formal_MOC_AO.md",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Puente_Formal_MOC_TCS.md",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_002.md",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_003.md",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_004.md",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_005.md",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_006.md",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Siguientes_Rutas_Validas.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Auditoria_Siguientes_Rutas_Validas.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Simulacion_Software.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Auditoria_Simulacion_Software.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Casos_Congelados_Piloto.md",
+      "estatus": "paquete congelado documental, no ejecutado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Casos_No_Clinicos.md",
+      "estatus": "bateria provisional ampliada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Compuerta_Autorizacion_Ejecucion_Piloto.md",
+      "estatus": "compuerta aplicada, ejecucion no autorizada",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Compuerta_Autorizacion_Ejecucion_Piloto.md",
+          "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Apertura.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Compuerta_Autorizacion_Ejecucion_Piloto.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Disenio_Estudio_Empirico.md",
+      "estatus": "decision teorica provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Ejecucion_Ruta_002.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Ejecucion_Ruta_005.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Ejecucion_Ruta_Valida_001.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Formalizacion_Xi_eval.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Metricas_Protocolo.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Paquete_PreEjecucion_Piloto.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Protocolo_Piloto_Empirico_Futuro.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Puente_Formal_MOC_AO.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Puente_Formal_MOC_TCS.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_002.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_003.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_004.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_005.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_006.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Siguientes_Rutas_Validas.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Simulacion_Software.md",
+      "estatus": "decision tecnica provisional",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Decision_Simulacion_Software.md",
+          "detail": "06_Automatizacion/reportes/moc_eval_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Disenio_Estudio_Empirico.md",
+      "estatus": "diseno documental provisional, no ejecutado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_002.md",
+      "estatus": "ejecucion local favorable",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_002.md",
+          "detail": "06_Automatizacion/reportes/moc_eval_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_002.md",
+          "detail": "06_Automatizacion/reportes/lab_run_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_002.md",
+          "detail": "06_Automatizacion/reportes/lab_risk_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_005.md",
+      "estatus": "ejecutada favorablemente en alcance local",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_005.md",
+          "detail": "06_Automatizacion/reportes/moc_eval_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_Valida_001.md",
+      "estatus": "ejecucion local aceptable, no canonica",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_Valida_001.md",
+          "detail": "06_Automatizacion/reportes/moc_eval_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_Valida_001.md",
+          "detail": "06_Automatizacion/reportes/lab_run_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_Valida_001.md",
+          "detail": "06_Automatizacion/reportes/lab_risk_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Formalizacion_Xi_eval.md",
+      "estatus": "formalizacion local provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Metricas_Estados.md",
+      "estatus": "metrica cualitativa ordinal provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Paquete_PreEjecucion_Piloto.md",
+      "estatus": "paquete documental preparado, ejecucion real bloqueada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Plantilla_Respuesta_Evaluadores.md",
+      "estatus": "plantilla documental, no usada en ejecucion real",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Protocolo_Evaluacion.md",
+      "estatus": "protocolo reproducible provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Protocolo_Evaluacion_v0_2.md",
+      "estatus": "refinamiento provisional no canonico",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Protocolo_Piloto_Empirico_Futuro.md",
+      "estatus": "protocolo documental preparado, no ejecutado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Puente_Formal_MOC_AO.md",
+      "estatus": "formalizacion local provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Puente_Formal_MOC_TCS.md",
+      "estatus": "formalizacion ejecutable local provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Reglas_Protocolo_Congelados.md",
+      "estatus": "version documental congelada, no ejecutada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_002.md",
+      "estatus": "matriz provisional de rutas posteriores",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_003.md",
+      "estatus": "matriz provisional de rutas posteriores",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_004.md",
+      "estatus": "matriz provisional de rutas posteriores",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_005.md",
+      "estatus": "matriz provisional de rutas posteriores",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_006.md",
+      "estatus": "matriz provisional de rutas posteriores",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Semantica_Provisional.md",
+      "estatus": "propuesta semantica provisional, no canonica",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Siguientes_Rutas_Validas.md",
+      "estatus": "matriz provisional de rutas posteriores",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Tabla_Operaciones_Formales.md",
+      "estatus": "tabla operativa provisional, no canonica",
       "findings": []
     },
     {
@@ -1373,6 +1912,50 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/R001-001_Auditoria_Integracion_Table_Checks.md",
+      "estatus": "auditoria provisional favorable con limites",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/R001-001_Auditoria_Integracion_Table_Checks.md",
+          "detail": "06_Automatizacion/reportes/r001_table_checks_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/R001-001_Auditoria_Relacion_Formal_AO.md",
+      "estatus": "auditoria provisional favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/R001-001_Decision_Integracion_Table_Checks.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/R001-001_Decision_Relacion_Formal_AO.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/R001-001_Integracion_Table_Checks.md",
+      "estatus": "integracion tecnica provisional",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/R001-001_Integracion_Table_Checks.md",
+          "detail": "06_Automatizacion/reportes/r001_table_checks_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/R001-001_Relacion_Formal_AO.md",
+      "estatus": "relacion formal local provisional",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/README.md",
       "estatus": "no_clasificado",
       "findings": []
@@ -1433,6 +2016,11 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/TCS-001_Auditoria_Maduracion_Provisional.md",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/TCS-001_Auditoria_Paquete_Minimo.md",
       "estatus": "auditoria favorable con limites",
       "findings": []
@@ -1448,8 +2036,18 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/TCS-001_Decision_Maduracion_Provisional.md",
+      "estatus": "decision teorica provisional",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/TCS-001_Definiciones_Minimas.md",
       "estatus": "definiciones provisionales de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/TCS-001_Maduracion_Provisional.md",
+      "estatus": "avance teorico provisional",
       "findings": []
     },
     {
@@ -1743,6 +2341,18 @@
           "kind": "referencia_historica_transferida",
           "file": "05_Estado_Proyecto/DECISIONES.md",
           "detail": "03_Expedientes/PSI-001_Decision_Independizacion_Proyecto.md (PSI-001 transferido; no restaurar copia local)"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/ao_ext_confluence_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/moc_eval_report.md"
         }
       ]
     },
@@ -1850,6 +2460,18 @@
         },
         {
           "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/r001_table_checks_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/moc_eval_report.md"
+        },
+        {
+          "severity": "warning",
           "kind": "historial_como_autoridad_posible",
           "file": "06_Automatizacion/README.md",
           "detail": "- usar Registro Historico como autoridad directa;"
@@ -1889,6 +2511,12 @@
           "kind": "referencia_no_materializada",
           "file": "CHANGELOG.md",
           "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "CHANGELOG.md",
+          "detail": "06_Automatizacion/reportes/README.md"
         },
         {
           "severity": "warning",
@@ -2544,15 +3172,123 @@
     },
     {
       "severity": "warning",
-      "kind": "referencia_historica_transferida",
-      "file": "03_Expedientes/HXI-001.md",
-      "detail": "03_Expedientes/PSI-001_Criterio_Transformacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)"
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001.md",
+      "detail": "06_Automatizacion/reportes/moc_eval_report.md"
     },
     {
       "severity": "warning",
-      "kind": "referencia_historica_transferida",
-      "file": "03_Expedientes/HXI-001.md",
-      "detail": "03_Expedientes/PSI-001_Ejemplos_Conceptuales_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)"
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Auditoria_Apertura.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Auditoria_Compuerta_Autorizacion_Ejecucion_Piloto.md",
+      "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Auditoria_Disenio_Estudio_Empirico.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Auditoria_Ejecucion_Ruta_Valida_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Auditoria_Formalizacion_Xi_eval.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Auditoria_Metricas_Protocolo.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Auditoria_Siguientes_Rutas_Validas.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Auditoria_Simulacion_Software.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Compuerta_Autorizacion_Ejecucion_Piloto.md",
+      "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Decision_Simulacion_Software.md",
+      "detail": "06_Automatizacion/reportes/moc_eval_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_002.md",
+      "detail": "06_Automatizacion/reportes/moc_eval_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_002.md",
+      "detail": "06_Automatizacion/reportes/lab_run_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_002.md",
+      "detail": "06_Automatizacion/reportes/lab_risk_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_005.md",
+      "detail": "06_Automatizacion/reportes/moc_eval_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_Valida_001.md",
+      "detail": "06_Automatizacion/reportes/moc_eval_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_Valida_001.md",
+      "detail": "06_Automatizacion/reportes/lab_run_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_Valida_001.md",
+      "detail": "06_Automatizacion/reportes/lab_risk_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/R001-001_Auditoria_Integracion_Table_Checks.md",
+      "detail": "06_Automatizacion/reportes/r001_table_checks_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/R001-001_Integracion_Table_Checks.md",
+      "detail": "06_Automatizacion/reportes/r001_table_checks_report.md"
     },
     {
       "severity": "warning",
@@ -2665,6 +3401,18 @@
     {
       "severity": "warning",
       "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/ao_ext_confluence_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/moc_eval_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
       "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
       "detail": "06_Automatizacion/reportes/lab_status_board.md"
     },
@@ -2736,6 +3484,18 @@
     },
     {
       "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/r001_table_checks_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/moc_eval_report.md"
+    },
+    {
+      "severity": "warning",
       "kind": "historial_como_autoridad_posible",
       "file": "06_Automatizacion/README.md",
       "detail": "- usar Registro Historico como autoridad directa;"
@@ -2769,6 +3529,12 @@
       "kind": "referencia_no_materializada",
       "file": "CHANGELOG.md",
       "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "CHANGELOG.md",
+      "detail": "06_Automatizacion/reportes/README.md"
     },
     {
       "severity": "warning",

@@ -1,6 +1,6 @@
 # LAB_RISK_REPORT
 
-report_id: DO-LAB-RISK-20260703-201432
+report_id: DO-LAB-RISK-20260705-190710
 expediente: AUT-001
 algoritmo: DO-LAB-RISK-001
 resultado: advertencia_clasificada
@@ -10,25 +10,25 @@ transformacion_permitida: false
 ## Resumen por categoria
 
 - riesgo_activo: 0
-- advertencia_controlada: 23
-- deuda_documental: 108
+- advertencia_controlada: 24
+- deuda_documental: 185
 - advertencia_heredada: 59
-- observacion: 61
+- observacion: 59
 
 ## Resumen por severidad
 
 - alta: 3
-- media: 117
-- baja: 131
+- media: 145
+- baja: 179
 
 ## Resumen por contexto
 
-- bitacora_historica: 9
+- bitacora_historica: 12
 - control_auditoria: 1
-- decision_registrada: 21
-- guardrail: 49
+- decision_registrada: 25
+- guardrail: 74
 - meta_check: 12
-- riesgo_real: 159
+- riesgo_real: 203
 
 ## Riesgos activos
 
@@ -52,6 +52,7 @@ transformacion_permitida: false
 - [media] MED-NIVELES 03_Expedientes/H-Xi.md - accion_de_nivel_sensible: controlado_por_guardrail | contexto: guardrail | evidencia: - modificar Canon;
 - [media] MED-NIVELES 03_Expedientes/HB-001_Deuda_Viva_H-B.md - accion_de_nivel_sensible: controlado_por_guardrail | contexto: guardrail | evidencia: - fundamento para modificar Canon;
 - [media] MED-NIVELES 03_Expedientes/HXI-001_Criterios_Evaluacion.md - accion_de_nivel_sensible: controlado_por_guardrail | contexto: guardrail | evidencia: - modifica Canon o documentos oficiales;
+- [media] MED-NIVELES 03_Expedientes/MOC-001_Auditoria_Siguientes_Rutas_Validas.md - accion_de_nivel_sensible: controlado_por_guardrail | contexto: guardrail | evidencia: - Ninguna ruta modifica Canon, Nivel C ni `Documento 04`.
 - [media] MED-NIVELES 05_Estado_Proyecto/DECISIONES.md - accion_de_nivel_sensible: controlado_por_decision_registrada | contexto: decision_registrada | evidencia: Se promueve `SPEC-AUD-001_Candidata` a documento oficial de Nivel C como `02_Documentos/C-001_Especificacion_Tecnica_Auditor.md`.
 - [media] MED-NIVELES 05_Estado_Proyecto/DECISION_Desactivacion_Vision_Papers.md - accion_de_nivel_sensible: controlado_por_guardrail | contexto: guardrail | evidencia: - usarlos como fuente para modificar Canon o documentos oficiales;
 - [media] MED-NIVELES 05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_B-001.5.md - accion_de_nivel_sensible: controlado_por_guardrail | contexto: guardrail | evidencia: - modificar Canon o documentos oficiales
@@ -82,7 +83,7 @@ transformacion_permitida: false
 - [media] 03_Expedientes/AUT-001_Resumen_Ejecutivo_LAB.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_executive_summary.md
 - [media] 03_Expedientes/AUT-001_Tablero_Estado_LAB.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_status_board.md
 - [media] 03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
-- ... 88 deudas documentales adicionales en JSON.
+- ... 165 deudas documentales adicionales en JSON.
 
 ## Advertencias heredadas
 

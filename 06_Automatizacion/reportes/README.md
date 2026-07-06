@@ -28,3 +28,9 @@ Los reportes no autorizan cambios, no cierran expedientes y no sustituyen decisi
 - `auditor_v0_report.json`
 - `auditor_do_check_adapter_report.md`
 - `auditor_do_check_adapter_report.json`
+- `r001_table_checks_report.md`
+- `r001_table_checks_report.json`
+- `ao_ext_confluence_report.md`
+- `ao_ext_confluence_report.json`
+- `moc_eval_report.md` (incluye trazas de operadores `MOC/TCS`, rol local de puente `MOC/AO` y protocolo v0.2)
+- `moc_eval_report.json` (incluye `operator_trace`, `Pi_moc_trace`, `ao_bridge` y `protocol_v02`)

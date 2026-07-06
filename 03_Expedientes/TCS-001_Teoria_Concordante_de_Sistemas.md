@@ -163,6 +163,17 @@ El paquete minimo aceptado por `D-2026-07-03-019` atiende el primer nivel de est
 
 El paquete no canoniza `Concordance`, no crea Nivel C y no convierte `TCS-001` en teoria completa.
 
+## Avance provisional 2026-07-05
+
+La maduracion provisional aceptada por `D-2026-07-05-010` agrega:
+
+- `TCS-001_Maduracion_Provisional.md`: `TCS-MAT-PROV-001`.
+- `TCS-METRIC-PROV-001`: metrica cualitativa provisional de concordancia local.
+- `TCS-EXT-CASE-001`: casos externos no regulados sobre paquete de software de juguete.
+- `TCS-AUTH-CONF-001`: patron de conflicto entre autoridades validas.
+
+Este avance no canoniza `Concordance`, no crea Nivel C, no abre dominios regulados y no convierte `TCS-001` en teoria completa.
+
 ## Riesgos conceptuales
 
 - Convertir `Concordance` en sinonimo decorativo de alineacion.

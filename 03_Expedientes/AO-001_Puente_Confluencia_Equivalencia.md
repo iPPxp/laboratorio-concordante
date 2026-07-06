@@ -25,6 +25,7 @@ El puente usa `G_AO_OP-GOV-001`, `AO-CASE-BAT-001` y `AO-R4-GAMMA-USE-001` como 
 - `03_Expedientes/AO-001_Prueba_Gamma_Externa.md`
 - `03_Expedientes/AO-001_Casos_Prueba_Algebra_Operacional.md`
 - `03_Expedientes/AO-001_Criterios_Uso_R4_Gamma_Fuera_AUD.md`
+- `03_Expedientes/R001-001_Relacion_Formal_AO.md`
 
 ## Prueba local 1 - Equivalencia de proyecciones
 
@@ -90,6 +91,59 @@ Hay confluencia local si las tres rutas:
 
 No pasa como confluencia global, porque no cubre rutas algebraicas generales ni casos externos.
 
+## Extension local R001-TB-001
+
+ID: `R001-TB-001`.
+
+`R001-TB-001` agrega una instancia tabular local del puente:
+
+```text
+Pi_tb(C, O_adm) = {(o, Phi(o)) | o en O_adm}
+Eq_tb(C1, C2, O_adm) <=> Pi_tb(C1, O_adm) = Pi_tb(C2, O_adm)
+```
+
+Lectura para `AO-PPI-EQ-001`:
+
+- `Pi_tb` funciona como una instancia local de `Pi_op`;
+- `O_adm` funciona como testigo explicito;
+- equivalencia trivial queda separada de equivalencia fuerte;
+- no equivalencia y bloqueos se conservan como salidas seguras.
+
+Lectura para `AO-PPI-CONF-001`:
+
+- ruta de estado: `R001-001` como expediente tecnico provisional;
+- ruta de decision: `R001-001_Decision_Integracion_Table_Checks.md` y decision posterior de `R001-TB-001`;
+- ruta de reporte: `R001-TABLE-CHECK-001` con resultado `ok`;
+- ninguna ruta aumenta autoridad ni habilita transformacion material.
+
+Esta extension cierra solo la relacion formal local con `R001`. No cierra Confluencia global ni Equivalencia global de proyecciones.
+
+## Ruta Doc04 y pruebas externas
+
+ID: `AO-DOC04-FORM-CHK-001` / `AO-CONF-EXT-OPTIONS-001`.
+
+La evaluacion posterior de `R001-TB-001` fija una ruta defensiva:
+
+- `Pi_tb` y `Eq_tb` pueden conservarse como candidata formal para Documento 04;
+- Documento 04 no se modifica todavia;
+- `EXT-CONF-001` debe ejecutarse primero como prueba sintetica no mutante fuera del Laboratorio;
+- una incorporacion documental posterior requiere auditoria y decision separadas.
+
+La primera prueba externa recomendada es:
+
+```text
+EXT-CONF-001 = normalizacion CSV vs normalizacion JSON sobre tabla sintetica
+```
+
+El criterio esperado conserva testigo, proyeccion, salida segura y clasificacion de divergencia sin aumentar autoridad.
+
+Ejecucion posterior:
+
+- `AO-EXT-CONF-EXEC-001` ejecuta `EXT-CONF-001` sobre tabla sintetica CSV/JSON;
+- agrega `EXT-CONF-002` sobre paquete de software de juguete como segunda prueba externa no regulada;
+- reporta 7 casos aprobados y 0 fallos;
+- mantiene abiertas Confluencia global, Equivalencia global, formalizacion posterior amplia de Documento 04, exportacion general de R4/Gamma y maduracion posterior de `TCS-001`.
+
 ## Uso de R4/Gamma
 
 `R4-FORMAL-AUD-001` se usa solo como referencia formal local sobre trazas, decision fundada y ejecucion valida.
@@ -128,3 +182,6 @@ No autoriza transformaciones materiales.
 - criterios de confluencia fuera del Laboratorio;
 - relacion futura con `REPORT_LAYER`;
 - posible formalizacion posterior en Documento 04.
+- relacion futura entre `R001-TB-001` y una teoria general de proyecciones tabulares.
+- decidir si se requieren mas pruebas externas antes de cualquier incorporacion documental;
+- auditoria especifica del texto a incorporar si se abre una ruta futura de Documento 04.

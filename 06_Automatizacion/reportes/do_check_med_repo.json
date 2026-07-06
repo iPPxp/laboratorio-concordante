@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-CHECK-MED-LIVE-20260703-201430",
+  "report_id": "DO-CHECK-MED-LIVE-20260705-190705",
   "expediente": "AUT-001",
   "algoritmo": "DO-CHECK-MED-001",
   "resultado": "advertencia",
@@ -8,15 +8,16 @@
   "transformacion_permitida": false,
   "scope": "repo",
   "summary": {
-    "files_checked": 264,
-    "findings": 237,
+    "files_checked": 359,
+    "findings": 335,
     "by_severity": {
-      "warning": 237
+      "warning": 335
     },
     "by_check": {
-      "MED-REFERENCIAS": 159,
-      "MED-NIVELES": 67,
-      "MED-HISTORIAL": 11
+      "MED-REFERENCIAS": 249,
+      "MED-NIVELES": 68,
+      "MED-HISTORIAL": 11,
+      "MED-ESTATUS": 7
     }
   },
   "targets": [
@@ -195,6 +196,22 @@
         },
         {
           "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CHANGELOG.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CHANGELOG.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
           "check_id": "MED-NIVELES",
           "kind": "accion_de_nivel_sensible",
           "file": "CHANGELOG.md",
@@ -215,13 +232,142 @@
       "file": "CURRENT_STATE.md",
       "surface": "estado_operativo",
       "estatus": "no_clasificado",
-      "findings": []
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CURRENT_STATE.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CURRENT_STATE.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CURRENT_STATE.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CURRENT_STATE.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CURRENT_STATE.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CURRENT_STATE.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CURRENT_STATE.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CURRENT_STATE.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CURRENT_STATE.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CURRENT_STATE.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CURRENT_STATE.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CURRENT_STATE.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        }
+      ]
     },
     {
       "file": "HANDOFF.md",
       "surface": "estado_operativo",
       "estatus": "inactivo hasta nuevo aviso",
       "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "HANDOFF.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "HANDOFF.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "HANDOFF.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "HANDOFF.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
         {
           "severity": "warning",
           "check_id": "MED-REFERENCIAS",
@@ -560,6 +706,22 @@
         {
           "severity": "warning",
           "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "HANDOFF_PACKAGE.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
           "kind": "referencia_historica_transferida",
           "file": "HANDOFF_PACKAGE.md",
           "detail": "Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local.",
@@ -751,7 +913,24 @@
       "file": "README.md",
       "surface": "estado_operativo",
       "estatus": "no_clasificado",
-      "findings": []
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "README.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "README.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        }
+      ]
     },
     {
       "file": "VISION_PAPER_FINAL_REFERENCIAS.md",
@@ -886,15 +1065,39 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Auditoria_Compuerta_Exportacion_R4_Gamma.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable de bloqueo controlado",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Auditoria_Criterios_Uso_R4_Gamma_Fuera_AUD.md",
       "surface": "expediente",
       "estatus": "auditoria favorable",
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Auditoria_Formalizacion_Acotada_Doc04.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Formalizacion_Doc04_Confluencia_Externa.md",
+      "surface": "expediente",
+      "estatus": "auditoria provisional favorable con ruta defensiva",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Auditoria_Marco_Inicial_Algebra_Operacional.md",
       "surface": "expediente",
       "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Pruebas_Externas_Confluencia.md",
+      "surface": "expediente",
+      "estatus": "auditoria provisional favorable",
       "findings": []
     },
     {
@@ -925,6 +1128,12 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Compuerta_Exportacion_R4_Gamma.md",
+      "surface": "expediente",
+      "estatus": "compuerta provisional aplicada",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Criterios_Uso_R4_Gamma_Fuera_AUD.md",
       "surface": "expediente",
       "estatus": "criterios provisionales aceptados",
@@ -932,6 +1141,12 @@
     },
     {
       "file": "03_Expedientes/AO-001_Decision_Apertura.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Compuerta_Exportacion_R4_Gamma.md",
       "surface": "expediente",
       "estatus": "decision provisional de expediente",
       "findings": []
@@ -955,6 +1170,12 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Decision_Estatus_Pruebas_Externas_Confluencia.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Decision_Estatus_Prueba_Gamma_Externa.md",
       "surface": "expediente",
       "estatus": "decision provisional de expediente",
@@ -967,9 +1188,45 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Decision_Formalizacion_Acotada_Doc04.md",
+      "surface": "expediente",
+      "estatus": "decision documental acotada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Ruta_Formalizacion_Doc04_Confluencia_Externa.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Evaluacion_Formalizacion_Doc04_R001_TB.md",
+      "surface": "expediente",
+      "estatus": "evaluacion provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Formalizacion_Acotada_Doc04_R001_TB.md",
+      "surface": "expediente",
+      "estatus": "incorporacion documental acotada",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Marco_Inicial_Algebra_Operacional.md",
       "surface": "expediente",
       "estatus": "marco inicial provisional aceptado por `D-2026-07-03-009`",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Opciones_Prueba_Confluencia_Externa.md",
+      "surface": "expediente",
+      "estatus": "opciones provisionales de prueba",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Pruebas_Externas_Confluencia.md",
+      "surface": "expediente",
+      "estatus": "validacion provisional ejecutada",
       "findings": []
     },
     {
@@ -2276,7 +2533,7 @@
     {
       "file": "03_Expedientes/H-Xi.md",
       "surface": "expediente",
-      "estatus": "hipotesis externa en evaluacion / expediente `HXI-001` abierto / no admitida como Canon",
+      "estatus": "hipotesis externa en evaluacion / expediente `HXI-001` abierto en mantenimiento local / no admitida como Canon",
       "findings": [
         {
           "severity": "warning",
@@ -2354,30 +2611,19 @@
     {
       "file": "03_Expedientes/HXI-001.md",
       "surface": "expediente",
-      "estatus": "abierto en pausa operativa / sin admision de `H-Xi`",
-      "findings": [
-        {
-          "severity": "warning",
-          "check_id": "MED-REFERENCIAS",
-          "kind": "referencia_historica_transferida",
-          "file": "03_Expedientes/HXI-001.md",
-          "detail": "Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local.",
-          "evidence": "03_Expedientes/PSI-001_Criterio_Transformacion_Experiencia_Psicologica.md"
-        },
-        {
-          "severity": "warning",
-          "check_id": "MED-REFERENCIAS",
-          "kind": "referencia_historica_transferida",
-          "file": "03_Expedientes/HXI-001.md",
-          "detail": "Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local.",
-          "evidence": "03_Expedientes/PSI-001_Ejemplos_Conceptuales_No_Clinicos.md"
-        }
-      ]
+      "estatus": "abierto en mantenimiento local / `Xi_eval` conservado / sin admision de `H-Xi`",
+      "findings": []
     },
     {
       "file": "03_Expedientes/HXI-001_Auditoria_Apertura.md",
       "surface": "expediente",
       "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Auditoria_Compuerta_Admision_Formal.md",
+      "surface": "expediente",
+      "estatus": "auditoria provisional favorable",
       "findings": []
     },
     {
@@ -2390,6 +2636,12 @@
       "file": "03_Expedientes/HXI-001_Auditoria_Dictamen_Utilidad_Local.md",
       "surface": "expediente",
       "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Auditoria_Mantenimiento_Local.md",
+      "surface": "expediente",
+      "estatus": "auditoria provisional favorable",
       "findings": []
     },
     {
@@ -2408,6 +2660,12 @@
       "file": "03_Expedientes/HXI-001_Auditoria_Notacion_Minima_Xi-R.md",
       "surface": "expediente",
       "estatus": "auditoria provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Auditoria_Reapertura_Operativa.md",
+      "surface": "expediente",
+      "estatus": "auditoria provisional favorable con restricciones",
       "findings": []
     },
     {
@@ -2480,6 +2738,12 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/HXI-001_Decision_Mantenimiento_Local.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/HXI-001_Decision_Pausa_Operativa.md",
       "surface": "expediente",
       "estatus": "decision provisional de expediente",
@@ -2487,6 +2751,18 @@
     },
     {
       "file": "03_Expedientes/HXI-001_Decision_Preparacion_Admision_Formal.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Decision_Reapertura_Operativa.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Decision_Resultado_Compuerta_Admision_Formal.md",
       "surface": "expediente",
       "estatus": "decision provisional de expediente",
       "findings": []
@@ -2521,6 +2797,18 @@
       ]
     },
     {
+      "file": "03_Expedientes/HXI-001_Evaluacion_Compuerta_Admision_Formal.md",
+      "surface": "expediente",
+      "estatus": "evaluacion provisional de compuerta aplicada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/HXI-001_Mantenimiento_Local.md",
+      "surface": "expediente",
+      "estatus": "regimen de mantenimiento local de expediente",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/HXI-001_Mapa_Preliminar_PSI-R.md",
       "surface": "expediente",
       "estatus": "mapa preliminar operativo de expediente",
@@ -2539,9 +2827,815 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/HXI-001_Reapertura_Operativa.md",
+      "surface": "expediente",
+      "estatus": "reapertura operativa de expediente",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/HXI-001_Reporte_Consistencia_Notacion_Xi-R.md",
       "surface": "expediente",
       "estatus": "reporte provisional operativo de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001.md",
+      "surface": "expediente",
+      "estatus": "expediente integrador abierto",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Apertura.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Auditoria_Apertura.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Compuerta_Autorizacion_Ejecucion_Piloto.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable a no autorizacion de ejecucion",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Disenio_Estudio_Empirico.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Auditoria_Disenio_Estudio_Empirico.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Ejecucion_Ruta_002.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable con limites",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Auditoria_Ejecucion_Ruta_002.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Ejecucion_Ruta_005.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Ejecucion_Ruta_Valida_001.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Auditoria_Ejecucion_Ruta_Valida_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Formalizacion_Xi_eval.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Auditoria_Formalizacion_Xi_eval.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Metricas_Protocolo.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Auditoria_Metricas_Protocolo.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Paquete_PreEjecucion_Piloto.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Protocolo_Piloto_Empirico_Futuro.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Puente_Formal_MOC_AO.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Puente_Formal_MOC_TCS.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable con limites",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Auditoria_Puente_Formal_MOC_TCS.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Auditoria_Puente_Formal_MOC_TCS.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_002.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable con limites",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_002.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_002.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_003.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable con limites",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_003.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_003.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_003.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_004.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_005.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_006.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Siguientes_Rutas_Validas.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Auditoria_Siguientes_Rutas_Validas.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/MOC-001_Auditoria_Siguientes_Rutas_Validas.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- Ninguna ruta modifica Canon, Nivel C ni `Documento 04`."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Simulacion_Software.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Auditoria_Simulacion_Software.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Casos_Congelados_Piloto.md",
+      "surface": "expediente",
+      "estatus": "paquete congelado documental, no ejecutado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Casos_No_Clinicos.md",
+      "surface": "expediente",
+      "estatus": "bateria provisional ampliada",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Casos_No_Clinicos.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Casos_No_Clinicos.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Compuerta_Autorizacion_Ejecucion_Piloto.md",
+      "surface": "expediente",
+      "estatus": "compuerta aplicada, ejecucion no autorizada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Apertura.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Compuerta_Autorizacion_Ejecucion_Piloto.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Disenio_Estudio_Empirico.md",
+      "surface": "expediente",
+      "estatus": "decision teorica provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Ejecucion_Ruta_002.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Decision_Ejecucion_Ruta_002.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Ejecucion_Ruta_005.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Ejecucion_Ruta_Valida_001.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Formalizacion_Xi_eval.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Metricas_Protocolo.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Paquete_PreEjecucion_Piloto.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Protocolo_Piloto_Empirico_Futuro.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Puente_Formal_MOC_AO.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Puente_Formal_MOC_TCS.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Decision_Puente_Formal_MOC_TCS.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Decision_Puente_Formal_MOC_TCS.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_002.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_002.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_002.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_002.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_003.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_003.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_003.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_003.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_003.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_004.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_004.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_005.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_006.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Siguientes_Rutas_Validas.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Decision_Siguientes_Rutas_Validas.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Decision_Siguientes_Rutas_Validas.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Simulacion_Software.md",
+      "surface": "expediente",
+      "estatus": "decision tecnica provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Disenio_Estudio_Empirico.md",
+      "surface": "expediente",
+      "estatus": "diseno documental provisional, no ejecutado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_002.md",
+      "surface": "expediente",
+      "estatus": "ejecucion local favorable",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_002.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_002.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_002.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_005.md",
+      "surface": "expediente",
+      "estatus": "ejecutada favorablemente en alcance local",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_Valida_001.md",
+      "surface": "expediente",
+      "estatus": "ejecucion local aceptable, no canonica",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Formalizacion_Xi_eval.md",
+      "surface": "expediente",
+      "estatus": "formalizacion local provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Metricas_Estados.md",
+      "surface": "expediente",
+      "estatus": "metrica cualitativa ordinal provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Paquete_PreEjecucion_Piloto.md",
+      "surface": "expediente",
+      "estatus": "paquete documental preparado, ejecucion real bloqueada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Plantilla_Respuesta_Evaluadores.md",
+      "surface": "expediente",
+      "estatus": "plantilla documental, no usada en ejecucion real",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Protocolo_Evaluacion.md",
+      "surface": "expediente",
+      "estatus": "protocolo reproducible provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Protocolo_Evaluacion_v0_2.md",
+      "surface": "expediente",
+      "estatus": "refinamiento provisional no canonico",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Protocolo_Piloto_Empirico_Futuro.md",
+      "surface": "expediente",
+      "estatus": "protocolo documental preparado, no ejecutado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Puente_Formal_MOC_AO.md",
+      "surface": "expediente",
+      "estatus": "formalizacion local provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Puente_Formal_MOC_TCS.md",
+      "surface": "expediente",
+      "estatus": "formalizacion ejecutable local provisional",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Puente_Formal_MOC_TCS.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Puente_Formal_MOC_TCS.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Reglas_Protocolo_Congelados.md",
+      "surface": "expediente",
+      "estatus": "version documental congelada, no ejecutada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_002.md",
+      "surface": "expediente",
+      "estatus": "matriz provisional de rutas posteriores",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_002.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_003.md",
+      "surface": "expediente",
+      "estatus": "matriz provisional de rutas posteriores",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_003.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_003.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_004.md",
+      "surface": "expediente",
+      "estatus": "matriz provisional de rutas posteriores",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_004.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_004.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_005.md",
+      "surface": "expediente",
+      "estatus": "matriz provisional de rutas posteriores",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_006.md",
+      "surface": "expediente",
+      "estatus": "matriz provisional de rutas posteriores",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Semantica_Provisional.md",
+      "surface": "expediente",
+      "estatus": "propuesta semantica provisional, no canonica",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Siguientes_Rutas_Validas.md",
+      "surface": "expediente",
+      "estatus": "matriz provisional de rutas posteriores",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Tabla_Operaciones_Formales.md",
+      "surface": "expediente",
+      "estatus": "tabla operativa provisional, no canonica",
       "findings": []
     },
     {
@@ -2669,6 +3763,42 @@
           "evidence": "03_Expedientes/PSI-001*"
         }
       ]
+    },
+    {
+      "file": "03_Expedientes/R001-001_Auditoria_Integracion_Table_Checks.md",
+      "surface": "expediente",
+      "estatus": "auditoria provisional favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/R001-001_Auditoria_Relacion_Formal_AO.md",
+      "surface": "expediente",
+      "estatus": "auditoria provisional favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/R001-001_Decision_Integracion_Table_Checks.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/R001-001_Decision_Relacion_Formal_AO.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/R001-001_Integracion_Table_Checks.md",
+      "surface": "expediente",
+      "estatus": "integracion tecnica provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/R001-001_Relacion_Formal_AO.md",
+      "surface": "expediente",
+      "estatus": "relacion formal local provisional",
+      "findings": []
     },
     {
       "file": "03_Expedientes/README.md",
@@ -2804,6 +3934,12 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/TCS-001_Auditoria_Maduracion_Provisional.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/TCS-001_Auditoria_Paquete_Minimo.md",
       "surface": "expediente",
       "estatus": "auditoria favorable con limites",
@@ -2822,9 +3958,21 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/TCS-001_Decision_Maduracion_Provisional.md",
+      "surface": "expediente",
+      "estatus": "decision teorica provisional",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/TCS-001_Definiciones_Minimas.md",
       "surface": "expediente",
       "estatus": "definiciones provisionales de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/TCS-001_Maduracion_Provisional.md",
+      "surface": "expediente",
+      "estatus": "avance teorico provisional",
       "findings": []
     },
     {
@@ -3218,6 +4366,102 @@
         },
         {
           "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
           "check_id": "MED-NIVELES",
           "kind": "accion_de_nivel_sensible",
           "file": "05_Estado_Proyecto/DECISIONES.md",
@@ -3307,7 +4551,80 @@
       "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
       "surface": "estado_operativo",
       "estatus": "estado operativo vigente",
-      "findings": []
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        }
+      ]
     },
     {
       "file": "05_Estado_Proyecto/NIVEL_C_ESPECIFICACIONES.md",
@@ -3349,6 +4666,22 @@
       "surface": "automatizacion",
       "estatus": "superficie ejecutable provisional",
       "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
         {
           "severity": "warning",
           "check_id": "MED-REFERENCIAS",
@@ -3514,6 +4847,38 @@
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
           "file": "06_Automatizacion/README.md",
+          "detail": "reportes/r001_table_checks_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/r001_table_checks_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/moc_eval_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/moc_eval_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
           "detail": "fixtures/auditor_v0_cases.json",
           "evidence": ""
         },
@@ -3531,6 +4896,22 @@
           "kind": "referencia_no_materializada",
           "file": "06_Automatizacion/README.md",
           "detail": "fixtures/auditor_v0_documental_cases.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/ao_ext_confluence_cases.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/moc_cases.json",
           "evidence": ""
         },
         {
@@ -3737,6 +5118,22 @@
     },
     {
       "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CHANGELOG.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CHANGELOG.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
       "check_id": "MED-NIVELES",
       "kind": "accion_de_nivel_sensible",
       "file": "CHANGELOG.md",
@@ -3750,6 +5147,134 @@
       "file": "CHANGELOG.md",
       "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
       "evidence": "- Creada `DO-001_Decision_Promocion_SPEC-AUD-001.md` con `PROM-SPEC-AUD-001`: se promueve `SPEC-AUD-001_Candidata` a documento oficial de Nivel C."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CURRENT_STATE.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CURRENT_STATE.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CURRENT_STATE.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CURRENT_STATE.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CURRENT_STATE.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CURRENT_STATE.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CURRENT_STATE.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CURRENT_STATE.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CURRENT_STATE.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CURRENT_STATE.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CURRENT_STATE.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CURRENT_STATE.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "HANDOFF.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "HANDOFF.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "HANDOFF.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "HANDOFF.md",
+      "detail": "MOC/AO",
+      "evidence": ""
     },
     {
       "severity": "warning",
@@ -4082,6 +5607,22 @@
     {
       "severity": "warning",
       "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "HANDOFF_PACKAGE.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
       "kind": "referencia_historica_transferida",
       "file": "HANDOFF_PACKAGE.md",
       "detail": "Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local.",
@@ -4254,6 +5795,22 @@
       "file": "HANDOFF_PACKAGE.md",
       "detail": "Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local.",
       "evidence": "03_Expedientes/PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "README.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "README.md",
+      "detail": "MOC/AO",
+      "evidence": ""
     },
     {
       "severity": "warning",
@@ -4865,22 +6422,6 @@
     },
     {
       "severity": "warning",
-      "check_id": "MED-REFERENCIAS",
-      "kind": "referencia_historica_transferida",
-      "file": "03_Expedientes/HXI-001.md",
-      "detail": "Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local.",
-      "evidence": "03_Expedientes/PSI-001_Criterio_Transformacion_Experiencia_Psicologica.md"
-    },
-    {
-      "severity": "warning",
-      "check_id": "MED-REFERENCIAS",
-      "kind": "referencia_historica_transferida",
-      "file": "03_Expedientes/HXI-001.md",
-      "detail": "Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local.",
-      "evidence": "03_Expedientes/PSI-001_Ejemplos_Conceptuales_No_Clinicos.md"
-    },
-    {
-      "severity": "warning",
       "check_id": "MED-NIVELES",
       "kind": "accion_de_nivel_sensible",
       "file": "03_Expedientes/HXI-001_Criterios_Evaluacion.md",
@@ -4902,6 +6443,398 @@
       "file": "03_Expedientes/HXI-001_Dictamen_Utilidad_Local_Xi.md",
       "detail": "Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local.",
       "evidence": "PSI-001_Ejemplos_Conceptuales_No_Clinicos.md"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Auditoria_Apertura.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Auditoria_Disenio_Estudio_Empirico.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Auditoria_Ejecucion_Ruta_002.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Auditoria_Ejecucion_Ruta_Valida_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Auditoria_Formalizacion_Xi_eval.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Auditoria_Metricas_Protocolo.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Auditoria_Puente_Formal_MOC_TCS.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Auditoria_Puente_Formal_MOC_TCS.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_002.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_002.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_003.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_003.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_003.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Auditoria_Siguientes_Rutas_Validas.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/MOC-001_Auditoria_Siguientes_Rutas_Validas.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- Ninguna ruta modifica Canon, Nivel C ni `Documento 04`."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Auditoria_Simulacion_Software.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Casos_No_Clinicos.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Casos_No_Clinicos.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Decision_Ejecucion_Ruta_002.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Decision_Puente_Formal_MOC_TCS.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Decision_Puente_Formal_MOC_TCS.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_002.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_002.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_002.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_003.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_003.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_003.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_003.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_004.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Decision_Siguientes_Rutas_Validas.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Decision_Siguientes_Rutas_Validas.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_002.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_002.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Ejecucion_Ruta_002.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Puente_Formal_MOC_TCS.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Puente_Formal_MOC_TCS.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_002.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_003.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_003.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_004.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_004.md",
+      "detail": "MOC/AO",
+      "evidence": ""
     },
     {
       "severity": "warning",
@@ -5177,6 +7110,102 @@
     },
     {
       "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
       "check_id": "MED-NIVELES",
       "kind": "accion_de_nivel_sensible",
       "file": "05_Estado_Proyecto/DECISIONES.md",
@@ -5241,6 +7270,78 @@
     },
     {
       "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
       "check_id": "MED-NIVELES",
       "kind": "accion_de_nivel_sensible",
       "file": "05_Estado_Proyecto/NIVEL_C_ESPECIFICACIONES.md",
@@ -5254,6 +7355,22 @@
       "file": "05_Estado_Proyecto/NIVEL_C_ESPECIFICACIONES.md",
       "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
       "evidence": "- promover hipotesis a teoremas"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "MOC/AO",
+      "evidence": ""
     },
     {
       "severity": "warning",
@@ -5420,6 +7537,38 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "06_Automatizacion/README.md",
+      "detail": "reportes/r001_table_checks_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/r001_table_checks_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/moc_eval_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/moc_eval_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
       "detail": "fixtures/auditor_v0_cases.json",
       "evidence": ""
     },
@@ -5437,6 +7586,22 @@
       "kind": "referencia_no_materializada",
       "file": "06_Automatizacion/README.md",
       "detail": "fixtures/auditor_v0_documental_cases.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/ao_ext_confluence_cases.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/moc_cases.json",
       "evidence": ""
     },
     {

@@ -4,6 +4,8 @@ Estatus: plan implementado provisionalmente.
 
 Fecha: 2026-07-02.
 
+Nota posterior 2026-07-05: `HXI-001` fue reabierto operativamente por `D-2026-07-05-001`. La pausa indicada abajo queda como dato historico del orden aplicado en 2026-07-02, no como estado vigente.
+
 ## Orden aplicado
 
 1. `AUT-001`: refinamiento de riesgos, cierre tecnico provisional y cierre operativo completo.

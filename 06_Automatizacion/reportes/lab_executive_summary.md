@@ -1,6 +1,6 @@
 # LAB_EXECUTIVE_SUMMARY
 
-report_id: DO-LAB-SUMMARY-20260703-201432
+report_id: DO-LAB-SUMMARY-20260705-190710
 expediente: AUT-001
 algoritmo: DO-LAB-SUMMARY-001
 resultado: advertencia
@@ -15,32 +15,32 @@ transformacion_permitida: false
 
 ## Estado operativo
 
-- frente activo: `AO-001` queda como frente operativo principal para profundizar `AO-PPI-BRIDGE-001`, formalizacion posterior de Documento 04 y relacion eventual con `REPORT_LAYER`.
-- ultima decision: `AUT-001_Decision_Refinamiento_Contexto_Guardrails.md` (`D-2026-07-03-020`): acepta `AUT-RISK-REFINE-002` y `AUT-VAL-012` para reclasificar falsos riesgos activos de guardrails como advertencias controladas; no reabre `AUT-001` ni borra hallazgos.
-- proximo objetivo: Profundizar `AO-PPI-BRIDGE-001` hacia pruebas de Confluencia global y Equivalencia global de proyecciones sin reabrir `P-PI.0` / `P-PI.1`.
+- frente activo: `MOC-001` queda como frente integrador teorico-operativo principal; primera ruta valida ejecutada por `MOC-ROUTE-EXEC-001`, bateria ampliada por `MOC-ROUTE-002`, puente formal `MOC/TCS` aceptado por `MOC-ROUTE-003`, puente formal `MOC/AO` aceptado por `MOC-ROUTE-004`, protocolo v0.2 aceptado por `MOC-ROUTE-005`, protocolo documental de piloto futuro preparado por `MOC-ROUTE-006`, compuerta de no autorizacion aplicada por `MOC-ROUTE-007`, paquete pre-ejecucion preparado por `MOC-ROUTE-008` y siguiente ruta recomendada `MOC-ROUTE-009`; no canonico, no clinico, no regulado y sin admision de `H-Xi`.
+- ultima decision: `MOC-001_Decision_Paquete_PreEjecucion_Piloto.md` (`D-2026-07-06-004`): acepta `MOC-PREEXEC-PACK-001`; semantica, operaciones formales, casos congelados, plantilla de respuesta y reglas/protocolo quedan preparados documentalmente. La siguiente ruta recomendada es `MOC-ROUTE-009`, metodo de registro sin datos personales y matriz de auditoria.
+- proximo objetivo: Avanzar `MOC-001` por `MOC-ROUTE-009`: preparar metodo de registro sin datos personales y matriz de auditoria de piloto, sin reclutamiento, sin respuestas reales, sin uso clinico y sin modificar `Documento 04`.
 
 ## Riesgos clasificados
 
 - riesgo_activo: 0
-- advertencia_controlada: 23
-- deuda_documental: 108
+- advertencia_controlada: 24
+- deuda_documental: 185
 - advertencia_heredada: 59
-- observacion: 61
+- observacion: 59
 
 ## Contexto de riesgos
 
-- bitacora_historica: 9
+- bitacora_historica: 12
 - control_auditoria: 1
-- decision_registrada: 21
-- guardrail: 49
+- decision_registrada: 25
+- guardrail: 74
 - meta_check: 12
-- riesgo_real: 159
+- riesgo_real: 203
 
 ## Severidad
 
 - alta: 3
-- media: 117
-- baja: 131
+- media: 145
+- baja: 179
 
 ## Riesgos activos principales
 
@@ -48,11 +48,14 @@ transformacion_permitida: false
 
 ## Automatizacion
 
-- DO-CHECK-MIN-001: advertencia (139 hallazgos)
-- DO-CHECK-MED-001: advertencia (237 hallazgos)
+- DO-CHECK-MIN-001: advertencia (162 hallazgos)
+- DO-CHECK-MED-001: advertencia (335 hallazgos)
 - DO-STATE-BOARD-001: ok (0 hallazgos)
-- DO-LAB-CONTINUITY-001: advertencia (237 hallazgos)
-- DO-LAB-RISK-001: advertencia_clasificada (251 hallazgos)
+- DO-LAB-CONTINUITY-001: advertencia (335 hallazgos)
+- DO-LAB-RISK-001: advertencia_clasificada (327 hallazgos)
+- R001-TABLE-CHECK-001: ok (0 hallazgos)
+- AO-EXT-CONF-001: ok (0 hallazgos)
+- MOC-EVAL-001: ok (0 hallazgos)
 
 ## Siguientes acciones
 

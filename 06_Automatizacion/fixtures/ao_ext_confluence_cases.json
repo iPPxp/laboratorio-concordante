@@ -1,0 +1,174 @@
+{
+  "suite_id": "AO-EXT-CONF-SYN-001",
+  "expediente": "AO-001",
+  "description": "Casos sinteticos no regulados para pruebas externas locales de Confluencia.",
+  "cases": [
+    {
+      "case_id": "EXT-CONF-001A",
+      "test_id": "EXT-CONF-001",
+      "domain": "tabla_datos_sintetica",
+      "route_a": "normalizacion_csv",
+      "route_b": "normalizacion_json",
+      "expected": "confluencia_local",
+      "schema": {
+        "fields": [
+          {"name": "id", "type": "int", "required": true},
+          {"name": "status", "type": "enum", "allowed": ["active", "blocked"], "required": true},
+          {"name": "score", "type": "int", "required": false}
+        ]
+      },
+      "route_a_input": {
+        "format": "csv",
+        "content": "id,status,score\n1,active,10\n2,blocked,0\n"
+      },
+      "route_b_input": {
+        "format": "json_rows",
+        "rows": [
+          {"id": 1, "status": "active", "score": 10},
+          {"id": 2, "status": "blocked", "score": 0}
+        ]
+      }
+    },
+    {
+      "case_id": "EXT-CONF-001B",
+      "test_id": "EXT-CONF-001",
+      "domain": "tabla_datos_sintetica",
+      "route_a": "normalizacion_csv",
+      "route_b": "normalizacion_json",
+      "expected": "bloqueo_por_testigo",
+      "schema": {
+        "fields": [
+          {"name": "id", "type": "int", "required": true},
+          {"name": "status", "type": "enum", "allowed": ["active", "blocked"], "required": true},
+          {"name": "score", "type": "int", "required": false}
+        ]
+      },
+      "route_a_input": {
+        "format": "csv",
+        "content": "id,status,score\n1,,10\n"
+      },
+      "route_b_input": {
+        "format": "json_rows",
+        "rows": [
+          {"id": 1, "status": null, "score": 10}
+        ]
+      }
+    },
+    {
+      "case_id": "EXT-CONF-001C",
+      "test_id": "EXT-CONF-001",
+      "domain": "tabla_datos_sintetica",
+      "route_a": "normalizacion_csv",
+      "route_b": "normalizacion_json",
+      "expected": "equivalencia_bajo_testigo",
+      "schema": {
+        "fields": [
+          {"name": "id", "type": "int", "required": true},
+          {"name": "status", "type": "enum", "allowed": ["active", "blocked"], "required": true},
+          {"name": "score", "type": "int", "required": false}
+        ]
+      },
+      "route_a_input": {
+        "format": "csv",
+        "content": "id,status,score,debug\n1,active,10,ignored\n"
+      },
+      "route_b_input": {
+        "format": "json_rows",
+        "rows": [
+          {"id": 1, "status": "active", "score": 10, "debug": "ignored"}
+        ]
+      }
+    },
+    {
+      "case_id": "EXT-CONF-001D",
+      "test_id": "EXT-CONF-001",
+      "domain": "tabla_datos_sintetica",
+      "route_a": "normalizacion_csv",
+      "route_b": "normalizacion_json",
+      "expected": "divergencia_clasificada",
+      "schema": {
+        "fields": [
+          {"name": "id", "type": "int", "required": true},
+          {"name": "status", "type": "enum", "allowed": ["active", "blocked"], "required": true},
+          {"name": "score", "type": "int", "required": false}
+        ]
+      },
+      "route_a_input": {
+        "format": "csv",
+        "content": "id,status,score\n1,active,10\n"
+      },
+      "route_b_input": {
+        "format": "json_rows",
+        "rows": [
+          {"id": 1, "status": "blocked", "score": 10}
+        ]
+      }
+    },
+    {
+      "case_id": "EXT-CONF-002A",
+      "test_id": "EXT-CONF-002",
+      "domain": "paquete_software_juguete",
+      "route_a": "manifiesto_paquete",
+      "route_b": "reporte_dependencias",
+      "expected": "confluencia_local",
+      "route_a_input": {
+        "format": "package_manifest",
+        "package": {"name": "toy-calc", "version": "1.0.0", "license": "MIT"},
+        "dependencies": [
+          {"name": "toy-core", "version": "0.2.0", "license": "MIT"}
+        ]
+      },
+      "route_b_input": {
+        "format": "dependency_report",
+        "root": {"name": "toy-calc", "version": "1.0.0", "license": "MIT"},
+        "resolved": [
+          {"name": "toy-core", "version": "0.2.0", "license": "MIT"}
+        ]
+      }
+    },
+    {
+      "case_id": "EXT-CONF-002B",
+      "test_id": "EXT-CONF-002",
+      "domain": "paquete_software_juguete",
+      "route_a": "manifiesto_paquete",
+      "route_b": "reporte_dependencias",
+      "expected": "bloqueo_por_testigo",
+      "route_a_input": {
+        "format": "package_manifest",
+        "package": {"name": "toy-calc", "version": "1.0.0", "license": "MIT"},
+        "dependencies": [
+          {"name": "toy-core", "version": "0.2.0"}
+        ]
+      },
+      "route_b_input": {
+        "format": "dependency_report",
+        "root": {"name": "toy-calc", "version": "1.0.0", "license": "MIT"},
+        "resolved": [
+          {"name": "toy-core", "version": "0.2.0"}
+        ]
+      }
+    },
+    {
+      "case_id": "EXT-CONF-002C",
+      "test_id": "EXT-CONF-002",
+      "domain": "paquete_software_juguete",
+      "route_a": "manifiesto_paquete",
+      "route_b": "reporte_dependencias",
+      "expected": "divergencia_clasificada",
+      "route_a_input": {
+        "format": "package_manifest",
+        "package": {"name": "toy-calc", "version": "1.0.0", "license": "MIT"},
+        "dependencies": [
+          {"name": "toy-core", "version": "0.2.0", "license": "MIT"}
+        ]
+      },
+      "route_b_input": {
+        "format": "dependency_report",
+        "root": {"name": "toy-calc", "version": "1.0.1", "license": "MIT"},
+        "resolved": [
+          {"name": "toy-core", "version": "0.2.0", "license": "MIT"}
+        ]
+      }
+    }
+  ]
+}

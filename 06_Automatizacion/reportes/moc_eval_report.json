@@ -1,0 +1,1142 @@
+{
+  "report_id": "MOC-EVAL-001-20260705-190709",
+  "expediente": "MOC-001",
+  "algoritmo": "MOC-EVAL-001",
+  "suite_id": "MOC-SYN-001",
+  "resultado": "ok",
+  "recomendacion": "conservar_moc_provisional_no_canonico",
+  "transformacion_permitida": false,
+  "tests_executed": [
+    "MOC-XI-EVAL-FORMAL-001",
+    "MOC-METRIC-STATE-001",
+    "MOC-EVAL-PROTO-001",
+    "MOC-EVAL-PROTO-002",
+    "MOC-TCS-BRIDGE-001",
+    "MOC-AO-BRIDGE-001"
+  ],
+  "summary": {
+    "cases": 11,
+    "passed": 11,
+    "failed": 0,
+    "findings": 0
+  },
+  "evaluator_summary": {
+    "coincidencia_exacta": 6,
+    "coincidencia_parcial": 3,
+    "desacuerdo_justificado": 2
+  },
+  "protocol_v02_summary": {
+    "resuelto": 4,
+    "resuelto_con_deuda": 3,
+    "resuelto_por_bloqueo": 2,
+    "revision_si_repite": 2,
+    "review_required": 2,
+    "blocked_positive_use": 2,
+    "axis_counts": {
+      "estado_moc": 5,
+      "familia_moc": 2,
+      "regla_xi": 2,
+      "rol_ao": 5,
+      "sin_desacuerdo": 6
+    }
+  },
+  "scope_guard": {
+    "admite_h_xi": false,
+    "canoniza_xi": false,
+    "declara_xi_operador_general": false,
+    "uso_clinico": false,
+    "evalua_personas_reales": false,
+    "reabre_psi001": false,
+    "modifica_doc04": false,
+    "crea_nivel_c": false,
+    "cierra_p107": false,
+    "cierra_confluencia_global": false,
+    "cierra_equivalencia_global": false
+  },
+  "debt_guard": {
+    "moc_provisional_abierto": true,
+    "tcs_no_canonico": true,
+    "hxi_mantenimiento_local": true,
+    "moc_ao_bridge_local": true,
+    "protocolo_v02_no_canonico": true,
+    "doc04_sin_modificar_por_moc_ao": true,
+    "confluencia_global_abierta": true,
+    "equivalencia_global_abierta": true,
+    "exportacion_r4_gamma_bloqueada": true,
+    "estudio_empirico_real_pendiente": true
+  },
+  "results": [
+    {
+      "case_id": "MOC-CASE-001",
+      "domain": "tablero_tareas_sintetico",
+      "expected_xi": "redundante",
+      "actual_xi": "redundante",
+      "expected_moc": "concordancia_local",
+      "actual_moc": "concordancia_local",
+      "passed": true,
+      "operator_trace": {
+        "xi": {
+          "operator_id": "OP_MOC_XI",
+          "output": "redundante",
+          "rule_id": "XI-R6-PATRON-REDUNDANTE",
+          "priority": 6,
+          "conflicts": []
+        },
+        "tcs": {
+          "operator_id": "OP_MOC_TCS",
+          "output": "tcs_completo",
+          "rule_id": "TCS-R3-EJES-COMPLETOS",
+          "priority": 3,
+          "axes": {
+            "claim_status": true,
+            "authority_declared": true,
+            "decision_present": true,
+            "permission_scoped": true,
+            "evidence_traceable": true,
+            "automation_bounded": true,
+            "debt_registered": true
+          },
+          "missing_core": [],
+          "missing_secondary": []
+        },
+        "state": {
+          "operator_id": "OP_MOC_STATE",
+          "output": "concordancia_local",
+          "rule_id": "STATE-R5-CONCORDANCIA-LOCAL",
+          "priority": 5,
+          "xi_rule": "XI-R6-PATRON-REDUNDANTE",
+          "tcs_rule": "TCS-R3-EJES-COMPLETOS",
+          "missing_core": [],
+          "missing_secondary": []
+        }
+      },
+      "agreement": {
+        "kind": "coincidencia_exacta",
+        "xi_outputs": [
+          "redundante"
+        ],
+        "states": [
+          "concordancia_local"
+        ],
+        "families": [
+          "concordante"
+        ]
+      },
+      "disagreement_class": "no_aplica",
+      "debt": "conservar_trazabilidad",
+      "ao_bridge": {
+        "bridge_id": "MOC-AO-BRIDGE-001",
+        "witness_id": "MOC-CASE-001::STATE-R5-CONCORDANCIA-LOCAL",
+        "pi_moc_trace": {
+          "case_id": "MOC-CASE-001",
+          "xi_rule": "XI-R6-PATRON-REDUNDANTE",
+          "tcs_rule": "TCS-R3-EJES-COMPLETOS",
+          "state_rule": "STATE-R5-CONCORDANCIA-LOCAL",
+          "state_family": "concordante"
+        },
+        "ao_role": "evidencia_auxiliar_equivalencia_local",
+        "can_support_equivalence_local": true,
+        "can_support_confluence_local": true,
+        "closes_equivalence_global": false,
+        "closes_confluence_global": false,
+        "modifies_doc04": false,
+        "transformacion_permitida": false
+      },
+      "protocol_v02": {
+        "protocol_id": "MOC-EVAL-PROTO-002",
+        "status": "resuelto",
+        "disagreement_axes": [
+          "sin_desacuerdo"
+        ],
+        "tie_breaker_rule": "STATE-R5-CONCORDANCIA-LOCAL",
+        "trace_witness": "MOC-CASE-001::STATE-R5-CONCORDANCIA-LOCAL",
+        "ao_role": "evidencia_auxiliar_equivalencia_local",
+        "treatment": "aceptar_salida_local",
+        "review_required": false,
+        "does_not_override_evaluators": true,
+        "modifies_doc04": false,
+        "clinical_use": false
+      }
+    },
+    {
+      "case_id": "MOC-CASE-002",
+      "domain": "paquete_software_juguete",
+      "expected_xi": "util_acotado",
+      "actual_xi": "util_acotado",
+      "expected_moc": "concordancia_local",
+      "actual_moc": "concordancia_local",
+      "passed": true,
+      "operator_trace": {
+        "xi": {
+          "operator_id": "OP_MOC_XI",
+          "output": "util_acotado",
+          "rule_id": "XI-R4-REORGANIZACION-ESTABLE",
+          "priority": 4,
+          "conflicts": []
+        },
+        "tcs": {
+          "operator_id": "OP_MOC_TCS",
+          "output": "tcs_completo",
+          "rule_id": "TCS-R3-EJES-COMPLETOS",
+          "priority": 3,
+          "axes": {
+            "claim_status": true,
+            "authority_declared": true,
+            "decision_present": true,
+            "permission_scoped": true,
+            "evidence_traceable": true,
+            "automation_bounded": true,
+            "debt_registered": true
+          },
+          "missing_core": [],
+          "missing_secondary": []
+        },
+        "state": {
+          "operator_id": "OP_MOC_STATE",
+          "output": "concordancia_local",
+          "rule_id": "STATE-R5-CONCORDANCIA-LOCAL",
+          "priority": 5,
+          "xi_rule": "XI-R4-REORGANIZACION-ESTABLE",
+          "tcs_rule": "TCS-R3-EJES-COMPLETOS",
+          "missing_core": [],
+          "missing_secondary": []
+        }
+      },
+      "agreement": {
+        "kind": "coincidencia_exacta",
+        "xi_outputs": [
+          "util_acotado"
+        ],
+        "states": [
+          "concordancia_local"
+        ],
+        "families": [
+          "concordante"
+        ]
+      },
+      "disagreement_class": "no_aplica",
+      "debt": "no_exportar_como_regla_global",
+      "ao_bridge": {
+        "bridge_id": "MOC-AO-BRIDGE-001",
+        "witness_id": "MOC-CASE-002::STATE-R5-CONCORDANCIA-LOCAL",
+        "pi_moc_trace": {
+          "case_id": "MOC-CASE-002",
+          "xi_rule": "XI-R4-REORGANIZACION-ESTABLE",
+          "tcs_rule": "TCS-R3-EJES-COMPLETOS",
+          "state_rule": "STATE-R5-CONCORDANCIA-LOCAL",
+          "state_family": "concordante"
+        },
+        "ao_role": "evidencia_auxiliar_equivalencia_local",
+        "can_support_equivalence_local": true,
+        "can_support_confluence_local": true,
+        "closes_equivalence_global": false,
+        "closes_confluence_global": false,
+        "modifies_doc04": false,
+        "transformacion_permitida": false
+      },
+      "protocol_v02": {
+        "protocol_id": "MOC-EVAL-PROTO-002",
+        "status": "resuelto",
+        "disagreement_axes": [
+          "sin_desacuerdo"
+        ],
+        "tie_breaker_rule": "STATE-R5-CONCORDANCIA-LOCAL",
+        "trace_witness": "MOC-CASE-002::STATE-R5-CONCORDANCIA-LOCAL",
+        "ao_role": "evidencia_auxiliar_equivalencia_local",
+        "treatment": "aceptar_salida_local",
+        "review_required": false,
+        "does_not_override_evaluators": true,
+        "modifies_doc04": false,
+        "clinical_use": false
+      }
+    },
+    {
+      "case_id": "MOC-CASE-003",
+      "domain": "flujo_editorial_sintetico",
+      "expected_xi": "limitado",
+      "actual_xi": "limitado",
+      "expected_moc": "friccion_operativa",
+      "actual_moc": "friccion_operativa",
+      "passed": true,
+      "operator_trace": {
+        "xi": {
+          "operator_id": "OP_MOC_XI",
+          "output": "limitado",
+          "rule_id": "XI-R5-CONFLICTO-SIN-ESTABILIDAD",
+          "priority": 5,
+          "conflicts": [
+            "conflict_without_stability",
+            "incompatible_restrictions"
+          ]
+        },
+        "tcs": {
+          "operator_id": "OP_MOC_TCS",
+          "output": "tcs_completo",
+          "rule_id": "TCS-R3-EJES-COMPLETOS",
+          "priority": 3,
+          "axes": {
+            "claim_status": true,
+            "authority_declared": true,
+            "decision_present": true,
+            "permission_scoped": true,
+            "evidence_traceable": true,
+            "automation_bounded": true,
+            "debt_registered": true
+          },
+          "missing_core": [],
+          "missing_secondary": []
+        },
+        "state": {
+          "operator_id": "OP_MOC_STATE",
+          "output": "friccion_operativa",
+          "rule_id": "STATE-R4-FRICCION-LOCAL",
+          "priority": 4,
+          "xi_rule": "XI-R5-CONFLICTO-SIN-ESTABILIDAD",
+          "tcs_rule": "TCS-R3-EJES-COMPLETOS",
+          "missing_core": [],
+          "missing_secondary": []
+        }
+      },
+      "agreement": {
+        "kind": "coincidencia_parcial",
+        "xi_outputs": [
+          "limitado"
+        ],
+        "states": [
+          "discordancia_global",
+          "friccion_operativa"
+        ],
+        "families": [
+          "friccion"
+        ]
+      },
+      "disagreement_class": "no_aplica",
+      "debt": "resolver_conflicto_de_regla_local",
+      "ao_bridge": {
+        "bridge_id": "MOC-AO-BRIDGE-001",
+        "witness_id": "MOC-CASE-003::STATE-R4-FRICCION-LOCAL",
+        "pi_moc_trace": {
+          "case_id": "MOC-CASE-003",
+          "xi_rule": "XI-R5-CONFLICTO-SIN-ESTABILIDAD",
+          "tcs_rule": "TCS-R3-EJES-COMPLETOS",
+          "state_rule": "STATE-R4-FRICCION-LOCAL",
+          "state_family": "friccion"
+        },
+        "ao_role": "evidencia_friccion_confluencia_local",
+        "can_support_equivalence_local": false,
+        "can_support_confluence_local": true,
+        "closes_equivalence_global": false,
+        "closes_confluence_global": false,
+        "modifies_doc04": false,
+        "transformacion_permitida": false
+      },
+      "protocol_v02": {
+        "protocol_id": "MOC-EVAL-PROTO-002",
+        "status": "resuelto_con_deuda",
+        "disagreement_axes": [
+          "estado_moc",
+          "rol_ao"
+        ],
+        "tie_breaker_rule": "STATE-R4-FRICCION-LOCAL",
+        "trace_witness": "MOC-CASE-003::STATE-R4-FRICCION-LOCAL",
+        "ao_role": "evidencia_friccion_confluencia_local",
+        "treatment": "aceptar_operator_trace_con_deuda_visible",
+        "review_required": false,
+        "does_not_override_evaluators": true,
+        "modifies_doc04": false,
+        "clinical_use": false
+      }
+    },
+    {
+      "case_id": "MOC-CASE-004",
+      "domain": "registros_abstractos",
+      "expected_xi": "no_comparable",
+      "actual_xi": "no_comparable",
+      "expected_moc": "no_comparable",
+      "actual_moc": "no_comparable",
+      "passed": true,
+      "operator_trace": {
+        "xi": {
+          "operator_id": "OP_MOC_XI",
+          "output": "no_comparable",
+          "rule_id": "XI-R3-UNIDAD-MINIMA",
+          "priority": 3,
+          "conflicts": [
+            "lost_minimal_unit"
+          ]
+        },
+        "tcs": {
+          "operator_id": "OP_MOC_TCS",
+          "output": "tcs_completo",
+          "rule_id": "TCS-R3-EJES-COMPLETOS",
+          "priority": 3,
+          "axes": {
+            "claim_status": true,
+            "authority_declared": true,
+            "decision_present": true,
+            "permission_scoped": true,
+            "evidence_traceable": true,
+            "automation_bounded": true,
+            "debt_registered": true
+          },
+          "missing_core": [],
+          "missing_secondary": []
+        },
+        "state": {
+          "operator_id": "OP_MOC_STATE",
+          "output": "no_comparable",
+          "rule_id": "STATE-R2-NO-COMPARABLE",
+          "priority": 2,
+          "xi_rule": "XI-R3-UNIDAD-MINIMA",
+          "tcs_rule": "TCS-R3-EJES-COMPLETOS",
+          "missing_core": [],
+          "missing_secondary": []
+        }
+      },
+      "agreement": {
+        "kind": "coincidencia_exacta",
+        "xi_outputs": [
+          "no_comparable"
+        ],
+        "states": [
+          "no_comparable"
+        ],
+        "families": [
+          "seguridad"
+        ]
+      },
+      "disagreement_class": "no_aplica",
+      "debt": "redefinir_unidad_minima",
+      "ao_bridge": {
+        "bridge_id": "MOC-AO-BRIDGE-001",
+        "witness_id": "MOC-CASE-004::STATE-R2-NO-COMPARABLE",
+        "pi_moc_trace": {
+          "case_id": "MOC-CASE-004",
+          "xi_rule": "XI-R3-UNIDAD-MINIMA",
+          "tcs_rule": "TCS-R3-EJES-COMPLETOS",
+          "state_rule": "STATE-R2-NO-COMPARABLE",
+          "state_family": "seguridad"
+        },
+        "ao_role": "bloqueo_comparabilidad_sin_uso_positivo",
+        "can_support_equivalence_local": false,
+        "can_support_confluence_local": false,
+        "closes_equivalence_global": false,
+        "closes_confluence_global": false,
+        "modifies_doc04": false,
+        "transformacion_permitida": false
+      },
+      "protocol_v02": {
+        "protocol_id": "MOC-EVAL-PROTO-002",
+        "status": "resuelto_por_bloqueo",
+        "disagreement_axes": [
+          "sin_desacuerdo"
+        ],
+        "tie_breaker_rule": "STATE-R2-NO-COMPARABLE",
+        "trace_witness": "MOC-CASE-004::STATE-R2-NO-COMPARABLE",
+        "ao_role": "bloqueo_comparabilidad_sin_uso_positivo",
+        "treatment": "aceptar_bloqueo_sin_uso_positivo",
+        "review_required": false,
+        "does_not_override_evaluators": true,
+        "modifies_doc04": false,
+        "clinical_use": false
+      }
+    },
+    {
+      "case_id": "MOC-CASE-005",
+      "domain": "fuera_de_alcance",
+      "expected_xi": "bloqueado",
+      "actual_xi": "bloqueado",
+      "expected_moc": "bloqueo_de_concordancia",
+      "actual_moc": "bloqueo_de_concordancia",
+      "passed": true,
+      "operator_trace": {
+        "xi": {
+          "operator_id": "OP_MOC_XI",
+          "output": "bloqueado",
+          "rule_id": "XI-R1-ALCANCE-EVIDENCIA",
+          "priority": 1,
+          "conflicts": [
+            "clinical_domain",
+            "out_of_scope",
+            "real_person"
+          ]
+        },
+        "tcs": {
+          "operator_id": "OP_MOC_TCS",
+          "output": "bloqueo_de_concordancia",
+          "rule_id": "TCS-R1-EJE-NUCLEAR-FALTANTE",
+          "priority": 1,
+          "axes": {
+            "claim_status": false,
+            "authority_declared": false,
+            "decision_present": false,
+            "permission_scoped": false,
+            "evidence_traceable": false,
+            "automation_bounded": true,
+            "debt_registered": true
+          },
+          "missing_core": [
+            "claim_status",
+            "authority_declared",
+            "decision_present",
+            "permission_scoped",
+            "evidence_traceable"
+          ],
+          "missing_secondary": []
+        },
+        "state": {
+          "operator_id": "OP_MOC_STATE",
+          "output": "bloqueo_de_concordancia",
+          "rule_id": "STATE-R1-BLOQUEO-DOMINANTE",
+          "priority": 1,
+          "xi_rule": "XI-R1-ALCANCE-EVIDENCIA",
+          "tcs_rule": "TCS-R1-EJE-NUCLEAR-FALTANTE",
+          "missing_core": [
+            "claim_status",
+            "authority_declared",
+            "decision_present",
+            "permission_scoped",
+            "evidence_traceable"
+          ],
+          "missing_secondary": []
+        }
+      },
+      "agreement": {
+        "kind": "coincidencia_exacta",
+        "xi_outputs": [
+          "bloqueado"
+        ],
+        "states": [
+          "bloqueo_de_concordancia"
+        ],
+        "families": [
+          "seguridad"
+        ]
+      },
+      "disagreement_class": "no_aplica",
+      "debt": "retirar_caso_o_abrir_decision_separada",
+      "ao_bridge": {
+        "bridge_id": "MOC-AO-BRIDGE-001",
+        "witness_id": "MOC-CASE-005::STATE-R1-BLOQUEO-DOMINANTE",
+        "pi_moc_trace": {
+          "case_id": "MOC-CASE-005",
+          "xi_rule": "XI-R1-ALCANCE-EVIDENCIA",
+          "tcs_rule": "TCS-R1-EJE-NUCLEAR-FALTANTE",
+          "state_rule": "STATE-R1-BLOQUEO-DOMINANTE",
+          "state_family": "seguridad"
+        },
+        "ao_role": "bloqueo_seguridad_sin_uso_positivo",
+        "can_support_equivalence_local": false,
+        "can_support_confluence_local": false,
+        "closes_equivalence_global": false,
+        "closes_confluence_global": false,
+        "modifies_doc04": false,
+        "transformacion_permitida": false
+      },
+      "protocol_v02": {
+        "protocol_id": "MOC-EVAL-PROTO-002",
+        "status": "resuelto_por_bloqueo",
+        "disagreement_axes": [
+          "sin_desacuerdo"
+        ],
+        "tie_breaker_rule": "STATE-R1-BLOQUEO-DOMINANTE",
+        "trace_witness": "MOC-CASE-005::STATE-R1-BLOQUEO-DOMINANTE",
+        "ao_role": "bloqueo_seguridad_sin_uso_positivo",
+        "treatment": "aceptar_bloqueo_sin_uso_positivo",
+        "review_required": false,
+        "does_not_override_evaluators": true,
+        "modifies_doc04": false,
+        "clinical_use": false
+      }
+    },
+    {
+      "case_id": "MOC-CASE-006",
+      "domain": "rutas_reporte_sinteticas",
+      "expected_xi": "util_acotado",
+      "actual_xi": "util_acotado",
+      "expected_moc": "discordancia_global",
+      "actual_moc": "discordancia_global",
+      "passed": true,
+      "operator_trace": {
+        "xi": {
+          "operator_id": "OP_MOC_XI",
+          "output": "util_acotado",
+          "rule_id": "XI-R4-REORGANIZACION-ESTABLE",
+          "priority": 4,
+          "conflicts": [
+            "global_conflict"
+          ]
+        },
+        "tcs": {
+          "operator_id": "OP_MOC_TCS",
+          "output": "tcs_completo",
+          "rule_id": "TCS-R3-EJES-COMPLETOS",
+          "priority": 3,
+          "axes": {
+            "claim_status": true,
+            "authority_declared": true,
+            "decision_present": true,
+            "permission_scoped": true,
+            "evidence_traceable": true,
+            "automation_bounded": true,
+            "debt_registered": true
+          },
+          "missing_core": [],
+          "missing_secondary": []
+        },
+        "state": {
+          "operator_id": "OP_MOC_STATE",
+          "output": "discordancia_global",
+          "rule_id": "STATE-R3-CONFLICTO-GLOBAL",
+          "priority": 3,
+          "xi_rule": "XI-R4-REORGANIZACION-ESTABLE",
+          "tcs_rule": "TCS-R3-EJES-COMPLETOS",
+          "missing_core": [],
+          "missing_secondary": []
+        }
+      },
+      "agreement": {
+        "kind": "coincidencia_parcial",
+        "xi_outputs": [
+          "util_acotado"
+        ],
+        "states": [
+          "discordancia_global",
+          "friccion_operativa"
+        ],
+        "families": [
+          "friccion"
+        ]
+      },
+      "disagreement_class": "no_aplica",
+      "debt": "confluencia_y_equivalencia_global_abiertas",
+      "ao_bridge": {
+        "bridge_id": "MOC-AO-BRIDGE-001",
+        "witness_id": "MOC-CASE-006::STATE-R3-CONFLICTO-GLOBAL",
+        "pi_moc_trace": {
+          "case_id": "MOC-CASE-006",
+          "xi_rule": "XI-R4-REORGANIZACION-ESTABLE",
+          "tcs_rule": "TCS-R3-EJES-COMPLETOS",
+          "state_rule": "STATE-R3-CONFLICTO-GLOBAL",
+          "state_family": "friccion"
+        },
+        "ao_role": "deuda_global_no_cierre",
+        "can_support_equivalence_local": false,
+        "can_support_confluence_local": false,
+        "closes_equivalence_global": false,
+        "closes_confluence_global": false,
+        "modifies_doc04": false,
+        "transformacion_permitida": false
+      },
+      "protocol_v02": {
+        "protocol_id": "MOC-EVAL-PROTO-002",
+        "status": "resuelto_con_deuda",
+        "disagreement_axes": [
+          "estado_moc",
+          "rol_ao"
+        ],
+        "tie_breaker_rule": "STATE-R3-CONFLICTO-GLOBAL",
+        "trace_witness": "MOC-CASE-006::STATE-R3-CONFLICTO-GLOBAL",
+        "ao_role": "deuda_global_no_cierre",
+        "treatment": "aceptar_operator_trace_con_deuda_visible",
+        "review_required": false,
+        "does_not_override_evaluators": true,
+        "modifies_doc04": false,
+        "clinical_use": false
+      }
+    },
+    {
+      "case_id": "MOC-CASE-007",
+      "domain": "matriz_criterios_sintetica",
+      "expected_xi": "util_acotado",
+      "actual_xi": "util_acotado",
+      "expected_moc": "concordancia_parcial",
+      "actual_moc": "concordancia_parcial",
+      "passed": true,
+      "operator_trace": {
+        "xi": {
+          "operator_id": "OP_MOC_XI",
+          "output": "util_acotado",
+          "rule_id": "XI-R4-REORGANIZACION-ESTABLE",
+          "priority": 4,
+          "conflicts": [
+            "non_blocking_debt"
+          ]
+        },
+        "tcs": {
+          "operator_id": "OP_MOC_TCS",
+          "output": "tcs_completo",
+          "rule_id": "TCS-R3-EJES-COMPLETOS",
+          "priority": 3,
+          "axes": {
+            "claim_status": true,
+            "authority_declared": true,
+            "decision_present": true,
+            "permission_scoped": true,
+            "evidence_traceable": true,
+            "automation_bounded": true,
+            "debt_registered": true
+          },
+          "missing_core": [],
+          "missing_secondary": []
+        },
+        "state": {
+          "operator_id": "OP_MOC_STATE",
+          "output": "concordancia_parcial",
+          "rule_id": "STATE-R6-CONCORDANCIA-PARCIAL",
+          "priority": 6,
+          "xi_rule": "XI-R4-REORGANIZACION-ESTABLE",
+          "tcs_rule": "TCS-R3-EJES-COMPLETOS",
+          "missing_core": [],
+          "missing_secondary": []
+        }
+      },
+      "agreement": {
+        "kind": "coincidencia_parcial",
+        "xi_outputs": [
+          "util_acotado"
+        ],
+        "states": [
+          "concordancia_local",
+          "concordancia_parcial"
+        ],
+        "families": [
+          "concordante"
+        ]
+      },
+      "disagreement_class": "no_aplica",
+      "debt": "completar_trazabilidad_secundaria",
+      "ao_bridge": {
+        "bridge_id": "MOC-AO-BRIDGE-001",
+        "witness_id": "MOC-CASE-007::STATE-R6-CONCORDANCIA-PARCIAL",
+        "pi_moc_trace": {
+          "case_id": "MOC-CASE-007",
+          "xi_rule": "XI-R4-REORGANIZACION-ESTABLE",
+          "tcs_rule": "TCS-R3-EJES-COMPLETOS",
+          "state_rule": "STATE-R6-CONCORDANCIA-PARCIAL",
+          "state_family": "concordante"
+        },
+        "ao_role": "evidencia_auxiliar_con_deuda",
+        "can_support_equivalence_local": true,
+        "can_support_confluence_local": true,
+        "closes_equivalence_global": false,
+        "closes_confluence_global": false,
+        "modifies_doc04": false,
+        "transformacion_permitida": false
+      },
+      "protocol_v02": {
+        "protocol_id": "MOC-EVAL-PROTO-002",
+        "status": "resuelto_con_deuda",
+        "disagreement_axes": [
+          "estado_moc",
+          "rol_ao"
+        ],
+        "tie_breaker_rule": "STATE-R6-CONCORDANCIA-PARCIAL",
+        "trace_witness": "MOC-CASE-007::STATE-R6-CONCORDANCIA-PARCIAL",
+        "ao_role": "evidencia_auxiliar_con_deuda",
+        "treatment": "aceptar_operator_trace_con_deuda_visible",
+        "review_required": false,
+        "does_not_override_evaluators": true,
+        "modifies_doc04": false,
+        "clinical_use": false
+      }
+    },
+    {
+      "case_id": "MOC-CASE-008",
+      "domain": "tabla_prioridades_sintetica",
+      "expected_xi": "limitado",
+      "actual_xi": "limitado",
+      "expected_moc": "friccion_operativa",
+      "actual_moc": "friccion_operativa",
+      "passed": true,
+      "operator_trace": {
+        "xi": {
+          "operator_id": "OP_MOC_XI",
+          "output": "limitado",
+          "rule_id": "XI-R5-CONFLICTO-SIN-ESTABILIDAD",
+          "priority": 5,
+          "conflicts": [
+            "conflict_without_stability",
+            "incompatible_restrictions"
+          ]
+        },
+        "tcs": {
+          "operator_id": "OP_MOC_TCS",
+          "output": "tcs_completo",
+          "rule_id": "TCS-R3-EJES-COMPLETOS",
+          "priority": 3,
+          "axes": {
+            "claim_status": true,
+            "authority_declared": true,
+            "decision_present": true,
+            "permission_scoped": true,
+            "evidence_traceable": true,
+            "automation_bounded": true,
+            "debt_registered": true
+          },
+          "missing_core": [],
+          "missing_secondary": []
+        },
+        "state": {
+          "operator_id": "OP_MOC_STATE",
+          "output": "friccion_operativa",
+          "rule_id": "STATE-R4-FRICCION-LOCAL",
+          "priority": 4,
+          "xi_rule": "XI-R5-CONFLICTO-SIN-ESTABILIDAD",
+          "tcs_rule": "TCS-R3-EJES-COMPLETOS",
+          "missing_core": [],
+          "missing_secondary": []
+        }
+      },
+      "agreement": {
+        "kind": "desacuerdo_justificado",
+        "xi_outputs": [
+          "bloqueado",
+          "limitado",
+          "util_acotado"
+        ],
+        "states": [
+          "bloqueo_de_concordancia",
+          "concordancia_parcial",
+          "friccion_operativa"
+        ],
+        "families": [
+          "concordante",
+          "friccion",
+          "seguridad"
+        ]
+      },
+      "disagreement_class": "ambiguedad_de_regla",
+      "debt": "precisar_si_la_regla_es_friccion_o_bloqueo",
+      "ao_bridge": {
+        "bridge_id": "MOC-AO-BRIDGE-001",
+        "witness_id": "MOC-CASE-008::STATE-R4-FRICCION-LOCAL",
+        "pi_moc_trace": {
+          "case_id": "MOC-CASE-008",
+          "xi_rule": "XI-R5-CONFLICTO-SIN-ESTABILIDAD",
+          "tcs_rule": "TCS-R3-EJES-COMPLETOS",
+          "state_rule": "STATE-R4-FRICCION-LOCAL",
+          "state_family": "friccion"
+        },
+        "ao_role": "evidencia_friccion_confluencia_local",
+        "can_support_equivalence_local": false,
+        "can_support_confluence_local": true,
+        "closes_equivalence_global": false,
+        "closes_confluence_global": false,
+        "modifies_doc04": false,
+        "transformacion_permitida": false
+      },
+      "protocol_v02": {
+        "protocol_id": "MOC-EVAL-PROTO-002",
+        "status": "revision_si_repite",
+        "disagreement_axes": [
+          "regla_xi",
+          "estado_moc",
+          "familia_moc",
+          "rol_ao"
+        ],
+        "tie_breaker_rule": "STATE-R4-FRICCION-LOCAL",
+        "trace_witness": "MOC-CASE-008::STATE-R4-FRICCION-LOCAL",
+        "ao_role": "evidencia_friccion_confluencia_local",
+        "treatment": "mantener_desacuerdo_justificado_y_abrir_micro_revision_si_repite",
+        "review_required": true,
+        "does_not_override_evaluators": true,
+        "modifies_doc04": false,
+        "clinical_use": false
+      }
+    },
+    {
+      "case_id": "MOC-CASE-009",
+      "domain": "cola_eventos_sintetica",
+      "expected_xi": "util_acotado",
+      "actual_xi": "util_acotado",
+      "expected_moc": "concordancia_parcial",
+      "actual_moc": "concordancia_parcial",
+      "passed": true,
+      "operator_trace": {
+        "xi": {
+          "operator_id": "OP_MOC_XI",
+          "output": "util_acotado",
+          "rule_id": "XI-R4-REORGANIZACION-ESTABLE",
+          "priority": 4,
+          "conflicts": []
+        },
+        "tcs": {
+          "operator_id": "OP_MOC_TCS",
+          "output": "deuda_secundaria",
+          "rule_id": "TCS-R2-EJE-SECUNDARIO-FALTANTE",
+          "priority": 2,
+          "axes": {
+            "claim_status": true,
+            "authority_declared": true,
+            "decision_present": true,
+            "permission_scoped": true,
+            "evidence_traceable": true,
+            "automation_bounded": false,
+            "debt_registered": true
+          },
+          "missing_core": [],
+          "missing_secondary": [
+            "automation_bounded"
+          ]
+        },
+        "state": {
+          "operator_id": "OP_MOC_STATE",
+          "output": "concordancia_parcial",
+          "rule_id": "STATE-R6-CONCORDANCIA-PARCIAL",
+          "priority": 6,
+          "xi_rule": "XI-R4-REORGANIZACION-ESTABLE",
+          "tcs_rule": "TCS-R2-EJE-SECUNDARIO-FALTANTE",
+          "missing_core": [],
+          "missing_secondary": [
+            "automation_bounded"
+          ]
+        }
+      },
+      "agreement": {
+        "kind": "coincidencia_exacta",
+        "xi_outputs": [
+          "util_acotado"
+        ],
+        "states": [
+          "concordancia_parcial"
+        ],
+        "families": [
+          "concordante"
+        ]
+      },
+      "disagreement_class": "no_aplica",
+      "debt": "completar_eje_tcs_secundario_automation_bounded",
+      "ao_bridge": {
+        "bridge_id": "MOC-AO-BRIDGE-001",
+        "witness_id": "MOC-CASE-009::STATE-R6-CONCORDANCIA-PARCIAL",
+        "pi_moc_trace": {
+          "case_id": "MOC-CASE-009",
+          "xi_rule": "XI-R4-REORGANIZACION-ESTABLE",
+          "tcs_rule": "TCS-R2-EJE-SECUNDARIO-FALTANTE",
+          "state_rule": "STATE-R6-CONCORDANCIA-PARCIAL",
+          "state_family": "concordante"
+        },
+        "ao_role": "evidencia_auxiliar_con_deuda",
+        "can_support_equivalence_local": true,
+        "can_support_confluence_local": true,
+        "closes_equivalence_global": false,
+        "closes_confluence_global": false,
+        "modifies_doc04": false,
+        "transformacion_permitida": false
+      },
+      "protocol_v02": {
+        "protocol_id": "MOC-EVAL-PROTO-002",
+        "status": "resuelto",
+        "disagreement_axes": [
+          "sin_desacuerdo"
+        ],
+        "tie_breaker_rule": "STATE-R6-CONCORDANCIA-PARCIAL",
+        "trace_witness": "MOC-CASE-009::STATE-R6-CONCORDANCIA-PARCIAL",
+        "ao_role": "evidencia_auxiliar_con_deuda",
+        "treatment": "aceptar_salida_local",
+        "review_required": false,
+        "does_not_override_evaluators": true,
+        "modifies_doc04": false,
+        "clinical_use": false
+      }
+    },
+    {
+      "case_id": "MOC-CASE-010",
+      "domain": "doble_autoridad_sintetica",
+      "expected_xi": "limitado",
+      "actual_xi": "limitado",
+      "expected_moc": "friccion_operativa",
+      "actual_moc": "friccion_operativa",
+      "passed": true,
+      "operator_trace": {
+        "xi": {
+          "operator_id": "OP_MOC_XI",
+          "output": "limitado",
+          "rule_id": "XI-R5-CONFLICTO-SIN-ESTABILIDAD",
+          "priority": 5,
+          "conflicts": [
+            "conflict_without_stability",
+            "incompatible_restrictions"
+          ]
+        },
+        "tcs": {
+          "operator_id": "OP_MOC_TCS",
+          "output": "tcs_completo",
+          "rule_id": "TCS-R3-EJES-COMPLETOS",
+          "priority": 3,
+          "axes": {
+            "claim_status": true,
+            "authority_declared": true,
+            "decision_present": true,
+            "permission_scoped": true,
+            "evidence_traceable": true,
+            "automation_bounded": true,
+            "debt_registered": true
+          },
+          "missing_core": [],
+          "missing_secondary": []
+        },
+        "state": {
+          "operator_id": "OP_MOC_STATE",
+          "output": "friccion_operativa",
+          "rule_id": "STATE-R4-FRICCION-LOCAL",
+          "priority": 4,
+          "xi_rule": "XI-R5-CONFLICTO-SIN-ESTABILIDAD",
+          "tcs_rule": "TCS-R3-EJES-COMPLETOS",
+          "missing_core": [],
+          "missing_secondary": []
+        }
+      },
+      "agreement": {
+        "kind": "coincidencia_exacta",
+        "xi_outputs": [
+          "limitado"
+        ],
+        "states": [
+          "friccion_operativa"
+        ],
+        "families": [
+          "friccion"
+        ]
+      },
+      "disagreement_class": "conflicto_de_autoridad_no_global",
+      "debt": "resolver_autoridad_local_sin_invocar_confluencia_global",
+      "ao_bridge": {
+        "bridge_id": "MOC-AO-BRIDGE-001",
+        "witness_id": "MOC-CASE-010::STATE-R4-FRICCION-LOCAL",
+        "pi_moc_trace": {
+          "case_id": "MOC-CASE-010",
+          "xi_rule": "XI-R5-CONFLICTO-SIN-ESTABILIDAD",
+          "tcs_rule": "TCS-R3-EJES-COMPLETOS",
+          "state_rule": "STATE-R4-FRICCION-LOCAL",
+          "state_family": "friccion"
+        },
+        "ao_role": "evidencia_friccion_confluencia_local",
+        "can_support_equivalence_local": false,
+        "can_support_confluence_local": true,
+        "closes_equivalence_global": false,
+        "closes_confluence_global": false,
+        "modifies_doc04": false,
+        "transformacion_permitida": false
+      },
+      "protocol_v02": {
+        "protocol_id": "MOC-EVAL-PROTO-002",
+        "status": "resuelto",
+        "disagreement_axes": [
+          "sin_desacuerdo"
+        ],
+        "tie_breaker_rule": "STATE-R4-FRICCION-LOCAL",
+        "trace_witness": "MOC-CASE-010::STATE-R4-FRICCION-LOCAL",
+        "ao_role": "evidencia_friccion_confluencia_local",
+        "treatment": "aceptar_salida_local",
+        "review_required": false,
+        "does_not_override_evaluators": true,
+        "modifies_doc04": false,
+        "clinical_use": false
+      }
+    },
+    {
+      "case_id": "MOC-CASE-011",
+      "domain": "frontera_parcial_friccion_sintetica",
+      "expected_xi": "util_acotado",
+      "actual_xi": "util_acotado",
+      "expected_moc": "concordancia_parcial",
+      "actual_moc": "concordancia_parcial",
+      "passed": true,
+      "operator_trace": {
+        "xi": {
+          "operator_id": "OP_MOC_XI",
+          "output": "util_acotado",
+          "rule_id": "XI-R4-REORGANIZACION-ESTABLE",
+          "priority": 4,
+          "conflicts": [
+            "non_blocking_debt"
+          ]
+        },
+        "tcs": {
+          "operator_id": "OP_MOC_TCS",
+          "output": "tcs_completo",
+          "rule_id": "TCS-R3-EJES-COMPLETOS",
+          "priority": 3,
+          "axes": {
+            "claim_status": true,
+            "authority_declared": true,
+            "decision_present": true,
+            "permission_scoped": true,
+            "evidence_traceable": true,
+            "automation_bounded": true,
+            "debt_registered": true
+          },
+          "missing_core": [],
+          "missing_secondary": []
+        },
+        "state": {
+          "operator_id": "OP_MOC_STATE",
+          "output": "concordancia_parcial",
+          "rule_id": "STATE-R6-CONCORDANCIA-PARCIAL",
+          "priority": 6,
+          "xi_rule": "XI-R4-REORGANIZACION-ESTABLE",
+          "tcs_rule": "TCS-R3-EJES-COMPLETOS",
+          "missing_core": [],
+          "missing_secondary": []
+        }
+      },
+      "agreement": {
+        "kind": "desacuerdo_justificado",
+        "xi_outputs": [
+          "limitado",
+          "util_acotado"
+        ],
+        "states": [
+          "concordancia_local",
+          "concordancia_parcial",
+          "friccion_operativa"
+        ],
+        "families": [
+          "concordante",
+          "friccion"
+        ]
+      },
+      "disagreement_class": "frontera_concordancia_friccion",
+      "debt": "precisar_umbral_entre_deuda_no_bloqueante_y_friccion",
+      "ao_bridge": {
+        "bridge_id": "MOC-AO-BRIDGE-001",
+        "witness_id": "MOC-CASE-011::STATE-R6-CONCORDANCIA-PARCIAL",
+        "pi_moc_trace": {
+          "case_id": "MOC-CASE-011",
+          "xi_rule": "XI-R4-REORGANIZACION-ESTABLE",
+          "tcs_rule": "TCS-R3-EJES-COMPLETOS",
+          "state_rule": "STATE-R6-CONCORDANCIA-PARCIAL",
+          "state_family": "concordante"
+        },
+        "ao_role": "evidencia_auxiliar_con_deuda",
+        "can_support_equivalence_local": true,
+        "can_support_confluence_local": true,
+        "closes_equivalence_global": false,
+        "closes_confluence_global": false,
+        "modifies_doc04": false,
+        "transformacion_permitida": false
+      },
+      "protocol_v02": {
+        "protocol_id": "MOC-EVAL-PROTO-002",
+        "status": "revision_si_repite",
+        "disagreement_axes": [
+          "regla_xi",
+          "estado_moc",
+          "familia_moc",
+          "rol_ao"
+        ],
+        "tie_breaker_rule": "STATE-R6-CONCORDANCIA-PARCIAL",
+        "trace_witness": "MOC-CASE-011::STATE-R6-CONCORDANCIA-PARCIAL",
+        "ao_role": "evidencia_auxiliar_con_deuda",
+        "treatment": "mantener_desacuerdo_justificado_y_abrir_micro_revision_si_repite",
+        "review_required": true,
+        "does_not_override_evaluators": true,
+        "modifies_doc04": false,
+        "clinical_use": false
+      }
+    }
+  ],
+  "findings": []
+}

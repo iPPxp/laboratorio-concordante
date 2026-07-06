@@ -424,3 +424,77 @@
 - Actualizados `AO-001.md`, `TCS-001_Teoria_Concordante_de_Sistemas.md`, `CURRENT_STATE.md`, `ESTADO_ACTUAL.md`, `README.md` y `DECISIONES.md` para registrar el avance local y dejar abiertas Confluencia global, Equivalencia global, promocion/exportacion de R4/Gamma, formalizacion posterior de Documento 04 y maduracion de `TCS-001`.
 - Refinado `DO-LAB-RISK-001` con `AUT-RISK-REFINE-002` para reconocer guardrails documentados, matrices de prueba y validaciones negativas como advertencias controladas.
 - Creadas validacion y decision `AUT-001_Validacion_Refinamiento_Contexto_Guardrails.md` y `AUT-001_Decision_Refinamiento_Contexto_Guardrails.md`; registrada `D-2026-07-03-020`.
+
+## 2026-07-05
+
+- Creado `HXI-001_Reapertura_Operativa.md` como `HXI-REOPEN-001`: `HXI-001` se reabre como frente activo inmediato para aplicar la compuerta de admision formal posterior.
+- Creada `HXI-001_Auditoria_Reapertura_Operativa.md`: auditoria favorable con restricciones; no admite `H-Xi`, no canoniza `Xi`, no reabre `PSI-001` y no autoriza transformaciones.
+- Creada `HXI-001_Decision_Reapertura_Operativa.md` y registrada `D-2026-07-05-001`.
+- Actualizados `HXI-001.md`, `CURRENT_STATE.md`, `ESTADO_ACTUAL.md`, `README.md`, `DECISIONES.md`, `HANDOFF.md` y `HANDOFF_PACKAGE.md` para reflejar la reapertura controlada.
+- Creada `HXI-001_Evaluacion_Compuerta_Admision_Formal.md` como `HXI-GATE-001`: resultado `mantener_Xi_eval`.
+- Creada `HXI-001_Auditoria_Compuerta_Admision_Formal.md`: auditoria favorable del resultado de compuerta.
+- Creada `HXI-001_Decision_Resultado_Compuerta_Admision_Formal.md` y registrada `D-2026-07-05-002`.
+- Actualizados `H-Xi.md`, `HXI-001.md`, `CURRENT_STATE.md`, `ESTADO_ACTUAL.md`, `README.md` y `DECISIONES.md` para registrar que `H-Xi` no se admite y `Xi_eval` se conserva como herramienta local.
+- Creado `HXI-001_Mantenimiento_Local.md` como `HXI-MAINT-001`: `HXI-001` queda abierto en mantenimiento local.
+- Creada `HXI-001_Auditoria_Mantenimiento_Local.md`: auditoria favorable del regimen de mantenimiento.
+- Creada `HXI-001_Decision_Mantenimiento_Local.md` y registrada `D-2026-07-05-003`.
+- Actualizados `H-Xi.md`, `HXI-001.md`, `CURRENT_STATE.md`, `ESTADO_ACTUAL.md`, `README.md`, `DECISIONES.md`, `HANDOFF.md` y `HANDOFF_PACKAGE.md` para retirar `HXI-001` del frente activo inmediato y devolver foco a `AO-001`.
+- Integrado `R001-TABLE-CHECK-001` desde `r001_table_checks.py` como herramienta local no mutante en `06_Automatizacion/r001_table_checks.py`.
+- Agregada prueba unitaria `06_Automatizacion/test_r001_table_checks.py`: 20 chequeos tabulares, 20 aprobados y 0 fallos.
+- Integrado `R001-TABLE-CHECK-001` al comando unico `DO-LAB-RUN-001`, con reportes Markdown y JSON conservados.
+- Creados `R001-001_Integracion_Table_Checks.md`, `R001-001_Auditoria_Integracion_Table_Checks.md` y `R001-001_Decision_Integracion_Table_Checks.md`; registrada `D-2026-07-05-004`.
+- Actualizados `CURRENT_STATE.md`, `ESTADO_ACTUAL.md`, `README.md`, `DECISIONES.md`, `HANDOFF.md` y `HANDOFF_PACKAGE.md` para registrar que `R001-001` no canoniza `Xi`, no admite `H-Xi`, no cierra `P-200`, no resuelve `P-107` y no desplaza a `AO-001`.
+- Creado `R001-001_Relacion_Formal_AO.md` como `R001-TB-001`: instancia tabular local conectada con `AO-PPI-BRIDGE-001`.
+- Creada `R001-001_Auditoria_Relacion_Formal_AO.md`: auditoria favorable de la relacion formal local con `AO-001`.
+- Creada `R001-001_Decision_Relacion_Formal_AO.md` y registrada `D-2026-07-05-005`: la deuda local de relacion formal entre `R001-TABLE-CHECK-001` y `AO-001` queda atendida sin cerrar Equivalencia global ni Confluencia global.
+- Actualizados `AO-001.md`, `AO-001_Puente_Confluencia_Equivalencia.md`, `CURRENT_STATE.md`, `ESTADO_ACTUAL.md`, `README.md`, `DECISIONES.md`, `HANDOFF.md`, `HANDOFF_PACKAGE.md` y automatizacion para declarar `R001-TB-001`.
+- Creado `AO-001_Evaluacion_Formalizacion_Doc04_R001_TB.md` como `AO-DOC04-FORM-CHK-001`: `Pi_tb` / `Eq_tb` queda como candidata futura para Documento 04, sin modificar el documento oficial.
+- Creado `AO-001_Opciones_Prueba_Confluencia_Externa.md` como `AO-CONF-EXT-OPTIONS-001`: define opciones externas no reguladas y recomienda `EXT-CONF-001` como primera prueba sintetica de Confluencia.
+- Creada `AO-001_Auditoria_Formalizacion_Doc04_Confluencia_Externa.md`: auditoria favorable de la ruta defensiva.
+- Creada `AO-001_Decision_Ruta_Formalizacion_Doc04_Confluencia_Externa.md` y registrada `D-2026-07-05-006`: no se modifica Documento 04; la incorporacion de `Pi_tb` / `Eq_tb` queda bloqueada hasta pruebas externas suficientes.
+- Actualizados `CURRENT_STATE.md`, `ESTADO_ACTUAL.md`, `README.md`, `DECISIONES.md`, `HANDOFF.md`, `HANDOFF_PACKAGE.md`, `AO-001.md` y `AO-001_Puente_Confluencia_Equivalencia.md` para fijar `EXT-CONF-001` como siguiente ruta.
+- Creado `AO-EXT-CONF-001` en `06_Automatizacion/ao_ext_confluence.py`, con fixture `06_Automatizacion/fixtures/ao_ext_confluence_cases.json`.
+- Ejecutado `EXT-CONF-001` sobre tabla sintetica CSV/JSON y agregado `EXT-CONF-002` sobre paquete de software de juguete como segunda prueba externa no regulada; reporte `ao_ext_confluence_report` con 7 casos, 7 aprobados y 0 fallos.
+- Integrado `AO-EXT-CONF-001` a `DO-LAB-RUN-001` y agregada prueba unitaria `test_ao_ext_confluence.py`.
+- Creado `AO-001_Pruebas_Externas_Confluencia.md` como `AO-EXT-CONF-EXEC-001`, con auditoria y decision `D-2026-07-05-007`.
+- Actualizados `AO-001`, `AO-001_Puente_Confluencia_Equivalencia.md`, `CURRENT_STATE.md`, `ESTADO_ACTUAL.md`, `README.md`, `DECISIONES.md`, `HANDOFF.md` y `HANDOFF_PACKAGE.md` para registrar que Confluencia global, Equivalencia global, formalizacion posterior de Documento 04, exportacion general de R4/Gamma y maduracion de `TCS-001` permanecen abiertas.
+- Incorporado `Pi_tb` / `Eq_tb` al Documento 04 en grado acotado bajo testigo mediante `AO-DOC04-FORM-001`; creados `AO-001_Formalizacion_Acotada_Doc04_R001_TB.md`, auditoria y decision `D-2026-07-05-008`.
+- Aplicada compuerta `AO-R4-GAMMA-EXPORT-GATE-001`: exportacion general de R4/Gamma bloqueada, perfil restringido interoperable conservado; creados auditoria y decision `D-2026-07-05-009`.
+- Madurado `TCS-001` con `TCS-MAT-PROV-001`: metrica cualitativa provisional, casos externos no regulados y conflicto de autoridades; creados auditoria y decision `D-2026-07-05-010`.
+- Actualizados `CURRENT_STATE.md`, `ESTADO_ACTUAL.md`, `README.md`, `DECISIONES.md`, `HANDOFF.md`, `HANDOFF_PACKAGE.md`, `AO-001.md` y `TCS-001_Teoria_Concordante_de_Sistemas.md` para reflejar que Doc04 queda formalizado solo en grado acotado, R4/Gamma no se exportan y TCS sigue no canonico.
+- Abierto `MOC-001` como expediente integrador teorico-operativo no canonico, no clinico y no regulado; creada auditoria y decision `D-2026-07-05-011`.
+- Formalizado `Xi_eval` como `MOC-XI-EVAL-FORMAL-001` dentro de `MOC-001`, con entradas, salidas, reglas de prioridad e invariantes; creada auditoria y decision `D-2026-07-05-012`.
+- Creadas metricas ordinales y protocolo reproducible de evaluacion (`MOC-METRIC-STATE-001` y `MOC-EVAL-PROTO-001`); creada auditoria y decision `D-2026-07-05-013`.
+- Creada bateria sintetica no clinica `MOC-CASE-BAT-001`, simulador no mutante `MOC-EVAL-001`, fixture `moc_cases.json` y prueba unitaria `test_moc_eval.py`; integrado `MOC-EVAL-001` a `DO-LAB-RUN-001`; creada auditoria y decision `D-2026-07-05-014`.
+- Creado `MOC-EMP-STUDY-001` como diseno documental de estudio empirico futuro, sin ejecucion real ni personas reales; creada auditoria y decision `D-2026-07-05-015`.
+- Actualizados `CURRENT_STATE.md`, `ESTADO_ACTUAL.md`, `README.md`, `DECISIONES.md`, `HANDOFF.md`, `HANDOFF_PACKAGE.md`, `06_Automatizacion/README.md` y `06_Automatizacion/reportes/README.md` para registrar `MOC-001`, `MOC-EVAL-001` y las deudas abiertas.
+- Ejecutada la primera ruta valida de `MOC-001` como `MOC-ROUTE-EXEC-001`: `MOC-EVAL-001` queda con 7 casos, 7 aprobados, 0 fallos; `DO-LAB-RUN-001` conserva `MOC-EVAL-001: ok` y `risk_blocks_closure: false`; creada auditoria y decision `D-2026-07-05-016`.
+- Creada `MOC-NEXT-ROUTES-001` como matriz de siguientes rutas validas; `MOC-ROUTE-002` queda recomendada para ampliar bateria sintetica no clinica con desacuerdos justificados y casos limite; creada auditoria y decision `D-2026-07-05-017`.
+- Ejecutada `MOC-ROUTE-002`: bateria sintetica no clinica ampliada a 11 casos, 11 aprobados, 0 fallos, 6 coincidencias exactas, 3 parciales y 2 desacuerdos justificados.
+- Actualizados `moc_eval.py`, `moc_cases.json` y `test_moc_eval.py` para reportar clases de desacuerdo y cubrir casos limite no clinicos.
+- Creadas `MOC-001_Ejecucion_Ruta_002.md`, `MOC-001_Auditoria_Ejecucion_Ruta_002.md` y `MOC-001_Decision_Ejecucion_Ruta_002.md`; registrada `D-2026-07-05-018`.
+- Creada `MOC-NEXT-ROUTES-002` como matriz posterior a ruta 002; `MOC-ROUTE-003` queda recomendada para formalizar puente `MOC/TCS`; creadas auditoria y decision `D-2026-07-05-019`.
+- Formalizado `MOC-TCS-BRIDGE-001` como `MOC-ROUTE-003`: operadores `OP_MOC_XI`, `OP_MOC_TCS`, `OP_MOC_STATE` y `OP_MOC_AGREEMENT` con prioridad, conflicto, salida unica y traza auditable.
+- Actualizado `MOC-EVAL-001` para emitir `operator_trace` y conservar reglas ganadoras en reportes Markdown/JSON.
+- Creadas `MOC-001_Puente_Formal_MOC_TCS.md`, `MOC-001_Auditoria_Puente_Formal_MOC_TCS.md` y `MOC-001_Decision_Puente_Formal_MOC_TCS.md`; registrada `D-2026-07-05-020`.
+- Creada `MOC-NEXT-ROUTES-003` como matriz posterior a ruta 003; `MOC-ROUTE-004` queda recomendada para formalizar puente `MOC/AO`; creadas auditoria y decision `D-2026-07-05-021`.
+- Formalizado `MOC-AO-BRIDGE-001` como `MOC-ROUTE-004`: `operator_trace` queda proyectado a `Pi_moc_trace` y `ao_bridge` como evidencia local de regla ganadora para `AO-001`, sin cierre global ni modificacion de `Documento 04`.
+- Actualizado `MOC-EVAL-001` para emitir `ao_bridge`, roles AO locales y banderas negativas de cierre global en reportes Markdown/JSON.
+- Creadas `MOC-001_Puente_Formal_MOC_AO.md`, `MOC-001_Auditoria_Puente_Formal_MOC_AO.md` y `MOC-001_Decision_Puente_Formal_MOC_AO.md`; registrada `D-2026-07-05-022`.
+- Creada `MOC-NEXT-ROUTES-004` como matriz posterior a ruta 004; `MOC-ROUTE-005` queda recomendada para refinar protocolo de evaluadores usando `operator_trace`, `Pi_moc_trace` y `ao_bridge`; creadas auditoria y decision `D-2026-07-05-023`.
+- Ejecutada `MOC-ROUTE-005`: creado `MOC-EVAL-PROTO-002` como protocolo v0.2 con ejes de desacuerdo, regla de desempate, tratamiento por caso y revision si el desacuerdo se repite.
+- Actualizado `MOC-EVAL-001` para emitir `protocol_v02` por caso y `protocol_v02_summary` por reporte; mantiene 11 casos, 11 aprobados, 0 fallos, 6 coincidencias exactas, 3 parciales y 2 desacuerdos justificados.
+- Creadas `MOC-001_Protocolo_Evaluacion_v0_2.md`, `MOC-001_Ejecucion_Ruta_005.md`, `MOC-001_Auditoria_Ejecucion_Ruta_005.md` y `MOC-001_Decision_Ejecucion_Ruta_005.md`; registrada `D-2026-07-05-024`.
+- Creada `MOC-NEXT-ROUTES-005` como matriz posterior a ruta 005; `MOC-ROUTE-006` queda recomendada para preparar protocolo documental de piloto empirico futuro sin ejecucion real; creadas auditoria y decision `D-2026-07-05-025`.
+
+## 2026-07-06
+
+- Preparado `MOC-EMP-PILOT-PROTO-001` como protocolo documental de piloto empirico futuro, sin ejecucion real, sin reclutamiento, sin personas reales, sin datos personales y sin uso clinico.
+- Creadas `MOC-001_Protocolo_Piloto_Empirico_Futuro.md`, `MOC-001_Auditoria_Protocolo_Piloto_Empirico_Futuro.md` y `MOC-001_Decision_Protocolo_Piloto_Empirico_Futuro.md`; registrada `D-2026-07-06-001`.
+- Creada `MOC-NEXT-ROUTES-006` como matriz posterior a ruta 006; `MOC-ROUTE-007` queda recomendada para decidir compuerta de autorizacion o no autorizacion del piloto futuro, sin ejecutarlo; creadas auditoria y decision `D-2026-07-06-002`.
+- Ejecutada `MOC-ROUTE-007` como compuerta de autorizacion de ejecucion de piloto: resultado `no_autorizar_ejecucion`, `piloto_autorizado = false`.
+- Creadas `MOC-001_Compuerta_Autorizacion_Ejecucion_Piloto.md`, `MOC-001_Auditoria_Compuerta_Autorizacion_Ejecucion_Piloto.md` y `MOC-001_Decision_Compuerta_Autorizacion_Ejecucion_Piloto.md`; registrada `D-2026-07-06-003`.
+- La siguiente ruta recomendada queda como `MOC-ROUTE-008`: preparar paquete documental pre-ejecucion de piloto sin reclutamiento, sin respuestas reales, sin datos personales y sin uso clinico.
+- Ejecutada `MOC-ROUTE-008` como paquete documental pre-ejecucion: semantica provisional, tabla de operaciones, casos congelados, plantilla y reglas/protocolo congelados.
+- Creadas `MOC-001_Semantica_Provisional.md`, `MOC-001_Tabla_Operaciones_Formales.md`, `MOC-001_Casos_Congelados_Piloto.md`, `MOC-001_Plantilla_Respuesta_Evaluadores.md`, `MOC-001_Reglas_Protocolo_Congelados.md`, `MOC-001_Paquete_PreEjecucion_Piloto.md`, auditoria y decision; registrada `D-2026-07-06-004`.
+- La siguiente ruta recomendada queda como `MOC-ROUTE-009`: preparar metodo de registro sin datos personales y matriz de auditoria, sin reclutamiento ni ejecucion.

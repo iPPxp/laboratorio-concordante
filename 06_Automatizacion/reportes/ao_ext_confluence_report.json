@@ -1,0 +1,168 @@
+{
+  "report_id": "AO-EXT-CONF-20260705-190709",
+  "expediente": "AO-001",
+  "algoritmo": "AO-EXT-CONF-001",
+  "suite_id": "AO-EXT-CONF-SYN-001",
+  "resultado": "ok",
+  "recomendacion": "mantener_deudas_globales_abiertas",
+  "transformacion_permitida": false,
+  "tests_executed": [
+    "EXT-CONF-001",
+    "EXT-CONF-002"
+  ],
+  "summary": {
+    "cases": 7,
+    "passed": 7,
+    "failed": 0,
+    "findings": 0,
+    "by_test": {
+      "EXT-CONF-001": {
+        "cases": 4,
+        "passed": 4,
+        "failed": 0
+      },
+      "EXT-CONF-002": {
+        "cases": 3,
+        "passed": 3,
+        "failed": 0
+      }
+    }
+  },
+  "scope_guard": {
+    "modifica_doc04": false,
+    "modifica_canon": false,
+    "crea_nivel_c": false,
+    "cierra_confluencia_global": false,
+    "cierra_equivalencia_global": false,
+    "promueve_r4_gamma": false,
+    "madura_tcs_canonico": false,
+    "autoriza_transformacion": false
+  },
+  "debt_guard": {
+    "confluencia_global_abierta": true,
+    "equivalencia_global_abierta": true,
+    "formalizacion_doc04_abierta": true,
+    "exportacion_r4_gamma_abierta": true,
+    "maduracion_tcs_abierta": true
+  },
+  "results": [
+    {
+      "case_id": "EXT-CONF-001A",
+      "test_id": "EXT-CONF-001",
+      "domain": "tabla_datos_sintetica",
+      "route_a": "normalizacion_csv",
+      "route_b": "normalizacion_json",
+      "expected": "confluencia_local",
+      "actual": "confluencia_local",
+      "passed": true,
+      "detail": "normalizacion_csv vs normalizacion_json => confluencia_local",
+      "route_a_blockers": [],
+      "route_b_blockers": [],
+      "route_a_warnings": [],
+      "route_b_warnings": []
+    },
+    {
+      "case_id": "EXT-CONF-001B",
+      "test_id": "EXT-CONF-001",
+      "domain": "tabla_datos_sintetica",
+      "route_a": "normalizacion_csv",
+      "route_b": "normalizacion_json",
+      "expected": "bloqueo_por_testigo",
+      "actual": "bloqueo_por_testigo",
+      "passed": true,
+      "detail": "normalizacion_csv vs normalizacion_json => bloqueo_por_testigo",
+      "route_a_blockers": [
+        "row:1:missing:status"
+      ],
+      "route_b_blockers": [
+        "row:1:missing:status"
+      ],
+      "route_a_warnings": [],
+      "route_b_warnings": []
+    },
+    {
+      "case_id": "EXT-CONF-001C",
+      "test_id": "EXT-CONF-001",
+      "domain": "tabla_datos_sintetica",
+      "route_a": "normalizacion_csv",
+      "route_b": "normalizacion_json",
+      "expected": "equivalencia_bajo_testigo",
+      "actual": "equivalencia_bajo_testigo",
+      "passed": true,
+      "detail": "normalizacion_csv vs normalizacion_json => equivalencia_bajo_testigo",
+      "route_a_blockers": [],
+      "route_b_blockers": [],
+      "route_a_warnings": [
+        "row:1:extra_ignored:debug"
+      ],
+      "route_b_warnings": [
+        "row:1:extra_ignored:debug"
+      ]
+    },
+    {
+      "case_id": "EXT-CONF-001D",
+      "test_id": "EXT-CONF-001",
+      "domain": "tabla_datos_sintetica",
+      "route_a": "normalizacion_csv",
+      "route_b": "normalizacion_json",
+      "expected": "divergencia_clasificada",
+      "actual": "divergencia_clasificada",
+      "passed": true,
+      "detail": "normalizacion_csv vs normalizacion_json => divergencia_clasificada",
+      "route_a_blockers": [],
+      "route_b_blockers": [],
+      "route_a_warnings": [],
+      "route_b_warnings": []
+    },
+    {
+      "case_id": "EXT-CONF-002A",
+      "test_id": "EXT-CONF-002",
+      "domain": "paquete_software_juguete",
+      "route_a": "manifiesto_paquete",
+      "route_b": "reporte_dependencias",
+      "expected": "confluencia_local",
+      "actual": "confluencia_local",
+      "passed": true,
+      "detail": "manifiesto_paquete vs reporte_dependencias => confluencia_local",
+      "route_a_blockers": [],
+      "route_b_blockers": [],
+      "route_a_warnings": [],
+      "route_b_warnings": []
+    },
+    {
+      "case_id": "EXT-CONF-002B",
+      "test_id": "EXT-CONF-002",
+      "domain": "paquete_software_juguete",
+      "route_a": "manifiesto_paquete",
+      "route_b": "reporte_dependencias",
+      "expected": "bloqueo_por_testigo",
+      "actual": "bloqueo_por_testigo",
+      "passed": true,
+      "detail": "manifiesto_paquete vs reporte_dependencias => bloqueo_por_testigo",
+      "route_a_blockers": [
+        "dep:toy-core:missing:license"
+      ],
+      "route_b_blockers": [
+        "dep:toy-core:missing:license"
+      ],
+      "route_a_warnings": [],
+      "route_b_warnings": []
+    },
+    {
+      "case_id": "EXT-CONF-002C",
+      "test_id": "EXT-CONF-002",
+      "domain": "paquete_software_juguete",
+      "route_a": "manifiesto_paquete",
+      "route_b": "reporte_dependencias",
+      "expected": "divergencia_clasificada",
+      "actual": "divergencia_clasificada",
+      "passed": true,
+      "detail": "manifiesto_paquete vs reporte_dependencias => divergencia_clasificada",
+      "route_a_blockers": [],
+      "route_b_blockers": [],
+      "route_a_warnings": [],
+      "route_b_warnings": []
+    }
+  ],
+  "findings": []
+}

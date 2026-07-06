@@ -1845,3 +1845,997 @@ No borra hallazgos, no modifica Canon, no modifica documentos oficiales, no reab
 `DO-LAB-RISK-001` queda refinado para mantener `riesgo_activo: 0` cuando los hallazgos pertenecen a guardrails ya documentados.
 
 `AUT-001` conserva cierre operativo con deuda documental visible.
+
+## D-2026-07-05-001 - Reapertura operativa HXI-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `HXI-REOPEN-001` como reapertura operativa controlada de `HXI-001`.
+
+Documento base: `03_Expedientes/HXI-001_Reapertura_Operativa.md`.
+
+Auditoria: `03_Expedientes/HXI-001_Auditoria_Reapertura_Operativa.md`.
+
+Decision espejo: `03_Expedientes/HXI-001_Decision_Reapertura_Operativa.md`.
+
+## Alcance
+
+La decision reactiva `HXI-001` como frente activo inmediato para aplicar la compuerta provisional de admision formal posterior de `H-Xi`.
+
+Permite usar `Xi_eval` solo como herramienta local de expediente y decidir posteriormente entre `no_admitir`, `pausar_admision`, `admitir_solo_expediente`, `mantener_Xi_eval` o `abrir_promocion_separada`.
+
+## No cubre
+
+No admite `H-Xi`, no canoniza `Xi`, no declara operador vigente, no modifica Canon, documentos oficiales ni Nivel C, no reabre `PSI-001`, no restaura copias locales `PSI-001*`, no habilita uso clinico, no resuelve `P-107`, no abre promocion formal y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+`HXI-001` deja de estar en pausa operativa como frente inmediato.
+
+El siguiente objetivo del Laboratorio es aplicar `HXI-001_Criterios_Admision_Formal_H-Xi.md` contra la evidencia ya aceptada y emitir una decision de resultado sin admision automatica.
+
+## D-2026-07-05-002 - Resultado de compuerta de admision formal HXI-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `HXI-GATE-001` como aplicacion de la compuerta de admision formal posterior de `H-Xi`.
+
+Resultado de compuerta: `mantener_Xi_eval`.
+
+Documento base: `03_Expedientes/HXI-001_Evaluacion_Compuerta_Admision_Formal.md`.
+
+Auditoria: `03_Expedientes/HXI-001_Auditoria_Compuerta_Admision_Formal.md`.
+
+Decision espejo: `03_Expedientes/HXI-001_Decision_Resultado_Compuerta_Admision_Formal.md`.
+
+## Alcance
+
+La decision conserva `Xi_eval` como herramienta local de `HXI-001` y mantiene `H-Xi` como hipotesis externa no admitida.
+
+Permite usar dentro de `HXI-001` las salidas `redundante`, `util_acotado`, `limitado`, `no_comparable` y `bloqueado`.
+
+## No cubre
+
+No admite `H-Xi`, no canoniza `Xi`, no declara operador vigente, no modifica Canon, documentos oficiales ni Nivel C, no reabre `PSI-001`, no restaura copias locales `PSI-001*`, no habilita uso clinico, no resuelve `P-107`, no abre promocion formal, no prueba dominios independientes y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+La compuerta de admision formal posterior queda aplicada.
+
+El siguiente objetivo limpio es decidir el estatus posterior de `HXI-001`: mantenerlo abierto en mantenimiento local, pausarlo o cerrarlo tras el resultado `mantener_Xi_eval`.
+
+## D-2026-07-05-003 - Mantenimiento local HXI-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `HXI-MAINT-001` como regimen de mantenimiento local de `HXI-001`.
+
+Documento base: `03_Expedientes/HXI-001_Mantenimiento_Local.md`.
+
+Auditoria: `03_Expedientes/HXI-001_Auditoria_Mantenimiento_Local.md`.
+
+Decision espejo: `03_Expedientes/HXI-001_Decision_Mantenimiento_Local.md`.
+
+## Alcance
+
+La decision mantiene `HXI-001` abierto en mantenimiento local.
+
+Conserva `H-Xi` como hipotesis externa no admitida y `Xi_eval` como herramienta local de expediente.
+
+`HXI-001` deja de ser frente activo inmediato.
+
+## No cubre
+
+No admite `H-Xi`, no canoniza `Xi`, no declara operador vigente, no reabre admision sin evidencia nueva, no modifica Canon, documentos oficiales ni Nivel C, no reabre `PSI-001`, no restaura copias locales `PSI-001*`, no habilita uso clinico, no resuelve `P-107`, no abre promocion formal y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+El trabajo activo puede volver a `AO-001`, Confluencia, Equivalencia de proyecciones o formalizacion posterior del Documento 04.
+
+`HXI-001` solo debe salir de mantenimiento mediante decision posterior con evidencia nueva, decision puente, cierre o promocion separada.
+
+## D-2026-07-05-004 - Integracion R001 table checks
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `R001-TABLE-CHECK-001` como herramienta local no mutante del Laboratorio.
+
+Documento base: `03_Expedientes/R001-001_Integracion_Table_Checks.md`.
+
+Auditoria: `03_Expedientes/R001-001_Auditoria_Integracion_Table_Checks.md`.
+
+Decision espejo: `03_Expedientes/R001-001_Decision_Integracion_Table_Checks.md`.
+
+## Alcance
+
+La decision permite conservar una bateria de 20 chequeos tabulares `R-001` / `Xi`, generar reportes Markdown y JSON, ejecutarla dentro de `DO-LAB-RUN-001` y usarla como evidencia tecnica auxiliar local en `AO-001`.
+
+## No cubre
+
+No canoniza `Xi`, no admite `H-Xi`, no declara `Xi` operador vigente, no reabre admision de `H-Xi`, no cierra `P-200`, no resuelve `P-107`, no demuestra Equivalencia global de proyecciones, no demuestra Confluencia global, no produce cambios al Canon, a documentos oficiales ni a Nivel C, no reabre `PSI-001`, no habilita uso clinico y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+`R001-TABLE-CHECK-001` queda integrado a `06_Automatizacion`, con prueba unitaria y reportes conservados.
+
+`AO-001` sigue como frente operativo principal para Confluencia, Equivalencia de proyecciones y formalizacion posterior del Documento 04.
+
+`HXI-001` permanece abierto en mantenimiento local por `D-2026-07-05-003`.
+
+## D-2026-07-05-005 - Relacion formal R001 con AO
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `R001-TB-001` como relacion formal local entre `R001-TABLE-CHECK-001` y `AO-PPI-BRIDGE-001`.
+
+Documento base: `03_Expedientes/R001-001_Relacion_Formal_AO.md`.
+
+Auditoria: `03_Expedientes/R001-001_Auditoria_Relacion_Formal_AO.md`.
+
+Decision espejo: `03_Expedientes/R001-001_Decision_Relacion_Formal_AO.md`.
+
+## Alcance
+
+La decision permite usar `Pi_tb(C, O_adm)` como instancia local de proyeccion operacional `Pi_op`, usar `Eq_tb(C1, C2, O_adm)` como equivalencia local bajo testigo y tratar los reportes `R001` como evidencia auxiliar para `AO-PPI-EQ-001` y `AO-PPI-CONF-001`.
+
+## No cubre
+
+No canoniza `Xi`, no admite `H-Xi`, no declara `Xi` operador vigente, no cierra `P-200`, no resuelve `P-107`, no cierra Equivalencia global de proyecciones, no cierra Confluencia global, no produce cambios al Canon, a documentos oficiales ni a Nivel C, no incorpora contenido al Documento 04 y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+La deuda local de relacion formal entre `R001-TABLE-CHECK-001` y `AO-001` queda atendida por `R001-TB-001`.
+
+`AO-001` sigue abierto como frente operativo principal para profundizar Confluencia, Equivalencia de proyecciones y formalizacion posterior del Documento 04.
+
+Las deudas globales permanecen abiertas.
+
+## D-2026-07-05-006 - Ruta de formalizacion Doc04 y Confluencia externa
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se aceptan `AO-DOC04-FORM-CHK-001` y `AO-CONF-EXT-OPTIONS-001` como evaluacion de ruta para formalizacion futura en Documento 04 y pruebas externas de Confluencia.
+
+Documento base 1: `03_Expedientes/AO-001_Evaluacion_Formalizacion_Doc04_R001_TB.md`.
+
+Documento base 2: `03_Expedientes/AO-001_Opciones_Prueba_Confluencia_Externa.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Formalizacion_Doc04_Confluencia_Externa.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Ruta_Formalizacion_Doc04_Confluencia_Externa.md`.
+
+## Alcance
+
+La decision permite conservar una seccion candidata de `Pi_tb` y `Eq_tb` para Documento 04, sin cambiar todavia el documento oficial.
+
+Tambien permite priorizar `EXT-CONF-001` como primera prueba externa sintetica de Confluencia y usar resultados futuros para decidir si procede una incorporacion documental acotada.
+
+## No cubre
+
+No modifica Documento 04, Canon ni Nivel C.
+
+No canoniza `Xi`, no admite `H-Xi`, no cierra `P-200`, no resuelve `P-107`, no cierra Equivalencia global, no cierra Confluencia global, no abre dominios clinicos, juridicos, financieros o institucionales y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+`R001-TB-001` queda listo como candidata formal para Documento 04, pero su incorporacion oficial queda bloqueada hasta que existan pruebas externas de Confluencia.
+
+Nota posterior: la accion recomendada queda ejecutada por `D-2026-07-05-007` mediante `AO-EXT-CONF-EXEC-001`.
+
+Nota posterior: la incorporacion documental acotada queda ejecutada por `D-2026-07-05-008` mediante `AO-DOC04-FORM-001`.
+
+Las deudas globales permanecen abiertas.
+
+## D-2026-07-05-007 - Estatus de pruebas externas de Confluencia AO-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `AO-EXT-CONF-EXEC-001` como validacion provisional ejecutada de pruebas externas no reguladas de Confluencia.
+
+Documento base: `03_Expedientes/AO-001_Pruebas_Externas_Confluencia.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Pruebas_Externas_Confluencia.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Estatus_Pruebas_Externas_Confluencia.md`.
+
+Evidencia ejecutable: `06_Automatizacion/ao_ext_confluence.py`.
+
+Fixture: `06_Automatizacion/fixtures/ao_ext_confluence_cases.json`.
+
+Reportes: `06_Automatizacion/reportes/ao_ext_confluence_report.md` y `06_Automatizacion/reportes/ao_ext_confluence_report.json`.
+
+## Alcance
+
+La decision acepta `EXT-CONF-001` ejecutado sobre tabla de datos sintetica y `EXT-CONF-002` agregado y ejecutado sobre paquete de software de juguete.
+
+Tambien acepta `AO-EXT-CONF-001` como herramienta no mutante integrada a `06_Automatizacion` y sus resultados locales como evidencia de apoyo para `AO-PPI-BRIDGE-001`.
+
+## No cubre
+
+No cierra Confluencia global, no cierra Equivalencia global de proyecciones, no modifica Documento 04, no incorpora `Pi_tb` / `Eq_tb` a Documento 04, no modifica Canon, no crea Nivel C, no promueve ni exporta `R4-FORMAL-AUD-001`, no promueve ni exporta `GAMMA-FORMAL-AUD-001`, no canoniza ni cierra `TCS-001`, no abre dominios clinicos, juridicos, financieros o institucionales y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+`EXT-CONF-001` queda ejecutado.
+
+`EXT-CONF-002` queda agregado como segunda prueba externa no regulada.
+
+La condicion minima de dos pruebas externas queda atendida en grado local, pero no basta por si sola para modificar Documento 04.
+
+Nota posterior: `D-2026-07-05-008` usa esta evidencia para incorporar `Pi_tb` / `Eq_tb` al Documento 04 solo en grado acotado bajo testigo.
+
+Permanecen abiertas Confluencia global, Equivalencia global, formalizacion posterior de Documento 04, exportacion general de R4/Gamma y maduracion de `TCS-001`.
+
+## D-2026-07-05-008 - Formalizacion acotada en Documento 04
+
+Estatus: decision documental acotada.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `AO-DOC04-FORM-001` como incorporacion acotada al Documento 04.
+
+Documento base: `03_Expedientes/AO-001_Formalizacion_Acotada_Doc04_R001_TB.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Formalizacion_Acotada_Doc04.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Formalizacion_Acotada_Doc04.md`.
+
+Documento modificado: `02_Documentos/04_Algebra_Operacional.md`.
+
+## Alcance
+
+La decision incorpora `Pi_tb` y `Eq_tb` como proyeccion tabular local bajo testigo.
+
+La incorporacion queda apoyada por `R001-TB-001`, `AO-DOC04-FORM-CHK-001` y `AO-EXT-CONF-EXEC-001`.
+
+## No cubre
+
+No cierra `P-200`, no resuelve `P-107`, no cierra Equivalencia global de proyecciones, no cierra Confluencia global, no admite `H-Xi`, no canoniza `Xi`, no promueve R4/Gamma, no crea Nivel C y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+La deuda "formalizacion posterior de Documento 04" queda atendida solo en grado acotado para `Pi_tb` / `Eq_tb`.
+
+Permanecen abiertas las formalizaciones posteriores de Confluencia, Equivalencia global, R4/Gamma, `TCS-001` y cualquier especificacion futura de proyecciones/reportes.
+
+## D-2026-07-05-009 - Compuerta de exportacion R4/Gamma
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `AO-R4-GAMMA-EXPORT-GATE-001` como compuerta provisional de exportacion de R4/Gamma.
+
+Documento base: `03_Expedientes/AO-001_Compuerta_Exportacion_R4_Gamma.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Compuerta_Exportacion_R4_Gamma.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Compuerta_Exportacion_R4_Gamma.md`.
+
+## Resultado
+
+La exportacion general de `R4-FORMAL-AUD-001` y `GAMMA-FORMAL-AUD-001` queda bloqueada.
+
+Se acepta solo el `perfil_restringido_interoperable` como avance local controlado.
+
+## No cubre
+
+No promueve R4/Gamma a Canon, no promueve R4/Gamma a Nivel C, no modifica Documento 04, no crea una teoria global de R4 o Gamma, no cierra Confluencia global, no cierra Equivalencia global y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+La deuda de exportacion general de R4/Gamma no queda cerrada.
+
+Queda refinada: antes de reintentar exportacion general debe existir dominio externo, semantica independiente del expediente, pruebas externas suficientes y relacion con Confluencia/Equivalencia global.
+
+## D-2026-07-05-010 - Maduracion provisional TCS-001
+
+Estatus: decision teorica provisional.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `TCS-MAT-PROV-001` como avance de maduracion provisional de `TCS-001`.
+
+Documento base: `03_Expedientes/TCS-001_Maduracion_Provisional.md`.
+
+Auditoria: `03_Expedientes/TCS-001_Auditoria_Maduracion_Provisional.md`.
+
+Decision espejo: `03_Expedientes/TCS-001_Decision_Maduracion_Provisional.md`.
+
+## Componentes aceptados
+
+- `TCS-METRIC-PROV-001`: metrica cualitativa provisional.
+- `TCS-EXT-CASE-001`: casos externos no regulados.
+- `TCS-AUTH-CONF-001`: patron de conflicto de autoridades validas.
+
+## No cubre
+
+No canoniza `Concordance`, no crea Nivel C, no modifica documentos oficiales, no abre dominios clinicos, juridicos, financieros o institucionales, no convierte `TCS-001` en teoria completa y no cierra la deuda de maduracion de TCS.
+
+## Consecuencia
+
+La deuda de maduracion de `TCS-001` queda reducida, pero permanece abierta.
+
+Los siguientes avances deben enfocarse en semantica formal, mas casos externos no regulados y relacion controlada con `AO-001` / `C-001`.
+
+## D-2026-07-05-011 - Apertura de MOC-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se abre `MOC-001` como expediente integrador teorico-operativo, no canonico, no clinico y no regulado.
+
+Documento base: `03_Expedientes/MOC-001.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Apertura.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Apertura.md`.
+
+## Alcance
+
+La decision permite construir una primera version del Modelo Operativo de Concordancia con operadores locales, metricas, protocolo, simulaciones no mutantes y diseno empirico futuro.
+
+## No cubre
+
+No admite `H-Xi`, no canoniza `Xi`, no declara operador general vigente, no modifica Canon, documentos oficiales ni Nivel C, no modifica `Documento 04`, no reabre `PSI-001`, no abre trabajo clinico y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+`MOC-001` queda abierto como frente integrador provisional conectado con `HXI-001`, `TCS-001` y `AO-001`.
+
+## D-2026-07-05-012 - Formalizacion local de Xi_eval para MOC-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `MOC-XI-EVAL-FORMAL-001` como formalizacion local de `Xi_eval` dentro de `MOC-001`.
+
+Documento base: `03_Expedientes/MOC-001_Formalizacion_Xi_eval.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Formalizacion_Xi_eval.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Formalizacion_Xi_eval.md`.
+
+## Alcance
+
+La decision permite usar `Xi_eval_MOC` para evaluar casos sinteticos no clinicos con entradas, salidas, reglas e invariantes definidos.
+
+## No cubre
+
+No admite `H-Xi`, no canoniza `Xi`, no declara operador general vigente, no habilita uso clinico, no evalua personas reales, no modifica documentos oficiales y no cierra `P-107`.
+
+## Consecuencia
+
+`Xi_eval` queda disponible para `MOC-001` solo como operador local de evaluacion.
+
+## D-2026-07-05-013 - Metricas y protocolo MOC-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se aceptan `MOC-METRIC-STATE-001` y `MOC-EVAL-PROTO-001` como metricas y protocolo provisional de evaluacion para `MOC-001`.
+
+Documentos base:
+
+- `03_Expedientes/MOC-001_Metricas_Estados.md`.
+- `03_Expedientes/MOC-001_Protocolo_Evaluacion.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Metricas_Protocolo.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Metricas_Protocolo.md`.
+
+## Alcance
+
+La decision permite clasificar casos sinteticos no clinicos en estados MOC y comparar salidas entre evaluadores simulados.
+
+## No cubre
+
+No produce medicion universal, no valida empiricamente el modelo, no evalua personas reales, no abre uso clinico y no canoniza `TCS-001`.
+
+## Consecuencia
+
+`MOC-001` puede pasar a bateria de casos y simulacion no mutante.
+
+## D-2026-07-05-014 - Simulacion no mutante MOC-001
+
+Estatus: decision tecnica provisional.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `MOC-EVAL-001` como simulador no mutante de `MOC-001`.
+
+Documento base: `03_Expedientes/MOC-001_Casos_No_Clinicos.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Simulacion_Software.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Simulacion_Software.md`.
+
+Evidencia ejecutable:
+
+- `06_Automatizacion/moc_eval.py`.
+- `06_Automatizacion/fixtures/moc_cases.json`.
+- `06_Automatizacion/test_moc_eval.py`.
+
+Reportes:
+
+- `06_Automatizacion/reportes/moc_eval_report.md`.
+- `06_Automatizacion/reportes/moc_eval_report.json`.
+
+## Alcance
+
+La decision permite ejecutar casos sinteticos no clinicos, generar reportes y sumar `MOC-EVAL-001` a `DO-LAB-RUN-001` como paso de lectura.
+
+## No cubre
+
+No valida empiricamente el MOC, no evalua personas reales, no autoriza transformaciones, no modifica Canon ni documentos oficiales, no admite `H-Xi`, no canoniza `Xi` y no cierra deudas globales.
+
+## Consecuencia
+
+`MOC-001` cuenta con una superficie ejecutable provisional y no mutante.
+
+## D-2026-07-05-015 - Diseno empirico futuro MOC-001
+
+Estatus: decision teorica provisional.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `MOC-EMP-STUDY-001` como diseno documental de estudio empirico futuro para `MOC-001`.
+
+Documento base: `03_Expedientes/MOC-001_Disenio_Estudio_Empirico.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Disenio_Estudio_Empirico.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Disenio_Estudio_Empirico.md`.
+
+## Alcance
+
+La decision permite conservar una ruta futura de comparacion con baselines no clinicos mediante casos sinteticos, consistencia entre evaluadores y clasificacion de desacuerdos.
+
+## No cubre
+
+No ejecuta estudio empirico real, no recluta personas, no evalua casos reales, no abre dominios clinicos ni regulados, no declara validez estadistica y no canoniza el MOC.
+
+## Consecuencia
+
+`MOC-001` queda avanzado como frente integrador provisional con formalizacion, metricas, protocolo, simulacion y diseno empirico futuro.
+
+## D-2026-07-05-016 - Ejecucion de primera ruta valida MOC-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `MOC-ROUTE-EXEC-001` como ejecucion favorable de la primera ruta valida de `MOC-001`.
+
+Documento base: `03_Expedientes/MOC-001_Ejecucion_Ruta_Valida_001.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Ejecucion_Ruta_Valida_001.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Ejecucion_Ruta_Valida_001.md`.
+
+## Alcance
+
+La decision acepta que `Xi_eval_MOC`, estados metricos, protocolo de evaluacion y software no mutante fueron probados localmente con casos sinteticos no clinicos.
+
+## Resultado
+
+`MOC-EVAL-001` ejecuta 7 casos, aprueba 7 y no registra hallazgos.
+
+El protocolo registra 4 coincidencias exactas, 3 coincidencias parciales y 0 desacuerdos justificados.
+
+`DO-LAB-RUN-001` conserva `MOC-EVAL-001` como paso `ok` y `DO-LAB-RISK-001` mantiene `risk_blocks_closure: false`.
+
+## No cubre
+
+No valida empiricamente el MOC, no evalua personas reales, no abre uso clinico, no admite `H-Xi`, no canoniza `Xi`, no crea Nivel C, no modifica `Documento 04`, no cierra Confluencia global, no cierra Equivalencia global y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+La primera ruta valida queda ejecutada. La siguiente accion valida es elegir una ruta posterior dentro de `MOC-001` sin salir del alcance no canonico, no clinico y no regulado.
+
+## D-2026-07-05-017 - Siguientes rutas validas MOC-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `MOC-NEXT-ROUTES-001` como matriz provisional de rutas posteriores para `MOC-001`.
+
+Documento base: `03_Expedientes/MOC-001_Siguientes_Rutas_Validas.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Siguientes_Rutas_Validas.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Siguientes_Rutas_Validas.md`.
+
+## Ruta recomendada
+
+La siguiente ruta recomendada es `MOC-ROUTE-002`: ampliar la bateria sintetica no clinica con desacuerdos justificados y casos limite.
+
+## No cubre
+
+No ejecuta todavia `MOC-ROUTE-002`, no modifica software, no abre estudio empirico real, no admite `H-Xi`, no canoniza `Xi`, no abre uso clinico, no modifica `Documento 04`, no crea Nivel C y no cierra problemas globales.
+
+## Consecuencia
+
+`MOC-001` queda listo para avanzar ordenadamente hacia ampliacion de casos sinteticos no clinicos antes de formalizar puentes `MOC/TCS` o `MOC/AO`.
+
+## D-2026-07-05-018 - Ejecucion de ruta 002 MOC-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `MOC-ROUTE-002` como ejecucion favorable de la ampliacion de bateria sintetica no clinica de `MOC-001`.
+
+Documento base: `03_Expedientes/MOC-001_Ejecucion_Ruta_002.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Ejecucion_Ruta_002.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Ejecucion_Ruta_002.md`.
+
+## Alcance
+
+La decision acepta la incorporacion de `MOC-CASE-008` a `MOC-CASE-011` y la actualizacion de `MOC-EVAL-001` para reportar desacuerdos justificados y casos limite.
+
+## Resultado
+
+`MOC-EVAL-001` ejecuta 11 casos, aprueba 11 y no registra fallos.
+
+El protocolo registra 6 coincidencias exactas, 3 coincidencias parciales y 2 desacuerdos justificados.
+
+`DO-LAB-RUN-001` conserva `MOC-EVAL-001` como paso `ok` y `DO-LAB-RISK-001` mantiene `risk_blocks_closure: false`.
+
+## No cubre
+
+No valida empiricamente el MOC, no evalua personas reales, no abre uso clinico, no admite `H-Xi`, no canoniza `Xi`, no crea Nivel C, no modifica `Documento 04`, no cierra Confluencia global, no cierra Equivalencia global y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+`MOC-ROUTE-002` queda cerrada como ruta ejecutada favorablemente.
+
+La siguiente decision valida debe elegir entre rutas posteriores; la recomendacion tecnica pasa a `MOC-ROUTE-003`, formalizar puente `MOC/TCS`.
+
+## D-2026-07-05-019 - Rutas posteriores a ruta 002 MOC-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `MOC-NEXT-ROUTES-002` como matriz provisional de rutas posteriores despues de `MOC-ROUTE-002`.
+
+Documento base: `03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_002.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_002.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_002.md`.
+
+## Ruta recomendada
+
+La siguiente ruta recomendada es `MOC-ROUTE-003`: formalizar puente `MOC/TCS` a partir de la bateria ampliada y los casos limite de `MOC-ROUTE-002`.
+
+## No cubre
+
+No ejecuta todavia `MOC-ROUTE-003`, no crea puente `MOC/TCS`, no modifica software, no abre estudio empirico real, no admite `H-Xi`, no canoniza `Xi`, no abre uso clinico, no modifica `Documento 04`, no crea Nivel C y no cierra problemas globales.
+
+## Consecuencia
+
+`MOC-001` queda listo para avanzar ordenadamente hacia puente formal `MOC/TCS`, manteniendo la bateria ampliada como evidencia local no canonica.
+
+## D-2026-07-05-020 - Puente formal MOC/TCS
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `MOC-TCS-BRIDGE-001` como formalizacion ejecutable local de `MOC-ROUTE-003`.
+
+Documento base: `03_Expedientes/MOC-001_Puente_Formal_MOC_TCS.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Puente_Formal_MOC_TCS.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Puente_Formal_MOC_TCS.md`.
+
+## Alcance
+
+La decision acepta cuatro operadores locales:
+
+- `OP_MOC_XI`;
+- `OP_MOC_TCS`;
+- `OP_MOC_STATE`;
+- `OP_MOC_AGREEMENT`.
+
+Tambien acepta que `MOC-EVAL-001` emita `operator_trace` para conservar regla ganadora, prioridad aplicada y deudas TCS.
+
+## Resultado
+
+La formalizacion deja de depender de una formula conceptual sin criterio de combinacion.
+
+Cada caso sintetico no clinico puede evaluarse mediante operadores con entradas normalizadas, prioridad explicita, regla de conflicto, salida unica y traza auditable.
+
+## No cubre
+
+No valida empiricamente el MOC, no evalua personas reales, no abre uso clinico, no admite `H-Xi`, no canoniza `Xi`, no crea Nivel C, no modifica `Documento 04`, no cierra Confluencia global, no cierra Equivalencia global, no formaliza puente `MOC/AO` y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+`MOC-ROUTE-003` queda aceptada como avance formal local.
+
+La siguiente ruta recomendada pasa a `MOC-ROUTE-004`: formalizar puente `MOC/AO`.
+
+## D-2026-07-05-021 - Rutas posteriores a ruta 003 MOC-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `MOC-NEXT-ROUTES-003` como matriz provisional de rutas posteriores despues de `MOC-ROUTE-003`.
+
+Documento base: `03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_003.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_003.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_003.md`.
+
+## Ruta recomendada
+
+La siguiente ruta recomendada es `MOC-ROUTE-004`: formalizar puente `MOC/AO` usando `operator_trace` como evidencia local de regla ganadora.
+
+## No cubre
+
+No ejecuta todavia `MOC-ROUTE-004`, no crea puente `MOC/AO`, no modifica software, no abre estudio empirico real, no admite `H-Xi`, no canoniza `Xi`, no abre uso clinico, no modifica `Documento 04`, no crea Nivel C y no cierra problemas globales.
+
+## Consecuencia
+
+`MOC-001` queda listo para avanzar ordenadamente hacia puente formal `MOC/AO`, manteniendo `MOC/TCS` como formalizacion ejecutable local.
+
+## D-2026-07-05-022 - Puente formal MOC/AO
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `MOC-AO-BRIDGE-001` como formalizacion local de `MOC-ROUTE-004`.
+
+Documento base: `03_Expedientes/MOC-001_Puente_Formal_MOC_AO.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Puente_Formal_MOC_AO.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Puente_Formal_MOC_AO.md`.
+
+## Alcance
+
+La decision acepta que `operator_trace` funcione como evidencia local de regla ganadora mediante `Pi_moc_trace`.
+
+Tambien acepta que `MOC-EVAL-001` emita `ao_bridge` para proyectar cada caso hacia roles operacionales de `AO-001`:
+
+- `evidencia_auxiliar_equivalencia_local`;
+- `evidencia_auxiliar_con_deuda`;
+- `evidencia_friccion_confluencia_local`;
+- `deuda_global_no_cierre`;
+- `bloqueo_seguridad_sin_uso_positivo`;
+- `bloqueo_comparabilidad_sin_uso_positivo`.
+
+## Resultado
+
+El puente permite usar la regla ganadora del MOC como testigo local para discutir equivalencia local, friccion de confluencia o deuda global en `AO-001`.
+
+Cada proyeccion conserva `case_id`, regla `Xi`, regla `TCS`, regla de estado, familia de estado, rol AO y banderas negativas de cierre global.
+
+## No cubre
+
+No valida empiricamente el MOC, no evalua personas reales, no abre uso clinico, no admite `H-Xi`, no canoniza `Xi`, no crea Nivel C, no modifica `Documento 04`, no cierra Confluencia global, no cierra Equivalencia global, no promueve R4/Gamma, no autoriza transformaciones materiales y no convierte `operator_trace` en autoridad canonica.
+
+## Consecuencia
+
+`MOC-ROUTE-004` queda aceptada como avance formal local.
+
+`MOC-EVAL-001` conserva `operator_trace` y agrega `ao_bridge` en reportes Markdown/JSON.
+
+La siguiente ruta recomendada pasa a `MOC-ROUTE-005`: refinar el protocolo de evaluadores usando `operator_trace` y `ao_bridge` como evidencia local controlada.
+
+## D-2026-07-05-023 - Rutas posteriores a ruta 004 MOC-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `MOC-NEXT-ROUTES-004` como matriz provisional de rutas posteriores despues de `MOC-ROUTE-004`.
+
+Documento base: `03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_004.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_004.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_004.md`.
+
+## Ruta recomendada
+
+La siguiente ruta recomendada es `MOC-ROUTE-005`: refinar el protocolo de evaluadores para que use `operator_trace`, `Pi_moc_trace` y `ao_bridge` como evidencia local de desempate, desacuerdo justificado y trazabilidad de regla ganadora.
+
+## No cubre
+
+No ejecuta todavia `MOC-ROUTE-005`, no crea estudio empirico real, no admite `H-Xi`, no canoniza `Xi`, no abre uso clinico, no modifica `Documento 04`, no crea Nivel C, no exporta R4/Gamma y no cierra problemas globales.
+
+## Consecuencia
+
+`MOC-001` queda listo para avanzar ordenadamente hacia refinamiento de protocolo evaluador sin salir del alcance no canonico, no clinico, no regulado y no mutante.
+
+## D-2026-07-05-024 - Ejecucion de ruta 005 MOC-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `MOC-ROUTE-005` como ejecucion favorable del refinamiento del protocolo de evaluadores.
+
+Documento base: `03_Expedientes/MOC-001_Protocolo_Evaluacion_v0_2.md`.
+
+Ejecucion: `03_Expedientes/MOC-001_Ejecucion_Ruta_005.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Ejecucion_Ruta_005.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Ejecucion_Ruta_005.md`.
+
+## Alcance
+
+La decision acepta `MOC-EVAL-PROTO-002` como protocolo v0.2 local, no canonico y no empirico.
+
+Tambien acepta que `MOC-EVAL-001` emita `protocol_v02` por caso y `protocol_v02_summary` por reporte.
+
+## Resultado
+
+La ejecucion local conserva 11 casos aprobados, 0 fallos, 6 coincidencias exactas, 3 coincidencias parciales y 2 desacuerdos justificados.
+
+El protocolo v0.2 registra 2 casos con `review_required` y 2 casos con `blocked_positive_use`.
+
+## No cubre
+
+No valida empiricamente el MOC, no evalua personas reales, no abre uso clinico, no admite `H-Xi`, no canoniza `Xi`, no crea Nivel C, no modifica `Documento 04`, no cierra Confluencia global, no cierra Equivalencia global, no exporta R4/Gamma y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+`MOC-ROUTE-005` queda aceptada como avance local de reproducibilidad.
+
+La siguiente ruta recomendada pasa a `MOC-ROUTE-006`: preparar protocolo documental de piloto empirico futuro, sin ejecucion real.
+
+## D-2026-07-05-025 - Rutas posteriores a ruta 005 MOC-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-05.
+
+## Decision
+
+Se acepta `MOC-NEXT-ROUTES-005` como matriz provisional de rutas posteriores despues de `MOC-ROUTE-005`.
+
+Documento base: `03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_005.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_005.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_005.md`.
+
+## Ruta recomendada
+
+La siguiente ruta recomendada es `MOC-ROUTE-006`: preparar protocolo documental de piloto empirico futuro, sin ejecucion real.
+
+## No cubre
+
+No ejecuta estudio empirico real, no recluta personas, no evalua personas reales, no abre uso clinico, no admite `H-Xi`, no canoniza `Xi`, no modifica `Documento 04`, no crea Nivel C, no exporta R4/Gamma y no cierra problemas globales.
+
+## Consecuencia
+
+`MOC-001` queda listo para avanzar hacia preparacion documental de piloto futuro manteniendo el alcance provisional y no regulado.
+
+## D-2026-07-06-001 - Protocolo documental de piloto empirico futuro MOC-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-06.
+
+## Decision
+
+Se acepta `MOC-EMP-PILOT-PROTO-001` como protocolo documental preparado para un piloto empirico futuro, sin ejecucion real.
+
+Documento base: `03_Expedientes/MOC-001_Protocolo_Piloto_Empirico_Futuro.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Protocolo_Piloto_Empirico_Futuro.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Protocolo_Piloto_Empirico_Futuro.md`.
+
+## Alcance
+
+La decision permite conservar un protocolo futuro para comparar MOC contra baselines simples en tareas sinteticas no clinicas.
+
+Tambien fija una compuerta: cualquier ejecucion futura requiere decision separada que confirme dominio sintetico no clinico, ausencia de casos reales, ausencia de datos personales, ausencia de uso clinico y ausencia de modificacion documental automatica.
+
+## No cubre
+
+No ejecuta estudio empirico real, no recluta evaluadores, no evalua personas reales, no recopila datos personales, no abre uso clinico, no admite `H-Xi`, no canoniza `Xi`, no promueve MOC a Canon o Nivel C, no modifica `Documento 04`, no cierra Confluencia global, no cierra Equivalencia global, no exporta R4/Gamma y no autoriza transformaciones materiales.
+
+## Consecuencia
+
+`MOC-ROUTE-006` queda preparada como protocolo documental.
+
+La ejecucion real del piloto queda bloqueada hasta decision posterior explicita.
+
+## D-2026-07-06-002 - Rutas posteriores a ruta 006 MOC-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-06.
+
+## Decision
+
+Se acepta `MOC-NEXT-ROUTES-006` como matriz provisional de rutas posteriores despues de preparar el protocolo documental de piloto empirico futuro.
+
+Documento base: `03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_006.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_006.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_006.md`.
+
+## Ruta recomendada
+
+La siguiente ruta recomendada es `MOC-ROUTE-007`: decidir compuerta de autorizacion o no autorizacion del piloto futuro, sin ejecutarlo.
+
+## No cubre
+
+No ejecuta piloto empirico, no recluta evaluadores, no evalua personas reales, no recopila datos personales, no abre uso clinico, no admite `H-Xi`, no canoniza `Xi`, no modifica `Documento 04`, no crea Nivel C y no cierra problemas globales.
+
+## Consecuencia
+
+`MOC-001` queda listo para decidir, en una ruta posterior, si el piloto permanece bloqueado, requiere mas preparacion documental o puede ser autorizado bajo condiciones estrictas.
+
+## D-2026-07-06-003 - Compuerta de autorizacion de ejecucion de piloto MOC-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-06.
+
+## Decision
+
+Se acepta `MOC-GATE-PILOT-EXEC-001` como compuerta aplicada a la ejecucion del piloto empirico futuro.
+
+Resultado: no se autoriza ejecucion real.
+
+Documento base: `03_Expedientes/MOC-001_Compuerta_Autorizacion_Ejecucion_Piloto.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Compuerta_Autorizacion_Ejecucion_Piloto.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Compuerta_Autorizacion_Ejecucion_Piloto.md`.
+
+## Declaracion de compuerta
+
+```text
+piloto_autorizado = false
+resultado_compuerta = no_autorizar_ejecucion
+ejecucion_permitida = false
+transformacion_permitida = false
+```
+
+## Razon
+
+La evidencia local permite preparar el piloto, pero no autoriza ejecutarlo.
+
+Siguen pendientes paquete congelado de casos, plantilla de respuesta, version congelada de reglas/protocolo, metodo de registro sin datos personales, responsable de auditoria y criterio operativo completo para participantes/evaluadores.
+
+## No cubre
+
+No ejecuta piloto empirico, no recluta evaluadores, no recopila respuestas reales, no evalua personas reales, no recopila datos personales, no abre uso clinico, no admite `H-Xi`, no canoniza `Xi`, no modifica `Documento 04`, no crea Nivel C, no cierra Confluencia global, no cierra Equivalencia global y no presenta validacion empirica del MOC.
+
+## Consecuencia
+
+`MOC-ROUTE-007` queda ejecutada como compuerta de no autorizacion.
+
+La siguiente ruta recomendada es `MOC-ROUTE-008`: preparar paquete documental pre-ejecucion de piloto, sin reclutamiento ni ejecucion.
+
+## D-2026-07-06-004 - Paquete documental pre-ejecucion de piloto MOC-001
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-06.
+
+## Decision
+
+Se acepta `MOC-PREEXEC-PACK-001` como paquete documental pre-ejecucion de piloto.
+
+Documento base: `03_Expedientes/MOC-001_Paquete_PreEjecucion_Piloto.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Paquete_PreEjecucion_Piloto.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Paquete_PreEjecucion_Piloto.md`.
+
+## Componentes aceptados
+
+- `MOC-SEM-PROV-001`: semantica provisional local del MOC.
+- `MOC-OPS-FORMAL-001`: tabla de operaciones formales.
+- `MOC-PILOT-CASE-FREEZE-001`: paquete congelado de 11 casos sinteticos.
+- `MOC-PILOT-RESPONSE-TPL-001`: plantilla de respuesta de evaluadores.
+- `MOC-PILOT-RULE-FREEZE-001`: version congelada de reglas/protocolo.
+
+## Resultado
+
+`MOC-ROUTE-008` queda ejecutada como preparacion documental pre-ejecucion.
+
+El piloto empirico real permanece no autorizado.
+
+```text
+piloto_autorizado = false
+ejecucion_permitida = false
+reclutamiento_permitido = false
+respuestas_reales_permitidas = false
+datos_personales_permitidos = false
+uso_clinico = false
+```
+
+## No cubre
+
+No ejecuta piloto empirico, no recluta evaluadores, no recopila respuestas reales, no evalua personas reales, no recopila datos personales, no abre uso clinico, no admite `H-Xi`, no canoniza `Xi`, no modifica `Documento 04`, no crea Nivel C, no cierra Confluencia global, no cierra Equivalencia global y no presenta validacion empirica del MOC.
+
+## Consecuencia
+
+La siguiente ruta recomendada es `MOC-ROUTE-009`: preparar metodo de registro sin datos personales y matriz de auditoria de piloto, sin reclutamiento ni ejecucion.

@@ -1,6 +1,6 @@
 # DO_CHECK_REPORT minimo
 
-report_id: DO-CHECK-MIN-20260703-201427
+report_id: DO-CHECK-MIN-20260705-190700
 expediente: AUT-001
 resultado: advertencia
 recomendacion: continuar_sin_transformar
@@ -8,8 +8,8 @@ transformacion_permitida: false
 
 ## Resumen
 
-- archivos revisados: 264
-- hallazgos: 139
+- archivos revisados: 359
+- hallazgos: 162
 
 ## Hallazgos
 
@@ -68,8 +68,26 @@ transformacion_permitida: false
 - [warning] 03_Expedientes/DO-001_DO-CHECK-001.md - historial_como_autoridad_posible: - uso de Registro Historico como autoridad vigente
 - [warning] 03_Expedientes/DO-001_SPEC-AUD-001_Candidata.md - historial_como_autoridad_posible: - importacion de Registro Historico como autoridad vigente
 - [warning] 03_Expedientes/HB-001_Deuda_Viva_H-B.md - historial_como_autoridad_posible: - usar Registro Historico como autoridad directa;
-- [warning] 03_Expedientes/HXI-001.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Criterio_Transformacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)
-- [warning] 03_Expedientes/HXI-001.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Ejemplos_Conceptuales_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 03_Expedientes/MOC-001.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_eval_report.md
+- [warning] 03_Expedientes/MOC-001_Auditoria_Apertura.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/MOC-001_Auditoria_Compuerta_Autorizacion_Ejecucion_Piloto.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_executive_summary.md
+- [warning] 03_Expedientes/MOC-001_Auditoria_Disenio_Estudio_Empirico.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/MOC-001_Auditoria_Ejecucion_Ruta_Valida_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/MOC-001_Auditoria_Formalizacion_Xi_eval.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/MOC-001_Auditoria_Metricas_Protocolo.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/MOC-001_Auditoria_Siguientes_Rutas_Validas.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/MOC-001_Auditoria_Simulacion_Software.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/MOC-001_Compuerta_Autorizacion_Ejecucion_Piloto.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_executive_summary.md
+- [warning] 03_Expedientes/MOC-001_Decision_Simulacion_Software.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_eval_report.md
+- [warning] 03_Expedientes/MOC-001_Ejecucion_Ruta_002.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_eval_report.md
+- [warning] 03_Expedientes/MOC-001_Ejecucion_Ruta_002.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
+- [warning] 03_Expedientes/MOC-001_Ejecucion_Ruta_002.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_risk_report.md
+- [warning] 03_Expedientes/MOC-001_Ejecucion_Ruta_005.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_eval_report.md
+- [warning] 03_Expedientes/MOC-001_Ejecucion_Ruta_Valida_001.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_eval_report.md
+- [warning] 03_Expedientes/MOC-001_Ejecucion_Ruta_Valida_001.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
+- [warning] 03_Expedientes/MOC-001_Ejecucion_Ruta_Valida_001.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_risk_report.md
+- [warning] 03_Expedientes/R001-001_Auditoria_Integracion_Table_Checks.md - referencia_no_materializada: 06_Automatizacion/reportes/r001_table_checks_report.md
+- [warning] 03_Expedientes/R001-001_Integracion_Table_Checks.md - referencia_no_materializada: 06_Automatizacion/reportes/r001_table_checks_report.md
 - [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)
 - [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Mapa_Continuidad_Conceptual.md (PSI-001 transferido; no restaurar copia local)
 - [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Casos_Transformacion_No_Clinicos.md (PSI-001 transferido; no restaurar copia local)
@@ -88,6 +106,8 @@ transformacion_permitida: false
 - [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Matriz_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
 - [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Matriz_Frontera_Conceptual_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
 - [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Independizacion_Proyecto.md (PSI-001 transferido; no restaurar copia local)
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ext_confluence_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_eval_report.md
 - [warning] 05_Estado_Proyecto/ESTADO_ACTUAL.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_status_board.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/do_check_min_claves.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/do_check_min_repo.md
@@ -100,12 +120,15 @@ transformacion_permitida: false
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/lab_run_report.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/auditor_v0_report.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/auditor_do_check_adapter_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/r001_table_checks_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/moc_eval_report.md
 - [warning] 06_Automatizacion/README.md - historial_como_autoridad_posible: - usar Registro Historico como autoridad directa;
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_status_board.md
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_continuity_report.md
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_risk_report.md
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_executive_summary.md
+- [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/README.md
 - [warning] CHANGELOG.md - historial_como_autoridad_posible: - Actualizado el estado del proyecto: el siguiente objetivo es probar `R4-CANDIDATA` con un expediente que usa Registro Historico como autoridad directa.
 - [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001.md (PSI-001 transferido; no restaurar copia local)
 - [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Definicion_Organizacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)

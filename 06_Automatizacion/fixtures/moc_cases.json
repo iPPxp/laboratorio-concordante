@@ -1,0 +1,380 @@
+{
+  "suite_id": "MOC-SYN-001",
+  "cases": [
+    {
+      "case_id": "MOC-CASE-001",
+      "domain": "tablero_tareas_sintetico",
+      "expected_xi": "redundante",
+      "expected_moc": "concordancia_local",
+      "debt": "conservar_trazabilidad",
+      "input": {
+        "R0": ["todo->doing", "doing->done"],
+        "R1": ["backlog->doing", "doing->done"],
+        "dist": ["renombre_de_columna"],
+        "res": ["sin_cambio_relacional"],
+        "alcance": "sintetico_no_clinico",
+        "evidencia": ["fixture:MOC-CASE-001"],
+        "restricciones": ["no_canonico", "no_mutante"],
+        "tcs_axes": {
+          "claim_status": true,
+          "authority_declared": true,
+          "decision_present": true,
+          "permission_scoped": true,
+          "evidence_traceable": true,
+          "automation_bounded": true,
+          "debt_registered": true
+        },
+        "flags": {
+          "same_relational_pattern": true
+        }
+      },
+      "evaluator_votes": [
+        {"evaluator_id": "E1", "xi": "redundante", "moc": "concordancia_local", "justification": "mismo patron relacional", "debt": "conservar_trazabilidad"},
+        {"evaluator_id": "E2", "xi": "redundante", "moc": "concordancia_local", "justification": "renombre sin cambio de relaciones", "debt": "conservar_trazabilidad"},
+        {"evaluator_id": "E3", "xi": "redundante", "moc": "concordancia_local", "justification": "sin aporte sobre criterio base", "debt": "conservar_trazabilidad"}
+      ]
+    },
+    {
+      "case_id": "MOC-CASE-002",
+      "domain": "paquete_software_juguete",
+      "expected_xi": "util_acotado",
+      "expected_moc": "concordancia_local",
+      "debt": "no_exportar_como_regla_global",
+      "input": {
+        "R0": ["app->lib_a", "app->lib_b"],
+        "R1": ["app->core", "core->lib_a", "core->lib_b"],
+        "dist": ["agrupacion_estable"],
+        "res": ["mantiene_dependencias_observables"],
+        "alcance": "sintetico_no_clinico",
+        "evidencia": ["fixture:MOC-CASE-002"],
+        "restricciones": ["no_canonico", "no_exportacion_global"],
+        "tcs_axes": {
+          "claim_status": true,
+          "authority_declared": true,
+          "decision_present": true,
+          "permission_scoped": true,
+          "evidence_traceable": true,
+          "automation_bounded": true,
+          "debt_registered": true
+        },
+        "flags": {
+          "stable_reorganization": true
+        }
+      },
+      "evaluator_votes": [
+        {"evaluator_id": "E1", "xi": "util_acotado", "moc": "concordancia_local", "justification": "reorganizacion estable", "debt": "no_exportar_global"},
+        {"evaluator_id": "E2", "xi": "util_acotado", "moc": "concordancia_local", "justification": "relaciones preservadas por agrupacion", "debt": "no_exportar_global"},
+        {"evaluator_id": "E3", "xi": "util_acotado", "moc": "concordancia_local", "justification": "nueva estabilidad local", "debt": "no_exportar_global"}
+      ]
+    },
+    {
+      "case_id": "MOC-CASE-003",
+      "domain": "flujo_editorial_sintetico",
+      "expected_xi": "limitado",
+      "expected_moc": "friccion_operativa",
+      "debt": "resolver_conflicto_de_regla_local",
+      "input": {
+        "R0": ["borrador->revision", "revision->publicacion"],
+        "R1": ["borrador->revision", "revision->bloqueo", "aprobacion->publicacion"],
+        "dist": ["restriccion_incompatible"],
+        "res": ["sin_estabilidad_nueva"],
+        "alcance": "sintetico_no_clinico",
+        "evidencia": ["fixture:MOC-CASE-003"],
+        "restricciones": ["conflicto_regla"],
+        "tcs_axes": {
+          "claim_status": true,
+          "authority_declared": true,
+          "decision_present": true,
+          "permission_scoped": true,
+          "evidence_traceable": true,
+          "automation_bounded": true,
+          "debt_registered": true
+        },
+        "flags": {
+          "incompatible_restrictions": true,
+          "conflict_without_stability": true
+        }
+      },
+      "evaluator_votes": [
+        {"evaluator_id": "E1", "xi": "limitado", "moc": "friccion_operativa", "justification": "conflicto sin estabilidad", "debt": "precisar_regla"},
+        {"evaluator_id": "E2", "xi": "limitado", "moc": "discordancia_global", "justification": "lee conflicto como ruta incompatible", "debt": "precisar_autoridad"},
+        {"evaluator_id": "E3", "xi": "limitado", "moc": "friccion_operativa", "justification": "friccion local auditable", "debt": "precisar_regla"}
+      ]
+    },
+    {
+      "case_id": "MOC-CASE-004",
+      "domain": "registros_abstractos",
+      "expected_xi": "no_comparable",
+      "expected_moc": "no_comparable",
+      "debt": "redefinir_unidad_minima",
+      "input": {
+        "R0": ["fila->campo"],
+        "R1": ["documento->seccion->parrafo"],
+        "dist": ["unidad_minima_perdida"],
+        "res": ["comparacion_detenida"],
+        "alcance": "sintetico_no_clinico",
+        "evidencia": ["fixture:MOC-CASE-004"],
+        "restricciones": ["unidad_no_compartida"],
+        "tcs_axes": {
+          "claim_status": true,
+          "authority_declared": true,
+          "decision_present": true,
+          "permission_scoped": true,
+          "evidence_traceable": true,
+          "automation_bounded": true,
+          "debt_registered": true
+        },
+        "flags": {
+          "lost_minimal_unit": true
+        }
+      },
+      "evaluator_votes": [
+        {"evaluator_id": "E1", "xi": "no_comparable", "moc": "no_comparable", "justification": "unidad minima perdida", "debt": "redefinir_unidad"},
+        {"evaluator_id": "E2", "xi": "no_comparable", "moc": "no_comparable", "justification": "comparacion debe detenerse", "debt": "redefinir_unidad"},
+        {"evaluator_id": "E3", "xi": "no_comparable", "moc": "no_comparable", "justification": "no hay unidad comun", "debt": "redefinir_unidad"}
+      ]
+    },
+    {
+      "case_id": "MOC-CASE-005",
+      "domain": "fuera_de_alcance",
+      "expected_xi": "bloqueado",
+      "expected_moc": "bloqueo_de_concordancia",
+      "debt": "retirar_caso_o_abrir_decision_separada",
+      "input": {
+        "R0": ["caso->dato_sensible"],
+        "R1": ["caso->lectura_no_permitida"],
+        "dist": ["fuera_de_alcance"],
+        "res": ["sin_evidencia_auditable"],
+        "alcance": "fuera_de_alcance",
+        "evidencia": [],
+        "restricciones": ["uso_prohibido"],
+        "tcs_axes": {
+          "claim_status": false,
+          "authority_declared": false,
+          "decision_present": false,
+          "permission_scoped": false,
+          "evidence_traceable": false,
+          "automation_bounded": true,
+          "debt_registered": true
+        },
+        "flags": {
+          "out_of_scope": true,
+          "real_person": true,
+          "clinical_domain": true
+        }
+      },
+      "evaluator_votes": [
+        {"evaluator_id": "E1", "xi": "bloqueado", "moc": "bloqueo_de_concordancia", "justification": "fuera de alcance", "debt": "retirar"},
+        {"evaluator_id": "E2", "xi": "bloqueado", "moc": "bloqueo_de_concordancia", "justification": "falta evidencia", "debt": "retirar"},
+        {"evaluator_id": "E3", "xi": "bloqueado", "moc": "bloqueo_de_concordancia", "justification": "uso prohibido", "debt": "retirar"}
+      ]
+    },
+    {
+      "case_id": "MOC-CASE-006",
+      "domain": "rutas_reporte_sinteticas",
+      "expected_xi": "util_acotado",
+      "expected_moc": "discordancia_global",
+      "debt": "confluencia_y_equivalencia_global_abiertas",
+      "input": {
+        "R0": ["estado->decision", "decision->reporte"],
+        "R1": ["estado->reporte", "reporte->decision"],
+        "dist": ["rutas_validas_incompatibles"],
+        "res": ["testigos_locales_distintos"],
+        "alcance": "sintetico_no_clinico",
+        "evidencia": ["fixture:MOC-CASE-006"],
+        "restricciones": ["no_cierre_global"],
+        "tcs_axes": {
+          "claim_status": true,
+          "authority_declared": true,
+          "decision_present": true,
+          "permission_scoped": true,
+          "evidence_traceable": true,
+          "automation_bounded": true,
+          "debt_registered": true
+        },
+        "flags": {
+          "stable_reorganization": true,
+          "global_conflict": true
+        }
+      },
+      "evaluator_votes": [
+        {"evaluator_id": "E1", "xi": "util_acotado", "moc": "discordancia_global", "justification": "rutas validas incompatibles", "debt": "deuda_global"},
+        {"evaluator_id": "E2", "xi": "util_acotado", "moc": "friccion_operativa", "justification": "lee conflicto como friccion fuerte", "debt": "deuda_global"},
+        {"evaluator_id": "E3", "xi": "util_acotado", "moc": "discordancia_global", "justification": "problema excede testigo local", "debt": "deuda_global"}
+      ]
+    },
+    {
+      "case_id": "MOC-CASE-007",
+      "domain": "matriz_criterios_sintetica",
+      "expected_xi": "util_acotado",
+      "expected_moc": "concordancia_parcial",
+      "debt": "completar_trazabilidad_secundaria",
+      "input": {
+        "R0": ["criterio_a->decision", "criterio_b->decision"],
+        "R1": ["criterios->decision", "criterio_a->criterios", "criterio_b->criterios"],
+        "dist": ["agrupacion_util"],
+        "res": ["deuda_secundaria_visible"],
+        "alcance": "sintetico_no_clinico",
+        "evidencia": ["fixture:MOC-CASE-007"],
+        "restricciones": ["deuda_no_bloqueante"],
+        "tcs_axes": {
+          "claim_status": true,
+          "authority_declared": true,
+          "decision_present": true,
+          "permission_scoped": true,
+          "evidence_traceable": true,
+          "automation_bounded": true,
+          "debt_registered": true
+        },
+        "flags": {
+          "stable_reorganization": true,
+          "non_blocking_debt": true
+        }
+      },
+      "evaluator_votes": [
+        {"evaluator_id": "E1", "xi": "util_acotado", "moc": "concordancia_parcial", "justification": "deuda no bloqueante", "debt": "trazabilidad_secundaria"},
+        {"evaluator_id": "E2", "xi": "util_acotado", "moc": "concordancia_local", "justification": "deuda menor", "debt": "trazabilidad_secundaria"},
+        {"evaluator_id": "E3", "xi": "util_acotado", "moc": "concordancia_parcial", "justification": "deuda visible degrada estado", "debt": "trazabilidad_secundaria"}
+      ]
+    },
+    {
+      "case_id": "MOC-CASE-008",
+      "domain": "tabla_prioridades_sintetica",
+      "expected_xi": "limitado",
+      "expected_moc": "friccion_operativa",
+      "disagreement_class": "ambiguedad_de_regla",
+      "debt": "precisar_si_la_regla_es_friccion_o_bloqueo",
+      "input": {
+        "R0": ["prioridad_alta->revision", "revision->decision"],
+        "R1": ["prioridad_alta->bloqueo", "revision->decision", "decision->excepcion"],
+        "dist": ["regla_interpretada_de_dos_formas"],
+        "res": ["no_hay_estabilidad_relacional_nueva"],
+        "alcance": "sintetico_no_clinico",
+        "evidencia": ["fixture:MOC-CASE-008"],
+        "restricciones": ["ambiguedad_de_regla", "no_canonico"],
+        "tcs_axes": {
+          "claim_status": true,
+          "authority_declared": true,
+          "decision_present": true,
+          "permission_scoped": true,
+          "evidence_traceable": true,
+          "automation_bounded": true,
+          "debt_registered": true
+        },
+        "flags": {
+          "incompatible_restrictions": true,
+          "conflict_without_stability": true
+        }
+      },
+      "evaluator_votes": [
+        {"evaluator_id": "E1", "xi": "limitado", "moc": "friccion_operativa", "justification": "friccion local con evidencia suficiente", "debt": "precisar_regla"},
+        {"evaluator_id": "E2", "xi": "bloqueado", "moc": "bloqueo_de_concordancia", "justification": "lee la ambiguedad como falta de permiso", "debt": "precisar_permiso"},
+        {"evaluator_id": "E3", "xi": "util_acotado", "moc": "concordancia_parcial", "justification": "lee excepcion como reorganizacion acotada", "debt": "precisar_regla"}
+      ]
+    },
+    {
+      "case_id": "MOC-CASE-009",
+      "domain": "cola_eventos_sintetica",
+      "expected_xi": "util_acotado",
+      "expected_moc": "concordancia_parcial",
+      "disagreement_class": "no_aplica",
+      "debt": "completar_eje_tcs_secundario_automation_bounded",
+      "input": {
+        "R0": ["evento->cola", "cola->procesador"],
+        "R1": ["evento->buffer", "buffer->cola", "cola->procesador"],
+        "dist": ["reorganizacion_estable_con_deuda_secundaria"],
+        "res": ["preserva_unidad_minima"],
+        "alcance": "sintetico_no_clinico",
+        "evidencia": ["fixture:MOC-CASE-009"],
+        "restricciones": ["eje_secundario_incompleto"],
+        "tcs_axes": {
+          "claim_status": true,
+          "authority_declared": true,
+          "decision_present": true,
+          "permission_scoped": true,
+          "evidence_traceable": true,
+          "automation_bounded": false,
+          "debt_registered": true
+        },
+        "flags": {
+          "stable_reorganization": true
+        }
+      },
+      "evaluator_votes": [
+        {"evaluator_id": "E1", "xi": "util_acotado", "moc": "concordancia_parcial", "justification": "eje secundario faltante degrada estado", "debt": "completar_eje"},
+        {"evaluator_id": "E2", "xi": "util_acotado", "moc": "concordancia_parcial", "justification": "reorganizacion estable pero no plena", "debt": "completar_eje"},
+        {"evaluator_id": "E3", "xi": "util_acotado", "moc": "concordancia_parcial", "justification": "deuda secundaria visible", "debt": "completar_eje"}
+      ]
+    },
+    {
+      "case_id": "MOC-CASE-010",
+      "domain": "doble_autoridad_sintetica",
+      "expected_xi": "limitado",
+      "expected_moc": "friccion_operativa",
+      "disagreement_class": "conflicto_de_autoridad_no_global",
+      "debt": "resolver_autoridad_local_sin_invocar_confluencia_global",
+      "input": {
+        "R0": ["criterio_editorial->decision", "criterio_tecnico->decision"],
+        "R1": ["criterio_editorial->bloqueo", "criterio_tecnico->decision"],
+        "dist": ["autoridades_locales_en_tension"],
+        "res": ["conflicto_no_global"],
+        "alcance": "sintetico_no_clinico",
+        "evidencia": ["fixture:MOC-CASE-010"],
+        "restricciones": ["conflicto_autoridad_local"],
+        "tcs_axes": {
+          "claim_status": true,
+          "authority_declared": true,
+          "decision_present": true,
+          "permission_scoped": true,
+          "evidence_traceable": true,
+          "automation_bounded": true,
+          "debt_registered": true
+        },
+        "flags": {
+          "incompatible_restrictions": true,
+          "conflict_without_stability": true
+        }
+      },
+      "evaluator_votes": [
+        {"evaluator_id": "E1", "xi": "limitado", "moc": "friccion_operativa", "justification": "conflicto local entre autoridades", "debt": "resolver_autoridad"},
+        {"evaluator_id": "E2", "xi": "limitado", "moc": "friccion_operativa", "justification": "no escala a discordancia global", "debt": "resolver_autoridad"},
+        {"evaluator_id": "E3", "xi": "limitado", "moc": "friccion_operativa", "justification": "falta regla de desempate local", "debt": "resolver_autoridad"}
+      ]
+    },
+    {
+      "case_id": "MOC-CASE-011",
+      "domain": "frontera_parcial_friccion_sintetica",
+      "expected_xi": "util_acotado",
+      "expected_moc": "concordancia_parcial",
+      "disagreement_class": "frontera_concordancia_friccion",
+      "debt": "precisar_umbral_entre_deuda_no_bloqueante_y_friccion",
+      "input": {
+        "R0": ["senal_a->criterio", "senal_b->criterio"],
+        "R1": ["senal_a->criterio_compuesto", "senal_b->criterio_compuesto"],
+        "dist": ["reorganizacion_util_con_deuda_limite"],
+        "res": ["deuda_no_bloqueante_discutible"],
+        "alcance": "sintetico_no_clinico",
+        "evidencia": ["fixture:MOC-CASE-011"],
+        "restricciones": ["caso_limite"],
+        "tcs_axes": {
+          "claim_status": true,
+          "authority_declared": true,
+          "decision_present": true,
+          "permission_scoped": true,
+          "evidence_traceable": true,
+          "automation_bounded": true,
+          "debt_registered": true
+        },
+        "flags": {
+          "stable_reorganization": true,
+          "non_blocking_debt": true
+        }
+      },
+      "evaluator_votes": [
+        {"evaluator_id": "E1", "xi": "util_acotado", "moc": "concordancia_parcial", "justification": "deuda no bloqueante", "debt": "precisar_umbral"},
+        {"evaluator_id": "E2", "xi": "limitado", "moc": "friccion_operativa", "justification": "deuda leida como friccion", "debt": "precisar_umbral"},
+        {"evaluator_id": "E3", "xi": "util_acotado", "moc": "concordancia_local", "justification": "deuda menor", "debt": "precisar_umbral"}
+      ]
+    }
+  ]
+}

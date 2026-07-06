@@ -27,6 +27,7 @@ def load_module(name: str, path: Path):
     if spec is None or spec.loader is None:
         raise SystemExit(f"No se pudo cargar modulo: {path}")
     module = importlib.util.module_from_spec(spec)
+    sys.modules[name] = module
     spec.loader.exec_module(module)
     return module
 
@@ -39,6 +40,9 @@ def load_components() -> dict[str, Any]:
         "continuity": load_module("lab_continuity_component", MODULE_DIR / "lab_continuity_report.py"),
         "risk": load_module("lab_risk_component", MODULE_DIR / "lab_risk_classifier.py"),
         "summary": load_module("lab_summary_component", MODULE_DIR / "lab_executive_summary.py"),
+        "r001": load_module("r001_table_checks_component", MODULE_DIR / "r001_table_checks.py"),
+        "ao_ext": load_module("ao_ext_confluence_component", MODULE_DIR / "ao_ext_confluence.py"),
+        "moc": load_module("moc_eval_component", MODULE_DIR / "moc_eval.py"),
     }
 
 
@@ -164,6 +168,18 @@ def build_run_report(root: Path, scope: str) -> dict[str, Any]:
     write_json(root, "06_Automatizacion/reportes/do_check_med_repo.json", med_report)
     write_report(root, "06_Automatizacion/reportes/do_check_med_repo.md", components["med"].render_md(med_report))
 
+    r001_report = components["r001"].build_report(root)
+    write_json(root, "06_Automatizacion/reportes/r001_table_checks_report.json", r001_report)
+    write_report(root, "06_Automatizacion/reportes/r001_table_checks_report.md", components["r001"].render_md(r001_report))
+
+    ao_ext_report = components["ao_ext"].build_report(root)
+    write_json(root, "06_Automatizacion/reportes/ao_ext_confluence_report.json", ao_ext_report)
+    write_report(root, "06_Automatizacion/reportes/ao_ext_confluence_report.md", components["ao_ext"].render_md(ao_ext_report))
+
+    moc_report = components["moc"].build_report(root)
+    write_json(root, "06_Automatizacion/reportes/moc_eval_report.json", moc_report)
+    write_report(root, "06_Automatizacion/reportes/moc_eval_report.md", components["moc"].render_md(moc_report))
+
     risk_report = components["risk"].build_report(root)
     write_json(root, "06_Automatizacion/reportes/lab_risk_report.json", risk_report)
     write_report(root, "06_Automatizacion/reportes/lab_risk_report.md", components["risk"].render_md(risk_report))
@@ -173,7 +189,7 @@ def build_run_report(root: Path, scope: str) -> dict[str, Any]:
     write_json(root, "06_Automatizacion/reportes/lab_continuity_report.json", continuity_report)
     write_report(root, "06_Automatizacion/reportes/lab_continuity_report.md", components["continuity"].render_md(continuity_report))
 
-    resultado, recomendacion = combine_result([min_report, med_report, board_report, continuity_report, risk_report])
+    resultado, recomendacion = combine_result([min_report, med_report, board_report, continuity_report, risk_report, r001_report, ao_ext_report, moc_report])
     run_report = {
         "report_id": "DO-LAB-RUN-" + dt.datetime.now().strftime("%Y%m%d-%H%M%S"),
         "expediente": "AUT-001",
@@ -188,6 +204,9 @@ def build_run_report(root: Path, scope: str) -> dict[str, Any]:
             step_entry("tablero_estado", "DO-STATE-BOARD-001", board_report, "06_Automatizacion/reportes/lab_status_board.md", "06_Automatizacion/reportes/lab_status_board.json"),
             step_entry("continuidad_integrada", "DO-LAB-CONTINUITY-001", continuity_report, "06_Automatizacion/reportes/lab_continuity_report.md", "06_Automatizacion/reportes/lab_continuity_report.json"),
             step_entry("clasificacion_riesgos", "DO-LAB-RISK-001", risk_report, "06_Automatizacion/reportes/lab_risk_report.md", "06_Automatizacion/reportes/lab_risk_report.json"),
+            step_entry("r001_table_checks", "R001-TABLE-CHECK-001", r001_report, "06_Automatizacion/reportes/r001_table_checks_report.md", "06_Automatizacion/reportes/r001_table_checks_report.json"),
+            step_entry("ao_ext_confluence", "AO-EXT-CONF-001", ao_ext_report, "06_Automatizacion/reportes/ao_ext_confluence_report.md", "06_Automatizacion/reportes/ao_ext_confluence_report.json"),
+            step_entry("moc_eval", "MOC-EVAL-001", moc_report, "06_Automatizacion/reportes/moc_eval_report.md", "06_Automatizacion/reportes/moc_eval_report.json"),
         ],
         "next_action": "Decidir o mantener el estatus de cierre de AUT-001 con advertencias visibles.",
     }
@@ -210,7 +229,7 @@ def build_run_report(root: Path, scope: str) -> dict[str, Any]:
         "recomendacion": summary_report.get("recomendacion"),
         "headline": summary_report.get("headline"),
     }
-    run_report["resultado"], run_report["recomendacion"] = combine_result([min_report, med_report, board_report, continuity_report, risk_report, summary_report])
+    run_report["resultado"], run_report["recomendacion"] = combine_result([min_report, med_report, board_report, continuity_report, risk_report, r001_report, ao_ext_report, moc_report, summary_report])
     if (root / AUT_CLOSE_DECISION).exists() and run_report["resultado"] in {"ok", "advertencia"}:
         run_report["recomendacion"] = "mantener_cierre_operativo"
 

@@ -1,0 +1,169 @@
+{
+  "report_id": "R001-TABLE-CHECK-20260705-190709",
+  "expediente": "R001-001",
+  "algoritmo": "R001-TABLE-CHECK-001",
+  "relacion_formal_ao": {
+    "id": "R001-TB-001",
+    "expediente": "R001-001",
+    "ao_bridge": "AO-PPI-BRIDGE-001",
+    "scope": "local_no_canonico"
+  },
+  "resultado": "ok",
+  "recomendacion": "aprobar_lectura",
+  "transformacion_permitida": false,
+  "summary": {
+    "checks": 20,
+    "passed": 20,
+    "failed": 0,
+    "findings": 0
+  },
+  "scope_guard": {
+    "canoniza_xi": false,
+    "admite_h_xi": false,
+    "cierra_p200": false,
+    "autoriza_transformacion": false
+  },
+  "results": [
+    {
+      "test_id": "finite_mu_phi_boundary_omega_stable",
+      "passed": true,
+      "expected": "Omega(name='finite_states', items=frozenset({'B->C', 'C', 'A=>C', 'A->B', 'A', 'B'}))",
+      "actual": "Omega(name='finite_states', items=frozenset({'B->C', 'C', 'A=>C', 'A->B', 'A', 'B'}))",
+      "detail": "Omega remains stable when Phi changes from direct to reachability."
+    },
+    {
+      "test_id": "finite_mu_phi_boundary_phi_changes",
+      "passed": true,
+      "expected": "True",
+      "actual": "True",
+      "detail": "Phi is declared differently before constructing xi."
+    },
+    {
+      "test_id": "finite_mu_phi_boundary_xi_changes",
+      "passed": true,
+      "expected": "True",
+      "actual": "True",
+      "detail": "Effective transition relation changes traceably with Phi."
+    },
+    {
+      "test_id": "finite_mu_phi_boundary_p000",
+      "passed": true,
+      "expected": "True",
+      "actual": "True",
+      "detail": "Both effective couplings preserve the four P-000 functions."
+    },
+    {
+      "test_id": "finite_mu_xi_effective_added",
+      "passed": true,
+      "expected": "frozenset({'A=>C'})",
+      "actual": "frozenset({'A=>C'})",
+      "detail": "Reachability adds the derived path and nothing else."
+    },
+    {
+      "test_id": "finite_mu_xi_effective_preserved",
+      "passed": true,
+      "expected": "frozenset({'A->B', 'B->C'})",
+      "actual": "frozenset({'A->B', 'B->C'})",
+      "detail": "Direct transitions remain preserved."
+    },
+    {
+      "test_id": "finite_mu_xi_effective_removed",
+      "passed": true,
+      "expected": "frozenset()",
+      "actual": "frozenset()",
+      "detail": "No prior direct transition is removed."
+    },
+    {
+      "test_id": "finite_p200_direct_edges",
+      "passed": true,
+      "expected": "equivalent",
+      "actual": "equivalent",
+      "detail": "P-200 equivalence depends on declared O_adm."
+    },
+    {
+      "test_id": "finite_p200_reachability",
+      "passed": true,
+      "expected": "non_equivalent",
+      "actual": "non_equivalent",
+      "detail": "P-200 equivalence depends on declared O_adm."
+    },
+    {
+      "test_id": "finite_p200_mixed",
+      "passed": true,
+      "expected": "non_equivalent",
+      "actual": "non_equivalent",
+      "detail": "P-200 equivalence depends on declared O_adm."
+    },
+    {
+      "test_id": "finite_p200_oadm_changes_result",
+      "passed": true,
+      "expected": "True",
+      "actual": "True",
+      "detail": "Changing O_adm changes the equivalence result."
+    },
+    {
+      "test_id": "finite_xi_to_layered",
+      "passed": true,
+      "expected": "blocked_cost",
+      "actual": "blocked_cost",
+      "detail": "mu_decouple requires scope, equivalence, and lower layered cost."
+    },
+    {
+      "test_id": "compiler_xi_to_layered",
+      "passed": true,
+      "expected": "viable",
+      "actual": "viable",
+      "detail": "mu_decouple requires scope, equivalence, and lower layered cost."
+    },
+    {
+      "test_id": "decouple_without_equivalence",
+      "passed": true,
+      "expected": "blocked_equivalence",
+      "actual": "blocked_equivalence",
+      "detail": "mu_decouple requires scope, equivalence, and lower layered cost."
+    },
+    {
+      "test_id": "map_same_omega_not_same_model",
+      "passed": true,
+      "expected": "True",
+      "actual": "True",
+      "detail": "Same Omega can yield different effective couplings."
+    },
+    {
+      "test_id": "map_mixed_oadm_non_equivalent",
+      "passed": true,
+      "expected": "non_equivalent",
+      "actual": "non_equivalent",
+      "detail": "Mixed route and school observations distinguish the models."
+    },
+    {
+      "test_id": "map_domain_only_trivial",
+      "passed": true,
+      "expected": "trivial_equivalence",
+      "actual": "trivial_equivalence",
+      "detail": "Domain membership alone is only trivial equivalence."
+    },
+    {
+      "test_id": "recipe_shared_good_local_equivalence",
+      "passed": true,
+      "expected": "equivalent",
+      "actual": "equivalent",
+      "detail": "Shared-good recipe observation is locally equivalent."
+    },
+    {
+      "test_id": "recipe_unsafe_runny_non_equivalent",
+      "passed": true,
+      "expected": "non_equivalent",
+      "actual": "non_equivalent",
+      "detail": "Safety and texture diverge on unsafe-runny."
+    },
+    {
+      "test_id": "recipe_safe_dry_non_equivalent",
+      "passed": true,
+      "expected": "non_equivalent",
+      "actual": "non_equivalent",
+      "detail": "Safety and texture diverge on safe-dry."
+    }
+  ],
+  "findings": []
+}
