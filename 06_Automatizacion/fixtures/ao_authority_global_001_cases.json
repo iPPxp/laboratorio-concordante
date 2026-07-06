@@ -1,0 +1,159 @@
+{
+  "suite_id": "AO-AUTH-GLOBAL-CASES-001",
+  "expediente": "AO-001",
+  "description": "Casos sinteticos para criterio local de autoridad entre niveles.",
+  "source_evidence": [
+    "M-000",
+    "M-001",
+    "C-001",
+    "C-002",
+    "AO-PPI-BRIDGE-003",
+    "AO-REPORT-SERIAL-001"
+  ],
+  "cases": [
+    {
+      "case_id": "AO-AUTH-001",
+      "source_level": "canon",
+      "target_level": "documento",
+      "authority_claim": "autoridad_superior_reconocida",
+      "expected": "comparabilidad_local_autorizada",
+      "witness": "W-AO-AUTH-001",
+      "authority_by_repetition": false,
+      "recommendation_as_decision": false,
+      "global_authority_claim": false,
+      "transformacion_permitida": false
+    },
+    {
+      "case_id": "AO-AUTH-002",
+      "source_level": "nivel_c",
+      "target_level": "expediente",
+      "authority_claim": "autoridad_tecnica_acotada",
+      "expected": "comparabilidad_local_autorizada",
+      "witness": "W-AO-AUTH-002",
+      "authority_by_repetition": false,
+      "recommendation_as_decision": false,
+      "global_authority_claim": false,
+      "transformacion_permitida": false
+    },
+    {
+      "case_id": "AO-AUTH-003",
+      "source_level": "documento",
+      "target_level": "expediente",
+      "authority_claim": "autoridad_documental",
+      "expected": "comparabilidad_local_autorizada",
+      "witness": "W-AO-AUTH-003",
+      "authority_by_repetition": false,
+      "recommendation_as_decision": false,
+      "global_authority_claim": false,
+      "transformacion_permitida": false
+    },
+    {
+      "case_id": "AO-AUTH-004",
+      "source_level": "expediente",
+      "target_level": "expediente",
+      "authority_claim": "autoridad_local",
+      "expected": "comparabilidad_local_autorizada",
+      "witness": "W-AO-AUTH-004",
+      "authority_by_repetition": false,
+      "recommendation_as_decision": false,
+      "global_authority_claim": false,
+      "transformacion_permitida": false
+    },
+    {
+      "case_id": "AO-AUTH-005",
+      "source_level": "reporte_automatizado",
+      "target_level": "expediente",
+      "authority_claim": "evidencia_tecnica",
+      "expected": "comparabilidad_local_autorizada",
+      "witness": "W-AO-AUTH-005",
+      "authority_by_repetition": false,
+      "recommendation_as_decision": false,
+      "global_authority_claim": false,
+      "transformacion_permitida": false
+    },
+    {
+      "case_id": "AO-AUTH-006",
+      "source_level": "registro_historico",
+      "target_level": "expediente",
+      "authority_claim": "evidencia_pasiva",
+      "expected": "evidencia_pasiva_no_autoridad",
+      "witness": "W-AO-AUTH-006",
+      "authority_by_repetition": false,
+      "recommendation_as_decision": false,
+      "global_authority_claim": false,
+      "transformacion_permitida": false
+    },
+    {
+      "case_id": "AO-AUTH-007",
+      "source_level": "externo_sintetico",
+      "target_level": "expediente",
+      "authority_claim": "evidencia_externa",
+      "expected": "evidencia_externa_no_autoridad",
+      "witness": "W-AO-AUTH-007",
+      "authority_by_repetition": false,
+      "recommendation_as_decision": false,
+      "global_authority_claim": false,
+      "transformacion_permitida": false
+    },
+    {
+      "case_id": "AO-AUTH-008",
+      "source_level": "registro_historico",
+      "target_level": "expediente",
+      "authority_claim": "estado_vigente",
+      "expected": "bloqueo_historial_autoridad",
+      "witness": "W-AO-AUTH-008",
+      "authority_by_repetition": false,
+      "recommendation_as_decision": false,
+      "global_authority_claim": false,
+      "transformacion_permitida": false
+    },
+    {
+      "case_id": "AO-AUTH-009",
+      "source_level": "expediente",
+      "target_level": "expediente",
+      "authority_claim": "autoridad_por_repeticion",
+      "expected": "bloqueo_autoridad_por_repeticion",
+      "witness": "W-AO-AUTH-009",
+      "authority_by_repetition": true,
+      "recommendation_as_decision": false,
+      "global_authority_claim": false,
+      "transformacion_permitida": false
+    },
+    {
+      "case_id": "AO-AUTH-010",
+      "source_level": "reporte_automatizado",
+      "target_level": "expediente",
+      "authority_claim": "evidencia_tecnica",
+      "expected": "bloqueo_recomendacion_como_decision",
+      "witness": "W-AO-AUTH-010",
+      "authority_by_repetition": false,
+      "recommendation_as_decision": true,
+      "global_authority_claim": false,
+      "transformacion_permitida": false
+    },
+    {
+      "case_id": "AO-AUTH-011",
+      "source_level": "expediente",
+      "target_level": "canon",
+      "authority_claim": "autoridad_global",
+      "expected": "bloqueo_autoridad_global_no_declarada",
+      "witness": "W-AO-AUTH-011",
+      "authority_by_repetition": false,
+      "recommendation_as_decision": false,
+      "global_authority_claim": true,
+      "transformacion_permitida": false
+    },
+    {
+      "case_id": "AO-AUTH-012",
+      "source_level": "documento",
+      "target_level": "expediente",
+      "authority_claim": "autoridad_documental",
+      "expected": "bloqueo_testigo",
+      "witness": "",
+      "authority_by_repetition": false,
+      "recommendation_as_decision": false,
+      "global_authority_claim": false,
+      "transformacion_permitida": false
+    }
+  ]
+}

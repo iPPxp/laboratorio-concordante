@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-CHECK-MIN-20260706-134811",
+  "report_id": "DO-CHECK-MIN-20260706-153506",
   "expediente": "AUT-001",
   "algoritmo": "DO-CHECK-MIN-001",
   "resultado": "advertencia",
@@ -14,8 +14,8 @@
     "03_Expedientes/DO-001_DO-CHECK-001.md"
   ],
   "summary": {
-    "files_checked": 401,
-    "findings": 172
+    "files_checked": 422,
+    "findings": 214
   },
   "targets": [
     {
@@ -96,9 +96,45 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md",
+          "detail": "06_Automatizacion/reportes/ao_ext_cov_001_report.md"
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/AO-001_Auditoria_Compuerta_Exportacion_R4_Gamma.md",
       "estatus": "auditoria favorable de bloqueo controlado",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md",
+          "detail": "06_Automatizacion/reportes/ao_authority_global_001_report.md"
+        }
+      ]
     },
     {
       "file": "03_Expedientes/AO-001_Auditoria_Criterios_Uso_R4_Gamma_Fuera_AUD.md",
@@ -133,6 +169,36 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Auditoria_Matriz_Condiciones_Cierre_Global_003.md",
+      "estatus": "auditoria favorable con limites",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Auditoria_Matriz_Condiciones_Cierre_Global_003.md",
+          "detail": "06_Automatizacion/reportes/ao_ppi_bridge_003_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md",
+          "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md"
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/AO-001_Auditoria_Prueba_Gamma_Externa.md",
       "estatus": "auditoria provisional favorable",
       "findings": []
@@ -160,9 +226,51 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Auditoria_Puente_Confluencia_Equivalencia_002.md",
+      "estatus": "auditoria favorable con limites",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Auditoria_Puente_Confluencia_Equivalencia_002.md",
+          "detail": "06_Automatizacion/reportes/ao_ppi_bridge_002_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md",
+          "detail": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md"
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/AO-001_Auditoria_REPORT_LAYER_Nivel_C.md",
       "estatus": "auditoria favorable con limites",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Serializacion_REPORT_LAYER_001.md",
+      "estatus": "auditoria favorable con limites",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Auditoria_Serializacion_REPORT_LAYER_001.md",
+          "detail": "06_Automatizacion/reportes/report_layer_serialization_report.md"
+        }
+      ]
     },
     {
       "file": "03_Expedientes/AO-001_Casos_Prueba_Algebra_Operacional.md",
@@ -170,9 +278,33 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Cobertura_Externa_Amplia_001.md",
+      "estatus": "aceptada localmente",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Cobertura_Externa_Amplia_001.md",
+          "detail": "06_Automatizacion/reportes/ao_ext_cov_001_report.md"
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/AO-001_Compuerta_Exportacion_R4_Gamma.md",
       "estatus": "compuerta provisional aplicada",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Criterio_Autoridad_Global_001.md",
+      "estatus": "aceptado localmente",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Criterio_Autoridad_Global_001.md",
+          "detail": "06_Automatizacion/reportes/ao_authority_global_001_report.md"
+        }
+      ]
     },
     {
       "file": "03_Expedientes/AO-001_Criterios_Uso_R4_Gamma_Fuera_AUD.md",
@@ -185,9 +317,33 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Decision_Cobertura_Externa_Amplia_001.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Decision_Cobertura_Externa_Amplia_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/AO-001_Decision_Compuerta_Exportacion_R4_Gamma.md",
       "estatus": "decision provisional de expediente",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Criterio_Autoridad_Global_001.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Decision_Criterio_Autoridad_Global_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        }
+      ]
     },
     {
       "file": "03_Expedientes/AO-001_Decision_Criterios_Uso_R4_Gamma_Fuera_AUD.md",
@@ -230,9 +386,57 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Decision_Matriz_Condiciones_Cierre_Global_003.md",
+      "estatus": "decision provisional aceptada",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Decision_Matriz_Condiciones_Cierre_Global_003.md",
+          "detail": "06_Automatizacion/reportes/ao_ppi_bridge_003_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/AO-001_Decision_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md",
       "estatus": "decision de expediente aceptada",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Puente_Confluencia_Equivalencia_002.md",
+      "estatus": "decision provisional aceptada",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Decision_Puente_Confluencia_Equivalencia_002.md",
+          "detail": "06_Automatizacion/reportes/ao_ppi_bridge_002_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Relacion_AO_TCS_001.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Decision_Relacion_AO_TCS_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        }
+      ]
     },
     {
       "file": "03_Expedientes/AO-001_Decision_REPORT_LAYER_Nivel_C.md",
@@ -243,6 +447,24 @@
       "file": "03_Expedientes/AO-001_Decision_Ruta_Formalizacion_Doc04_Confluencia_Externa.md",
       "estatus": "decision provisional de expediente",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md",
+          "detail": "06_Automatizacion/reportes/report_layer_serialization_report.md"
+        }
+      ]
     },
     {
       "file": "03_Expedientes/AO-001_Evaluacion_Formalizacion_Doc04_R001_TB.md",
@@ -268,6 +490,30 @@
       "file": "03_Expedientes/AO-001_Marco_Inicial_Algebra_Operacional.md",
       "estatus": "marco inicial provisional aceptado por `D-2026-07-03-009`",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Matriz_Condiciones_Cierre_Global_003.md",
+      "estatus": "matriz local no mutante",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Matriz_Condiciones_Cierre_Global_003.md",
+          "detail": "06_Automatizacion/reportes/ao_ppi_bridge_003_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Matriz_Consolidada_Cierre_Global_004.md",
+      "estatus": "aceptada localmente",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Matriz_Consolidada_Cierre_Global_004.md",
+          "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md"
+        }
+      ]
     },
     {
       "file": "03_Expedientes/AO-001_Opciones_Prueba_Confluencia_Externa.md",
@@ -302,9 +548,45 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Puente_Confluencia_Equivalencia_002.md",
+      "estatus": "bateria local no mutante",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Puente_Confluencia_Equivalencia_002.md",
+          "detail": "06_Automatizacion/reportes/ao_ppi_bridge_002_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Relacion_AO_TCS_001.md",
+      "estatus": "aceptada localmente",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Relacion_AO_TCS_001.md",
+          "detail": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md"
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/AO-001_Relacion_REPORT_LAYER_Doc04_Amplio.md",
       "estatus": "precision local aceptada",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Serializacion_REPORT_LAYER_001.md",
+      "estatus": "serializacion local no mutante",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Serializacion_REPORT_LAYER_001.md",
+          "detail": "06_Automatizacion/reportes/report_layer_serialization_report.md"
+        }
+      ]
     },
     {
       "file": "03_Expedientes/AUD-001_Actualizacion_C002_JSON_Fixtures_Adapter.md",
@@ -2594,6 +2876,42 @@
           "kind": "referencia_no_materializada",
           "file": "05_Estado_Proyecto/DECISIONES.md",
           "detail": "06_Automatizacion/reportes/ao_doc04_wide_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/ao_ppi_bridge_003_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/report_layer_serialization_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/ao_authority_global_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/ao_ext_cov_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md"
         }
       ]
     },
@@ -2720,6 +3038,48 @@
           "severity": "warning",
           "kind": "referencia_no_materializada",
           "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_ppi_bridge_002_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_ppi_bridge_003_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/report_layer_serialization_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_tcs_rel_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_authority_global_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_ext_cov_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_ppi_bridge_004_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
           "detail": "reportes/report_layer_c002_gate_report.md"
         },
         {
@@ -2769,6 +3129,24 @@
           "kind": "referencia_no_materializada",
           "file": "CHANGELOG.md",
           "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "CHANGELOG.md",
+          "detail": "06_Automatizacion/reportes/README.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "CHANGELOG.md",
+          "detail": "06_Automatizacion/reportes/README.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "CHANGELOG.md",
+          "detail": "06_Automatizacion/reportes/README.md"
         },
         {
           "severity": "warning",
@@ -3125,8 +3503,50 @@
     {
       "severity": "warning",
       "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md",
+      "detail": "06_Automatizacion/reportes/ao_ext_cov_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md",
+      "detail": "06_Automatizacion/reportes/ao_authority_global_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
       "file": "03_Expedientes/AO-001_Auditoria_Formalizacion_Amplia_Doc04.md",
       "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Auditoria_Matriz_Condiciones_Cierre_Global_003.md",
+      "detail": "06_Automatizacion/reportes/ao_ppi_bridge_003_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md",
+      "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md"
     },
     {
       "severity": "warning",
@@ -3137,8 +3557,122 @@
     {
       "severity": "warning",
       "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Auditoria_Puente_Confluencia_Equivalencia_002.md",
+      "detail": "06_Automatizacion/reportes/ao_ppi_bridge_002_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md",
+      "detail": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Auditoria_Serializacion_REPORT_LAYER_001.md",
+      "detail": "06_Automatizacion/reportes/report_layer_serialization_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Cobertura_Externa_Amplia_001.md",
+      "detail": "06_Automatizacion/reportes/ao_ext_cov_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Criterio_Autoridad_Global_001.md",
+      "detail": "06_Automatizacion/reportes/ao_authority_global_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Decision_Cobertura_Externa_Amplia_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Decision_Criterio_Autoridad_Global_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Decision_Matriz_Condiciones_Cierre_Global_003.md",
+      "detail": "06_Automatizacion/reportes/ao_ppi_bridge_003_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Decision_Puente_Confluencia_Equivalencia_002.md",
+      "detail": "06_Automatizacion/reportes/ao_ppi_bridge_002_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Decision_Relacion_AO_TCS_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md",
+      "detail": "06_Automatizacion/reportes/report_layer_serialization_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Matriz_Condiciones_Cierre_Global_003.md",
+      "detail": "06_Automatizacion/reportes/ao_ppi_bridge_003_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Matriz_Consolidada_Cierre_Global_004.md",
+      "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
       "file": "03_Expedientes/AO-001_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md",
       "detail": "06_Automatizacion/reportes/ao_doc04_wide_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Puente_Confluencia_Equivalencia_002.md",
+      "detail": "06_Automatizacion/reportes/ao_ppi_bridge_002_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Relacion_AO_TCS_001.md",
+      "detail": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Serializacion_REPORT_LAYER_001.md",
+      "detail": "06_Automatizacion/reportes/report_layer_serialization_report.md"
     },
     {
       "severity": "warning",
@@ -3725,6 +4259,42 @@
     {
       "severity": "warning",
       "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/ao_ppi_bridge_003_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/report_layer_serialization_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/ao_authority_global_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/ao_ext_cov_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
       "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
       "detail": "06_Automatizacion/reportes/lab_status_board.md"
     },
@@ -3810,6 +4380,48 @@
       "severity": "warning",
       "kind": "referencia_no_materializada",
       "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_ppi_bridge_002_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_ppi_bridge_003_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/report_layer_serialization_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_tcs_rel_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_authority_global_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_ext_cov_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_ppi_bridge_004_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
       "detail": "reportes/report_layer_c002_gate_report.md"
     },
     {
@@ -3853,6 +4465,24 @@
       "kind": "referencia_no_materializada",
       "file": "CHANGELOG.md",
       "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "CHANGELOG.md",
+      "detail": "06_Automatizacion/reportes/README.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "CHANGELOG.md",
+      "detail": "06_Automatizacion/reportes/README.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "CHANGELOG.md",
+      "detail": "06_Automatizacion/reportes/README.md"
     },
     {
       "severity": "warning",

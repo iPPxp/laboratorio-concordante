@@ -1,6 +1,6 @@
 # DO_CHECK_REPORT minimo
 
-report_id: DO-CHECK-MIN-20260706-134811
+report_id: DO-CHECK-MIN-20260706-153506
 expediente: AUT-001
 resultado: advertencia
 recomendacion: continuar_sin_transformar
@@ -8,15 +8,41 @@ transformacion_permitida: false
 
 ## Resumen
 
-- archivos revisados: 401
-- hallazgos: 172
+- archivos revisados: 422
+- hallazgos: 214
 
 ## Hallazgos
 
 - [warning] 02_Documentos/C-002_RFC_Operativo_Auditor_v0.md - historial_como_autoridad_posible: - `AUD-T07`: Registro Historico como autoridad directa;
+- [warning] 03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ext_cov_001_report.md
+- [warning] 03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_authority_global_001_report.md
 - [warning] 03_Expedientes/AO-001_Auditoria_Formalizacion_Amplia_Doc04.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/AO-001_Auditoria_Matriz_Condiciones_Cierre_Global_003.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_003_report.md
+- [warning] 03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_004_report.md
 - [warning] 03_Expedientes/AO-001_Auditoria_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/AO-001_Auditoria_Puente_Confluencia_Equivalencia_002.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_002_report.md
+- [warning] 03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_tcs_rel_001_report.md
+- [warning] 03_Expedientes/AO-001_Auditoria_Serializacion_REPORT_LAYER_001.md - referencia_no_materializada: 06_Automatizacion/reportes/report_layer_serialization_report.md
+- [warning] 03_Expedientes/AO-001_Cobertura_Externa_Amplia_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ext_cov_001_report.md
+- [warning] 03_Expedientes/AO-001_Criterio_Autoridad_Global_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_authority_global_001_report.md
+- [warning] 03_Expedientes/AO-001_Decision_Cobertura_Externa_Amplia_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/AO-001_Decision_Criterio_Autoridad_Global_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/AO-001_Decision_Matriz_Condiciones_Cierre_Global_003.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_003_report.md
+- [warning] 03_Expedientes/AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/AO-001_Decision_Puente_Confluencia_Equivalencia_002.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_002_report.md
+- [warning] 03_Expedientes/AO-001_Decision_Relacion_AO_TCS_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md - referencia_no_materializada: 06_Automatizacion/reportes/report_layer_serialization_report.md
+- [warning] 03_Expedientes/AO-001_Matriz_Condiciones_Cierre_Global_003.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_003_report.md
+- [warning] 03_Expedientes/AO-001_Matriz_Consolidada_Cierre_Global_004.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_004_report.md
 - [warning] 03_Expedientes/AO-001_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_doc04_wide_report.md
+- [warning] 03_Expedientes/AO-001_Puente_Confluencia_Equivalencia_002.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_002_report.md
+- [warning] 03_Expedientes/AO-001_Relacion_AO_TCS_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_tcs_rel_001_report.md
+- [warning] 03_Expedientes/AO-001_Serializacion_REPORT_LAYER_001.md - referencia_no_materializada: 06_Automatizacion/reportes/report_layer_serialization_report.md
 - [warning] 03_Expedientes/AUD-001_Auditoria_REPORT_LAYER_Candidata.md - historial_como_autoridad_posible: - conserva Registro Historico fuera de autoridad directa.
 - [warning] 03_Expedientes/AUD-001_Decision_Cierre_Ronda_No_Automata_R4-CANDIDATA.md - historial_como_autoridad_posible: - `AUD-SIM-019` y `VAL-019`: expediente que usa Registro Historico como autoridad directa.
 - [warning] 03_Expedientes/AUD-001_Ficha_Alcance_Gamma.md - historial_como_autoridad_posible: - usar el Registro Historico como autoridad directa;
@@ -114,6 +140,12 @@ transformacion_permitida: false
 - [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ext_confluence_report.md
 - [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_eval_report.md
 - [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_doc04_wide_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_003_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/report_layer_serialization_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_tcs_rel_001_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_authority_global_001_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ext_cov_001_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_004_report.md
 - [warning] 05_Estado_Proyecto/ESTADO_ACTUAL.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_status_board.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/do_check_min_claves.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/do_check_min_repo.md
@@ -128,6 +160,13 @@ transformacion_permitida: false
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/auditor_do_check_adapter_report.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/r001_table_checks_report.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_doc04_wide_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_ppi_bridge_002_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_ppi_bridge_003_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/report_layer_serialization_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_tcs_rel_001_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_authority_global_001_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_ext_cov_001_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_ppi_bridge_004_report.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/report_layer_c002_gate_report.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/moc_eval_report.md
 - [warning] 06_Automatizacion/README.md - historial_como_autoridad_posible: - usar Registro Historico como autoridad directa;
@@ -136,6 +175,9 @@ transformacion_permitida: false
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_risk_report.md
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_executive_summary.md
+- [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/README.md
+- [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/README.md
+- [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/README.md
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/README.md
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/README.md
 - [warning] CHANGELOG.md - historial_como_autoridad_posible: - Actualizado el estado del proyecto: el siguiente objetivo es probar `R4-CANDIDATA` con un expediente que usa Registro Historico como autoridad directa.

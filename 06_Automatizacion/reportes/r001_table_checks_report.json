@@ -1,5 +1,5 @@
 {
-  "report_id": "R001-TABLE-CHECK-20260706-134840",
+  "report_id": "R001-TABLE-CHECK-20260706-153515",
   "expediente": "R001-001",
   "algoritmo": "R001-TABLE-CHECK-001",
   "relacion_formal_ao": {
@@ -27,8 +27,8 @@
     {
       "test_id": "finite_mu_phi_boundary_omega_stable",
       "passed": true,
-      "expected": "Omega(name='finite_states', items=frozenset({'C', 'B->C', 'B', 'A', 'A->B', 'A=>C'}))",
-      "actual": "Omega(name='finite_states', items=frozenset({'C', 'B->C', 'B', 'A', 'A->B', 'A=>C'}))",
+      "expected": "Omega(name='finite_states', items=frozenset({'A->B', 'A=>C', 'A', 'B', 'C', 'B->C'}))",
+      "actual": "Omega(name='finite_states', items=frozenset({'A->B', 'A=>C', 'A', 'B', 'C', 'B->C'}))",
       "detail": "Omega remains stable when Phi changes from direct to reachability."
     },
     {
@@ -62,7 +62,7 @@
     {
       "test_id": "finite_mu_xi_effective_preserved",
       "passed": true,
-      "expected": "frozenset({'B->C', 'A->B'})",
+      "expected": "frozenset({'A->B', 'B->C'})",
       "actual": "frozenset({'A->B', 'B->C'})",
       "detail": "Direct transitions remain preserved."
     },

@@ -1,6 +1,6 @@
 # DO_CHECK_REPORT medio
 
-report_id: DO-CHECK-MED-LIVE-20260706-134826
+report_id: DO-CHECK-MED-LIVE-20260706-153511
 expediente: AUT-001
 algoritmo: DO-CHECK-MED-001
 resultado: advertencia
@@ -10,10 +10,10 @@ transformacion_permitida: false
 
 ## Resumen
 
-- archivos revisados: 401
-- hallazgos: 353
+- archivos revisados: 422
+- hallazgos: 433
 - bloques: 0
-- advertencias: 353
+- advertencias: 433
 - informativos: 0
 
 ## Puente AAU
@@ -50,9 +50,12 @@ transformacion_permitida: false
 - [warning] MED-REFERENCIAS CHANGELOG.md - referencia_no_materializada: MOC/AO
 - [warning] MED-REFERENCIAS CHANGELOG.md - referencia_no_materializada: MOC/C-001/C-002
 - [warning] MED-REFERENCIAS CHANGELOG.md - referencia_no_materializada: MOC/C-001/C-002
+- [warning] MED-REFERENCIAS CHANGELOG.md - referencia_no_materializada: AO/TCS
+- [warning] MED-REFERENCIAS CHANGELOG.md - referencia_no_materializada: AO/TCS
 - [warning] MED-NIVELES CHANGELOG.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - Actualizado el estado del proyecto: el siguiente objetivo es decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial de Nivel C.
 - [warning] MED-NIVELES CHANGELOG.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - Creada `DO-001_Decision_Promocion_SPEC-AUD-001.md` con `PROM-SPEC-AUD-001`: se promueve `SPEC-AUD-001_Candidata` a documento oficial de Nivel C.
 - [warning] MED-CERRADOS CHANGELOG.md - expediente_cerrado_afectado: La linea parece afectar expediente cerrado: HXI-001 | evidencia: - Creado `HXI-001_Reapertura_Operativa.md` como `HXI-REOPEN-001`: `HXI-001` se reabre como frente activo inmediato para aplicar la compuerta de admision formal posterior.
+- [warning] MED-REFERENCIAS CURRENT_STATE.md - referencia_no_materializada: AO/TCS
 - [warning] MED-REFERENCIAS CURRENT_STATE.md - referencia_no_materializada: MOC/AO
 - [warning] MED-REFERENCIAS CURRENT_STATE.md - referencia_no_materializada: MOC/AO
 - [warning] MED-REFERENCIAS CURRENT_STATE.md - referencia_no_materializada: MOC/TCS
@@ -64,6 +67,7 @@ transformacion_permitida: false
 - [warning] MED-REFERENCIAS CURRENT_STATE.md - referencia_no_materializada: MOC/C-001/C-002
 - [warning] MED-REFERENCIAS CURRENT_STATE.md - referencia_no_materializada: MOC/AO
 - [warning] MED-REFERENCIAS CURRENT_STATE.md - referencia_no_materializada: MOC/TCS
+- [warning] MED-REFERENCIAS CURRENT_STATE.md - referencia_no_materializada: AO/TCS
 - [warning] MED-REFERENCIAS CURRENT_STATE.md - referencia_no_materializada: MOC/AO
 - [warning] MED-REFERENCIAS CURRENT_STATE.md - referencia_no_materializada: MOC/TCS
 - [warning] MED-REFERENCIAS CURRENT_STATE.md - referencia_no_materializada: MOC/AO
@@ -90,7 +94,9 @@ transformacion_permitida: false
 - [warning] MED-REFERENCIAS HANDOFF.md - referencia_historica_transferida: Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local. | evidencia: 03_Expedientes/PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md
 - [warning] MED-REFERENCIAS HANDOFF.md - referencia_historica_transferida: Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local. | evidencia: 03_Expedientes/PSI-001_Auditoria_Matriz_Patrones_Transformacion_No_Clinica.md
 - [warning] MED-REFERENCIAS HANDOFF.md - referencia_historica_transferida: Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local. | evidencia: 03_Expedientes/PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md
+- [warning] MED-REFERENCIAS HANDOFF.md - referencia_no_materializada: AO/TCS
 - [warning] MED-REFERENCIAS HANDOFF.md - referencia_no_materializada: ROADMAP.md
+- [warning] MED-REFERENCIAS HANDOFF.md - referencia_no_materializada: AO/TCS
 - [warning] MED-REFERENCIAS HANDOFF.md - referencia_historica_transferida: Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local. | evidencia: PSI-001_Criterios_Admision.md
 - [warning] MED-REFERENCIAS HANDOFF.md - referencia_historica_transferida: Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local. | evidencia: PSI-001_Auditoria_A-PSI-001.md
 - [warning] MED-REFERENCIAS HANDOFF.md - referencia_historica_transferida: Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local. | evidencia: PSI-001_Decision_Estatus_A-PSI-001.md
@@ -137,13 +143,50 @@ transformacion_permitida: false
 - [warning] MED-REFERENCIAS HANDOFF_PACKAGE.md - referencia_historica_transferida: Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local. | evidencia: 03_Expedientes/PSI-001_Auditoria_Matriz_Patrones_Transformacion_No_Clinica.md
 - [warning] MED-REFERENCIAS HANDOFF_PACKAGE.md - referencia_historica_transferida: Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local. | evidencia: 03_Expedientes/PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md
 - [warning] MED-ASCII Licencia_y_Derechos.md - no_ascii: Contiene caracteres no ASCII fuera de excepciones historicas.
+- [warning] MED-REFERENCIAS README.md - referencia_no_materializada: AO/TCS
 - [warning] MED-NIVELES 01_Canon/M-001_Auditoria_Arquitectonica.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: 8. Indicar si la intervencion modifica documentos, expedientes, estado o Canon.
 - [warning] MED-NIVELES 02_Documentos/00_Naturaleza.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: Un expediente puede proponer. Una auditoria puede evaluar. Una decision puede aceptar, cerrar, congelar, rechazar o incorporar. Un documento oficial estabiliza contenido. El Canon limita como puede cambiar todo lo anterior.
 - [warning] MED-NIVELES 02_Documentos/C-002_RFC_Operativo_Auditor_v0.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - modificar Canon por inferencia;
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001.md - referencia_no_materializada: AO/TCS
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001.md - referencia_no_materializada: AO/TCS
 - [warning] MED-NIVELES 03_Expedientes/AO-001.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - modificar Canon;
+- [warning] MED-ESTATUS 03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ext_cov_001_report.md
+- [warning] MED-ESTATUS 03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_authority_global_001_report.md
 - [warning] MED-ESTATUS 03_Expedientes/AO-001_Auditoria_Formalizacion_Amplia_Doc04.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Auditoria_Matriz_Condiciones_Cierre_Global_003.md - referencia_no_materializada: py -3 -m unittest 06_Automatizacion/test_ao_ppi_bridge_003.py
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Auditoria_Matriz_Condiciones_Cierre_Global_003.md - referencia_no_materializada: AO/TCS
+- [warning] MED-ESTATUS 03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_004_report.md
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md - referencia_no_materializada: AO/TCS
 - [warning] MED-ESTATUS 03_Expedientes/AO-001_Auditoria_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
 - [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Auditoria_Prueba_Gamma_Externa.md - referencia_no_materializada: H-B.6/H-B.7
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Auditoria_Puente_Confluencia_Equivalencia_002.md - referencia_no_materializada: py -3 -m unittest 06_Automatizacion/test_ao_ppi_bridge_002.py
+- [warning] MED-ESTATUS 03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_tcs_rel_001_report.md
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md - referencia_no_materializada: AO/TCS
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Cobertura_Externa_Amplia_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ext_cov_001_report.md
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Criterio_Autoridad_Global_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_authority_global_001_report.md
+- [warning] MED-ESTATUS 03_Expedientes/AO-001_Decision_Cobertura_Externa_Amplia_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] MED-ESTATUS 03_Expedientes/AO-001_Decision_Criterio_Autoridad_Global_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Decision_Matriz_Condiciones_Cierre_Global_003.md - referencia_no_materializada: AO/TCS
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Decision_Matriz_Condiciones_Cierre_Global_003.md - referencia_no_materializada: AO/TCS
+- [warning] MED-ESTATUS 03_Expedientes/AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md - referencia_no_materializada: AO/TCS
+- [warning] MED-ESTATUS 03_Expedientes/AO-001_Decision_Relacion_AO_TCS_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] MED-ESTATUS 03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md - referencia_no_materializada: AO/TCS
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md - referencia_no_materializada: AO/TCS
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Matriz_Condiciones_Cierre_Global_003.md - referencia_no_materializada: AO/TCS
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Matriz_Condiciones_Cierre_Global_003.md - referencia_no_materializada: MOC/AO
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Matriz_Condiciones_Cierre_Global_003.md - referencia_no_materializada: AO/TCS
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Matriz_Consolidada_Cierre_Global_004.md - referencia_no_materializada: AO/TCS
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Matriz_Consolidada_Cierre_Global_004.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_004_report.md
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Relacion_AO_TCS_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_tcs_rel_001_report.md
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Serializacion_REPORT_LAYER_001.md - referencia_no_materializada: MOC/AO
+- [warning] MED-REFERENCIAS 03_Expedientes/AO-001_Serializacion_REPORT_LAYER_001.md - referencia_no_materializada: AO/TCS
+- [warning] MED-CERRADOS 03_Expedientes/AO-001_Serializacion_REPORT_LAYER_001.md - expediente_cerrado_afectado: La linea parece afectar expediente cerrado: P-PI.0 | evidencia: - reabre `P-PI.0` o `P-PI.1`;
 - [warning] MED-REFERENCIAS 03_Expedientes/AUD-001_Casos_Prueba_Auditor.md - referencia_no_materializada: ROADMAP.md
 - [warning] MED-NIVELES 03_Expedientes/AUD-001_Compatibilidad_REPORT_LAYER_DO_CHECK.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - modificar documentos oficiales.
 - [warning] MED-NIVELES 03_Expedientes/AUD-001_Contrato_Reportes.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - promueve el resultado a Canon
@@ -319,6 +362,12 @@ transformacion_permitida: false
 - [warning] MED-REFERENCIAS 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: MOC/AO
 - [warning] MED-REFERENCIAS 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: MOC/AO
 - [warning] MED-REFERENCIAS 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: MOC/TCS
+- [warning] MED-REFERENCIAS 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: AO/TCS
+- [warning] MED-REFERENCIAS 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: AO/TCS
+- [warning] MED-REFERENCIAS 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_tcs_rel_001_report.md
+- [warning] MED-REFERENCIAS 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_authority_global_001_report.md
+- [warning] MED-REFERENCIAS 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ext_cov_001_report.md
+- [warning] MED-REFERENCIAS 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_004_report.md
 - [warning] MED-NIVELES 05_Estado_Proyecto/DECISIONES.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: Se promueve `SPEC-AUD-001_Candidata` a documento oficial de Nivel C como `02_Documentos/C-001_Especificacion_Tecnica_Auditor.md`.
 - [warning] MED-NIVELES 05_Estado_Proyecto/DECISIONES.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: Se cierra `REC-001` como reconciliacion inicial de Canon y baselines historicos.
 - [warning] MED-NIVELES 05_Estado_Proyecto/DECISIONES.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: Se promueve `SPEC-RFC-AUDITOR-V0` a documento oficial de Nivel C como `02_Documentos/C-002_RFC_Operativo_Auditor_v0.md`.
@@ -329,17 +378,23 @@ transformacion_permitida: false
 - [warning] MED-NIVELES 05_Estado_Proyecto/DECISION_Siguiente_Frente_Activo_P-PI.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - modificar Canon o documentos oficiales
 - [warning] MED-REFERENCIAS 05_Estado_Proyecto/ESTADO_ACTUAL.md - referencia_no_materializada: MOC/TCS
 - [warning] MED-REFERENCIAS 05_Estado_Proyecto/ESTADO_ACTUAL.md - referencia_no_materializada: MOC/AO
+- [warning] MED-REFERENCIAS 05_Estado_Proyecto/ESTADO_ACTUAL.md - referencia_no_materializada: AO/TCS
+- [warning] MED-REFERENCIAS 05_Estado_Proyecto/ESTADO_ACTUAL.md - referencia_no_materializada: AO/TCS
+- [warning] MED-REFERENCIAS 05_Estado_Proyecto/ESTADO_ACTUAL.md - referencia_no_materializada: AO/TCS
 - [warning] MED-REFERENCIAS 05_Estado_Proyecto/ESTADO_ACTUAL.md - referencia_no_materializada: MOC/TCS
 - [warning] MED-REFERENCIAS 05_Estado_Proyecto/ESTADO_ACTUAL.md - referencia_no_materializada: MOC/AO
 - [warning] MED-REFERENCIAS 05_Estado_Proyecto/ESTADO_ACTUAL.md - referencia_no_materializada: MOC/AO
 - [warning] MED-REFERENCIAS 05_Estado_Proyecto/ESTADO_ACTUAL.md - referencia_no_materializada: MOC/AO
 - [warning] MED-REFERENCIAS 05_Estado_Proyecto/ESTADO_ACTUAL.md - referencia_no_materializada: MOC/TCS
+- [warning] MED-REFERENCIAS 05_Estado_Proyecto/ESTADO_ACTUAL.md - referencia_no_materializada: AO/TCS
 - [warning] MED-NIVELES 05_Estado_Proyecto/NIVEL_C_ESPECIFICACIONES.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - modificar Canon
 - [warning] MED-NIVELES 05_Estado_Proyecto/NIVEL_C_ESPECIFICACIONES.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - promover hipotesis a teoremas
+- [warning] MED-REFERENCIAS 05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md - referencia_no_materializada: AO/TCS
 - [warning] MED-REFERENCIAS 05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md - referencia_no_materializada: MOC/TCS
 - [warning] MED-REFERENCIAS 05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md - referencia_no_materializada: MOC/AO
 - [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: MOC/TCS
 - [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: MOC/AO
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: AO/TCS
 - [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/do_check_min_claves.md
 - [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/do_check_min_repo.md
 - [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/do_check_min_repo.json
@@ -364,6 +419,22 @@ transformacion_permitida: false
 - [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/r001_table_checks_report.json
 - [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_doc04_wide_report.md
 - [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_doc04_wide_report.json
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_ppi_bridge_002_report.md
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_ppi_bridge_002_report.json
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_ppi_bridge_003_report.md
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_ppi_bridge_003_report.json
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/report_layer_serialization_report.md
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/report_layer_serialization_report.json
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_tcs_rel_001_report.md
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: AO/TCS
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_tcs_rel_001_report.json
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: AO/TCS
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_authority_global_001_report.md
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_authority_global_001_report.json
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_ext_cov_001_report.md
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_ext_cov_001_report.json
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_ppi_bridge_004_report.md
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_ppi_bridge_004_report.json
 - [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/report_layer_c002_gate_report.md
 - [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/report_layer_c002_gate_report.json
 - [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/moc_eval_report.md
@@ -373,8 +444,17 @@ transformacion_permitida: false
 - [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: fixtures/auditor_v0_documental_cases.json
 - [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: fixtures/ao_ext_confluence_cases.json
 - [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: fixtures/ao_doc04_wide_cases.json
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: fixtures/ao_ppi_bridge_002_cases.json
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: fixtures/ao_ppi_bridge_003_matrix.json
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: fixtures/report_layer_serialization_cases.json
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: fixtures/ao_tcs_rel_001_cases.json
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: AO/TCS
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: fixtures/ao_authority_global_001_cases.json
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: fixtures/ao_ext_cov_001_cases.json
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: fixtures/ao_ppi_bridge_004_matrix.json
 - [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: fixtures/report_layer_c002_cases.json
 - [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: fixtures/moc_cases.json
+- [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: AO/TCS
 - [warning] MED-HISTORIAL 06_Automatizacion/README.md - historial_como_autoridad_controlada: Posible uso del Registro Historico o de SRC como autoridad vigente. | evidencia: - usar Registro Historico como autoridad directa;
 - [warning] MED-NIVELES 06_Automatizacion/README.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - promover hipotesis;
 - [warning] MED-NIVELES 06_Automatizacion/README.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - modificar Canon o documentos oficiales;

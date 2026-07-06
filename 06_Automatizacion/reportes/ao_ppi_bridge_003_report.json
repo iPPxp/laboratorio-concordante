@@ -1,0 +1,280 @@
+{
+  "report_id": "AO-PPI-BRIDGE-003-20260706-153515",
+  "expediente": "AO-001",
+  "algoritmo": "AO-PPI-BRIDGE-003",
+  "suite_id": "AO-PPI-BRIDGE-003-MATRIX",
+  "resultado": "ok",
+  "recomendacion": "mantener_cierre_global_no_autorizado",
+  "transformacion_permitida": false,
+  "global_closure_authorized": false,
+  "source_evidence": [
+    "AO-PPI-BRIDGE-002",
+    "AO-DOC04-WIDE-TEST-001",
+    "AO-REPORT-LAYER-BRIDGE-001",
+    "REPORT-LAYER-C002-GATE-001"
+  ],
+  "scope_guard": {
+    "modifica_doc04": false,
+    "modifica_canon": false,
+    "crea_nivel_c": false,
+    "reabre_p_pi_0": false,
+    "reabre_p_pi_1": false,
+    "cierra_confluencia_global": false,
+    "cierra_equivalencia_global": false,
+    "promueve_report_layer": false,
+    "promueve_r4_gamma": false,
+    "autoriza_transformacion": false
+  },
+  "condition_summary": {
+    "conditions": 10,
+    "passed": 10,
+    "failed": 0,
+    "findings": 0,
+    "local_satisfied": 3,
+    "missing_or_blocking": 10,
+    "by_status": {
+      "satisfecha_local": 3,
+      "faltante_global": 5,
+      "bloqueada_por_alcance": 2
+    },
+    "by_domain": {
+      "equivalencia": 1,
+      "confluencia": 1,
+      "report_layer": 2,
+      "autoridad": 1,
+      "dominios": 1,
+      "tcs": 1,
+      "alcance": 1,
+      "exportacion": 1,
+      "reproducibilidad": 1
+    }
+  },
+  "report_layer_summary": {
+    "cases": 9,
+    "passed": 9,
+    "failed": 0,
+    "findings": 0,
+    "by_outcome": {
+      "compatible_heterogeneo_no_mutante": 4,
+      "divergencia_clasificada": 1,
+      "bloqueo_testigo": 1,
+      "bloqueo_recomendacion_como_decision": 1,
+      "bloqueo_autoridad": 1,
+      "bloqueo_modo_mutante": 1
+    }
+  },
+  "summary": {
+    "conditions": 10,
+    "report_layer_cases": 9,
+    "passed": 19,
+    "failed": 0,
+    "findings": 0,
+    "global_closure_authorized": false
+  },
+  "condition_results": [
+    {
+      "condition_id": "AO-PPI-GC-001",
+      "domain": "equivalencia",
+      "status": "satisfecha_local",
+      "expected_effect": "aporta_evidencia_local",
+      "blocks_global_closure": true,
+      "local_credit": true,
+      "passed": true,
+      "gap": "Falta demostrar que el patron se conserva fuera de la familia local de AO-001.",
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-002",
+      "domain": "confluencia",
+      "status": "satisfecha_local",
+      "expected_effect": "aporta_evidencia_local",
+      "blocks_global_closure": true,
+      "local_credit": true,
+      "passed": true,
+      "gap": "Falta probar estabilidad de rutas con dominios externos no disenados por el propio expediente.",
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-003",
+      "domain": "report_layer",
+      "status": "satisfecha_local",
+      "expected_effect": "aporta_evidencia_local",
+      "blocks_global_closure": true,
+      "local_credit": true,
+      "passed": true,
+      "gap": "Falta serializacion interfrente exportable si se quiere usar fuera del perfil local pre-C.",
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-004",
+      "domain": "report_layer",
+      "status": "faltante_global",
+      "expected_effect": "bloquea_cierre_global",
+      "blocks_global_closure": true,
+      "local_credit": false,
+      "passed": true,
+      "gap": "No hay contrato exportable con versionado, compatibilidad y mapa de campos entre frentes.",
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-005",
+      "domain": "autoridad",
+      "status": "faltante_global",
+      "expected_effect": "bloquea_cierre_global",
+      "blocks_global_closure": true,
+      "local_credit": false,
+      "passed": true,
+      "gap": "Solo hay guardas locales de no aumento; falta criterio general de comparabilidad entre niveles.",
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-006",
+      "domain": "dominios",
+      "status": "faltante_global",
+      "expected_effect": "bloquea_cierre_global",
+      "blocks_global_closure": true,
+      "local_credit": false,
+      "passed": true,
+      "gap": "Las pruebas externas son utiles pero todavia pocas y sinteticas.",
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-007",
+      "domain": "tcs",
+      "status": "faltante_global",
+      "expected_effect": "bloquea_cierre_global",
+      "blocks_global_closure": true,
+      "local_credit": false,
+      "passed": true,
+      "gap": "No existe todavia una relacion AO/TCS aceptada para clasificar fallos globales de concordancia.",
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-008",
+      "domain": "alcance",
+      "status": "bloqueada_por_alcance",
+      "expected_effect": "bloquea_reapertura_no_autorizada",
+      "blocks_global_closure": true,
+      "local_credit": false,
+      "passed": true,
+      "gap": "P-PI.0 y P-PI.1 permanecen cerrados como frentes; AO solo trabaja los problemas vivos.",
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-009",
+      "domain": "exportacion",
+      "status": "bloqueada_por_alcance",
+      "expected_effect": "bloquea_cierre_por_exportacion",
+      "blocks_global_closure": true,
+      "local_credit": false,
+      "passed": true,
+      "gap": "La compuerta vigente bloquea exportacion general; REPORT_LAYER permanece local pre-C.",
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-010",
+      "domain": "reproducibilidad",
+      "status": "faltante_global",
+      "expected_effect": "bloquea_cierre_global",
+      "blocks_global_closure": true,
+      "local_credit": false,
+      "passed": true,
+      "gap": "Existe protocolo MOC local, pero falta protocolo AO especifico para cierre global de proyecciones.",
+      "warnings": []
+    }
+  ],
+  "report_layer_results": [
+    {
+      "case_id": "RL-HET-001",
+      "expected": "compatible_heterogeneo_no_mutante",
+      "actual": "compatible_heterogeneo_no_mutante",
+      "passed": true,
+      "detail": "Reporte documental AO con Pi_rep local.",
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "case_id": "RL-HET-002",
+      "expected": "compatible_heterogeneo_no_mutante",
+      "actual": "compatible_heterogeneo_no_mutante",
+      "passed": true,
+      "detail": "Reporte automatizado de riesgo con deuda documental visible.",
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "case_id": "RL-HET-003",
+      "expected": "compatible_heterogeneo_no_mutante",
+      "actual": "compatible_heterogeneo_no_mutante",
+      "passed": true,
+      "detail": "Reporte tabular R001-TB como evidencia local auxiliar.",
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "case_id": "RL-HET-004",
+      "expected": "compatible_heterogeneo_no_mutante",
+      "actual": "compatible_heterogeneo_no_mutante",
+      "passed": true,
+      "detail": "Reporte MOC/AO con operator_trace como evidencia local de regla ganadora.",
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "case_id": "RL-HET-005",
+      "expected": "divergencia_clasificada",
+      "actual": "divergencia_clasificada",
+      "passed": true,
+      "detail": "Reporte externo sintetico diverge de la familia de proyeccion esperada.",
+      "blockers": [],
+      "warnings": [
+        "projection_family:diverge"
+      ]
+    },
+    {
+      "case_id": "RL-HET-006",
+      "expected": "bloqueo_testigo",
+      "actual": "bloqueo_testigo",
+      "passed": true,
+      "detail": "Reporte heterogeneo sin testigo no puede alimentar cierre global.",
+      "blockers": [
+        "witness:ausente"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "RL-HET-007",
+      "expected": "bloqueo_recomendacion_como_decision",
+      "actual": "bloqueo_recomendacion_como_decision",
+      "passed": true,
+      "detail": "Una recomendacion favorable no puede convertirse en decision.",
+      "blockers": [
+        "recomendacion_convertida_en_decision"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "RL-HET-008",
+      "expected": "bloqueo_autoridad",
+      "actual": "bloqueo_autoridad",
+      "passed": true,
+      "detail": "REPORT_LAYER no puede elevarse a Nivel C desde esta matriz.",
+      "blockers": [
+        "autoridad_no_autorizada:nivel_c"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "RL-HET-009",
+      "expected": "bloqueo_modo_mutante",
+      "actual": "bloqueo_modo_mutante",
+      "passed": true,
+      "detail": "Un reporte heterogeneo no puede habilitar cambio material.",
+      "blockers": [
+        "modo_mutante_no_autorizado"
+      ],
+      "warnings": []
+    }
+  ],
+  "findings": []
+}

@@ -29,7 +29,7 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 
 - `MOC-001` (expediente integrador teorico-operativo abierto por `D-2026-07-05-011`; `Xi_eval`, metricas, protocolo, simulacion, diseno empirico futuro, rutas ejecutadas, puentes formales, paquete pre-ejecucion, paquete de registro/auditoria, rutas posteriores y relacion documental con `C-001` / `C-002` aceptadas por `D-2026-07-05-012` a `D-2026-07-06-013`; queda en `MOC-ROUTE-011`, mantenimiento teorico-operativo sin ejecucion, con `MOC-ROUTE-012` como puente documental local con Nivel C; no Canon, no clinico, no regulado)
 - `TCS-001` (expediente teorico provisional; paquete minimo aceptado por `D-2026-07-03-019` y maduracion provisional `TCS-MAT-PROV-001` aceptada por `D-2026-07-05-010`; no Canon, no documento oficial)
-- `AO-001` (expediente preparatorio abierto para Algebra Operacional; `AO-MARCO-001`, `GAMMA-EXT-AO-001`, `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001`, `AO-PPI-BRIDGE-001`, `AO-DOC04-FORM-CHK-001`, `AO-CONF-EXT-OPTIONS-001`, `AO-EXT-CONF-EXEC-001`, `AO-DOC04-FORM-001`, `AO-R4-GAMMA-EXPORT-GATE-001`, `AO-DOC04-WIDE-001`, `AO-DOC04-WIDE-TEST-001`, `AO-REPORT-LAYER-BRIDGE-001` y `AO-REPORT-LAYER-NIVEL-C-001` aceptados localmente; sigue abierto para pruebas globales no resueltas)
+- `AO-001` (expediente preparatorio abierto para Algebra Operacional; `AO-MARCO-001`, `GAMMA-EXT-AO-001`, `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001`, `AO-PPI-BRIDGE-001`, `AO-PPI-BRIDGE-002`, `AO-PPI-BRIDGE-003`, `AO-REPORT-SERIAL-001`, `AO-TCS-REL-001`, `AO-AUTH-GLOBAL-001`, `AO-EXT-COV-001`, `AO-PPI-BRIDGE-004`, `AO-DOC04-FORM-CHK-001`, `AO-CONF-EXT-OPTIONS-001`, `AO-EXT-CONF-EXEC-001`, `AO-DOC04-FORM-001`, `AO-R4-GAMMA-EXPORT-GATE-001`, `AO-DOC04-WIDE-001`, `AO-DOC04-WIDE-TEST-001`, `AO-REPORT-LAYER-BRIDGE-001` y `AO-REPORT-LAYER-NIVEL-C-001` aceptados localmente; sigue abierto para protocolo reproducible y pruebas globales no resueltas)
 
 ## Expedientes transferidos
 
@@ -77,10 +77,11 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - Equivalencia de proyecciones.
 - Promocion o exportacion general fuera de `AUD-001` de `R4-FORMAL-AUD-001`; bloqueada provisionalmente por `D-2026-07-05-009`.
 - Promocion o exportacion general fuera de pruebas locales controladas de `GAMMA-FORMAL-AUD-001`; bloqueada provisionalmente por `D-2026-07-05-009`.
-- Pruebas heterogeneas adicionales de la formalizacion amplia v0 del Documento 04 si una decision futura exige mas cobertura; la prueba local inicial de `AO-DOC04-WIDE-001`, la relacion con `REPORT_LAYER`, la justificacion de no promocion a Nivel C y la compuerta no mutante conforme a `C-002` quedan atendidas por `D-2026-07-06-007`, `D-2026-07-06-014` y `D-2026-07-06-015`, sin cerrar Confluencia global, Equivalencia global ni posible especificacion tecnica posterior.
+- Promocion formal o exportacion global de `REPORT_LAYER`, solo si una decision futura abre candidata independiente; la serializacion interfrente local queda atendida por `D-2026-07-06-019` como `AO-REPORT-SERIAL-001`, sin cerrar Confluencia global, Equivalencia global ni posible especificacion tecnica posterior.
 - Maduracion de `TCS-001` mas alla de `TCS-MAT-PROV-001`.
-- Relacion global posterior entre `R001-TB-001`, Equivalencia global y Confluencia global.
-- Pruebas externas adicionales no reguladas si una decision futura exige mas evidencia para fortalecer Confluencia o Equivalencia global.
+- Protocolo AO reproducible independiente para evaluadores o agentes externos.
+- Relacion global posterior entre `R001-TB-001`, `AO-PPI-BRIDGE-002`, `AO-PPI-BRIDGE-003`, `AO-PPI-BRIDGE-004`, Equivalencia global y Confluencia global.
+- Pruebas externas adicionales no reguladas si una decision futura exige mas evidencia independiente para fortalecer Confluencia o Equivalencia global.
 
 ## Contratos provisionales activos
 
@@ -140,6 +141,13 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - `AO-001_Casos_Prueba_Algebra_Operacional.md`: `AO-CASE-BAT-001`, casos `AO-CASE-001` a `AO-CASE-006` aceptados por `D-2026-07-03-016`.
 - `AO-001_Criterios_Uso_R4_Gamma_Fuera_AUD.md`: `AO-R4-GAMMA-USE-001`, criterio local para referencia formal, prueba controlada o puente de problema; aceptado por `D-2026-07-03-017`.
 - `AO-001_Puente_Confluencia_Equivalencia.md`: `AO-PPI-BRIDGE-001`, avance local con `AO-PPI-EQ-001` y `AO-PPI-CONF-001`; aceptado por `D-2026-07-03-018`.
+- `AO-001_Puente_Confluencia_Equivalencia_002.md`: `AO-PPI-BRIDGE-002`, bateria fuerte local no mutante con 8/8 casos; aceptada por `D-2026-07-06-017`.
+- `AO-001_Matriz_Condiciones_Cierre_Global_003.md`: `AO-PPI-BRIDGE-003`, matriz local no mutante con 10 condiciones y 9 casos heterogeneos de `REPORT_LAYER`; aceptada por `D-2026-07-06-018`.
+- `AO-001_Serializacion_REPORT_LAYER_001.md`: `AO-REPORT-SERIAL-001`, serializacion local interfrente de `REPORT_LAYER`; aceptada por `D-2026-07-06-019`.
+- `AO-001_Relacion_AO_TCS_001.md`: `AO-TCS-REL-001`, relacion local `AO/TCS`; aceptada por `D-2026-07-06-020`.
+- `AO-001_Criterio_Autoridad_Global_001.md`: `AO-AUTH-GLOBAL-001`, criterio local de autoridad entre niveles; aceptado por `D-2026-07-06-021`.
+- `AO-001_Cobertura_Externa_Amplia_001.md`: `AO-EXT-COV-001`, cobertura externa amplia sintetica; aceptada por `D-2026-07-06-022`.
+- `AO-001_Matriz_Consolidada_Cierre_Global_004.md`: `AO-PPI-BRIDGE-004`, matriz consolidada local; aceptada por `D-2026-07-06-023`.
 - `TCS-001_Definiciones_Minimas.md`, `TCS-001_Tipologia_Fallos_Concordancia.md` y `TCS-001_Casos_Prueba.md`: paquete minimo teorico provisional aceptado por `D-2026-07-03-019`.
 - `TCS-001_Maduracion_Provisional.md`: `TCS-MAT-PROV-001`, metrica cualitativa, casos externos no regulados y conflicto de autoridades; aceptado por `D-2026-07-05-010`.
 - `R001-001_Integracion_Table_Checks.md`: `R001-TABLE-CHECK-001`, bateria tecnica local de 20 chequeos tabulares, aceptada por `D-2026-07-05-004`.
@@ -161,6 +169,13 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - `R001-TB-001`: relacion formal local entre `R001-TABLE-CHECK-001` y `AO-PPI-BRIDGE-001` en `03_Expedientes/R001-001_Relacion_Formal_AO.md`; aceptada por `D-2026-07-05-005`.
 - `AO-EXT-CONF-001`: pruebas externas sinteticas no reguladas de Confluencia en `06_Automatizacion/ao_ext_confluence.py`; ejecuta `EXT-CONF-001` y `EXT-CONF-002`.
 - `AO-DOC04-WIDE-TEST-001`: prueba no mutante de `AO-DOC04-WIDE-001` y `REPORT_LAYER` en `06_Automatizacion/ao_doc04_wide_tests.py`; usa `06_Automatizacion/fixtures/ao_doc04_wide_cases.json` y genera reportes Markdown/JSON.
+- `AO-PPI-BRIDGE-002`: bateria fuerte no mutante de Confluencia y Equivalencia en `06_Automatizacion/ao_ppi_bridge_002.py`; usa `06_Automatizacion/fixtures/ao_ppi_bridge_002_cases.json` y genera reportes Markdown/JSON.
+- `AO-PPI-BRIDGE-003`: matriz no mutante de condiciones faltantes en `06_Automatizacion/ao_ppi_bridge_003.py`; usa `06_Automatizacion/fixtures/ao_ppi_bridge_003_matrix.json` y genera reportes Markdown/JSON.
+- `AO-REPORT-SERIAL-001`: serializacion local no mutante de `REPORT_LAYER` en `06_Automatizacion/report_layer_serialization.py`; usa `06_Automatizacion/fixtures/report_layer_serialization_cases.json` y genera reportes Markdown/JSON.
+- `AO-TCS-REL-001`: relacion local no mutante `AO/TCS` en `06_Automatizacion/ao_tcs_rel_001.py`; usa `06_Automatizacion/fixtures/ao_tcs_rel_001_cases.json` y genera reportes Markdown/JSON.
+- `AO-AUTH-GLOBAL-001`: criterio local no mutante de autoridad entre niveles en `06_Automatizacion/ao_authority_global_001.py`; usa `06_Automatizacion/fixtures/ao_authority_global_001_cases.json` y genera reportes Markdown/JSON.
+- `AO-EXT-COV-001`: cobertura externa amplia sintetica en `06_Automatizacion/ao_ext_cov_001.py`; usa `06_Automatizacion/fixtures/ao_ext_cov_001_cases.json` y genera reportes Markdown/JSON.
+- `AO-PPI-BRIDGE-004`: matriz consolidada no mutante en `06_Automatizacion/ao_ppi_bridge_004.py`; usa `06_Automatizacion/fixtures/ao_ppi_bridge_004_matrix.json` y genera reportes Markdown/JSON.
 - `REPORT-LAYER-C002-GATE-001`: compuerta no mutante conforme a `C-002` en `06_Automatizacion/report_layer_c002_gate.py`; usa `06_Automatizacion/fixtures/report_layer_c002_cases.json`, genera reportes Markdown/JSON y queda integrada a `DO-LAB-RUN-001` por `D-2026-07-06-015`.
 - `DO-CHECK-001`: verificador no mutante de trazabilidad y estatus en `03_Expedientes/DO-001_DO-CHECK-001.md`; validado inicialmente contra tres archivos locales.
 - `DO-CHECK-MIN-001`: implementacion minima no mutante en `06_Automatizacion/do_check_min.py`; validada provisionalmente por ejecucion equivalente en `AUT-001`.
@@ -203,6 +218,13 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - `MOC-001_Auditoria_Paquete_Registro_Auditoria_Piloto.md`: auditoria favorable de `MOC-PILOT-REG-AUDIT-PACK-001`.
 - `MOC-001_Auditoria_Rutas_Posteriores_Ruta_010.md`: auditoria favorable de `MOC-NEXT-ROUTES-010`; fija mantenimiento sin ejecucion como ruta posterior.
 - `MOC-001_Auditoria_Relacion_Documental_C001_C002.md`: auditoria favorable con limites de `MOC-C001-C002-REL-001`; acepta relacion documental local con `C-001` / `C-002` sin Nivel C nuevo.
+- `AO-001_Auditoria_Puente_Confluencia_Equivalencia_002.md`: auditoria favorable de `AO-PPI-BRIDGE-002`; acepta avance local fuerte sin cierre global.
+- `AO-001_Auditoria_Matriz_Condiciones_Cierre_Global_003.md`: auditoria favorable de `AO-PPI-BRIDGE-003`; mantiene cierre global no autorizado.
+- `AO-001_Auditoria_Serializacion_REPORT_LAYER_001.md`: auditoria favorable de `AO-REPORT-SERIAL-001`; mantiene exportacion global no autorizada.
+- `AO-001_Auditoria_Relacion_AO_TCS_001.md`: auditoria favorable de `AO-TCS-REL-001`; mantiene `TCS-001` provisional y no canonico.
+- `AO-001_Auditoria_Criterio_Autoridad_Global_001.md`: auditoria favorable de `AO-AUTH-GLOBAL-001`; mantiene autoridad global no autorizada.
+- `AO-001_Auditoria_Cobertura_Externa_Amplia_001.md`: auditoria favorable de `AO-EXT-COV-001`; mantiene cobertura global no autorizada.
+- `AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md`: auditoria favorable de `AO-PPI-BRIDGE-004`; mantiene cierre global no autorizado.
 - `AO-001_Auditoria_REPORT_LAYER_Nivel_C.md`: auditoria favorable de `AO-REPORT-LAYER-NIVEL-C-001`; mantiene `REPORT_LAYER` local pre-C.
 - `AUT-003_Auditoria_Herramienta_REPORT_LAYER_C002.md`: auditoria favorable de `REPORT-LAYER-C002-GATE-001` como herramienta local no mutante.
 - `RH-001_Auditoria_Reconciliacion_PM001.md`: auditoria favorable de `RH-PM-REC-001`; mantiene `PM-001` como deuda condicionada.
@@ -273,6 +295,13 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 
 ## Decisiones provisionales de expediente
 
+- `AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md` (`D-2026-07-06-023`): acepta `AO-PPI-BRIDGE-004` como matriz consolidada local; mantiene `global_closure_authorized: false`.
+- `AO-001_Decision_Cobertura_Externa_Amplia_001.md` (`D-2026-07-06-022`): acepta `AO-EXT-COV-001` como cobertura externa amplia sintetica; no autoriza cobertura global.
+- `AO-001_Decision_Criterio_Autoridad_Global_001.md` (`D-2026-07-06-021`): acepta `AO-AUTH-GLOBAL-001` como criterio local de autoridad; conserva `global_authority_authorized: false`.
+- `AO-001_Decision_Relacion_AO_TCS_001.md` (`D-2026-07-06-020`): acepta `AO-TCS-REL-001` como relacion local `AO/TCS`; no canoniza `TCS-001`.
+- `AO-001_Decision_Serializacion_REPORT_LAYER_001.md` (`D-2026-07-06-019`): acepta `AO-REPORT-SERIAL-001` como serializacion interfrente local de `REPORT_LAYER`; conserva `global_export_authorized: false`.
+- `AO-001_Decision_Matriz_Condiciones_Cierre_Global_003.md` (`D-2026-07-06-018`): acepta `AO-PPI-BRIDGE-003` como matriz local no mutante; ejecuta 10 condiciones y 9 casos heterogeneos de `REPORT_LAYER`, con `global_closure_authorized: false`.
+- `AO-001_Decision_Puente_Confluencia_Equivalencia_002.md` (`D-2026-07-06-017`): acepta `AO-PPI-BRIDGE-002` como bateria fuerte local no mutante para Confluencia y Equivalencia; ejecuta 8/8 casos y conserva abiertas las deudas globales.
 - `RH-001_Decision_Reconciliacion_PM001.md` (`D-2026-07-06-016`): acepta `RH-PM-REC-001`; `PM-001` queda reconciliado solo como deuda historica condicionada, sin expediente activo ni protocolo materializado.
 - `AUT-003_Decision_Herramienta_REPORT_LAYER_C002.md` (`D-2026-07-06-015`): acepta `REPORT-LAYER-C002-GATE-001` como herramienta local no mutante conforme a `C-002`, integrada a `DO-LAB-RUN-001` sin modo mutante.
 - `AO-001_Decision_REPORT_LAYER_Nivel_C.md` (`D-2026-07-06-014`): acepta `AO-REPORT-LAYER-NIVEL-C-001`; `REPORT_LAYER` permanece local pre-C y no crea Nivel C nuevo ni `C-003`.
@@ -653,7 +682,11 @@ Ultimo expediente tecnico aceptado: `AUT-003` por `D-2026-07-06-015`; conserva `
 
 ## Proximo objetivo
 
-Ampliar `AO-DOC04-WIDE-TEST-001` solo si se requieren casos heterogeneos adicionales de `REPORT_LAYER`, serializacion interfrente o nuevas variantes de `Pi_rep`; la prueba local inicial de `AO-DOC04-WIDE-001`, la precision de `REPORT_LAYER`, la justificacion de permanencia local pre-C y la compuerta no mutante `C-002` ya quedaron atendidas por `D-2026-07-06-007`, `D-2026-07-06-014` y `D-2026-07-06-015`.
+Conservar `AO-PPI-BRIDGE-004` como matriz consolidada aceptada; no usarla como cierre global.
+
+Conservar `AO-TCS-REL-001`, `AO-AUTH-GLOBAL-001` y `AO-EXT-COV-001` como avance local o parcial local, sin canonizacion, autoridad global ni cobertura independiente.
+
+Preparar solo por decision separada un protocolo AO reproducible independiente, o una compuerta explicita para promocion/cierre global.
 
 Conservar `REPORT_LAYER` como capa local pre-C; cualquier promocion a Nivel C requiere candidata independiente, contrato exportable, serializacion estable, auditoria y decision nueva.
 
@@ -665,7 +698,7 @@ Conservar `MOC-ROUTE-012` como relacion documental local con `C-001` / `C-002`; 
 
 Mantener bloqueada la exportacion general de R4/Gamma salvo nueva compuerta con dominio externo, semantica independiente del expediente y pruebas suficientes.
 
-Profundizar `AO-PPI-BRIDGE-001` hacia pruebas de Confluencia global y Equivalencia global de proyecciones sin reabrir `P-PI.0` / `P-PI.1`.
+Usar `AO-PPI-BRIDGE-002`, `AO-PPI-BRIDGE-003`, `AO-REPORT-SERIAL-001` y `AO-PPI-BRIDGE-004` solo como evidencia local fuerte para rutas posteriores; no reabrir `P-PI.0` / `P-PI.1`.
 
 Usar `R001-TB-001` solo como relacion formal local de apoyo a `AO-001`, no como cierre global.
 
@@ -699,8 +732,14 @@ Madurar `TCS-001` desde `TCS-MAT-PROV-001` hacia semantica formal, mas casos ext
 - `PSI-001`: transferido a proyecto independiente; copia local eliminada; deuda restante: no usarlo como frente activo interno y abrir decision puente si se requiere dependencia externa.
 - Automatizacion: `AUT-002` queda cerrado tecnicamente tras atender el falso bloqueo por referencias historicas transferidas; permanece abierta la mejora futura del detector si aparecen dependencias activas nuevas.
 - `AUD-001`: cerrado como expediente completo en version documental/operativa v0; no promover `REPORT_LAYER`, `R4-CANDIDATA`, `R4-FORMAL-AUD-001` ni `GAMMA-FORMAL-AUD-001` fuera de su perfil local sin decision posterior; exportacion general de R4/Gamma queda bloqueada por `D-2026-07-05-009`.
-- `AO-001`: mantener bloqueada la exportacion general de R4/Gamma, conservar `AO-DOC04-WIDE-TEST-001` como evidencia local no mutante y profundizar el puente local hacia pruebas globales.
-- `AO-DOC04-WIDE-001`: formalizacion amplia v0 incorporada al Documento 04 y probada localmente por `D-2026-07-06-007`; quedan abiertas pruebas heterogeneas adicionales, posible serializacion de `REPORT_LAYER`, posible especificacion tecnica y cierres globales.
+- `AO-001`: mantener bloqueada la exportacion general de R4/Gamma, conservar `AO-DOC04-WIDE-TEST-001`, `AO-PPI-BRIDGE-002`, `AO-PPI-BRIDGE-003`, `AO-REPORT-SERIAL-001`, `AO-TCS-REL-001`, `AO-AUTH-GLOBAL-001`, `AO-EXT-COV-001` y `AO-PPI-BRIDGE-004` como evidencia local no mutante; cualquier protocolo AO independiente, promocion o cierre global requiere decision separada.
+- `AO-DOC04-WIDE-001`: formalizacion amplia v0 incorporada al Documento 04 y probada localmente por `D-2026-07-06-007`; quedan abiertas posible serializacion de `REPORT_LAYER`, posible especificacion tecnica y cierres globales.
+- `AO-PPI-BRIDGE-003`: matriz de condiciones faltantes aceptada por `D-2026-07-06-018`; queda continuada localmente por `AO-REPORT-SERIAL-001` y consolidada por `AO-PPI-BRIDGE-004`.
+- `AO-REPORT-SERIAL-001`: serializacion interfrente local aceptada por `D-2026-07-06-019`; no promueve `REPORT_LAYER`.
+- `AO-TCS-REL-001`: relacion local `AO/TCS` aceptada por `D-2026-07-06-020`; `TCS-001` sigue provisional y no canonico.
+- `AO-AUTH-GLOBAL-001`: criterio local de autoridad aceptado por `D-2026-07-06-021`; autoridad global real sigue no autorizada.
+- `AO-EXT-COV-001`: cobertura externa sintetica aceptada por `D-2026-07-06-022`; cobertura independiente global sigue pendiente.
+- `AO-PPI-BRIDGE-004`: matriz consolidada aceptada por `D-2026-07-06-023`; mantiene `global_closure_authorized: false`.
 - `AO-CONF-EXT-OPTIONS-001`: `EXT-CONF-001` y `EXT-CONF-002` quedan ejecutados; pendiente decidir si se requieren mas pruebas externas para Confluencia o Equivalencia global.
 - `TCS-001`: madurar semantica formal, mas casos externos no regulados, conflicto de autoridades y relacion controlada con `AO-001` / `C-001` antes de cualquier promocion teorica.
 - Completar ficha de trazabilidad de `EF-001` si existe material previo.

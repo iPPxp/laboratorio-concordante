@@ -1,0 +1,408 @@
+{
+  "suite_id": "AO-PPI-BRIDGE-002-CASES",
+  "description": "Bateria fuerte no mutante para Confluencia y Equivalencia local de proyecciones en AO-001.",
+  "cases": [
+    {
+      "case_id": "AO-PPI-STRONG-001",
+      "kind": "equivalence",
+      "expected": "equivalencia_fuerte_local",
+      "required_debt": ["equivalencia_global_abierta"],
+      "projections": [
+        {
+          "name": "Pi_doc",
+          "witness": "W-AO-001",
+          "artifact_id": "AO-ACT-001",
+          "status": "bloqueo_controlado",
+          "evidence": ["E-AO-001"],
+          "decision": "bloquear",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_bloqueo",
+          "rule_id": "Gate_AO",
+          "debt": ["equivalencia_global_abierta"],
+          "authority": "expediente",
+          "authority_claim": "expediente"
+        },
+        {
+          "name": "Pi_rep",
+          "witness": "W-AO-001",
+          "artifact_id": "AO-ACT-001",
+          "status": "bloqueo_controlado",
+          "evidence": ["E-AO-001"],
+          "decision": "bloquear",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_bloqueo",
+          "rule_id": "Gate_AO",
+          "debt": ["equivalencia_global_abierta"],
+          "authority": "expediente",
+          "authority_claim": "expediente",
+          "report_layer_complete": true
+        },
+        {
+          "name": "Pi_op",
+          "witness": "W-AO-001",
+          "artifact_id": "AO-ACT-001",
+          "status": "bloqueo_controlado",
+          "evidence": ["E-AO-001"],
+          "decision": "bloquear",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_bloqueo",
+          "rule_id": "Gate_AO",
+          "debt": ["equivalencia_global_abierta"],
+          "authority": "expediente",
+          "authority_claim": "expediente"
+        }
+      ]
+    },
+    {
+      "case_id": "AO-PPI-STRONG-002",
+      "kind": "equivalence",
+      "expected": "equivalencia_fuerte_local",
+      "required_debt": ["confluencia_global_abierta"],
+      "projections": [
+        {
+          "name": "Pi_doc",
+          "witness": "W-R001-001",
+          "artifact_id": "R001-TB-LOCAL",
+          "status": "evidencia_local",
+          "evidence": ["R001-TABLE-CHECK-001"],
+          "decision": "continuar_sin_transformar",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "equivalencia_tabular_local",
+          "rule_id": "Eq_tb",
+          "debt": ["confluencia_global_abierta"],
+          "authority": "expediente",
+          "authority_claim": "expediente"
+        },
+        {
+          "name": "Pi_tb",
+          "witness": "W-R001-001",
+          "artifact_id": "R001-TB-LOCAL",
+          "status": "evidencia_local",
+          "evidence": ["R001-TABLE-CHECK-001"],
+          "decision": "continuar_sin_transformar",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "equivalencia_tabular_local",
+          "rule_id": "Eq_tb",
+          "debt": ["confluencia_global_abierta"],
+          "authority": "expediente",
+          "authority_claim": "expediente"
+        },
+        {
+          "name": "Pi_op",
+          "witness": "W-R001-001",
+          "artifact_id": "R001-TB-LOCAL",
+          "status": "evidencia_local",
+          "evidence": ["R001-TABLE-CHECK-001"],
+          "decision": "continuar_sin_transformar",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "equivalencia_tabular_local",
+          "rule_id": "Eq_tb",
+          "debt": ["confluencia_global_abierta"],
+          "authority": "expediente",
+          "authority_claim": "expediente"
+        }
+      ]
+    },
+    {
+      "case_id": "AO-PPI-STRONG-003",
+      "kind": "equivalence",
+      "expected": "divergencia_clasificada",
+      "projections": [
+        {
+          "name": "Pi_doc",
+          "witness": "W-AO-002",
+          "artifact_id": "AO-ACT-002",
+          "status": "deuda_activa",
+          "evidence": ["E-AO-002"],
+          "decision": "bloquear",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_bloqueo",
+          "rule_id": "Gate_AO",
+          "debt": ["evidencia_insuficiente"],
+          "authority": "expediente",
+          "authority_claim": "expediente"
+        },
+        {
+          "name": "Pi_rep",
+          "witness": "W-AO-002",
+          "artifact_id": "AO-ACT-002",
+          "status": "deuda_activa",
+          "evidence": ["E-AO-002"],
+          "decision": "escalar",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_escalamiento",
+          "rule_id": "Gate_AO",
+          "debt": ["evidencia_insuficiente"],
+          "authority": "expediente",
+          "authority_claim": "expediente",
+          "report_layer_complete": true
+        },
+        {
+          "name": "Pi_op",
+          "witness": "W-AO-002",
+          "artifact_id": "AO-ACT-002",
+          "status": "deuda_activa",
+          "evidence": ["E-AO-002"],
+          "decision": "bloquear",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_bloqueo",
+          "rule_id": "Gate_AO",
+          "debt": ["evidencia_insuficiente"],
+          "authority": "expediente",
+          "authority_claim": "expediente"
+        }
+      ]
+    },
+    {
+      "case_id": "AO-PPI-STRONG-004",
+      "kind": "confluence",
+      "expected": "confluencia_fuerte_local",
+      "required_debt": ["confluencia_global_abierta"],
+      "routes": [
+        {
+          "name": "ruta_estado",
+          "witness": "W-AO-003",
+          "artifact_id": "AO-ACT-003",
+          "status": "decision_no_mutante",
+          "evidence": ["E-AO-003"],
+          "decision": "continuar_sin_transformar",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_no_mutante",
+          "rule_id": "Conf_local",
+          "debt": ["confluencia_global_abierta"],
+          "authority": "expediente",
+          "authority_claim": "expediente"
+        },
+        {
+          "name": "ruta_decision",
+          "witness": "W-AO-003",
+          "artifact_id": "AO-ACT-003",
+          "status": "decision_no_mutante",
+          "evidence": ["E-AO-003"],
+          "decision": "continuar_sin_transformar",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_no_mutante",
+          "rule_id": "Conf_local",
+          "debt": ["confluencia_global_abierta"],
+          "authority": "expediente",
+          "authority_claim": "expediente"
+        },
+        {
+          "name": "ruta_reporte",
+          "witness": "W-AO-003",
+          "artifact_id": "AO-ACT-003",
+          "status": "decision_no_mutante",
+          "evidence": ["E-AO-003"],
+          "decision": "continuar_sin_transformar",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_no_mutante",
+          "rule_id": "Conf_local",
+          "debt": ["confluencia_global_abierta"],
+          "authority": "expediente",
+          "authority_claim": "expediente",
+          "report_layer_complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "AO-PPI-STRONG-005",
+      "kind": "confluence",
+      "expected": "divergencia_clasificada",
+      "routes": [
+        {
+          "name": "ruta_estado",
+          "witness": "W-AO-004",
+          "artifact_id": "AO-ACT-004",
+          "status": "reporte_en_conflicto",
+          "evidence": ["E-AO-004"],
+          "decision": "bloquear",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_bloqueo",
+          "rule_id": "Conf_local",
+          "debt": ["report_layer_diverge"],
+          "authority": "expediente",
+          "authority_claim": "expediente"
+        },
+        {
+          "name": "ruta_decision",
+          "witness": "W-AO-004",
+          "artifact_id": "AO-ACT-004",
+          "status": "reporte_en_conflicto",
+          "evidence": ["E-AO-004"],
+          "decision": "escalar",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_escalamiento",
+          "rule_id": "Conf_local",
+          "debt": ["report_layer_diverge"],
+          "authority": "expediente",
+          "authority_claim": "expediente"
+        },
+        {
+          "name": "ruta_reporte",
+          "witness": "W-AO-004",
+          "artifact_id": "AO-ACT-004",
+          "status": "reporte_en_conflicto",
+          "evidence": ["E-AO-004"],
+          "decision": "bloquear",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_bloqueo",
+          "rule_id": "Conf_local",
+          "debt": ["report_layer_diverge"],
+          "authority": "expediente",
+          "authority_claim": "expediente",
+          "report_layer_complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "AO-PPI-STRONG-006",
+      "kind": "equivalence",
+      "expected": "bloqueo_por_testigo",
+      "projections": [
+        {
+          "name": "Pi_doc",
+          "witness": "W-AO-005-A",
+          "artifact_id": "AO-ACT-005",
+          "status": "testigo_divergente",
+          "evidence": ["E-AO-005"],
+          "decision": "bloquear",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_bloqueo",
+          "rule_id": "Eq_local",
+          "debt": ["testigo_no_comun"],
+          "authority": "expediente",
+          "authority_claim": "expediente"
+        },
+        {
+          "name": "Pi_rep",
+          "witness": "W-AO-005-B",
+          "artifact_id": "AO-ACT-005",
+          "status": "testigo_divergente",
+          "evidence": ["E-AO-005"],
+          "decision": "bloquear",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_bloqueo",
+          "rule_id": "Eq_local",
+          "debt": ["testigo_no_comun"],
+          "authority": "expediente",
+          "authority_claim": "expediente",
+          "report_layer_complete": true
+        },
+        {
+          "name": "Pi_op",
+          "witness": "W-AO-005-A",
+          "artifact_id": "AO-ACT-005",
+          "status": "testigo_divergente",
+          "evidence": ["E-AO-005"],
+          "decision": "bloquear",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_bloqueo",
+          "rule_id": "Eq_local",
+          "debt": ["testigo_no_comun"],
+          "authority": "expediente",
+          "authority_claim": "expediente"
+        }
+      ]
+    },
+    {
+      "case_id": "AO-PPI-STRONG-007",
+      "kind": "confluence",
+      "expected": "bloqueo_report_layer_incompleto",
+      "routes": [
+        {
+          "name": "ruta_estado",
+          "witness": "W-AO-006",
+          "artifact_id": "AO-ACT-006",
+          "status": "reporte_incompleto",
+          "evidence": ["E-AO-006"],
+          "decision": "bloquear",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_bloqueo",
+          "rule_id": "Conf_local",
+          "debt": ["report_layer_incompleto"],
+          "authority": "expediente",
+          "authority_claim": "expediente"
+        },
+        {
+          "name": "ruta_decision",
+          "witness": "W-AO-006",
+          "artifact_id": "AO-ACT-006",
+          "status": "reporte_incompleto",
+          "evidence": ["E-AO-006"],
+          "decision": "bloquear",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_bloqueo",
+          "rule_id": "Conf_local",
+          "debt": ["report_layer_incompleto"],
+          "authority": "expediente",
+          "authority_claim": "expediente"
+        },
+        {
+          "name": "ruta_reporte",
+          "witness": "W-AO-006",
+          "artifact_id": "AO-ACT-006",
+          "status": "reporte_incompleto",
+          "evidence": ["E-AO-006"],
+          "decision": "bloquear",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_bloqueo",
+          "rule_id": "Conf_local",
+          "debt": ["report_layer_incompleto"],
+          "authority": "expediente",
+          "authority_claim": "expediente",
+          "report_layer_complete": false
+        }
+      ]
+    },
+    {
+      "case_id": "AO-PPI-STRONG-008",
+      "kind": "equivalence",
+      "expected": "bloqueo_por_autoridad",
+      "projections": [
+        {
+          "name": "Pi_doc",
+          "witness": "W-AO-007",
+          "artifact_id": "AO-ACT-007",
+          "status": "autoridad_aumentada",
+          "evidence": ["E-AO-007"],
+          "decision": "continuar_sin_transformar",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_no_mutante",
+          "rule_id": "Eq_local",
+          "debt": ["autoridad_no_resuelta"],
+          "authority": "expediente",
+          "authority_claim": "canon"
+        },
+        {
+          "name": "Pi_rep",
+          "witness": "W-AO-007",
+          "artifact_id": "AO-ACT-007",
+          "status": "autoridad_aumentada",
+          "evidence": ["E-AO-007"],
+          "decision": "continuar_sin_transformar",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_no_mutante",
+          "rule_id": "Eq_local",
+          "debt": ["autoridad_no_resuelta"],
+          "authority": "expediente",
+          "authority_claim": "expediente",
+          "report_layer_complete": true
+        },
+        {
+          "name": "Pi_op",
+          "witness": "W-AO-007",
+          "artifact_id": "AO-ACT-007",
+          "status": "autoridad_aumentada",
+          "evidence": ["E-AO-007"],
+          "decision": "continuar_sin_transformar",
+          "permission": {"transformacion_permitida": false},
+          "output_family": "salida_segura_no_mutante",
+          "rule_id": "Eq_local",
+          "debt": ["autoridad_no_resuelta"],
+          "authority": "expediente",
+          "authority_claim": "expediente"
+        }
+      ]
+    }
+  ]
+}

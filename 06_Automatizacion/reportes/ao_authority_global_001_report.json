@@ -1,0 +1,203 @@
+{
+  "report_id": "AO-AUTH-GLOBAL-001-20260706-153515",
+  "expediente": "AO-001",
+  "algoritmo": "AO-AUTH-GLOBAL-001",
+  "suite_id": "AO-AUTH-GLOBAL-CASES-001",
+  "resultado": "ok",
+  "recomendacion": "mantener_criterio_autoridad_local",
+  "transformacion_permitida": false,
+  "authority_criterion_local": true,
+  "global_authority_authorized": false,
+  "global_closure_authorized": false,
+  "source_evidence": [
+    "M-000",
+    "M-001",
+    "C-001",
+    "C-002",
+    "AO-PPI-BRIDGE-003",
+    "AO-REPORT-SERIAL-001"
+  ],
+  "scope_guard": {
+    "modifica_canon": false,
+    "modifica_nivel_c": false,
+    "crea_nivel_c": false,
+    "usa_historial_como_autoridad": false,
+    "promueve_report_layer": false,
+    "cierra_confluencia_global": false,
+    "cierra_equivalencia_global": false,
+    "autoriza_transformacion": false
+  },
+  "summary": {
+    "cases": 12,
+    "passed": 12,
+    "failed": 0,
+    "findings": 0,
+    "local_comparable": 5,
+    "blocked_cases": 5,
+    "by_outcome": {
+      "comparabilidad_local_autorizada": 5,
+      "evidencia_pasiva_no_autoridad": 1,
+      "evidencia_externa_no_autoridad": 1,
+      "bloqueo_historial_autoridad": 1,
+      "bloqueo_autoridad_por_repeticion": 1,
+      "bloqueo_recomendacion_como_decision": 1,
+      "bloqueo_autoridad_global_no_declarada": 1,
+      "bloqueo_testigo": 1
+    },
+    "by_authority": {
+      "autoridad_superior_reconocida": 1,
+      "autoridad_tecnica_acotada": 1,
+      "autoridad_documental": 2,
+      "autoridad_local": 2,
+      "evidencia_tecnica_no_autoridad": 2,
+      "evidencia_pasiva_no_autoridad": 2,
+      "evidencia_externa_no_autoridad": 1,
+      "no_comparable": 1
+    }
+  },
+  "results": [
+    {
+      "case_id": "AO-AUTH-001",
+      "source_level": "canon",
+      "target_level": "documento",
+      "expected": "comparabilidad_local_autorizada",
+      "actual": "comparabilidad_local_autorizada",
+      "authority_class": "autoridad_superior_reconocida",
+      "passed": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-AUTH-002",
+      "source_level": "nivel_c",
+      "target_level": "expediente",
+      "expected": "comparabilidad_local_autorizada",
+      "actual": "comparabilidad_local_autorizada",
+      "authority_class": "autoridad_tecnica_acotada",
+      "passed": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-AUTH-003",
+      "source_level": "documento",
+      "target_level": "expediente",
+      "expected": "comparabilidad_local_autorizada",
+      "actual": "comparabilidad_local_autorizada",
+      "authority_class": "autoridad_documental",
+      "passed": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-AUTH-004",
+      "source_level": "expediente",
+      "target_level": "expediente",
+      "expected": "comparabilidad_local_autorizada",
+      "actual": "comparabilidad_local_autorizada",
+      "authority_class": "autoridad_local",
+      "passed": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-AUTH-005",
+      "source_level": "reporte_automatizado",
+      "target_level": "expediente",
+      "expected": "comparabilidad_local_autorizada",
+      "actual": "comparabilidad_local_autorizada",
+      "authority_class": "evidencia_tecnica_no_autoridad",
+      "passed": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-AUTH-006",
+      "source_level": "registro_historico",
+      "target_level": "expediente",
+      "expected": "evidencia_pasiva_no_autoridad",
+      "actual": "evidencia_pasiva_no_autoridad",
+      "authority_class": "evidencia_pasiva_no_autoridad",
+      "passed": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-AUTH-007",
+      "source_level": "externo_sintetico",
+      "target_level": "expediente",
+      "expected": "evidencia_externa_no_autoridad",
+      "actual": "evidencia_externa_no_autoridad",
+      "authority_class": "evidencia_externa_no_autoridad",
+      "passed": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-AUTH-008",
+      "source_level": "registro_historico",
+      "target_level": "expediente",
+      "expected": "bloqueo_historial_autoridad",
+      "actual": "bloqueo_historial_autoridad",
+      "authority_class": "evidencia_pasiva_no_autoridad",
+      "passed": true,
+      "blockers": [
+        "historial_como_autoridad:estado_vigente"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-AUTH-009",
+      "source_level": "expediente",
+      "target_level": "expediente",
+      "expected": "bloqueo_autoridad_por_repeticion",
+      "actual": "bloqueo_autoridad_por_repeticion",
+      "authority_class": "autoridad_local",
+      "passed": true,
+      "blockers": [
+        "autoridad_por_repeticion"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-AUTH-010",
+      "source_level": "reporte_automatizado",
+      "target_level": "expediente",
+      "expected": "bloqueo_recomendacion_como_decision",
+      "actual": "bloqueo_recomendacion_como_decision",
+      "authority_class": "evidencia_tecnica_no_autoridad",
+      "passed": true,
+      "blockers": [
+        "recomendacion_convertida_en_decision"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-AUTH-011",
+      "source_level": "expediente",
+      "target_level": "canon",
+      "expected": "bloqueo_autoridad_global_no_declarada",
+      "actual": "bloqueo_autoridad_global_no_declarada",
+      "authority_class": "no_comparable",
+      "passed": true,
+      "blockers": [
+        "autoridad_global_no_autorizada:autoridad_global"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-AUTH-012",
+      "source_level": "documento",
+      "target_level": "expediente",
+      "expected": "bloqueo_testigo",
+      "actual": "bloqueo_testigo",
+      "authority_class": "autoridad_documental",
+      "passed": true,
+      "blockers": [
+        "witness:ausente"
+      ],
+      "warnings": []
+    }
+  ],
+  "findings": []
+}

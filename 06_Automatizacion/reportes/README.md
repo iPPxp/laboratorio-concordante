@@ -34,6 +34,20 @@ Los reportes no autorizan cambios, no cierran expedientes y no sustituyen decisi
 - `ao_ext_confluence_report.json`
 - `ao_doc04_wide_report.md`
 - `ao_doc04_wide_report.json`
+- `ao_ppi_bridge_002_report.md`
+- `ao_ppi_bridge_002_report.json`
+- `ao_ppi_bridge_003_report.md`
+- `ao_ppi_bridge_003_report.json`
+- `report_layer_serialization_report.md`
+- `report_layer_serialization_report.json`
+- `ao_tcs_rel_001_report.md`
+- `ao_tcs_rel_001_report.json`
+- `ao_authority_global_001_report.md`
+- `ao_authority_global_001_report.json`
+- `ao_ext_cov_001_report.md`
+- `ao_ext_cov_001_report.json`
+- `ao_ppi_bridge_004_report.md`
+- `ao_ppi_bridge_004_report.json`
 - `report_layer_c002_gate_report.md`
 - `report_layer_c002_gate_report.json`
 - `moc_eval_report.md` (incluye trazas de operadores `MOC/TCS`, rol local de puente `MOC/AO` y protocolo v0.2)

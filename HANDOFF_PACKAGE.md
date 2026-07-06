@@ -62,6 +62,14 @@ Nota posterior 2026-07-06-015: `AUT-003` queda aceptado por `D-2026-07-06-015`; 
 
 Nota posterior 2026-07-06-016: `RH-001` / `PM-001` quedan revisados por `D-2026-07-06-016`; `PM-001` queda reconciliado solo como deuda historica condicionada, sin expediente activo ni protocolo materializado.
 
+Nota posterior 2026-07-06-017: `AO-PPI-BRIDGE-002` queda aceptado por `D-2026-07-06-017` como bateria fuerte local no mutante para Confluencia y Equivalencia; ejecuta 8/8 casos y no cierra Confluencia global ni Equivalencia global.
+
+Nota posterior 2026-07-06-018: `AO-PPI-BRIDGE-003` queda aceptado por `D-2026-07-06-018` como matriz de condiciones faltantes para cierre global; ejecuta 10 condiciones y 9 casos heterogeneos de `REPORT_LAYER`, con `global_closure_authorized: false`.
+
+Nota posterior 2026-07-06-019: `AO-REPORT-SERIAL-001` queda aceptado por `D-2026-07-06-019` como serializacion interfrente local de `REPORT_LAYER`; atiende localmente `AO-PPI-GC-004`, conserva `global_export_authorized: false` y no promueve `REPORT_LAYER`.
+
+Nota posterior 2026-07-06-023: `AO-TCS-REL-001`, `AO-AUTH-GLOBAL-001`, `AO-EXT-COV-001` y `AO-PPI-BRIDGE-004` quedan aceptados por `D-2026-07-06-020` a `D-2026-07-06-023` como avance local no mutante; la matriz consolidada mantiene `global_closure_authorized: false`, `global_export_authorized: false`, `REPORT_LAYER` local pre-C y `P-PI.0` / `P-PI.1` cerrados como frentes.
+
 Fecha: 2026-07-02.
 
 ## Aviso de desactivacion
@@ -246,6 +254,10 @@ El paquete no cambia autoridad: Canon, estado, documentos oficiales, decisiones 
 
 - Nota posterior vigente 2026-07-06: `HXI-001` queda cerrado en mantenimiento local por `D-2026-07-06-012`, con `Xi_eval` conservado solo como herramienta local historica/auxiliar y sin admision de `H-Xi` ni canonizacion de `Xi`; `AUD-001` queda cerrado como version documental/operativa v0 por `D-2026-07-06-011`; `AUT-002` y `R001-001` quedan cerrados tecnicamente; `AUT-003` queda aceptado por `D-2026-07-06-015`; `PSI-001` queda transferido fuera del Laboratorio.
 - `RH-001` procesa y cierra la transcripcion historica `ChatGPT share 001`; `PM-001` queda revisado por `D-2026-07-06-016` solo como deuda historica condicionada, sin autorizar cambios de nivel superior.
+- `AO-PPI-BRIDGE-002` queda aceptado por `D-2026-07-06-017` como bateria fuerte local no mutante; sirve como evidencia local para una matriz futura de condiciones faltantes, no como cierre global.
+- `AO-PPI-BRIDGE-003` queda aceptado por `D-2026-07-06-018` como matriz de condiciones faltantes; sirve como evidencia local y lista de deudas, no como cierre global.
+- `AO-REPORT-SERIAL-001` queda aceptado por `D-2026-07-06-019` como serializacion interfrente local de `REPORT_LAYER`; atiende localmente `AO-PPI-GC-004`, no promueve `REPORT_LAYER` y no autoriza cierre global.
+- `AO-TCS-REL-001`, `AO-AUTH-GLOBAL-001`, `AO-EXT-COV-001` y `AO-PPI-BRIDGE-004` quedan aceptados por `D-2026-07-06-020` a `D-2026-07-06-023`; reducen deudas en grado local o parcial local, no como cierre global.
 - `RH-002` procesa y cierra el lote historico de Descargas.
 - `REC-001` reconcilia inicialmente Canon/baselines y conserva deudas refinadas sin autorizar canonizacion, importacion o apertura de psicologia.
 - `AUD-001` tiene contratos, matriz basal y proyeccion RFC validados provisionalmente hasta `VAL-029`.
@@ -275,7 +287,7 @@ El paquete no cambia autoridad: Canon, estado, documentos oficiales, decisiones 
 ## Siguiente objetivo
 
 ```text
-Mantener `MOC-ROUTE-011` como ruta teorico-operativa sin ejecucion; conservar AO-001, Confluencia, Equivalencia de proyecciones, `AO-DOC04-WIDE-001`, `REPORT_LAYER` local pre-C con compuerta no mutante `C-002`, bloqueo de exportacion general R4/Gamma, `PM-001` como deuda condicionada y maduracion posterior de `TCS-001`.
+Mantener `MOC-ROUTE-011` como ruta teorico-operativa sin ejecucion; conservar AO-001 con `AO-PPI-BRIDGE-004` como evidencia local fuerte consolidada, avanzar solo por decision separada hacia protocolo AO reproducible independiente, promocion/cierre global o exportacion R4/Gamma, y mantener abiertas Confluencia global, Equivalencia de proyecciones, `AO-DOC04-WIDE-001`, `REPORT_LAYER` local pre-C con compuerta no mutante `C-002`, bloqueo de exportacion general R4/Gamma, `PM-001` como deuda condicionada y maduracion posterior de `TCS-001`.
 ```
 
 ## Fuera del paquete

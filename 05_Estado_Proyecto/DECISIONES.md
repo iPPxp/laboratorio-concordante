@@ -3194,3 +3194,328 @@ Decision espejo: `03_Expedientes/RH-001_Decision_Reconciliacion_PM001.md`.
 `PM-001` queda reconciliado solo como deuda historica condicionada derivada de `RH-001`.
 
 No existe expediente activo, protocolo materializado ni cierre sustantivo de `PM-001`. Cualquier uso posterior requiere apertura o decision separada.
+
+## D-2026-07-06-017 - Bateria fuerte AO-PPI-BRIDGE-002
+
+Estatus: decision de avance local fuerte.
+
+Fecha: 2026-07-06.
+
+## Decision
+
+Se acepta `AO-PPI-BRIDGE-002` como bateria fuerte local no mutante para Confluencia y Equivalencia de proyecciones.
+
+Documento base: `03_Expedientes/AO-001_Puente_Confluencia_Equivalencia_002.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Puente_Confluencia_Equivalencia_002.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Puente_Confluencia_Equivalencia_002.md`.
+
+## Resultado
+
+La bateria ejecuta 8 casos fuertes con 8 aprobados y 0 fallos.
+
+Incluye equivalencia fuerte local, confluencia fuerte local, divergencias clasificadas, bloqueo por testigo, bloqueo por `REPORT_LAYER` incompleto y bloqueo por aumento de autoridad.
+
+Queda integrada a `DO-LAB-RUN-001` como paso no mutante.
+
+## Limites
+
+No modifica Documento 04, no modifica Canon, no crea Nivel C, no reabre `P-PI.0` ni `P-PI.1`, no promueve `REPORT_LAYER`, no exporta R4/Gamma y no autoriza transformaciones materiales.
+
+Confluencia global y Equivalencia global de proyecciones permanecen abiertas.
+
+## Ruta posterior
+
+La ruta posterior mas defensible es `AO-PPI-BRIDGE-003`: matriz de condiciones faltantes para cierre global, usando `AO-PPI-BRIDGE-002` como evidencia local fuerte.
+
+## D-2026-07-06-018 - Matriz de condiciones faltantes AO-PPI-BRIDGE-003
+
+Fecha: 2026-07-06.
+
+Estado: aceptada.
+
+Se acepta `AO-PPI-BRIDGE-003` como matriz local no mutante de condiciones faltantes para cierre global de Confluencia y Equivalencia de proyecciones.
+
+Tambien se acepta la ampliacion heterogenea de casos `REPORT_LAYER` incluida en la matriz.
+
+Documento base: `03_Expedientes/AO-001_Matriz_Condiciones_Cierre_Global_003.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Matriz_Condiciones_Cierre_Global_003.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Matriz_Condiciones_Cierre_Global_003.md`.
+
+Herramienta: `06_Automatizacion/ao_ppi_bridge_003.py`.
+
+Fixture: `06_Automatizacion/fixtures/ao_ppi_bridge_003_matrix.json`.
+
+Reportes: `06_Automatizacion/reportes/ao_ppi_bridge_003_report.md` y `.json`.
+
+### Resultado
+
+La matriz ejecuta:
+
+- 10 condiciones de cierre global.
+- 3 condiciones satisfechas localmente.
+- 5 faltantes globales.
+- 2 bloqueos por alcance.
+- 9 casos heterogeneos de `REPORT_LAYER`.
+- 0 fallos de expectativa.
+
+Resultado operativo:
+
+```text
+global_closure_authorized: false
+recomendacion: mantener_cierre_global_no_autorizado
+```
+
+### Alcance aceptado
+
+`AO-PPI-BRIDGE-002` queda usado como evidencia local fuerte.
+
+`REPORT_LAYER` queda ampliado con casos heterogeneos no mutantes.
+
+El cierre global de Confluencia y Equivalencia queda expresamente no autorizado.
+
+### Limites
+
+Documento 04 queda sin cambios.
+
+Canon queda sin cambios.
+
+Nivel C queda sin alta nueva.
+
+`P-PI.0` y `P-PI.1` permanecen cerrados como frentes de trabajo.
+
+`REPORT_LAYER` permanece local pre-C.
+
+R4/Gamma permanecen sin exportacion general.
+
+Transformaciones materiales permanecen no autorizadas.
+
+### Deudas abiertas
+
+- Serializacion interfrente exportable de `REPORT_LAYER`.
+- Criterio global de autoridad entre niveles.
+- Cobertura externa amplia e independiente.
+- Relacion `AO/TCS` para fallos globales de concordancia.
+- Protocolo AO reproducible para evaluadores independientes.
+- Cierre global de Confluencia.
+- Cierre global de Equivalencia de proyecciones.
+
+### Ruta posterior
+
+La ruta posterior debe abrirse por decision separada y elegir una sola via prioritaria:
+
+- `AO-REPORT-SERIAL-001`.
+- `AO-TCS-REL-001`.
+- `AO-AUTH-GLOBAL-001`.
+- `AO-EXT-COV-001`.
+
+Nota posterior: esta ruta quedo continuada por `D-2026-07-06-019` a `D-2026-07-06-023`.
+
+## D-2026-07-06-019 - Serializacion interfrente local de REPORT_LAYER
+
+Fecha: 2026-07-06.
+
+Estado: aceptada.
+
+Se acepta `AO-REPORT-SERIAL-001` como serializacion interfrente local no mutante de `REPORT_LAYER`.
+
+Documento base: `03_Expedientes/AO-001_Serializacion_REPORT_LAYER_001.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Serializacion_REPORT_LAYER_001.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md`.
+
+Herramienta: `06_Automatizacion/report_layer_serialization.py`.
+
+Fixture: `06_Automatizacion/fixtures/report_layer_serialization_cases.json`.
+
+Reportes: `06_Automatizacion/reportes/report_layer_serialization_report.md` y `.json`.
+
+### Resultado
+
+La ruta ejecuta:
+
+- 10 casos sinteticos.
+- 4 casos serializables interfrente no mutantes.
+- 1 caso serializable con divergencia clasificada.
+- 5 bloqueos defensivos esperados.
+- 0 fallos de expectativa.
+
+Resultado operativo:
+
+```text
+serializacion_interfrente_local: true
+global_export_authorized: false
+transformacion_permitida: false
+```
+
+### Alcance aceptado
+
+`REPORT_LAYER` queda serializable localmente mediante `REPORT-LAYER-SERIAL-v0`.
+
+La condicion `AO-PPI-GC-004` queda atendida localmente como `atendida_localmente_no_global`.
+
+### Limites
+
+Documento 04 queda sin cambios.
+
+Canon queda sin cambios.
+
+Nivel C queda sin alta nueva.
+
+`REPORT_LAYER` permanece local pre-C.
+
+No se crea `C-003`, no se exporta autoridad global, no se autoriza transformacion material, no se reabren `P-PI.0` / `P-PI.1`, no se exporta R4/Gamma y no se cierra Confluencia global ni Equivalencia global.
+
+### Deudas abiertas
+
+- Criterio global de autoridad entre niveles.
+- Cobertura externa amplia e independiente.
+- Relacion `AO/TCS` para fallos globales de concordancia.
+- Protocolo AO reproducible para evaluadores independientes.
+- Cierre global de Confluencia.
+- Cierre global de Equivalencia de proyecciones.
+- Eventual promocion formal de `REPORT_LAYER`, solo con candidata independiente y decision futura.
+
+### Ruta posterior
+
+La ruta posterior debe abrirse por decision separada y elegir una sola via prioritaria:
+
+- `AO-TCS-REL-001`.
+- `AO-AUTH-GLOBAL-001`.
+- `AO-EXT-COV-001`.
+
+Nota posterior: estas tres rutas quedaron avanzadas localmente por `D-2026-07-06-020` a `D-2026-07-06-023`.
+
+## D-2026-07-06-020 - Relacion local AO/TCS
+
+Fecha: 2026-07-06.
+
+Estado: aceptada.
+
+Se acepta `AO-TCS-REL-001` como relacion local no mutante entre fallos de `AO-001` y tipos provisionales de `TCS-001`.
+
+Documento base: `03_Expedientes/AO-001_Relacion_AO_TCS_001.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Relacion_AO_TCS_001.md`.
+
+Herramienta: `06_Automatizacion/ao_tcs_rel_001.py`.
+
+Fixture: `06_Automatizacion/fixtures/ao_tcs_rel_001_cases.json`.
+
+Reportes: `06_Automatizacion/reportes/ao_tcs_rel_001_report.md` y `.json`.
+
+### Alcance aceptado
+
+`AO-PPI-GC-007` queda `satisfecha_local`.
+
+`TCS-001` clasifica fallos AO en grado local provisional, sin canonizacion.
+
+### Limites
+
+No modifica Documento 04, Canon, Nivel C ni `C-002`.
+
+No cierra Confluencia global ni Equivalencia global.
+
+## D-2026-07-06-021 - Criterio local de autoridad entre niveles
+
+Fecha: 2026-07-06.
+
+Estado: aceptada.
+
+Se acepta `AO-AUTH-GLOBAL-001` como criterio local no mutante de comparabilidad entre niveles.
+
+Documento base: `03_Expedientes/AO-001_Criterio_Autoridad_Global_001.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Criterio_Autoridad_Global_001.md`.
+
+Herramienta: `06_Automatizacion/ao_authority_global_001.py`.
+
+Fixture: `06_Automatizacion/fixtures/ao_authority_global_001_cases.json`.
+
+Reportes: `06_Automatizacion/reportes/ao_authority_global_001_report.md` y `.json`.
+
+### Alcance aceptado
+
+`AO-PPI-GC-005` queda `parcial_local`.
+
+El criterio distingue autoridad local, documental, tecnica y superior de evidencia pasiva o externa.
+
+### Limites
+
+`global_authority_authorized` queda `false`.
+
+No se acepta historial como autoridad directa, promocion por repeticion, reporte convertido en decision ni autoridad global no declarada.
+
+## D-2026-07-06-022 - Cobertura externa amplia sintetica
+
+Fecha: 2026-07-06.
+
+Estado: aceptada.
+
+Se acepta `AO-EXT-COV-001` como bateria local no mutante de cobertura externa amplia sintetica no regulada.
+
+Documento base: `03_Expedientes/AO-001_Cobertura_Externa_Amplia_001.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Cobertura_Externa_Amplia_001.md`.
+
+Herramienta: `06_Automatizacion/ao_ext_cov_001.py`.
+
+Fixture: `06_Automatizacion/fixtures/ao_ext_cov_001_cases.json`.
+
+Reportes: `06_Automatizacion/reportes/ao_ext_cov_001_report.md` y `.json`.
+
+### Alcance aceptado
+
+`AO-PPI-GC-006` queda `parcial_local`.
+
+La cobertura externa se amplia con repositorio documental, release tecnico, migracion ficticia, politicas, conflicto de revisores, divergencia externa, caso sin testigo y autoridad excedida.
+
+### Limites
+
+No usa dominios regulados, personas reales ni evidencia clinica.
+
+No es cobertura independiente suficiente para cierre global.
+
+## D-2026-07-06-023 - Matriz consolidada AO-PPI-BRIDGE-004
+
+Fecha: 2026-07-06.
+
+Estado: aceptada.
+
+Se acepta `AO-PPI-BRIDGE-004` como matriz consolidada local no mutante posterior a `AO-TCS-REL-001`, `AO-AUTH-GLOBAL-001` y `AO-EXT-COV-001`.
+
+Documento base: `03_Expedientes/AO-001_Matriz_Consolidada_Cierre_Global_004.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md`.
+
+Herramienta: `06_Automatizacion/ao_ppi_bridge_004.py`.
+
+Fixture: `06_Automatizacion/fixtures/ao_ppi_bridge_004_matrix.json`.
+
+Reportes: `06_Automatizacion/reportes/ao_ppi_bridge_004_report.md` y `.json`.
+
+### Resultado
+
+La matriz queda con cinco condiciones `satisfecha_local`, dos `parcial_local`, dos `faltante_global` y tres `bloqueada_por_alcance`.
+
+`global_closure_authorized`, `global_export_authorized` y promocion de `REPORT_LAYER` permanecen en `false`.
+
+### Deudas abiertas
+
+- Protocolo AO reproducible independiente.
+- Promocion formal de `REPORT_LAYER`.
+- Exportacion general de R4/Gamma.
+- Cierre global de Confluencia.
+- Cierre global de Equivalencia de proyecciones.

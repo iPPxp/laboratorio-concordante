@@ -1,0 +1,250 @@
+{
+  "report_id": "AO-PPI-BRIDGE-004-20260706-153515",
+  "expediente": "AO-001",
+  "algoritmo": "AO-PPI-BRIDGE-004",
+  "suite_id": "AO-PPI-BRIDGE-004-MATRIX",
+  "resultado": "ok",
+  "recomendacion": "mantener_cierre_global_no_autorizado",
+  "transformacion_permitida": false,
+  "global_closure_authorized": false,
+  "global_export_authorized": false,
+  "report_layer_promoted": false,
+  "source_evidence": [
+    "AO-PPI-BRIDGE-002",
+    "AO-PPI-BRIDGE-003",
+    "AO-REPORT-SERIAL-001",
+    "AO-TCS-REL-001",
+    "AO-AUTH-GLOBAL-001",
+    "AO-EXT-COV-001"
+  ],
+  "scope_guard": {
+    "modifica_doc04": false,
+    "modifica_canon": false,
+    "modifica_nivel_c": false,
+    "crea_nivel_c": false,
+    "reabre_p_pi_0": false,
+    "reabre_p_pi_1": false,
+    "cierra_confluencia_global": false,
+    "cierra_equivalencia_global": false,
+    "promueve_report_layer": false,
+    "exporta_r4_gamma": false,
+    "autoriza_transformacion": false
+  },
+  "summary": {
+    "conditions": 12,
+    "passed": 12,
+    "failed": 0,
+    "findings": 0,
+    "satisfied_local": 5,
+    "partial_local": 2,
+    "missing_global": 2,
+    "scope_blocked": 3,
+    "local_progress": 7,
+    "global_blocking": 12,
+    "by_status": {
+      "satisfecha_local": 5,
+      "parcial_local": 2,
+      "bloqueada_por_alcance": 3,
+      "faltante_global": 2
+    },
+    "by_domain": {
+      "equivalencia": 1,
+      "confluencia": 1,
+      "report_layer": 1,
+      "report_layer_serializacion": 1,
+      "autoridad": 1,
+      "dominios_externos": 1,
+      "tcs": 1,
+      "alcance_p_pi": 1,
+      "exportacion": 1,
+      "reproducibilidad": 1,
+      "report_layer_promocion": 1,
+      "cierre_global": 1
+    }
+  },
+  "condition_results": [
+    {
+      "condition_id": "AO-PPI-GC-001",
+      "domain": "equivalencia",
+      "status": "satisfecha_local",
+      "local_progress": true,
+      "blocks_global_closure": true,
+      "evidence": [
+        "AO-PPI-BRIDGE-002",
+        "AO-PPI-STRONG-001",
+        "AO-PPI-STRONG-002"
+      ],
+      "gap": "Falta demostrar invariancia fuera del paquete local de AO-001.",
+      "expected_effect": "aporta_evidencia_local",
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-002",
+      "domain": "confluencia",
+      "status": "satisfecha_local",
+      "local_progress": true,
+      "blocks_global_closure": true,
+      "evidence": [
+        "AO-PPI-BRIDGE-002",
+        "AO-PPI-STRONG-004"
+      ],
+      "gap": "Falta protocolo de repeticion independiente para rutas no preparadas por AO.",
+      "expected_effect": "aporta_evidencia_local",
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-003",
+      "domain": "report_layer",
+      "status": "satisfecha_local",
+      "local_progress": true,
+      "blocks_global_closure": true,
+      "evidence": [
+        "AO-PPI-BRIDGE-003",
+        "RL-HET-001",
+        "RL-HET-009"
+      ],
+      "gap": "La capa sigue local pre-C y no tiene promocion formal.",
+      "expected_effect": "aporta_evidencia_local",
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-004",
+      "domain": "report_layer_serializacion",
+      "status": "satisfecha_local",
+      "local_progress": true,
+      "blocks_global_closure": true,
+      "evidence": [
+        "AO-REPORT-SERIAL-001",
+        "REPORT-LAYER-SERIAL-v0"
+      ],
+      "gap": "Falta contrato exportable, versionado estable y decision de promocion.",
+      "expected_effect": "aporta_evidencia_local_no_exportable",
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-005",
+      "domain": "autoridad",
+      "status": "parcial_local",
+      "local_progress": true,
+      "blocks_global_closure": true,
+      "evidence": [
+        "AO-AUTH-GLOBAL-001",
+        "D-2026-07-06-021"
+      ],
+      "gap": "No declara autoridad global real ni resuelve promocion de autoridad fuera de AO.",
+      "expected_effect": "reduce_deuda_de_autoridad",
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-006",
+      "domain": "dominios_externos",
+      "status": "parcial_local",
+      "local_progress": true,
+      "blocks_global_closure": true,
+      "evidence": [
+        "AO-EXT-COV-001",
+        "D-2026-07-06-022"
+      ],
+      "gap": "Los casos son fuertes y heterogeneos, pero siguen siendo sinteticos y no independientes.",
+      "expected_effect": "reduce_deuda_de_cobertura",
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-007",
+      "domain": "tcs",
+      "status": "satisfecha_local",
+      "local_progress": true,
+      "blocks_global_closure": true,
+      "evidence": [
+        "AO-TCS-REL-001",
+        "D-2026-07-06-020",
+        "TCS-001"
+      ],
+      "gap": "TCS sigue provisional y no canonico; la clasificacion no cierra problema global.",
+      "expected_effect": "aporta_clasificacion_local",
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-008",
+      "domain": "alcance_p_pi",
+      "status": "bloqueada_por_alcance",
+      "local_progress": false,
+      "blocks_global_closure": true,
+      "evidence": [
+        "D-2026-07-03-002",
+        "D-2026-07-06-017"
+      ],
+      "gap": "P-PI.0 y P-PI.1 permanecen cerrados; AO solo trabaja problemas vivos.",
+      "expected_effect": "bloquea_reapertura_no_autorizada",
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-009",
+      "domain": "exportacion",
+      "status": "bloqueada_por_alcance",
+      "local_progress": false,
+      "blocks_global_closure": true,
+      "evidence": [
+        "AO-R4-GAMMA-EXPORT-GATE-001",
+        "AO-REPORT-LAYER-NIVEL-C-001"
+      ],
+      "gap": "La compuerta vigente bloquea exportacion general; REPORT_LAYER permanece local pre-C.",
+      "expected_effect": "bloquea_exportacion_no_autorizada",
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-010",
+      "domain": "reproducibilidad",
+      "status": "faltante_global",
+      "local_progress": false,
+      "blocks_global_closure": true,
+      "evidence": [
+        "MOC-EVAL-PROTO-002",
+        "AO-PPI-BRIDGE-004"
+      ],
+      "gap": "Existe apoyo MOC, pero falta protocolo AO especifico para cierre global de proyecciones.",
+      "expected_effect": "bloquea_cierre_global",
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-011",
+      "domain": "report_layer_promocion",
+      "status": "bloqueada_por_alcance",
+      "local_progress": false,
+      "blocks_global_closure": true,
+      "evidence": [
+        "D-2026-07-06-016",
+        "D-2026-07-06-019"
+      ],
+      "gap": "La compuerta vigente justifica mantener REPORT_LAYER local; promocion requiere decision futura.",
+      "expected_effect": "bloquea_promocion_no_autorizada",
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-PPI-GC-012",
+      "domain": "cierre_global",
+      "status": "faltante_global",
+      "local_progress": false,
+      "blocks_global_closure": true,
+      "evidence": [
+        "AO-PPI-BRIDGE-004"
+      ],
+      "gap": "La evidencia local fuerte no sustituye una decision global ni pruebas independientes.",
+      "expected_effect": "mantiene_cierre_global_no_autorizado",
+      "passed": true,
+      "warnings": []
+    }
+  ],
+  "findings": []
+}

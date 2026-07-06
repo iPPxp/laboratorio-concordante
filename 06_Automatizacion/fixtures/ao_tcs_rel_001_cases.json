@@ -1,0 +1,123 @@
+{
+  "suite_id": "AO-TCS-REL-CASES-001",
+  "expediente": "AO-001",
+  "description": "Casos sinteticos para relacion local AO/TCS.",
+  "source_evidence": [
+    "TCS-FAIL-TYP-001",
+    "TCS-MAT-PROV-001",
+    "AO-PPI-BRIDGE-003",
+    "AO-REPORT-SERIAL-001"
+  ],
+  "cases": [
+    {
+      "case_id": "AO-TCS-001",
+      "ao_signal": "falta_testigo",
+      "expected_tcs_failure": "TCS-F1",
+      "expected_state": "bloqueo_de_concordancia",
+      "expected": "relacion_ao_tcs_local",
+      "witness": "W-AO-TCS-001",
+      "local_evidence": ["AO-PPI-BRIDGE-003", "RL-SERIAL-006"],
+      "promotes_tcs": false,
+      "closes_global": false
+    },
+    {
+      "case_id": "AO-TCS-002",
+      "ao_signal": "aumento_autoridad",
+      "expected_tcs_failure": "TCS-F2",
+      "expected_state": "bloqueo_de_concordancia",
+      "expected": "relacion_ao_tcs_local",
+      "witness": "W-AO-TCS-002",
+      "local_evidence": ["AO-PPI-BRIDGE-003", "AO-AUTH-GLOBAL-001"],
+      "promotes_tcs": false,
+      "closes_global": false
+    },
+    {
+      "case_id": "AO-TCS-003",
+      "ao_signal": "conflicto_autoridades",
+      "expected_tcs_failure": "TCS-F9",
+      "expected_state": "bloqueo_de_concordancia",
+      "expected": "relacion_ao_tcs_local",
+      "witness": "W-AO-TCS-003",
+      "local_evidence": ["TCS-AUTH-CONF-001"],
+      "promotes_tcs": false,
+      "closes_global": false
+    },
+    {
+      "case_id": "AO-TCS-004",
+      "ao_signal": "perdida_permiso",
+      "expected_tcs_failure": "TCS-F5",
+      "expected_state": "bloqueo_de_concordancia",
+      "expected": "relacion_ao_tcs_local",
+      "witness": "W-AO-TCS-004",
+      "local_evidence": ["C-002", "AO-REPORT-SERIAL-001"],
+      "promotes_tcs": false,
+      "closes_global": false
+    },
+    {
+      "case_id": "AO-TCS-005",
+      "ao_signal": "divergencia_clasificada",
+      "expected_tcs_failure": "TCS-F10",
+      "expected_state": "discordancia_global_controlada",
+      "expected": "relacion_ao_tcs_local",
+      "witness": "W-AO-TCS-005",
+      "local_evidence": ["AO-EXT-CONF-001"],
+      "promotes_tcs": false,
+      "closes_global": false
+    },
+    {
+      "case_id": "AO-TCS-006",
+      "ao_signal": "no_comparable",
+      "expected_tcs_failure": "TCS-F10",
+      "expected_state": "no_comparable",
+      "expected": "no_comparable_clasificado",
+      "witness": "W-AO-TCS-006",
+      "local_evidence": ["AO-PPI-BRIDGE-003"],
+      "promotes_tcs": false,
+      "closes_global": false
+    },
+    {
+      "case_id": "AO-TCS-007",
+      "ao_signal": "historial_autoridad",
+      "expected_tcs_failure": "TCS-F7",
+      "expected_state": "bloqueo_de_concordancia",
+      "expected": "relacion_ao_tcs_local",
+      "witness": "W-AO-TCS-007",
+      "local_evidence": ["RH-001", "TCS-F7"],
+      "promotes_tcs": false,
+      "closes_global": false
+    },
+    {
+      "case_id": "AO-TCS-008",
+      "ao_signal": "falta_testigo",
+      "expected_tcs_failure": "TCS-F1",
+      "expected_state": "bloqueo_de_concordancia",
+      "expected": "bloqueo_mapeo_incompleto",
+      "witness": "",
+      "local_evidence": ["fixture"],
+      "promotes_tcs": false,
+      "closes_global": false
+    },
+    {
+      "case_id": "AO-TCS-009",
+      "ao_signal": "aumento_autoridad",
+      "expected_tcs_failure": "TCS-F2",
+      "expected_state": "bloqueo_de_concordancia",
+      "expected": "bloqueo_canonizacion_tcs",
+      "witness": "W-AO-TCS-009",
+      "local_evidence": ["fixture"],
+      "promotes_tcs": true,
+      "closes_global": false
+    },
+    {
+      "case_id": "AO-TCS-010",
+      "ao_signal": "bloqueo_concordancia",
+      "expected_tcs_failure": "TCS-F10",
+      "expected_state": "bloqueo_de_concordancia",
+      "expected": "bloqueo_cierre_global",
+      "witness": "W-AO-TCS-010",
+      "local_evidence": ["fixture"],
+      "promotes_tcs": false,
+      "closes_global": true
+    }
+  ]
+}

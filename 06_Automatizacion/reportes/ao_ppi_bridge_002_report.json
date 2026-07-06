@@ -1,0 +1,156 @@
+{
+  "report_id": "AO-PPI-BRIDGE-002-20260706-153515",
+  "expediente": "AO-001",
+  "algoritmo": "AO-PPI-BRIDGE-002",
+  "suite_id": "AO-PPI-BRIDGE-002-CASES",
+  "resultado": "ok",
+  "recomendacion": "mantener_deudas_globales_abiertas",
+  "transformacion_permitida": false,
+  "scope_guard": {
+    "modifica_doc04": false,
+    "modifica_canon": false,
+    "crea_nivel_c": false,
+    "reabre_p_pi_0": false,
+    "reabre_p_pi_1": false,
+    "cierra_confluencia_global": false,
+    "cierra_equivalencia_global": false,
+    "promueve_report_layer": false,
+    "promueve_r4_gamma": false,
+    "autoriza_transformacion": false
+  },
+  "strong_case_criteria": {
+    "testigo_comun": true,
+    "evidencia_preservada": true,
+    "decision_preservada": true,
+    "permiso_no_mutante": true,
+    "deuda_preservada": true,
+    "autoridad_no_aumentada": true,
+    "salida_segura": true
+  },
+  "debt_guard": {
+    "confluencia_global_abierta": true,
+    "equivalencia_global_abierta": true,
+    "serializacion_report_layer_abierta": true,
+    "relacion_tcs_abierta": true,
+    "r4_gamma_exportacion_general_bloqueada": true
+  },
+  "summary": {
+    "cases": 8,
+    "passed": 8,
+    "failed": 0,
+    "findings": 0,
+    "by_kind": {
+      "equivalence": {
+        "cases": 5,
+        "passed": 5,
+        "failed": 0
+      },
+      "confluence": {
+        "cases": 3,
+        "passed": 3,
+        "failed": 0
+      }
+    },
+    "by_outcome": {
+      "equivalencia_fuerte_local": 2,
+      "divergencia_clasificada": 2,
+      "confluencia_fuerte_local": 1,
+      "bloqueo_por_testigo": 1,
+      "bloqueo_report_layer_incompleto": 1,
+      "bloqueo_por_autoridad": 1
+    }
+  },
+  "results": [
+    {
+      "case_id": "AO-PPI-STRONG-001",
+      "kind": "equivalence",
+      "expected": "equivalencia_fuerte_local",
+      "actual": "equivalencia_fuerte_local",
+      "passed": true,
+      "detail": "equivalence => equivalencia_fuerte_local",
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-PPI-STRONG-002",
+      "kind": "equivalence",
+      "expected": "equivalencia_fuerte_local",
+      "actual": "equivalencia_fuerte_local",
+      "passed": true,
+      "detail": "equivalence => equivalencia_fuerte_local",
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-PPI-STRONG-003",
+      "kind": "equivalence",
+      "expected": "divergencia_clasificada",
+      "actual": "divergencia_clasificada",
+      "passed": true,
+      "detail": "equivalence => divergencia_clasificada",
+      "blockers": [],
+      "warnings": [
+        "signature:diverge_bajo_testigo"
+      ]
+    },
+    {
+      "case_id": "AO-PPI-STRONG-004",
+      "kind": "confluence",
+      "expected": "confluencia_fuerte_local",
+      "actual": "confluencia_fuerte_local",
+      "passed": true,
+      "detail": "confluence => confluencia_fuerte_local",
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-PPI-STRONG-005",
+      "kind": "confluence",
+      "expected": "divergencia_clasificada",
+      "actual": "divergencia_clasificada",
+      "passed": true,
+      "detail": "confluence => divergencia_clasificada",
+      "blockers": [],
+      "warnings": [
+        "signature:diverge_bajo_testigo"
+      ]
+    },
+    {
+      "case_id": "AO-PPI-STRONG-006",
+      "kind": "equivalence",
+      "expected": "bloqueo_por_testigo",
+      "actual": "bloqueo_por_testigo",
+      "passed": true,
+      "detail": "equivalence => bloqueo_por_testigo",
+      "blockers": [
+        "witness:no_comun"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-PPI-STRONG-007",
+      "kind": "confluence",
+      "expected": "bloqueo_report_layer_incompleto",
+      "actual": "bloqueo_report_layer_incompleto",
+      "passed": true,
+      "detail": "confluence => bloqueo_report_layer_incompleto",
+      "blockers": [
+        "report_layer:incompleto"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-PPI-STRONG-008",
+      "kind": "equivalence",
+      "expected": "bloqueo_por_autoridad",
+      "actual": "bloqueo_por_autoridad",
+      "passed": true,
+      "detail": "equivalence => bloqueo_por_autoridad",
+      "blockers": [
+        "autoridad_aumentada:expediente->canon"
+      ],
+      "warnings": []
+    }
+  ],
+  "findings": []
+}

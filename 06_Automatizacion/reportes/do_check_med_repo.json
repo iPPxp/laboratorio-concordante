@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-CHECK-MED-LIVE-20260706-134826",
+  "report_id": "DO-CHECK-MED-LIVE-20260706-153511",
   "expediente": "AUT-001",
   "algoritmo": "DO-CHECK-MED-001",
   "resultado": "advertencia",
@@ -8,17 +8,17 @@
   "transformacion_permitida": false,
   "scope": "repo",
   "summary": {
-    "files_checked": 401,
-    "findings": 353,
+    "files_checked": 422,
+    "findings": 433,
     "by_severity": {
-      "warning": 353
+      "warning": 433
     },
     "by_check": {
-      "MED-REFERENCIAS": 260,
+      "MED-REFERENCIAS": 330,
       "MED-NIVELES": 68,
-      "MED-CERRADOS": 4,
+      "MED-CERRADOS": 5,
       "MED-ASCII": 1,
-      "MED-ESTATUS": 9,
+      "MED-ESTATUS": 18,
       "MED-HISTORIAL": 11
     }
   },
@@ -230,6 +230,22 @@
         },
         {
           "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CHANGELOG.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CHANGELOG.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
           "check_id": "MED-NIVELES",
           "kind": "accion_de_nivel_sensible",
           "file": "CHANGELOG.md",
@@ -264,6 +280,14 @@
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
           "file": "CURRENT_STATE.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CURRENT_STATE.md",
           "detail": "MOC/AO",
           "evidence": ""
         },
@@ -345,6 +369,14 @@
           "kind": "referencia_no_materializada",
           "file": "CURRENT_STATE.md",
           "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CURRENT_STATE.md",
+          "detail": "AO/TCS",
           "evidence": ""
         },
         {
@@ -567,7 +599,23 @@
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
           "file": "HANDOFF.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "HANDOFF.md",
           "detail": "ROADMAP.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "HANDOFF.md",
+          "detail": "AO/TCS",
           "evidence": ""
         },
         {
@@ -970,7 +1018,16 @@
       "file": "README.md",
       "surface": "estado_operativo",
       "estatus": "no_clasificado",
-      "findings": []
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "README.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        }
+      ]
     },
     {
       "file": "VISION_PAPER_FINAL_REFERENCIAS.md",
@@ -1090,6 +1147,22 @@
       "findings": [
         {
           "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
           "check_id": "MED-NIVELES",
           "kind": "accion_de_nivel_sensible",
           "file": "03_Expedientes/AO-001.md",
@@ -1105,6 +1178,29 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md",
+          "detail": "06_Automatizacion/reportes/ao_ext_cov_001_report.md",
+          "evidence": ""
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/AO-001_Auditoria_Compuerta_Exportacion_R4_Gamma.md",
       "surface": "expediente",
       "estatus": "auditoria favorable de bloqueo controlado",
@@ -1115,6 +1211,29 @@
       "surface": "expediente",
       "estatus": "auditoria favorable",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md",
+          "detail": "06_Automatizacion/reportes/ao_authority_global_001_report.md",
+          "evidence": ""
+        }
+      ]
     },
     {
       "file": "03_Expedientes/AO-001_Auditoria_Formalizacion_Acotada_Doc04.md",
@@ -1148,6 +1267,60 @@
       "surface": "expediente",
       "estatus": "auditoria provisional de expediente",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Matriz_Condiciones_Cierre_Global_003.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable con limites",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Auditoria_Matriz_Condiciones_Cierre_Global_003.md",
+          "detail": "py -3 -m unittest 06_Automatizacion/test_ao_ppi_bridge_003.py",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Auditoria_Matriz_Condiciones_Cierre_Global_003.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md",
+          "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        }
+      ]
     },
     {
       "file": "03_Expedientes/AO-001_Auditoria_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md",
@@ -1192,7 +1365,59 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Auditoria_Puente_Confluencia_Equivalencia_002.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable con limites",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Auditoria_Puente_Confluencia_Equivalencia_002.md",
+          "detail": "py -3 -m unittest 06_Automatizacion/test_ao_ppi_bridge_002.py",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md",
+          "detail": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/AO-001_Auditoria_REPORT_LAYER_Nivel_C.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Serializacion_REPORT_LAYER_001.md",
       "surface": "expediente",
       "estatus": "auditoria favorable con limites",
       "findings": []
@@ -1202,6 +1427,21 @@
       "surface": "expediente",
       "estatus": "bateria provisional aceptada",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Cobertura_Externa_Amplia_001.md",
+      "surface": "expediente",
+      "estatus": "aceptada localmente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Cobertura_Externa_Amplia_001.md",
+          "detail": "06_Automatizacion/reportes/ao_ext_cov_001_report.md",
+          "evidence": ""
+        }
+      ]
     },
     {
       "file": "03_Expedientes/AO-001_Compuerta_Exportacion_R4_Gamma.md",
@@ -1216,10 +1456,40 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Criterio_Autoridad_Global_001.md",
+      "surface": "expediente",
+      "estatus": "aceptado localmente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Criterio_Autoridad_Global_001.md",
+          "detail": "06_Automatizacion/reportes/ao_authority_global_001_report.md",
+          "evidence": ""
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/AO-001_Decision_Apertura.md",
       "surface": "expediente",
       "estatus": "decision provisional de expediente",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Cobertura_Externa_Amplia_001.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Decision_Cobertura_Externa_Amplia_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        }
+      ]
     },
     {
       "file": "03_Expedientes/AO-001_Decision_Compuerta_Exportacion_R4_Gamma.md",
@@ -1232,6 +1502,21 @@
       "surface": "expediente",
       "estatus": "decision provisional de expediente",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Criterio_Autoridad_Global_001.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Decision_Criterio_Autoridad_Global_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        }
+      ]
     },
     {
       "file": "03_Expedientes/AO-001_Decision_Estatus_Casos_Prueba_Algebra_Operacional.md",
@@ -1276,10 +1561,77 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Decision_Matriz_Condiciones_Cierre_Global_003.md",
+      "surface": "expediente",
+      "estatus": "decision provisional aceptada",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Decision_Matriz_Condiciones_Cierre_Global_003.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Decision_Matriz_Condiciones_Cierre_Global_003.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/AO-001_Decision_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md",
       "surface": "expediente",
       "estatus": "decision de expediente aceptada",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Puente_Confluencia_Equivalencia_002.md",
+      "surface": "expediente",
+      "estatus": "decision provisional aceptada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Relacion_AO_TCS_001.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Decision_Relacion_AO_TCS_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        }
+      ]
     },
     {
       "file": "03_Expedientes/AO-001_Decision_REPORT_LAYER_Nivel_C.md",
@@ -1292,6 +1644,37 @@
       "surface": "expediente",
       "estatus": "decision provisional de expediente",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        }
+      ]
     },
     {
       "file": "03_Expedientes/AO-001_Evaluacion_Formalizacion_Doc04_R001_TB.md",
@@ -1324,6 +1707,60 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Matriz_Condiciones_Cierre_Global_003.md",
+      "surface": "expediente",
+      "estatus": "matriz local no mutante",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Matriz_Condiciones_Cierre_Global_003.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Matriz_Condiciones_Cierre_Global_003.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Matriz_Condiciones_Cierre_Global_003.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Matriz_Consolidada_Cierre_Global_004.md",
+      "surface": "expediente",
+      "estatus": "aceptada localmente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Matriz_Consolidada_Cierre_Global_004.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Matriz_Consolidada_Cierre_Global_004.md",
+          "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md",
+          "evidence": ""
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/AO-001_Opciones_Prueba_Confluencia_Externa.md",
       "surface": "expediente",
       "estatus": "opciones provisionales de prueba",
@@ -1354,10 +1791,62 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Puente_Confluencia_Equivalencia_002.md",
+      "surface": "expediente",
+      "estatus": "bateria local no mutante",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Relacion_AO_TCS_001.md",
+      "surface": "expediente",
+      "estatus": "aceptada localmente",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Relacion_AO_TCS_001.md",
+          "detail": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md",
+          "evidence": ""
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/AO-001_Relacion_REPORT_LAYER_Doc04_Amplio.md",
       "surface": "expediente",
       "estatus": "precision local aceptada",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Serializacion_REPORT_LAYER_001.md",
+      "surface": "expediente",
+      "estatus": "serializacion local no mutante",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Serializacion_REPORT_LAYER_001.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Serializacion_REPORT_LAYER_001.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-CERRADOS",
+          "kind": "expediente_cerrado_afectado",
+          "file": "03_Expedientes/AO-001_Serializacion_REPORT_LAYER_001.md",
+          "detail": "La linea parece afectar expediente cerrado: P-PI.0",
+          "evidence": "- reabre `P-PI.0` o `P-PI.1`;"
+        }
+      ]
     },
     {
       "file": "03_Expedientes/AUD-001_Actualizacion_C002_JSON_Fixtures_Adapter.md",
@@ -4813,6 +5302,54 @@
         },
         {
           "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/ao_authority_global_001_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/ao_ext_cov_001_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
           "check_id": "MED-NIVELES",
           "kind": "accion_de_nivel_sensible",
           "file": "05_Estado_Proyecto/DECISIONES.md",
@@ -4924,7 +5461,7 @@
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
           "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
-          "detail": "MOC/TCS",
+          "detail": "AO/TCS",
           "evidence": ""
         },
         {
@@ -4932,7 +5469,7 @@
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
           "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
-          "detail": "MOC/AO",
+          "detail": "AO/TCS",
           "evidence": ""
         },
         {
@@ -4940,15 +5477,7 @@
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
           "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
-          "detail": "MOC/AO",
-          "evidence": ""
-        },
-        {
-          "severity": "warning",
-          "check_id": "MED-REFERENCIAS",
-          "kind": "referencia_no_materializada",
-          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
-          "detail": "MOC/AO",
+          "detail": "AO/TCS",
           "evidence": ""
         },
         {
@@ -4957,6 +5486,46 @@
           "kind": "referencia_no_materializada",
           "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
           "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+          "detail": "AO/TCS",
           "evidence": ""
         }
       ]
@@ -5006,6 +5575,14 @@
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
           "file": "05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md",
           "detail": "MOC/TCS",
           "evidence": ""
         },
@@ -5038,6 +5615,14 @@
           "kind": "referencia_no_materializada",
           "file": "06_Automatizacion/README.md",
           "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "AO/TCS",
           "evidence": ""
         },
         {
@@ -5237,6 +5822,134 @@
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
           "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_ppi_bridge_002_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_ppi_bridge_002_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_ppi_bridge_003_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_ppi_bridge_003_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/report_layer_serialization_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/report_layer_serialization_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_tcs_rel_001_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_tcs_rel_001_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_authority_global_001_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_authority_global_001_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_ext_cov_001_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_ext_cov_001_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_ppi_bridge_004_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_ppi_bridge_004_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
           "detail": "reportes/report_layer_c002_gate_report.md",
           "evidence": ""
         },
@@ -5309,6 +6022,70 @@
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
           "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/ao_ppi_bridge_002_cases.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/ao_ppi_bridge_003_matrix.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/report_layer_serialization_cases.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/ao_tcs_rel_001_cases.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "AO/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/ao_authority_global_001_cases.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/ao_ext_cov_001_cases.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/ao_ppi_bridge_004_matrix.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
           "detail": "fixtures/report_layer_c002_cases.json",
           "evidence": ""
         },
@@ -5318,6 +6095,14 @@
           "kind": "referencia_no_materializada",
           "file": "06_Automatizacion/README.md",
           "detail": "fixtures/moc_cases.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "AO/TCS",
           "evidence": ""
         },
         {
@@ -5556,6 +6341,22 @@
     },
     {
       "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CHANGELOG.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CHANGELOG.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
       "check_id": "MED-NIVELES",
       "kind": "accion_de_nivel_sensible",
       "file": "CHANGELOG.md",
@@ -5583,6 +6384,14 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "CURRENT_STATE.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CURRENT_STATE.md",
       "detail": "MOC/AO",
       "evidence": ""
     },
@@ -5664,6 +6473,14 @@
       "kind": "referencia_no_materializada",
       "file": "CURRENT_STATE.md",
       "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CURRENT_STATE.md",
+      "detail": "AO/TCS",
       "evidence": ""
     },
     {
@@ -5879,7 +6696,23 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "HANDOFF.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "HANDOFF.md",
       "detail": "ROADMAP.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "HANDOFF.md",
+      "detail": "AO/TCS",
       "evidence": ""
     },
     {
@@ -6252,6 +7085,14 @@
     },
     {
       "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "README.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
       "check_id": "MED-NIVELES",
       "kind": "accion_de_nivel_sensible",
       "file": "01_Canon/M-001_Auditoria_Arquitectonica.md",
@@ -6276,6 +7117,22 @@
     },
     {
       "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
       "check_id": "MED-NIVELES",
       "kind": "accion_de_nivel_sensible",
       "file": "03_Expedientes/AO-001.md",
@@ -6286,8 +7143,80 @@
       "severity": "warning",
       "check_id": "MED-ESTATUS",
       "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md",
+      "detail": "06_Automatizacion/reportes/ao_ext_cov_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md",
+      "detail": "06_Automatizacion/reportes/ao_authority_global_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
       "file": "03_Expedientes/AO-001_Auditoria_Formalizacion_Amplia_Doc04.md",
       "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Auditoria_Matriz_Condiciones_Cierre_Global_003.md",
+      "detail": "py -3 -m unittest 06_Automatizacion/test_ao_ppi_bridge_003.py",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Auditoria_Matriz_Condiciones_Cierre_Global_003.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md",
+      "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md",
+      "detail": "AO/TCS",
       "evidence": ""
     },
     {
@@ -6305,6 +7234,206 @@
       "file": "03_Expedientes/AO-001_Auditoria_Prueba_Gamma_Externa.md",
       "detail": "H-B.6/H-B.7",
       "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Auditoria_Puente_Confluencia_Equivalencia_002.md",
+      "detail": "py -3 -m unittest 06_Automatizacion/test_ao_ppi_bridge_002.py",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md",
+      "detail": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Cobertura_Externa_Amplia_001.md",
+      "detail": "06_Automatizacion/reportes/ao_ext_cov_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Criterio_Autoridad_Global_001.md",
+      "detail": "06_Automatizacion/reportes/ao_authority_global_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Decision_Cobertura_Externa_Amplia_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Decision_Criterio_Autoridad_Global_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Decision_Matriz_Condiciones_Cierre_Global_003.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Decision_Matriz_Condiciones_Cierre_Global_003.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Decision_Relacion_AO_TCS_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Matriz_Condiciones_Cierre_Global_003.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Matriz_Condiciones_Cierre_Global_003.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Matriz_Condiciones_Cierre_Global_003.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Matriz_Consolidada_Cierre_Global_004.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Matriz_Consolidada_Cierre_Global_004.md",
+      "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Relacion_AO_TCS_001.md",
+      "detail": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Serializacion_REPORT_LAYER_001.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Serializacion_REPORT_LAYER_001.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-CERRADOS",
+      "kind": "expediente_cerrado_afectado",
+      "file": "03_Expedientes/AO-001_Serializacion_REPORT_LAYER_001.md",
+      "detail": "La linea parece afectar expediente cerrado: P-PI.0",
+      "evidence": "- reabre `P-PI.0` o `P-PI.1`;"
     },
     {
       "severity": "warning",
@@ -7708,6 +8837,54 @@
     },
     {
       "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/ao_authority_global_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/ao_ext_cov_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
       "check_id": "MED-NIVELES",
       "kind": "accion_de_nivel_sensible",
       "file": "05_Estado_Proyecto/DECISIONES.md",
@@ -7791,7 +8968,7 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
-      "detail": "MOC/TCS",
+      "detail": "AO/TCS",
       "evidence": ""
     },
     {
@@ -7799,7 +8976,7 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
-      "detail": "MOC/AO",
+      "detail": "AO/TCS",
       "evidence": ""
     },
     {
@@ -7807,15 +8984,7 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
-      "detail": "MOC/AO",
-      "evidence": ""
-    },
-    {
-      "severity": "warning",
-      "check_id": "MED-REFERENCIAS",
-      "kind": "referencia_no_materializada",
-      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
-      "detail": "MOC/AO",
+      "detail": "AO/TCS",
       "evidence": ""
     },
     {
@@ -7824,6 +8993,46 @@
       "kind": "referencia_no_materializada",
       "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
       "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+      "detail": "AO/TCS",
       "evidence": ""
     },
     {
@@ -7847,6 +9056,14 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md",
       "detail": "MOC/TCS",
       "evidence": ""
     },
@@ -7872,6 +9089,14 @@
       "kind": "referencia_no_materializada",
       "file": "06_Automatizacion/README.md",
       "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "AO/TCS",
       "evidence": ""
     },
     {
@@ -8071,6 +9296,134 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_ppi_bridge_002_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_ppi_bridge_002_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_ppi_bridge_003_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_ppi_bridge_003_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/report_layer_serialization_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/report_layer_serialization_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_tcs_rel_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_tcs_rel_001_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_authority_global_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_authority_global_001_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_ext_cov_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_ext_cov_001_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_ppi_bridge_004_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_ppi_bridge_004_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
       "detail": "reportes/report_layer_c002_gate_report.md",
       "evidence": ""
     },
@@ -8143,6 +9496,70 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/ao_ppi_bridge_002_cases.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/ao_ppi_bridge_003_matrix.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/report_layer_serialization_cases.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/ao_tcs_rel_001_cases.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "AO/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/ao_authority_global_001_cases.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/ao_ext_cov_001_cases.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/ao_ppi_bridge_004_matrix.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
       "detail": "fixtures/report_layer_c002_cases.json",
       "evidence": ""
     },
@@ -8152,6 +9569,14 @@
       "kind": "referencia_no_materializada",
       "file": "06_Automatizacion/README.md",
       "detail": "fixtures/moc_cases.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "AO/TCS",
       "evidence": ""
     },
     {

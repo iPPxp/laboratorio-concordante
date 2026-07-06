@@ -1,6 +1,6 @@
 # LAB_CONTINUITY_REPORT
 
-report_id: DO-LAB-CONTINUITY-20260706-134840
+report_id: DO-LAB-CONTINUITY-20260706-153515
 expediente: AUT-001
 algoritmo: DO-LAB-CONTINUITY-001
 resultado: advertencia
@@ -10,16 +10,16 @@ scope: repo
 
 ## Estado operativo
 
-- expediente activo inmediato: `AO-001` queda como frente operativo inmediato para profundizar `AO-PPI-BRIDGE-001`, mantener bloqueada la exportacion general de R4/Gamma, ampliar pruebas heterogeneas de `REPORT_LAYER` solo si una decision futura lo exige, conservar `AO-DOC04-WIDE-TEST-001` como evidencia local no mutante y usar `REPORT-LAYER-C002-GATE-001` solo como compuerta no mutante conforme a `C-002`.
-- proximo objetivo: Ampliar `AO-DOC04-WIDE-TEST-001` solo si se requieren casos heterogeneos adicionales de `REPORT_LAYER`, serializacion interfrente o nuevas rutas de `Pi_rep`; la prueba local inicial de 8 casos, la precision de `REPORT_LAYER`, su permanencia local pre-C y la compuerta no mutante `C-002` ya quedaron atendidas por `D-2026-07-06-007`, `D-2026-07-06-014` y `D-2026-07-06-015`.
-- ultima decision operativa: `RH-001_Decision_Reconciliacion_PM001.md` (`D-2026-07-06-016`): acepta `RH-PM-REC-001`; `PM-001` queda reconciliado solo como deuda historica condicionada, no como expediente activo ni protocolo materializado.
+- expediente activo inmediato: `AO-001` queda como frente operativo inmediato con `AO-PPI-BRIDGE-004` aceptado como matriz consolidada local. La siguiente ruta defensible requiere decision separada: protocolo AO reproducible independiente, promocion formal de `REPORT_LAYER`, exportacion R4/Gamma o cierre global; ninguna queda autorizada.
+- proximo objetivo: Conservar `AO-PPI-BRIDGE-004` como matriz consolidada aceptada; no usarla como cierre global.
+- ultima decision operativa: `AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md` (`D-2026-07-06-023`): acepta `AO-PPI-BRIDGE-004` como matriz consolidada local; deja cinco condiciones `satisfecha_local`, dos `parcial_local`, dos `faltante_global` y tres `bloqueada_por_alcance`, con `global_closure_authorized: false`.
 
 ## Cobertura integrada
 
 - tablero: ok (0 hallazgos)
-- chequeo medio: advertencia (401 archivos, 353 hallazgos)
+- chequeo medio: advertencia (422 archivos, 433 hallazgos)
 - automatizaciones presentes: 11/7
-- hallazgos combinados: 353
+- hallazgos combinados: 433
 
 ## Riesgos
 
@@ -48,9 +48,12 @@ scope: repo
 - [warning] DO-CHECK-MED-001 CHANGELOG.md - referencia_no_materializada: MOC/AO
 - [warning] DO-CHECK-MED-001 CHANGELOG.md - referencia_no_materializada: MOC/C-001/C-002
 - [warning] DO-CHECK-MED-001 CHANGELOG.md - referencia_no_materializada: MOC/C-001/C-002
+- [warning] DO-CHECK-MED-001 CHANGELOG.md - referencia_no_materializada: AO/TCS
+- [warning] DO-CHECK-MED-001 CHANGELOG.md - referencia_no_materializada: AO/TCS
 - [warning] DO-CHECK-MED-001 CHANGELOG.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - Actualizado el estado del proyecto: el siguiente objetivo es decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial de Nivel C.
 - [warning] DO-CHECK-MED-001 CHANGELOG.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - Creada `DO-001_Decision_Promocion_SPEC-AUD-001.md` con `PROM-SPEC-AUD-001`: se promueve `SPEC-AUD-001_Candidata` a documento oficial de Nivel C.
 - [warning] DO-CHECK-MED-001 CHANGELOG.md - expediente_cerrado_afectado: La linea parece afectar expediente cerrado: HXI-001 | evidencia: - Creado `HXI-001_Reapertura_Operativa.md` como `HXI-REOPEN-001`: `HXI-001` se reabre como frente activo inmediato para aplicar la compuerta de admision formal posterior.
+- [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: AO/TCS
 - [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/AO
 - [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/AO
 - [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/TCS
@@ -60,10 +63,7 @@ scope: repo
 - [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/AO
 - [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/C-001/C-002
 - [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/C-001/C-002
-- [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/AO
-- [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/TCS
-- [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/AO
-- ... 313 hallazgos adicionales en JSON.
+- ... 393 hallazgos adicionales en JSON.
 
 ## Siguientes acciones
 

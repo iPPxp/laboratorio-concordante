@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-LAB-RUN-20260706-134842",
+  "report_id": "DO-LAB-RUN-20260706-153516",
   "expediente": "AUT-001",
   "algoritmo": "DO-LAB-RUN-001",
   "resultado": "advertencia",
@@ -12,7 +12,7 @@
       "algorithm": "DO-CHECK-MIN-001",
       "resultado": "advertencia",
       "recomendacion": "continuar_sin_transformar",
-      "findings": 172,
+      "findings": 214,
       "markdown": "06_Automatizacion/reportes/do_check_min_repo.md",
       "json": "06_Automatizacion/reportes/do_check_min_repo.json"
     },
@@ -21,7 +21,7 @@
       "algorithm": "DO-CHECK-MED-001",
       "resultado": "advertencia",
       "recomendacion": "continuar_sin_transformar",
-      "findings": 353,
+      "findings": 433,
       "markdown": "06_Automatizacion/reportes/do_check_med_repo.md",
       "json": "06_Automatizacion/reportes/do_check_med_repo.json"
     },
@@ -39,7 +39,7 @@
       "algorithm": "DO-LAB-CONTINUITY-001",
       "resultado": "advertencia",
       "recomendacion": "continuar_sin_transformar",
-      "findings": 353,
+      "findings": 433,
       "markdown": "06_Automatizacion/reportes/lab_continuity_report.md",
       "json": "06_Automatizacion/reportes/lab_continuity_report.json"
     },
@@ -48,7 +48,7 @@
       "algorithm": "DO-LAB-RISK-001",
       "resultado": "advertencia_clasificada",
       "recomendacion": "mantener_cierre_operativo",
-      "findings": 354,
+      "findings": 458,
       "markdown": "06_Automatizacion/reportes/lab_risk_report.md",
       "json": "06_Automatizacion/reportes/lab_risk_report.json"
     },
@@ -78,6 +78,69 @@
       "findings": 0,
       "markdown": "06_Automatizacion/reportes/ao_doc04_wide_report.md",
       "json": "06_Automatizacion/reportes/ao_doc04_wide_report.json"
+    },
+    {
+      "name": "ao_ppi_bridge_002",
+      "algorithm": "AO-PPI-BRIDGE-002",
+      "resultado": "ok",
+      "recomendacion": "mantener_deudas_globales_abiertas",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/ao_ppi_bridge_002_report.md",
+      "json": "06_Automatizacion/reportes/ao_ppi_bridge_002_report.json"
+    },
+    {
+      "name": "ao_ppi_bridge_003",
+      "algorithm": "AO-PPI-BRIDGE-003",
+      "resultado": "ok",
+      "recomendacion": "mantener_cierre_global_no_autorizado",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/ao_ppi_bridge_003_report.md",
+      "json": "06_Automatizacion/reportes/ao_ppi_bridge_003_report.json"
+    },
+    {
+      "name": "report_layer_serialization",
+      "algorithm": "AO-REPORT-SERIAL-001",
+      "resultado": "ok",
+      "recomendacion": "mantener_serializacion_local_pre_c",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/report_layer_serialization_report.md",
+      "json": "06_Automatizacion/reportes/report_layer_serialization_report.json"
+    },
+    {
+      "name": "ao_tcs_rel_001",
+      "algorithm": "AO-TCS-REL-001",
+      "resultado": "ok",
+      "recomendacion": "mantener_tcs_provisional_no_canonico",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md",
+      "json": "06_Automatizacion/reportes/ao_tcs_rel_001_report.json"
+    },
+    {
+      "name": "ao_authority_global_001",
+      "algorithm": "AO-AUTH-GLOBAL-001",
+      "resultado": "ok",
+      "recomendacion": "mantener_criterio_autoridad_local",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/ao_authority_global_001_report.md",
+      "json": "06_Automatizacion/reportes/ao_authority_global_001_report.json"
+    },
+    {
+      "name": "ao_ext_cov_001",
+      "algorithm": "AO-EXT-COV-001",
+      "resultado": "ok",
+      "recomendacion": "mantener_cobertura_externa_local_parcial",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/ao_ext_cov_001_report.md",
+      "json": "06_Automatizacion/reportes/ao_ext_cov_001_report.json"
+    },
+    {
+      "name": "ao_ppi_bridge_004",
+      "algorithm": "AO-PPI-BRIDGE-004",
+      "resultado": "ok",
+      "recomendacion": "mantener_cierre_global_no_autorizado",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md",
+      "json": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.json"
     },
     {
       "name": "report_layer_c002_gate",

@@ -64,6 +64,14 @@ Nota posterior 2026-07-06-015: `AUT-003` queda aceptado por `D-2026-07-06-015`; 
 
 Nota posterior 2026-07-06-016: `RH-001` / `PM-001` quedan revisados por `D-2026-07-06-016`; `PM-001` queda reconciliado solo como deuda historica condicionada, sin expediente activo ni protocolo materializado.
 
+Nota posterior 2026-07-06-017: `AO-PPI-BRIDGE-002` queda aceptado por `D-2026-07-06-017` como bateria fuerte local no mutante para Confluencia y Equivalencia; ejecuta 8/8 casos, conserva divergencias y bloqueos clasificados y no cierra Confluencia global ni Equivalencia global.
+
+Nota posterior 2026-07-06-018: `AO-PPI-BRIDGE-003` queda aceptado por `D-2026-07-06-018` como matriz de condiciones faltantes para cierre global; ejecuta 10 condiciones y 9 casos heterogeneos de `REPORT_LAYER`, con `global_closure_authorized: false`.
+
+Nota posterior 2026-07-06-019: `AO-REPORT-SERIAL-001` queda aceptado por `D-2026-07-06-019` como serializacion interfrente local de `REPORT_LAYER`; atiende localmente `AO-PPI-GC-004`, conserva `global_export_authorized: false` y no promueve `REPORT_LAYER`.
+
+Nota posterior 2026-07-06-023: `AO-TCS-REL-001`, `AO-AUTH-GLOBAL-001`, `AO-EXT-COV-001` y `AO-PPI-BRIDGE-004` quedan aceptados por `D-2026-07-06-020` a `D-2026-07-06-023` como avance local no mutante. La matriz consolidada mantiene `global_closure_authorized: false`, `global_export_authorized: false`, `REPORT_LAYER` local pre-C y `P-PI.0` / `P-PI.1` cerrados como frentes.
+
 ## Aviso de desactivacion
 
 Este archivo queda congelado como registro historico operativo.
@@ -184,10 +192,10 @@ El manifiesto del paquete esta en `HANDOFF_PACKAGE.md`, tambien inactivo hasta n
 
 ## Estado corto
 
-- Frente recomendado inmediato vigente por nota posterior: profundizar `AO-PPI-BRIDGE-001` hacia Confluencia y Equivalencia global, o ampliar `AO-DOC04-WIDE-TEST-001` solo si se exigen casos heterogeneos/serializacion de `REPORT_LAYER`; `REPORT_LAYER` queda local pre-C y protegido por compuerta no mutante `C-002`. Conservar `MOC-ROUTE-011` como mantenimiento teorico-operativo sin ejecucion y `MOC-ROUTE-012` solo como relacion documental local con `C-001` / `C-002`. `PSI-001` quedo posteriormente independizado por `D-2026-07-03-006`; `AUT-001`, `AUT-002`, `R001-001`, `AUD-001` y `HXI-001` quedan cerrados.
+- Frente recomendado inmediato vigente por nota posterior: conservar `AO-PPI-BRIDGE-004` como matriz consolidada local y avanzar solo por decision separada hacia protocolo AO reproducible independiente, promocion formal de `REPORT_LAYER`, exportacion R4/Gamma o cierre global. `REPORT_LAYER` queda local pre-C y protegido por compuerta no mutante `C-002`; su serializacion local ya fue aceptada sin exportacion global. Conservar `MOC-ROUTE-011` como mantenimiento teorico-operativo sin ejecucion y `MOC-ROUTE-012` solo como relacion documental local con `C-001` / `C-002`. `PSI-001` quedo posteriormente independizado por `D-2026-07-03-006`; `AUT-001`, `AUT-002`, `R001-001`, `AUD-001` y `HXI-001` quedan cerrados.
 - Ultimos expedientes cerrados: `HXI-001` y `AUD-001`; ultimos expedientes tecnicos cerrados: `AUT-002` y `R001-001`.
 - Documentos oficiales de Nivel C activos: `C-001_Especificacion_Tecnica_Auditor.md` y `C-002_RFC_Operativo_Auditor_v0.md`.
-- Expediente activo recomendado vigente por nota posterior: `AO-001` queda como frente operativo inmediato para pruebas globales no resueltas y ampliacion condicional de `REPORT_LAYER`; `REPORT_LAYER` permanece local pre-C por `D-2026-07-06-014` y su herramienta no mutante queda en `AUT-003` por `D-2026-07-06-015`; `MOC-001` queda abierto solo en mantenimiento sin ejecucion y con relacion documental local a `C-001` / `C-002`; `TCS-001` sigue provisional. `HXI-001` queda cerrado en mantenimiento local. `AUD-001` queda cerrado en version documental/operativa v0 y produjo `C-002`; `PSI-001` quedo independizado; `AUT-001`, `AUT-002` y `R001-001` quedan cerrados; `P-PI.0` y `P-PI.1` quedan cerrados como frentes de trabajo; `B-001.5` queda congelado.
+- Expediente activo recomendado vigente por nota posterior: `AO-001` queda como frente operativo inmediato con `AO-PPI-BRIDGE-004` aceptado como matriz consolidada local; `AO/TCS`, autoridad y cobertura externa avanzan en grado local o parcial local, no global. `REPORT_LAYER` permanece local pre-C por `D-2026-07-06-014`, su herramienta no mutante queda en `AUT-003` por `D-2026-07-06-015` y su serializacion local queda aceptada por `D-2026-07-06-019`; `MOC-001` queda abierto solo en mantenimiento sin ejecucion y con relacion documental local a `C-001` / `C-002`; `TCS-001` sigue provisional. `HXI-001` queda cerrado en mantenimiento local. `AUD-001` queda cerrado en version documental/operativa v0 y produjo `C-002`; `PSI-001` quedo independizado; `AUT-001`, `AUT-002` y `R001-001` quedan cerrados; `P-PI.0` y `P-PI.1` quedan cerrados como frentes de trabajo; `B-001.5` queda congelado.
 - Algoritmo provisional activo: `DO-CHECK-001`.
 - Implementaciones activas: `DO-CHECK-MIN-001` en `06_Automatizacion/do_check_min.py`, `DO-CHECK-MED-001` en `06_Automatizacion/do_check_med.py`, `DO-STATE-BOARD-001` en `06_Automatizacion/lab_status_board.py` y `DO-LAB-CONTINUITY-001` en `06_Automatizacion/lab_continuity_report.py`, `DO-LAB-RISK-001` en `06_Automatizacion/lab_risk_classifier.py`, `DO-LAB-SUMMARY-001` en `06_Automatizacion/lab_executive_summary.py` y `DO-LAB-RUN-001` en `06_Automatizacion/lab_run.py`.
 - Regla provisional activa: `PERMISO-ACT-001`.
@@ -267,7 +275,7 @@ Las simulaciones asociadas van de `AUD-SIM-001` a `AUD-SIM-016`.
 Continuar con `AUD-001` desde `C-002`:
 
 ```text
-Ruta historica superada parcialmente: la implementacion no mutante conforme a `C-002` para `REPORT_LAYER` ya existe como `REPORT-LAYER-C002-GATE-001`, `AUD-001` esta cerrado en v0 y `REPORT_LAYER` permanece local pre-C. Siguen abiertas solo exportacion general R4/Gamma, serializacion/promocion futura de `REPORT_LAYER` si hay decision nueva, Confluencia global y Equivalencia global.
+Ruta historica superada parcialmente: la implementacion no mutante conforme a `C-002` para `REPORT_LAYER` ya existe como `REPORT-LAYER-C002-GATE-001`, la serializacion local interfrente ya existe como `AO-REPORT-SERIAL-001`, `AO/TCS`, autoridad y cobertura externa ya avanzaron localmente por `D-2026-07-06-020` a `D-2026-07-06-023`, `AUD-001` esta cerrado en v0 y `REPORT_LAYER` permanece local pre-C. Siguen abiertas solo protocolo AO reproducible independiente, exportacion general R4/Gamma, promocion futura de `REPORT_LAYER` si hay decision nueva, Confluencia global y Equivalencia global.
 ```
 
 Ruta sugerida inmediata:

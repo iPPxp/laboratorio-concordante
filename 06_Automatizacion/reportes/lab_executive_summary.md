@@ -1,6 +1,6 @@
 # LAB_EXECUTIVE_SUMMARY
 
-report_id: DO-LAB-SUMMARY-20260706-134842
+report_id: DO-LAB-SUMMARY-20260706-153516
 expediente: AUT-001
 algoritmo: DO-LAB-SUMMARY-001
 resultado: advertencia
@@ -15,32 +15,32 @@ transformacion_permitida: false
 
 ## Estado operativo
 
-- frente activo: `AO-001` queda como frente operativo inmediato para profundizar `AO-PPI-BRIDGE-001`, mantener bloqueada la exportacion general de R4/Gamma, ampliar pruebas heterogeneas de `REPORT_LAYER` solo si una decision futura lo exige, conservar `AO-DOC04-WIDE-TEST-001` como evidencia local no mutante y usar `REPORT-LAYER-C002-GATE-001` solo como compuerta no mutante conforme a `C-002`.
-- ultima decision: `RH-001_Decision_Reconciliacion_PM001.md` (`D-2026-07-06-016`): acepta `RH-PM-REC-001`; `PM-001` queda reconciliado solo como deuda historica condicionada, no como expediente activo ni protocolo materializado.
-- proximo objetivo: Ampliar `AO-DOC04-WIDE-TEST-001` solo si se requieren casos heterogeneos adicionales de `REPORT_LAYER`, serializacion interfrente o nuevas rutas de `Pi_rep`; la prueba local inicial de 8 casos, la precision de `REPORT_LAYER`, su permanencia local pre-C y la compuerta no mutante `C-002` ya quedaron atendidas por `D-2026-07-06-007`, `D-2026-07-06-014` y `D-2026-07-06-015`.
+- frente activo: `AO-001` queda como frente operativo inmediato con `AO-PPI-BRIDGE-004` aceptado como matriz consolidada local. La siguiente ruta defensible requiere decision separada: protocolo AO reproducible independiente, promocion formal de `REPORT_LAYER`, exportacion R4/Gamma o cierre global; ninguna queda autorizada.
+- ultima decision: `AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md` (`D-2026-07-06-023`): acepta `AO-PPI-BRIDGE-004` como matriz consolidada local; deja cinco condiciones `satisfecha_local`, dos `parcial_local`, dos `faltante_global` y tres `bloqueada_por_alcance`, con `global_closure_authorized: false`.
+- proximo objetivo: Conservar `AO-PPI-BRIDGE-004` como matriz consolidada aceptada; no usarla como cierre global.
 
 ## Riesgos clasificados
 
 - riesgo_activo: 0
 - advertencia_controlada: 25
-- deuda_documental: 206
-- advertencia_heredada: 62
+- deuda_documental: 309
+- advertencia_heredada: 63
 - observacion: 61
 
 ## Contexto de riesgos
 
-- bitacora_historica: 14
+- bitacora_historica: 15
 - control_auditoria: 1
-- decision_registrada: 26
-- guardrail: 83
+- decision_registrada: 37
+- guardrail: 95
 - meta_check: 12
-- riesgo_real: 218
+- riesgo_real: 298
 
 ## Severidad
 
 - alta: 4
-- media: 159
-- baja: 191
+- media: 206
+- baja: 248
 
 ## Riesgos activos principales
 
@@ -48,14 +48,21 @@ transformacion_permitida: false
 
 ## Automatizacion
 
-- DO-CHECK-MIN-001: advertencia (172 hallazgos)
-- DO-CHECK-MED-001: advertencia (353 hallazgos)
+- DO-CHECK-MIN-001: advertencia (214 hallazgos)
+- DO-CHECK-MED-001: advertencia (433 hallazgos)
 - DO-STATE-BOARD-001: ok (0 hallazgos)
-- DO-LAB-CONTINUITY-001: advertencia (353 hallazgos)
-- DO-LAB-RISK-001: advertencia_clasificada (354 hallazgos)
+- DO-LAB-CONTINUITY-001: advertencia (433 hallazgos)
+- DO-LAB-RISK-001: advertencia_clasificada (458 hallazgos)
 - R001-TABLE-CHECK-001: ok (0 hallazgos)
 - AO-EXT-CONF-001: ok (0 hallazgos)
 - AO-DOC04-WIDE-TEST-001: ok (0 hallazgos)
+- AO-PPI-BRIDGE-002: ok (0 hallazgos)
+- AO-PPI-BRIDGE-003: ok (0 hallazgos)
+- AO-REPORT-SERIAL-001: ok (0 hallazgos)
+- AO-TCS-REL-001: ok (0 hallazgos)
+- AO-AUTH-GLOBAL-001: ok (0 hallazgos)
+- AO-EXT-COV-001: ok (0 hallazgos)
+- AO-PPI-BRIDGE-004: ok (0 hallazgos)
 - REPORT-LAYER-C002-GATE-001: ok (0 hallazgos)
 - MOC-EVAL-001: ok (0 hallazgos)
 

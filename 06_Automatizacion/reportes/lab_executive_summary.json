@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-LAB-SUMMARY-20260706-134842",
+  "report_id": "DO-LAB-SUMMARY-20260706-153516",
   "expediente": "AUT-001",
   "algoritmo": "DO-LAB-SUMMARY-001",
   "resultado": "advertencia",
@@ -7,13 +7,13 @@
   "transformacion_permitida": false,
   "headline": "Cierre operativo conservado con deuda documental visible.",
   "state": {
-    "expediente_activo_inmediato": "`AO-001` queda como frente operativo inmediato para profundizar `AO-PPI-BRIDGE-001`, mantener bloqueada la exportacion general de R4/Gamma, ampliar pruebas heterogeneas de `REPORT_LAYER` solo si una decision futura lo exige, conservar `AO-DOC04-WIDE-TEST-001` como evidencia local no mutante y usar `REPORT-LAYER-C002-GATE-001` solo como compuerta no mutante conforme a `C-002`.",
-    "proximo_objetivo": "Ampliar `AO-DOC04-WIDE-TEST-001` solo si se requieren casos heterogeneos adicionales de `REPORT_LAYER`, serializacion interfrente o nuevas rutas de `Pi_rep`; la prueba local inicial de 8 casos, la precision de `REPORT_LAYER`, su permanencia local pre-C y la compuerta no mutante `C-002` ya quedaron atendidas por `D-2026-07-06-007`, `D-2026-07-06-014` y `D-2026-07-06-015`.",
-    "ultima_decision_operativa": "`RH-001_Decision_Reconciliacion_PM001.md` (`D-2026-07-06-016`): acepta `RH-PM-REC-001`; `PM-001` queda reconciliado solo como deuda historica condicionada, no como expediente activo ni protocolo materializado.",
+    "expediente_activo_inmediato": "`AO-001` queda como frente operativo inmediato con `AO-PPI-BRIDGE-004` aceptado como matriz consolidada local. La siguiente ruta defensible requiere decision separada: protocolo AO reproducible independiente, promocion formal de `REPORT_LAYER`, exportacion R4/Gamma o cierre global; ninguna queda autorizada.",
+    "proximo_objetivo": "Conservar `AO-PPI-BRIDGE-004` como matriz consolidada aceptada; no usarla como cierre global.",
+    "ultima_decision_operativa": "`AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md` (`D-2026-07-06-023`): acepta `AO-PPI-BRIDGE-004` como matriz consolidada local; deja cinco condiciones `satisfecha_local`, dos `parcial_local`, dos `faltante_global` y tres `bloqueada_por_alcance`, con `global_closure_authorized: false`.",
     "expedientes_abiertos": [
       "`MOC-001` (expediente integrador teorico-operativo abierto por `D-2026-07-05-011`; `Xi_eval`, metricas, protocolo, simulacion, diseno empirico futuro, rutas ejecutadas, puentes formales, paquete pre-ejecucion, paquete de registro/auditoria, rutas posteriores y relacion documental con `C-001` / `C-002` aceptadas por `D-2026-07-05-012` a `D-2026-07-06-013`; queda en `MOC-ROUTE-011`, mantenimiento teorico-operativo sin ejecucion, con `MOC-ROUTE-012` como puente documental local con Nivel C; no Canon, no clinico, no regulado)",
       "`TCS-001` (expediente teorico provisional; paquete minimo aceptado por `D-2026-07-03-019` y maduracion provisional `TCS-MAT-PROV-001` aceptada por `D-2026-07-05-010`; no Canon, no documento oficial)",
-      "`AO-001` (expediente preparatorio abierto para Algebra Operacional; `AO-MARCO-001`, `GAMMA-EXT-AO-001`, `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001`, `AO-PPI-BRIDGE-001`, `AO-DOC04-FORM-CHK-001`, `AO-CONF-EXT-OPTIONS-001`, `AO-EXT-CONF-EXEC-001`, `AO-DOC04-FORM-001`, `AO-R4-GAMMA-EXPORT-GATE-001`, `AO-DOC04-WIDE-001`, `AO-DOC04-WIDE-TEST-001`, `AO-REPORT-LAYER-BRIDGE-001` y `AO-REPORT-LAYER-NIVEL-C-001` aceptados localmente; sigue abierto para pruebas globales no resueltas)"
+      "`AO-001` (expediente preparatorio abierto para Algebra Operacional; `AO-MARCO-001`, `GAMMA-EXT-AO-001`, `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001`, `AO-PPI-BRIDGE-001`, `AO-PPI-BRIDGE-002`, `AO-PPI-BRIDGE-003`, `AO-REPORT-SERIAL-001`, `AO-TCS-REL-001`, `AO-AUTH-GLOBAL-001`, `AO-EXT-COV-001`, `AO-PPI-BRIDGE-004`, `AO-DOC04-FORM-CHK-001`, `AO-CONF-EXT-OPTIONS-001`, `AO-EXT-CONF-EXEC-001`, `AO-DOC04-FORM-001`, `AO-R4-GAMMA-EXPORT-GATE-001`, `AO-DOC04-WIDE-001`, `AO-DOC04-WIDE-TEST-001`, `AO-REPORT-LAYER-BRIDGE-001` y `AO-REPORT-LAYER-NIVEL-C-001` aceptados localmente; sigue abierto para protocolo reproducible y pruebas globales no resueltas)"
     ]
   },
   "automation": {
@@ -25,7 +25,7 @@
         "algorithm": "DO-CHECK-MIN-001",
         "resultado": "advertencia",
         "recomendacion": "continuar_sin_transformar",
-        "findings": 172,
+        "findings": 214,
         "markdown": "06_Automatizacion/reportes/do_check_min_repo.md",
         "json": "06_Automatizacion/reportes/do_check_min_repo.json"
       },
@@ -34,7 +34,7 @@
         "algorithm": "DO-CHECK-MED-001",
         "resultado": "advertencia",
         "recomendacion": "continuar_sin_transformar",
-        "findings": 353,
+        "findings": 433,
         "markdown": "06_Automatizacion/reportes/do_check_med_repo.md",
         "json": "06_Automatizacion/reportes/do_check_med_repo.json"
       },
@@ -52,7 +52,7 @@
         "algorithm": "DO-LAB-CONTINUITY-001",
         "resultado": "advertencia",
         "recomendacion": "continuar_sin_transformar",
-        "findings": 353,
+        "findings": 433,
         "markdown": "06_Automatizacion/reportes/lab_continuity_report.md",
         "json": "06_Automatizacion/reportes/lab_continuity_report.json"
       },
@@ -61,7 +61,7 @@
         "algorithm": "DO-LAB-RISK-001",
         "resultado": "advertencia_clasificada",
         "recomendacion": "mantener_cierre_operativo",
-        "findings": 354,
+        "findings": 458,
         "markdown": "06_Automatizacion/reportes/lab_risk_report.md",
         "json": "06_Automatizacion/reportes/lab_risk_report.json"
       },
@@ -93,6 +93,69 @@
         "json": "06_Automatizacion/reportes/ao_doc04_wide_report.json"
       },
       {
+        "name": "ao_ppi_bridge_002",
+        "algorithm": "AO-PPI-BRIDGE-002",
+        "resultado": "ok",
+        "recomendacion": "mantener_deudas_globales_abiertas",
+        "findings": 0,
+        "markdown": "06_Automatizacion/reportes/ao_ppi_bridge_002_report.md",
+        "json": "06_Automatizacion/reportes/ao_ppi_bridge_002_report.json"
+      },
+      {
+        "name": "ao_ppi_bridge_003",
+        "algorithm": "AO-PPI-BRIDGE-003",
+        "resultado": "ok",
+        "recomendacion": "mantener_cierre_global_no_autorizado",
+        "findings": 0,
+        "markdown": "06_Automatizacion/reportes/ao_ppi_bridge_003_report.md",
+        "json": "06_Automatizacion/reportes/ao_ppi_bridge_003_report.json"
+      },
+      {
+        "name": "report_layer_serialization",
+        "algorithm": "AO-REPORT-SERIAL-001",
+        "resultado": "ok",
+        "recomendacion": "mantener_serializacion_local_pre_c",
+        "findings": 0,
+        "markdown": "06_Automatizacion/reportes/report_layer_serialization_report.md",
+        "json": "06_Automatizacion/reportes/report_layer_serialization_report.json"
+      },
+      {
+        "name": "ao_tcs_rel_001",
+        "algorithm": "AO-TCS-REL-001",
+        "resultado": "ok",
+        "recomendacion": "mantener_tcs_provisional_no_canonico",
+        "findings": 0,
+        "markdown": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md",
+        "json": "06_Automatizacion/reportes/ao_tcs_rel_001_report.json"
+      },
+      {
+        "name": "ao_authority_global_001",
+        "algorithm": "AO-AUTH-GLOBAL-001",
+        "resultado": "ok",
+        "recomendacion": "mantener_criterio_autoridad_local",
+        "findings": 0,
+        "markdown": "06_Automatizacion/reportes/ao_authority_global_001_report.md",
+        "json": "06_Automatizacion/reportes/ao_authority_global_001_report.json"
+      },
+      {
+        "name": "ao_ext_cov_001",
+        "algorithm": "AO-EXT-COV-001",
+        "resultado": "ok",
+        "recomendacion": "mantener_cobertura_externa_local_parcial",
+        "findings": 0,
+        "markdown": "06_Automatizacion/reportes/ao_ext_cov_001_report.md",
+        "json": "06_Automatizacion/reportes/ao_ext_cov_001_report.json"
+      },
+      {
+        "name": "ao_ppi_bridge_004",
+        "algorithm": "AO-PPI-BRIDGE-004",
+        "resultado": "ok",
+        "recomendacion": "mantener_cierre_global_no_autorizado",
+        "findings": 0,
+        "markdown": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md",
+        "json": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.json"
+      },
+      {
         "name": "report_layer_c002_gate",
         "algorithm": "REPORT-LAYER-C002-GATE-001",
         "resultado": "ok",
@@ -119,27 +182,27 @@
     "recomendacion": "mantener_cierre_operativo",
     "by_category": {
       "advertencia_controlada": 25,
-      "deuda_documental": 206,
-      "advertencia_heredada": 62,
+      "deuda_documental": 309,
+      "advertencia_heredada": 63,
       "observacion": 61
     },
     "by_operational_severity": {
-      "media": 159,
-      "baja": 191,
+      "media": 206,
+      "baja": 248,
       "alta": 4
     },
     "by_context_class": {
-      "guardrail": 83,
-      "riesgo_real": 218,
-      "decision_registrada": 26,
-      "bitacora_historica": 14,
+      "guardrail": 95,
+      "riesgo_real": 298,
+      "decision_registrada": 37,
+      "bitacora_historica": 15,
       "control_auditoria": 1,
       "meta_check": 12
     },
     "by_treatment_status": {
       "controlado_por_guardrail": 19,
-      "pendiente_normalizacion_documental": 206,
-      "conservar_deuda_historica": 62,
+      "pendiente_normalizacion_documental": 309,
+      "conservar_deuda_historica": 63,
       "conservado_sin_tratamiento": 61,
       "controlado_por_historial": 3,
       "controlado_por_regla_de_auditoria": 1,
@@ -150,10 +213,10 @@
     "top_active": []
   },
   "sources": {
-    "run": "DO-LAB-RUN-20260706-134842",
-    "risk": "DO-LAB-RISK-20260706-134842",
-    "board": "DO-STATE-BOARD-20260706-134826",
-    "continuity": "DO-LAB-CONTINUITY-20260706-134840"
+    "run": "DO-LAB-RUN-20260706-153516",
+    "risk": "DO-LAB-RISK-20260706-153516",
+    "board": "DO-STATE-BOARD-20260706-153511",
+    "continuity": "DO-LAB-CONTINUITY-20260706-153515"
   },
   "next_actions": [
     "Mantener cierre operativo de AUT-001 con deuda documental visible.",

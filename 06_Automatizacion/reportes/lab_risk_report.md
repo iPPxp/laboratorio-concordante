@@ -1,6 +1,6 @@
 # LAB_RISK_REPORT
 
-report_id: DO-LAB-RISK-20260706-134842
+report_id: DO-LAB-RISK-20260706-153516
 expediente: AUT-001
 algoritmo: DO-LAB-RISK-001
 resultado: advertencia_clasificada
@@ -11,24 +11,24 @@ transformacion_permitida: false
 
 - riesgo_activo: 0
 - advertencia_controlada: 25
-- deuda_documental: 206
-- advertencia_heredada: 62
+- deuda_documental: 309
+- advertencia_heredada: 63
 - observacion: 61
 
 ## Resumen por severidad
 
 - alta: 4
-- media: 159
-- baja: 191
+- media: 206
+- baja: 248
 
 ## Resumen por contexto
 
-- bitacora_historica: 14
+- bitacora_historica: 15
 - control_auditoria: 1
-- decision_registrada: 26
-- guardrail: 83
+- decision_registrada: 37
+- guardrail: 95
 - meta_check: 12
-- riesgo_real: 218
+- riesgo_real: 298
 
 ## Riesgos activos
 
@@ -64,31 +64,31 @@ transformacion_permitida: false
 
 ## Deuda documental
 
+- [baja] 03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [baja] 03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ext_cov_001_report.md
+- [baja] 03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [baja] 03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_authority_global_001_report.md
 - [baja] 03_Expedientes/AO-001_Auditoria_Formalizacion_Amplia_Doc04.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [baja] 03_Expedientes/AO-001_Auditoria_Matriz_Condiciones_Cierre_Global_003.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_003_report.md
+- [baja] 03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [baja] 03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_004_report.md
 - [baja] 03_Expedientes/AO-001_Auditoria_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
-- [baja] 03_Expedientes/AO-001_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_doc04_wide_report.md
-- [baja] 03_Expedientes/AUD-001_Validacion_Implementacion_No_Mutante_C002.md - referencia_no_materializada: 06_Automatizacion/reportes/auditor_v0_report.md
-- [media] 03_Expedientes/AUT-001.md - referencia_no_materializada: 06_Automatizacion/reportes/README.md
-- [media] 03_Expedientes/AUT-001.md - referencia_no_materializada: 06_Automatizacion/reportes/do_check_min_claves.md
-- [media] 03_Expedientes/AUT-001.md - referencia_no_materializada: 06_Automatizacion/reportes/do_check_min_repo.md
-- [media] 03_Expedientes/AUT-001.md - referencia_no_materializada: 06_Automatizacion/reportes/do_check_med_claves.md
-- [media] 03_Expedientes/AUT-001.md - referencia_no_materializada: 06_Automatizacion/reportes/do_check_med_repo.md
-- [media] 03_Expedientes/AUT-001.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_status_board.md
-- [media] 03_Expedientes/AUT-001.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_continuity_report.md
-- [media] 03_Expedientes/AUT-001.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_risk_report.md
-- [media] 03_Expedientes/AUT-001.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_executive_summary.md
-- [media] 03_Expedientes/AUT-001.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
-- [media] 03_Expedientes/AUT-001_Clasificacion_Advertencias_Riesgos.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_risk_report.md
-- [media] 03_Expedientes/AUT-001_Comando_Unico_LAB.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
-- [media] 03_Expedientes/AUT-001_Continuidad_Laboratorio.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_continuity_report.md
-- [media] 03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
-- [media] 03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_risk_report.md
-- [media] 03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md - referencia_no_materializada: 06_Automatizacion/reportes/do_check_med_claves.md
-- ... 186 deudas documentales adicionales en JSON.
+- [baja] 03_Expedientes/AO-001_Auditoria_Puente_Confluencia_Equivalencia_002.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_002_report.md
+- [baja] 03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [baja] 03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_tcs_rel_001_report.md
+- [baja] 03_Expedientes/AO-001_Auditoria_Serializacion_REPORT_LAYER_001.md - referencia_no_materializada: 06_Automatizacion/reportes/report_layer_serialization_report.md
+- [baja] 03_Expedientes/AO-001_Cobertura_Externa_Amplia_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ext_cov_001_report.md
+- [baja] 03_Expedientes/AO-001_Criterio_Autoridad_Global_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_authority_global_001_report.md
+- [baja] 03_Expedientes/AO-001_Decision_Cobertura_Externa_Amplia_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [baja] 03_Expedientes/AO-001_Decision_Criterio_Autoridad_Global_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [baja] 03_Expedientes/AO-001_Decision_Matriz_Condiciones_Cierre_Global_003.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_003_report.md
+- [baja] 03_Expedientes/AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [baja] 03_Expedientes/AO-001_Decision_Puente_Confluencia_Equivalencia_002.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_002_report.md
+- ... 289 deudas documentales adicionales en JSON.
 
 ## Advertencias heredadas
 
-- total: 62
+- total: 63
 
 ## Siguientes acciones
 
