@@ -40,6 +40,8 @@ Nota posterior 2026-07-06-003: `MOC-ROUTE-007` queda ejecutada por `D-2026-07-06
 
 Nota posterior 2026-07-06-004: `MOC-ROUTE-008` queda ejecutada por `D-2026-07-06-004` como paquete documental pre-ejecucion; quedan preparados semantica provisional, tabla de operaciones, casos congelados, plantilla y reglas/protocolo congelados. La siguiente ruta recomendada es `MOC-ROUTE-009`, metodo de registro sin datos personales y matriz de auditoria.
 
+Nota posterior 2026-07-06-005: `MOC-ROUTE-009` queda ejecutada por `D-2026-07-06-005` como paquete documental de registro/auditoria; quedan preparados metodo de registro sin datos personales y matriz de auditoria. La siguiente ruta recomendada es `MOC-ROUTE-010`, decidir rutas posteriores sin reclutamiento ni ejecucion.
+
 ## Aviso de desactivacion
 
 Este archivo queda congelado como registro historico operativo.
@@ -160,7 +162,7 @@ El manifiesto del paquete esta en `HANDOFF_PACKAGE.md`, tambien inactivo hasta n
 
 ## Estado corto
 
-- Frente recomendado inmediato vigente por nota posterior: ejecutar `MOC-ROUTE-009`, preparando metodo de registro sin datos personales y matriz de auditoria de piloto sin reclutamiento ni respuestas reales; conservar `AO-001`, Confluencia, Equivalencia de proyecciones, `AO-DOC04-FORM-001`, exportacion R4/Gamma bloqueada y maduracion posterior de `TCS-001`. `PSI-001` quedo posteriormente independizado por `D-2026-07-03-006`; `AUT-001` queda cerrado operativamente; `HXI-001` conserva `Xi_eval` en mantenimiento local sin admitir `H-Xi`.
+- Frente recomendado inmediato vigente por nota posterior: ejecutar `MOC-ROUTE-010`, decidiendo rutas posteriores despues del paquete de registro/auditoria sin reclutamiento ni respuestas reales; conservar `AO-001`, Confluencia, Equivalencia de proyecciones, `AO-DOC04-FORM-001`, exportacion R4/Gamma bloqueada y maduracion posterior de `TCS-001`. `PSI-001` quedo posteriormente independizado por `D-2026-07-03-006`; `AUT-001` queda cerrado operativamente; `HXI-001` conserva `Xi_eval` en mantenimiento local sin admitir `H-Xi`.
 - Ultimo expediente cerrado: `REC-001` (reconciliacion inicial Canon/baselines); ultimo expediente tecnico cerrado: `DO-001`.
 - Documentos oficiales de Nivel C activos: `C-001_Especificacion_Tecnica_Auditor.md` y `C-002_RFC_Operativo_Auditor_v0.md`.
 - Expediente activo recomendado vigente por nota posterior: `AO-001` vuelve como frente operativo principal; `HXI-001` queda abierto en mantenimiento local con `Xi_eval`. `AUD-001` queda completo en version documental/operativa v0 y produjo `C-002`; `PSI-001` quedo independizado; `AUT-001` queda cerrado operativamente; `P-PI.0` y `P-PI.1` quedan cerrados como frentes de trabajo; `B-001.5` queda congelado.
@@ -397,4 +399,4 @@ Ruta sugerida inmediata:
 
 ## Estado de handoff
 
-Listo para traspaso operativo historico con nota posterior: `MOC-001` queda abierto y avanzado por `D-2026-07-05-011` a `D-2026-07-06-004`; `MOC-ROUTE-008` queda ejecutada como paquete pre-ejecucion y la siguiente ruta recomendada es `MOC-ROUTE-009`; `HXI-001` fue reabierto por `D-2026-07-05-001`, su compuerta fue aplicada por `D-2026-07-05-002` con resultado `mantener_Xi_eval` y queda abierto en mantenimiento local por `D-2026-07-05-003`; `AUD-001` esta completo en version documental/operativa v0 y `C-002` creado, `PSI-001` posteriormente independizado por `D-2026-07-03-006`, `AUT-001` cerrado operativamente, `REC-001` cerrado, `RH-002` cerrado, `RH-001` cerrado y `P-PI.0` / `P-PI.1` cerrados como frentes de trabajo.
+Listo para traspaso operativo historico con nota posterior: `MOC-001` queda abierto y avanzado por `D-2026-07-05-011` a `D-2026-07-06-005`; `MOC-ROUTE-009` queda ejecutada como paquete de registro/auditoria y la siguiente ruta recomendada es `MOC-ROUTE-010`; `HXI-001` fue reabierto por `D-2026-07-05-001`, su compuerta fue aplicada por `D-2026-07-05-002` con resultado `mantener_Xi_eval` y queda abierto en mantenimiento local por `D-2026-07-05-003`; `AUD-001` esta completo en version documental/operativa v0 y `C-002` creado, `PSI-001` posteriormente independizado por `D-2026-07-03-006`, `AUT-001` cerrado operativamente, `REC-001` cerrado, `RH-002` cerrado, `RH-001` cerrado y `P-PI.0` / `P-PI.1` cerrados como frentes de trabajo.

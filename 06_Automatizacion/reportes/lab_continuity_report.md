@@ -1,6 +1,6 @@
 # LAB_CONTINUITY_REPORT
 
-report_id: DO-LAB-CONTINUITY-20260705-190709
+report_id: DO-LAB-CONTINUITY-20260706-120317
 expediente: AUT-001
 algoritmo: DO-LAB-CONTINUITY-001
 resultado: advertencia
@@ -10,16 +10,16 @@ scope: repo
 
 ## Estado operativo
 
-- expediente activo inmediato: `MOC-001` queda como frente integrador teorico-operativo principal; primera ruta valida ejecutada por `MOC-ROUTE-EXEC-001`, bateria ampliada por `MOC-ROUTE-002`, puente formal `MOC/TCS` aceptado por `MOC-ROUTE-003`, puente formal `MOC/AO` aceptado por `MOC-ROUTE-004`, protocolo v0.2 aceptado por `MOC-ROUTE-005`, protocolo documental de piloto futuro preparado por `MOC-ROUTE-006`, compuerta de no autorizacion aplicada por `MOC-ROUTE-007`, paquete pre-ejecucion preparado por `MOC-ROUTE-008` y siguiente ruta recomendada `MOC-ROUTE-009`; no canonico, no clinico, no regulado y sin admision de `H-Xi`.
-- proximo objetivo: Avanzar `MOC-001` por `MOC-ROUTE-009`: preparar metodo de registro sin datos personales y matriz de auditoria de piloto, sin reclutamiento, sin respuestas reales, sin uso clinico y sin modificar `Documento 04`.
-- ultima decision operativa: `MOC-001_Decision_Paquete_PreEjecucion_Piloto.md` (`D-2026-07-06-004`): acepta `MOC-PREEXEC-PACK-001`; semantica, operaciones formales, casos congelados, plantilla de respuesta y reglas/protocolo quedan preparados documentalmente. La siguiente ruta recomendada es `MOC-ROUTE-009`, metodo de registro sin datos personales y matriz de auditoria.
+- expediente activo inmediato: `MOC-001` queda como frente integrador teorico-operativo principal; primera ruta valida ejecutada por `MOC-ROUTE-EXEC-001`, bateria ampliada por `MOC-ROUTE-002`, puente formal `MOC/TCS` aceptado por `MOC-ROUTE-003`, puente formal `MOC/AO` aceptado por `MOC-ROUTE-004`, protocolo v0.2 aceptado por `MOC-ROUTE-005`, protocolo documental de piloto futuro preparado por `MOC-ROUTE-006`, compuerta de no autorizacion aplicada por `MOC-ROUTE-007`, paquete pre-ejecucion preparado por `MOC-ROUTE-008`, paquete de registro/auditoria preparado por `MOC-ROUTE-009` y siguiente ruta recomendada `MOC-ROUTE-010`; no canonico, no clinico, no regulado y sin admision de `H-Xi`.
+- proximo objetivo: Avanzar `MOC-001` por `MOC-ROUTE-010`: decidir rutas posteriores despues del paquete de registro/auditoria, priorizando si el MOC permanece en simulacion documental, si se prepara criterio de evaluadores sin reclutamiento o si el frente entra en mantenimiento; sin respuestas reales, sin uso clinico y sin modificar `Documento 04`.
+- ultima decision operativa: `MOC-001_Decision_Paquete_Registro_Auditoria_Piloto.md` (`D-2026-07-06-005`): acepta `MOC-PILOT-REG-AUDIT-PACK-001`; metodo de registro sin datos personales y matriz de auditoria quedan preparados documentalmente. La siguiente ruta recomendada es `MOC-ROUTE-010`, decidir rutas posteriores sin reclutamiento ni ejecucion.
 
 ## Cobertura integrada
 
 - tablero: ok (0 hallazgos)
-- chequeo medio: advertencia (359 archivos, 335 hallazgos)
+- chequeo medio: advertencia (366 archivos, 338 hallazgos)
 - automatizaciones presentes: 8/7
-- hallazgos combinados: 335
+- hallazgos combinados: 338
 
 ## Riesgos
 
@@ -63,7 +63,7 @@ scope: repo
 - [warning] DO-CHECK-MED-001 HANDOFF.md - referencia_no_materializada: MOC/TCS
 - [warning] DO-CHECK-MED-001 HANDOFF.md - referencia_no_materializada: MOC/TCS
 - [warning] DO-CHECK-MED-001 HANDOFF.md - referencia_no_materializada: MOC/AO
-- ... 295 hallazgos adicionales en JSON.
+- ... 298 hallazgos adicionales en JSON.
 
 ## Siguientes acciones
 

@@ -66,6 +66,7 @@ El repositorio esta organizado en seis zonas principales y algunos archivos raiz
 - `CURRENT_STATE.md`: estado minimo, disenado para lectura inmediata.
 - `PROMPT_MAESTRO.md`: prompt base para incorporar una IA al trabajo.
 - `CHANGELOG.md`: registro de cambios del repositorio.
+- `Licencia_y_Derechos.md`: reserva de derechos del MOC y Concordante Lab.
 
 ### 01_Canon
 
@@ -112,12 +113,12 @@ Contiene herramientas ejecutables no mutantes y sus reportes conservados. Su fun
 
 Estado operativo resumido:
 
-- Decision operativa vigente: `MOC-001_Decision_Paquete_PreEjecucion_Piloto.md` (`D-2026-07-06-004`) acepta `MOC-PREEXEC-PACK-001`; `MOC-ROUTE-009` queda como siguiente ruta recomendada.
-- Decisiones de estabilizacion recientes: `D-2026-07-02-020` a `D-2026-07-06-004`.
+- Decision operativa vigente: `MOC-001_Decision_Paquete_Registro_Auditoria_Piloto.md` (`D-2026-07-06-005`) acepta `MOC-PILOT-REG-AUDIT-PACK-001`; `MOC-ROUTE-010` queda como siguiente ruta recomendada.
+- Decisiones de estabilizacion recientes: `D-2026-07-02-020` a `D-2026-07-06-005`.
 - Ultimo expediente cerrado: `DOCS-001`; ultimo expediente tecnico cerrado: `AUT-001`.
 - Ultima decision arquitectonica: `C-002_RFC_Operativo_Auditor_v0.md` promovido como RFC operativo oficial del Auditor v0; complementa `C-001` y quedo alineado el 2026-07-03 con JSON, fixtures y adaptador no mutante.
-- Ultima decision operativa: `MOC-001_Decision_Paquete_PreEjecucion_Piloto.md` (`D-2026-07-06-004`) acepta semantica provisional, tabla de operaciones, casos congelados, plantilla y version congelada de reglas/protocolo.
-- Avance MOC reciente: `MOC-ROUTE-008` prepara paquete documental pre-ejecucion; el piloto empirico real permanece bloqueado.
+- Ultima decision operativa: `MOC-001_Decision_Paquete_Registro_Auditoria_Piloto.md` (`D-2026-07-06-005`) acepta metodo de registro sin datos personales y matriz de auditoria.
+- Avance MOC reciente: `MOC-ROUTE-009` prepara paquete documental de registro/auditoria; el piloto empirico real permanece bloqueado.
 - Decision teorica reciente: `TCS-001_Decision_Maduracion_Provisional.md` (`D-2026-07-05-010`) acepta `TCS-METRIC-PROV-001`, `TCS-EXT-CASE-001` y `TCS-AUTH-CONF-001`; no canoniza `Concordance`, no crea Nivel C ni usa vision papers como fuente activa.
 - Avance AO reciente: `AO-001_Decision_Estatus_Casos_Prueba_Algebra_Operacional.md` (`D-2026-07-03-016`), `AO-001_Decision_Criterios_Uso_R4_Gamma_Fuera_AUD.md` (`D-2026-07-03-017`) y `AO-001_Decision_Estatus_Puente_Confluencia_Equivalencia.md` (`D-2026-07-03-018`) aceptan `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001` y `AO-PPI-BRIDGE-001` como avance local no canonico.
 - Saneamiento tecnico reciente: `AUT-002_Decision_Referencias_Historicas_Transferidas.md` (`D-2026-07-03-015`) acepta `referencia_historica_transferida` para `PSI-001*` eliminado y refina falsos bloqueos de historial en controles negativos.
@@ -134,7 +135,7 @@ Estado operativo resumido:
 - Documentos oficiales de Nivel C: `C-001_Especificacion_Tecnica_Auditor.md` y `C-002_RFC_Operativo_Auditor_v0.md`.
 - Especificacion candidata promovida: `SPEC-AUD-001_Candidata` en `03_Expedientes`.
 - Modo operativo del Auditor: mixto, segun `MODO-AUD-001`.
-- Proximo objetivo: ejecutar `MOC-ROUTE-009`, preparando metodo de registro sin datos personales y matriz de auditoria de piloto sin reclutamiento, sin respuestas reales, sin datos personales y sin uso clinico; conservar `AO-DOC04-FORM-001` como formalizacion acotada de `Pi_tb` / `Eq_tb`, continuar Confluencia global y Equivalencia global de proyecciones desde `AO-PPI-BRIDGE-001`, mantener bloqueada la exportacion general de R4/Gamma y madurar `TCS-001` desde `TCS-MAT-PROV-001`. `P-PI.0` / `P-PI.1` quedan cerrados como frentes de trabajo; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en mantenimiento local; `PSI-001` queda fuera del Laboratorio sin copia local de traspaso; `H-B.6` y `H-B.7` quedan congeladas; `B-001.5` queda congelado; los vision papers quedan inactivos.
+- Proximo objetivo: ejecutar `MOC-ROUTE-010`, decidiendo rutas posteriores despues del paquete de registro/auditoria sin reclutamiento, sin respuestas reales, sin datos personales y sin uso clinico; conservar `AO-DOC04-FORM-001` como formalizacion acotada de `Pi_tb` / `Eq_tb`, continuar Confluencia global y Equivalencia global de proyecciones desde `AO-PPI-BRIDGE-001`, mantener bloqueada la exportacion general de R4/Gamma y madurar `TCS-001` desde `TCS-MAT-PROV-001`. `P-PI.0` / `P-PI.1` quedan cerrados como frentes de trabajo; `AUT-001` queda cerrado operativamente; `HXI-001` queda abierto en mantenimiento local; `PSI-001` queda fuera del Laboratorio sin copia local de traspaso; `H-B.6` y `H-B.7` quedan congeladas; `B-001.5` queda congelado; los vision papers quedan inactivos.
 - No volver a discutir sin reapertura explicita: `EF-001`, `CP-001`, Procedimiento, Auditoria.
 
 Documentos oficiales consolidados:
@@ -149,7 +150,7 @@ Nota operativa: la consolidacion esta registrada por `D-2026-07-03-011`. Cualqui
 
 Expedientes abiertos relevantes:
 
-- `MOC-001` (expediente integrador teorico-operativo; primera ruta valida, ruta 002, puente formal `MOC/TCS`, puente formal `MOC/AO`, protocolo v0.2, protocolo documental de piloto futuro, compuerta de no autorizacion, paquete pre-ejecucion y rutas siguientes aceptadas por `D-2026-07-05-016` a `D-2026-07-06-004`; no Canon, no clinico, no regulado)
+- `MOC-001` (expediente integrador teorico-operativo; primera ruta valida, ruta 002, puente formal `MOC/TCS`, puente formal `MOC/AO`, protocolo v0.2, protocolo documental de piloto futuro, compuerta de no autorizacion, paquete pre-ejecucion, paquete de registro/auditoria y rutas siguientes aceptadas por `D-2026-07-05-016` a `D-2026-07-06-005`; no Canon, no clinico, no regulado)
 - `HXI-001` (abierto en mantenimiento local; conserva `Xi_eval`; `H-Xi` no admitida)
 - `R001-001` (integracion tecnica provisional de `R001-TABLE-CHECK-001` y relacion formal local `R001-TB-001`; no canoniza `Xi`, no admite `H-Xi`, no cierra `P-200` ni resuelve `P-107`)
 - `AUD-001` (completo en version documental/operativa v0; implementacion no mutante `AUDITOR-V0-001` aceptada; JSON reactivado; `REPORT_LAYER` local y compatibilidad con `DO_CHECK_REPORT` definidas; origen local de `REPORT_LAYER` fijado en `AUD-001_Origen_REPORT_LAYER.md`; suite ejecutable completa encuadrada en `AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md`; parser real acotado en `AUD-001_Ficha_Alcance_Parser_Real.md`; R4 formal local construido en `AUD-001_R4_Formal_Local.md`; Gamma formal local construido en `AUD-001_Gamma_Formal_Local.md`; `Gamma_1` probado por `VAL-030`, `VAL-031` y `GAMMA-EXT-AO-001`)
@@ -167,7 +168,7 @@ Hipotesis congeladas:
 
 Problemas abiertos relevantes:
 
-- Maduracion de `MOC-001` por `MOC-ROUTE-009`, metodo de registro sin datos personales y matriz de auditoria, con ejecucion real no autorizada, sin canonizacion y sin dominios clinicos o regulados.
+- Maduracion de `MOC-001` por `MOC-ROUTE-010`, rutas posteriores despues del paquete de registro/auditoria, con ejecucion real no autorizada, sin canonizacion y sin dominios clinicos o regulados.
 - Confluencia.
 - Equivalencia de proyecciones.
 - Promocion o exportacion general fuera de `AUD-001` de `R4-FORMAL-AUD-001`.

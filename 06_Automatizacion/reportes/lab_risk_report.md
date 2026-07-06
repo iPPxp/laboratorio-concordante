@@ -1,6 +1,6 @@
 # LAB_RISK_REPORT
 
-report_id: DO-LAB-RISK-20260705-190710
+report_id: DO-LAB-RISK-20260706-120317
 expediente: AUT-001
 algoritmo: DO-LAB-RISK-001
 resultado: advertencia_clasificada
@@ -11,24 +11,24 @@ transformacion_permitida: false
 
 - riesgo_activo: 0
 - advertencia_controlada: 24
-- deuda_documental: 185
+- deuda_documental: 187
 - advertencia_heredada: 59
-- observacion: 59
+- observacion: 61
 
 ## Resumen por severidad
 
 - alta: 3
-- media: 145
-- baja: 179
+- media: 147
+- baja: 181
 
 ## Resumen por contexto
 
 - bitacora_historica: 12
 - control_auditoria: 1
 - decision_registrada: 25
-- guardrail: 74
+- guardrail: 76
 - meta_check: 12
-- riesgo_real: 203
+- riesgo_real: 205
 
 ## Riesgos activos
 
@@ -83,7 +83,7 @@ transformacion_permitida: false
 - [media] 03_Expedientes/AUT-001_Resumen_Ejecutivo_LAB.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_executive_summary.md
 - [media] 03_Expedientes/AUT-001_Tablero_Estado_LAB.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_status_board.md
 - [media] 03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
-- ... 165 deudas documentales adicionales en JSON.
+- ... 167 deudas documentales adicionales en JSON.
 
 ## Advertencias heredadas
 

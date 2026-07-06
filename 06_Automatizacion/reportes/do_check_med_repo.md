@@ -1,6 +1,6 @@
 # DO_CHECK_REPORT medio
 
-report_id: DO-CHECK-MED-LIVE-20260705-190705
+report_id: DO-CHECK-MED-LIVE-20260706-120313
 expediente: AUT-001
 algoritmo: DO-CHECK-MED-001
 resultado: advertencia
@@ -10,10 +10,10 @@ transformacion_permitida: false
 
 ## Resumen
 
-- archivos revisados: 359
-- hallazgos: 335
+- archivos revisados: 366
+- hallazgos: 338
 - bloques: 0
-- advertencias: 335
+- advertencias: 338
 - informativos: 0
 
 ## Puente AAU
@@ -131,6 +131,7 @@ transformacion_permitida: false
 - [warning] MED-REFERENCIAS HANDOFF_PACKAGE.md - referencia_historica_transferida: Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local. | evidencia: 03_Expedientes/PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md
 - [warning] MED-REFERENCIAS HANDOFF_PACKAGE.md - referencia_historica_transferida: Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local. | evidencia: 03_Expedientes/PSI-001_Auditoria_Matriz_Patrones_Transformacion_No_Clinica.md
 - [warning] MED-REFERENCIAS HANDOFF_PACKAGE.md - referencia_historica_transferida: Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local. | evidencia: 03_Expedientes/PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md
+- [warning] MED-ASCII Licencia_y_Derechos.md - no_ascii: Contiene caracteres no ASCII fuera de excepciones historicas.
 - [warning] MED-REFERENCIAS README.md - referencia_no_materializada: MOC/TCS
 - [warning] MED-REFERENCIAS README.md - referencia_no_materializada: MOC/AO
 - [warning] MED-NIVELES 01_Canon/M-001_Auditoria_Arquitectonica.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: 8. Indicar si la intervencion modifica documentos, expedientes, estado o Canon.
@@ -326,6 +327,8 @@ transformacion_permitida: false
 - [warning] MED-REFERENCIAS 05_Estado_Proyecto/ESTADO_ACTUAL.md - referencia_no_materializada: MOC/TCS
 - [warning] MED-NIVELES 05_Estado_Proyecto/NIVEL_C_ESPECIFICACIONES.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - modificar Canon
 - [warning] MED-NIVELES 05_Estado_Proyecto/NIVEL_C_ESPECIFICACIONES.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - promover hipotesis a teoremas
+- [warning] MED-REFERENCIAS 05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md - referencia_no_materializada: MOC/TCS
+- [warning] MED-REFERENCIAS 05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md - referencia_no_materializada: MOC/AO
 - [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: MOC/TCS
 - [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: MOC/AO
 - [warning] MED-REFERENCIAS 06_Automatizacion/README.md - referencia_no_materializada: reportes/do_check_min_claves.md

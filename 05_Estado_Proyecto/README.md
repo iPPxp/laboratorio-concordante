@@ -8,3 +8,6 @@ Archivo principal:
 
 - `ESTADO_ACTUAL.md`
 
+Archivos complementarios:
+
+- `REVISION_FORMALIZACION_PENDIENTE.md`

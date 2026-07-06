@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-CHECK-MED-LIVE-20260705-190705",
+  "report_id": "DO-CHECK-MED-LIVE-20260706-120313",
   "expediente": "AUT-001",
   "algoritmo": "DO-CHECK-MED-001",
   "resultado": "advertencia",
@@ -8,14 +8,15 @@
   "transformacion_permitida": false,
   "scope": "repo",
   "summary": {
-    "files_checked": 359,
-    "findings": 335,
+    "files_checked": 366,
+    "findings": 338,
     "by_severity": {
-      "warning": 335
+      "warning": 338
     },
     "by_check": {
-      "MED-REFERENCIAS": 249,
+      "MED-REFERENCIAS": 251,
       "MED-NIVELES": 68,
+      "MED-ASCII": 1,
       "MED-HISTORIAL": 11,
       "MED-ESTATUS": 7
     }
@@ -902,6 +903,21 @@
       "surface": "otro",
       "estatus": "no_clasificado",
       "findings": []
+    },
+    {
+      "file": "Licencia_y_Derechos.md",
+      "surface": "otro",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ASCII",
+          "kind": "no_ascii",
+          "file": "Licencia_y_Derechos.md",
+          "detail": "Contiene caracteres no ASCII fuera de excepciones historicas.",
+          "evidence": ""
+        }
+      ]
     },
     {
       "file": "PROMPT_MAESTRO.md",
@@ -3018,6 +3034,12 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/MOC-001_Auditoria_Paquete_Registro_Auditoria_Piloto.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/MOC-001_Auditoria_Protocolo_Piloto_Empirico_Futuro.md",
       "surface": "expediente",
       "estatus": "auditoria favorable con limites",
@@ -3261,6 +3283,12 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/MOC-001_Decision_Paquete_Registro_Auditoria_Piloto.md",
+      "surface": "expediente",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/MOC-001_Decision_Protocolo_Piloto_Empirico_Futuro.md",
       "surface": "expediente",
       "estatus": "decision provisional de expediente",
@@ -3477,6 +3505,18 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/MOC-001_Matriz_Auditoria_Piloto.md",
+      "surface": "expediente",
+      "estatus": "matriz documental preparada, no usada en ejecucion real",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Metodo_Registro_Sin_Datos_Personales.md",
+      "surface": "expediente",
+      "estatus": "metodo documental preparado, no usado en ejecucion real",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/MOC-001_Metricas_Estados.md",
       "surface": "expediente",
       "estatus": "metrica cualitativa ordinal provisional",
@@ -3484,6 +3524,12 @@
     },
     {
       "file": "03_Expedientes/MOC-001_Paquete_PreEjecucion_Piloto.md",
+      "surface": "expediente",
+      "estatus": "paquete documental preparado, ejecucion real bloqueada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Paquete_Registro_Auditoria_Piloto.md",
       "surface": "expediente",
       "estatus": "paquete documental preparado, ejecucion real bloqueada",
       "findings": []
@@ -4662,6 +4708,29 @@
       "findings": []
     },
     {
+      "file": "05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md",
+      "surface": "estado_operativo",
+      "estatus": "revision operativa no decisoria",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md",
+          "detail": "MOC/TCS",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        }
+      ]
+    },
+    {
       "file": "06_Automatizacion/README.md",
       "surface": "automatizacion",
       "estatus": "superficie ejecutable provisional",
@@ -5795,6 +5864,14 @@
       "file": "HANDOFF_PACKAGE.md",
       "detail": "Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local.",
       "evidence": "03_Expedientes/PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ASCII",
+      "kind": "no_ascii",
+      "file": "Licencia_y_Derechos.md",
+      "detail": "Contiene caracteres no ASCII fuera de excepciones historicas.",
+      "evidence": ""
     },
     {
       "severity": "warning",
@@ -7355,6 +7432,22 @@
       "file": "05_Estado_Proyecto/NIVEL_C_ESPECIFICACIONES.md",
       "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
       "evidence": "- promover hipotesis a teoremas"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md",
+      "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md",
+      "detail": "MOC/AO",
+      "evidence": ""
     },
     {
       "severity": "warning",

@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-LAB-RISK-20260705-190710",
+  "report_id": "DO-LAB-RISK-20260706-120317",
   "expediente": "AUT-001",
   "algoritmo": "DO-LAB-RISK-001",
   "resultado": "advertencia_clasificada",
@@ -8,33 +8,33 @@
   "source_reports": {
     "minimo": {
       "path": "06_Automatizacion/reportes/do_check_min_repo.json",
-      "report_id": "DO-CHECK-MIN-20260705-190700",
+      "report_id": "DO-CHECK-MIN-20260706-120309",
       "resultado": "advertencia",
-      "findings": 162
+      "findings": 163
     },
     "medio": {
       "path": "06_Automatizacion/reportes/do_check_med_repo.json",
-      "report_id": "DO-CHECK-MED-LIVE-20260705-190705",
+      "report_id": "DO-CHECK-MED-LIVE-20260706-120313",
       "resultado": "advertencia",
-      "findings": 335
+      "findings": 338
     }
   },
   "summary": {
-    "findings_considered": 327,
+    "findings_considered": 331,
     "by_category": {
       "advertencia_controlada": 24,
       "advertencia_heredada": 59,
-      "deuda_documental": 185,
-      "observacion": 59
+      "deuda_documental": 187,
+      "observacion": 61
     },
     "by_operational_severity": {
-      "media": 145,
-      "baja": 179,
+      "media": 147,
+      "baja": 181,
       "alta": 3
     },
     "by_context_class": {
-      "guardrail": 74,
-      "riesgo_real": 203,
+      "guardrail": 76,
+      "riesgo_real": 205,
       "decision_registrada": 25,
       "bitacora_historica": 12,
       "control_auditoria": 1,
@@ -43,17 +43,18 @@
     "by_treatment_status": {
       "controlado_por_guardrail": 19,
       "conservar_deuda_historica": 59,
-      "pendiente_normalizacion_documental": 185,
-      "conservado_sin_tratamiento": 59,
+      "pendiente_normalizacion_documental": 187,
+      "conservado_sin_tratamiento": 61,
       "controlado_por_historial": 2,
       "controlado_por_regla_de_auditoria": 1,
       "controlado_por_definicion_de_check": 1,
       "controlado_por_decision_registrada": 1
     },
     "by_check": {
-      "minimo": 162,
-      "MED-REFERENCIAS": 102,
+      "minimo": 163,
+      "MED-REFERENCIAS": 104,
       "MED-NIVELES": 46,
+      "MED-ASCII": 1,
       "MED-HISTORIAL": 10,
       "MED-ESTATUS": 7
     },
@@ -4185,58 +4186,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 89,
+        "matched_line": 92,
         "lines": [
           {
-            "line": 83,
-            "text": ""
-          },
-          {
-            "line": 84,
-            "text": "## Paquete ejecutable"
-          },
-          {
-            "line": 85,
-            "text": ""
-          },
-          {
             "line": 86,
-            "text": "- `06_Automatizacion/moc_eval.py`: simulador no mutante `MOC-EVAL-001`."
+            "text": ""
           },
           {
             "line": 87,
-            "text": "- `06_Automatizacion/fixtures/moc_cases.json`: casos sinteticos."
+            "text": "## Paquete ejecutable"
           },
           {
             "line": 88,
-            "text": "- `06_Automatizacion/test_moc_eval.py`: pruebas locales."
+            "text": ""
           },
           {
             "line": 89,
-            "text": "- `06_Automatizacion/reportes/moc_eval_report.md`: reporte Markdown generado."
+            "text": "- `06_Automatizacion/moc_eval.py`: simulador no mutante `MOC-EVAL-001`."
           },
           {
             "line": 90,
-            "text": "- `06_Automatizacion/reportes/moc_eval_report.json`: reporte estructurado generado."
+            "text": "- `06_Automatizacion/fixtures/moc_cases.json`: casos sinteticos."
           },
           {
             "line": 91,
-            "text": ""
+            "text": "- `06_Automatizacion/test_moc_eval.py`: pruebas locales."
           },
           {
             "line": 92,
-            "text": "## Decisiones asociadas"
+            "text": "- `06_Automatizacion/reportes/moc_eval_report.md`: reporte Markdown generado."
           },
           {
             "line": 93,
-            "text": ""
+            "text": "- `06_Automatizacion/reportes/moc_eval_report.json`: reporte estructurado generado."
           },
           {
             "line": 94,
-            "text": "- `D-2026-07-05-011`: apertura de `MOC-001`."
+            "text": ""
           },
           {
             "line": 95,
+            "text": "## Decisiones asociadas"
+          },
+          {
+            "line": 96,
+            "text": ""
+          },
+          {
+            "line": 97,
+            "text": "- `D-2026-07-05-011`: apertura de `MOC-001`."
+          },
+          {
+            "line": 98,
             "text": "- `D-2026-07-05-012`: formalizacion local de `Xi_eval`."
           }
         ]
@@ -5860,43 +5861,23 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 398,
+        "matched_line": 403,
         "lines": [
           {
-            "line": 392,
-            "text": ""
-          },
-          {
-            "line": 393,
-            "text": "- `HXI-001_Mantenimiento_Local.md`: `HXI-MAINT-001`, regimen de mantenimiento local; conserva `Xi_eval` y trazabilidad de `H-Xi`, sin frente activo de admision."
-          },
-          {
-            "line": 394,
-            "text": ""
-          },
-          {
-            "line": 395,
-            "text": "## Tableros de automatizacion"
-          },
-          {
-            "line": 396,
-            "text": ""
-          },
-          {
             "line": 397,
-            "text": "- `06_Automatizacion/lab_status_board.py`: tablero no mutante `DO-STATE-BOARD-001`."
+            "text": ""
           },
           {
             "line": 398,
-            "text": "- `06_Automatizacion/reportes/lab_status_board.md`: reporte Markdown conservado."
+            "text": "- `HXI-001_Mantenimiento_Local.md`: `HXI-MAINT-001`, regimen de mantenimiento local; conserva `Xi_eval` y trazabilidad de `H-Xi`, sin frente activo de admision."
           },
           {
             "line": 399,
-            "text": "- `06_Automatizacion/reportes/lab_status_board.json`: reporte JSON conservado."
+            "text": ""
           },
           {
             "line": 400,
-            "text": ""
+            "text": "## Tableros de automatizacion"
           },
           {
             "line": 401,
@@ -5904,14 +5885,34 @@
           },
           {
             "line": 402,
-            "text": "- `EX-PSI-001` a `EX-PSI-005`: antecedentes historicos transferidos; sin archivo local activo tras `D-2026-07-03-012`."
+            "text": "- `06_Automatizacion/lab_status_board.py`: tablero no mutante `DO-STATE-BOARD-001`."
           },
           {
             "line": 403,
-            "text": ""
+            "text": "- `06_Automatizacion/reportes/lab_status_board.md`: reporte Markdown conservado."
           },
           {
             "line": 404,
+            "text": "- `06_Automatizacion/reportes/lab_status_board.json`: reporte JSON conservado."
+          },
+          {
+            "line": 405,
+            "text": ""
+          },
+          {
+            "line": 406,
+            "text": ""
+          },
+          {
+            "line": 407,
+            "text": "- `EX-PSI-001` a `EX-PSI-005`: antecedentes historicos transferidos; sin archivo local activo tras `D-2026-07-03-012`."
+          },
+          {
+            "line": 408,
+            "text": ""
+          },
+          {
+            "line": 409,
             "text": "## Criterios de evaluacion de expediente"
           }
         ]
@@ -7928,58 +7929,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 135,
+        "matched_line": 137,
         "lines": [
           {
-            "line": 129,
+            "line": 131,
             "text": "19. `06_Automatizacion/do_check_med.py`."
           },
           {
-            "line": 130,
+            "line": 132,
             "text": "20. `06_Automatizacion/lab_status_board.py`."
           },
           {
-            "line": 131,
+            "line": 133,
             "text": "21. `06_Automatizacion/lab_continuity_report.py`."
           },
           {
-            "line": 132,
+            "line": 134,
             "text": "22. `03_Expedientes/AUT-001_Continuidad_Laboratorio.md`."
           },
           {
-            "line": 133,
+            "line": 135,
             "text": "23. `03_Expedientes/AUT-001_Validacion_DO-LAB-CONTINUITY.md`."
           },
           {
-            "line": 134,
+            "line": 136,
             "text": "24. `03_Expedientes/AUT-001_Decision_Continuidad_Laboratorio.md`."
           },
           {
-            "line": 135,
+            "line": 137,
             "text": "25. `06_Automatizacion/reportes/lab_continuity_report.md`."
           },
           {
-            "line": 136,
+            "line": 138,
             "text": "26. `06_Automatizacion/reportes/lab_continuity_report.json`."
           },
           {
-            "line": 137,
+            "line": 139,
             "text": "27. `06_Automatizacion/lab_run.py`."
           },
           {
-            "line": 138,
+            "line": 140,
             "text": "28. `03_Expedientes/AUT-001_Comando_Unico_LAB.md`."
           },
           {
-            "line": 139,
+            "line": 141,
             "text": "29. `03_Expedientes/AUT-001_Validacion_DO-LAB-RUN.md`."
           },
           {
-            "line": 140,
+            "line": 142,
             "text": "30. `03_Expedientes/AUT-001_Decision_Comando_Unico_LAB.md`."
           },
           {
-            "line": 141,
+            "line": 143,
             "text": "31. `06_Automatizacion/reportes/lab_run_report.md`."
           }
         ]
@@ -8003,58 +8004,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 141,
+        "matched_line": 143,
         "lines": [
           {
-            "line": 135,
+            "line": 137,
             "text": "25. `06_Automatizacion/reportes/lab_continuity_report.md`."
           },
           {
-            "line": 136,
+            "line": 138,
             "text": "26. `06_Automatizacion/reportes/lab_continuity_report.json`."
           },
           {
-            "line": 137,
+            "line": 139,
             "text": "27. `06_Automatizacion/lab_run.py`."
           },
           {
-            "line": 138,
+            "line": 140,
             "text": "28. `03_Expedientes/AUT-001_Comando_Unico_LAB.md`."
           },
           {
-            "line": 139,
+            "line": 141,
             "text": "29. `03_Expedientes/AUT-001_Validacion_DO-LAB-RUN.md`."
           },
           {
-            "line": 140,
+            "line": 142,
             "text": "30. `03_Expedientes/AUT-001_Decision_Comando_Unico_LAB.md`."
           },
           {
-            "line": 141,
+            "line": 143,
             "text": "31. `06_Automatizacion/reportes/lab_run_report.md`."
           },
           {
-            "line": 142,
+            "line": 144,
             "text": "32. `06_Automatizacion/reportes/lab_run_report.json`."
           },
           {
-            "line": 143,
+            "line": 145,
             "text": "33. `06_Automatizacion/lab_risk_classifier.py`."
           },
           {
-            "line": 144,
+            "line": 146,
             "text": "34. `03_Expedientes/AUT-001_Clasificacion_Advertencias_Riesgos.md`."
           },
           {
-            "line": 145,
+            "line": 147,
             "text": "35. `03_Expedientes/AUT-001_Validacion_DO-LAB-RISK.md`."
           },
           {
-            "line": 146,
+            "line": 148,
             "text": "36. `03_Expedientes/AUT-001_Decision_Riesgos_Advertencias.md`."
           },
           {
-            "line": 147,
+            "line": 149,
             "text": "37. `06_Automatizacion/reportes/lab_risk_report.md`."
           }
         ]
@@ -8078,58 +8079,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 147,
+        "matched_line": 149,
         "lines": [
           {
-            "line": 141,
+            "line": 143,
             "text": "31. `06_Automatizacion/reportes/lab_run_report.md`."
           },
           {
-            "line": 142,
+            "line": 144,
             "text": "32. `06_Automatizacion/reportes/lab_run_report.json`."
           },
           {
-            "line": 143,
+            "line": 145,
             "text": "33. `06_Automatizacion/lab_risk_classifier.py`."
           },
           {
-            "line": 144,
+            "line": 146,
             "text": "34. `03_Expedientes/AUT-001_Clasificacion_Advertencias_Riesgos.md`."
           },
           {
-            "line": 145,
+            "line": 147,
             "text": "35. `03_Expedientes/AUT-001_Validacion_DO-LAB-RISK.md`."
           },
           {
-            "line": 146,
+            "line": 148,
             "text": "36. `03_Expedientes/AUT-001_Decision_Riesgos_Advertencias.md`."
           },
           {
-            "line": 147,
+            "line": 149,
             "text": "37. `06_Automatizacion/reportes/lab_risk_report.md`."
           },
           {
-            "line": 148,
+            "line": 150,
             "text": "38. `06_Automatizacion/reportes/lab_risk_report.json`."
           },
           {
-            "line": 149,
+            "line": 151,
             "text": "39. `06_Automatizacion/lab_executive_summary.py`."
           },
           {
-            "line": 150,
+            "line": 152,
             "text": "40. `03_Expedientes/AUT-001_Resumen_Ejecutivo_LAB.md`."
           },
           {
-            "line": 151,
+            "line": 153,
             "text": "41. `03_Expedientes/AUT-001_Validacion_DO-LAB-SUMMARY.md`."
           },
           {
-            "line": 152,
+            "line": 154,
             "text": "42. `03_Expedientes/AUT-001_Decision_Resumen_Ejecutivo.md`."
           },
           {
-            "line": 153,
+            "line": 155,
             "text": "43. `06_Automatizacion/reportes/lab_executive_summary.md`."
           }
         ]
@@ -8153,58 +8154,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 153,
+        "matched_line": 155,
         "lines": [
           {
-            "line": 147,
+            "line": 149,
             "text": "37. `06_Automatizacion/reportes/lab_risk_report.md`."
           },
           {
-            "line": 148,
+            "line": 150,
             "text": "38. `06_Automatizacion/reportes/lab_risk_report.json`."
           },
           {
-            "line": 149,
+            "line": 151,
             "text": "39. `06_Automatizacion/lab_executive_summary.py`."
           },
           {
-            "line": 150,
+            "line": 152,
             "text": "40. `03_Expedientes/AUT-001_Resumen_Ejecutivo_LAB.md`."
           },
           {
-            "line": 151,
+            "line": 153,
             "text": "41. `03_Expedientes/AUT-001_Validacion_DO-LAB-SUMMARY.md`."
           },
           {
-            "line": 152,
+            "line": 154,
             "text": "42. `03_Expedientes/AUT-001_Decision_Resumen_Ejecutivo.md`."
           },
           {
-            "line": 153,
+            "line": 155,
             "text": "43. `06_Automatizacion/reportes/lab_executive_summary.md`."
           },
           {
-            "line": 154,
+            "line": 156,
             "text": "44. `06_Automatizacion/reportes/lab_executive_summary.json`."
           },
           {
-            "line": 155,
+            "line": 157,
             "text": "45. `03_Expedientes/AUT-001_Criterios_Cierre_Fase_Media.md`."
           },
           {
-            "line": 156,
+            "line": 158,
             "text": "46. `03_Expedientes/AUT-001_Tratamiento_Riesgos_Altos.md`."
           },
           {
-            "line": 157,
+            "line": 159,
             "text": "47. `03_Expedientes/AUT-001_Validacion_Cierre_Riesgos.md`."
           },
           {
-            "line": 158,
+            "line": 160,
             "text": "48. `03_Expedientes/AUT-001_Decision_Cierre_Riesgos.md`."
           },
           {
-            "line": 159,
+            "line": 161,
             "text": "49. `03_Expedientes/AUT-001_Matriz_Revision_Riesgos_Activos.md`."
           }
         ]
@@ -8696,6 +8697,28 @@
       "rationale": "Hallazgo conservado sin clasificacion de riesgo fuerte."
     },
     {
+      "source": "minimo",
+      "severity": "warning",
+      "check_id": "minimo",
+      "kind": "no_ascii",
+      "file": "Licencia_y_Derechos.md",
+      "detail": "Contiene caracteres no ASCII fuera de excepciones historicas.",
+      "evidence": "",
+      "category": "observacion",
+      "category_label": "Observacion",
+      "operational_severity": "baja",
+      "active_file": false,
+      "inherited_file": false,
+      "context_class": "riesgo_real",
+      "treatment_status": "conservado_sin_tratamiento",
+      "risk_blocks_closure": false,
+      "source_context": {
+        "matched_line": null,
+        "lines": []
+      },
+      "rationale": "Hallazgo conservado sin clasificacion de riesgo fuerte."
+    },
+    {
       "source": "medio",
       "severity": "warning",
       "check_id": "MED-REFERENCIAS",
@@ -9087,58 +9110,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 35,
+        "matched_line": 44,
         "lines": [
           {
-            "line": 29,
+            "line": 38,
             "text": "- `MOC-001_Decision_Compuerta_Autorizacion_Ejecucion_Piloto.md` (`D-2026-07-06-003`): acepta `MOC-GATE-PILOT-EXEC-001`; resultado `no_autorizar_ejecucion`, `piloto_autorizado = false`; la siguiente ruta recomendada es `MOC-ROUTE-008`, preparar paquete documental pre-ejecucion sin reclutamiento ni ejecucion."
           },
           {
-            "line": 30,
+            "line": 39,
             "text": "- `MOC-001_Decision_Rutas_Posteriores_Ruta_006.md` (`D-2026-07-06-002`): acepta `MOC-NEXT-ROUTES-006`; la siguiente ruta recomendada es `MOC-ROUTE-007`, decidir compuerta de autorizacion o no autorizacion del piloto futuro sin ejecutarlo."
           },
           {
-            "line": 31,
+            "line": 40,
             "text": "- `MOC-001_Decision_Protocolo_Piloto_Empirico_Futuro.md` (`D-2026-07-06-001`): acepta `MOC-EMP-PILOT-PROTO-001` como protocolo documental de piloto empirico futuro, sin ejecucion real."
           },
           {
-            "line": 32,
+            "line": 41,
             "text": "- `MOC-001_Decision_Rutas_Posteriores_Ruta_005.md` (`D-2026-07-05-025`): acepta `MOC-NEXT-ROUTES-005`; la siguiente ruta recomendada es `MOC-ROUTE-006`, preparar protocolo documental de piloto empirico futuro sin ejecucion real."
           },
           {
-            "line": 33,
+            "line": 42,
             "text": "- `MOC-001_Decision_Ejecucion_Ruta_005.md` (`D-2026-07-05-024`): acepta `MOC-ROUTE-005`; `MOC-EVAL-PROTO-002` refina el protocolo de evaluadores con `operator_trace`, `Pi_moc_trace`, `ao_bridge`, `protocol_v02` y `protocol_v02_summary`."
           },
           {
-            "line": 34,
+            "line": 43,
             "text": "- `MOC-001_Decision_Rutas_Posteriores_Ruta_004.md` (`D-2026-07-05-023`): acepta `MOC-NEXT-ROUTES-004`; la siguiente ruta recomendada es `MOC-ROUTE-005`, refinar protocolo de evaluadores usando `operator_trace`, `Pi_moc_trace` y `ao_bridge`."
           },
           {
-            "line": 35,
+            "line": 44,
             "text": "- `MOC-001_Decision_Puente_Formal_MOC_AO.md` (`D-2026-07-05-022`): acepta `MOC-AO-BRIDGE-001`; formaliza el puente local `MOC/AO` usando `operator_trace` como evidencia local de regla ganadora y `ao_bridge` como proyeccion operacional acotada."
           },
           {
-            "line": 36,
+            "line": 45,
             "text": "- `MOC-001_Decision_Rutas_Posteriores_Ruta_003.md` (`D-2026-07-05-021`): acepta `MOC-NEXT-ROUTES-003`; la siguiente ruta recomendada es `MOC-ROUTE-004`, formalizar puente `MOC/AO` usando `operator_trace`."
           },
           {
-            "line": 37,
+            "line": 46,
             "text": "- `MOC-001_Decision_Puente_Formal_MOC_TCS.md` (`D-2026-07-05-020`): acepta `MOC-TCS-BRIDGE-001`; formaliza `OP_MOC_XI`, `OP_MOC_TCS`, `OP_MOC_STATE` y `OP_MOC_AGREEMENT` como operadores ejecutables locales."
           },
           {
-            "line": 38,
+            "line": 47,
             "text": "- `MOC-001_Decision_Rutas_Posteriores_Ruta_002.md` (`D-2026-07-05-019`): acepta `MOC-NEXT-ROUTES-002`; la siguiente ruta recomendada es `MOC-ROUTE-003`, formalizar puente `MOC/TCS` a partir de la bateria ampliada."
           },
           {
-            "line": 39,
+            "line": 48,
             "text": "- `MOC-001_Decision_Ejecucion_Ruta_002.md` (`D-2026-07-05-018`): acepta `MOC-ROUTE-002`; `MOC-EVAL-001` queda con 11 casos aprobados, 0 fallos, 6 coincidencias exactas, 3 parciales y 2 desacuerdos justificados."
           },
           {
-            "line": 40,
+            "line": 49,
             "text": "- `MOC-001_Decision_Siguientes_Rutas_Validas.md` (`D-2026-07-05-017`): acepta `MOC-NEXT-ROUTES-001`; la siguiente ruta recomendada es `MOC-ROUTE-002`, ampliar bateria sintetica no clinica con desacuerdos justificados y casos limite."
           },
           {
-            "line": 41,
+            "line": 50,
             "text": "- `MOC-001_Decision_Ejecucion_Ruta_Valida_001.md` (`D-2026-07-05-016`): acepta `MOC-ROUTE-EXEC-001`; primera ruta valida ejecutada favorablemente con `MOC-EVAL-001`, 7 casos aprobados, 0 fallos y `risk_blocks_closure: false`."
           }
         ]
@@ -9162,58 +9185,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 38,
+        "matched_line": 47,
         "lines": [
           {
-            "line": 32,
+            "line": 41,
             "text": "- `MOC-001_Decision_Rutas_Posteriores_Ruta_005.md` (`D-2026-07-05-025`): acepta `MOC-NEXT-ROUTES-005`; la siguiente ruta recomendada es `MOC-ROUTE-006`, preparar protocolo documental de piloto empirico futuro sin ejecucion real."
           },
           {
-            "line": 33,
+            "line": 42,
             "text": "- `MOC-001_Decision_Ejecucion_Ruta_005.md` (`D-2026-07-05-024`): acepta `MOC-ROUTE-005`; `MOC-EVAL-PROTO-002` refina el protocolo de evaluadores con `operator_trace`, `Pi_moc_trace`, `ao_bridge`, `protocol_v02` y `protocol_v02_summary`."
           },
           {
-            "line": 34,
+            "line": 43,
             "text": "- `MOC-001_Decision_Rutas_Posteriores_Ruta_004.md` (`D-2026-07-05-023`): acepta `MOC-NEXT-ROUTES-004`; la siguiente ruta recomendada es `MOC-ROUTE-005`, refinar protocolo de evaluadores usando `operator_trace`, `Pi_moc_trace` y `ao_bridge`."
           },
           {
-            "line": 35,
+            "line": 44,
             "text": "- `MOC-001_Decision_Puente_Formal_MOC_AO.md` (`D-2026-07-05-022`): acepta `MOC-AO-BRIDGE-001`; formaliza el puente local `MOC/AO` usando `operator_trace` como evidencia local de regla ganadora y `ao_bridge` como proyeccion operacional acotada."
           },
           {
-            "line": 36,
+            "line": 45,
             "text": "- `MOC-001_Decision_Rutas_Posteriores_Ruta_003.md` (`D-2026-07-05-021`): acepta `MOC-NEXT-ROUTES-003`; la siguiente ruta recomendada es `MOC-ROUTE-004`, formalizar puente `MOC/AO` usando `operator_trace`."
           },
           {
-            "line": 37,
+            "line": 46,
             "text": "- `MOC-001_Decision_Puente_Formal_MOC_TCS.md` (`D-2026-07-05-020`): acepta `MOC-TCS-BRIDGE-001`; formaliza `OP_MOC_XI`, `OP_MOC_TCS`, `OP_MOC_STATE` y `OP_MOC_AGREEMENT` como operadores ejecutables locales."
           },
           {
-            "line": 38,
+            "line": 47,
             "text": "- `MOC-001_Decision_Rutas_Posteriores_Ruta_002.md` (`D-2026-07-05-019`): acepta `MOC-NEXT-ROUTES-002`; la siguiente ruta recomendada es `MOC-ROUTE-003`, formalizar puente `MOC/TCS` a partir de la bateria ampliada."
           },
           {
-            "line": 39,
+            "line": 48,
             "text": "- `MOC-001_Decision_Ejecucion_Ruta_002.md` (`D-2026-07-05-018`): acepta `MOC-ROUTE-002`; `MOC-EVAL-001` queda con 11 casos aprobados, 0 fallos, 6 coincidencias exactas, 3 parciales y 2 desacuerdos justificados."
           },
           {
-            "line": 40,
+            "line": 49,
             "text": "- `MOC-001_Decision_Siguientes_Rutas_Validas.md` (`D-2026-07-05-017`): acepta `MOC-NEXT-ROUTES-001`; la siguiente ruta recomendada es `MOC-ROUTE-002`, ampliar bateria sintetica no clinica con desacuerdos justificados y casos limite."
           },
           {
-            "line": 41,
+            "line": 50,
             "text": "- `MOC-001_Decision_Ejecucion_Ruta_Valida_001.md` (`D-2026-07-05-016`): acepta `MOC-ROUTE-EXEC-001`; primera ruta valida ejecutada favorablemente con `MOC-EVAL-001`, 7 casos aprobados, 0 fallos y `risk_blocks_closure: false`."
           },
           {
-            "line": 42,
+            "line": 51,
             "text": "- `MOC-001_Decision_Disenio_Estudio_Empirico.md` (`D-2026-07-05-015`): acepta `MOC-EMP-STUDY-001` como diseno documental de estudio empirico futuro, sin ejecucion real, sin personas reales, sin dominios clinicos o regulados y sin canonizar el MOC."
           },
           {
-            "line": 43,
+            "line": 52,
             "text": "- `MOC-001_Decision_Simulacion_Software.md` (`D-2026-07-05-014`): acepta `MOC-EVAL-001` como simulador no mutante integrado a `DO-LAB-RUN-001`; genera reportes locales con casos sinteticos no clinicos y tres evaluadores simulados."
           },
           {
-            "line": 44,
+            "line": 53,
             "text": "- `MOC-001_Decision_Metricas_Protocolo.md` (`D-2026-07-05-013`): acepta `MOC-METRIC-STATE-001` y `MOC-EVAL-PROTO-001` como metrica cualitativa ordinal y protocolo reproducible provisional."
           }
         ]
@@ -9387,58 +9410,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 107,
+        "matched_line": 109,
         "lines": [
           {
-            "line": 101,
+            "line": 103,
             "text": "34. `03_Expedientes/AUT-001_Decision_Revision_Riesgos_Activos.md`."
           },
           {
-            "line": 102,
+            "line": 104,
             "text": "35. `03_Expedientes/AUT-001_Refinamiento_DO-LAB-RISK.md`."
           },
           {
-            "line": 103,
+            "line": 105,
             "text": "36. `03_Expedientes/AUT-001_Validacion_Refinamiento_DO-LAB-RISK.md`."
           },
           {
-            "line": 104,
+            "line": 106,
             "text": "37. `03_Expedientes/AUT-001_Decision_Refinamiento_DO-LAB-RISK.md`."
           },
           {
-            "line": 105,
+            "line": 107,
             "text": "38. `03_Expedientes/AUT-001_Validacion_Cierre_Tecnico_Provisional.md`."
           },
           {
-            "line": 106,
+            "line": 108,
             "text": "39. `03_Expedientes/AUT-001_Decision_Cierre_Tecnico_Provisional.md`."
           },
           {
-            "line": 107,
+            "line": 109,
             "text": "40. `03_Expedientes/PSI-001.md`."
           },
           {
-            "line": 108,
+            "line": 110,
             "text": "41. `03_Expedientes/PSI-001_Definicion_Organizacion_Experiencia_Psicologica.md`."
           },
           {
-            "line": 109,
+            "line": 111,
             "text": "42. `03_Expedientes/PSI-001_Auditoria_Definicion_Organizacion.md`."
           },
           {
-            "line": 110,
+            "line": 112,
             "text": "43. `03_Expedientes/PSI-001_Decision_Estatus_Definicion_Organizacion.md`."
           },
           {
-            "line": 111,
+            "line": 113,
             "text": "44. `03_Expedientes/PSI-001_Criterio_Transformacion_Experiencia_Psicologica.md`."
           },
           {
-            "line": 112,
+            "line": 114,
             "text": "45. `03_Expedientes/PSI-001_Auditoria_Criterio_Transformacion.md`."
           },
           {
-            "line": 113,
+            "line": 115,
             "text": "46. `03_Expedientes/PSI-001_Decision_Estatus_Criterio_Transformacion.md`."
           }
         ]
@@ -9462,58 +9485,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 235,
+        "matched_line": 237,
         "lines": [
           {
-            "line": 229,
+            "line": 231,
             "text": "- `HXI-001`: abierto en mantenimiento local por `D-2026-07-05-003`; conserva `Xi_eval`, mantiene `H-Xi` no admitida y no es frente activo inmediato."
           },
           {
-            "line": 230,
+            "line": 232,
             "text": "- `P-PI.0` / `P-PI.1`: pausa operativa ratificada; falta consolidar proposito desde fuentes historicas o documentos previos; no cerrar, congelar ni absorber sin decision separada."
           },
           {
-            "line": 231,
+            "line": 233,
             "text": "- `AUD-001`: no promover `REPORT_LAYER`, `R4-CANDIDATA`, R4 formal ni `Gamma` sin decision posterior; cualquier herramienta futura debe declarar conformidad contra `C-002`."
           },
           {
-            "line": 232,
+            "line": 234,
             "text": "- Completar ficha de trazabilidad de `EF-001` si existe material previo."
           },
           {
-            "line": 233,
+            "line": 235,
             "text": "- Validar ejecucion directa local de `DO-CHECK-MIN-001` y `DO-CHECK-MED-001` fuera de la restriccion de esta sesion."
           },
           {
-            "line": 234,
+            "line": 236,
             "text": "- Precisar alcance de `H-B.6` y `H-B.7`."
           },
           {
-            "line": 235,
+            "line": 237,
             "text": "- Importar o formalizar `ROADMAP.md`."
           },
           {
-            "line": 236,
+            "line": 238,
             "text": "- Importar o formalizar Canon v0.1."
           },
           {
-            "line": 237,
+            "line": 239,
             "text": "- Importar o formalizar el Decalogo y su Regla VII."
           },
           {
-            "line": 238,
+            "line": 240,
             "text": "- Definir localmente `R4`."
           },
           {
-            "line": 239,
+            "line": 241,
             "text": "- Definir localmente `Gamma`."
           },
           {
-            "line": 240,
+            "line": 242,
             "text": ""
           },
           {
-            "line": 241,
+            "line": 243,
             "text": "## Siguiente objetivo recomendado"
           }
         ]
@@ -9687,27 +9710,19 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 170,
+        "matched_line": 172,
         "lines": [
           {
-            "line": 164,
+            "line": 166,
             "text": "54. `03_Expedientes/AUT-001_Decision_Refinamiento_DO-LAB-RISK.md`."
           },
           {
-            "line": 165,
+            "line": 167,
             "text": "55. `03_Expedientes/AUT-001_Validacion_Cierre_Tecnico_Provisional.md`."
           },
           {
-            "line": 166,
-            "text": "56. `03_Expedientes/AUT-001_Decision_Cierre_Tecnico_Provisional.md`."
-          },
-          {
-            "line": 167,
-            "text": ""
-          },
-          {
             "line": 168,
-            "text": "## Archivos del frente psicologico"
+            "text": "56. `03_Expedientes/AUT-001_Decision_Cierre_Tecnico_Provisional.md`."
           },
           {
             "line": 169,
@@ -9715,35 +9730,65 @@
           },
           {
             "line": 170,
-            "text": "1. `03_Expedientes/PSI-001.md`."
+            "text": "## Archivos del frente psicologico"
           },
           {
             "line": 171,
-            "text": "2. `03_Expedientes/PSI-001_Criterios_Admision.md`."
+            "text": ""
           },
           {
             "line": 172,
-            "text": "3. `03_Expedientes/PSI-001_Auditoria_A-PSI-001.md`."
+            "text": "1. `03_Expedientes/PSI-001.md`."
           },
           {
             "line": 173,
-            "text": "4. `03_Expedientes/PSI-001_Decision_Estatus_A-PSI-001.md`."
+            "text": "2. `03_Expedientes/PSI-001_Criterios_Admision.md`."
           },
           {
             "line": 174,
-            "text": "5. `03_Expedientes/PSI-001_Definicion_Organizacion_Experiencia_Psicologica.md`."
+            "text": "3. `03_Expedientes/PSI-001_Auditoria_A-PSI-001.md`."
           },
           {
             "line": 175,
-            "text": "6. `03_Expedientes/PSI-001_Auditoria_Definicion_Organizacion.md`."
+            "text": "4. `03_Expedientes/PSI-001_Decision_Estatus_A-PSI-001.md`."
           },
           {
             "line": 176,
+            "text": "5. `03_Expedientes/PSI-001_Definicion_Organizacion_Experiencia_Psicologica.md`."
+          },
+          {
+            "line": 177,
+            "text": "6. `03_Expedientes/PSI-001_Auditoria_Definicion_Organizacion.md`."
+          },
+          {
+            "line": 178,
             "text": "7. `03_Expedientes/PSI-001_Decision_Estatus_Definicion_Organizacion.md`."
           }
         ]
       },
       "rationale": "Hallazgo documental o de normalizacion; requiere orden, no transformacion inmediata."
+    },
+    {
+      "source": "medio",
+      "severity": "warning",
+      "check_id": "MED-ASCII",
+      "kind": "no_ascii",
+      "file": "Licencia_y_Derechos.md",
+      "detail": "Contiene caracteres no ASCII fuera de excepciones historicas.",
+      "evidence": "",
+      "category": "observacion",
+      "category_label": "Observacion",
+      "operational_severity": "baja",
+      "active_file": false,
+      "inherited_file": false,
+      "context_class": "riesgo_real",
+      "treatment_status": "conservado_sin_tratamiento",
+      "risk_blocks_closure": false,
+      "source_context": {
+        "matched_line": null,
+        "lines": []
+      },
+      "rationale": "Hallazgo conservado sin clasificacion de riesgo fuerte."
     },
     {
       "source": "medio",
@@ -9762,58 +9807,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 152,
+        "matched_line": 153,
         "lines": [
           {
-            "line": 146,
+            "line": 147,
             "text": "- Documento 04: Algebra Operacional, actualizado como version inicial consolidada."
           },
           {
-            "line": 147,
-            "text": ""
-          },
-          {
             "line": 148,
-            "text": "Nota operativa: la consolidacion esta registrada por `D-2026-07-03-011`. Cualquier promocion futura a Canon o Nivel C requiere expediente y decision separada."
+            "text": ""
           },
           {
             "line": 149,
-            "text": ""
+            "text": "Nota operativa: la consolidacion esta registrada por `D-2026-07-03-011`. Cualquier promocion futura a Canon o Nivel C requiere expediente y decision separada."
           },
           {
             "line": 150,
-            "text": "Expedientes abiertos relevantes:"
-          },
-          {
-            "line": 151,
             "text": ""
           },
           {
+            "line": 151,
+            "text": "Expedientes abiertos relevantes:"
+          },
+          {
             "line": 152,
-            "text": "- `MOC-001` (expediente integrador teorico-operativo; primera ruta valida, ruta 002, puente formal `MOC/TCS`, puente formal `MOC/AO`, protocolo v0.2, protocolo documental de piloto futuro, compuerta de no autorizacion, paquete pre-ejecucion y rutas siguientes aceptadas por `D-2026-07-05-016` a `D-2026-07-06-004`; no Canon, no clinico, no regulado)"
+            "text": ""
           },
           {
             "line": 153,
-            "text": "- `HXI-001` (abierto en mantenimiento local; conserva `Xi_eval`; `H-Xi` no admitida)"
+            "text": "- `MOC-001` (expediente integrador teorico-operativo; primera ruta valida, ruta 002, puente formal `MOC/TCS`, puente formal `MOC/AO`, protocolo v0.2, protocolo documental de piloto futuro, compuerta de no autorizacion, paquete pre-ejecucion, paquete de registro/auditoria y rutas siguientes aceptadas por `D-2026-07-05-016` a `D-2026-07-06-005`; no Canon, no clinico, no regulado)"
           },
           {
             "line": 154,
-            "text": "- `R001-001` (integracion tecnica provisional de `R001-TABLE-CHECK-001` y relacion formal local `R001-TB-001`; no canoniza `Xi`, no admite `H-Xi`, no cierra `P-200` ni resuelve `P-107`)"
+            "text": "- `HXI-001` (abierto en mantenimiento local; conserva `Xi_eval`; `H-Xi` no admitida)"
           },
           {
             "line": 155,
-            "text": "- `AUD-001` (completo en version documental/operativa v0; implementacion no mutante `AUDITOR-V0-001` aceptada; JSON reactivado; `REPORT_LAYER` local y compatibilidad con `DO_CHECK_REPORT` definidas; origen local de `REPORT_LAYER` fijado en `AUD-001_Origen_REPORT_LAYER.md`; suite ejecutable completa encuadrada en `AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md`; parser real acotado en `AUD-001_Ficha_Alcance_Parser_Real.md`; R4 formal local construido en `AUD-001_R4_Formal_Local.md`; Gamma formal local construido en `AUD-001_Gamma_Formal_Local.md`; `Gamma_1` probado por `VAL-030`, `VAL-031` y `GAMMA-EXT-AO-001`)"
+            "text": "- `R001-001` (integracion tecnica provisional de `R001-TABLE-CHECK-001` y relacion formal local `R001-TB-001`; no canoniza `Xi`, no admite `H-Xi`, no cierra `P-200` ni resuelve `P-107`)"
           },
           {
             "line": 156,
-            "text": "- `AO-001` (expediente preparatorio abierto para Algebra Operacional; `AO-MARCO-001` incorporado al Documento 04; `GAMMA-EXT-AO-001`, `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001`, `AO-PPI-BRIDGE-001`, `AO-EXT-CONF-EXEC-001`, `AO-DOC04-FORM-001` y `AO-R4-GAMMA-EXPORT-GATE-001` aceptados como avance local no canonico o documental acotado)"
+            "text": "- `AUD-001` (completo en version documental/operativa v0; implementacion no mutante `AUDITOR-V0-001` aceptada; JSON reactivado; `REPORT_LAYER` local y compatibilidad con `DO_CHECK_REPORT` definidas; origen local de `REPORT_LAYER` fijado en `AUD-001_Origen_REPORT_LAYER.md`; suite ejecutable completa encuadrada en `AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md`; parser real acotado en `AUD-001_Ficha_Alcance_Parser_Real.md`; R4 formal local construido en `AUD-001_R4_Formal_Local.md`; Gamma formal local construido en `AUD-001_Gamma_Formal_Local.md`; `Gamma_1` probado por `VAL-030`, `VAL-031` y `GAMMA-EXT-AO-001`)"
           },
           {
             "line": 157,
-            "text": "- `TCS-001` (expediente teorico provisional; paquete minimo y maduracion provisional `TCS-MAT-PROV-001` aceptados sin canonizacion)"
+            "text": "- `AO-001` (expediente preparatorio abierto para Algebra Operacional; `AO-MARCO-001` incorporado al Documento 04; `GAMMA-EXT-AO-001`, `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001`, `AO-PPI-BRIDGE-001`, `AO-EXT-CONF-EXEC-001`, `AO-DOC04-FORM-001` y `AO-R4-GAMMA-EXPORT-GATE-001` aceptados como avance local no canonico o documental acotado)"
           },
           {
             "line": 158,
+            "text": "- `TCS-001` (expediente teorico provisional; paquete minimo y maduracion provisional `TCS-MAT-PROV-001` aceptados sin canonizacion)"
+          },
+          {
+            "line": 159,
             "text": ""
           }
         ]
@@ -9837,58 +9882,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 152,
+        "matched_line": 153,
         "lines": [
           {
-            "line": 146,
+            "line": 147,
             "text": "- Documento 04: Algebra Operacional, actualizado como version inicial consolidada."
           },
           {
-            "line": 147,
-            "text": ""
-          },
-          {
             "line": 148,
-            "text": "Nota operativa: la consolidacion esta registrada por `D-2026-07-03-011`. Cualquier promocion futura a Canon o Nivel C requiere expediente y decision separada."
+            "text": ""
           },
           {
             "line": 149,
-            "text": ""
+            "text": "Nota operativa: la consolidacion esta registrada por `D-2026-07-03-011`. Cualquier promocion futura a Canon o Nivel C requiere expediente y decision separada."
           },
           {
             "line": 150,
-            "text": "Expedientes abiertos relevantes:"
-          },
-          {
-            "line": 151,
             "text": ""
           },
           {
+            "line": 151,
+            "text": "Expedientes abiertos relevantes:"
+          },
+          {
             "line": 152,
-            "text": "- `MOC-001` (expediente integrador teorico-operativo; primera ruta valida, ruta 002, puente formal `MOC/TCS`, puente formal `MOC/AO`, protocolo v0.2, protocolo documental de piloto futuro, compuerta de no autorizacion, paquete pre-ejecucion y rutas siguientes aceptadas por `D-2026-07-05-016` a `D-2026-07-06-004`; no Canon, no clinico, no regulado)"
+            "text": ""
           },
           {
             "line": 153,
-            "text": "- `HXI-001` (abierto en mantenimiento local; conserva `Xi_eval`; `H-Xi` no admitida)"
+            "text": "- `MOC-001` (expediente integrador teorico-operativo; primera ruta valida, ruta 002, puente formal `MOC/TCS`, puente formal `MOC/AO`, protocolo v0.2, protocolo documental de piloto futuro, compuerta de no autorizacion, paquete pre-ejecucion, paquete de registro/auditoria y rutas siguientes aceptadas por `D-2026-07-05-016` a `D-2026-07-06-005`; no Canon, no clinico, no regulado)"
           },
           {
             "line": 154,
-            "text": "- `R001-001` (integracion tecnica provisional de `R001-TABLE-CHECK-001` y relacion formal local `R001-TB-001`; no canoniza `Xi`, no admite `H-Xi`, no cierra `P-200` ni resuelve `P-107`)"
+            "text": "- `HXI-001` (abierto en mantenimiento local; conserva `Xi_eval`; `H-Xi` no admitida)"
           },
           {
             "line": 155,
-            "text": "- `AUD-001` (completo en version documental/operativa v0; implementacion no mutante `AUDITOR-V0-001` aceptada; JSON reactivado; `REPORT_LAYER` local y compatibilidad con `DO_CHECK_REPORT` definidas; origen local de `REPORT_LAYER` fijado en `AUD-001_Origen_REPORT_LAYER.md`; suite ejecutable completa encuadrada en `AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md`; parser real acotado en `AUD-001_Ficha_Alcance_Parser_Real.md`; R4 formal local construido en `AUD-001_R4_Formal_Local.md`; Gamma formal local construido en `AUD-001_Gamma_Formal_Local.md`; `Gamma_1` probado por `VAL-030`, `VAL-031` y `GAMMA-EXT-AO-001`)"
+            "text": "- `R001-001` (integracion tecnica provisional de `R001-TABLE-CHECK-001` y relacion formal local `R001-TB-001`; no canoniza `Xi`, no admite `H-Xi`, no cierra `P-200` ni resuelve `P-107`)"
           },
           {
             "line": 156,
-            "text": "- `AO-001` (expediente preparatorio abierto para Algebra Operacional; `AO-MARCO-001` incorporado al Documento 04; `GAMMA-EXT-AO-001`, `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001`, `AO-PPI-BRIDGE-001`, `AO-EXT-CONF-EXEC-001`, `AO-DOC04-FORM-001` y `AO-R4-GAMMA-EXPORT-GATE-001` aceptados como avance local no canonico o documental acotado)"
+            "text": "- `AUD-001` (completo en version documental/operativa v0; implementacion no mutante `AUDITOR-V0-001` aceptada; JSON reactivado; `REPORT_LAYER` local y compatibilidad con `DO_CHECK_REPORT` definidas; origen local de `REPORT_LAYER` fijado en `AUD-001_Origen_REPORT_LAYER.md`; suite ejecutable completa encuadrada en `AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md`; parser real acotado en `AUD-001_Ficha_Alcance_Parser_Real.md`; R4 formal local construido en `AUD-001_R4_Formal_Local.md`; Gamma formal local construido en `AUD-001_Gamma_Formal_Local.md`; `Gamma_1` probado por `VAL-030`, `VAL-031` y `GAMMA-EXT-AO-001`)"
           },
           {
             "line": 157,
-            "text": "- `TCS-001` (expediente teorico provisional; paquete minimo y maduracion provisional `TCS-MAT-PROV-001` aceptados sin canonizacion)"
+            "text": "- `AO-001` (expediente preparatorio abierto para Algebra Operacional; `AO-MARCO-001` incorporado al Documento 04; `GAMMA-EXT-AO-001`, `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001`, `AO-PPI-BRIDGE-001`, `AO-EXT-CONF-EXEC-001`, `AO-DOC04-FORM-001` y `AO-R4-GAMMA-EXPORT-GATE-001` aceptados como avance local no canonico o documental acotado)"
           },
           {
             "line": 158,
+            "text": "- `TCS-001` (expediente teorico provisional; paquete minimo y maduracion provisional `TCS-MAT-PROV-001` aceptados sin canonizacion)"
+          },
+          {
+            "line": 159,
             "text": ""
           }
         ]
@@ -17852,7 +17897,7 @@
           },
           {
             "line": 30,
-            "text": "- `MOC-001` (expediente integrador teorico-operativo abierto por `D-2026-07-05-011`; `Xi_eval`, metricas, protocolo, simulacion, diseno empirico futuro, primera ruta ejecutada, bateria ampliada, puente formal `MOC/TCS`, puente formal `MOC/AO`, protocolo v0.2, protocolo documental de piloto futuro, compuerta de no autorizacion, paquete pre-ejecucion y rutas siguientes aceptadas por `D-2026-07-05-012` a `D-2026-07-06-004`; no Canon, no clinico, no regulado)"
+            "text": "- `MOC-001` (expediente integrador teorico-operativo abierto por `D-2026-07-05-011`; `Xi_eval`, metricas, protocolo, simulacion, diseno empirico futuro, primera ruta ejecutada, bateria ampliada, puente formal `MOC/TCS`, puente formal `MOC/AO`, protocolo v0.2, protocolo documental de piloto futuro, compuerta de no autorizacion, paquete pre-ejecucion, paquete de registro/auditoria y rutas siguientes aceptadas por `D-2026-07-05-012` a `D-2026-07-06-005`; no Canon, no clinico, no regulado)"
           },
           {
             "line": 31,
@@ -17927,7 +17972,7 @@
           },
           {
             "line": 30,
-            "text": "- `MOC-001` (expediente integrador teorico-operativo abierto por `D-2026-07-05-011`; `Xi_eval`, metricas, protocolo, simulacion, diseno empirico futuro, primera ruta ejecutada, bateria ampliada, puente formal `MOC/TCS`, puente formal `MOC/AO`, protocolo v0.2, protocolo documental de piloto futuro, compuerta de no autorizacion, paquete pre-ejecucion y rutas siguientes aceptadas por `D-2026-07-05-012` a `D-2026-07-06-004`; no Canon, no clinico, no regulado)"
+            "text": "- `MOC-001` (expediente integrador teorico-operativo abierto por `D-2026-07-05-011`; `Xi_eval`, metricas, protocolo, simulacion, diseno empirico futuro, primera ruta ejecutada, bateria ampliada, puente formal `MOC/TCS`, puente formal `MOC/AO`, protocolo v0.2, protocolo documental de piloto futuro, compuerta de no autorizacion, paquete pre-ejecucion, paquete de registro/auditoria y rutas siguientes aceptadas por `D-2026-07-05-012` a `D-2026-07-06-005`; no Canon, no clinico, no regulado)"
           },
           {
             "line": 31,
@@ -18031,6 +18076,156 @@
         ]
       },
       "rationale": "La linea toca superficie sensible, pero el contexto la controla como prohibicion, decision registrada o regla de auditoria."
+    },
+    {
+      "source": "medio",
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md",
+      "detail": "MOC/TCS",
+      "evidence": "",
+      "category": "deuda_documental",
+      "category_label": "Deuda documental",
+      "operational_severity": "media",
+      "active_file": true,
+      "inherited_file": false,
+      "context_class": "guardrail",
+      "treatment_status": "pendiente_normalizacion_documental",
+      "risk_blocks_closure": false,
+      "source_context": {
+        "matched_line": 36,
+        "lines": [
+          {
+            "line": 30,
+            "text": "| `TCS-001` | maduracion semantica formal posterior | pendiente vivo |"
+          },
+          {
+            "line": 31,
+            "text": "| `MOC-001` / Nivel C | relacion futura con `C-001` / `C-002` | deuda futura |"
+          },
+          {
+            "line": 32,
+            "text": ""
+          },
+          {
+            "line": 33,
+            "text": "## No pendientes como bloqueo actual"
+          },
+          {
+            "line": 34,
+            "text": ""
+          },
+          {
+            "line": 35,
+            "text": "- La formalizacion local de `Xi_eval` ya esta aceptada en `MOC-001`."
+          },
+          {
+            "line": 36,
+            "text": "- El puente `MOC/TCS` ya esta aceptado como formalizacion ejecutable local."
+          },
+          {
+            "line": 37,
+            "text": "- El puente `MOC/AO` ya esta aceptado como formalizacion local con `operator_trace`."
+          },
+          {
+            "line": 38,
+            "text": "- El paquete pre-ejecucion de piloto ya esta preparado."
+          },
+          {
+            "line": 39,
+            "text": "- El metodo de registro sin datos personales y la matriz de auditoria ya estan preparados."
+          },
+          {
+            "line": 40,
+            "text": "- La ejecucion real del piloto permanece no autorizada y no debe tratarse como pendiente operativo inmediato."
+          },
+          {
+            "line": 41,
+            "text": ""
+          },
+          {
+            "line": 42,
+            "text": "## Dictamen"
+          }
+        ]
+      },
+      "rationale": "Hallazgo documental o de normalizacion; requiere orden, no transformacion inmediata."
+    },
+    {
+      "source": "medio",
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md",
+      "detail": "MOC/AO",
+      "evidence": "",
+      "category": "deuda_documental",
+      "category_label": "Deuda documental",
+      "operational_severity": "media",
+      "active_file": true,
+      "inherited_file": false,
+      "context_class": "guardrail",
+      "treatment_status": "pendiente_normalizacion_documental",
+      "risk_blocks_closure": false,
+      "source_context": {
+        "matched_line": 37,
+        "lines": [
+          {
+            "line": 31,
+            "text": "| `MOC-001` / Nivel C | relacion futura con `C-001` / `C-002` | deuda futura |"
+          },
+          {
+            "line": 32,
+            "text": ""
+          },
+          {
+            "line": 33,
+            "text": "## No pendientes como bloqueo actual"
+          },
+          {
+            "line": 34,
+            "text": ""
+          },
+          {
+            "line": 35,
+            "text": "- La formalizacion local de `Xi_eval` ya esta aceptada en `MOC-001`."
+          },
+          {
+            "line": 36,
+            "text": "- El puente `MOC/TCS` ya esta aceptado como formalizacion ejecutable local."
+          },
+          {
+            "line": 37,
+            "text": "- El puente `MOC/AO` ya esta aceptado como formalizacion local con `operator_trace`."
+          },
+          {
+            "line": 38,
+            "text": "- El paquete pre-ejecucion de piloto ya esta preparado."
+          },
+          {
+            "line": 39,
+            "text": "- El metodo de registro sin datos personales y la matriz de auditoria ya estan preparados."
+          },
+          {
+            "line": 40,
+            "text": "- La ejecucion real del piloto permanece no autorizada y no debe tratarse como pendiente operativo inmediato."
+          },
+          {
+            "line": 41,
+            "text": ""
+          },
+          {
+            "line": 42,
+            "text": "## Dictamen"
+          },
+          {
+            "line": 43,
+            "text": ""
+          }
+        ]
+      },
+      "rationale": "Hallazgo documental o de normalizacion; requiere orden, no transformacion inmediata."
     },
     {
       "source": "medio",

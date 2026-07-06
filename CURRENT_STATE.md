@@ -19,12 +19,21 @@ Ultimo expediente transferido:
 
 - `PSI-001` hacia proyecto independiente `Psicologia Concordante`; copia local de traspaso eliminada por `D-2026-07-03-012`.
 
+Licencia y derechos:
+
+- `Licencia_y_Derechos.md`: reserva de derechos del Modelo Operativo Concordante (MOC) y Concordante Lab; todos los derechos reservados.
+
+Revision de formalizacion:
+
+- `05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md`: no detecta deuda nueva bloqueante; conserva como pendientes vivos `MOC-ROUTE-010`, Documento 04 amplio, Confluencia global, Equivalencia global, exportacion R4/Gamma y maduracion de `TCS-001`.
+
 Ultima decision arquitectonica:
 
 - `C-002_RFC_Operativo_Auditor_v0.md` promovido como documento oficial de Nivel C en formato tipo RFC; complementa `C-001` y quedo alineado el 2026-07-03 con JSON, fixtures y adaptador no mutante.
 
 Ultima decision operativa:
 
+- `MOC-001_Decision_Paquete_Registro_Auditoria_Piloto.md` (`D-2026-07-06-005`): acepta `MOC-PILOT-REG-AUDIT-PACK-001`; metodo de registro sin datos personales y matriz de auditoria quedan preparados documentalmente. La siguiente ruta recomendada es `MOC-ROUTE-010`, decidir rutas posteriores sin reclutamiento ni ejecucion.
 - `MOC-001_Decision_Paquete_PreEjecucion_Piloto.md` (`D-2026-07-06-004`): acepta `MOC-PREEXEC-PACK-001`; semantica, operaciones formales, casos congelados, plantilla de respuesta y reglas/protocolo quedan preparados documentalmente. La siguiente ruta recomendada es `MOC-ROUTE-009`, metodo de registro sin datos personales y matriz de auditoria.
 - `MOC-001_Decision_Compuerta_Autorizacion_Ejecucion_Piloto.md` (`D-2026-07-06-003`): acepta `MOC-GATE-PILOT-EXEC-001`; resultado `no_autorizar_ejecucion`, `piloto_autorizado = false`; la siguiente ruta recomendada es `MOC-ROUTE-008`, preparar paquete documental pre-ejecucion sin reclutamiento ni ejecucion.
 - `MOC-001_Decision_Rutas_Posteriores_Ruta_006.md` (`D-2026-07-06-002`): acepta `MOC-NEXT-ROUTES-006`; la siguiente ruta recomendada es `MOC-ROUTE-007`, decidir compuerta de autorizacion o no autorizacion del piloto futuro sin ejecutarlo.
@@ -140,6 +149,9 @@ Expediente teorico reciente:
 - `MOC-001_Plantilla_Respuesta_Evaluadores.md`: `MOC-PILOT-RESPONSE-TPL-001`, plantilla documental sin datos personales; aceptada por `D-2026-07-06-004`.
 - `MOC-001_Reglas_Protocolo_Congelados.md`: `MOC-PILOT-RULE-FREEZE-001`, version congelada de reglas/protocolo; aceptada por `D-2026-07-06-004`.
 - `MOC-001_Paquete_PreEjecucion_Piloto.md`: `MOC-PREEXEC-PACK-001`, paquete documental pre-ejecucion; aceptado por `D-2026-07-06-004`.
+- `MOC-001_Metodo_Registro_Sin_Datos_Personales.md`: `MOC-PILOT-NODATA-REG-001`, metodo documental de registro sin datos personales; aceptado por `D-2026-07-06-005`.
+- `MOC-001_Matriz_Auditoria_Piloto.md`: `MOC-PILOT-AUDIT-MATRIX-001`, matriz documental de auditoria de piloto; aceptada por `D-2026-07-06-005`.
+- `MOC-001_Paquete_Registro_Auditoria_Piloto.md`: `MOC-PILOT-REG-AUDIT-PACK-001`, paquete documental de registro y auditoria; aceptado por `D-2026-07-06-005`.
 - `TCS-001_Teoria_Concordante_de_Sistemas.md`: propuesta teorica inicial para tratar `Concordance` como propiedad auditable de gobernanza de sistemas, no canonizada.
 - `TCS-001_Analisis_Fondo.md`: analisis provisional de fondo; recomienda mantener `TCS-001` abierto y desarrollar definiciones minimas, tipologia de fallos y casos de prueba.
 - `TCS-001_Definiciones_Minimas.md`, `TCS-001_Tipologia_Fallos_Concordancia.md` y `TCS-001_Casos_Prueba.md`: paquete minimo provisional aceptado por `D-2026-07-03-019`; no canonico.
@@ -229,6 +241,7 @@ Validacion provisional registrada:
 - `MOC-ROUTE-006`: protocolo documental de piloto empirico futuro preparado; no ejecuta piloto, no recluta evaluadores, no usa personas reales, no recopila datos personales y no abre uso clinico.
 - `MOC-ROUTE-007`: compuerta aplicada; el piloto empirico real no queda autorizado. Se permite solo preparar paquete documental pre-ejecucion sin reclutamiento, respuestas reales ni datos personales.
 - `MOC-ROUTE-008`: paquete documental pre-ejecucion preparado; casos, plantilla y reglas/protocolo quedan congelados documentalmente. El piloto real sigue bloqueado.
+- `MOC-ROUTE-009`: paquete documental de registro y auditoria preparado; metodo sin datos personales y matriz de auditoria quedan listos. El piloto real sigue bloqueado.
 - `MOC-ROUTE-005`: protocolo v0.2 aceptado; distingue ejes de desacuerdo, regla de desempate, tratamiento local y revision si el desacuerdo se repite, sin canonizar ni abrir estudio empirico real.
 - `MOC-ROUTE-004`: puente formal `MOC/AO` aceptado; `ao_bridge` proyecta el rastro ganador hacia roles locales de AO sin cerrar Confluencia global, Equivalencia global ni modificar `Documento 04`.
 - `MOC-ROUTE-003`: puente formal `MOC/TCS` aceptado; define `OP_MOC_XI`, `OP_MOC_TCS`, `OP_MOC_STATE` y `OP_MOC_AGREEMENT` con prioridad, conflicto, salida unica y traza auditable.
@@ -274,6 +287,7 @@ Validacion provisional registrada:
 
 Decision provisional registrada:
 
+- `MOC-001_Decision_Paquete_Registro_Auditoria_Piloto.md`: acepta `MOC-PILOT-REG-AUDIT-PACK-001` y recomienda `MOC-ROUTE-010`.
 - `MOC-001_Decision_Paquete_PreEjecucion_Piloto.md`: acepta `MOC-PREEXEC-PACK-001` y recomienda `MOC-ROUTE-009`.
 - `MOC-001_Decision_Compuerta_Autorizacion_Ejecucion_Piloto.md`: acepta `MOC-GATE-PILOT-EXEC-001`, no autoriza ejecucion y recomienda `MOC-ROUTE-008`.
 - `MOC-001_Decision_Rutas_Posteriores_Ruta_006.md`: acepta `MOC-NEXT-ROUTES-006` y recomienda `MOC-ROUTE-007`.
@@ -490,7 +504,7 @@ Especificacion candidata promovida:
 
 Proximo objetivo:
 
-- Avanzar `MOC-001` por `MOC-ROUTE-009`: preparar metodo de registro sin datos personales y matriz de auditoria de piloto, sin reclutamiento, sin respuestas reales, sin uso clinico y sin modificar `Documento 04`.
+- Avanzar `MOC-001` por `MOC-ROUTE-010`: decidir rutas posteriores despues del paquete de registro/auditoria, priorizando si el MOC permanece en simulacion documental, si se prepara criterio de evaluadores sin reclutamiento o si el frente entra en mantenimiento; sin respuestas reales, sin uso clinico y sin modificar `Documento 04`.
 - Conservar `AO-DOC04-FORM-001` como incorporacion acotada de `Pi_tb` / `Eq_tb` al Documento 04, sin leerla como cierre global.
 - Mantener bloqueada la exportacion general de R4/Gamma salvo nueva compuerta con dominio externo y semantica independiente de expediente.
 - Profundizar `AO-PPI-BRIDGE-001` hacia pruebas de Confluencia global y Equivalencia global de proyecciones sin reabrir `P-PI.0` / `P-PI.1`.
@@ -502,7 +516,7 @@ Proximo objetivo:
 
 Expediente activo inmediato:
 
-- `MOC-001` queda como frente integrador teorico-operativo principal; primera ruta valida ejecutada por `MOC-ROUTE-EXEC-001`, bateria ampliada por `MOC-ROUTE-002`, puente formal `MOC/TCS` aceptado por `MOC-ROUTE-003`, puente formal `MOC/AO` aceptado por `MOC-ROUTE-004`, protocolo v0.2 aceptado por `MOC-ROUTE-005`, protocolo documental de piloto futuro preparado por `MOC-ROUTE-006`, compuerta de no autorizacion aplicada por `MOC-ROUTE-007`, paquete pre-ejecucion preparado por `MOC-ROUTE-008` y siguiente ruta recomendada `MOC-ROUTE-009`; no canonico, no clinico, no regulado y sin admision de `H-Xi`.
+- `MOC-001` queda como frente integrador teorico-operativo principal; primera ruta valida ejecutada por `MOC-ROUTE-EXEC-001`, bateria ampliada por `MOC-ROUTE-002`, puente formal `MOC/TCS` aceptado por `MOC-ROUTE-003`, puente formal `MOC/AO` aceptado por `MOC-ROUTE-004`, protocolo v0.2 aceptado por `MOC-ROUTE-005`, protocolo documental de piloto futuro preparado por `MOC-ROUTE-006`, compuerta de no autorizacion aplicada por `MOC-ROUTE-007`, paquete pre-ejecucion preparado por `MOC-ROUTE-008`, paquete de registro/auditoria preparado por `MOC-ROUTE-009` y siguiente ruta recomendada `MOC-ROUTE-010`; no canonico, no clinico, no regulado y sin admision de `H-Xi`.
 - `AO-001` queda como frente operativo principal para profundizar `AO-PPI-BRIDGE-001`, conservar `AO-DOC04-FORM-001` como formalizacion acotada de `Pi_tb` / `Eq_tb`, mantener bloqueada la exportacion general de R4/Gamma y revisar despues su relacion eventual con `REPORT_LAYER`.
 - `HXI-001` queda abierto en mantenimiento local; conserva `Xi_eval`, no admite `H-Xi`, no canoniza `Xi` y no reabre `PSI-001`.
 - `R001-001` queda aceptado como integracion tecnica local y relacion formal local `R001-TB-001`; deudas vivas: Equivalencia global, Confluencia global, pruebas externas de Confluencia y eventual incorporacion al Documento 04.

@@ -38,6 +38,8 @@ Nota posterior 2026-07-06-003: `MOC-ROUTE-007` queda ejecutada por `D-2026-07-06
 
 Nota posterior 2026-07-06-004: `MOC-ROUTE-008` queda ejecutada por `D-2026-07-06-004` como paquete documental pre-ejecucion; casos, plantilla y reglas/protocolo quedan congelados documentalmente. La siguiente ruta recomendada es `MOC-ROUTE-009`.
 
+Nota posterior 2026-07-06-005: `MOC-ROUTE-009` queda ejecutada por `D-2026-07-06-005` como paquete documental de registro/auditoria; metodo de registro sin datos personales y matriz de auditoria quedan preparados documentalmente. La siguiente ruta recomendada es `MOC-ROUTE-010`.
+
 Fecha: 2026-07-02.
 
 ## Aviso de desactivacion
@@ -249,7 +251,7 @@ El paquete no cambia autoridad: Canon, estado, documentos oficiales, decisiones 
 ## Siguiente objetivo
 
 ```text
-Ejecutar `MOC-ROUTE-009`, preparando metodo de registro sin datos personales y matriz de auditoria de piloto sin reclutamiento ni respuestas reales; conservar AO-001, Confluencia, Equivalencia de proyecciones, `AO-DOC04-FORM-001`, bloqueo de exportacion general R4/Gamma y maduracion posterior de `TCS-001`.
+Ejecutar `MOC-ROUTE-010`, decidiendo rutas posteriores despues del paquete de registro/auditoria sin reclutamiento ni respuestas reales; conservar AO-001, Confluencia, Equivalencia de proyecciones, `AO-DOC04-FORM-001`, bloqueo de exportacion general R4/Gamma y maduracion posterior de `TCS-001`.
 ```
 
 ## Fuera del paquete

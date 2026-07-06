@@ -27,7 +27,7 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 
 ## Expedientes abiertos
 
-- `MOC-001` (expediente integrador teorico-operativo abierto por `D-2026-07-05-011`; `Xi_eval`, metricas, protocolo, simulacion, diseno empirico futuro, primera ruta ejecutada, bateria ampliada, puente formal `MOC/TCS`, puente formal `MOC/AO`, protocolo v0.2, protocolo documental de piloto futuro, compuerta de no autorizacion, paquete pre-ejecucion y rutas siguientes aceptadas por `D-2026-07-05-012` a `D-2026-07-06-004`; no Canon, no clinico, no regulado)
+- `MOC-001` (expediente integrador teorico-operativo abierto por `D-2026-07-05-011`; `Xi_eval`, metricas, protocolo, simulacion, diseno empirico futuro, primera ruta ejecutada, bateria ampliada, puente formal `MOC/TCS`, puente formal `MOC/AO`, protocolo v0.2, protocolo documental de piloto futuro, compuerta de no autorizacion, paquete pre-ejecucion, paquete de registro/auditoria y rutas siguientes aceptadas por `D-2026-07-05-012` a `D-2026-07-06-005`; no Canon, no clinico, no regulado)
 - `HXI-001` (abierto en mantenimiento local por `D-2026-07-05-003`; conserva `Xi_eval`; no admite `H-Xi`)
 - `R001-001` (integracion tecnica provisional de `R001-TABLE-CHECK-001` y relacion formal local `R001-TB-001`; no canoniza `Xi`, no admite `H-Xi`, no cierra `P-200` ni resuelve `P-107`)
 - `TCS-001` (expediente teorico provisional; paquete minimo aceptado por `D-2026-07-03-019` y maduracion provisional `TCS-MAT-PROV-001` aceptada por `D-2026-07-05-010`; no Canon, no documento oficial)
@@ -72,7 +72,7 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 
 ## Problemas abiertos
 
-- Maduracion de `MOC-001` mas alla de `MOC-ROUTE-008`; la ejecucion del piloto no queda autorizada. Siguiente ruta recomendada `MOC-ROUTE-009` para preparar metodo de registro sin datos personales y matriz de auditoria, sin reclutamiento, sin respuestas reales, sin canonizacion y sin dominios clinicos o regulados.
+- Maduracion de `MOC-001` mas alla de `MOC-ROUTE-009`; la ejecucion del piloto no queda autorizada. Siguiente ruta recomendada `MOC-ROUTE-010` para decidir rutas posteriores despues del paquete de registro/auditoria, sin reclutamiento, sin respuestas reales, sin canonizacion y sin dominios clinicos o regulados.
 - Confluencia.
 - Equivalencia de proyecciones.
 - Promocion o exportacion general fuera de `AUD-001` de `R4-FORMAL-AUD-001`; bloqueada provisionalmente por `D-2026-07-05-009`.
@@ -128,6 +128,9 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - `MOC-001_Plantilla_Respuesta_Evaluadores.md`: `MOC-PILOT-RESPONSE-TPL-001`, plantilla sin datos personales; aceptada por `D-2026-07-06-004`.
 - `MOC-001_Reglas_Protocolo_Congelados.md`: `MOC-PILOT-RULE-FREEZE-001`, version congelada de reglas/protocolo; aceptada por `D-2026-07-06-004`.
 - `MOC-001_Paquete_PreEjecucion_Piloto.md`: `MOC-PREEXEC-PACK-001`, paquete documental pre-ejecucion; aceptado por `D-2026-07-06-004`.
+- `MOC-001_Metodo_Registro_Sin_Datos_Personales.md`: `MOC-PILOT-NODATA-REG-001`, metodo documental de registro sin datos personales; aceptado por `D-2026-07-06-005`.
+- `MOC-001_Matriz_Auditoria_Piloto.md`: `MOC-PILOT-AUDIT-MATRIX-001`, matriz documental de auditoria de piloto; aceptada por `D-2026-07-06-005`.
+- `MOC-001_Paquete_Registro_Auditoria_Piloto.md`: `MOC-PILOT-REG-AUDIT-PACK-001`, paquete documental de registro y auditoria; aceptado por `D-2026-07-06-005`.
 - `AO-001_Casos_Prueba_Algebra_Operacional.md`: `AO-CASE-BAT-001`, casos `AO-CASE-001` a `AO-CASE-006` aceptados por `D-2026-07-03-016`.
 - `AO-001_Criterios_Uso_R4_Gamma_Fuera_AUD.md`: `AO-R4-GAMMA-USE-001`, criterio local para referencia formal, prueba controlada o puente de problema; aceptado por `D-2026-07-03-017`.
 - `AO-001_Puente_Confluencia_Equivalencia.md`: `AO-PPI-BRIDGE-001`, avance local con `AO-PPI-EQ-001` y `AO-PPI-CONF-001`; aceptado por `D-2026-07-03-018`.
@@ -185,6 +188,7 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - `MOC-001_Auditoria_Rutas_Posteriores_Ruta_006.md`: auditoria favorable de `MOC-NEXT-ROUTES-006`.
 - `MOC-001_Auditoria_Compuerta_Autorizacion_Ejecucion_Piloto.md`: auditoria favorable a no autorizacion de ejecucion real del piloto.
 - `MOC-001_Auditoria_Paquete_PreEjecucion_Piloto.md`: auditoria favorable de `MOC-PREEXEC-PACK-001`.
+- `MOC-001_Auditoria_Paquete_Registro_Auditoria_Piloto.md`: auditoria favorable de `MOC-PILOT-REG-AUDIT-PACK-001`.
 - `AO-001_Auditoria_Pruebas_Externas_Confluencia.md`: auditoria favorable de `AO-EXT-CONF-EXEC-001`; acepta ejecucion local sin cierre global.
 - `AO-001_Auditoria_Formalizacion_Acotada_Doc04.md`: auditoria favorable de `AO-DOC04-FORM-001`; acepta incorporacion acotada sin cierre global.
 - `AO-001_Auditoria_Compuerta_Exportacion_R4_Gamma.md`: auditoria favorable del bloqueo controlado de exportacion general R4/Gamma.
@@ -246,6 +250,7 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 
 ## Decisiones provisionales de expediente
 
+- `MOC-001_Decision_Paquete_Registro_Auditoria_Piloto.md` (`D-2026-07-06-005`): acepta `MOC-PILOT-REG-AUDIT-PACK-001`; recomienda `MOC-ROUTE-010`.
 - `MOC-001_Decision_Paquete_PreEjecucion_Piloto.md` (`D-2026-07-06-004`): acepta `MOC-PREEXEC-PACK-001`; recomienda `MOC-ROUTE-009`.
 - `MOC-001_Decision_Compuerta_Autorizacion_Ejecucion_Piloto.md` (`D-2026-07-06-003`): acepta `MOC-GATE-PILOT-EXEC-001`; no autoriza ejecucion real y recomienda `MOC-ROUTE-008`.
 - `MOC-001_Decision_Rutas_Posteriores_Ruta_006.md` (`D-2026-07-06-002`): acepta `MOC-NEXT-ROUTES-006`; recomienda `MOC-ROUTE-007`.
@@ -514,6 +519,9 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - `MOC-001_Plantilla_Respuesta_Evaluadores.md`: plantilla de respuesta sin datos personales.
 - `MOC-001_Reglas_Protocolo_Congelados.md`: version congelada de reglas/protocolo.
 - `MOC-001_Paquete_PreEjecucion_Piloto.md`: paquete pre-ejecucion; `MOC-ROUTE-009` queda como recomendada.
+- `MOC-001_Metodo_Registro_Sin_Datos_Personales.md`: metodo documental para registrar respuestas sin datos personales ni metadatos identificables.
+- `MOC-001_Matriz_Auditoria_Piloto.md`: matriz documental de auditoria con bloqueo por datos personales, caso real, perdida de trazabilidad o uso clinico.
+- `MOC-001_Paquete_Registro_Auditoria_Piloto.md`: paquete de ruta 009; `MOC-ROUTE-010` queda como recomendada.
 - `AUD-001_Gamma_Ruta1_Definicion_Local.md`: definicion local provisional `GAMMA-DEF-001` para usar `Gamma_1(E, C) = G` solo como salida acotada dentro de `AUD-001`.
 - `AUD-001_Relacion_Gamma_Ruta1_R4_Formal.md`: relacion provisional `REL-GAMMA-R4-001` que separa evidencia `R4-CANDIDATA`, generalizacion `Gamma_1` y deuda de R4 formal.
 - `AUD-001_R4_Formal_Local.md`: construccion formal local `R4-FORMAL-AUD-001`.
@@ -550,6 +558,7 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 
 ## Ultima decision operativa
 
+`MOC-001_Decision_Paquete_Registro_Auditoria_Piloto.md` (`D-2026-07-06-005`): se acepta `MOC-PILOT-REG-AUDIT-PACK-001`; quedan preparados metodo de registro sin datos personales y matriz de auditoria. La siguiente ruta recomendada es `MOC-ROUTE-010`, decidir rutas posteriores sin reclutamiento ni ejecucion.
 `MOC-001_Decision_Paquete_PreEjecucion_Piloto.md` (`D-2026-07-06-004`): se acepta `MOC-PREEXEC-PACK-001`; quedan preparados semantica provisional, tabla de operaciones, casos congelados, plantilla y reglas/protocolo congelados. La siguiente ruta recomendada es `MOC-ROUTE-009`, metodo de registro sin datos personales y matriz de auditoria.
 `MOC-001_Decision_Compuerta_Autorizacion_Ejecucion_Piloto.md` (`D-2026-07-06-003`): se acepta `MOC-GATE-PILOT-EXEC-001`; la ejecucion real del piloto no queda autorizada y la siguiente ruta recomendada es `MOC-ROUTE-008`, preparar paquete documental pre-ejecucion sin reclutamiento ni ejecucion.
 `MOC-001_Decision_Rutas_Posteriores_Ruta_006.md` (`D-2026-07-06-002`): se acepta `MOC-NEXT-ROUTES-006`; la siguiente ruta recomendada es `MOC-ROUTE-007`, decidir compuerta de autorizacion o no autorizacion del piloto futuro sin ejecutarlo.
@@ -607,7 +616,7 @@ Ultimo expediente tecnico aceptado: `R001-001`; `AUT-002` queda como mantenimien
 
 ## Proximo objetivo
 
-Avanzar `MOC-001` por `MOC-ROUTE-009`: preparar metodo de registro sin datos personales y matriz de auditoria de piloto, sin reclutamiento, sin respuestas reales, sin uso clinico y sin modificar `Documento 04`.
+Avanzar `MOC-001` por `MOC-ROUTE-010`: decidir rutas posteriores despues del paquete de registro/auditoria, priorizando si el MOC permanece en simulacion documental, si se prepara criterio de evaluadores sin reclutamiento o si el frente entra en mantenimiento; sin respuestas reales, sin uso clinico y sin modificar `Documento 04`.
 
 Conservar `AO-DOC04-FORM-001` como incorporacion acotada de `Pi_tb` / `Eq_tb` al Documento 04 sin leerla como cierre global.
 
@@ -634,7 +643,7 @@ Madurar `TCS-001` desde `TCS-MAT-PROV-001` hacia semantica formal, mas casos ext
 
 ## Deudas conceptuales activas
 
-- `MOC-001`: ejecutar `MOC-ROUTE-009`, preparar metodo de registro sin datos personales y matriz de auditoria, conservar relacion futura con `C-001` / `C-002` como deuda y mantener cualquier estudio empirico real bloqueado hasta decision posterior.
+- `MOC-001`: ejecutar `MOC-ROUTE-010`, decidir rutas posteriores despues del paquete de registro/auditoria, conservar relacion futura con `C-001` / `C-002` como deuda y mantener cualquier estudio empirico real bloqueado hasta decision posterior.
 - Si se busca implementacion, crear herramienta no mutante conforme a `C-002` antes de cualquier modo mutante.
 - Si se busca promocion formal, justificar si `REPORT_LAYER` debe pasar a Nivel C o permanecer local.
 - Conservar la deuda documental visible de `AUT-001` si se mantienen referencias a reportes generados excluidos del indice medio.

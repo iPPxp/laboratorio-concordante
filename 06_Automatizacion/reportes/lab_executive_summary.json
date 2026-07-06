@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-LAB-SUMMARY-20260705-190710",
+  "report_id": "DO-LAB-SUMMARY-20260706-120317",
   "expediente": "AUT-001",
   "algoritmo": "DO-LAB-SUMMARY-001",
   "resultado": "advertencia",
@@ -7,11 +7,11 @@
   "transformacion_permitida": false,
   "headline": "Cierre operativo conservado con deuda documental visible.",
   "state": {
-    "expediente_activo_inmediato": "`MOC-001` queda como frente integrador teorico-operativo principal; primera ruta valida ejecutada por `MOC-ROUTE-EXEC-001`, bateria ampliada por `MOC-ROUTE-002`, puente formal `MOC/TCS` aceptado por `MOC-ROUTE-003`, puente formal `MOC/AO` aceptado por `MOC-ROUTE-004`, protocolo v0.2 aceptado por `MOC-ROUTE-005`, protocolo documental de piloto futuro preparado por `MOC-ROUTE-006`, compuerta de no autorizacion aplicada por `MOC-ROUTE-007`, paquete pre-ejecucion preparado por `MOC-ROUTE-008` y siguiente ruta recomendada `MOC-ROUTE-009`; no canonico, no clinico, no regulado y sin admision de `H-Xi`.",
-    "proximo_objetivo": "Avanzar `MOC-001` por `MOC-ROUTE-009`: preparar metodo de registro sin datos personales y matriz de auditoria de piloto, sin reclutamiento, sin respuestas reales, sin uso clinico y sin modificar `Documento 04`.",
-    "ultima_decision_operativa": "`MOC-001_Decision_Paquete_PreEjecucion_Piloto.md` (`D-2026-07-06-004`): acepta `MOC-PREEXEC-PACK-001`; semantica, operaciones formales, casos congelados, plantilla de respuesta y reglas/protocolo quedan preparados documentalmente. La siguiente ruta recomendada es `MOC-ROUTE-009`, metodo de registro sin datos personales y matriz de auditoria.",
+    "expediente_activo_inmediato": "`MOC-001` queda como frente integrador teorico-operativo principal; primera ruta valida ejecutada por `MOC-ROUTE-EXEC-001`, bateria ampliada por `MOC-ROUTE-002`, puente formal `MOC/TCS` aceptado por `MOC-ROUTE-003`, puente formal `MOC/AO` aceptado por `MOC-ROUTE-004`, protocolo v0.2 aceptado por `MOC-ROUTE-005`, protocolo documental de piloto futuro preparado por `MOC-ROUTE-006`, compuerta de no autorizacion aplicada por `MOC-ROUTE-007`, paquete pre-ejecucion preparado por `MOC-ROUTE-008`, paquete de registro/auditoria preparado por `MOC-ROUTE-009` y siguiente ruta recomendada `MOC-ROUTE-010`; no canonico, no clinico, no regulado y sin admision de `H-Xi`.",
+    "proximo_objetivo": "Avanzar `MOC-001` por `MOC-ROUTE-010`: decidir rutas posteriores despues del paquete de registro/auditoria, priorizando si el MOC permanece en simulacion documental, si se prepara criterio de evaluadores sin reclutamiento o si el frente entra en mantenimiento; sin respuestas reales, sin uso clinico y sin modificar `Documento 04`.",
+    "ultima_decision_operativa": "`MOC-001_Decision_Paquete_Registro_Auditoria_Piloto.md` (`D-2026-07-06-005`): acepta `MOC-PILOT-REG-AUDIT-PACK-001`; metodo de registro sin datos personales y matriz de auditoria quedan preparados documentalmente. La siguiente ruta recomendada es `MOC-ROUTE-010`, decidir rutas posteriores sin reclutamiento ni ejecucion.",
     "expedientes_abiertos": [
-      "`MOC-001` (expediente integrador teorico-operativo abierto por `D-2026-07-05-011`; `Xi_eval`, metricas, protocolo, simulacion, diseno empirico futuro, primera ruta ejecutada, bateria ampliada, puente formal `MOC/TCS`, puente formal `MOC/AO`, protocolo v0.2, protocolo documental de piloto futuro, compuerta de no autorizacion, paquete pre-ejecucion y rutas siguientes aceptadas por `D-2026-07-05-012` a `D-2026-07-06-004`; no Canon, no clinico, no regulado)",
+      "`MOC-001` (expediente integrador teorico-operativo abierto por `D-2026-07-05-011`; `Xi_eval`, metricas, protocolo, simulacion, diseno empirico futuro, primera ruta ejecutada, bateria ampliada, puente formal `MOC/TCS`, puente formal `MOC/AO`, protocolo v0.2, protocolo documental de piloto futuro, compuerta de no autorizacion, paquete pre-ejecucion, paquete de registro/auditoria y rutas siguientes aceptadas por `D-2026-07-05-012` a `D-2026-07-06-005`; no Canon, no clinico, no regulado)",
       "`HXI-001` (abierto en mantenimiento local por `D-2026-07-05-003`; conserva `Xi_eval`; no admite `H-Xi`)",
       "`R001-001` (integracion tecnica provisional de `R001-TABLE-CHECK-001` y relacion formal local `R001-TB-001`; no canoniza `Xi`, no admite `H-Xi`, no cierra `P-200` ni resuelve `P-107`)",
       "`TCS-001` (expediente teorico provisional; paquete minimo aceptado por `D-2026-07-03-019` y maduracion provisional `TCS-MAT-PROV-001` aceptada por `D-2026-07-05-010`; no Canon, no documento oficial)",
@@ -29,7 +29,7 @@
         "algorithm": "DO-CHECK-MIN-001",
         "resultado": "advertencia",
         "recomendacion": "continuar_sin_transformar",
-        "findings": 162,
+        "findings": 163,
         "markdown": "06_Automatizacion/reportes/do_check_min_repo.md",
         "json": "06_Automatizacion/reportes/do_check_min_repo.json"
       },
@@ -38,7 +38,7 @@
         "algorithm": "DO-CHECK-MED-001",
         "resultado": "advertencia",
         "recomendacion": "continuar_sin_transformar",
-        "findings": 335,
+        "findings": 338,
         "markdown": "06_Automatizacion/reportes/do_check_med_repo.md",
         "json": "06_Automatizacion/reportes/do_check_med_repo.json"
       },
@@ -56,7 +56,7 @@
         "algorithm": "DO-LAB-CONTINUITY-001",
         "resultado": "advertencia",
         "recomendacion": "continuar_sin_transformar",
-        "findings": 335,
+        "findings": 338,
         "markdown": "06_Automatizacion/reportes/lab_continuity_report.md",
         "json": "06_Automatizacion/reportes/lab_continuity_report.json"
       },
@@ -65,7 +65,7 @@
         "algorithm": "DO-LAB-RISK-001",
         "resultado": "advertencia_clasificada",
         "recomendacion": "mantener_cierre_operativo",
-        "findings": 327,
+        "findings": 331,
         "markdown": "06_Automatizacion/reportes/lab_risk_report.md",
         "json": "06_Automatizacion/reportes/lab_risk_report.json"
       },
@@ -106,17 +106,17 @@
     "by_category": {
       "advertencia_controlada": 24,
       "advertencia_heredada": 59,
-      "deuda_documental": 185,
-      "observacion": 59
+      "deuda_documental": 187,
+      "observacion": 61
     },
     "by_operational_severity": {
-      "media": 145,
-      "baja": 179,
+      "media": 147,
+      "baja": 181,
       "alta": 3
     },
     "by_context_class": {
-      "guardrail": 74,
-      "riesgo_real": 203,
+      "guardrail": 76,
+      "riesgo_real": 205,
       "decision_registrada": 25,
       "bitacora_historica": 12,
       "control_auditoria": 1,
@@ -125,8 +125,8 @@
     "by_treatment_status": {
       "controlado_por_guardrail": 19,
       "conservar_deuda_historica": 59,
-      "pendiente_normalizacion_documental": 185,
-      "conservado_sin_tratamiento": 59,
+      "pendiente_normalizacion_documental": 187,
+      "conservado_sin_tratamiento": 61,
       "controlado_por_historial": 2,
       "controlado_por_regla_de_auditoria": 1,
       "controlado_por_definicion_de_check": 1,
@@ -136,10 +136,10 @@
     "top_active": []
   },
   "sources": {
-    "run": "DO-LAB-RUN-20260705-190710",
-    "risk": "DO-LAB-RISK-20260705-190710",
-    "board": "DO-STATE-BOARD-20260705-190705",
-    "continuity": "DO-LAB-CONTINUITY-20260705-190709"
+    "run": "DO-LAB-RUN-20260706-120317",
+    "risk": "DO-LAB-RISK-20260706-120317",
+    "board": "DO-STATE-BOARD-20260706-120313",
+    "continuity": "DO-LAB-CONTINUITY-20260706-120317"
   },
   "next_actions": [
     "Mantener cierre operativo de AUT-001 con deuda documental visible.",

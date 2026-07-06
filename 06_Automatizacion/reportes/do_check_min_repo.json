@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-CHECK-MIN-20260705-190700",
+  "report_id": "DO-CHECK-MIN-20260706-120309",
   "expediente": "AUT-001",
   "algoritmo": "DO-CHECK-MIN-001",
   "resultado": "advertencia",
@@ -14,8 +14,8 @@
     "03_Expedientes/DO-001_DO-CHECK-001.md"
   ],
   "summary": {
-    "files_checked": 359,
-    "findings": 162
+    "files_checked": 366,
+    "findings": 163
   },
   "targets": [
     {
@@ -1494,6 +1494,11 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/MOC-001_Auditoria_Paquete_Registro_Auditoria_Piloto.md",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/MOC-001_Auditoria_Protocolo_Piloto_Empirico_Futuro.md",
       "estatus": "auditoria favorable con limites",
       "findings": []
@@ -1625,6 +1630,11 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/MOC-001_Decision_Paquete_Registro_Auditoria_Piloto.md",
+      "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/MOC-001_Decision_Protocolo_Piloto_Empirico_Futuro.md",
       "estatus": "decision provisional de expediente",
       "findings": []
@@ -1752,12 +1762,27 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/MOC-001_Matriz_Auditoria_Piloto.md",
+      "estatus": "matriz documental preparada, no usada en ejecucion real",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Metodo_Registro_Sin_Datos_Personales.md",
+      "estatus": "metodo documental preparado, no usado en ejecucion real",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/MOC-001_Metricas_Estados.md",
       "estatus": "metrica cualitativa ordinal provisional",
       "findings": []
     },
     {
       "file": "03_Expedientes/MOC-001_Paquete_PreEjecucion_Piloto.md",
+      "estatus": "paquete documental preparado, ejecucion real bloqueada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Paquete_Registro_Auditoria_Piloto.md",
       "estatus": "paquete documental preparado, ejecucion real bloqueada",
       "findings": []
     },
@@ -2384,6 +2409,11 @@
       "findings": []
     },
     {
+      "file": "05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md",
+      "estatus": "revision operativa no decisoria",
+      "findings": []
+    },
+    {
       "file": "06_Automatizacion/fixtures/README.md",
       "estatus": "fixtures ejecutables no mutantes",
       "findings": []
@@ -2817,6 +2847,18 @@
       "file": "INDEX.md",
       "estatus": "no_clasificado",
       "findings": []
+    },
+    {
+      "file": "Licencia_y_Derechos.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "no_ascii",
+          "file": "Licencia_y_Derechos.md",
+          "detail": "Contiene caracteres no ASCII fuera de excepciones historicas."
+        }
+      ]
     },
     {
       "file": "PROMPT_MAESTRO.md",
@@ -3811,6 +3853,12 @@
       "kind": "referencia_historica_transferida",
       "file": "HANDOFF_PACKAGE.md",
       "detail": "03_Expedientes/PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)"
+    },
+    {
+      "severity": "warning",
+      "kind": "no_ascii",
+      "file": "Licencia_y_Derechos.md",
+      "detail": "Contiene caracteres no ASCII fuera de excepciones historicas."
     }
   ]
 }

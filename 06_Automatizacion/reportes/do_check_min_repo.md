@@ -1,6 +1,6 @@
 # DO_CHECK_REPORT minimo
 
-report_id: DO-CHECK-MIN-20260705-190700
+report_id: DO-CHECK-MIN-20260706-120309
 expediente: AUT-001
 resultado: advertencia
 recomendacion: continuar_sin_transformar
@@ -8,8 +8,8 @@ transformacion_permitida: false
 
 ## Resumen
 
-- archivos revisados: 359
-- hallazgos: 162
+- archivos revisados: 366
+- hallazgos: 163
 
 ## Hallazgos
 
@@ -175,3 +175,4 @@ transformacion_permitida: false
 - [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
 - [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
 - [warning] HANDOFF_PACKAGE.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Estatus_Matriz_Patrones_Transformacion_No_Clinica.md (PSI-001 transferido; no restaurar copia local)
+- [warning] Licencia_y_Derechos.md - no_ascii: Contiene caracteres no ASCII fuera de excepciones historicas.

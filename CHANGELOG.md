@@ -498,3 +498,8 @@
 - Ejecutada `MOC-ROUTE-008` como paquete documental pre-ejecucion: semantica provisional, tabla de operaciones, casos congelados, plantilla y reglas/protocolo congelados.
 - Creadas `MOC-001_Semantica_Provisional.md`, `MOC-001_Tabla_Operaciones_Formales.md`, `MOC-001_Casos_Congelados_Piloto.md`, `MOC-001_Plantilla_Respuesta_Evaluadores.md`, `MOC-001_Reglas_Protocolo_Congelados.md`, `MOC-001_Paquete_PreEjecucion_Piloto.md`, auditoria y decision; registrada `D-2026-07-06-004`.
 - La siguiente ruta recomendada queda como `MOC-ROUTE-009`: preparar metodo de registro sin datos personales y matriz de auditoria, sin reclutamiento ni ejecucion.
+- Ejecutada `MOC-ROUTE-009` como paquete documental de registro/auditoria: metodo de registro sin datos personales y matriz de auditoria de piloto.
+- Creadas `MOC-001_Metodo_Registro_Sin_Datos_Personales.md`, `MOC-001_Matriz_Auditoria_Piloto.md`, `MOC-001_Paquete_Registro_Auditoria_Piloto.md`, auditoria y decision; registrada `D-2026-07-06-005`.
+- La siguiente ruta recomendada queda como `MOC-ROUTE-010`: decidir rutas posteriores despues del paquete de registro/auditoria, sin reclutamiento ni ejecucion.
+- Creado `Licencia_y_Derechos.md`: reserva de derechos del Modelo Operativo Concordante (MOC) y Concordante Lab; todos los derechos reservados.
+- Creado `05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md`: revision no decisoria de formalizaciones restantes; no detecta deuda nueva bloqueante y conserva como pendientes vivos `MOC-ROUTE-010`, Documento 04 amplio, Confluencia global, Equivalencia global, exportacion R4/Gamma y maduracion de `TCS-001`.

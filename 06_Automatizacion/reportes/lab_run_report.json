@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-LAB-RUN-20260705-190710",
+  "report_id": "DO-LAB-RUN-20260706-120317",
   "expediente": "AUT-001",
   "algoritmo": "DO-LAB-RUN-001",
   "resultado": "advertencia",
@@ -12,7 +12,7 @@
       "algorithm": "DO-CHECK-MIN-001",
       "resultado": "advertencia",
       "recomendacion": "continuar_sin_transformar",
-      "findings": 162,
+      "findings": 163,
       "markdown": "06_Automatizacion/reportes/do_check_min_repo.md",
       "json": "06_Automatizacion/reportes/do_check_min_repo.json"
     },
@@ -21,7 +21,7 @@
       "algorithm": "DO-CHECK-MED-001",
       "resultado": "advertencia",
       "recomendacion": "continuar_sin_transformar",
-      "findings": 335,
+      "findings": 338,
       "markdown": "06_Automatizacion/reportes/do_check_med_repo.md",
       "json": "06_Automatizacion/reportes/do_check_med_repo.json"
     },
@@ -39,7 +39,7 @@
       "algorithm": "DO-LAB-CONTINUITY-001",
       "resultado": "advertencia",
       "recomendacion": "continuar_sin_transformar",
-      "findings": 335,
+      "findings": 338,
       "markdown": "06_Automatizacion/reportes/lab_continuity_report.md",
       "json": "06_Automatizacion/reportes/lab_continuity_report.json"
     },
@@ -48,7 +48,7 @@
       "algorithm": "DO-LAB-RISK-001",
       "resultado": "advertencia_clasificada",
       "recomendacion": "mantener_cierre_operativo",
-      "findings": 327,
+      "findings": 331,
       "markdown": "06_Automatizacion/reportes/lab_risk_report.md",
       "json": "06_Automatizacion/reportes/lab_risk_report.json"
     },
