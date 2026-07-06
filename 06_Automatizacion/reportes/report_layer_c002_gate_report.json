@@ -1,0 +1,142 @@
+{
+  "report_id": "REPORT-LAYER-C002-GATE-20260706-134841",
+  "expediente": "AUT-003",
+  "algoritmo": "REPORT-LAYER-C002-GATE-001",
+  "suite_id": "REPORT-LAYER-C002-CASES-001",
+  "resultado": "ok",
+  "recomendacion": "mantener_report_layer_local_pre_c",
+  "transformacion_permitida": false,
+  "conforme_c002_no_mutante": true,
+  "scope_guard": {
+    "modifica_c001": false,
+    "modifica_c002": false,
+    "crea_nivel_c": false,
+    "promueve_report_layer": false,
+    "autoriza_transformacion": false,
+    "emite_decision_autoridad": false,
+    "usa_historial_como_autoridad": false
+  },
+  "c002_guard": {
+    "fuente_normativa": "02_Documentos/C-002_RFC_Operativo_Auditor_v0.md",
+    "campos_requeridos": [
+      "artefacto_revisado",
+      "decision_emitida",
+      "decisiones_permitidas",
+      "dependencias",
+      "deudas_generadas",
+      "estatus_afirmacion",
+      "evidencia",
+      "operador_fase",
+      "recomendacion",
+      "report_id",
+      "resultado",
+      "tipo_hallazgo",
+      "transformacion_permitida",
+      "ubicacion"
+    ],
+    "separa_recomendacion_decision_permiso": true,
+    "modo_mutante_bloqueado": true
+  },
+  "summary": {
+    "cases": 8,
+    "passed": 8,
+    "failed": 0,
+    "findings": 0,
+    "by_outcome": {
+      "compatible_no_mutante": 2,
+      "bloqueo_campos_minimos": 1,
+      "bloqueo_recomendacion_como_decision": 1,
+      "bloqueo_modo_mutante": 1,
+      "bloqueo_promocion_nivel_c": 1,
+      "bloqueo_historial_autoridad": 1,
+      "bloqueo_permiso_material": 1
+    }
+  },
+  "results": [
+    {
+      "case_id": "RL-C002-001",
+      "expected": "compatible_no_mutante",
+      "actual": "compatible_no_mutante",
+      "passed": true,
+      "detail": "Reporte completo, local y sin transformacion.",
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "case_id": "RL-C002-002",
+      "expected": "compatible_no_mutante",
+      "actual": "compatible_no_mutante",
+      "passed": true,
+      "detail": "Recomendacion favorable conservada como recomendacion, no como decision.",
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "case_id": "RL-C002-003",
+      "expected": "bloqueo_campos_minimos",
+      "actual": "bloqueo_campos_minimos",
+      "passed": true,
+      "detail": "Falta decision_emitida, campo requerido para separar recomendacion y decision.",
+      "blockers": [
+        "missing:decision_emitida"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "RL-C002-004",
+      "expected": "bloqueo_recomendacion_como_decision",
+      "actual": "bloqueo_recomendacion_como_decision",
+      "passed": true,
+      "detail": "Una recomendacion se copia como decision emitida.",
+      "blockers": [
+        "recomendacion_convertida_en_decision"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "RL-C002-005",
+      "expected": "bloqueo_modo_mutante",
+      "actual": "bloqueo_modo_mutante",
+      "passed": true,
+      "detail": "Un reporte intenta habilitar transformacion material.",
+      "blockers": [
+        "transformacion_permitida_true"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "RL-C002-006",
+      "expected": "bloqueo_promocion_nivel_c",
+      "actual": "bloqueo_promocion_nivel_c",
+      "passed": true,
+      "detail": "REPORT_LAYER reclama estatus de Nivel C sin candidata, auditoria ni decision.",
+      "blockers": [
+        "promocion_no_autorizada:nivel_c"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "RL-C002-007",
+      "expected": "bloqueo_historial_autoridad",
+      "actual": "bloqueo_historial_autoridad",
+      "passed": true,
+      "detail": "Registro historico usado como autoridad directa.",
+      "blockers": [
+        "historial_como_autoridad:estado_vigente"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "RL-C002-008",
+      "expected": "bloqueo_permiso_material",
+      "actual": "bloqueo_permiso_material",
+      "passed": true,
+      "detail": "Decision de cambio acotado aparece sin PERMISO-ACT-001 materializado.",
+      "blockers": [
+        "decision_mutante_sin_permiso_act_001"
+      ],
+      "warnings": []
+    }
+  ],
+  "findings": []
+}

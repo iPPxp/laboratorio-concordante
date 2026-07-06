@@ -42,6 +42,8 @@ def load_components() -> dict[str, Any]:
         "summary": load_module("lab_summary_component", MODULE_DIR / "lab_executive_summary.py"),
         "r001": load_module("r001_table_checks_component", MODULE_DIR / "r001_table_checks.py"),
         "ao_ext": load_module("ao_ext_confluence_component", MODULE_DIR / "ao_ext_confluence.py"),
+        "ao_wide": load_module("ao_doc04_wide_component", MODULE_DIR / "ao_doc04_wide_tests.py"),
+        "rl_c002": load_module("report_layer_c002_gate_component", MODULE_DIR / "report_layer_c002_gate.py"),
         "moc": load_module("moc_eval_component", MODULE_DIR / "moc_eval.py"),
     }
 
@@ -176,6 +178,14 @@ def build_run_report(root: Path, scope: str) -> dict[str, Any]:
     write_json(root, "06_Automatizacion/reportes/ao_ext_confluence_report.json", ao_ext_report)
     write_report(root, "06_Automatizacion/reportes/ao_ext_confluence_report.md", components["ao_ext"].render_md(ao_ext_report))
 
+    ao_wide_report = components["ao_wide"].build_report(root)
+    write_json(root, "06_Automatizacion/reportes/ao_doc04_wide_report.json", ao_wide_report)
+    write_report(root, "06_Automatizacion/reportes/ao_doc04_wide_report.md", components["ao_wide"].render_md(ao_wide_report))
+
+    rl_c002_report = components["rl_c002"].build_report(root)
+    write_json(root, "06_Automatizacion/reportes/report_layer_c002_gate_report.json", rl_c002_report)
+    write_report(root, "06_Automatizacion/reportes/report_layer_c002_gate_report.md", components["rl_c002"].render_md(rl_c002_report))
+
     moc_report = components["moc"].build_report(root)
     write_json(root, "06_Automatizacion/reportes/moc_eval_report.json", moc_report)
     write_report(root, "06_Automatizacion/reportes/moc_eval_report.md", components["moc"].render_md(moc_report))
@@ -189,7 +199,7 @@ def build_run_report(root: Path, scope: str) -> dict[str, Any]:
     write_json(root, "06_Automatizacion/reportes/lab_continuity_report.json", continuity_report)
     write_report(root, "06_Automatizacion/reportes/lab_continuity_report.md", components["continuity"].render_md(continuity_report))
 
-    resultado, recomendacion = combine_result([min_report, med_report, board_report, continuity_report, risk_report, r001_report, ao_ext_report, moc_report])
+    resultado, recomendacion = combine_result([min_report, med_report, board_report, continuity_report, risk_report, r001_report, ao_ext_report, ao_wide_report, rl_c002_report, moc_report])
     run_report = {
         "report_id": "DO-LAB-RUN-" + dt.datetime.now().strftime("%Y%m%d-%H%M%S"),
         "expediente": "AUT-001",
@@ -206,6 +216,8 @@ def build_run_report(root: Path, scope: str) -> dict[str, Any]:
             step_entry("clasificacion_riesgos", "DO-LAB-RISK-001", risk_report, "06_Automatizacion/reportes/lab_risk_report.md", "06_Automatizacion/reportes/lab_risk_report.json"),
             step_entry("r001_table_checks", "R001-TABLE-CHECK-001", r001_report, "06_Automatizacion/reportes/r001_table_checks_report.md", "06_Automatizacion/reportes/r001_table_checks_report.json"),
             step_entry("ao_ext_confluence", "AO-EXT-CONF-001", ao_ext_report, "06_Automatizacion/reportes/ao_ext_confluence_report.md", "06_Automatizacion/reportes/ao_ext_confluence_report.json"),
+            step_entry("ao_doc04_wide", "AO-DOC04-WIDE-TEST-001", ao_wide_report, "06_Automatizacion/reportes/ao_doc04_wide_report.md", "06_Automatizacion/reportes/ao_doc04_wide_report.json"),
+            step_entry("report_layer_c002_gate", "REPORT-LAYER-C002-GATE-001", rl_c002_report, "06_Automatizacion/reportes/report_layer_c002_gate_report.md", "06_Automatizacion/reportes/report_layer_c002_gate_report.json"),
             step_entry("moc_eval", "MOC-EVAL-001", moc_report, "06_Automatizacion/reportes/moc_eval_report.md", "06_Automatizacion/reportes/moc_eval_report.json"),
         ],
         "next_action": "Decidir o mantener el estatus de cierre de AUT-001 con advertencias visibles.",
@@ -229,7 +241,7 @@ def build_run_report(root: Path, scope: str) -> dict[str, Any]:
         "recomendacion": summary_report.get("recomendacion"),
         "headline": summary_report.get("headline"),
     }
-    run_report["resultado"], run_report["recomendacion"] = combine_result([min_report, med_report, board_report, continuity_report, risk_report, r001_report, ao_ext_report, moc_report, summary_report])
+    run_report["resultado"], run_report["recomendacion"] = combine_result([min_report, med_report, board_report, continuity_report, risk_report, r001_report, ao_ext_report, ao_wide_report, rl_c002_report, moc_report, summary_report])
     if (root / AUT_CLOSE_DECISION).exists() and run_report["resultado"] in {"ok", "advertencia"}:
         run_report["recomendacion"] = "mantener_cierre_operativo"
 

@@ -1,6 +1,6 @@
 # LAB_RISK_REPORT
 
-report_id: DO-LAB-RISK-20260706-120317
+report_id: DO-LAB-RISK-20260706-134842
 expediente: AUT-001
 algoritmo: DO-LAB-RISK-001
 resultado: advertencia_clasificada
@@ -10,25 +10,25 @@ transformacion_permitida: false
 ## Resumen por categoria
 
 - riesgo_activo: 0
-- advertencia_controlada: 24
-- deuda_documental: 187
-- advertencia_heredada: 59
+- advertencia_controlada: 25
+- deuda_documental: 206
+- advertencia_heredada: 62
 - observacion: 61
 
 ## Resumen por severidad
 
-- alta: 3
-- media: 147
-- baja: 181
+- alta: 4
+- media: 159
+- baja: 191
 
 ## Resumen por contexto
 
-- bitacora_historica: 12
+- bitacora_historica: 14
 - control_auditoria: 1
-- decision_registrada: 25
-- guardrail: 76
+- decision_registrada: 26
+- guardrail: 83
 - meta_check: 12
-- riesgo_real: 205
+- riesgo_real: 218
 
 ## Riesgos activos
 
@@ -42,6 +42,7 @@ transformacion_permitida: false
 - [media] minimo 06_Automatizacion/README.md - historial_como_autoridad_posible: controlado_por_guardrail | contexto: guardrail
 - [media] minimo CHANGELOG.md - historial_como_autoridad_posible: controlado_por_historial | contexto: bitacora_historica
 - [media] MED-NIVELES CHANGELOG.md - accion_de_nivel_sensible: controlado_por_historial | contexto: bitacora_historica | evidencia: - Actualizado el estado del proyecto: el siguiente objetivo es decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial de Nivel C.
+- [alta] MED-CERRADOS CHANGELOG.md - expediente_cerrado_afectado: controlado_por_historial | contexto: bitacora_historica | evidencia: - Creado `HXI-001_Reapertura_Operativa.md` como `HXI-REOPEN-001`: `HXI-001` se reabre como frente activo inmediato para aplicar la compuerta de admision formal posterior.
 - [alta] MED-NIVELES 01_Canon/M-001_Auditoria_Arquitectonica.md - accion_de_nivel_sensible: controlado_por_regla_de_auditoria | contexto: control_auditoria | evidencia: 8. Indicar si la intervencion modifica documentos, expedientes, estado o Canon.
 - [alta] MED-NIVELES 02_Documentos/00_Naturaleza.md - accion_de_nivel_sensible: controlado_por_guardrail | contexto: guardrail | evidencia: Un expediente puede proponer. Una auditoria puede evaluar. Una decision puede aceptar, cerrar, congelar, rechazar o incorporar. Un documento oficial estabiliza contenido. El Canon limita como puede cambiar todo lo anterior.
 - [alta] MED-NIVELES 02_Documentos/C-002_RFC_Operativo_Auditor_v0.md - accion_de_nivel_sensible: controlado_por_guardrail | contexto: guardrail | evidencia: - modificar Canon por inferencia;
@@ -63,6 +64,9 @@ transformacion_permitida: false
 
 ## Deuda documental
 
+- [baja] 03_Expedientes/AO-001_Auditoria_Formalizacion_Amplia_Doc04.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [baja] 03_Expedientes/AO-001_Auditoria_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [baja] 03_Expedientes/AO-001_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_doc04_wide_report.md
 - [baja] 03_Expedientes/AUD-001_Validacion_Implementacion_No_Mutante_C002.md - referencia_no_materializada: 06_Automatizacion/reportes/auditor_v0_report.md
 - [media] 03_Expedientes/AUT-001.md - referencia_no_materializada: 06_Automatizacion/reportes/README.md
 - [media] 03_Expedientes/AUT-001.md - referencia_no_materializada: 06_Automatizacion/reportes/do_check_min_claves.md
@@ -80,14 +84,11 @@ transformacion_permitida: false
 - [media] 03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
 - [media] 03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_risk_report.md
 - [media] 03_Expedientes/AUT-001_Decision_Cierre_Operativo_Completo.md - referencia_no_materializada: 06_Automatizacion/reportes/do_check_med_claves.md
-- [media] 03_Expedientes/AUT-001_Resumen_Ejecutivo_LAB.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_executive_summary.md
-- [media] 03_Expedientes/AUT-001_Tablero_Estado_LAB.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_status_board.md
-- [media] 03_Expedientes/AUT-001_Validacion_Cierre_Operativo_Completo.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
-- ... 167 deudas documentales adicionales en JSON.
+- ... 186 deudas documentales adicionales en JSON.
 
 ## Advertencias heredadas
 
-- total: 59
+- total: 62
 
 ## Siguientes acciones
 

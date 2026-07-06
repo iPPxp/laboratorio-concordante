@@ -1,6 +1,6 @@
 # R001-001 - Relacion formal con AO
 
-Estatus: relacion formal local provisional.
+Estatus: relacion formal local cerrada.
 
 Fecha: 2026-07-05.
 
@@ -143,3 +143,5 @@ En este caso hay confluencia local si:
 `R001-TB-001` cierra la deuda local de relacion formal entre `R001-TABLE-CHECK-001` y `AO-PPI-BRIDGE-001`.
 
 Permanecen abiertas la Equivalencia global, la Confluencia global y cualquier incorporacion posterior al Documento 04.
+
+Nota posterior 2026-07-06: `R001-001` queda cerrado tecnicamente por `D-2026-07-06-009`. `R001-TB-001` se conserva como relacion formal local aceptada con `AO-PPI-BRIDGE-001`, sin mantener abierto el expediente.

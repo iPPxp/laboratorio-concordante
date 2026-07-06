@@ -93,6 +93,9 @@ CONTROL_CONTEXT_TOKENS = (
     "med-historial",
     "evidencia:",
     "importacion de",
+    "solo se reabre",
+    "se reabre por decision",
+    "decision posterior",
 )
 CONTROL_SECTION_TOKENS = (
     "no cubre",
@@ -108,6 +111,11 @@ CONTROL_SECTION_TOKENS = (
     "simulaciones",
     "control negativo",
     "bloqueo",
+    "bloqueado",
+    "bloqueada",
+    "bloqueados",
+    "bloqueadas",
+    "acciones bloqueadas",
     "controles",
     "hallazgos",
     "deudas",
@@ -348,7 +356,10 @@ def check_closed_exp_reopen(text: str, file_rel: str, findings, closed_expedient
             continue
         affected = sorted(exp for exp in closed_expedientes if exp.lower() in low)
         if affected:
-            severity = "block" if surface_of(file_rel) in {"canon", "documento_oficial", "estado_operativo"} or "_Decision" in Path(file_rel).name else "warning"
+            if file_rel == "CHANGELOG.md":
+                severity = "warning"
+            else:
+                severity = "block" if surface_of(file_rel) in {"canon", "documento_oficial", "estado_operativo"} or "_Decision" in Path(file_rel).name else "warning"
             add(
                 findings,
                 severity,

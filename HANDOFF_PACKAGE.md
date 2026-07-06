@@ -40,6 +40,28 @@ Nota posterior 2026-07-06-004: `MOC-ROUTE-008` queda ejecutada por `D-2026-07-06
 
 Nota posterior 2026-07-06-005: `MOC-ROUTE-009` queda ejecutada por `D-2026-07-06-005` como paquete documental de registro/auditoria; metodo de registro sin datos personales y matriz de auditoria quedan preparados documentalmente. La siguiente ruta recomendada es `MOC-ROUTE-010`.
 
+Nota posterior 2026-07-06-006: `AO-DOC04-WIDE-001` queda aceptado por `D-2026-07-06-006`; Documento 04 queda actualizado como version amplia v0. La siguiente ruta de AO era probar `Eq_local` y `Conf_local` contra casos no triviales y precisar la relacion con `REPORT_LAYER`; no se cierran problemas globales ni se crea Nivel C.
+
+Nota posterior 2026-07-06-007: `AO-DOC04-WIDE-TEST-001` y `AO-REPORT-LAYER-BRIDGE-001` quedan aceptados por `D-2026-07-06-007`; `AO-DOC04-WIDE-001` queda probado localmente con 8/8 casos y `REPORT_LAYER` queda precisado como entrada de `Pi_rep`, sin promocion a Nivel C ni permiso de transformacion. La ruta viva de AO pasa a pruebas heterogeneas condicionales o profundizacion de Confluencia/Equivalencia global.
+
+Nota posterior 2026-07-06-008: `MOC-ROUTE-010` queda decidida por `D-2026-07-06-008`; la ruta posterior vigente es `MOC-ROUTE-011`, mantenimiento teorico-operativo sin ejecucion, reclutamiento, respuestas reales, datos personales ni uso clinico.
+
+Nota posterior 2026-07-06-009: `R001-001` queda cerrado tecnicamente por `D-2026-07-06-009`; `R001-TABLE-CHECK-001` y `R001-TB-001` se conservan como herramienta/relacion local sin cerrar Confluencia global ni Equivalencia global.
+
+Nota posterior 2026-07-06-010: `AUT-002` queda cerrado tecnicamente por `D-2026-07-06-010`; `referencia_historica_transferida` queda conservada como regla tecnica y cualquier dependencia psicologica sustantiva futura exige decision puente.
+
+Nota posterior 2026-07-06-011: `AUD-001` queda cerrado como expediente completo en version documental/operativa v0 por `D-2026-07-06-011`; futuras promociones o exportaciones de `REPORT_LAYER`, R4/Gamma, suite completa o parser ampliado requieren decision separada.
+
+Nota posterior 2026-07-06-012: `HXI-001` queda cerrado en mantenimiento local por `D-2026-07-06-012`; `H-Xi` sigue no admitida y `Xi_eval` queda solo como herramienta local historica/auxiliar.
+
+Nota posterior 2026-07-06-013: `MOC-ROUTE-012` queda ejecutada por `D-2026-07-06-013` como relacion documental local entre `MOC-001`, `C-001` y `C-002`; no modifica Nivel C, no crea `C-003`, no promueve MOC y no autoriza transformaciones.
+
+Nota posterior 2026-07-06-014: `REPORT_LAYER` queda justificado por `D-2026-07-06-014` como capa local pre-C; no se promueve a Nivel C, no crea `C-003` y cualquier promocion futura exige candidata independiente, contrato exportable, serializacion estable, auditoria y decision nueva.
+
+Nota posterior 2026-07-06-015: `AUT-003` queda aceptado por `D-2026-07-06-015`; `REPORT-LAYER-C002-GATE-001` es herramienta local no mutante conforme a `C-002`, integrada a `DO-LAB-RUN-001` solo como lectura/reporte y sin modo mutante.
+
+Nota posterior 2026-07-06-016: `RH-001` / `PM-001` quedan revisados por `D-2026-07-06-016`; `PM-001` queda reconciliado solo como deuda historica condicionada, sin expediente activo ni protocolo materializado.
+
 Fecha: 2026-07-02.
 
 ## Aviso de desactivacion
@@ -222,8 +244,8 @@ El paquete no cambia autoridad: Canon, estado, documentos oficiales, decisiones 
 
 ## Estado de cobertura
 
-- Nota posterior 2026-07-05: `HXI-001` queda abierto en mantenimiento local por `D-2026-07-05-003`, con `Xi_eval` conservado y sin admision de `H-Xi` ni canonizacion de `Xi`; `AUD-001` queda completo en version documental/operativa v0 y produjo `C-002`; `AUT-001` queda cerrado operativamente; `PSI-001` queda transferido fuera del Laboratorio.
-- `RH-001` procesa y cierra la transcripcion historica `ChatGPT share 001`; conserva deudas condicionadas sin autorizar cambios de nivel superior.
+- Nota posterior vigente 2026-07-06: `HXI-001` queda cerrado en mantenimiento local por `D-2026-07-06-012`, con `Xi_eval` conservado solo como herramienta local historica/auxiliar y sin admision de `H-Xi` ni canonizacion de `Xi`; `AUD-001` queda cerrado como version documental/operativa v0 por `D-2026-07-06-011`; `AUT-002` y `R001-001` quedan cerrados tecnicamente; `AUT-003` queda aceptado por `D-2026-07-06-015`; `PSI-001` queda transferido fuera del Laboratorio.
+- `RH-001` procesa y cierra la transcripcion historica `ChatGPT share 001`; `PM-001` queda revisado por `D-2026-07-06-016` solo como deuda historica condicionada, sin autorizar cambios de nivel superior.
 - `RH-002` procesa y cierra el lote historico de Descargas.
 - `REC-001` reconcilia inicialmente Canon/baselines y conserva deudas refinadas sin autorizar canonizacion, importacion o apertura de psicologia.
 - `AUD-001` tiene contratos, matriz basal y proyeccion RFC validados provisionalmente hasta `VAL-029`.
@@ -236,11 +258,13 @@ El paquete no cambia autoridad: Canon, estado, documentos oficiales, decisiones 
 - La siguiente fase de `R4-CANDIDATA` queda definida como criterios de promocion y frontera formal.
 - Los criterios de promocion estan redactados, auditados y aceptados como compuerta provisional.
 - Ruta siguiente decidida: `R4-CANDIDATA` se mantiene como hipotesis operativa robustecida.
-- `AUD-001` fue reactivado de forma acotada para `REPORT_LAYER`; no cerrado.
+- `AUD-001` fue cerrado como expediente completo en version documental/operativa v0 por `D-2026-07-06-011`; `REPORT_LAYER` queda local pre-C y no promovido por `D-2026-07-06-014`.
+- `AUT-003` conserva `REPORT-LAYER-C002-GATE-001` como compuerta no mutante conforme a `C-002`; no autoriza modo mutante.
 - `REPORT-LAYER-CAND-001` queda aceptada como candidata provisional de expediente, con alcance local y puente conceptual a `DO_CHECK_REPORT`.
 - `C-002_RFC_Operativo_Auditor_v0.md` queda como documento oficial de Nivel C.
+- `MOC-ROUTE-012` relaciona documentalmente `MOC-001` con `C-001` / `C-002` solo como puente local; cualquier especificacion tecnica futura requiere decision separada.
 - `B-001.5` queda clasificado como expediente congelado.
-- `P-PI.0` / `P-PI.1` quedan abiertos en pausa operativa; no se cierran, congelan ni absorben.
+- `P-PI.0` / `P-PI.1` quedan cerrados como frentes de trabajo; Confluencia y Equivalencia de proyecciones siguen abiertas como problemas de fondo.
 - No quedan deudas activas tipo `Validar X_REPORT` en los archivos vigentes.
 - `C-001` referencia `AUD-001_Validaciones.md` incluyendo hasta `VAL-021`.
 - `DO-001` esta cerrado y absorbido por `C-001`.
@@ -251,7 +275,7 @@ El paquete no cambia autoridad: Canon, estado, documentos oficiales, decisiones 
 ## Siguiente objetivo
 
 ```text
-Ejecutar `MOC-ROUTE-010`, decidiendo rutas posteriores despues del paquete de registro/auditoria sin reclutamiento ni respuestas reales; conservar AO-001, Confluencia, Equivalencia de proyecciones, `AO-DOC04-FORM-001`, bloqueo de exportacion general R4/Gamma y maduracion posterior de `TCS-001`.
+Mantener `MOC-ROUTE-011` como ruta teorico-operativa sin ejecucion; conservar AO-001, Confluencia, Equivalencia de proyecciones, `AO-DOC04-WIDE-001`, `REPORT_LAYER` local pre-C con compuerta no mutante `C-002`, bloqueo de exportacion general R4/Gamma, `PM-001` como deuda condicionada y maduracion posterior de `TCS-001`.
 ```
 
 ## Fuera del paquete

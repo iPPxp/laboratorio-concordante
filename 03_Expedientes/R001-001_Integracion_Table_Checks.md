@@ -1,6 +1,6 @@
 # R001-001 - Integracion de table checks R-001 / Xi
 
-Estatus: integracion tecnica provisional.
+Estatus: integracion tecnica cerrada.
 
 Fecha: 2026-07-05.
 
@@ -70,7 +70,7 @@ Esta integracion no:
 
 ## Relacion con frentes activos
 
-`HXI-001` permanece abierto en mantenimiento local por `D-2026-07-05-003`.
+`HXI-001` queda cerrado en mantenimiento local por `D-2026-07-06-012`; `H-Xi` sigue no admitida y `Xi_eval` queda solo como herramienta local historica/auxiliar.
 
 `AO-001` sigue siendo el frente operativo principal para profundizar `AO-PPI-BRIDGE-001`, Confluencia, Equivalencia de proyecciones y formalizacion posterior del Documento 04.
 
@@ -87,3 +87,5 @@ Esta integracion no:
 ## Resultado provisional
 
 La integracion es aceptable como automatizacion local no mutante, sujeta a auditoria y decision espejo.
+
+Nota posterior 2026-07-06: `R001-001` queda cerrado tecnicamente por `D-2026-07-06-009`. `R001-TABLE-CHECK-001` se conserva como herramienta local no mutante; las deudas globales permanecen en `AO-001`, `TCS-001` o decision futura separada.

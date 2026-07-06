@@ -1,6 +1,6 @@
 # DO_CHECK_REPORT minimo
 
-report_id: DO-CHECK-MIN-20260706-120309
+report_id: DO-CHECK-MIN-20260706-134811
 expediente: AUT-001
 resultado: advertencia
 recomendacion: continuar_sin_transformar
@@ -8,12 +8,15 @@ transformacion_permitida: false
 
 ## Resumen
 
-- archivos revisados: 366
-- hallazgos: 163
+- archivos revisados: 401
+- hallazgos: 172
 
 ## Hallazgos
 
 - [warning] 02_Documentos/C-002_RFC_Operativo_Auditor_v0.md - historial_como_autoridad_posible: - `AUD-T07`: Registro Historico como autoridad directa;
+- [warning] 03_Expedientes/AO-001_Auditoria_Formalizacion_Amplia_Doc04.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/AO-001_Auditoria_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/AO-001_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_doc04_wide_report.md
 - [warning] 03_Expedientes/AUD-001_Auditoria_REPORT_LAYER_Candidata.md - historial_como_autoridad_posible: - conserva Registro Historico fuera de autoridad directa.
 - [warning] 03_Expedientes/AUD-001_Decision_Cierre_Ronda_No_Automata_R4-CANDIDATA.md - historial_como_autoridad_posible: - `AUD-SIM-019` y `VAL-019`: expediente que usa Registro Historico como autoridad directa.
 - [warning] 03_Expedientes/AUD-001_Ficha_Alcance_Gamma.md - historial_como_autoridad_posible: - usar el Registro Historico como autoridad directa;
@@ -63,6 +66,8 @@ transformacion_permitida: false
 - [warning] 03_Expedientes/AUT-001_Validacion_DO-CHECK-MIN.md - referencia_no_materializada: 06_Automatizacion/reportes/do_check_min_repo.md
 - [warning] 03_Expedientes/AUT-001_Validacion_DO-STATE-BOARD.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_status_board.md
 - [warning] 03_Expedientes/AUT-002.md - historial_como_autoridad_posible: - una decision vigente use Registro Historico como autoridad directa;
+- [warning] 03_Expedientes/AUT-003.md - referencia_no_materializada: 06_Automatizacion/reportes/report_layer_c002_gate_report.md
+- [warning] 03_Expedientes/AUT-003_Auditoria_Herramienta_REPORT_LAYER_C002.md - referencia_no_materializada: 06_Automatizacion/reportes/report_layer_c002_gate_report.md
 - [warning] 03_Expedientes/DO-001.md - historial_como_autoridad_posible: - importacion de Registro Historico como autoridad vigente
 - [warning] 03_Expedientes/DO-001_DO-CHECK-001.md - historial_como_autoridad_posible: - usa registro historico como autoridad vigente
 - [warning] 03_Expedientes/DO-001_DO-CHECK-001.md - historial_como_autoridad_posible: - uso de Registro Historico como autoridad vigente
@@ -108,6 +113,7 @@ transformacion_permitida: false
 - [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Decision_Independizacion_Proyecto.md (PSI-001 transferido; no restaurar copia local)
 - [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ext_confluence_report.md
 - [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_eval_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_doc04_wide_report.md
 - [warning] 05_Estado_Proyecto/ESTADO_ACTUAL.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_status_board.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/do_check_min_claves.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/do_check_min_repo.md
@@ -121,6 +127,8 @@ transformacion_permitida: false
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/auditor_v0_report.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/auditor_do_check_adapter_report.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/r001_table_checks_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_doc04_wide_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/report_layer_c002_gate_report.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/moc_eval_report.md
 - [warning] 06_Automatizacion/README.md - historial_como_autoridad_posible: - usar Registro Historico como autoridad directa;
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_status_board.md
@@ -128,6 +136,7 @@ transformacion_permitida: false
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_risk_report.md
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_executive_summary.md
+- [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/README.md
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/README.md
 - [warning] CHANGELOG.md - historial_como_autoridad_posible: - Actualizado el estado del proyecto: el siguiente objetivo es probar `R4-CANDIDATA` con un expediente que usa Registro Historico como autoridad directa.
 - [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001.md (PSI-001 transferido; no restaurar copia local)

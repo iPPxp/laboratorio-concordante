@@ -1,6 +1,6 @@
 # LAB_CONTINUITY_REPORT
 
-report_id: DO-LAB-CONTINUITY-20260706-120317
+report_id: DO-LAB-CONTINUITY-20260706-134840
 expediente: AUT-001
 algoritmo: DO-LAB-CONTINUITY-001
 resultado: advertencia
@@ -10,16 +10,16 @@ scope: repo
 
 ## Estado operativo
 
-- expediente activo inmediato: `MOC-001` queda como frente integrador teorico-operativo principal; primera ruta valida ejecutada por `MOC-ROUTE-EXEC-001`, bateria ampliada por `MOC-ROUTE-002`, puente formal `MOC/TCS` aceptado por `MOC-ROUTE-003`, puente formal `MOC/AO` aceptado por `MOC-ROUTE-004`, protocolo v0.2 aceptado por `MOC-ROUTE-005`, protocolo documental de piloto futuro preparado por `MOC-ROUTE-006`, compuerta de no autorizacion aplicada por `MOC-ROUTE-007`, paquete pre-ejecucion preparado por `MOC-ROUTE-008`, paquete de registro/auditoria preparado por `MOC-ROUTE-009` y siguiente ruta recomendada `MOC-ROUTE-010`; no canonico, no clinico, no regulado y sin admision de `H-Xi`.
-- proximo objetivo: Avanzar `MOC-001` por `MOC-ROUTE-010`: decidir rutas posteriores despues del paquete de registro/auditoria, priorizando si el MOC permanece en simulacion documental, si se prepara criterio de evaluadores sin reclutamiento o si el frente entra en mantenimiento; sin respuestas reales, sin uso clinico y sin modificar `Documento 04`.
-- ultima decision operativa: `MOC-001_Decision_Paquete_Registro_Auditoria_Piloto.md` (`D-2026-07-06-005`): acepta `MOC-PILOT-REG-AUDIT-PACK-001`; metodo de registro sin datos personales y matriz de auditoria quedan preparados documentalmente. La siguiente ruta recomendada es `MOC-ROUTE-010`, decidir rutas posteriores sin reclutamiento ni ejecucion.
+- expediente activo inmediato: `AO-001` queda como frente operativo inmediato para profundizar `AO-PPI-BRIDGE-001`, mantener bloqueada la exportacion general de R4/Gamma, ampliar pruebas heterogeneas de `REPORT_LAYER` solo si una decision futura lo exige, conservar `AO-DOC04-WIDE-TEST-001` como evidencia local no mutante y usar `REPORT-LAYER-C002-GATE-001` solo como compuerta no mutante conforme a `C-002`.
+- proximo objetivo: Ampliar `AO-DOC04-WIDE-TEST-001` solo si se requieren casos heterogeneos adicionales de `REPORT_LAYER`, serializacion interfrente o nuevas rutas de `Pi_rep`; la prueba local inicial de 8 casos, la precision de `REPORT_LAYER`, su permanencia local pre-C y la compuerta no mutante `C-002` ya quedaron atendidas por `D-2026-07-06-007`, `D-2026-07-06-014` y `D-2026-07-06-015`.
+- ultima decision operativa: `RH-001_Decision_Reconciliacion_PM001.md` (`D-2026-07-06-016`): acepta `RH-PM-REC-001`; `PM-001` queda reconciliado solo como deuda historica condicionada, no como expediente activo ni protocolo materializado.
 
 ## Cobertura integrada
 
 - tablero: ok (0 hallazgos)
-- chequeo medio: advertencia (366 archivos, 338 hallazgos)
-- automatizaciones presentes: 8/7
-- hallazgos combinados: 338
+- chequeo medio: advertencia (401 archivos, 353 hallazgos)
+- automatizaciones presentes: 11/7
+- hallazgos combinados: 353
 
 ## Riesgos
 
@@ -46,8 +46,11 @@ scope: repo
 - [warning] DO-CHECK-MED-001 CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/lab_run.py --scope claves --format md
 - [warning] DO-CHECK-MED-001 CHANGELOG.md - referencia_no_materializada: MOC/TCS
 - [warning] DO-CHECK-MED-001 CHANGELOG.md - referencia_no_materializada: MOC/AO
+- [warning] DO-CHECK-MED-001 CHANGELOG.md - referencia_no_materializada: MOC/C-001/C-002
+- [warning] DO-CHECK-MED-001 CHANGELOG.md - referencia_no_materializada: MOC/C-001/C-002
 - [warning] DO-CHECK-MED-001 CHANGELOG.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - Actualizado el estado del proyecto: el siguiente objetivo es decidir si `SPEC-AUD-001_Candidata` se promueve a documento oficial de Nivel C.
 - [warning] DO-CHECK-MED-001 CHANGELOG.md - accion_de_nivel_sensible: La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis. | evidencia: - Creada `DO-001_Decision_Promocion_SPEC-AUD-001.md` con `PROM-SPEC-AUD-001`: se promueve `SPEC-AUD-001_Candidata` a documento oficial de Nivel C.
+- [warning] DO-CHECK-MED-001 CHANGELOG.md - expediente_cerrado_afectado: La linea parece afectar expediente cerrado: HXI-001 | evidencia: - Creado `HXI-001_Reapertura_Operativa.md` como `HXI-REOPEN-001`: `HXI-001` se reabre como frente activo inmediato para aplicar la compuerta de admision formal posterior.
 - [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/AO
 - [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/AO
 - [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/TCS
@@ -55,15 +58,12 @@ scope: repo
 - [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/TCS
 - [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/AO
 - [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/AO
+- [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/C-001/C-002
+- [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/C-001/C-002
 - [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/AO
 - [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/TCS
 - [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/AO
-- [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/TCS
-- [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/AO
-- [warning] DO-CHECK-MED-001 HANDOFF.md - referencia_no_materializada: MOC/TCS
-- [warning] DO-CHECK-MED-001 HANDOFF.md - referencia_no_materializada: MOC/TCS
-- [warning] DO-CHECK-MED-001 HANDOFF.md - referencia_no_materializada: MOC/AO
-- ... 298 hallazgos adicionales en JSON.
+- ... 313 hallazgos adicionales en JSON.
 
 ## Siguientes acciones
 

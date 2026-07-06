@@ -26,6 +26,9 @@ AUTOMATION_FILES = [
     "06_Automatizacion/lab_executive_summary.py",
     "06_Automatizacion/lab_run.py",
     "06_Automatizacion/r001_table_checks.py",
+    "06_Automatizacion/ao_ext_confluence.py",
+    "06_Automatizacion/ao_doc04_wide_tests.py",
+    "06_Automatizacion/moc_eval.py",
 ]
 
 SECTION_RE = re.compile(r"^##\s+(.+?)\s*$")

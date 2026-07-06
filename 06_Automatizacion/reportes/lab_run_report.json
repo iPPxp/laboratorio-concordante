@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-LAB-RUN-20260706-120317",
+  "report_id": "DO-LAB-RUN-20260706-134842",
   "expediente": "AUT-001",
   "algoritmo": "DO-LAB-RUN-001",
   "resultado": "advertencia",
@@ -12,7 +12,7 @@
       "algorithm": "DO-CHECK-MIN-001",
       "resultado": "advertencia",
       "recomendacion": "continuar_sin_transformar",
-      "findings": 163,
+      "findings": 172,
       "markdown": "06_Automatizacion/reportes/do_check_min_repo.md",
       "json": "06_Automatizacion/reportes/do_check_min_repo.json"
     },
@@ -21,7 +21,7 @@
       "algorithm": "DO-CHECK-MED-001",
       "resultado": "advertencia",
       "recomendacion": "continuar_sin_transformar",
-      "findings": 338,
+      "findings": 353,
       "markdown": "06_Automatizacion/reportes/do_check_med_repo.md",
       "json": "06_Automatizacion/reportes/do_check_med_repo.json"
     },
@@ -39,7 +39,7 @@
       "algorithm": "DO-LAB-CONTINUITY-001",
       "resultado": "advertencia",
       "recomendacion": "continuar_sin_transformar",
-      "findings": 338,
+      "findings": 353,
       "markdown": "06_Automatizacion/reportes/lab_continuity_report.md",
       "json": "06_Automatizacion/reportes/lab_continuity_report.json"
     },
@@ -48,7 +48,7 @@
       "algorithm": "DO-LAB-RISK-001",
       "resultado": "advertencia_clasificada",
       "recomendacion": "mantener_cierre_operativo",
-      "findings": 331,
+      "findings": 354,
       "markdown": "06_Automatizacion/reportes/lab_risk_report.md",
       "json": "06_Automatizacion/reportes/lab_risk_report.json"
     },
@@ -69,6 +69,24 @@
       "findings": 0,
       "markdown": "06_Automatizacion/reportes/ao_ext_confluence_report.md",
       "json": "06_Automatizacion/reportes/ao_ext_confluence_report.json"
+    },
+    {
+      "name": "ao_doc04_wide",
+      "algorithm": "AO-DOC04-WIDE-TEST-001",
+      "resultado": "ok",
+      "recomendacion": "precisar_report_layer_sin_promocion",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/ao_doc04_wide_report.md",
+      "json": "06_Automatizacion/reportes/ao_doc04_wide_report.json"
+    },
+    {
+      "name": "report_layer_c002_gate",
+      "algorithm": "REPORT-LAYER-C002-GATE-001",
+      "resultado": "ok",
+      "recomendacion": "mantener_report_layer_local_pre_c",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/report_layer_c002_gate_report.md",
+      "json": "06_Automatizacion/reportes/report_layer_c002_gate_report.json"
     },
     {
       "name": "moc_eval",

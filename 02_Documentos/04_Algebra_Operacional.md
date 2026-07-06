@@ -1,10 +1,12 @@
 # 04 - Algebra Operacional
 
-Estatus: documento oficial actualizado, version inicial consolidada.
+Estatus: documento oficial actualizado, version amplia v0.
 
-Decision de incorporacion: `D-2026-07-03-011`.
+Decision de incorporacion inicial: `D-2026-07-03-011`.
 
-Fuentes principales: `AO-001`, `AO-MARCO-001`, `SRC-010`, `SRC-012`, `SRC-013`, `SRC-023`, `AUD-001_R4_Formal_Local.md`, `AUD-001_Gamma_Formal_Local.md`, `C-001`, `C-002`.
+Decision de formalizacion amplia v0: `D-2026-07-06-006`.
+
+Fuentes principales: `AO-001`, `AO-MARCO-001`, `AO-DOC04-FORM-001`, `AO-DOC04-WIDE-001`, `AO-PPI-BRIDGE-001`, `R001-TB-001`, `MOC-AO-BRIDGE-001`, `SRC-010`, `SRC-012`, `SRC-013`, `SRC-023`, `AUD-001_R4_Formal_Local.md`, `AUD-001_Gamma_Formal_Local.md`, `C-001`, `C-002`.
 
 ## Proposito
 
@@ -52,6 +54,8 @@ Estas capas pueden interactuar, pero ninguna promueve por si misma el estatus de
 | `D` | decision emitida | objeto operacional |
 | `P` | permiso acotado | objeto operacional |
 | `I` | invariante declarado | objeto operacional |
+| `W` | testigo operativo de comparabilidad o aplicacion | objeto operacional |
+| `rho_op` | traza operacional de operador | objeto derivado |
 | `T` | transformacion propuesta o ejecutada | objeto operacional |
 | `B` | bloqueo, deuda o problema abierto | salida de seguridad |
 
@@ -309,6 +313,172 @@ Lectura operacional:
 
 Esta construccion no cierra `P-200`, `P-107`, Confluencia global ni Equivalencia global de proyecciones.
 
+## Formalizacion operacional amplia v0
+
+Incorporacion amplia por `D-2026-07-06-006`, desde `AO-DOC04-WIDE-001`.
+
+La Algebra Operacional usa operadores ejecutables solo cuando declaran contrato, testigo, regla de salida y salida segura. Una formula conceptual no cuenta como operador ejecutable si no especifica combinacion, prioridad, conflicto y salida.
+
+### Contrato comun de operador
+
+Un operador operacional bien formado tiene la forma:
+
+```text
+Op_AO := <id, entrada, contexto, testigo, estatus_entrada,
+          evidencia, permiso, invariantes, regla,
+          salida, salida_segura, deuda, rho_op>
+```
+
+donde:
+
+- `entrada` es el artefacto, reporte, decision, traza o paquete de evidencia que se evalua;
+- `contexto` delimita el uso permitido;
+- `testigo` declara contra que observaciones, reglas o casos se compara la salida;
+- `estatus_entrada` conserva la autoridad de origen;
+- `evidencia` debe ser localmente ubicable;
+- `permiso` solo habilita transformacion si es explicito y acotado;
+- `invariantes` declaran lo que no puede perderse;
+- `regla` identifica la regla ganadora si hay varias reglas candidatas;
+- `salida` es una de las salidas operacionales reconocidas;
+- `salida_segura` es la salida obligatoria ante fallo de evidencia, alcance, permiso o autoridad;
+- `deuda` registra lo que queda abierto;
+- `rho_op` conserva la traza local del operador.
+
+La traza de operador se expresa como:
+
+```text
+operator_trace(Op_AO) =
+  <precondiciones, reglas_candidatas, regla_ganadora,
+   salida_emitida, salida_segura, deuda>
+```
+
+`operator_trace` sirve como evidencia local de regla ganadora. No sustituye una demostracion global ni autoriza una transformacion material.
+
+### Proyecciones operacionales
+
+La familia minima de proyecciones es:
+
+```text
+Pi_doc(A, C, W) -> R_doc | B
+Pi_rep(R, C, W) -> R_rep | B
+Pi_op(rho_op, C, W) -> R_op | B
+```
+
+Cada salida `R_*` debe declarar forma, estatus, evidencia, autoridad, invariantes, restricciones y deuda. Si falta `C`, `W`, evidencia o estatus, la salida correcta es `B`.
+
+Lectura:
+
+- `Pi_doc` proyecta un artefacto documental sin mutarlo.
+- `Pi_rep` proyecta un reporte o resultado de verificacion.
+- `Pi_op` proyecta una traza operacional y conserva la regla ganadora.
+
+### Relacion con REPORT_LAYER
+
+Precision local por `D-2026-07-06-007`, desde `AO-REPORT-LAYER-BRIDGE-001` y `AO-DOC04-WIDE-TEST-001`.
+
+`REPORT_LAYER` puede entrar en Algebra Operacional solo como entrada de `Pi_rep`:
+
+```text
+Pi_rep(REPORT_LAYER, C, W) -> R_rep | B
+```
+
+Lectura:
+
+- `REPORT_LAYER` aporta estructura abstracta de reporte para comparar salidas.
+- `REPORT_ITEM` puede servir como evidencia local de reporte si conserva evidencia, estatus, decisiones permitidas, decision emitida, permiso de transformacion y deudas.
+- `Pi_rep` puede compararse con `Pi_doc` o `Pi_op` bajo `Eq_local` o `Conf_local`.
+- Si `REPORT_LAYER` esta incompleto, la salida correcta es `B`, no equivalencia.
+
+Frontera:
+
+- `REPORT_LAYER` no sustituye `Op_AO`.
+- `REPORT_LAYER` no sustituye una decision.
+- `REPORT_LAYER` no crea permiso de transformacion.
+- `REPORT_LAYER` no sustituye verificacion posterior.
+- `REPORT_LAYER` no se promueve a Nivel C por esta relacion.
+- `REPORT_LAYER` no exporta R4/Gamma ni cierra Confluencia o Equivalencia global.
+
+### Equivalencia local de proyecciones
+
+La equivalencia local entre dos proyecciones se define bajo testigo:
+
+```text
+Eq_local(Pi_a, Pi_b, W) <=> compatible(Pi_a(W), Pi_b(W))
+```
+
+`compatible` exige:
+
+- mismo testigo operativo o testigo declaradamente equivalente;
+- salidas comparables;
+- estatus y autoridad no incrementados;
+- invariantes preservados;
+- deuda conservada o explicitamente refinada;
+- ausencia de permiso material nuevo.
+
+Si cualquiera de estas condiciones falta, `Eq_local` devuelve `B`, `registrar_deuda` o `registrar_problema_abierto`.
+
+`Eq_local` no implica equivalencia global.
+
+### Confluencia local de rutas
+
+Dos rutas operacionales `r1` y `r2` son localmente confluentes bajo testigo si:
+
+```text
+Conf_local(r1, r2, W) <=>
+  Eq_local(Pi_op(r1, C, W), Pi_op(r2, C, W), W)
+  y no_incremento(autoridad, permiso)
+  y deuda_preservada_o_refinada
+```
+
+La confluencia local solo compara salidas trazadas dentro del testigo. No cierra Confluencia global ni demuestra que toda ruta futura converge.
+
+Si hay dos reglas candidatas en conflicto, gana la regla que:
+
+1. preserva mayor cantidad de invariantes declarados;
+2. no aumenta autoridad;
+3. no crea permiso de transformacion;
+4. deja deuda explicita;
+5. bloquea o escala si las condiciones anteriores no distinguen una salida.
+
+### Compuerta de autorizacion operacional
+
+La compuerta comun se expresa como:
+
+```text
+Gate_AO(Op_AO, C, E, P) -> autorizado | no_autorizado | B
+```
+
+Reglas:
+
+- si falta contexto, evidencia o estatus, la salida es `B`;
+- si falta permiso material, la salida puede ser `continuar_sin_transformar`, `proponer_cambio_acotado`, `registrar_deuda` o `bloquear`, pero no `ejecutar_cambio_acotado`;
+- si la operacion toca Canon, Nivel C o documento oficial, requiere expediente, auditoria y decision separada;
+- si la operacion invoca R4/Gamma fuera de `AUD-001`, aplica la compuerta restringida de `D-2026-07-05-009`.
+
+### Perfil restringido de R4/Gamma en AO
+
+Dentro de Algebra Operacional, R4 y Gamma solo pueden aparecer como perfiles restringidos:
+
+```text
+R4_AO_res(rho_op, C, W) -> valido_local | deuda | bloqueo
+Gamma_AO_res(E, C, W) -> candidata_local | deuda | bloqueo
+```
+
+Uso permitido:
+
+- referencia formal local;
+- prueba local controlada;
+- puente de problema para equivalencia o confluencia;
+- comparacion de trazas bajo testigo.
+
+Uso prohibido:
+
+- promocion canonica;
+- cambio de Nivel C;
+- permiso de transformacion;
+- teorema global;
+- cierre de `P-107`, `P-200`, Confluencia global o Equivalencia global.
+
 ## Invariantes operacionales
 
 ### AO-I1 - Separacion de niveles
@@ -377,6 +547,7 @@ Una operacion `Op` esta bien formada si declara:
 
 - objetos de entrada;
 - contexto;
+- testigo o razon explicita de ausencia de testigo;
 - estatus de entrada;
 - operador aplicado;
 - salida esperada;
@@ -385,6 +556,8 @@ Una operacion `Op` esta bien formada si declara:
 - autoridad de la fuente;
 - permiso requerido;
 - invariantes preservados;
+- deuda resultante;
+- traza de operador cuando hay regla ganadora;
 - verificacion posterior si hay transformacion.
 
 Si falta cualquiera de estos elementos y la operacion pretende modificar un artefacto, debe bloquearse o degradarse a propuesta.
@@ -403,18 +576,19 @@ Si falta cualquiera de estos elementos y la operacion pretende modificar un arte
 
 ## Siguiente trabajo
 
-El siguiente avance natural es crear una bateria `AO-CASE` para probar:
+El siguiente avance natural, despues de la prueba local inicial aceptada por `D-2026-07-06-007`, es ampliar solo donde haya deuda global o evidencia heterogenea faltante:
 
-- caso positivo sin transformacion;
-- propuesta de cambio sin permiso;
-- ejecucion valida con permiso acotado;
-- bloqueo por reporte bloqueante;
-- generalizacion `Gamma_AUD` sin promocion;
-- mutacion candidata que queda como problema abierto;
-- equivalencia operacional fallida por observacion admisible.
+- equivalencias heterogeneas adicionales entre `Pi_doc`, `Pi_rep` y `Pi_op`;
+- rutas de confluencia local con testigos externos adicionales;
+- serializacion o variantes interfrente de `REPORT_LAYER` si una decision futura lo exige;
+- criterios de separacion entre cierre local, cierre documental y cierre global;
+- maduracion de `TCS-001` sin crear Nivel C;
+- una posible especificacion posterior si alguna parte debe pasar a contrato tecnico.
 
 ## Estado
 
-Documento 04 deja de estar reservado y queda actualizado como version inicial consolidada de Algebra Operacional.
+Documento 04 deja de estar reservado y queda actualizado como version amplia v0 de Algebra Operacional.
 
-Permanece abierto el trabajo de formalizacion, casos y eventuales promociones futuras.
+La formalizacion amplia v0 incorpora contratos ejecutables, proyecciones, equivalencia local, confluencia local, compuerta operacional y perfil restringido R4/Gamma.
+
+Permanecen abiertos Confluencia global, Equivalencia global de proyecciones, `P-107`, `P-200`, exportacion general de R4/Gamma, pruebas heterogeneas o serializacion futura de `REPORT_LAYER` si se exige, maduracion de `TCS-001` y eventuales promociones futuras.

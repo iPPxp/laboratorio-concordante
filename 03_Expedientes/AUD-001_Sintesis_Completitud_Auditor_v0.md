@@ -1,6 +1,6 @@
 # AUD-001 - Sintesis de completitud del Auditor v0
 
-Estatus: sintesis de expediente.
+Estatus: sintesis de expediente cerrado en version operativa v0.
 
 ID: `SYN-AUD-V0-001`.
 
@@ -109,3 +109,5 @@ El Auditor esta completo en version documental/operativa v0 dentro de `AUD-001`.
 La completitud significa que sus contratos, casos minimos, limites de decision, frontera no mutante y deudas vivas estan documentados y validados provisionalmente.
 
 No significa que exista todavia una suite ejecutable completa ni que las hipotesis formales pendientes hayan sido resueltas.
+
+Nota posterior 2026-07-06: `AUD-001` queda cerrado operativamente en version v0 por `D-2026-07-06-011`. Sus deudas futuras requieren expediente o decision separada.

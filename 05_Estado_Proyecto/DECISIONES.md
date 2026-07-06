@@ -2884,3 +2884,313 @@ No ejecuta piloto empirico, no recluta evaluadores, no recopila respuestas reale
 ## Consecuencia
 
 La siguiente ruta recomendada es `MOC-ROUTE-010`: decidir rutas posteriores despues del paquete de registro/auditoria, sin reclutamiento ni ejecucion.
+
+## D-2026-07-06-006 - Formalizacion amplia del Documento 04
+
+Estatus: decision documental aceptada.
+
+Fecha: 2026-07-06.
+
+## Decision
+
+Se acepta `AO-DOC04-WIDE-001` como formalizacion amplia v0 del Documento 04 - Algebra Operacional.
+
+Documento base: `03_Expedientes/AO-001_Formalizacion_Amplia_Doc04.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Formalizacion_Amplia_Doc04.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Formalizacion_Amplia_Doc04.md`.
+
+## Componentes aceptados
+
+- Contrato comun de operador operacional `Op_AO`.
+- `operator_trace` como evidencia local de regla ganadora.
+- Proyecciones `Pi_doc`, `Pi_rep` y `Pi_op`.
+- Equivalencia local `Eq_local` bajo testigo.
+- Confluencia local `Conf_local` bajo testigo.
+- Compuerta operacional `Gate_AO`.
+- Perfiles restringidos `R4_AO_res` y `Gamma_AO_res`.
+- Reglas de prioridad y salidas seguras.
+
+## Resultado
+
+`02_Documentos/04_Algebra_Operacional.md` queda actualizado como version amplia v0.
+
+La deuda de formalizacion posterior amplia del Documento 04 queda atendida en grado documental v0.
+
+## No cubre
+
+No modifica Canon, no crea Nivel C, no autoriza transformaciones materiales, no admite `H-Xi`, no canoniza `Xi`, no reabre `P-PI.0` ni `P-PI.1`, no cierra `P-107`, no cierra `P-200`, no cierra Confluencia global, no cierra Equivalencia global de proyecciones, no exporta R4/Gamma como operadores generales y no madura `TCS-001` mas alla de su estado provisional.
+
+## Consecuencia
+
+El siguiente avance recomendado es probar `Eq_local` y `Conf_local` contra casos no triviales y precisar la relacion entre `operator_trace`, `REPORT_LAYER` y reportes normalizados.
+
+## D-2026-07-06-007 - Pruebas de Documento 04 amplio y REPORT_LAYER
+
+Estatus: decision de expediente aceptada.
+
+Fecha: 2026-07-06.
+
+## Decision
+
+Se aceptan `AO-DOC04-WIDE-TEST-001` y `AO-REPORT-LAYER-BRIDGE-001` como prueba local no mutante y precision formal local de la relacion entre `AO-DOC04-WIDE-001` y `REPORT_LAYER`.
+
+Documento base 1: `03_Expedientes/AO-001_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md`.
+
+Documento base 2: `03_Expedientes/AO-001_Relacion_REPORT_LAYER_Doc04_Amplio.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md`.
+
+Evidencia ejecutable: `06_Automatizacion/ao_doc04_wide_tests.py`.
+
+Fixture: `06_Automatizacion/fixtures/ao_doc04_wide_cases.json`.
+
+Reportes: `06_Automatizacion/reportes/ao_doc04_wide_report.md` y `06_Automatizacion/reportes/ao_doc04_wide_report.json`.
+
+## Componentes aceptados
+
+- Bateria `AO-DOC04-WIDE-CASES-001` con 8 casos locales.
+- Verificacion de `Eq_local` con equivalencia local, bloqueo por testigo, bloqueo por autoridad, divergencia clasificada y bloqueo por `REPORT_LAYER` incompleto.
+- Verificacion de `Conf_local` con ruta de estado, decision y reporte bajo testigo compartido.
+- Verificacion de `Gate_AO` sin permiso de transformacion.
+- Verificacion de bloqueo de exportacion general R4/Gamma.
+- Precision formal `Pi_rep(REPORT_LAYER, C, W) -> R_rep | B`.
+
+## Resultado
+
+La corrida local de `AO-DOC04-WIDE-TEST-001` produce:
+
+```text
+cases = 8
+passed = 8
+failed = 0
+resultado = ok
+transformacion_permitida = false
+```
+
+`REPORT_LAYER` queda aceptado dentro de `AO-001` solo como entrada local de proyeccion de reporte. Puede alimentar `Pi_rep` si contiene campos suficientes, evidencia, decision emitida y bandera explicita de transformacion no permitida.
+
+Si `REPORT_LAYER` esta incompleto, `Pi_rep` debe devolver bloqueo `B` y no reporte equivalente.
+
+## No cubre
+
+No modifica Canon, no crea Nivel C, no promueve `REPORT_LAYER`, no absorbe `DO_CHECK_REPORT`, no sustituye `Op_AO`, no convierte reportes en decisiones, no convierte recomendaciones en permisos, no autoriza transformaciones, no cierra Confluencia global, no cierra Equivalencia global, no exporta `R4-FORMAL-AUD-001`, no exporta `GAMMA-FORMAL-AUD-001`, no reabre `P-PI.0` / `P-PI.1`, no cierra `P-107`, no cierra `P-200` y no madura `TCS-001`.
+
+## Consecuencia
+
+El pendiente inmediato de probar `AO-DOC04-WIDE-001` contra casos iniciales y precisar `REPORT_LAYER` queda atendido localmente.
+
+Las rutas vivas posteriores son ampliar casos heterogeneos solo si se requiere, definir serializacion interfrente de `REPORT_LAYER` solo si una decision futura la exige, y profundizar `AO-PPI-BRIDGE-001` hacia Confluencia global y Equivalencia global sin reabrir `P-PI.0` / `P-PI.1`.
+
+## D-2026-07-06-008 - Rutas posteriores MOC-001 despues del paquete de registro/auditoria
+
+Estatus: decision provisional de expediente.
+
+Fecha: 2026-07-06.
+
+## Decision
+
+Se acepta `MOC-NEXT-ROUTES-010` como decision de rutas posteriores despues del paquete documental de registro/auditoria.
+
+Documento base: `03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_010.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_010.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_010.md`.
+
+## Resultado
+
+La ruta posterior vigente queda fijada como `MOC-ROUTE-011`: mantenimiento teorico-operativo sin ejecucion.
+
+No se autoriza piloto empirico real, reclutamiento, respuestas reales, datos personales, uso clinico, admision de `H-Xi`, canonizacion de `Xi`, promocion del MOC a Canon o Nivel C ni modificacion de Documento 04.
+
+## Deuda abierta
+
+En ese momento permanecian abiertas la deuda de relacion con `C-001` / `C-002`, la eventual compuerta nueva de piloto, Confluencia global, Equivalencia global, exportacion general R4/Gamma y maduracion posterior de `TCS-001`. La primera de esas deudas queda atendida despues en grado documental local por `D-2026-07-06-013`; las demas permanecen abiertas.
+
+## D-2026-07-06-009 - Cierre tecnico de R001-001
+
+Estatus: decision de cierre tecnico.
+
+Fecha: 2026-07-06.
+
+## Decision
+
+Se acepta `R001-CLOSE-TECH-001` y se cierra tecnicamente `R001-001`.
+
+Documento base: `03_Expedientes/R001-001_Cierre_Tecnico.md`.
+
+Auditoria: `03_Expedientes/R001-001_Auditoria_Cierre_Tecnico.md`.
+
+Decision espejo: `03_Expedientes/R001-001_Decision_Cierre_Tecnico.md`.
+
+## Resultado
+
+`R001-TABLE-CHECK-001` y `R001-TB-001` se conservan como herramienta/relacion local de apoyo a `AO-001`.
+
+No se canoniza `Xi`, no se admite `H-Xi`, no se cierra `P-200`, no se resuelve `P-107`, no se cierra Confluencia global y no se cierra Equivalencia global.
+
+## D-2026-07-06-010 - Cierre tecnico de AUT-002
+
+Estatus: decision de cierre tecnico.
+
+Fecha: 2026-07-06.
+
+## Decision
+
+Se acepta `AUT-002-CLOSE-TECH-001` y se cierra tecnicamente `AUT-002`.
+
+Documento base: `03_Expedientes/AUT-002_Cierre_Tecnico.md`.
+
+Auditoria: `03_Expedientes/AUT-002_Auditoria_Cierre_Tecnico.md`.
+
+Decision espejo: `03_Expedientes/AUT-002_Decision_Cierre_Tecnico.md`.
+
+## Resultado
+
+`referencia_historica_transferida` queda conservada como regla tecnica para referencias historicas a `PSI-001*` eliminado.
+
+No se reabre `AUT-001`, no se restaura `PSI-001*` y cualquier dependencia psicologica sustantiva futura requiere decision puente.
+
+## D-2026-07-06-011 - Cierre operativo v0 de AUD-001
+
+Estatus: decision de cierre operativo v0.
+
+Fecha: 2026-07-06.
+
+## Decision
+
+Se acepta `AUD-CLOSE-OP-V0-001` y se cierra `AUD-001` como expediente completo en version documental/operativa v0.
+
+Documento base: `03_Expedientes/AUD-001_Cierre_Operativo_v0.md`.
+
+Auditoria: `03_Expedientes/AUD-001_Auditoria_Cierre_Operativo_v0.md`.
+
+Decision espejo: `03_Expedientes/AUD-001_Decision_Cierre_Operativo_v0.md`.
+
+## Resultado
+
+`C-002`, `AUDITOR-V0-001`, `REPORT_LAYER` local pre-C, R4 formal local y Gamma formal local quedan conservados en perfil local.
+
+No se exporta `REPORT_LAYER`, no se promueve R4/Gamma, no se transforma la suite completa en operador general y no se modifica Canon ni Nivel C.
+
+## D-2026-07-06-012 - Cierre de mantenimiento local HXI-001
+
+Estatus: decision de cierre de mantenimiento local.
+
+Fecha: 2026-07-06.
+
+## Decision
+
+Se acepta `HXI-CLOSE-MAINT-001` y se cierra `HXI-001` en mantenimiento local.
+
+Documento base: `03_Expedientes/HXI-001_Cierre_Mantenimiento_Local.md`.
+
+Auditoria: `03_Expedientes/HXI-001_Auditoria_Cierre_Mantenimiento_Local.md`.
+
+Decision espejo: `03_Expedientes/HXI-001_Decision_Cierre_Mantenimiento_Local.md`.
+
+## Resultado
+
+`H-Xi` permanece no admitida y `Xi_eval` queda conservado solo como herramienta local historica/auxiliar.
+
+No se canoniza `Xi`, no se reabre `PSI-001`, no se modifica Canon, no se crea Nivel C y cualquier reapertura futura exige decision nueva.
+
+## D-2026-07-06-013 - Relacion documental MOC con C-001 y C-002
+
+Estatus: decision de relacion documental local.
+
+Fecha: 2026-07-06.
+
+## Decision
+
+Se acepta `MOC-C001-C002-REL-001` y se ejecuta `MOC-ROUTE-012` como puente documental local entre `MOC-001`, `C-001` y `C-002`.
+
+Documento base: `03_Expedientes/MOC-001_Relacion_Documental_C001_C002.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Relacion_Documental_C001_C002.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Relacion_Documental_C001_C002.md`.
+
+## Resultado
+
+`C-001` queda leido como frontera tecnica para artefactos y reportes: fuentes locales, alcance acotado, evidencia, resultado, deudas y prohibicion de autoridad autonoma.
+
+`C-002` queda leido como secuencia operativa de auditoria: leer, mapear, verificar, cerrar terminacion, reportar, decidir solo si corresponde, conservar propuesta y no transformar sin autorizacion valida.
+
+`MOC-001` puede emitir reportes puente locales con `operator_trace`, `Pi_moc_trace`, `ao_bridge`, fuentes, alcance, resultado y deudas, siempre con `transformacion_permitida = false`.
+
+No se modifica `C-001`, no se modifica `C-002`, no se crea `C-003`, no se modifica Canon, no se crea Nivel C nuevo, no se promueve MOC a especificacion oficial, no se autoriza ejecucion empirica, no se recopilan datos, no se admiten `H-Xi` ni `Xi` canonico y no se cierra Confluencia global, Equivalencia global, R4/Gamma ni `TCS-001`.
+
+La deuda previa de relacion con `C-001` / `C-002` deja de ser deuda abierta total y queda atendida en grado documental local; cualquier especificacion tecnica futura de implementacion requiere decision separada.
+
+## D-2026-07-06-014 - Estatus de REPORT_LAYER frente a Nivel C
+
+Estatus: decision de permanencia local pre-C.
+
+Fecha: 2026-07-06.
+
+## Decision
+
+Se acepta `AO-REPORT-LAYER-NIVEL-C-001` y se mantiene `REPORT_LAYER` como capa local pre-C.
+
+Documento base: `03_Expedientes/AO-001_Justificacion_REPORT_LAYER_Nivel_C.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_REPORT_LAYER_Nivel_C.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_REPORT_LAYER_Nivel_C.md`.
+
+## Resultado
+
+`REPORT_LAYER` no pasa a Nivel C, no crea `C-003` y no queda autorizado como contrato global independiente.
+
+Puede seguir funcionando como capa local de reporte y entrada de `Pi_rep(REPORT_LAYER, C, W) -> R_rep | B`.
+
+Cualquier promocion futura exige candidata independiente, contrato exportable, serializacion estable, uso interfrente probado, auditoria y decision nueva.
+
+## D-2026-07-06-015 - Herramienta no mutante REPORT_LAYER conforme a C-002
+
+Estatus: decision tecnica local.
+
+Fecha: 2026-07-06.
+
+## Decision
+
+Se acepta `REPORT-LAYER-C002-GATE-001` como herramienta local no mutante conforme a `C-002`.
+
+Documento base: `03_Expedientes/AUT-003_Herramienta_REPORT_LAYER_C002.md`.
+
+Auditoria: `03_Expedientes/AUT-003_Auditoria_Herramienta_REPORT_LAYER_C002.md`.
+
+Decision espejo: `03_Expedientes/AUT-003_Decision_Herramienta_REPORT_LAYER_C002.md`.
+
+## Resultado
+
+La herramienta lee casos sinteticos, valida campos minimos de reporte, bloquea promocion a Nivel C, autoridad historica indebida, conversion de recomendacion en decision y cualquier transformacion material.
+
+Queda integrada a `DO-LAB-RUN-001` solo como paso de lectura/reporte. No abre modo mutante.
+
+## D-2026-07-06-016 - Reconciliacion RH-001 / PM-001
+
+Estatus: decision de deuda condicionada.
+
+Fecha: 2026-07-06.
+
+## Decision
+
+Se acepta `RH-PM-REC-001` como revision de reconciliacion entre `RH-001` y `PM-001`.
+
+Documento base: `03_Expedientes/RH-001_Revision_Reconciliacion_PM001.md`.
+
+Auditoria: `03_Expedientes/RH-001_Auditoria_Reconciliacion_PM001.md`.
+
+Decision espejo: `03_Expedientes/RH-001_Decision_Reconciliacion_PM001.md`.
+
+## Resultado
+
+`PM-001` queda reconciliado solo como deuda historica condicionada derivada de `RH-001`.
+
+No existe expediente activo, protocolo materializado ni cierre sustantivo de `PM-001`. Cualquier uso posterior requiere apertura o decision separada.

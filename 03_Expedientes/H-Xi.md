@@ -1,6 +1,6 @@
 # H-Xi - Operador de Acoplamiento Distincion-Restriccion
 
-Estatus: hipotesis externa en evaluacion / expediente `HXI-001` abierto en mantenimiento local / no admitida como Canon.
+Estatus: hipotesis externa no admitida / expediente `HXI-001` cerrado en mantenimiento local / no admitida como Canon.
 
 Tipo: ficha provisional de hipotesis.
 
@@ -22,11 +22,13 @@ El archivo original `DOC-20260630-WA0003_ - copia` ya quedo materializado localm
 
 Esta ficha no canoniza el contenido. Solo registra la hipotesis como candidata historica para una admision futura.
 
-`HXI-001` queda abierto como evaluacion separada de la relacion posible entre `H-Xi` y los cambios de relaciones `R` usados por `CRIT-PSI-TR-001`. Esa apertura no admite `H-Xi` ni declara `Xi` operador vigente.
+`HXI-001` fue abierto como evaluacion separada de la relacion posible entre `H-Xi` y los cambios de relaciones `R` usados por `CRIT-PSI-TR-001`. Esa apertura no admitio `H-Xi` ni declaro `Xi` operador vigente.
 
 Nota posterior 2026-07-05: la compuerta de admision formal posterior fue aplicada por `D-2026-07-05-002` con resultado `mantener_Xi_eval`. `H-Xi` sigue como hipotesis externa no admitida; `Xi_eval` queda conservado solo como herramienta local de `HXI-001`.
 
 Nota posterior 2026-07-05-003: `HXI-001` queda abierto en mantenimiento local por `D-2026-07-05-003`. El mantenimiento conserva trazabilidad y `Xi_eval`, pero no reabre admision.
+
+Nota posterior 2026-07-06-012: `HXI-001` queda cerrado en mantenimiento local por `D-2026-07-06-012`. `H-Xi` sigue no admitida y `Xi_eval` queda solo como herramienta local historica/auxiliar.
 
 ## Formulacion provisional
 

@@ -1,6 +1,6 @@
 # LAB_STATUS_BOARD
 
-report_id: DO-STATE-BOARD-20260706-120313
+report_id: DO-STATE-BOARD-20260706-134826
 expediente: AUT-001
 algoritmo: DO-STATE-BOARD-001
 resultado: ok
@@ -9,24 +9,20 @@ transformacion_permitida: false
 
 ## Estado sintetico
 
-- ultimo expediente cerrado: `DOCS-001`
-- ultimo expediente tecnico cerrado: `AUT-001`
-- ultima decision operativa: `MOC-001_Decision_Paquete_Registro_Auditoria_Piloto.md` (`D-2026-07-06-005`): acepta `MOC-PILOT-REG-AUDIT-PACK-001`; metodo de registro sin datos personales y matriz de auditoria quedan preparados documentalmente. La siguiente ruta recomendada es `MOC-ROUTE-010`, decidir rutas posteriores sin reclutamiento ni ejecucion.
-- proximo objetivo: Avanzar `MOC-001` por `MOC-ROUTE-010`: decidir rutas posteriores despues del paquete de registro/auditoria, priorizando si el MOC permanece en simulacion documental, si se prepara criterio de evaluadores sin reclutamiento o si el frente entra en mantenimiento; sin respuestas reales, sin uso clinico y sin modificar `Documento 04`.
+- ultimo expediente cerrado: `HXI-001` cerrado en mantenimiento local por `D-2026-07-06-012`; `H-Xi` sigue no admitida y `Xi_eval` queda solo como herramienta local historica/auxiliar.
+- ultimo expediente tecnico cerrado: `AUT-002` cerrado tecnicamente por `D-2026-07-06-010`; conserva `referencia_historica_transferida` como regla tecnica y exige decision puente si aparece dependencia psicologica sustantiva.
+- ultima decision operativa: `RH-001_Decision_Reconciliacion_PM001.md` (`D-2026-07-06-016`): acepta `RH-PM-REC-001`; `PM-001` queda reconciliado solo como deuda historica condicionada, no como expediente activo ni protocolo materializado.
+- proximo objetivo: Ampliar `AO-DOC04-WIDE-TEST-001` solo si se requieren casos heterogeneos adicionales de `REPORT_LAYER`, serializacion interfrente o nuevas rutas de `Pi_rep`; la prueba local inicial de 8 casos, la precision de `REPORT_LAYER`, su permanencia local pre-C y la compuerta no mutante `C-002` ya quedaron atendidas por `D-2026-07-06-007`, `D-2026-07-06-014` y `D-2026-07-06-015`.
 
 ## Expediente activo inmediato
 
-`MOC-001` queda como frente integrador teorico-operativo principal; primera ruta valida ejecutada por `MOC-ROUTE-EXEC-001`, bateria ampliada por `MOC-ROUTE-002`, puente formal `MOC/TCS` aceptado por `MOC-ROUTE-003`, puente formal `MOC/AO` aceptado por `MOC-ROUTE-004`, protocolo v0.2 aceptado por `MOC-ROUTE-005`, protocolo documental de piloto futuro preparado por `MOC-ROUTE-006`, compuerta de no autorizacion aplicada por `MOC-ROUTE-007`, paquete pre-ejecucion preparado por `MOC-ROUTE-008`, paquete de registro/auditoria preparado por `MOC-ROUTE-009` y siguiente ruta recomendada `MOC-ROUTE-010`; no canonico, no clinico, no regulado y sin admision de `H-Xi`.
+`AO-001` queda como frente operativo inmediato para profundizar `AO-PPI-BRIDGE-001`, mantener bloqueada la exportacion general de R4/Gamma, ampliar pruebas heterogeneas de `REPORT_LAYER` solo si una decision futura lo exige, conservar `AO-DOC04-WIDE-TEST-001` como evidencia local no mutante y usar `REPORT-LAYER-C002-GATE-001` solo como compuerta no mutante conforme a `C-002`.
 
 ## Expedientes abiertos
 
-- `MOC-001` (expediente integrador teorico-operativo abierto por `D-2026-07-05-011`; `Xi_eval`, metricas, protocolo, simulacion, diseno empirico futuro, primera ruta ejecutada, bateria ampliada, puente formal `MOC/TCS`, puente formal `MOC/AO`, protocolo v0.2, protocolo documental de piloto futuro, compuerta de no autorizacion, paquete pre-ejecucion, paquete de registro/auditoria y rutas siguientes aceptadas por `D-2026-07-05-012` a `D-2026-07-06-005`; no Canon, no clinico, no regulado)
-- `HXI-001` (abierto en mantenimiento local por `D-2026-07-05-003`; conserva `Xi_eval`; no admite `H-Xi`)
-- `R001-001` (integracion tecnica provisional de `R001-TABLE-CHECK-001` y relacion formal local `R001-TB-001`; no canoniza `Xi`, no admite `H-Xi`, no cierra `P-200` ni resuelve `P-107`)
+- `MOC-001` (expediente integrador teorico-operativo abierto por `D-2026-07-05-011`; `Xi_eval`, metricas, protocolo, simulacion, diseno empirico futuro, rutas ejecutadas, puentes formales, paquete pre-ejecucion, paquete de registro/auditoria, rutas posteriores y relacion documental con `C-001` / `C-002` aceptadas por `D-2026-07-05-012` a `D-2026-07-06-013`; queda en `MOC-ROUTE-011`, mantenimiento teorico-operativo sin ejecucion, con `MOC-ROUTE-012` como puente documental local con Nivel C; no Canon, no clinico, no regulado)
 - `TCS-001` (expediente teorico provisional; paquete minimo aceptado por `D-2026-07-03-019` y maduracion provisional `TCS-MAT-PROV-001` aceptada por `D-2026-07-05-010`; no Canon, no documento oficial)
-- `AUT-002` (mantenimiento tecnico minimo de referencias historicas transferidas; aceptado por `D-2026-07-03-015`; no reabre `AUT-001`)
-- `AUD-001` (completo en version documental/operativa v0; implementacion no mutante `AUDITOR-V0-001` aceptada; JSON reactivado; `REPORT_LAYER` local y compatibilidad con `DO_CHECK_REPORT` definidas; suite ejecutable completa encuadrada en `AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md`; parser real acotado en `AUD-001_Ficha_Alcance_Parser_Real.md`; `R4-FORMAL-AUD-001` construido localmente; `GAMMA-FORMAL-AUD-001` construido localmente; `Gamma_1` probado por `VAL-030`, `VAL-031` y `GAMMA-EXT-AO-001`)
-- `AO-001` (expediente preparatorio abierto para Algebra Operacional; `AO-MARCO-001`, `GAMMA-EXT-AO-001`, `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001`, `AO-PPI-BRIDGE-001`, `AO-DOC04-FORM-CHK-001`, `AO-CONF-EXT-OPTIONS-001`, `AO-EXT-CONF-EXEC-001`, `AO-DOC04-FORM-001` y `AO-R4-GAMMA-EXPORT-GATE-001` aceptados localmente; sigue abierto para pruebas globales no resueltas)
+- `AO-001` (expediente preparatorio abierto para Algebra Operacional; `AO-MARCO-001`, `GAMMA-EXT-AO-001`, `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001`, `AO-PPI-BRIDGE-001`, `AO-DOC04-FORM-CHK-001`, `AO-CONF-EXT-OPTIONS-001`, `AO-EXT-CONF-EXEC-001`, `AO-DOC04-FORM-001`, `AO-R4-GAMMA-EXPORT-GATE-001`, `AO-DOC04-WIDE-001`, `AO-DOC04-WIDE-TEST-001`, `AO-REPORT-LAYER-BRIDGE-001` y `AO-REPORT-LAYER-NIVEL-C-001` aceptados localmente; sigue abierto para pruebas globales no resueltas)
 
 ## Automatizacion
 
@@ -38,6 +34,9 @@ transformacion_permitida: false
 - 06_Automatizacion/lab_executive_summary.py: presente
 - 06_Automatizacion/lab_run.py: presente
 - 06_Automatizacion/r001_table_checks.py: presente
+- 06_Automatizacion/ao_ext_confluence.py: presente
+- 06_Automatizacion/ao_doc04_wide_tests.py: presente
+- 06_Automatizacion/moc_eval.py: presente
 
 ## Hallazgos
 

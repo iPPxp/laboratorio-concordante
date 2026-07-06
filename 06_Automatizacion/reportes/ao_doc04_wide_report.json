@@ -1,0 +1,163 @@
+{
+  "report_id": "AO-DOC04-WIDE-20260706-134840",
+  "expediente": "AO-001",
+  "algoritmo": "AO-DOC04-WIDE-TEST-001",
+  "suite_id": "AO-DOC04-WIDE-CASES-001",
+  "resultado": "ok",
+  "recomendacion": "precisar_report_layer_sin_promocion",
+  "transformacion_permitida": false,
+  "summary": {
+    "cases": 8,
+    "passed": 8,
+    "failed": 0,
+    "findings": 0,
+    "by_operation": {
+      "Eq_local": {
+        "cases": 5,
+        "passed": 5,
+        "failed": 0
+      },
+      "Conf_local": {
+        "cases": 1,
+        "passed": 1,
+        "failed": 0
+      },
+      "Gate_AO": {
+        "cases": 1,
+        "passed": 1,
+        "failed": 0
+      },
+      "R4Gamma_AO": {
+        "cases": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    }
+  },
+  "scope_guard": {
+    "modifica_doc04": false,
+    "modifica_canon": false,
+    "crea_nivel_c": false,
+    "promueve_report_layer": false,
+    "cierra_confluencia_global": false,
+    "cierra_equivalencia_global": false,
+    "promueve_r4_gamma": false,
+    "autoriza_transformacion": false
+  },
+  "report_layer_relation": {
+    "estatus": "local_pre_c",
+    "rol_ao": "entrada_de_Pi_rep_y_evidencia_de_reporte",
+    "no_sustituye": [
+      "Op_AO",
+      "decision",
+      "permiso",
+      "verificacion_posterior",
+      "Nivel_C"
+    ]
+  },
+  "debt_guard": {
+    "confluencia_global_abierta": true,
+    "equivalencia_global_abierta": true,
+    "report_layer_nivel_c_abierto": true,
+    "r4_gamma_exportacion_general_bloqueada": true,
+    "tcs_maduracion_abierta": true
+  },
+  "results": [
+    {
+      "case_id": "AO-WIDE-001",
+      "operation": "Eq_local",
+      "expected": "equivalencia_local",
+      "actual": "equivalencia_local",
+      "passed": true,
+      "detail": "Eq_local => equivalencia_local",
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-WIDE-002",
+      "operation": "Conf_local",
+      "expected": "confluencia_local",
+      "actual": "confluencia_local",
+      "passed": true,
+      "detail": "Conf_local => confluencia_local",
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-WIDE-003",
+      "operation": "Eq_local",
+      "expected": "bloqueo_por_testigo",
+      "actual": "bloqueo_por_testigo",
+      "passed": true,
+      "detail": "Eq_local => bloqueo_por_testigo",
+      "blockers": [
+        "missing:witness",
+        "missing:witness",
+        "report_layer:missing"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-WIDE-004",
+      "operation": "Gate_AO",
+      "expected": "no_autorizado_sin_transformar",
+      "actual": "no_autorizado_sin_transformar",
+      "passed": true,
+      "detail": "Gate_AO => no_autorizado_sin_transformar",
+      "blockers": [
+        "permission:transformacion_no_autorizada"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-WIDE-005",
+      "operation": "Eq_local",
+      "expected": "bloqueo_por_autoridad",
+      "actual": "bloqueo_por_autoridad",
+      "passed": true,
+      "detail": "Eq_local => bloqueo_por_autoridad",
+      "blockers": [
+        "authority_increase:expediente->nivel_c"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-WIDE-006",
+      "operation": "Eq_local",
+      "expected": "divergencia_clasificada",
+      "actual": "divergencia_clasificada",
+      "passed": true,
+      "detail": "Eq_local => divergencia_clasificada",
+      "blockers": [],
+      "warnings": [
+        "projection:signature_differs"
+      ]
+    },
+    {
+      "case_id": "AO-WIDE-007",
+      "operation": "R4Gamma_AO",
+      "expected": "bloqueo_exportacion_r4_gamma",
+      "actual": "bloqueo_exportacion_r4_gamma",
+      "passed": true,
+      "detail": "R4Gamma_AO => bloqueo_exportacion_r4_gamma",
+      "blockers": [
+        "r4_gamma:exportacion_general"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-WIDE-008",
+      "operation": "Eq_local",
+      "expected": "bloqueo_report_layer_incompleto",
+      "actual": "bloqueo_report_layer_incompleto",
+      "passed": true,
+      "detail": "Eq_local => bloqueo_report_layer_incompleto",
+      "blockers": [
+        "report_layer:missing:decision_emitida",
+        "report_layer:missing:transformacion_permitida"
+      ],
+      "warnings": []
+    }
+  ],
+  "findings": []
+}

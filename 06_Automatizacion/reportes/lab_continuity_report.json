@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-LAB-CONTINUITY-20260706-120317",
+  "report_id": "DO-LAB-CONTINUITY-20260706-134840",
   "expediente": "AUT-001",
   "algoritmo": "DO-LAB-CONTINUITY-001",
   "resultado": "advertencia",
@@ -7,36 +7,32 @@
   "transformacion_permitida": false,
   "scope": "repo",
   "sources": {
-    "tablero": "DO-STATE-BOARD-20260706-120313",
-    "chequeo_medio": "DO-CHECK-MED-LIVE-20260706-120317"
+    "tablero": "DO-STATE-BOARD-20260706-134827",
+    "chequeo_medio": "DO-CHECK-MED-LIVE-20260706-134840"
   },
   "summary": {
     "board_resultado": "ok",
     "board_findings": 0,
     "med_resultado": "advertencia",
-    "med_files_checked": 366,
-    "med_findings": 338,
-    "combined_findings": 338,
-    "automation_present": 8,
+    "med_files_checked": 401,
+    "med_findings": 353,
+    "combined_findings": 353,
+    "automation_present": 11,
     "automation_expected": 7,
     "by_severity": {
-      "warning": 338
+      "warning": 353
     }
   },
   "state": {
-    "ultimo_expediente_cerrado": "`DOCS-001`",
-    "ultimo_expediente_tecnico_cerrado": "`AUT-001`",
-    "ultima_decision_operativa": "`MOC-001_Decision_Paquete_Registro_Auditoria_Piloto.md` (`D-2026-07-06-005`): acepta `MOC-PILOT-REG-AUDIT-PACK-001`; metodo de registro sin datos personales y matriz de auditoria quedan preparados documentalmente. La siguiente ruta recomendada es `MOC-ROUTE-010`, decidir rutas posteriores sin reclutamiento ni ejecucion.",
-    "proximo_objetivo": "Avanzar `MOC-001` por `MOC-ROUTE-010`: decidir rutas posteriores despues del paquete de registro/auditoria, priorizando si el MOC permanece en simulacion documental, si se prepara criterio de evaluadores sin reclutamiento o si el frente entra en mantenimiento; sin respuestas reales, sin uso clinico y sin modificar `Documento 04`.",
-    "expediente_activo_inmediato": "`MOC-001` queda como frente integrador teorico-operativo principal; primera ruta valida ejecutada por `MOC-ROUTE-EXEC-001`, bateria ampliada por `MOC-ROUTE-002`, puente formal `MOC/TCS` aceptado por `MOC-ROUTE-003`, puente formal `MOC/AO` aceptado por `MOC-ROUTE-004`, protocolo v0.2 aceptado por `MOC-ROUTE-005`, protocolo documental de piloto futuro preparado por `MOC-ROUTE-006`, compuerta de no autorizacion aplicada por `MOC-ROUTE-007`, paquete pre-ejecucion preparado por `MOC-ROUTE-008`, paquete de registro/auditoria preparado por `MOC-ROUTE-009` y siguiente ruta recomendada `MOC-ROUTE-010`; no canonico, no clinico, no regulado y sin admision de `H-Xi`.",
+    "ultimo_expediente_cerrado": "`HXI-001` cerrado en mantenimiento local por `D-2026-07-06-012`; `H-Xi` sigue no admitida y `Xi_eval` queda solo como herramienta local historica/auxiliar.",
+    "ultimo_expediente_tecnico_cerrado": "`AUT-002` cerrado tecnicamente por `D-2026-07-06-010`; conserva `referencia_historica_transferida` como regla tecnica y exige decision puente si aparece dependencia psicologica sustantiva.",
+    "ultima_decision_operativa": "`RH-001_Decision_Reconciliacion_PM001.md` (`D-2026-07-06-016`): acepta `RH-PM-REC-001`; `PM-001` queda reconciliado solo como deuda historica condicionada, no como expediente activo ni protocolo materializado.",
+    "proximo_objetivo": "Ampliar `AO-DOC04-WIDE-TEST-001` solo si se requieren casos heterogeneos adicionales de `REPORT_LAYER`, serializacion interfrente o nuevas rutas de `Pi_rep`; la prueba local inicial de 8 casos, la precision de `REPORT_LAYER`, su permanencia local pre-C y la compuerta no mutante `C-002` ya quedaron atendidas por `D-2026-07-06-007`, `D-2026-07-06-014` y `D-2026-07-06-015`.",
+    "expediente_activo_inmediato": "`AO-001` queda como frente operativo inmediato para profundizar `AO-PPI-BRIDGE-001`, mantener bloqueada la exportacion general de R4/Gamma, ampliar pruebas heterogeneas de `REPORT_LAYER` solo si una decision futura lo exige, conservar `AO-DOC04-WIDE-TEST-001` como evidencia local no mutante y usar `REPORT-LAYER-C002-GATE-001` solo como compuerta no mutante conforme a `C-002`.",
     "expedientes_abiertos": [
-      "`MOC-001` (expediente integrador teorico-operativo abierto por `D-2026-07-05-011`; `Xi_eval`, metricas, protocolo, simulacion, diseno empirico futuro, primera ruta ejecutada, bateria ampliada, puente formal `MOC/TCS`, puente formal `MOC/AO`, protocolo v0.2, protocolo documental de piloto futuro, compuerta de no autorizacion, paquete pre-ejecucion, paquete de registro/auditoria y rutas siguientes aceptadas por `D-2026-07-05-012` a `D-2026-07-06-005`; no Canon, no clinico, no regulado)",
-      "`HXI-001` (abierto en mantenimiento local por `D-2026-07-05-003`; conserva `Xi_eval`; no admite `H-Xi`)",
-      "`R001-001` (integracion tecnica provisional de `R001-TABLE-CHECK-001` y relacion formal local `R001-TB-001`; no canoniza `Xi`, no admite `H-Xi`, no cierra `P-200` ni resuelve `P-107`)",
+      "`MOC-001` (expediente integrador teorico-operativo abierto por `D-2026-07-05-011`; `Xi_eval`, metricas, protocolo, simulacion, diseno empirico futuro, rutas ejecutadas, puentes formales, paquete pre-ejecucion, paquete de registro/auditoria, rutas posteriores y relacion documental con `C-001` / `C-002` aceptadas por `D-2026-07-05-012` a `D-2026-07-06-013`; queda en `MOC-ROUTE-011`, mantenimiento teorico-operativo sin ejecucion, con `MOC-ROUTE-012` como puente documental local con Nivel C; no Canon, no clinico, no regulado)",
       "`TCS-001` (expediente teorico provisional; paquete minimo aceptado por `D-2026-07-03-019` y maduracion provisional `TCS-MAT-PROV-001` aceptada por `D-2026-07-05-010`; no Canon, no documento oficial)",
-      "`AUT-002` (mantenimiento tecnico minimo de referencias historicas transferidas; aceptado por `D-2026-07-03-015`; no reabre `AUT-001`)",
-      "`AUD-001` (completo en version documental/operativa v0; implementacion no mutante `AUDITOR-V0-001` aceptada; JSON reactivado; `REPORT_LAYER` local y compatibilidad con `DO_CHECK_REPORT` definidas; suite ejecutable completa encuadrada en `AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md`; parser real acotado en `AUD-001_Ficha_Alcance_Parser_Real.md`; `R4-FORMAL-AUD-001` construido localmente; `GAMMA-FORMAL-AUD-001` construido localmente; `Gamma_1` probado por `VAL-030`, `VAL-031` y `GAMMA-EXT-AO-001`)",
-      "`AO-001` (expediente preparatorio abierto para Algebra Operacional; `AO-MARCO-001`, `GAMMA-EXT-AO-001`, `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001`, `AO-PPI-BRIDGE-001`, `AO-DOC04-FORM-CHK-001`, `AO-CONF-EXT-OPTIONS-001`, `AO-EXT-CONF-EXEC-001`, `AO-DOC04-FORM-001` y `AO-R4-GAMMA-EXPORT-GATE-001` aceptados localmente; sigue abierto para pruebas globales no resueltas)"
+      "`AO-001` (expediente preparatorio abierto para Algebra Operacional; `AO-MARCO-001`, `GAMMA-EXT-AO-001`, `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001`, `AO-PPI-BRIDGE-001`, `AO-DOC04-FORM-CHK-001`, `AO-CONF-EXT-OPTIONS-001`, `AO-EXT-CONF-EXEC-001`, `AO-DOC04-FORM-001`, `AO-R4-GAMMA-EXPORT-GATE-001`, `AO-DOC04-WIDE-001`, `AO-DOC04-WIDE-TEST-001`, `AO-REPORT-LAYER-BRIDGE-001` y `AO-REPORT-LAYER-NIVEL-C-001` aceptados localmente; sigue abierto para pruebas globales no resueltas)"
     ],
     "expedientes_cerrados": [
       "`DOCS-001`",
@@ -48,7 +44,11 @@
       "`RH-001`",
       "`RH-002`",
       "`REC-001`",
-      "`AUT-001`"
+      "`AUT-001`",
+      "`R001-001`",
+      "`AUT-002`",
+      "`AUD-001`",
+      "`HXI-001`"
     ],
     "expedientes_congelados": [
       "`B-001.5`",
@@ -87,6 +87,18 @@
       {
         "file": "06_Automatizacion/r001_table_checks.py",
         "exists": true
+      },
+      {
+        "file": "06_Automatizacion/ao_ext_confluence.py",
+        "exists": true
+      },
+      {
+        "file": "06_Automatizacion/ao_doc04_wide_tests.py",
+        "exists": true
+      },
+      {
+        "file": "06_Automatizacion/moc_eval.py",
+        "exists": true
       }
     ]
   },
@@ -97,7 +109,7 @@
   ],
   "component_reports": {
     "tablero": {
-      "report_id": "DO-STATE-BOARD-20260706-120313",
+      "report_id": "DO-STATE-BOARD-20260706-134827",
       "expediente": "AUT-001",
       "algoritmo": "DO-STATE-BOARD-001",
       "resultado": "ok",
@@ -105,25 +117,21 @@
       "transformacion_permitida": false,
       "summary": {
         "missing_required_files": 0,
-        "open_expedientes": 7,
-        "closed_expedientes": 10,
+        "open_expedientes": 3,
+        "closed_expedientes": 14,
         "frozen_expedientes": 3,
         "findings": 0
       },
       "state": {
-        "ultimo_expediente_cerrado": "`DOCS-001`",
-        "ultimo_expediente_tecnico_cerrado": "`AUT-001`",
-        "ultima_decision_operativa": "`MOC-001_Decision_Paquete_Registro_Auditoria_Piloto.md` (`D-2026-07-06-005`): acepta `MOC-PILOT-REG-AUDIT-PACK-001`; metodo de registro sin datos personales y matriz de auditoria quedan preparados documentalmente. La siguiente ruta recomendada es `MOC-ROUTE-010`, decidir rutas posteriores sin reclutamiento ni ejecucion.",
-        "proximo_objetivo": "Avanzar `MOC-001` por `MOC-ROUTE-010`: decidir rutas posteriores despues del paquete de registro/auditoria, priorizando si el MOC permanece en simulacion documental, si se prepara criterio de evaluadores sin reclutamiento o si el frente entra en mantenimiento; sin respuestas reales, sin uso clinico y sin modificar `Documento 04`.",
-        "expediente_activo_inmediato": "`MOC-001` queda como frente integrador teorico-operativo principal; primera ruta valida ejecutada por `MOC-ROUTE-EXEC-001`, bateria ampliada por `MOC-ROUTE-002`, puente formal `MOC/TCS` aceptado por `MOC-ROUTE-003`, puente formal `MOC/AO` aceptado por `MOC-ROUTE-004`, protocolo v0.2 aceptado por `MOC-ROUTE-005`, protocolo documental de piloto futuro preparado por `MOC-ROUTE-006`, compuerta de no autorizacion aplicada por `MOC-ROUTE-007`, paquete pre-ejecucion preparado por `MOC-ROUTE-008`, paquete de registro/auditoria preparado por `MOC-ROUTE-009` y siguiente ruta recomendada `MOC-ROUTE-010`; no canonico, no clinico, no regulado y sin admision de `H-Xi`.",
+        "ultimo_expediente_cerrado": "`HXI-001` cerrado en mantenimiento local por `D-2026-07-06-012`; `H-Xi` sigue no admitida y `Xi_eval` queda solo como herramienta local historica/auxiliar.",
+        "ultimo_expediente_tecnico_cerrado": "`AUT-002` cerrado tecnicamente por `D-2026-07-06-010`; conserva `referencia_historica_transferida` como regla tecnica y exige decision puente si aparece dependencia psicologica sustantiva.",
+        "ultima_decision_operativa": "`RH-001_Decision_Reconciliacion_PM001.md` (`D-2026-07-06-016`): acepta `RH-PM-REC-001`; `PM-001` queda reconciliado solo como deuda historica condicionada, no como expediente activo ni protocolo materializado.",
+        "proximo_objetivo": "Ampliar `AO-DOC04-WIDE-TEST-001` solo si se requieren casos heterogeneos adicionales de `REPORT_LAYER`, serializacion interfrente o nuevas rutas de `Pi_rep`; la prueba local inicial de 8 casos, la precision de `REPORT_LAYER`, su permanencia local pre-C y la compuerta no mutante `C-002` ya quedaron atendidas por `D-2026-07-06-007`, `D-2026-07-06-014` y `D-2026-07-06-015`.",
+        "expediente_activo_inmediato": "`AO-001` queda como frente operativo inmediato para profundizar `AO-PPI-BRIDGE-001`, mantener bloqueada la exportacion general de R4/Gamma, ampliar pruebas heterogeneas de `REPORT_LAYER` solo si una decision futura lo exige, conservar `AO-DOC04-WIDE-TEST-001` como evidencia local no mutante y usar `REPORT-LAYER-C002-GATE-001` solo como compuerta no mutante conforme a `C-002`.",
         "expedientes_abiertos": [
-          "`MOC-001` (expediente integrador teorico-operativo abierto por `D-2026-07-05-011`; `Xi_eval`, metricas, protocolo, simulacion, diseno empirico futuro, primera ruta ejecutada, bateria ampliada, puente formal `MOC/TCS`, puente formal `MOC/AO`, protocolo v0.2, protocolo documental de piloto futuro, compuerta de no autorizacion, paquete pre-ejecucion, paquete de registro/auditoria y rutas siguientes aceptadas por `D-2026-07-05-012` a `D-2026-07-06-005`; no Canon, no clinico, no regulado)",
-          "`HXI-001` (abierto en mantenimiento local por `D-2026-07-05-003`; conserva `Xi_eval`; no admite `H-Xi`)",
-          "`R001-001` (integracion tecnica provisional de `R001-TABLE-CHECK-001` y relacion formal local `R001-TB-001`; no canoniza `Xi`, no admite `H-Xi`, no cierra `P-200` ni resuelve `P-107`)",
+          "`MOC-001` (expediente integrador teorico-operativo abierto por `D-2026-07-05-011`; `Xi_eval`, metricas, protocolo, simulacion, diseno empirico futuro, rutas ejecutadas, puentes formales, paquete pre-ejecucion, paquete de registro/auditoria, rutas posteriores y relacion documental con `C-001` / `C-002` aceptadas por `D-2026-07-05-012` a `D-2026-07-06-013`; queda en `MOC-ROUTE-011`, mantenimiento teorico-operativo sin ejecucion, con `MOC-ROUTE-012` como puente documental local con Nivel C; no Canon, no clinico, no regulado)",
           "`TCS-001` (expediente teorico provisional; paquete minimo aceptado por `D-2026-07-03-019` y maduracion provisional `TCS-MAT-PROV-001` aceptada por `D-2026-07-05-010`; no Canon, no documento oficial)",
-          "`AUT-002` (mantenimiento tecnico minimo de referencias historicas transferidas; aceptado por `D-2026-07-03-015`; no reabre `AUT-001`)",
-          "`AUD-001` (completo en version documental/operativa v0; implementacion no mutante `AUDITOR-V0-001` aceptada; JSON reactivado; `REPORT_LAYER` local y compatibilidad con `DO_CHECK_REPORT` definidas; suite ejecutable completa encuadrada en `AUD-001_Ficha_Alcance_Suite_Ejecutable_Completa.md`; parser real acotado en `AUD-001_Ficha_Alcance_Parser_Real.md`; `R4-FORMAL-AUD-001` construido localmente; `GAMMA-FORMAL-AUD-001` construido localmente; `Gamma_1` probado por `VAL-030`, `VAL-031` y `GAMMA-EXT-AO-001`)",
-          "`AO-001` (expediente preparatorio abierto para Algebra Operacional; `AO-MARCO-001`, `GAMMA-EXT-AO-001`, `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001`, `AO-PPI-BRIDGE-001`, `AO-DOC04-FORM-CHK-001`, `AO-CONF-EXT-OPTIONS-001`, `AO-EXT-CONF-EXEC-001`, `AO-DOC04-FORM-001` y `AO-R4-GAMMA-EXPORT-GATE-001` aceptados localmente; sigue abierto para pruebas globales no resueltas)"
+          "`AO-001` (expediente preparatorio abierto para Algebra Operacional; `AO-MARCO-001`, `GAMMA-EXT-AO-001`, `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001`, `AO-PPI-BRIDGE-001`, `AO-DOC04-FORM-CHK-001`, `AO-CONF-EXT-OPTIONS-001`, `AO-EXT-CONF-EXEC-001`, `AO-DOC04-FORM-001`, `AO-R4-GAMMA-EXPORT-GATE-001`, `AO-DOC04-WIDE-001`, `AO-DOC04-WIDE-TEST-001`, `AO-REPORT-LAYER-BRIDGE-001` y `AO-REPORT-LAYER-NIVEL-C-001` aceptados localmente; sigue abierto para pruebas globales no resueltas)"
         ],
         "expedientes_cerrados": [
           "`DOCS-001`",
@@ -135,7 +143,11 @@
           "`RH-001`",
           "`RH-002`",
           "`REC-001`",
-          "`AUT-001`"
+          "`AUT-001`",
+          "`R001-001`",
+          "`AUT-002`",
+          "`AUD-001`",
+          "`HXI-001`"
         ],
         "expedientes_congelados": [
           "`B-001.5`",
@@ -174,13 +186,25 @@
           {
             "file": "06_Automatizacion/r001_table_checks.py",
             "exists": true
+          },
+          {
+            "file": "06_Automatizacion/ao_ext_confluence.py",
+            "exists": true
+          },
+          {
+            "file": "06_Automatizacion/ao_doc04_wide_tests.py",
+            "exists": true
+          },
+          {
+            "file": "06_Automatizacion/moc_eval.py",
+            "exists": true
           }
         ]
       },
       "findings": []
     },
     "chequeo_medio": {
-      "report_id": "DO-CHECK-MED-LIVE-20260706-120317",
+      "report_id": "DO-CHECK-MED-LIVE-20260706-134840",
       "expediente": "AUT-001",
       "algoritmo": "DO-CHECK-MED-001",
       "resultado": "advertencia",
@@ -189,17 +213,18 @@
       "transformacion_permitida": false,
       "scope": "repo",
       "summary": {
-        "files_checked": 366,
-        "findings": 338,
+        "files_checked": 401,
+        "findings": 353,
         "by_severity": {
-          "warning": 338
+          "warning": 353
         },
         "by_check": {
-          "MED-REFERENCIAS": 251,
+          "MED-REFERENCIAS": 260,
           "MED-NIVELES": 68,
+          "MED-CERRADOS": 4,
           "MED-ASCII": 1,
-          "MED-HISTORIAL": 11,
-          "MED-ESTATUS": 7
+          "MED-ESTATUS": 9,
+          "MED-HISTORIAL": 11
         }
       },
       "targets": [
@@ -394,6 +419,22 @@
             },
             {
               "severity": "warning",
+              "check_id": "MED-REFERENCIAS",
+              "kind": "referencia_no_materializada",
+              "file": "CHANGELOG.md",
+              "detail": "MOC/C-001/C-002",
+              "evidence": ""
+            },
+            {
+              "severity": "warning",
+              "check_id": "MED-REFERENCIAS",
+              "kind": "referencia_no_materializada",
+              "file": "CHANGELOG.md",
+              "detail": "MOC/C-001/C-002",
+              "evidence": ""
+            },
+            {
+              "severity": "warning",
               "check_id": "MED-NIVELES",
               "kind": "accion_de_nivel_sensible",
               "file": "CHANGELOG.md",
@@ -407,6 +448,14 @@
               "file": "CHANGELOG.md",
               "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
               "evidence": "- Creada `DO-001_Decision_Promocion_SPEC-AUD-001.md` con `PROM-SPEC-AUD-001`: se promueve `SPEC-AUD-001_Candidata` a documento oficial de Nivel C."
+            },
+            {
+              "severity": "warning",
+              "check_id": "MED-CERRADOS",
+              "kind": "expediente_cerrado_afectado",
+              "file": "CHANGELOG.md",
+              "detail": "La linea parece afectar expediente cerrado: HXI-001",
+              "evidence": "- Creado `HXI-001_Reapertura_Operativa.md` como `HXI-REOPEN-001`: `HXI-001` se reabre como frente activo inmediato para aplicar la compuerta de admision formal posterior."
             }
           ]
         },
@@ -469,6 +518,22 @@
               "kind": "referencia_no_materializada",
               "file": "CURRENT_STATE.md",
               "detail": "MOC/AO",
+              "evidence": ""
+            },
+            {
+              "severity": "warning",
+              "check_id": "MED-REFERENCIAS",
+              "kind": "referencia_no_materializada",
+              "file": "CURRENT_STATE.md",
+              "detail": "MOC/C-001/C-002",
+              "evidence": ""
+            },
+            {
+              "severity": "warning",
+              "check_id": "MED-REFERENCIAS",
+              "kind": "referencia_no_materializada",
+              "file": "CURRENT_STATE.md",
+              "detail": "MOC/C-001/C-002",
               "evidence": ""
             },
             {
@@ -1110,24 +1175,7 @@
           "file": "README.md",
           "surface": "estado_operativo",
           "estatus": "no_clasificado",
-          "findings": [
-            {
-              "severity": "warning",
-              "check_id": "MED-REFERENCIAS",
-              "kind": "referencia_no_materializada",
-              "file": "README.md",
-              "detail": "MOC/TCS",
-              "evidence": ""
-            },
-            {
-              "severity": "warning",
-              "check_id": "MED-REFERENCIAS",
-              "kind": "referencia_no_materializada",
-              "file": "README.md",
-              "detail": "MOC/AO",
-              "evidence": ""
-            }
-          ]
+          "findings": []
         },
         {
           "file": "VISION_PAPER_FINAL_REFERENCIAS.md",
@@ -1210,7 +1258,7 @@
         {
           "file": "02_Documentos/04_Algebra_Operacional.md",
           "surface": "documento_oficial",
-          "estatus": "documento oficial actualizado, version inicial consolidada",
+          "estatus": "documento oficial actualizado, version amplia v0",
           "findings": []
         },
         {
@@ -1280,6 +1328,21 @@
           "findings": []
         },
         {
+          "file": "03_Expedientes/AO-001_Auditoria_Formalizacion_Amplia_Doc04.md",
+          "surface": "expediente",
+          "estatus": "no_clasificado",
+          "findings": [
+            {
+              "severity": "warning",
+              "check_id": "MED-ESTATUS",
+              "kind": "estatus_ausente",
+              "file": "03_Expedientes/AO-001_Auditoria_Formalizacion_Amplia_Doc04.md",
+              "detail": "No hay campo Estatus en las primeras 30 lineas.",
+              "evidence": ""
+            }
+          ]
+        },
+        {
           "file": "03_Expedientes/AO-001_Auditoria_Formalizacion_Doc04_Confluencia_Externa.md",
           "surface": "expediente",
           "estatus": "auditoria provisional favorable con ruta defensiva",
@@ -1290,6 +1353,21 @@
           "surface": "expediente",
           "estatus": "auditoria provisional de expediente",
           "findings": []
+        },
+        {
+          "file": "03_Expedientes/AO-001_Auditoria_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md",
+          "surface": "expediente",
+          "estatus": "no_clasificado",
+          "findings": [
+            {
+              "severity": "warning",
+              "check_id": "MED-ESTATUS",
+              "kind": "estatus_ausente",
+              "file": "03_Expedientes/AO-001_Auditoria_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md",
+              "detail": "No hay campo Estatus en las primeras 30 lineas.",
+              "evidence": ""
+            }
+          ]
         },
         {
           "file": "03_Expedientes/AO-001_Auditoria_Pruebas_Externas_Confluencia.md",
@@ -1316,6 +1394,12 @@
           "file": "03_Expedientes/AO-001_Auditoria_Puente_Confluencia_Equivalencia.md",
           "surface": "expediente",
           "estatus": "auditoria favorable con deudas abiertas",
+          "findings": []
+        },
+        {
+          "file": "03_Expedientes/AO-001_Auditoria_REPORT_LAYER_Nivel_C.md",
+          "surface": "expediente",
+          "estatus": "auditoria favorable con limites",
           "findings": []
         },
         {
@@ -1391,6 +1475,24 @@
           "findings": []
         },
         {
+          "file": "03_Expedientes/AO-001_Decision_Formalizacion_Amplia_Doc04.md",
+          "surface": "expediente",
+          "estatus": "decision documental aceptada",
+          "findings": []
+        },
+        {
+          "file": "03_Expedientes/AO-001_Decision_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md",
+          "surface": "expediente",
+          "estatus": "decision de expediente aceptada",
+          "findings": []
+        },
+        {
+          "file": "03_Expedientes/AO-001_Decision_REPORT_LAYER_Nivel_C.md",
+          "surface": "expediente",
+          "estatus": "decision documental local",
+          "findings": []
+        },
+        {
           "file": "03_Expedientes/AO-001_Decision_Ruta_Formalizacion_Doc04_Confluencia_Externa.md",
           "surface": "expediente",
           "estatus": "decision provisional de expediente",
@@ -1409,6 +1511,18 @@
           "findings": []
         },
         {
+          "file": "03_Expedientes/AO-001_Formalizacion_Amplia_Doc04.md",
+          "surface": "expediente",
+          "estatus": "incorporacion documental amplia v0 aceptada",
+          "findings": []
+        },
+        {
+          "file": "03_Expedientes/AO-001_Justificacion_REPORT_LAYER_Nivel_C.md",
+          "surface": "expediente",
+          "estatus": "justificacion documental local",
+          "findings": []
+        },
+        {
           "file": "03_Expedientes/AO-001_Marco_Inicial_Algebra_Operacional.md",
           "surface": "expediente",
           "estatus": "marco inicial provisional aceptado por `D-2026-07-03-009`",
@@ -1418,6 +1532,12 @@
           "file": "03_Expedientes/AO-001_Opciones_Prueba_Confluencia_Externa.md",
           "surface": "expediente",
           "estatus": "opciones provisionales de prueba",
+          "findings": []
+        },
+        {
+          "file": "03_Expedientes/AO-001_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md",
+          "surface": "expediente",
+          "estatus": "prueba local no mutante aceptada",
           "findings": []
         },
         {
@@ -1439,6 +1559,12 @@
           "findings": []
         },
         {
+          "file": "03_Expedientes/AO-001_Relacion_REPORT_LAYER_Doc04_Amplio.md",
+          "surface": "expediente",
+          "estatus": "precision local aceptada",
+          "findings": []
+        },
+        {
           "file": "03_Expedientes/AUD-001_Actualizacion_C002_JSON_Fixtures_Adapter.md",
           "surface": "expediente",
           "estatus": "actualizacion documental de expediente",
@@ -1448,6 +1574,12 @@
           "file": "03_Expedientes/AUD-001_Adaptador_DO_CHECK_REPORT.md",
           "surface": "expediente",
           "estatus": "especificacion operativa inicial",
+          "findings": []
+        },
+        {
+          "file": "03_Expedientes/AUD-001_Auditoria_Cierre_Operativo_v0.md",
+          "surface": "expediente",
+          "estatus": "auditoria favorable con limites",
           "findings": []
         },
         {
@@ -1512,6 +1644,12 @@
               "evidence": ""
             }
           ]
+        },
+        {
+          "file": "03_Expedientes/AUD-001_Cierre_Operativo_v0.md",
+          "surface": "expediente",
+          "estatus": "propuesta de cierre operativo v0",
+          "findings": []
         },
         {
           "file": "03_Expedientes/AUD-001_Compatibilidad_REPORT_LAYER_DO_CHECK.md",
@@ -1612,6 +1750,12 @@
           "file": "03_Expedientes/AUD-001_Decision_Capa_Reportes_R4-CANDIDATA.md",
           "surface": "expediente",
           "estatus": "decision provisional de expediente",
+          "findings": []
+        },
+        {
+          "file": "03_Expedientes/AUD-001_Decision_Cierre_Operativo_v0.md",
+          "surface": "expediente",
+          "estatus": "decision operativa aceptada",
           "findings": []
         },
         {
@@ -2005,6 +2149,14 @@
               "file": "03_Expedientes/AUD-001_Simulaciones.md",
               "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
               "evidence": "- modifica documentos oficiales por implicacion;"
+            },
+            {
+              "severity": "warning",
+              "check_id": "MED-CERRADOS",
+              "kind": "expediente_cerrado_afectado",
+              "file": "03_Expedientes/AUD-001_Simulaciones.md",
+              "detail": "La linea parece afectar expediente cerrado: AUD-001",
+              "evidence": "y modificar C-001, AUD-001_R4-CANDIDATA o el estado del proyecto"
             }
           ]
         },
@@ -2017,7 +2169,7 @@
         {
           "file": "03_Expedientes/AUD-001_Sintesis_Completitud_Auditor_v0.md",
           "surface": "expediente",
-          "estatus": "sintesis de expediente",
+          "estatus": "sintesis de expediente cerrado en version operativa v0",
           "findings": [
             {
               "severity": "warning",
@@ -2464,7 +2616,7 @@
         {
           "file": "03_Expedientes/AUT-002.md",
           "surface": "expediente",
-          "estatus": "expediente tecnico abierto y aceptado en alcance minimo",
+          "estatus": "expediente tecnico cerrado",
           "findings": [
             {
               "severity": "warning",
@@ -2477,9 +2629,36 @@
           ]
         },
         {
+          "file": "03_Expedientes/AUT-002_Auditoria_Cierre_Tecnico.md",
+          "surface": "expediente",
+          "estatus": "auditoria favorable con limites",
+          "findings": []
+        },
+        {
           "file": "03_Expedientes/AUT-002_Auditoria_Referencias_Historicas_Transferidas.md",
           "surface": "expediente",
           "estatus": "auditoria favorable",
+          "findings": []
+        },
+        {
+          "file": "03_Expedientes/AUT-002_Cierre_Tecnico.md",
+          "surface": "expediente",
+          "estatus": "propuesta de cierre tecnico",
+          "findings": [
+            {
+              "severity": "warning",
+              "check_id": "MED-REFERENCIAS",
+              "kind": "referencia_historica_transferida",
+              "file": "03_Expedientes/AUT-002_Cierre_Tecnico.md",
+              "detail": "Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local.",
+              "evidence": "03_Expedientes/PSI-001*"
+            }
+          ]
+        },
+        {
+          "file": "03_Expedientes/AUT-002_Decision_Cierre_Tecnico.md",
+          "surface": "expediente",
+          "estatus": "decision tecnica aceptada",
           "findings": []
         },
         {
@@ -2496,6 +2675,30 @@
               "evidence": "03_Expedientes/PSI-001*"
             }
           ]
+        },
+        {
+          "file": "03_Expedientes/AUT-003.md",
+          "surface": "expediente",
+          "estatus": "expediente tecnico aceptado en alcance no mutante",
+          "findings": []
+        },
+        {
+          "file": "03_Expedientes/AUT-003_Auditoria_Herramienta_REPORT_LAYER_C002.md",
+          "surface": "expediente",
+          "estatus": "auditoria favorable",
+          "findings": []
+        },
+        {
+          "file": "03_Expedientes/AUT-003_Decision_Herramienta_REPORT_LAYER_C002.md",
+          "surface": "expediente",
+          "estatus": "decision tecnica aceptada",
+          "findings": []
+        },
+        {
+          "file": "03_Expedientes/AUT-003_Herramienta_REPORT_LAYER_C002.md",
+          "surface": "expediente",
+          "estatus": "herramienta no mutante",
+          "findings": []
         },
         {
           "file": "03_Expedientes/B-001.5.md",
@@ -2730,7 +2933,7 @@
         {
           "file": "03_Expedientes/H-Xi.md",
           "surface": "expediente",
-          "estatus": "hipotesis externa en evaluacion / expediente `HXI-001` abierto en mantenimiento local / no admitida como Canon",
+          "estatus": "hipotesis externa no admitida / expediente `HXI-001` cerrado en mantenimiento local / no admitida como Canon",
           "findings": [
             {
               "severity": "warning",
@@ -2808,13 +3011,19 @@
         {
           "file": "03_Expedientes/HXI-001.md",
           "surface": "expediente",
-          "estatus": "abierto en mantenimiento local / `Xi_eval` conservado / sin admision de `H-Xi`",
+          "estatus": "cerrado en mantenimiento local / `Xi_eval` conservado / sin admision de `H-Xi`",
           "findings": []
         },
         {
           "file": "03_Expedientes/HXI-001_Auditoria_Apertura.md",
           "surface": "expediente",
           "estatus": "auditoria provisional de expediente",
+          "findings": []
+        },
+        {
+          "file": "03_Expedientes/HXI-001_Auditoria_Cierre_Mantenimiento_Local.md",
+          "surface": "expediente",
+          "estatus": "auditoria favorable con limites",
           "findings": []
         },
         {
@@ -2863,12 +3072,27 @@
           "file": "03_Expedientes/HXI-001_Auditoria_Reapertura_Operativa.md",
           "surface": "expediente",
           "estatus": "auditoria provisional favorable con restricciones",
-          "findings": []
+          "findings": [
+            {
+              "severity": "warning",
+              "check_id": "MED-CERRADOS",
+              "kind": "expediente_cerrado_afectado",
+              "file": "03_Expedientes/HXI-001_Auditoria_Reapertura_Operativa.md",
+              "detail": "La linea parece afectar expediente cerrado: HXI-001",
+              "evidence": "- La solicitud explicita existe: el usuario pidio reabrir `HXI-001`."
+            }
+          ]
         },
         {
           "file": "03_Expedientes/HXI-001_Auditoria_Reporte_Consistencia.md",
           "surface": "expediente",
           "estatus": "auditoria provisional de expediente",
+          "findings": []
+        },
+        {
+          "file": "03_Expedientes/HXI-001_Cierre_Mantenimiento_Local.md",
+          "surface": "expediente",
+          "estatus": "propuesta de cierre de mantenimiento",
           "findings": []
         },
         {
@@ -2896,6 +3120,12 @@
           "file": "03_Expedientes/HXI-001_Decision_Apertura.md",
           "surface": "expediente",
           "estatus": "decision provisional de expediente",
+          "findings": []
+        },
+        {
+          "file": "03_Expedientes/HXI-001_Decision_Cierre_Mantenimiento_Local.md",
+          "surface": "expediente",
+          "estatus": "decision de expediente aceptada",
           "findings": []
         },
         {
@@ -3027,7 +3257,16 @@
           "file": "03_Expedientes/HXI-001_Reapertura_Operativa.md",
           "surface": "expediente",
           "estatus": "reapertura operativa de expediente",
-          "findings": []
+          "findings": [
+            {
+              "severity": "warning",
+              "check_id": "MED-CERRADOS",
+              "kind": "expediente_cerrado_afectado",
+              "file": "03_Expedientes/HXI-001_Reapertura_Operativa.md",
+              "detail": "La linea parece afectar expediente cerrado: HXI-001",
+              "evidence": "Reabrir `HXI-001` como frente activo inmediato de evaluacion, despues de la pausa operativa registrada en `HXI-001_Decision_Pausa_Operativa.md`."
+            }
+          ]
         },
         {
           "file": "03_Expedientes/HXI-001_Reporte_Consistencia_Notacion_Xi-R.md",
@@ -3038,7 +3277,7 @@
         {
           "file": "03_Expedientes/MOC-001.md",
           "surface": "expediente",
-          "estatus": "expediente integrador abierto",
+          "estatus": "expediente integrador abierto en mantenimiento teorico-operativo sin ejecucion",
           "findings": [
             {
               "severity": "warning",
@@ -3256,6 +3495,12 @@
           ]
         },
         {
+          "file": "03_Expedientes/MOC-001_Auditoria_Relacion_Documental_C001_C002.md",
+          "surface": "expediente",
+          "estatus": "auditoria provisional favorable con limites",
+          "findings": []
+        },
+        {
           "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_002.md",
           "surface": "expediente",
           "estatus": "auditoria favorable con limites",
@@ -3326,6 +3571,21 @@
           "surface": "expediente",
           "estatus": "auditoria favorable con limites",
           "findings": []
+        },
+        {
+          "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_010.md",
+          "surface": "expediente",
+          "estatus": "auditoria favorable con limites",
+          "findings": [
+            {
+              "severity": "warning",
+              "check_id": "MED-REFERENCIAS",
+              "kind": "referencia_no_materializada",
+              "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_010.md",
+              "detail": "MOC/AO",
+              "evidence": ""
+            }
+          ]
         },
         {
           "file": "03_Expedientes/MOC-001_Auditoria_Siguientes_Rutas_Validas.md",
@@ -3505,6 +3765,12 @@
           ]
         },
         {
+          "file": "03_Expedientes/MOC-001_Decision_Relacion_Documental_C001_C002.md",
+          "surface": "expediente",
+          "estatus": "decision provisional de expediente",
+          "findings": []
+        },
+        {
           "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_002.md",
           "surface": "expediente",
           "estatus": "decision provisional de expediente",
@@ -3597,6 +3863,12 @@
         },
         {
           "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_006.md",
+          "surface": "expediente",
+          "estatus": "decision provisional de expediente",
+          "findings": []
+        },
+        {
+          "file": "03_Expedientes/MOC-001_Decision_Rutas_Posteriores_Ruta_010.md",
           "surface": "expediente",
           "estatus": "decision provisional de expediente",
           "findings": []
@@ -3775,6 +4047,12 @@
           "findings": []
         },
         {
+          "file": "03_Expedientes/MOC-001_Relacion_Documental_C001_C002.md",
+          "surface": "expediente",
+          "estatus": "puente documental provisional de expediente",
+          "findings": []
+        },
+        {
           "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_002.md",
           "surface": "expediente",
           "estatus": "matriz provisional de rutas posteriores",
@@ -3846,6 +4124,21 @@
           "surface": "expediente",
           "estatus": "matriz provisional de rutas posteriores",
           "findings": []
+        },
+        {
+          "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_010.md",
+          "surface": "expediente",
+          "estatus": "matriz provisional de rutas posteriores",
+          "findings": [
+            {
+              "severity": "warning",
+              "check_id": "MED-REFERENCIAS",
+              "kind": "referencia_no_materializada",
+              "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_010.md",
+              "detail": "MOC/AO",
+              "evidence": ""
+            }
+          ]
         },
         {
           "file": "03_Expedientes/MOC-001_Semantica_Provisional.md",
@@ -3992,6 +4285,12 @@
           ]
         },
         {
+          "file": "03_Expedientes/R001-001_Auditoria_Cierre_Tecnico.md",
+          "surface": "expediente",
+          "estatus": "auditoria favorable con limites",
+          "findings": []
+        },
+        {
           "file": "03_Expedientes/R001-001_Auditoria_Integracion_Table_Checks.md",
           "surface": "expediente",
           "estatus": "auditoria provisional favorable con limites",
@@ -4001,6 +4300,18 @@
           "file": "03_Expedientes/R001-001_Auditoria_Relacion_Formal_AO.md",
           "surface": "expediente",
           "estatus": "auditoria provisional favorable con limites",
+          "findings": []
+        },
+        {
+          "file": "03_Expedientes/R001-001_Cierre_Tecnico.md",
+          "surface": "expediente",
+          "estatus": "propuesta de cierre tecnico",
+          "findings": []
+        },
+        {
+          "file": "03_Expedientes/R001-001_Decision_Cierre_Tecnico.md",
+          "surface": "expediente",
+          "estatus": "decision tecnica aceptada",
           "findings": []
         },
         {
@@ -4018,13 +4329,13 @@
         {
           "file": "03_Expedientes/R001-001_Integracion_Table_Checks.md",
           "surface": "expediente",
-          "estatus": "integracion tecnica provisional",
+          "estatus": "integracion tecnica cerrada",
           "findings": []
         },
         {
           "file": "03_Expedientes/R001-001_Relacion_Formal_AO.md",
           "surface": "expediente",
-          "estatus": "relacion formal local provisional",
+          "estatus": "relacion formal local cerrada",
           "findings": []
         },
         {
@@ -4114,6 +4425,12 @@
           ]
         },
         {
+          "file": "03_Expedientes/RH-001_Auditoria_Reconciliacion_PM001.md",
+          "surface": "expediente",
+          "estatus": "auditoria favorable con deuda abierta",
+          "findings": []
+        },
+        {
           "file": "03_Expedientes/RH-001_Decision_Cierre.md",
           "surface": "expediente",
           "estatus": "decision provisional de expediente",
@@ -4135,6 +4452,18 @@
               "evidence": "- modificar documentos oficiales desde la transcripcion;"
             }
           ]
+        },
+        {
+          "file": "03_Expedientes/RH-001_Decision_Reconciliacion_PM001.md",
+          "surface": "expediente",
+          "estatus": "decision de revision documental",
+          "findings": []
+        },
+        {
+          "file": "03_Expedientes/RH-001_Revision_Reconciliacion_PM001.md",
+          "surface": "expediente",
+          "estatus": "revision documental local",
+          "findings": []
         },
         {
           "file": "03_Expedientes/RH-002.md",
@@ -4816,22 +5145,6 @@
               "check_id": "MED-REFERENCIAS",
               "kind": "referencia_no_materializada",
               "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
-              "detail": "MOC/TCS",
-              "evidence": ""
-            },
-            {
-              "severity": "warning",
-              "check_id": "MED-REFERENCIAS",
-              "kind": "referencia_no_materializada",
-              "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
-              "detail": "MOC/AO",
-              "evidence": ""
-            },
-            {
-              "severity": "warning",
-              "check_id": "MED-REFERENCIAS",
-              "kind": "referencia_no_materializada",
-              "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
               "detail": "MOC/AO",
               "evidence": ""
             },
@@ -5113,6 +5426,38 @@
               "check_id": "MED-REFERENCIAS",
               "kind": "referencia_no_materializada",
               "file": "06_Automatizacion/README.md",
+              "detail": "reportes/ao_doc04_wide_report.md",
+              "evidence": ""
+            },
+            {
+              "severity": "warning",
+              "check_id": "MED-REFERENCIAS",
+              "kind": "referencia_no_materializada",
+              "file": "06_Automatizacion/README.md",
+              "detail": "reportes/ao_doc04_wide_report.json",
+              "evidence": ""
+            },
+            {
+              "severity": "warning",
+              "check_id": "MED-REFERENCIAS",
+              "kind": "referencia_no_materializada",
+              "file": "06_Automatizacion/README.md",
+              "detail": "reportes/report_layer_c002_gate_report.md",
+              "evidence": ""
+            },
+            {
+              "severity": "warning",
+              "check_id": "MED-REFERENCIAS",
+              "kind": "referencia_no_materializada",
+              "file": "06_Automatizacion/README.md",
+              "detail": "reportes/report_layer_c002_gate_report.json",
+              "evidence": ""
+            },
+            {
+              "severity": "warning",
+              "check_id": "MED-REFERENCIAS",
+              "kind": "referencia_no_materializada",
+              "file": "06_Automatizacion/README.md",
               "detail": "reportes/moc_eval_report.md",
               "evidence": ""
             },
@@ -5154,6 +5499,22 @@
               "kind": "referencia_no_materializada",
               "file": "06_Automatizacion/README.md",
               "detail": "fixtures/ao_ext_confluence_cases.json",
+              "evidence": ""
+            },
+            {
+              "severity": "warning",
+              "check_id": "MED-REFERENCIAS",
+              "kind": "referencia_no_materializada",
+              "file": "06_Automatizacion/README.md",
+              "detail": "fixtures/ao_doc04_wide_cases.json",
+              "evidence": ""
+            },
+            {
+              "severity": "warning",
+              "check_id": "MED-REFERENCIAS",
+              "kind": "referencia_no_materializada",
+              "file": "06_Automatizacion/README.md",
+              "detail": "fixtures/report_layer_c002_cases.json",
               "evidence": ""
             },
             {
@@ -5384,6 +5745,22 @@
         },
         {
           "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CHANGELOG.md",
+          "detail": "MOC/C-001/C-002",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CHANGELOG.md",
+          "detail": "MOC/C-001/C-002",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
           "check_id": "MED-NIVELES",
           "kind": "accion_de_nivel_sensible",
           "file": "CHANGELOG.md",
@@ -5400,6 +5777,14 @@
         },
         {
           "severity": "warning",
+          "check_id": "MED-CERRADOS",
+          "kind": "expediente_cerrado_afectado",
+          "file": "CHANGELOG.md",
+          "detail": "La linea parece afectar expediente cerrado: HXI-001",
+          "evidence": "- Creado `HXI-001_Reapertura_Operativa.md` como `HXI-REOPEN-001`: `HXI-001` se reabre como frente activo inmediato para aplicar la compuerta de admision formal posterior."
+        },
+        {
+          "severity": "warning",
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
           "file": "CURRENT_STATE.md",
@@ -5452,6 +5837,22 @@
           "kind": "referencia_no_materializada",
           "file": "CURRENT_STATE.md",
           "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CURRENT_STATE.md",
+          "detail": "MOC/C-001/C-002",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "CURRENT_STATE.md",
+          "detail": "MOC/C-001/C-002",
           "evidence": ""
         },
         {
@@ -6056,22 +6457,6 @@
         },
         {
           "severity": "warning",
-          "check_id": "MED-REFERENCIAS",
-          "kind": "referencia_no_materializada",
-          "file": "README.md",
-          "detail": "MOC/TCS",
-          "evidence": ""
-        },
-        {
-          "severity": "warning",
-          "check_id": "MED-REFERENCIAS",
-          "kind": "referencia_no_materializada",
-          "file": "README.md",
-          "detail": "MOC/AO",
-          "evidence": ""
-        },
-        {
-          "severity": "warning",
           "check_id": "MED-NIVELES",
           "kind": "accion_de_nivel_sensible",
           "file": "01_Canon/M-001_Auditoria_Arquitectonica.md",
@@ -6101,6 +6486,22 @@
           "file": "03_Expedientes/AO-001.md",
           "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
           "evidence": "- modificar Canon;"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Auditoria_Formalizacion_Amplia_Doc04.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/AO-001_Auditoria_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
         },
         {
           "severity": "warning",
@@ -6368,6 +6769,14 @@
         },
         {
           "severity": "warning",
+          "check_id": "MED-CERRADOS",
+          "kind": "expediente_cerrado_afectado",
+          "file": "03_Expedientes/AUD-001_Simulaciones.md",
+          "detail": "La linea parece afectar expediente cerrado: AUD-001",
+          "evidence": "y modificar C-001, AUD-001_R4-CANDIDATA o el estado del proyecto"
+        },
+        {
+          "severity": "warning",
           "check_id": "MED-HISTORIAL",
           "kind": "historial_como_autoridad_controlada",
           "file": "03_Expedientes/AUD-001_Sintesis_Completitud_Auditor_v0.md",
@@ -6554,6 +6963,14 @@
           "severity": "warning",
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_historica_transferida",
+          "file": "03_Expedientes/AUT-002_Cierre_Tecnico.md",
+          "detail": "Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local.",
+          "evidence": "03_Expedientes/PSI-001*"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_historica_transferida",
           "file": "03_Expedientes/AUT-002_Decision_Referencias_Historicas_Transferidas.md",
           "detail": "Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local.",
           "evidence": "03_Expedientes/PSI-001*"
@@ -6680,6 +7097,14 @@
         },
         {
           "severity": "warning",
+          "check_id": "MED-CERRADOS",
+          "kind": "expediente_cerrado_afectado",
+          "file": "03_Expedientes/HXI-001_Auditoria_Reapertura_Operativa.md",
+          "detail": "La linea parece afectar expediente cerrado: HXI-001",
+          "evidence": "- La solicitud explicita existe: el usuario pidio reabrir `HXI-001`."
+        },
+        {
+          "severity": "warning",
           "check_id": "MED-NIVELES",
           "kind": "accion_de_nivel_sensible",
           "file": "03_Expedientes/HXI-001_Criterios_Evaluacion.md",
@@ -6701,6 +7126,14 @@
           "file": "03_Expedientes/HXI-001_Dictamen_Utilidad_Local_Xi.md",
           "detail": "Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local.",
           "evidence": "PSI-001_Ejemplos_Conceptuales_No_Clinicos.md"
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-CERRADOS",
+          "kind": "expediente_cerrado_afectado",
+          "file": "03_Expedientes/HXI-001_Reapertura_Operativa.md",
+          "detail": "La linea parece afectar expediente cerrado: HXI-001",
+          "evidence": "Reabrir `HXI-001` como frente activo inmediato de evaluacion, despues de la pausa operativa registrada en `HXI-001_Decision_Pausa_Operativa.md`."
         },
         {
           "severity": "warning",
@@ -6867,6 +7300,14 @@
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
           "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_003.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_010.md",
           "detail": "MOC/AO",
           "evidence": ""
         },
@@ -7091,6 +7532,14 @@
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
           "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_004.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_010.md",
           "detail": "MOC/AO",
           "evidence": ""
         },
@@ -7563,22 +8012,6 @@
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
           "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
-          "detail": "MOC/TCS",
-          "evidence": ""
-        },
-        {
-          "severity": "warning",
-          "check_id": "MED-REFERENCIAS",
-          "kind": "referencia_no_materializada",
-          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
-          "detail": "MOC/AO",
-          "evidence": ""
-        },
-        {
-          "severity": "warning",
-          "check_id": "MED-REFERENCIAS",
-          "kind": "referencia_no_materializada",
-          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
           "detail": "MOC/AO",
           "evidence": ""
         },
@@ -7827,6 +8260,38 @@
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
           "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_doc04_wide_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_doc04_wide_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/report_layer_c002_gate_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/report_layer_c002_gate_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
           "detail": "reportes/moc_eval_report.md",
           "evidence": ""
         },
@@ -7868,6 +8333,22 @@
           "kind": "referencia_no_materializada",
           "file": "06_Automatizacion/README.md",
           "detail": "fixtures/ao_ext_confluence_cases.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/ao_doc04_wide_cases.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/report_layer_c002_cases.json",
           "evidence": ""
         },
         {
@@ -8116,6 +8597,24 @@
     {
       "source": "DO-CHECK-MED-001",
       "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CHANGELOG.md",
+      "detail": "MOC/C-001/C-002",
+      "evidence": ""
+    },
+    {
+      "source": "DO-CHECK-MED-001",
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CHANGELOG.md",
+      "detail": "MOC/C-001/C-002",
+      "evidence": ""
+    },
+    {
+      "source": "DO-CHECK-MED-001",
+      "severity": "warning",
       "check_id": "MED-NIVELES",
       "kind": "accion_de_nivel_sensible",
       "file": "CHANGELOG.md",
@@ -8134,6 +8633,15 @@
     {
       "source": "DO-CHECK-MED-001",
       "severity": "warning",
+      "check_id": "MED-CERRADOS",
+      "kind": "expediente_cerrado_afectado",
+      "file": "CHANGELOG.md",
+      "detail": "La linea parece afectar expediente cerrado: HXI-001",
+      "evidence": "- Creado `HXI-001_Reapertura_Operativa.md` como `HXI-REOPEN-001`: `HXI-001` se reabre como frente activo inmediato para aplicar la compuerta de admision formal posterior."
+    },
+    {
+      "source": "DO-CHECK-MED-001",
+      "severity": "warning",
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "CURRENT_STATE.md",
@@ -8192,6 +8700,24 @@
       "kind": "referencia_no_materializada",
       "file": "CURRENT_STATE.md",
       "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "source": "DO-CHECK-MED-001",
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CURRENT_STATE.md",
+      "detail": "MOC/C-001/C-002",
+      "evidence": ""
+    },
+    {
+      "source": "DO-CHECK-MED-001",
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "CURRENT_STATE.md",
+      "detail": "MOC/C-001/C-002",
       "evidence": ""
     },
     {
@@ -8872,24 +9398,6 @@
     {
       "source": "DO-CHECK-MED-001",
       "severity": "warning",
-      "check_id": "MED-REFERENCIAS",
-      "kind": "referencia_no_materializada",
-      "file": "README.md",
-      "detail": "MOC/TCS",
-      "evidence": ""
-    },
-    {
-      "source": "DO-CHECK-MED-001",
-      "severity": "warning",
-      "check_id": "MED-REFERENCIAS",
-      "kind": "referencia_no_materializada",
-      "file": "README.md",
-      "detail": "MOC/AO",
-      "evidence": ""
-    },
-    {
-      "source": "DO-CHECK-MED-001",
-      "severity": "warning",
       "check_id": "MED-NIVELES",
       "kind": "accion_de_nivel_sensible",
       "file": "01_Canon/M-001_Auditoria_Arquitectonica.md",
@@ -8922,6 +9430,24 @@
       "file": "03_Expedientes/AO-001.md",
       "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
       "evidence": "- modificar Canon;"
+    },
+    {
+      "source": "DO-CHECK-MED-001",
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Auditoria_Formalizacion_Amplia_Doc04.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "source": "DO-CHECK-MED-001",
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/AO-001_Auditoria_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
     },
     {
       "source": "DO-CHECK-MED-001",
@@ -9223,6 +9749,15 @@
     {
       "source": "DO-CHECK-MED-001",
       "severity": "warning",
+      "check_id": "MED-CERRADOS",
+      "kind": "expediente_cerrado_afectado",
+      "file": "03_Expedientes/AUD-001_Simulaciones.md",
+      "detail": "La linea parece afectar expediente cerrado: AUD-001",
+      "evidence": "y modificar C-001, AUD-001_R4-CANDIDATA o el estado del proyecto"
+    },
+    {
+      "source": "DO-CHECK-MED-001",
+      "severity": "warning",
       "check_id": "MED-HISTORIAL",
       "kind": "historial_como_autoridad_controlada",
       "file": "03_Expedientes/AUD-001_Sintesis_Completitud_Auditor_v0.md",
@@ -9432,6 +9967,15 @@
       "severity": "warning",
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_historica_transferida",
+      "file": "03_Expedientes/AUT-002_Cierre_Tecnico.md",
+      "detail": "Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local.",
+      "evidence": "03_Expedientes/PSI-001*"
+    },
+    {
+      "source": "DO-CHECK-MED-001",
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_historica_transferida",
       "file": "03_Expedientes/AUT-002_Decision_Referencias_Historicas_Transferidas.md",
       "detail": "Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local.",
       "evidence": "03_Expedientes/PSI-001*"
@@ -9574,6 +10118,15 @@
     {
       "source": "DO-CHECK-MED-001",
       "severity": "warning",
+      "check_id": "MED-CERRADOS",
+      "kind": "expediente_cerrado_afectado",
+      "file": "03_Expedientes/HXI-001_Auditoria_Reapertura_Operativa.md",
+      "detail": "La linea parece afectar expediente cerrado: HXI-001",
+      "evidence": "- La solicitud explicita existe: el usuario pidio reabrir `HXI-001`."
+    },
+    {
+      "source": "DO-CHECK-MED-001",
+      "severity": "warning",
       "check_id": "MED-NIVELES",
       "kind": "accion_de_nivel_sensible",
       "file": "03_Expedientes/HXI-001_Criterios_Evaluacion.md",
@@ -9597,6 +10150,15 @@
       "file": "03_Expedientes/HXI-001_Dictamen_Utilidad_Local_Xi.md",
       "detail": "Referencia a PSI-001 transferido fuera del Laboratorio; no exige restaurar copia local.",
       "evidence": "PSI-001_Ejemplos_Conceptuales_No_Clinicos.md"
+    },
+    {
+      "source": "DO-CHECK-MED-001",
+      "severity": "warning",
+      "check_id": "MED-CERRADOS",
+      "kind": "expediente_cerrado_afectado",
+      "file": "03_Expedientes/HXI-001_Reapertura_Operativa.md",
+      "detail": "La linea parece afectar expediente cerrado: HXI-001",
+      "evidence": "Reabrir `HXI-001` como frente activo inmediato de evaluacion, despues de la pausa operativa registrada en `HXI-001_Decision_Pausa_Operativa.md`."
     },
     {
       "source": "DO-CHECK-MED-001",
@@ -9784,6 +10346,15 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_003.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "source": "DO-CHECK-MED-001",
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Auditoria_Rutas_Posteriores_Ruta_010.md",
       "detail": "MOC/AO",
       "evidence": ""
     },
@@ -10036,6 +10607,15 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_004.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "source": "DO-CHECK-MED-001",
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_010.md",
       "detail": "MOC/AO",
       "evidence": ""
     },
@@ -10567,24 +11147,6 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
-      "detail": "MOC/TCS",
-      "evidence": ""
-    },
-    {
-      "source": "DO-CHECK-MED-001",
-      "severity": "warning",
-      "check_id": "MED-REFERENCIAS",
-      "kind": "referencia_no_materializada",
-      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
-      "detail": "MOC/AO",
-      "evidence": ""
-    },
-    {
-      "source": "DO-CHECK-MED-001",
-      "severity": "warning",
-      "check_id": "MED-REFERENCIAS",
-      "kind": "referencia_no_materializada",
-      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
       "detail": "MOC/AO",
       "evidence": ""
     },
@@ -10864,6 +11426,42 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_doc04_wide_report.md",
+      "evidence": ""
+    },
+    {
+      "source": "DO-CHECK-MED-001",
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_doc04_wide_report.json",
+      "evidence": ""
+    },
+    {
+      "source": "DO-CHECK-MED-001",
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/report_layer_c002_gate_report.md",
+      "evidence": ""
+    },
+    {
+      "source": "DO-CHECK-MED-001",
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/report_layer_c002_gate_report.json",
+      "evidence": ""
+    },
+    {
+      "source": "DO-CHECK-MED-001",
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
       "detail": "reportes/moc_eval_report.md",
       "evidence": ""
     },
@@ -10910,6 +11508,24 @@
       "kind": "referencia_no_materializada",
       "file": "06_Automatizacion/README.md",
       "detail": "fixtures/ao_ext_confluence_cases.json",
+      "evidence": ""
+    },
+    {
+      "source": "DO-CHECK-MED-001",
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/ao_doc04_wide_cases.json",
+      "evidence": ""
+    },
+    {
+      "source": "DO-CHECK-MED-001",
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/report_layer_c002_cases.json",
       "evidence": ""
     },
     {
