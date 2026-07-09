@@ -1,0 +1,148 @@
+{
+  "report_id": "AO-EXT-EVID-GATE-001-20260708-210446",
+  "expediente": "AO-001",
+  "algoritmo": "AO-EXT-EVID-GATE-001",
+  "suite_id": "AO-EXT-EVID-GATE-MANIFESTS-001",
+  "resultado": "ok",
+  "recomendacion": "mantener_no_autorizado_preparar_fuente_externa_real",
+  "external_evidence_ready": false,
+  "external_evidence_executed": false,
+  "transformacion_permitida": false,
+  "global_closure_authorized": false,
+  "global_export_authorized": false,
+  "global_equivalence_authorized": false,
+  "global_confluence_authorized": false,
+  "report_layer_promoted": false,
+  "r4_gamma_global_export_authorized": false,
+  "source_evidence": [
+    "AO-GLOBAL-READINESS-001",
+    "AO-PPI-BRIDGE-004",
+    "AO-PROTO-INDEP-001",
+    "AO-AUTH-GLOBAL-001"
+  ],
+  "scope_guard": {
+    "busca_descarga_evidencia": false,
+    "ejecuta_evidencia_real": false,
+    "usa_personas_reales": false,
+    "usa_dominio_clinico": false,
+    "usa_dominio_regulado": false,
+    "modifica_doc04": false,
+    "modifica_canon": false,
+    "modifica_nivel_c": false,
+    "crea_nivel_c": false,
+    "reabre_p_pi_0": false,
+    "reabre_p_pi_1": false,
+    "promueve_report_layer": false,
+    "exporta_r4_gamma": false,
+    "autoriza_transformacion": false
+  },
+  "summary": {
+    "manifests": 5,
+    "passed": 5,
+    "failed": 0,
+    "findings": 0,
+    "admissible_preliminary": 1,
+    "pending_real_source": 1,
+    "rejected_scope": 1,
+    "rejected_authority": 1,
+    "rejected_domain": 1,
+    "admissible_real_non_control": 0,
+    "real_evidence_supplied": false,
+    "by_outcome": {
+      "pendiente_fuente_real": 1,
+      "rechazada_por_dominio": 1,
+      "rechazada_por_autoridad": 1,
+      "rechazada_por_alcance": 1,
+      "admisible_preliminar": 1
+    }
+  },
+  "manifest_results": [
+    {
+      "manifest_id": "AO-EXT-EVID-001",
+      "artifact_type": "registro_politicas_no_regulado",
+      "source_uri": "",
+      "expected": "pendiente_fuente_real",
+      "actual": "pendiente_fuente_real",
+      "passed": true,
+      "source_family": "manifiesto_externo_pendiente",
+      "real_external_source": false,
+      "control_manifest": false,
+      "authority": "documental_externa_identificada",
+      "comparable_unit": true,
+      "blockers": [
+        "fuente_real_pendiente"
+      ],
+      "warnings": []
+    },
+    {
+      "manifest_id": "AO-EXT-EVID-002",
+      "artifact_type": "registro_clinico",
+      "source_uri": "",
+      "expected": "rechazada_por_dominio",
+      "actual": "rechazada_por_dominio",
+      "passed": true,
+      "source_family": "dominio_no_autorizado",
+      "real_external_source": true,
+      "control_manifest": false,
+      "authority": "documental_externa_identificada",
+      "comparable_unit": true,
+      "blockers": [
+        "dominio_clinico_no_autorizado",
+        "dominio_regulado_no_autorizado"
+      ],
+      "warnings": []
+    },
+    {
+      "manifest_id": "AO-EXT-EVID-003",
+      "artifact_type": "extracto_historico",
+      "source_uri": "urn:hist:control",
+      "expected": "rechazada_por_autoridad",
+      "actual": "rechazada_por_autoridad",
+      "passed": true,
+      "source_family": "autoridad_historica",
+      "real_external_source": true,
+      "control_manifest": false,
+      "authority": "registro_historico",
+      "comparable_unit": true,
+      "blockers": [
+        "autoridad_historica_directa"
+      ],
+      "warnings": []
+    },
+    {
+      "manifest_id": "AO-EXT-EVID-004",
+      "artifact_type": "registro_tecnico_externo",
+      "source_uri": "urn:external:non-comparable-control",
+      "expected": "rechazada_por_alcance",
+      "actual": "rechazada_por_alcance",
+      "passed": true,
+      "source_family": "unidad_no_comparable",
+      "real_external_source": true,
+      "control_manifest": false,
+      "authority": "documental_externa_identificada",
+      "comparable_unit": false,
+      "blockers": [
+        "unidad_comparable_ausente"
+      ],
+      "warnings": []
+    },
+    {
+      "manifest_id": "AO-EXT-EVID-005",
+      "artifact_type": "registro_politicas_no_regulado",
+      "source_uri": "urn:external-control:complete-manifest",
+      "expected": "admisible_preliminar",
+      "actual": "admisible_preliminar",
+      "passed": true,
+      "source_family": "control_compuerta",
+      "real_external_source": true,
+      "control_manifest": true,
+      "authority": "documental_externa_identificada",
+      "comparable_unit": true,
+      "blockers": [],
+      "warnings": [
+        "admisible_solo_como_control_de_compuerta"
+      ]
+    }
+  ],
+  "findings": []
+}

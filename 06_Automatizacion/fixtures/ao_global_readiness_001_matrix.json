@@ -1,0 +1,97 @@
+{
+  "suite_id": "AO-GLOBAL-READINESS-MATRIX-001",
+  "source_evidence": [
+    "AO-PPI-BRIDGE-004",
+    "AO-PROTO-INDEP-001",
+    "AO-EQ-GLOBAL-GATE-001",
+    "AO-CONF-GLOBAL-GATE-001",
+    "AO-REPORT-PROMO-GATE-001",
+    "AO-R4-GAMMA-EXPORT-GATE-002"
+  ],
+  "conditions": [
+    {
+      "condition_id": "AO-GR-001",
+      "front": "protocolo_independiente",
+      "status": "satisfecha_local",
+      "local_credit": true,
+      "blocks_global_readiness": false,
+      "evidence": ["AO-PROTO-INDEP-001"],
+      "gap": "reproducibilidad local aceptada, sin validacion externa real",
+      "global_closure_claim": false,
+      "global_export_claim": false,
+      "report_layer_promotion_claim": false,
+      "r4_gamma_export_claim": false,
+      "modifies_level_c": false
+    },
+    {
+      "condition_id": "AO-GR-002",
+      "front": "equivalencia_global",
+      "status": "faltante_global",
+      "local_credit": false,
+      "blocks_global_readiness": true,
+      "evidence": ["AO-PPI-BRIDGE-004", "AO-EQ-GLOBAL-GATE-001"],
+      "gap": "equivalencia global de proyecciones no demostrada fuera de evidencia local/sintetica",
+      "global_closure_claim": false,
+      "global_export_claim": false,
+      "report_layer_promotion_claim": false,
+      "r4_gamma_export_claim": false,
+      "modifies_level_c": false
+    },
+    {
+      "condition_id": "AO-GR-003",
+      "front": "confluencia_global",
+      "status": "faltante_global",
+      "local_credit": false,
+      "blocks_global_readiness": true,
+      "evidence": ["AO-PPI-BRIDGE-004", "AO-CONF-GLOBAL-GATE-001"],
+      "gap": "confluencia global no demostrada en rutas independientes externas",
+      "global_closure_claim": false,
+      "global_export_claim": false,
+      "report_layer_promotion_claim": false,
+      "r4_gamma_export_claim": false,
+      "modifies_level_c": false
+    },
+    {
+      "condition_id": "AO-GR-004",
+      "front": "report_layer",
+      "status": "no_promocion",
+      "local_credit": true,
+      "blocks_global_readiness": true,
+      "evidence": ["AO-REPORT-PROMO-GATE-001", "REPORT-LAYER-C002-GATE-001"],
+      "gap": "REPORT_LAYER queda local pre-C y candidata futura, no promovida",
+      "global_closure_claim": false,
+      "global_export_claim": false,
+      "report_layer_promotion_claim": false,
+      "r4_gamma_export_claim": false,
+      "modifies_level_c": false
+    },
+    {
+      "condition_id": "AO-GR-005",
+      "front": "r4_gamma",
+      "status": "no_exportacion",
+      "local_credit": true,
+      "blocks_global_readiness": true,
+      "evidence": ["AO-R4-GAMMA-EXPORT-GATE-002"],
+      "gap": "R4/Gamma conservan uso restringido interoperable, sin exportacion general",
+      "global_closure_claim": false,
+      "global_export_claim": false,
+      "report_layer_promotion_claim": false,
+      "r4_gamma_export_claim": false,
+      "modifies_level_c": false
+    },
+    {
+      "condition_id": "AO-GR-006",
+      "front": "guardas_superiores",
+      "status": "satisfecha_local",
+      "local_credit": true,
+      "blocks_global_readiness": false,
+      "evidence": ["AO-AUTH-GLOBAL-001", "AO-PPI-LOCAL-CLOSE-001"],
+      "gap": "guardas preservadas; no equivale a autorizacion global",
+      "global_closure_claim": false,
+      "global_export_claim": false,
+      "report_layer_promotion_claim": false,
+      "r4_gamma_export_claim": false,
+      "modifies_level_c": false
+    }
+  ]
+}

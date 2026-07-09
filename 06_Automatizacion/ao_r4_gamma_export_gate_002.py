@@ -1,0 +1,219 @@
+#!/usr/bin/env python3
+"""Compuerta no mutante de exportacion general R4/Gamma AO-R4-GAMMA-EXPORT-GATE-002."""
+
+from __future__ import annotations
+
+import argparse
+import datetime as dt
+import json
+import sys
+from dataclasses import asdict, dataclass
+from pathlib import Path
+from typing import Any
+
+
+ALGORITHM_ID = "AO-R4-GAMMA-EXPORT-GATE-002"
+EXPEDIENTE = "AO-001"
+DEFAULT_CASE_FILE = Path(__file__).resolve().parent / "fixtures" / "ao_r4_gamma_export_gate_002_cases.json"
+
+SAFE_OUTCOMES = {
+    "perfil_restringido_interoperable",
+    "bloqueo_exportacion_general",
+    "bloqueo_semantica_dependiente_aud",
+    "bloqueo_dominio_externo_insuficiente",
+    "bloqueo_cierre_global_implicito",
+    "bloqueo_modo_mutante",
+    "bloqueo_cambio_nivel_c",
+}
+
+
+@dataclass(frozen=True)
+class R4GammaExportCaseResult:
+    case_id: str
+    expected: str
+    actual: str
+    passed: bool
+    blockers: tuple[str, ...]
+    warnings: tuple[str, ...]
+
+
+def load_suite(path: Path) -> dict[str, Any]:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def evaluate_case(case: dict[str, Any]) -> R4GammaExportCaseResult:
+    blockers: list[str] = []
+    warnings: list[str] = []
+
+    if bool(case.get("transformacion_permitida")):
+        blockers.append("modo_mutante")
+        actual = "bloqueo_modo_mutante"
+    elif bool(case.get("modifies_level_c")) or str(case.get("authority_claim", "")) in {"nivel_c", "canon"}:
+        blockers.append("cambio_nivel_c")
+        actual = "bloqueo_cambio_nivel_c"
+    elif bool(case.get("global_closure_claim")):
+        blockers.append("cierre_global_implicito")
+        actual = "bloqueo_cierre_global_implicito"
+    elif str(case.get("export_scope", "")) == "general":
+        blockers.append("exportacion_general")
+        actual = "bloqueo_exportacion_general"
+    elif not bool(case.get("semantic_independent")):
+        blockers.append("semantica_dependiente_aud")
+        actual = "bloqueo_semantica_dependiente_aud"
+    elif str(case.get("external_domain", "")) in {"ausente", "sintetico_minimo"}:
+        blockers.append("dominio_externo_insuficiente")
+        actual = "bloqueo_dominio_externo_insuficiente"
+    else:
+        actual = "perfil_restringido_interoperable"
+        if str(case.get("export_scope", "")) != "restringido":
+            warnings.append("perfil_no_restringido")
+
+    if actual not in SAFE_OUTCOMES:
+        actual = "bloqueo_exportacion_general"
+
+    expected = str(case.get("expected", ""))
+    return R4GammaExportCaseResult(
+        case_id=str(case.get("case_id", "")),
+        expected=expected,
+        actual=actual,
+        passed=actual == expected,
+        blockers=tuple(sorted(blockers)),
+        warnings=tuple(sorted(warnings)),
+    )
+
+
+def summarize(results: list[R4GammaExportCaseResult]) -> dict[str, Any]:
+    failures = [result for result in results if not result.passed]
+    by_outcome: dict[str, int] = {}
+    for result in results:
+        by_outcome[result.actual] = by_outcome.get(result.actual, 0) + 1
+    return {
+        "cases": len(results),
+        "passed": len(results) - len(failures),
+        "failed": len(failures),
+        "findings": len(failures),
+        "restricted_interoperable_cases": by_outcome.get("perfil_restringido_interoperable", 0),
+        "blocked_cases": sum(count for outcome, count in by_outcome.items() if outcome.startswith("bloqueo")),
+        "by_outcome": by_outcome,
+    }
+
+
+def build_report(root: Path | None = None, case_file: Path | None = None) -> dict[str, Any]:
+    del root
+    suite_path = case_file or DEFAULT_CASE_FILE
+    suite = load_suite(suite_path)
+    results = [evaluate_case(case) for case in suite.get("cases", [])]
+    failures = [result for result in results if not result.passed]
+    return {
+        "report_id": "AO-R4-GAMMA-EXPORT-GATE-002-" + dt.datetime.now().strftime("%Y%m%d-%H%M%S"),
+        "expediente": EXPEDIENTE,
+        "algoritmo": ALGORITHM_ID,
+        "suite_id": suite.get("suite_id", "AO-R4-GAMMA-EXPORT-GATE-CASES-002"),
+        "resultado": "ok" if not failures else "bloqueado",
+        "recomendacion": "mantener_r4_gamma_sin_exportacion_general" if not failures else "revisar_compuerta_r4_gamma",
+        "transformacion_permitida": False,
+        "restricted_interoperable_profile_retained": not failures,
+        "r4_gamma_global_export_authorized": False,
+        "global_export_authorized": False,
+        "global_closure_authorized": False,
+        "report_layer_promoted": False,
+        "source_evidence": suite.get("source_evidence", []),
+        "scope_guard": {
+            "modifica_doc04": False,
+            "modifica_canon": False,
+            "modifica_nivel_c": False,
+            "crea_nivel_c": False,
+            "exporta_r4_gamma": False,
+            "cierra_confluencia_global": False,
+            "cierra_equivalencia_global": False,
+            "promueve_report_layer": False,
+            "autoriza_transformacion": False,
+        },
+        "summary": summarize(results),
+        "case_results": [asdict(result) for result in results],
+        "findings": [asdict(result) for result in failures],
+    }
+
+
+def render_md(report: dict[str, Any]) -> str:
+    lines = [
+        "# AO_R4_GAMMA_EXPORT_GATE_002_REPORT",
+        "",
+        f"report_id: {report['report_id']}",
+        f"expediente: {EXPEDIENTE}",
+        f"algoritmo: {ALGORITHM_ID}",
+        f"suite_id: {report['suite_id']}",
+        f"resultado: {report['resultado']}",
+        f"recomendacion: {report['recomendacion']}",
+        "transformacion_permitida: false",
+        f"restricted_interoperable_profile_retained: {str(report['restricted_interoperable_profile_retained']).lower()}",
+        "r4_gamma_global_export_authorized: false",
+        "global_export_authorized: false",
+        "global_closure_authorized: false",
+        "report_layer_promoted: false",
+        "",
+        "## Resumen",
+        "",
+        f"- cases: {report['summary']['cases']}",
+        f"- passed: {report['summary']['passed']}",
+        f"- failed: {report['summary']['failed']}",
+        f"- restricted_interoperable_cases: {report['summary']['restricted_interoperable_cases']}",
+        f"- blocked_cases: {report['summary']['blocked_cases']}",
+        "",
+        "## Casos",
+        "",
+    ]
+    for result in report["case_results"]:
+        status = "PASS" if result["passed"] else "FAIL"
+        lines.append(f"- {status} `{result['case_id']}`: {result['actual']}")
+        if result["blockers"]:
+            lines.append(f"  - blockers: {', '.join(result['blockers'])}")
+        if result["warnings"]:
+            lines.append(f"  - warnings: {', '.join(result['warnings'])}")
+    lines.extend(["", "## Guardas", ""])
+    for key, value in report["scope_guard"].items():
+        lines.append(f"- {key}: {str(value).lower()}")
+    lines.extend(["", "## Dictamen", ""])
+    if report["findings"]:
+        lines.append("- Hay fallos de expectativa; no usar la compuerta.")
+    else:
+        lines.append("- Sin hallazgos bloqueantes.")
+        lines.append("- R4/Gamma conservan perfil restringido interoperable, no exportacion general.")
+    return "\n".join(lines) + "\n"
+
+
+def assert_inside(root: Path, path: Path) -> None:
+    root_resolved = root.resolve()
+    path_resolved = path.resolve()
+    if path_resolved != root_resolved and root_resolved not in path_resolved.parents:
+        raise SystemExit(f"Ruta fuera del repositorio: {path}")
+
+
+def main(argv=None) -> int:
+    parser = argparse.ArgumentParser(description="Compuerta de exportacion R4/Gamma no mutante.")
+    parser.add_argument("--case-file", default=str(DEFAULT_CASE_FILE))
+    parser.add_argument("--format", choices=("json", "md"), default="md")
+    parser.add_argument("--output", help="Ruta de salida opcional.")
+    args = parser.parse_args(argv)
+
+    root = Path.cwd()
+    case_file = Path(args.case_file)
+    if not case_file.is_absolute():
+        case_file = root / case_file
+    assert_inside(root, case_file)
+    report = build_report(root, case_file)
+    content = json.dumps(report, ensure_ascii=True, indent=2) + "\n" if args.format == "json" else render_md(report)
+    if args.output:
+        output = Path(args.output)
+        if not output.is_absolute():
+            output = root / output
+        assert_inside(root, output)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(content, encoding="utf-8")
+    else:
+        sys.stdout.write(content)
+    return 0 if report["resultado"] == "ok" else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

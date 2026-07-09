@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-CHECK-MED-LIVE-20260706-153511",
+  "report_id": "DO-CHECK-MED-LIVE-20260708-210435",
   "expediente": "AUT-001",
   "algoritmo": "DO-CHECK-MED-001",
   "resultado": "advertencia",
@@ -8,17 +8,17 @@
   "transformacion_permitida": false,
   "scope": "repo",
   "summary": {
-    "files_checked": 422,
-    "findings": 433,
+    "files_checked": 469,
+    "findings": 474,
     "by_severity": {
-      "warning": 433
+      "warning": 474
     },
     "by_check": {
-      "MED-REFERENCIAS": 330,
-      "MED-NIVELES": 68,
+      "MED-REFERENCIAS": 362,
+      "MED-NIVELES": 72,
       "MED-CERRADOS": 5,
       "MED-ASCII": 1,
-      "MED-ESTATUS": 18,
+      "MED-ESTATUS": 23,
       "MED-HISTORIAL": 11
     }
   },
@@ -599,14 +599,6 @@
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
           "file": "HANDOFF.md",
-          "detail": "AO/TCS",
-          "evidence": ""
-        },
-        {
-          "severity": "warning",
-          "check_id": "MED-REFERENCIAS",
-          "kind": "referencia_no_materializada",
-          "file": "HANDOFF.md",
           "detail": "ROADMAP.md",
           "evidence": ""
         },
@@ -1018,16 +1010,7 @@
       "file": "README.md",
       "surface": "estado_operativo",
       "estatus": "no_clasificado",
-      "findings": [
-        {
-          "severity": "warning",
-          "check_id": "MED-REFERENCIAS",
-          "kind": "referencia_no_materializada",
-          "file": "README.md",
-          "detail": "AO/TCS",
-          "evidence": ""
-        }
-      ]
+      "findings": []
     },
     {
       "file": "VISION_PAPER_FINAL_REFERENCIAS.md",
@@ -1111,7 +1094,16 @@
       "file": "02_Documentos/04_Algebra_Operacional.md",
       "surface": "documento_oficial",
       "estatus": "documento oficial actualizado, version amplia v0",
-      "findings": []
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "02_Documentos/04_Algebra_Operacional.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- promover notacion local a Canon;"
+        }
+      ]
     },
     {
       "file": "02_Documentos/C-001_Especificacion_Tecnica_Auditor.md",
@@ -1178,6 +1170,12 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Auditoria_Cierre_Local_AO_PPI_001.md",
+      "surface": "expediente",
+      "estatus": "favorable",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md",
       "surface": "expediente",
       "estatus": "no_clasificado",
@@ -1189,21 +1187,37 @@
           "file": "03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md",
           "detail": "No hay campo Estatus en las primeras 30 lineas.",
           "evidence": ""
-        },
-        {
-          "severity": "warning",
-          "check_id": "MED-REFERENCIAS",
-          "kind": "referencia_no_materializada",
-          "file": "03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md",
-          "detail": "06_Automatizacion/reportes/ao_ext_cov_001_report.md",
-          "evidence": ""
         }
       ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Compuerta_Confluencia_Global_001.md",
+      "surface": "expediente",
+      "estatus": "favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Compuerta_Equivalencia_Global_001.md",
+      "surface": "expediente",
+      "estatus": "favorable",
+      "findings": []
     },
     {
       "file": "03_Expedientes/AO-001_Auditoria_Compuerta_Exportacion_R4_Gamma.md",
       "surface": "expediente",
       "estatus": "auditoria favorable de bloqueo controlado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Compuerta_Exportacion_R4_Gamma_002.md",
+      "surface": "expediente",
+      "estatus": "favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Compuerta_Promocion_REPORT_LAYER_001.md",
+      "surface": "expediente",
+      "estatus": "favorable",
       "findings": []
     },
     {
@@ -1224,16 +1238,20 @@
           "file": "03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md",
           "detail": "No hay campo Estatus en las primeras 30 lineas.",
           "evidence": ""
-        },
-        {
-          "severity": "warning",
-          "check_id": "MED-REFERENCIAS",
-          "kind": "referencia_no_materializada",
-          "file": "03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md",
-          "detail": "06_Automatizacion/reportes/ao_authority_global_001_report.md",
-          "evidence": ""
         }
       ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Evidencia_Externa_Independiente_001.md",
+      "surface": "expediente",
+      "estatus": "favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Evidencia_Externa_Real_001.md",
+      "surface": "expediente",
+      "estatus": "favorable con limites",
+      "findings": []
     },
     {
       "file": "03_Expedientes/AO-001_Auditoria_Formalizacion_Acotada_Doc04.md",
@@ -1309,18 +1327,16 @@
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
           "file": "03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md",
-          "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md",
-          "evidence": ""
-        },
-        {
-          "severity": "warning",
-          "check_id": "MED-REFERENCIAS",
-          "kind": "referencia_no_materializada",
-          "file": "03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md",
           "detail": "AO/TCS",
           "evidence": ""
         }
       ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Protocolo_Reproducible_Independiente_001.md",
+      "surface": "expediente",
+      "estatus": "favorable",
+      "findings": []
     },
     {
       "file": "03_Expedientes/AO-001_Auditoria_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md",
@@ -1380,6 +1396,12 @@
       ]
     },
     {
+      "file": "03_Expedientes/AO-001_Auditoria_Readiness_Global_001.md",
+      "surface": "expediente",
+      "estatus": "favorable",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md",
       "surface": "expediente",
       "estatus": "no_clasificado",
@@ -1390,14 +1412,6 @@
           "kind": "estatus_ausente",
           "file": "03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md",
           "detail": "No hay campo Estatus en las primeras 30 lineas.",
-          "evidence": ""
-        },
-        {
-          "severity": "warning",
-          "check_id": "MED-REFERENCIAS",
-          "kind": "referencia_no_materializada",
-          "file": "03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md",
-          "detail": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md",
           "evidence": ""
         },
         {
@@ -1429,24 +1443,60 @@
       "findings": []
     },
     {
-      "file": "03_Expedientes/AO-001_Cobertura_Externa_Amplia_001.md",
+      "file": "03_Expedientes/AO-001_Cierre_Local_AO_PPI_001.md",
       "surface": "expediente",
-      "estatus": "aceptada localmente",
+      "estatus": "cierre local de fase",
       "findings": [
         {
           "severity": "warning",
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
-          "file": "03_Expedientes/AO-001_Cobertura_Externa_Amplia_001.md",
-          "detail": "06_Automatizacion/reportes/ao_ext_cov_001_report.md",
+          "file": "03_Expedientes/AO-001_Cierre_Local_AO_PPI_001.md",
+          "detail": "AO/TCS",
           "evidence": ""
         }
       ]
     },
     {
+      "file": "03_Expedientes/AO-001_Cobertura_Externa_Amplia_001.md",
+      "surface": "expediente",
+      "estatus": "aceptada localmente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Compuerta_Confluencia_Global_001.md",
+      "surface": "expediente",
+      "estatus": "aceptado local",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Compuerta_Equivalencia_Global_001.md",
+      "surface": "expediente",
+      "estatus": "aceptado local",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Compuerta_Evidencia_Externa_001.md",
+      "surface": "expediente",
+      "estatus": "preparada local",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Compuerta_Exportacion_R4_Gamma.md",
       "surface": "expediente",
       "estatus": "compuerta provisional aplicada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Compuerta_Exportacion_R4_Gamma_002.md",
+      "surface": "expediente",
+      "estatus": "aceptado local",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Compuerta_Promocion_REPORT_LAYER_001.md",
+      "surface": "expediente",
+      "estatus": "aceptado local",
       "findings": []
     },
     {
@@ -1459,21 +1509,18 @@
       "file": "03_Expedientes/AO-001_Criterio_Autoridad_Global_001.md",
       "surface": "expediente",
       "estatus": "aceptado localmente",
-      "findings": [
-        {
-          "severity": "warning",
-          "check_id": "MED-REFERENCIAS",
-          "kind": "referencia_no_materializada",
-          "file": "03_Expedientes/AO-001_Criterio_Autoridad_Global_001.md",
-          "detail": "06_Automatizacion/reportes/ao_authority_global_001_report.md",
-          "evidence": ""
-        }
-      ]
+      "findings": []
     },
     {
       "file": "03_Expedientes/AO-001_Decision_Apertura.md",
       "surface": "expediente",
       "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Cierre_Local_AO_PPI_001.md",
+      "surface": "expediente",
+      "estatus": "aceptada",
       "findings": []
     },
     {
@@ -1492,9 +1539,33 @@
       ]
     },
     {
+      "file": "03_Expedientes/AO-001_Decision_Compuerta_Confluencia_Global_001.md",
+      "surface": "expediente",
+      "estatus": "aceptada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Compuerta_Equivalencia_Global_001.md",
+      "surface": "expediente",
+      "estatus": "aceptada",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Decision_Compuerta_Exportacion_R4_Gamma.md",
       "surface": "expediente",
       "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Compuerta_Exportacion_R4_Gamma_002.md",
+      "surface": "expediente",
+      "estatus": "aceptada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Compuerta_Promocion_REPORT_LAYER_001.md",
+      "surface": "expediente",
+      "estatus": "aceptada",
       "findings": []
     },
     {
@@ -1546,6 +1617,18 @@
       "file": "03_Expedientes/AO-001_Decision_Estatus_Puente_Confluencia_Equivalencia.md",
       "surface": "expediente",
       "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Evidencia_Externa_Independiente_001.md",
+      "surface": "expediente",
+      "estatus": "aceptadas",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Evidencia_Externa_Real_001.md",
+      "surface": "expediente",
+      "estatus": "aceptada con limites",
       "findings": []
     },
     {
@@ -1607,6 +1690,12 @@
       ]
     },
     {
+      "file": "03_Expedientes/AO-001_Decision_Protocolo_Reproducible_Independiente_001.md",
+      "surface": "expediente",
+      "estatus": "aceptada",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Decision_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md",
       "surface": "expediente",
       "estatus": "decision de expediente aceptada",
@@ -1616,6 +1705,12 @@
       "file": "03_Expedientes/AO-001_Decision_Puente_Confluencia_Equivalencia_002.md",
       "surface": "expediente",
       "estatus": "decision provisional aceptada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Readiness_Global_001.md",
+      "surface": "expediente",
+      "estatus": "aceptada",
       "findings": []
     },
     {
@@ -1681,6 +1776,36 @@
       "surface": "expediente",
       "estatus": "evaluacion provisional",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Evidencia_Externa_Independiente_001.md",
+      "surface": "expediente",
+      "estatus": "preparado local, no ejecutado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AO-001_Evidencia_Externa_Independiente_001.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar Documento 04, Canon, Nivel C o `C-002`."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Evidencia_Externa_Real_001.md",
+      "surface": "expediente",
+      "estatus": "admitida preliminarmente, no ejecutada",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/AO-001_Evidencia_Externa_Real_001.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- modificar Canon, Documento 04, Nivel C o `C-002`;"
+        }
+      ]
     },
     {
       "file": "03_Expedientes/AO-001_Formalizacion_Acotada_Doc04_R001_TB.md",
@@ -1749,14 +1874,6 @@
           "file": "03_Expedientes/AO-001_Matriz_Consolidada_Cierre_Global_004.md",
           "detail": "AO/TCS",
           "evidence": ""
-        },
-        {
-          "severity": "warning",
-          "check_id": "MED-REFERENCIAS",
-          "kind": "referencia_no_materializada",
-          "file": "03_Expedientes/AO-001_Matriz_Consolidada_Cierre_Global_004.md",
-          "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md",
-          "evidence": ""
         }
       ]
     },
@@ -1764,6 +1881,12 @@
       "file": "03_Expedientes/AO-001_Opciones_Prueba_Confluencia_Externa.md",
       "surface": "expediente",
       "estatus": "opciones provisionales de prueba",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Protocolo_Reproducible_Independiente_001.md",
+      "surface": "expediente",
+      "estatus": "aceptado local",
       "findings": []
     },
     {
@@ -1797,19 +1920,16 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Readiness_Global_001.md",
+      "surface": "expediente",
+      "estatus": "aceptado local",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Relacion_AO_TCS_001.md",
       "surface": "expediente",
       "estatus": "aceptada localmente",
-      "findings": [
-        {
-          "severity": "warning",
-          "check_id": "MED-REFERENCIAS",
-          "kind": "referencia_no_materializada",
-          "file": "03_Expedientes/AO-001_Relacion_AO_TCS_001.md",
-          "detail": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md",
-          "evidence": ""
-        }
-      ]
+      "findings": []
     },
     {
       "file": "03_Expedientes/AO-001_Relacion_REPORT_LAYER_Doc04_Amplio.md",
@@ -3561,7 +3681,7 @@
     {
       "file": "03_Expedientes/MOC-001.md",
       "surface": "expediente",
-      "estatus": "expediente integrador abierto en mantenimiento teorico-operativo sin ejecucion",
+      "estatus": "expediente integrador abierto en mantenimiento teorico-operativo; sin ejecucion empirica",
       "findings": [
         {
           "severity": "warning",
@@ -3577,6 +3697,22 @@
           "kind": "referencia_no_materializada",
           "file": "03_Expedientes/MOC-001.md",
           "detail": "MOC/AO",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001.md",
+          "detail": "06_Automatizacion/reportes/moc_canon_doc04_apply_001_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001.md",
+          "detail": "06_Automatizacion/reportes/moc_canon_doc04_apply_001_report.json",
           "evidence": ""
         },
         {
@@ -3628,6 +3764,12 @@
           "evidence": ""
         }
       ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Aplicacion_Oficial_Canon_Doc04_001.md",
+      "surface": "expediente",
+      "estatus": "aplicacion oficial ejecutada y acotada",
+      "findings": []
     },
     {
       "file": "03_Expedientes/MOC-001_Auditoria_Apertura.md",
@@ -3645,9 +3787,27 @@
       ]
     },
     {
+      "file": "03_Expedientes/MOC-001_Auditoria_Aplicacion_Oficial_Canon_Doc04_001.md",
+      "surface": "expediente",
+      "estatus": "auditoria posterior favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Autorizacion_Grafo_Canon_Doc04.md",
+      "surface": "expediente",
+      "estatus": "favorable con limites",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/MOC-001_Auditoria_Compuerta_Autorizacion_Ejecucion_Piloto.md",
       "surface": "expediente",
       "estatus": "auditoria favorable a no autorizacion de ejecucion",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Compuerta_Incorporacion_Canon_Doc04_001.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable con limites; sin edicion oficial ejecutada",
       "findings": []
     },
     {
@@ -3715,6 +3875,27 @@
           "evidence": ""
         }
       ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Grafo_Experiencia_Local.md",
+      "surface": "expediente",
+      "estatus": "favorable con limites",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Auditoria_Grafo_Experiencia_Local.md",
+          "detail": "0/1/2",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Matriz_Impacto_Canon_Doc04_001.md",
+      "surface": "expediente",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
     },
     {
       "file": "03_Expedientes/MOC-001_Auditoria_Metricas_Protocolo.md",
@@ -3910,6 +4091,12 @@
       ]
     },
     {
+      "file": "03_Expedientes/MOC-001_Autorizacion_Derechos_Grafo_Canon_Doc04.md",
+      "surface": "expediente",
+      "estatus": "autorizacion interna aceptada, preparatoria y no externa",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/MOC-001_Casos_Congelados_Piloto.md",
       "surface": "expediente",
       "estatus": "paquete congelado documental, no ejecutado",
@@ -3945,16 +4132,73 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/MOC-001_Compuerta_Grafo_Canon_Doc04.md",
+      "surface": "expediente",
+      "estatus": "compuerta preparatoria aceptada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Compuerta_Incorporacion_Canon_Doc04_001.md",
+      "surface": "expediente",
+      "estatus": "compuerta evaluada; lista para aplicacion posterior, sin edicion oficial ejecutada",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/MOC-001_Decision_Apertura.md",
       "surface": "expediente",
       "estatus": "decision provisional de expediente",
       "findings": []
     },
     {
+      "file": "03_Expedientes/MOC-001_Decision_Aplicacion_Oficial_Canon_Doc04_001.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Decision_Aplicacion_Oficial_Canon_Doc04_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Autorizacion_Grafo_Canon_Doc04.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Decision_Autorizacion_Grafo_Canon_Doc04.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/MOC-001_Decision_Compuerta_Autorizacion_Ejecucion_Piloto.md",
       "surface": "expediente",
       "estatus": "decision provisional de expediente",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Compuerta_Incorporacion_Canon_Doc04_001.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Decision_Compuerta_Incorporacion_Canon_Doc04_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        }
+      ]
     },
     {
       "file": "03_Expedientes/MOC-001_Decision_Disenio_Estudio_Empirico.md",
@@ -3994,6 +4238,52 @@
       "surface": "expediente",
       "estatus": "decision provisional de expediente",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Grafo_Experiencia_Local.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Decision_Grafo_Experiencia_Local.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Decision_Grafo_Experiencia_Local.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Matriz_Impacto_Canon_Doc04_001.md",
+      "surface": "expediente",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-ESTATUS",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Decision_Matriz_Impacto_Canon_Doc04_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas.",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Decision_Matriz_Impacto_Canon_Doc04_001.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        }
+      ]
     },
     {
       "file": "03_Expedientes/MOC-001_Decision_Metricas_Protocolo.md",
@@ -4248,6 +4538,21 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/MOC-001_Matriz_Impacto_Canon_Doc04_001.md",
+      "surface": "expediente",
+      "estatus": "matriz no mutante aceptable como propuesta candidata",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Matriz_Impacto_Canon_Doc04_001.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/MOC-001_Metodo_Registro_Sin_Datos_Personales.md",
       "surface": "expediente",
       "estatus": "metodo documental preparado, no usado en ejecucion real",
@@ -4276,6 +4581,21 @@
       "surface": "expediente",
       "estatus": "plantilla documental, no usada en ejecucion real",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Propuesta_Candidata_Canon_Doc04_001.md",
+      "surface": "expediente",
+      "estatus": "propuesta candidata aplicada parcialmente por decision posterior",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-NIVELES",
+          "kind": "accion_de_nivel_sensible",
+          "file": "03_Expedientes/MOC-001_Propuesta_Candidata_Canon_Doc04_001.md",
+          "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+          "evidence": "- promover notacion local a Canon;"
+        }
+      ]
     },
     {
       "file": "03_Expedientes/MOC-001_Protocolo_Evaluacion.md",
@@ -4440,6 +4760,42 @@
       "file": "03_Expedientes/MOC-001_Tabla_Operaciones_Formales.md",
       "surface": "expediente",
       "estatus": "tabla operativa provisional, no canonica",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-AO-GEO-BRIDGE-001_Puente_AO_Operator_Trace.md",
+      "surface": "expediente",
+      "estatus": "aceptado como puente local provisional no canonico",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-AO-GEO-BRIDGE-001_Puente_AO_Operator_Trace.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-EXP-GRAPH-001_Grafo_Experiencia_Local.md",
+      "surface": "expediente",
+      "estatus": "aceptado como estructura local provisional no canonica",
+      "findings": [
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-EXP-GRAPH-001_Grafo_Experiencia_Local.md",
+          "detail": "MOC/AO",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-GEO-METR-LAB-001_Metrica_Geometrica_Local.md",
+      "surface": "expediente",
+      "estatus": "aceptada como capa local provisional no canonica",
       "findings": []
     },
     {
@@ -5321,31 +5677,7 @@
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
           "file": "05_Estado_Proyecto/DECISIONES.md",
-          "detail": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md",
-          "evidence": ""
-        },
-        {
-          "severity": "warning",
-          "check_id": "MED-REFERENCIAS",
-          "kind": "referencia_no_materializada",
-          "file": "05_Estado_Proyecto/DECISIONES.md",
-          "detail": "06_Automatizacion/reportes/ao_authority_global_001_report.md",
-          "evidence": ""
-        },
-        {
-          "severity": "warning",
-          "check_id": "MED-REFERENCIAS",
-          "kind": "referencia_no_materializada",
-          "file": "05_Estado_Proyecto/DECISIONES.md",
-          "detail": "06_Automatizacion/reportes/ao_ext_cov_001_report.md",
-          "evidence": ""
-        },
-        {
-          "severity": "warning",
-          "check_id": "MED-REFERENCIAS",
-          "kind": "referencia_no_materializada",
-          "file": "05_Estado_Proyecto/DECISIONES.md",
-          "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md",
+          "detail": "06_Automatizacion/reportes/moc_canon_doc04_apply_001_report.md",
           "evidence": ""
         },
         {
@@ -5950,6 +6282,134 @@
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
           "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_protocol_independent_001_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_protocol_independent_001_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_eq_global_gate_001_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_eq_global_gate_001_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_conf_global_gate_001_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_conf_global_gate_001_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_report_promo_gate_001_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_report_promo_gate_001_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_r4_gamma_export_gate_002_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_r4_gamma_export_gate_002_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_global_readiness_001_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_global_readiness_001_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_external_evidence_gate_001_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_external_evidence_gate_001_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_external_evidence_real_001_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_external_evidence_real_001_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
           "detail": "reportes/report_layer_c002_gate_report.md",
           "evidence": ""
         },
@@ -5975,6 +6435,70 @@
           "kind": "referencia_no_materializada",
           "file": "06_Automatizacion/README.md",
           "detail": "reportes/moc_eval_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/moc_experience_graph_001_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/moc_experience_graph_001_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/moc_exp_graph_authorization_gate_001_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/moc_exp_graph_authorization_gate_001_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/moc_canon_doc04_impact_001_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/moc_canon_doc04_impact_001_report.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/moc_canon_doc04_adopt_gate_001_report.md",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/moc_canon_doc04_adopt_gate_001_report.json",
           "evidence": ""
         },
         {
@@ -6086,6 +6610,70 @@
           "check_id": "MED-REFERENCIAS",
           "kind": "referencia_no_materializada",
           "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/ao_protocol_independent_001_cases.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/ao_eq_global_gate_001_matrix.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/ao_conf_global_gate_001_matrix.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/ao_report_promo_gate_001_cases.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/ao_r4_gamma_export_gate_002_cases.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/ao_global_readiness_001_matrix.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/ao_external_evidence_gate_001_manifests.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/ao_external_evidence_real_001_manifests.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
           "detail": "fixtures/report_layer_c002_cases.json",
           "evidence": ""
         },
@@ -6095,6 +6683,38 @@
           "kind": "referencia_no_materializada",
           "file": "06_Automatizacion/README.md",
           "detail": "fixtures/moc_cases.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/moc_experience_graph_cases.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/moc_exp_graph_authorization_gate_001.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/moc_canon_doc04_impact_001_matrix.json",
+          "evidence": ""
+        },
+        {
+          "severity": "warning",
+          "check_id": "MED-REFERENCIAS",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "fixtures/moc_canon_doc04_adopt_gate_001.json",
           "evidence": ""
         },
         {
@@ -6696,14 +7316,6 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "HANDOFF.md",
-      "detail": "AO/TCS",
-      "evidence": ""
-    },
-    {
-      "severity": "warning",
-      "check_id": "MED-REFERENCIAS",
-      "kind": "referencia_no_materializada",
-      "file": "HANDOFF.md",
       "detail": "ROADMAP.md",
       "evidence": ""
     },
@@ -7085,14 +7697,6 @@
     },
     {
       "severity": "warning",
-      "check_id": "MED-REFERENCIAS",
-      "kind": "referencia_no_materializada",
-      "file": "README.md",
-      "detail": "AO/TCS",
-      "evidence": ""
-    },
-    {
-      "severity": "warning",
       "check_id": "MED-NIVELES",
       "kind": "accion_de_nivel_sensible",
       "file": "01_Canon/M-001_Auditoria_Arquitectonica.md",
@@ -7106,6 +7710,14 @@
       "file": "02_Documentos/00_Naturaleza.md",
       "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
       "evidence": "Un expediente puede proponer. Una auditoria puede evaluar. Una decision puede aceptar, cerrar, congelar, rechazar o incorporar. Un documento oficial estabiliza contenido. El Canon limita como puede cambiar todo lo anterior."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "02_Documentos/04_Algebra_Operacional.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- promover notacion local a Canon;"
     },
     {
       "severity": "warning",
@@ -7149,26 +7761,10 @@
     },
     {
       "severity": "warning",
-      "check_id": "MED-REFERENCIAS",
-      "kind": "referencia_no_materializada",
-      "file": "03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md",
-      "detail": "06_Automatizacion/reportes/ao_ext_cov_001_report.md",
-      "evidence": ""
-    },
-    {
-      "severity": "warning",
       "check_id": "MED-ESTATUS",
       "kind": "estatus_ausente",
       "file": "03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md",
       "detail": "No hay campo Estatus en las primeras 30 lineas.",
-      "evidence": ""
-    },
-    {
-      "severity": "warning",
-      "check_id": "MED-REFERENCIAS",
-      "kind": "referencia_no_materializada",
-      "file": "03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md",
-      "detail": "06_Automatizacion/reportes/ao_authority_global_001_report.md",
       "evidence": ""
     },
     {
@@ -7201,14 +7797,6 @@
       "kind": "estatus_ausente",
       "file": "03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md",
       "detail": "No hay campo Estatus en las primeras 30 lineas.",
-      "evidence": ""
-    },
-    {
-      "severity": "warning",
-      "check_id": "MED-REFERENCIAS",
-      "kind": "referencia_no_materializada",
-      "file": "03_Expedientes/AO-001_Auditoria_Matriz_Consolidada_Cierre_Global_004.md",
-      "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md",
       "evidence": ""
     },
     {
@@ -7256,14 +7844,6 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md",
-      "detail": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md",
-      "evidence": ""
-    },
-    {
-      "severity": "warning",
-      "check_id": "MED-REFERENCIAS",
-      "kind": "referencia_no_materializada",
-      "file": "03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md",
       "detail": "AO/TCS",
       "evidence": ""
     },
@@ -7271,16 +7851,8 @@
       "severity": "warning",
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
-      "file": "03_Expedientes/AO-001_Cobertura_Externa_Amplia_001.md",
-      "detail": "06_Automatizacion/reportes/ao_ext_cov_001_report.md",
-      "evidence": ""
-    },
-    {
-      "severity": "warning",
-      "check_id": "MED-REFERENCIAS",
-      "kind": "referencia_no_materializada",
-      "file": "03_Expedientes/AO-001_Criterio_Autoridad_Global_001.md",
-      "detail": "06_Automatizacion/reportes/ao_authority_global_001_report.md",
+      "file": "03_Expedientes/AO-001_Cierre_Local_AO_PPI_001.md",
+      "detail": "AO/TCS",
       "evidence": ""
     },
     {
@@ -7365,6 +7937,22 @@
     },
     {
       "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AO-001_Evidencia_Externa_Independiente_001.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar Documento 04, Canon, Nivel C o `C-002`."
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/AO-001_Evidencia_Externa_Real_001.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- modificar Canon, Documento 04, Nivel C o `C-002`;"
+    },
+    {
+      "severity": "warning",
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "03_Expedientes/AO-001_Matriz_Condiciones_Cierre_Global_003.md",
@@ -7393,22 +7981,6 @@
       "kind": "referencia_no_materializada",
       "file": "03_Expedientes/AO-001_Matriz_Consolidada_Cierre_Global_004.md",
       "detail": "AO/TCS",
-      "evidence": ""
-    },
-    {
-      "severity": "warning",
-      "check_id": "MED-REFERENCIAS",
-      "kind": "referencia_no_materializada",
-      "file": "03_Expedientes/AO-001_Matriz_Consolidada_Cierre_Global_004.md",
-      "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md",
-      "evidence": ""
-    },
-    {
-      "severity": "warning",
-      "check_id": "MED-REFERENCIAS",
-      "kind": "referencia_no_materializada",
-      "file": "03_Expedientes/AO-001_Relacion_AO_TCS_001.md",
-      "detail": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md",
       "evidence": ""
     },
     {
@@ -8080,6 +8652,22 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "03_Expedientes/MOC-001.md",
+      "detail": "06_Automatizacion/reportes/moc_canon_doc04_apply_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001.md",
+      "detail": "06_Automatizacion/reportes/moc_canon_doc04_apply_001_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001.md",
       "detail": "MOC/TCS",
       "evidence": ""
     },
@@ -8161,6 +8749,14 @@
       "kind": "estatus_ausente",
       "file": "03_Expedientes/MOC-001_Auditoria_Formalizacion_Xi_eval.md",
       "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Auditoria_Grafo_Experiencia_Local.md",
+      "detail": "0/1/2",
       "evidence": ""
     },
     {
@@ -8277,10 +8873,66 @@
     },
     {
       "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Decision_Aplicacion_Oficial_Canon_Doc04_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Decision_Autorizacion_Grafo_Canon_Doc04.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Decision_Compuerta_Incorporacion_Canon_Doc04_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "03_Expedientes/MOC-001_Decision_Ejecucion_Ruta_002.md",
       "detail": "MOC/TCS",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Decision_Grafo_Experiencia_Local.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Decision_Grafo_Experiencia_Local.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-ESTATUS",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Decision_Matriz_Impacto_Canon_Doc04_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas.",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Decision_Matriz_Impacto_Canon_Doc04_001.md",
+      "detail": "MOC/AO",
       "evidence": ""
     },
     {
@@ -8407,6 +9059,22 @@
       "severity": "warning",
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Matriz_Impacto_Canon_Doc04_001.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-NIVELES",
+      "kind": "accion_de_nivel_sensible",
+      "file": "03_Expedientes/MOC-001_Propuesta_Candidata_Canon_Doc04_001.md",
+      "detail": "La linea parece tocar Canon, documento oficial, expediente cerrado o hipotesis.",
+      "evidence": "- promover notacion local a Canon;"
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
       "file": "03_Expedientes/MOC-001_Puente_Formal_MOC_TCS.md",
       "detail": "MOC/AO",
       "evidence": ""
@@ -8464,6 +9132,22 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "03_Expedientes/MOC-001_Rutas_Posteriores_Ruta_010.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-AO-GEO-BRIDGE-001_Puente_AO_Operator_Trace.md",
+      "detail": "MOC/AO",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-EXP-GRAPH-001_Grafo_Experiencia_Local.md",
       "detail": "MOC/AO",
       "evidence": ""
     },
@@ -8856,31 +9540,7 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "05_Estado_Proyecto/DECISIONES.md",
-      "detail": "06_Automatizacion/reportes/ao_tcs_rel_001_report.md",
-      "evidence": ""
-    },
-    {
-      "severity": "warning",
-      "check_id": "MED-REFERENCIAS",
-      "kind": "referencia_no_materializada",
-      "file": "05_Estado_Proyecto/DECISIONES.md",
-      "detail": "06_Automatizacion/reportes/ao_authority_global_001_report.md",
-      "evidence": ""
-    },
-    {
-      "severity": "warning",
-      "check_id": "MED-REFERENCIAS",
-      "kind": "referencia_no_materializada",
-      "file": "05_Estado_Proyecto/DECISIONES.md",
-      "detail": "06_Automatizacion/reportes/ao_ext_cov_001_report.md",
-      "evidence": ""
-    },
-    {
-      "severity": "warning",
-      "check_id": "MED-REFERENCIAS",
-      "kind": "referencia_no_materializada",
-      "file": "05_Estado_Proyecto/DECISIONES.md",
-      "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md",
+      "detail": "06_Automatizacion/reportes/moc_canon_doc04_apply_001_report.md",
       "evidence": ""
     },
     {
@@ -9424,6 +10084,134 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_protocol_independent_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_protocol_independent_001_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_eq_global_gate_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_eq_global_gate_001_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_conf_global_gate_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_conf_global_gate_001_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_report_promo_gate_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_report_promo_gate_001_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_r4_gamma_export_gate_002_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_r4_gamma_export_gate_002_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_global_readiness_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_global_readiness_001_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_external_evidence_gate_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_external_evidence_gate_001_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_external_evidence_real_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_external_evidence_real_001_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
       "detail": "reportes/report_layer_c002_gate_report.md",
       "evidence": ""
     },
@@ -9449,6 +10237,70 @@
       "kind": "referencia_no_materializada",
       "file": "06_Automatizacion/README.md",
       "detail": "reportes/moc_eval_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/moc_experience_graph_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/moc_experience_graph_001_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/moc_exp_graph_authorization_gate_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/moc_exp_graph_authorization_gate_001_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/moc_canon_doc04_impact_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/moc_canon_doc04_impact_001_report.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/moc_canon_doc04_adopt_gate_001_report.md",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/moc_canon_doc04_adopt_gate_001_report.json",
       "evidence": ""
     },
     {
@@ -9560,6 +10412,70 @@
       "check_id": "MED-REFERENCIAS",
       "kind": "referencia_no_materializada",
       "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/ao_protocol_independent_001_cases.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/ao_eq_global_gate_001_matrix.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/ao_conf_global_gate_001_matrix.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/ao_report_promo_gate_001_cases.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/ao_r4_gamma_export_gate_002_cases.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/ao_global_readiness_001_matrix.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/ao_external_evidence_gate_001_manifests.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/ao_external_evidence_real_001_manifests.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
       "detail": "fixtures/report_layer_c002_cases.json",
       "evidence": ""
     },
@@ -9569,6 +10485,38 @@
       "kind": "referencia_no_materializada",
       "file": "06_Automatizacion/README.md",
       "detail": "fixtures/moc_cases.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/moc_experience_graph_cases.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/moc_exp_graph_authorization_gate_001.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/moc_canon_doc04_impact_001_matrix.json",
+      "evidence": ""
+    },
+    {
+      "severity": "warning",
+      "check_id": "MED-REFERENCIAS",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "fixtures/moc_canon_doc04_adopt_gate_001.json",
       "evidence": ""
     },
     {

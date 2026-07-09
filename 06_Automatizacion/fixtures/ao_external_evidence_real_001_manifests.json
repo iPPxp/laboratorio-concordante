@@ -1,0 +1,60 @@
+{
+  "suite_id": "AO-EXT-REAL-MANIFESTS-001",
+  "real_evidence_supplied": true,
+  "source_evidence": [
+    "https://www.rfc-editor.org/info/rfc9457/",
+    "https://www.iana.org/assignments/http-problem-types"
+  ],
+  "manifests": [
+    {
+      "manifest_id": "AO-EXT-REAL-001",
+      "source_family": "estandar_tecnico_publico",
+      "artifact_type": "documento_tecnico_estandar_publico",
+      "source_uri": "https://www.rfc-editor.org/info/rfc9457/",
+      "real_external_source": true,
+      "source_identifiable": true,
+      "source_generated_by_lab_fixture": false,
+      "control_manifest": false,
+      "comparable_unit_present": true,
+      "witness_present": true,
+      "restrictions": [
+        "no_personas_reales_como_caso",
+        "no_clinico",
+        "no_regulado",
+        "no_ejecucion_real",
+        "solo_manifestacion_documental"
+      ],
+      "authority": "documental_externa_identificada",
+      "traceability_present": true,
+      "clinical_domain": false,
+      "regulated_domain": false,
+      "contains_real_persons": false,
+      "expected": "admisible_preliminar"
+    },
+    {
+      "manifest_id": "AO-EXT-REAL-002",
+      "source_family": "registro_tecnico_publico",
+      "artifact_type": "registro_tecnico_estandar_publico",
+      "source_uri": "https://www.iana.org/assignments/http-problem-types",
+      "real_external_source": true,
+      "source_identifiable": true,
+      "source_generated_by_lab_fixture": false,
+      "control_manifest": false,
+      "comparable_unit_present": true,
+      "witness_present": true,
+      "restrictions": [
+        "no_personas_reales_como_caso",
+        "no_clinico",
+        "no_regulado",
+        "no_ejecucion_real",
+        "solo_manifestacion_documental"
+      ],
+      "authority": "documental_externa_identificada",
+      "traceability_present": true,
+      "clinical_domain": false,
+      "regulated_domain": false,
+      "contains_real_persons": false,
+      "expected": "admisible_preliminar"
+    }
+  ]
+}

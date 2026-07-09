@@ -1,0 +1,122 @@
+{
+  "report_id": "MOC-CANON-DOC04-APPLY-CHECK-001-20260708-210446",
+  "expediente": "MOC-001",
+  "algoritmo": "MOC-CANON-DOC04-APPLY-CHECK-001",
+  "resultado": "ok",
+  "recomendacion": "mantener_adopcion_acotada",
+  "transformacion_permitida": false,
+  "official_application_verified": true,
+  "official_application_executed": true,
+  "m000_text_changed": false,
+  "m001_official_section_added": true,
+  "doc04_official_section_added": true,
+  "mutating_mode_authorized": false,
+  "external_use_authorized": false,
+  "global_closure_authorized": false,
+  "report_layer_promoted": false,
+  "r4_gamma_global_export_authorized": false,
+  "nivel_c_modified": false,
+  "h_xi_admitted": false,
+  "psi_canonized": false,
+  "regulated_domain_authorized": false,
+  "summary": {
+    "surfaces": 3,
+    "findings": 0
+  },
+  "application": {
+    "apply_id": "MOC-CANON-DOC04-APPLY-001",
+    "expected": "aplicacion_oficial_verificada",
+    "source_decisions": [
+      "D-2026-07-09-004",
+      "D-2026-07-09-005"
+    ],
+    "required_documents": [
+      "01_Canon/M-000_Reglas_Fundamentales.md",
+      "01_Canon/M-001_Auditoria_Arquitectonica.md",
+      "02_Documentos/04_Algebra_Operacional.md",
+      "03_Expedientes/MOC-001_Aplicacion_Oficial_Canon_Doc04_001.md",
+      "03_Expedientes/MOC-001_Auditoria_Aplicacion_Oficial_Canon_Doc04_001.md",
+      "03_Expedientes/MOC-001_Decision_Aplicacion_Oficial_Canon_Doc04_001.md"
+    ],
+    "official_surfaces": [
+      {
+        "surface": "M000",
+        "path": "01_Canon/M-000_Reglas_Fundamentales.md",
+        "recommendation": "sin_cambio_textual",
+        "required_absent_markers": [
+          "Decision de adopcion de matriz de superficies",
+          "Entrada auxiliar por traza local de grafo"
+        ]
+      },
+      {
+        "surface": "M001",
+        "path": "01_Canon/M-001_Auditoria_Arquitectonica.md",
+        "recommendation": "seccion_oficial_adoptada",
+        "required_markers": [
+          "Decision de adopcion de matriz de superficies: `D-2026-07-09-005`.",
+          "## Matriz de superficies para intervenciones de nivel sensible",
+          "Adopcion oficial acotada por `D-2026-07-09-005`, desde `MOC-CANON-DOC04-APPLY-001`.",
+          "lo que se propone para Canon",
+          "lo que se propone para documento oficial",
+          "lo que queda solo en expediente",
+          "lo que queda prohibido",
+          "la deuda conceptual que impide incorporacion"
+        ]
+      },
+      {
+        "surface": "DOC04",
+        "path": "02_Documentos/04_Algebra_Operacional.md",
+        "recommendation": "subseccion_oficial_adoptada",
+        "section_heading": "### Entrada auxiliar por traza local de grafo",
+        "required_markers": [
+          "Decision de adopcion de entrada auxiliar MOC/grafo: `D-2026-07-09-005`.",
+          "### Entrada auxiliar por traza local de grafo",
+          "operator_trace_graph",
+          "alimentar `Pi_op` como evidencia local de regla ganadora",
+          "conservar separacion de niveles",
+          "no `ejecutar_cambio_acotado`"
+        ],
+        "section_forbidden_terms": [
+          "Omega_psi",
+          "Xi_psi",
+          "Pi5_psi",
+          "Phi_psi",
+          "C_psi",
+          "TrueSelf_psi"
+        ]
+      }
+    ],
+    "flags": {
+      "m000_text_changed": false,
+      "m001_official_section_added": true,
+      "doc04_official_section_added": true,
+      "official_application_executed": true,
+      "mutating_mode_authorized": false,
+      "external_use_authorized": false,
+      "global_closure_authorized": false,
+      "report_layer_promoted": false,
+      "r4_gamma_global_export_authorized": false,
+      "nivel_c_modified": false,
+      "h_xi_admitted": false,
+      "psi_canonized": false,
+      "regulated_domain_authorized": false
+    }
+  },
+  "result": {
+    "apply_id": "MOC-CANON-DOC04-APPLY-001",
+    "expected": "aplicacion_oficial_verificada",
+    "actual": "aplicacion_oficial_verificada",
+    "passed": true,
+    "blockers": [],
+    "warnings": [
+      "adopcion_acotada_sin_cierre_global"
+    ],
+    "surfaces": [
+      "DOC04",
+      "M000",
+      "M001"
+    ],
+    "surface_count": 3
+  },
+  "findings": []
+}

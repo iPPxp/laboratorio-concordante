@@ -1,6 +1,6 @@
 # DO_CHECK_REPORT minimo
 
-report_id: DO-CHECK-MIN-20260706-153506
+report_id: DO-CHECK-MIN-20260708-210424
 expediente: AUT-001
 resultado: advertencia
 recomendacion: continuar_sin_transformar
@@ -8,12 +8,15 @@ transformacion_permitida: false
 
 ## Resumen
 
-- archivos revisados: 422
-- hallazgos: 214
+- archivos revisados: 469
+- hallazgos: 266
 
 ## Hallazgos
 
 - [warning] 02_Documentos/C-002_RFC_Operativo_Auditor_v0.md - historial_como_autoridad_posible: - `AUD-T07`: Registro Historico como autoridad directa;
+- [warning] 03_Expedientes/AO-001_Auditoria_Cierre_Local_AO_PPI_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_004_report.md
+- [warning] 03_Expedientes/AO-001_Auditoria_Cierre_Local_AO_PPI_001.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_executive_summary.md
+- [warning] 03_Expedientes/AO-001_Auditoria_Cierre_Local_AO_PPI_001.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_risk_report.md
 - [warning] 03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
 - [warning] 03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ext_cov_001_report.md
 - [warning] 03_Expedientes/AO-001_Auditoria_Criterio_Autoridad_Global_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
@@ -28,19 +31,29 @@ transformacion_permitida: false
 - [warning] 03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_tcs_rel_001_report.md
 - [warning] 03_Expedientes/AO-001_Auditoria_Serializacion_REPORT_LAYER_001.md - referencia_no_materializada: 06_Automatizacion/reportes/report_layer_serialization_report.md
 - [warning] 03_Expedientes/AO-001_Cobertura_Externa_Amplia_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ext_cov_001_report.md
+- [warning] 03_Expedientes/AO-001_Compuerta_Confluencia_Global_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_conf_global_gate_001_report.md
+- [warning] 03_Expedientes/AO-001_Compuerta_Equivalencia_Global_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_eq_global_gate_001_report.md
+- [warning] 03_Expedientes/AO-001_Compuerta_Exportacion_R4_Gamma_002.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_r4_gamma_export_gate_002_report.md
+- [warning] 03_Expedientes/AO-001_Compuerta_Promocion_REPORT_LAYER_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_report_promo_gate_001_report.md
 - [warning] 03_Expedientes/AO-001_Criterio_Autoridad_Global_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_authority_global_001_report.md
 - [warning] 03_Expedientes/AO-001_Decision_Cobertura_Externa_Amplia_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
 - [warning] 03_Expedientes/AO-001_Decision_Criterio_Autoridad_Global_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/AO-001_Decision_Evidencia_Externa_Independiente_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_external_evidence_gate_001_report.md
+- [warning] 03_Expedientes/AO-001_Decision_Evidencia_Externa_Real_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_external_evidence_real_001_report.md
 - [warning] 03_Expedientes/AO-001_Decision_Matriz_Condiciones_Cierre_Global_003.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_003_report.md
 - [warning] 03_Expedientes/AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
 - [warning] 03_Expedientes/AO-001_Decision_Puente_Confluencia_Equivalencia_002.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_002_report.md
 - [warning] 03_Expedientes/AO-001_Decision_Relacion_AO_TCS_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
 - [warning] 03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
 - [warning] 03_Expedientes/AO-001_Decision_Serializacion_REPORT_LAYER_001.md - referencia_no_materializada: 06_Automatizacion/reportes/report_layer_serialization_report.md
+- [warning] 03_Expedientes/AO-001_Evidencia_Externa_Independiente_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_external_evidence_gate_001_report.md
+- [warning] 03_Expedientes/AO-001_Evidencia_Externa_Independiente_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_external_evidence_real_001_report.md
 - [warning] 03_Expedientes/AO-001_Matriz_Condiciones_Cierre_Global_003.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_003_report.md
 - [warning] 03_Expedientes/AO-001_Matriz_Consolidada_Cierre_Global_004.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_004_report.md
+- [warning] 03_Expedientes/AO-001_Protocolo_Reproducible_Independiente_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_protocol_independent_001_report.md
 - [warning] 03_Expedientes/AO-001_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_doc04_wide_report.md
 - [warning] 03_Expedientes/AO-001_Puente_Confluencia_Equivalencia_002.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_002_report.md
+- [warning] 03_Expedientes/AO-001_Readiness_Global_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_global_readiness_001_report.md
 - [warning] 03_Expedientes/AO-001_Relacion_AO_TCS_001.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_tcs_rel_001_report.md
 - [warning] 03_Expedientes/AO-001_Serializacion_REPORT_LAYER_001.md - referencia_no_materializada: 06_Automatizacion/reportes/report_layer_serialization_report.md
 - [warning] 03_Expedientes/AUD-001_Auditoria_REPORT_LAYER_Candidata.md - historial_como_autoridad_posible: - conserva Registro Historico fuera de autoridad directa.
@@ -100,6 +113,11 @@ transformacion_permitida: false
 - [warning] 03_Expedientes/DO-001_SPEC-AUD-001_Candidata.md - historial_como_autoridad_posible: - importacion de Registro Historico como autoridad vigente
 - [warning] 03_Expedientes/HB-001_Deuda_Viva_H-B.md - historial_como_autoridad_posible: - usar Registro Historico como autoridad directa;
 - [warning] 03_Expedientes/MOC-001.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_eval_report.md
+- [warning] 03_Expedientes/MOC-001.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_experience_graph_001_report.md
+- [warning] 03_Expedientes/MOC-001.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_exp_graph_authorization_gate_001_report.md
+- [warning] 03_Expedientes/MOC-001.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_canon_doc04_impact_001_report.md
+- [warning] 03_Expedientes/MOC-001.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_canon_doc04_adopt_gate_001_report.md
+- [warning] 03_Expedientes/MOC-001.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_canon_doc04_apply_001_report.md
 - [warning] 03_Expedientes/MOC-001_Auditoria_Apertura.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
 - [warning] 03_Expedientes/MOC-001_Auditoria_Compuerta_Autorizacion_Ejecucion_Piloto.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_executive_summary.md
 - [warning] 03_Expedientes/MOC-001_Auditoria_Disenio_Estudio_Empirico.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
@@ -109,6 +127,12 @@ transformacion_permitida: false
 - [warning] 03_Expedientes/MOC-001_Auditoria_Siguientes_Rutas_Validas.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
 - [warning] 03_Expedientes/MOC-001_Auditoria_Simulacion_Software.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
 - [warning] 03_Expedientes/MOC-001_Compuerta_Autorizacion_Ejecucion_Piloto.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_executive_summary.md
+- [warning] 03_Expedientes/MOC-001_Compuerta_Incorporacion_Canon_Doc04_001.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_canon_doc04_impact_001_report.md
+- [warning] 03_Expedientes/MOC-001_Decision_Aplicacion_Oficial_Canon_Doc04_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/MOC-001_Decision_Autorizacion_Grafo_Canon_Doc04.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/MOC-001_Decision_Compuerta_Incorporacion_Canon_Doc04_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/MOC-001_Decision_Grafo_Experiencia_Local.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
+- [warning] 03_Expedientes/MOC-001_Decision_Matriz_Impacto_Canon_Doc04_001.md - estatus_ausente: No hay campo Estatus en las primeras 30 lineas.
 - [warning] 03_Expedientes/MOC-001_Decision_Simulacion_Software.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_eval_report.md
 - [warning] 03_Expedientes/MOC-001_Ejecucion_Ruta_002.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_eval_report.md
 - [warning] 03_Expedientes/MOC-001_Ejecucion_Ruta_002.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_run_report.md
@@ -146,6 +170,20 @@ transformacion_permitida: false
 - [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_authority_global_001_report.md
 - [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ext_cov_001_report.md
 - [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_ppi_bridge_004_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_protocol_independent_001_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_eq_global_gate_001_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_conf_global_gate_001_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_report_promo_gate_001_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_r4_gamma_export_gate_002_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_global_readiness_001_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_external_evidence_gate_001_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_external_evidence_real_001_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_experience_graph_001_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_exp_graph_authorization_gate_001_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_canon_doc04_impact_001_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_canon_doc04_adopt_gate_001_report.md
+- [warning] 05_Estado_Proyecto/DECISIONES.md - referencia_no_materializada: 06_Automatizacion/reportes/moc_canon_doc04_apply_001_report.md
+- [warning] 05_Estado_Proyecto/ESTADO_ACTUAL.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_external_evidence_real_001_report.md
 - [warning] 05_Estado_Proyecto/ESTADO_ACTUAL.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_status_board.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/do_check_min_claves.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/do_check_min_repo.md
@@ -167,8 +205,20 @@ transformacion_permitida: false
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_authority_global_001_report.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_ext_cov_001_report.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_ppi_bridge_004_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_protocol_independent_001_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_eq_global_gate_001_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_conf_global_gate_001_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_report_promo_gate_001_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_r4_gamma_export_gate_002_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_global_readiness_001_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_external_evidence_gate_001_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/ao_external_evidence_real_001_report.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/report_layer_c002_gate_report.md
 - [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/moc_eval_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/moc_experience_graph_001_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/moc_exp_graph_authorization_gate_001_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/moc_canon_doc04_impact_001_report.md
+- [warning] 06_Automatizacion/README.md - referencia_no_materializada: reportes/moc_canon_doc04_adopt_gate_001_report.md
 - [warning] 06_Automatizacion/README.md - historial_como_autoridad_posible: - usar Registro Historico como autoridad directa;
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_status_board.md
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/lab_continuity_report.md
@@ -180,7 +230,9 @@ transformacion_permitida: false
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/README.md
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/README.md
 - [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/README.md
+- [warning] CHANGELOG.md - referencia_no_materializada: 06_Automatizacion/reportes/README.md
 - [warning] CHANGELOG.md - historial_como_autoridad_posible: - Actualizado el estado del proyecto: el siguiente objetivo es probar `R4-CANDIDATA` con un expediente que usa Registro Historico como autoridad directa.
+- [warning] CURRENT_STATE.md - referencia_no_materializada: 06_Automatizacion/reportes/ao_external_evidence_real_001_report.md
 - [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001.md (PSI-001 transferido; no restaurar copia local)
 - [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Definicion_Organizacion_Experiencia_Psicologica.md (PSI-001 transferido; no restaurar copia local)
 - [warning] HANDOFF.md - referencia_historica_transferida: 03_Expedientes/PSI-001_Auditoria_Definicion_Organizacion.md (PSI-001 transferido; no restaurar copia local)

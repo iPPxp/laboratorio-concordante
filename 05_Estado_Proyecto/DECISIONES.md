@@ -3519,3 +3519,647 @@ La matriz queda con cinco condiciones `satisfecha_local`, dos `parcial_local`, d
 - Exportacion general de R4/Gamma.
 - Cierre global de Confluencia.
 - Cierre global de Equivalencia de proyecciones.
+
+## D-2026-07-06-024 - Cierre local AO-PPI
+
+Fecha: 2026-07-06.
+
+Estado: aceptada.
+
+Se acepta `AO-PPI-LOCAL-CLOSE-001` como cierre local de fase `AO-PPI`.
+
+Documento base: `03_Expedientes/AO-001_Cierre_Local_AO_PPI_001.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Cierre_Local_AO_PPI_001.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Cierre_Local_AO_PPI_001.md`.
+
+### Alcance aceptado
+
+`AO-PPI-BRIDGE-004` queda fijada como estado actual de deudas `AO-PPI`.
+
+La fase local de acumulacion `AO-PPI` queda cerrada como paquete local consolidado.
+
+### Resultado
+
+```text
+local_closure_authorized: true
+global_closure_authorized: false
+global_export_authorized: false
+report_layer_promoted: false
+ao_001_status: abierto
+p_pi_status: cerrado_como_frente
+```
+
+### Limites
+
+No modifica Documento 04, Canon, Nivel C ni `C-002`.
+
+No cierra `AO-001` completo.
+
+No reabre `P-PI.0` / `P-PI.1`.
+
+No promueve `REPORT_LAYER`.
+
+No exporta R4/Gamma.
+
+No cierra Confluencia global ni Equivalencia global.
+
+### Deudas abiertas
+
+- Protocolo AO reproducible independiente.
+- Confluencia global.
+- Equivalencia global de proyecciones.
+- Promocion formal de `REPORT_LAYER`.
+- Exportacion general de R4/Gamma.
+- Maduracion formal posterior de `TCS-001`.
+
+## D-2026-07-06-025 - Protocolo AO reproducible independiente
+
+Fecha: 2026-07-06.
+
+Estado: aceptada.
+
+Se acepta `AO-PROTO-INDEP-001` como protocolo reproducible independiente local no mutante.
+
+Documento base: `03_Expedientes/AO-001_Protocolo_Reproducible_Independiente_001.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Protocolo_Reproducible_Independiente_001.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Protocolo_Reproducible_Independiente_001.md`.
+
+Herramienta: `06_Automatizacion/ao_protocol_independent_001.py`.
+
+Fixture: `06_Automatizacion/fixtures/ao_protocol_independent_001_cases.json`.
+
+Reportes: `06_Automatizacion/reportes/ao_protocol_independent_001_report.md` y `.json`.
+
+### Alcance aceptado
+
+El protocolo usa tres perfiles evaluadores sinteticos, mismos casos y reglas fijas.
+
+Clasifica coincidencia exacta, coincidencia por familia y desacuerdo justificado sin forzar unanimidad.
+
+### Limites
+
+No constituye validacion externa independiente real.
+
+No autoriza cierre global, exportacion general ni promocion de `REPORT_LAYER`.
+
+## D-2026-07-06-026 - Compuerta de Equivalencia global
+
+Fecha: 2026-07-06.
+
+Estado: aceptada.
+
+Se acepta `AO-EQ-GLOBAL-GATE-001` como compuerta local no mutante de Equivalencia global de proyecciones.
+
+Documento base: `03_Expedientes/AO-001_Compuerta_Equivalencia_Global_001.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Compuerta_Equivalencia_Global_001.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Compuerta_Equivalencia_Global_001.md`.
+
+Herramienta: `06_Automatizacion/ao_eq_global_gate_001.py`.
+
+Fixture: `06_Automatizacion/fixtures/ao_eq_global_gate_001_matrix.json`.
+
+Reportes: `06_Automatizacion/reportes/ao_eq_global_gate_001_report.md` y `.json`.
+
+### Resultado
+
+```text
+global_equivalence_authorized: false
+global_closure_authorized: false
+global_export_authorized: false
+report_layer_promoted: false
+r4_gamma_global_export_authorized: false
+```
+
+### Limites
+
+La Equivalencia global permanece abierta.
+
+No se reabren `P-PI.0` ni `P-PI.1`.
+
+## D-2026-07-06-027 - Compuerta de Confluencia global
+
+Fecha: 2026-07-06.
+
+Estado: aceptada.
+
+Se acepta `AO-CONF-GLOBAL-GATE-001` como compuerta local no mutante de Confluencia global.
+
+Documento base: `03_Expedientes/AO-001_Compuerta_Confluencia_Global_001.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Compuerta_Confluencia_Global_001.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Compuerta_Confluencia_Global_001.md`.
+
+Herramienta: `06_Automatizacion/ao_conf_global_gate_001.py`.
+
+Fixture: `06_Automatizacion/fixtures/ao_conf_global_gate_001_matrix.json`.
+
+Reportes: `06_Automatizacion/reportes/ao_conf_global_gate_001_report.md` y `.json`.
+
+### Resultado
+
+```text
+global_confluence_authorized: false
+global_closure_authorized: false
+global_export_authorized: false
+report_layer_promoted: false
+r4_gamma_global_export_authorized: false
+```
+
+### Limites
+
+La Confluencia global permanece abierta.
+
+No se reabren `P-PI.0` ni `P-PI.1`.
+
+## D-2026-07-06-028 - Compuerta de promocion REPORT_LAYER
+
+Fecha: 2026-07-06.
+
+Estado: aceptada.
+
+Se acepta `AO-REPORT-PROMO-GATE-001` como compuerta local no mutante para evaluar promocion futura de `REPORT_LAYER`.
+
+Documento base: `03_Expedientes/AO-001_Compuerta_Promocion_REPORT_LAYER_001.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Compuerta_Promocion_REPORT_LAYER_001.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Compuerta_Promocion_REPORT_LAYER_001.md`.
+
+Herramienta: `06_Automatizacion/ao_report_promo_gate_001.py`.
+
+Fixture: `06_Automatizacion/fixtures/ao_report_promo_gate_001_cases.json`.
+
+Reportes: `06_Automatizacion/reportes/ao_report_promo_gate_001_report.md` y `.json`.
+
+### Resultado
+
+```text
+report_layer_candidate_future: true
+report_layer_promoted: false
+global_closure_authorized: false
+global_export_authorized: false
+r4_gamma_global_export_authorized: false
+```
+
+### Limites
+
+`REPORT_LAYER` permanece local pre-C.
+
+No se crea Nivel C nuevo ni `C-003`.
+
+## D-2026-07-06-029 - Compuerta de exportacion R4/Gamma
+
+Fecha: 2026-07-06.
+
+Estado: aceptada.
+
+Se acepta `AO-R4-GAMMA-EXPORT-GATE-002` como compuerta local no mutante para evaluar exportacion general de R4/Gamma fuera de `AUD-001`.
+
+Documento base: `03_Expedientes/AO-001_Compuerta_Exportacion_R4_Gamma_002.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Compuerta_Exportacion_R4_Gamma_002.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Compuerta_Exportacion_R4_Gamma_002.md`.
+
+Herramienta: `06_Automatizacion/ao_r4_gamma_export_gate_002.py`.
+
+Fixture: `06_Automatizacion/fixtures/ao_r4_gamma_export_gate_002_cases.json`.
+
+Reportes: `06_Automatizacion/reportes/ao_r4_gamma_export_gate_002_report.md` y `.json`.
+
+### Resultado
+
+```text
+restricted_interoperable_profile_retained: true
+r4_gamma_global_export_authorized: false
+global_export_authorized: false
+global_closure_authorized: false
+report_layer_promoted: false
+```
+
+### Limites
+
+R4/Gamma conservan perfil restringido interoperable.
+
+No hay exportacion general.
+
+## D-2026-07-06-030 - Readiness global AO
+
+Fecha: 2026-07-06.
+
+Estado: aceptada.
+
+Se acepta `AO-GLOBAL-READINESS-001` como matriz consolidada local de readiness global.
+
+Documento base: `03_Expedientes/AO-001_Readiness_Global_001.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Readiness_Global_001.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Readiness_Global_001.md`.
+
+Herramienta: `06_Automatizacion/ao_global_readiness_001.py`.
+
+Fixture: `06_Automatizacion/fixtures/ao_global_readiness_001_matrix.json`.
+
+Reportes: `06_Automatizacion/reportes/ao_global_readiness_001_report.md` y `.json`.
+
+### Resultado
+
+```text
+readiness_result: mantener_no_autorizado
+ready_for_global_decision: false
+global_closure_authorized: false
+global_export_authorized: false
+global_equivalence_authorized: false
+global_confluence_authorized: false
+report_layer_promoted: false
+r4_gamma_global_export_authorized: false
+```
+
+### Deudas abiertas
+
+- Confluencia global.
+- Equivalencia global de proyecciones.
+- Promocion formal de `REPORT_LAYER`.
+- Exportacion general R4/Gamma.
+- Evidencia externa independiente no sintetica.
+
+## D-2026-07-06-031 - Apertura AO-EXT-INDEP-001
+
+Fecha: 2026-07-06.
+
+Estado: aceptada.
+
+Se acepta abrir `AO-EXT-INDEP-001` como frente local no mutante para preparar evidencia externa independiente no sintetica.
+
+Documento base: `03_Expedientes/AO-001_Evidencia_Externa_Independiente_001.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Evidencia_Externa_Independiente_001.md`.
+
+### Alcance
+
+La ruta prepara criterios de admisibilidad y pre-ejecucion.
+
+No busca, no descarga y no ejecuta evidencia externa real.
+
+No reabre `P-PI.0` ni `P-PI.1`.
+
+## D-2026-07-06-032 - Compuerta de admisibilidad externa
+
+Fecha: 2026-07-06.
+
+Estado: aceptada.
+
+Se acepta `AO-EXT-EVID-GATE-001` como compuerta documental de admisibilidad externa.
+
+Documento base: `03_Expedientes/AO-001_Compuerta_Evidencia_Externa_001.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Evidencia_Externa_Independiente_001.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Evidencia_Externa_Independiente_001.md`.
+
+### Salidas permitidas
+
+```text
+admisible_preliminar
+pendiente_fuente_real
+rechazada_por_alcance
+rechazada_por_autoridad
+rechazada_por_dominio
+```
+
+## D-2026-07-06-033 - Herramienta no mutante AO-EXT-EVID-GATE-001
+
+Fecha: 2026-07-06.
+
+Estado: aceptada.
+
+Se acepta `06_Automatizacion/ao_external_evidence_gate_001.py` como herramienta no mutante de validacion de manifiestos y metadatos.
+
+Fixture: `06_Automatizacion/fixtures/ao_external_evidence_gate_001_manifests.json`.
+
+Prueba: `06_Automatizacion/test_ao_external_evidence_gate_001.py`.
+
+Reportes: `06_Automatizacion/reportes/ao_external_evidence_gate_001_report.md` y `.json`.
+
+### Resultado esperado
+
+```text
+external_evidence_ready: false
+external_evidence_executed: false
+global_closure_authorized: false
+global_export_authorized: false
+global_equivalence_authorized: false
+global_confluence_authorized: false
+report_layer_promoted: false
+r4_gamma_global_export_authorized: false
+```
+
+## D-2026-07-06-034 - Vigencia de AO-GLOBAL-READINESS-001
+
+Fecha: 2026-07-06.
+
+Estado: aceptada.
+
+Se mantiene `AO-GLOBAL-READINESS-001` como matriz vigente de no autorizacion global hasta que una decision posterior autorice reevaluarla.
+
+### Limites
+
+No se autoriza cierre global, exportacion global, promocion de `REPORT_LAYER` ni exportacion R4/Gamma.
+
+No se modifica Documento 04, Canon, Nivel C ni `C-002`.
+
+No se hace commit, push ni sincronizacion remota.
+
+## D-2026-07-06-035 - Evidencia externa independiente real AO
+
+Fecha: 2026-07-06.
+
+Estado: aceptada.
+
+Se acepta `AO-EXT-REAL-001` como primera evidencia externa independiente real admisible de forma preliminar para `AO-001`.
+
+Documento base: `03_Expedientes/AO-001_Evidencia_Externa_Real_001.md`.
+
+Auditoria: `03_Expedientes/AO-001_Auditoria_Evidencia_Externa_Real_001.md`.
+
+Decision espejo: `03_Expedientes/AO-001_Decision_Evidencia_Externa_Real_001.md`.
+
+Herramienta: `06_Automatizacion/ao_external_evidence_gate_001.py`.
+
+Fixture real: `06_Automatizacion/fixtures/ao_external_evidence_real_001_manifests.json`.
+
+Reportes: `06_Automatizacion/reportes/ao_external_evidence_real_001_report.md` y `.json`.
+
+### Fuentes
+
+- RFC 9457, `Problem Details for HTTP APIs`, `https://www.rfc-editor.org/info/rfc9457/`.
+- Registro IANA `HTTP Problem Types`, `https://www.iana.org/assignments/http-problem-types`.
+
+### Resultado esperado
+
+```text
+external_evidence_ready: true
+external_evidence_executed: false
+global_closure_authorized: false
+global_export_authorized: false
+global_equivalence_authorized: false
+global_confluence_authorized: false
+report_layer_promoted: false
+r4_gamma_global_export_authorized: false
+```
+
+### Limites
+
+La evidencia real admite solo una decision posterior sobre posible reevaluacion de readiness global.
+
+No autoriza cierre global, exportacion global, promocion de `REPORT_LAYER`, exportacion R4/Gamma, modo mutante ni cambios a Documento 04, Canon, Nivel C o `C-002`.
+
+## D-2026-07-09-001 - Grafo local de experiencia MOC
+
+Fecha: 2026-07-09.
+
+Estado: aceptada.
+
+Se acepta `MOC-EXP-GRAPH-001` como grafo local de experiencia para `MOC-001`.
+
+Documentos base:
+
+- `03_Expedientes/MOC-EXP-GRAPH-001_Grafo_Experiencia_Local.md`.
+- `03_Expedientes/MOC-GEO-METR-LAB-001_Metrica_Geometrica_Local.md`.
+- `03_Expedientes/MOC-AO-GEO-BRIDGE-001_Puente_AO_Operator_Trace.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Grafo_Experiencia_Local.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Grafo_Experiencia_Local.md`.
+
+Herramienta: `06_Automatizacion/moc_experience_graph_001.py`.
+
+Fixture: `06_Automatizacion/fixtures/moc_experience_graph_cases.json`.
+
+Reportes: `06_Automatizacion/reportes/moc_experience_graph_001_report.md` y `.json`.
+
+### Resultado esperado
+
+```text
+resultado: ok
+transformacion_permitida: false
+global_closure_authorized: false
+global_export_authorized: false
+global_equivalence_authorized: false
+global_confluence_authorized: false
+report_layer_promoted: false
+r4_gamma_global_export_authorized: false
+```
+
+### Limites
+
+Los casos 036-043 se importan como evidencia documental externa estructural.
+
+No se admite `H-Xi`, no se canoniza `Xi`, `Phi`, `TrueSelf` ni la notacion `psi`, no hay uso clinico, no se evaluan personas reales y no se modifica Canon, Documento 04, Nivel C ni `C-002`.
+
+## D-2026-07-09-002 - Autorizacion interna para grafo hacia Canon y Documento 04
+
+Fecha: 2026-07-09.
+
+Estado: aceptada.
+
+Se acepta `MOC-GRAPH-CANON-DOC04-GATE-001` como compuerta de autorizacion interna preparatoria.
+
+Documentos base:
+
+- `03_Expedientes/MOC-001_Autorizacion_Derechos_Grafo_Canon_Doc04.md`.
+- `03_Expedientes/MOC-001_Compuerta_Grafo_Canon_Doc04.md`.
+- `03_Expedientes/MOC-001_Auditoria_Autorizacion_Grafo_Canon_Doc04.md`.
+- `03_Expedientes/MOC-001_Decision_Autorizacion_Grafo_Canon_Doc04.md`.
+
+Herramienta: `06_Automatizacion/moc_exp_graph_authorization_gate_001.py`.
+
+Fixture: `06_Automatizacion/fixtures/moc_exp_graph_authorization_gate_001.json`.
+
+Reportes: `06_Automatizacion/reportes/moc_exp_graph_authorization_gate_001_report.md` y `.json`.
+
+### Resultado aceptado
+
+```text
+autorizacion_interna_preparatoria: true
+candidate_amendment_preparation_authorized: true
+official_canon_doc04_edit_authorized: false
+external_use_authorized: false
+legal_advice_provided: false
+transformacion_permitida: false
+```
+
+### Alcance
+
+`MOC-EXP-GRAPH-001` puede preparar matriz de impacto y propuestas candidatas para Canon y Documento 04.
+
+No queda autorizada edicion oficial directa, uso externo, publicacion, redistribucion, uso clinico o regulado, admision de `H-Xi`, canonizacion de `Xi`/`psi`, cierre global, promocion de `REPORT_LAYER`, exportacion R4/Gamma ni modo mutante.
+
+### Siguiente ruta
+
+La siguiente ruta defensible es `MOC-CANON-DOC04-IMPACT-001`: matriz no mutante de impacto y propuesta candidata, separando Canon, Documento 04, expediente y contenido prohibido.
+
+## D-2026-07-09-003 - Matriz de impacto Canon/Documento 04
+
+Fecha: 2026-07-09.
+
+Estado: aceptada.
+
+Expediente: `MOC-001`.
+
+Documento base: `03_Expedientes/MOC-001_Matriz_Impacto_Canon_Doc04_001.md`.
+
+Propuesta candidata: `03_Expedientes/MOC-001_Propuesta_Candidata_Canon_Doc04_001.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Matriz_Impacto_Canon_Doc04_001.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Matriz_Impacto_Canon_Doc04_001.md`.
+
+Herramienta: `06_Automatizacion/moc_canon_doc04_impact_001.py`.
+
+Reporte: `06_Automatizacion/reportes/moc_canon_doc04_impact_001_report.md`.
+
+### Decision
+
+Se acepta `MOC-CANON-DOC04-IMPACT-001` como matriz no mutante de impacto y propuesta candidata.
+
+Esta decision no autoriza edicion oficial de Canon ni Documento 04.
+
+### Dictamen
+
+- `M-000`: sin cambio textual recomendado; funciona como limite rector.
+- `M-001`: queda propuesta candidata futura para matriz de superficies en auditorias de nivel sensible.
+- Documento 04: queda propuesta candidata futura para entrada auxiliar por `operator_trace` de grafo local.
+- Expediente: conserva notacion `psi`, grafo completo, metricas, casos 036-043 y fuente externa como evidencia documental estructural.
+- Prohibido: siguen bloqueados `H-Xi`, canonizacion de `Xi`/`Phi`/`TrueSelf`/`psi`, uso clinico/regulado, personas reales, cierre global, promocion de `REPORT_LAYER`, exportacion R4/Gamma, cambio de Nivel C y modo mutante.
+
+### Siguiente ruta posible
+
+Si se decide evaluar incorporacion oficial, la siguiente ruta defensible es:
+
+```text
+MOC-CANON-DOC04-ADOPT-GATE-001
+```
+
+La compuerta posterior debe decidir separadamente si se incorpora texto a `M-001`, a Documento 04, a ambos o a ninguno.
+
+## D-2026-07-09-004 - Compuerta de incorporacion Canon/Documento 04
+
+Fecha: 2026-07-09.
+
+Estado: aceptada.
+
+Expediente: `MOC-001`.
+
+Documento base: `03_Expedientes/MOC-001_Compuerta_Incorporacion_Canon_Doc04_001.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Compuerta_Incorporacion_Canon_Doc04_001.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Compuerta_Incorporacion_Canon_Doc04_001.md`.
+
+Herramienta: `06_Automatizacion/moc_canon_doc04_adopt_gate_001.py`.
+
+Reporte: `06_Automatizacion/reportes/moc_canon_doc04_adopt_gate_001_report.md`.
+
+### Decision
+
+Se acepta `MOC-CANON-DOC04-ADOPT-GATE-001` como compuerta de incorporacion oficial posterior.
+
+La salida aceptada es:
+
+```text
+lista_para_aplicacion_posterior
+```
+
+Esta decision no ejecuta edicion oficial de Canon ni Documento 04. No autoriza edicion automatica ni modo mutante.
+
+### Dictamen
+
+- `M-000`: no se adopta cambio textual.
+- `M-001`: queda recomendado para aplicacion posterior explicita de la seccion de matriz de superficies.
+- Documento 04: queda recomendado para aplicacion posterior explicita de la subseccion de entrada auxiliar por `operator_trace`.
+- Expediente: conserva grafo, notacion `psi`, metricas y casos 036-043.
+- Prohibiciones: siguen bloqueados `H-Xi`, canonizacion de `Xi`/`Phi`/`TrueSelf`/`psi`, uso clinico/regulado, personas reales, cierre global, promocion de `REPORT_LAYER`, exportacion R4/Gamma, cambio de Nivel C y modo mutante.
+
+### Siguiente ruta posible
+
+Si se decide editar oficialmente `M-001` y Documento 04, la siguiente ruta es:
+
+```text
+MOC-CANON-DOC04-APPLY-001
+```
+
+## D-2026-07-09-005 - Aplicacion oficial Canon/Documento 04
+
+Fecha: 2026-07-09.
+
+Estado: aceptada y ejecutada.
+
+Expediente: `MOC-001`.
+
+Documento base: `03_Expedientes/MOC-001_Aplicacion_Oficial_Canon_Doc04_001.md`.
+
+Auditoria: `03_Expedientes/MOC-001_Auditoria_Aplicacion_Oficial_Canon_Doc04_001.md`.
+
+Decision espejo: `03_Expedientes/MOC-001_Decision_Aplicacion_Oficial_Canon_Doc04_001.md`.
+
+Herramienta: `06_Automatizacion/moc_canon_doc04_apply_001.py`.
+
+Reporte: `06_Automatizacion/reportes/moc_canon_doc04_apply_001_report.md`.
+
+### Decision
+
+Se acepta y ejecuta `MOC-CANON-DOC04-APPLY-001` como aplicacion oficial acotada de la matriz MOC sobre `M-001` y Documento 04.
+
+La aplicacion no modifica `M-000`.
+
+### Cambios oficiales
+
+- `01_Canon/M-001_Auditoria_Arquitectonica.md`: adopta la seccion `Matriz de superficies para intervenciones de nivel sensible`.
+- `02_Documentos/04_Algebra_Operacional.md`: adopta la subseccion `Entrada auxiliar por traza local de grafo`.
+- `01_Canon/M-000_Reglas_Fundamentales.md`: permanece sin cambio textual.
+
+### Repercusiones
+
+- Canon cambia solo en `M-001`, en grado procedimental de auditoria.
+- Documento 04 admite `operator_trace_graph` como evidencia auxiliar para `Pi_op`.
+- El grafo completo, la metrica local, la notacion local y los casos 036-043 permanecen solo en expediente.
+- Nivel C, `C-001`, `C-002`, `REPORT_LAYER`, R4/Gamma y los cierres globales permanecen sin promocion.
+
+### Flags conservados
+
+```text
+m000_text_changed: false
+m001_official_section_added: true
+doc04_official_section_added: true
+official_application_executed: true
+mutating_mode_authorized: false
+external_use_authorized: false
+global_closure_authorized: false
+report_layer_promoted: false
+r4_gamma_global_export_authorized: false
+nivel_c_modified: false
+h_xi_admitted: false
+psi_canonized: false
+regulated_domain_authorized: false
+```
+
+### Prohibiciones conservadas
+
+Siguen bloqueados `H-Xi`, canonizacion de `Xi`/`Phi`/`TrueSelf`/vocabulario local, uso clinico/regulado, personas reales, publicacion o redistribucion sin revision legal externa, cierre global, promocion de `REPORT_LAYER`, exportacion R4/Gamma, cambio de Nivel C y modo mutante.
+
+### Siguiente ruta posible
+
+No se recomienda otra adopcion oficial inmediata. La ruta defensible posterior es:
+
+```text
+MOC-CANON-DOC04-POST-ADOPT-MONITOR-001
+```

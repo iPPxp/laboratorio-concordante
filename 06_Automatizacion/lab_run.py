@@ -13,6 +13,7 @@ from typing import Any
 
 MODULE_DIR = Path(__file__).resolve().parent
 REPORT_DIR = MODULE_DIR / "reportes"
+AO_EXTERNAL_REAL_MANIFESTS = MODULE_DIR / "fixtures" / "ao_external_evidence_real_001_manifests.json"
 KEY_TARGETS = [
     "CURRENT_STATE.md",
     "05_Estado_Proyecto/ESTADO_ACTUAL.md",
@@ -49,9 +50,21 @@ def load_components() -> dict[str, Any]:
         "ao_auth": load_module("ao_authority_global_001_component", MODULE_DIR / "ao_authority_global_001.py"),
         "ao_ext_cov": load_module("ao_ext_cov_001_component", MODULE_DIR / "ao_ext_cov_001.py"),
         "ao_ppi_004": load_module("ao_ppi_bridge_004_component", MODULE_DIR / "ao_ppi_bridge_004.py"),
+        "ao_proto_ind": load_module("ao_protocol_independent_001_component", MODULE_DIR / "ao_protocol_independent_001.py"),
+        "ao_eq_gate": load_module("ao_eq_global_gate_001_component", MODULE_DIR / "ao_eq_global_gate_001.py"),
+        "ao_conf_gate": load_module("ao_conf_global_gate_001_component", MODULE_DIR / "ao_conf_global_gate_001.py"),
+        "ao_report_promo": load_module("ao_report_promo_gate_001_component", MODULE_DIR / "ao_report_promo_gate_001.py"),
+        "ao_r4_gamma_gate": load_module("ao_r4_gamma_export_gate_002_component", MODULE_DIR / "ao_r4_gamma_export_gate_002.py"),
+        "ao_global_readiness": load_module("ao_global_readiness_001_component", MODULE_DIR / "ao_global_readiness_001.py"),
+        "ao_ext_evid_gate": load_module("ao_external_evidence_gate_001_component", MODULE_DIR / "ao_external_evidence_gate_001.py"),
         "rl_serial": load_module("report_layer_serialization_component", MODULE_DIR / "report_layer_serialization.py"),
         "rl_c002": load_module("report_layer_c002_gate_component", MODULE_DIR / "report_layer_c002_gate.py"),
         "moc": load_module("moc_eval_component", MODULE_DIR / "moc_eval.py"),
+        "moc_exp_graph": load_module("moc_experience_graph_001_component", MODULE_DIR / "moc_experience_graph_001.py"),
+        "moc_auth_gate": load_module("moc_exp_graph_authorization_gate_001_component", MODULE_DIR / "moc_exp_graph_authorization_gate_001.py"),
+        "moc_impact": load_module("moc_canon_doc04_impact_001_component", MODULE_DIR / "moc_canon_doc04_impact_001.py"),
+        "moc_adopt_gate": load_module("moc_canon_doc04_adopt_gate_001_component", MODULE_DIR / "moc_canon_doc04_adopt_gate_001.py"),
+        "moc_apply": load_module("moc_canon_doc04_apply_001_component", MODULE_DIR / "moc_canon_doc04_apply_001.py"),
     }
 
 
@@ -217,6 +230,38 @@ def build_run_report(root: Path, scope: str) -> dict[str, Any]:
     write_json(root, "06_Automatizacion/reportes/ao_ppi_bridge_004_report.json", ao_ppi_004_report)
     write_report(root, "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md", components["ao_ppi_004"].render_md(ao_ppi_004_report))
 
+    ao_proto_ind_report = components["ao_proto_ind"].build_report(root)
+    write_json(root, "06_Automatizacion/reportes/ao_protocol_independent_001_report.json", ao_proto_ind_report)
+    write_report(root, "06_Automatizacion/reportes/ao_protocol_independent_001_report.md", components["ao_proto_ind"].render_md(ao_proto_ind_report))
+
+    ao_eq_gate_report = components["ao_eq_gate"].build_report(root)
+    write_json(root, "06_Automatizacion/reportes/ao_eq_global_gate_001_report.json", ao_eq_gate_report)
+    write_report(root, "06_Automatizacion/reportes/ao_eq_global_gate_001_report.md", components["ao_eq_gate"].render_md(ao_eq_gate_report))
+
+    ao_conf_gate_report = components["ao_conf_gate"].build_report(root)
+    write_json(root, "06_Automatizacion/reportes/ao_conf_global_gate_001_report.json", ao_conf_gate_report)
+    write_report(root, "06_Automatizacion/reportes/ao_conf_global_gate_001_report.md", components["ao_conf_gate"].render_md(ao_conf_gate_report))
+
+    ao_report_promo_report = components["ao_report_promo"].build_report(root)
+    write_json(root, "06_Automatizacion/reportes/ao_report_promo_gate_001_report.json", ao_report_promo_report)
+    write_report(root, "06_Automatizacion/reportes/ao_report_promo_gate_001_report.md", components["ao_report_promo"].render_md(ao_report_promo_report))
+
+    ao_r4_gamma_gate_report = components["ao_r4_gamma_gate"].build_report(root)
+    write_json(root, "06_Automatizacion/reportes/ao_r4_gamma_export_gate_002_report.json", ao_r4_gamma_gate_report)
+    write_report(root, "06_Automatizacion/reportes/ao_r4_gamma_export_gate_002_report.md", components["ao_r4_gamma_gate"].render_md(ao_r4_gamma_gate_report))
+
+    ao_global_readiness_report = components["ao_global_readiness"].build_report(root)
+    write_json(root, "06_Automatizacion/reportes/ao_global_readiness_001_report.json", ao_global_readiness_report)
+    write_report(root, "06_Automatizacion/reportes/ao_global_readiness_001_report.md", components["ao_global_readiness"].render_md(ao_global_readiness_report))
+
+    ao_ext_evid_gate_report = components["ao_ext_evid_gate"].build_report(root)
+    write_json(root, "06_Automatizacion/reportes/ao_external_evidence_gate_001_report.json", ao_ext_evid_gate_report)
+    write_report(root, "06_Automatizacion/reportes/ao_external_evidence_gate_001_report.md", components["ao_ext_evid_gate"].render_md(ao_ext_evid_gate_report))
+
+    ao_ext_real_report = components["ao_ext_evid_gate"].build_report(root, AO_EXTERNAL_REAL_MANIFESTS)
+    write_json(root, "06_Automatizacion/reportes/ao_external_evidence_real_001_report.json", ao_ext_real_report)
+    write_report(root, "06_Automatizacion/reportes/ao_external_evidence_real_001_report.md", components["ao_ext_evid_gate"].render_md(ao_ext_real_report))
+
     rl_c002_report = components["rl_c002"].build_report(root)
     write_json(root, "06_Automatizacion/reportes/report_layer_c002_gate_report.json", rl_c002_report)
     write_report(root, "06_Automatizacion/reportes/report_layer_c002_gate_report.md", components["rl_c002"].render_md(rl_c002_report))
@@ -224,6 +269,26 @@ def build_run_report(root: Path, scope: str) -> dict[str, Any]:
     moc_report = components["moc"].build_report(root)
     write_json(root, "06_Automatizacion/reportes/moc_eval_report.json", moc_report)
     write_report(root, "06_Automatizacion/reportes/moc_eval_report.md", components["moc"].render_md(moc_report))
+
+    moc_exp_graph_report = components["moc_exp_graph"].build_report(root)
+    write_json(root, "06_Automatizacion/reportes/moc_experience_graph_001_report.json", moc_exp_graph_report)
+    write_report(root, "06_Automatizacion/reportes/moc_experience_graph_001_report.md", components["moc_exp_graph"].render_md(moc_exp_graph_report))
+
+    moc_auth_gate_report = components["moc_auth_gate"].build_report(root)
+    write_json(root, "06_Automatizacion/reportes/moc_exp_graph_authorization_gate_001_report.json", moc_auth_gate_report)
+    write_report(root, "06_Automatizacion/reportes/moc_exp_graph_authorization_gate_001_report.md", components["moc_auth_gate"].render_md(moc_auth_gate_report))
+
+    moc_impact_report = components["moc_impact"].build_report(root)
+    write_json(root, "06_Automatizacion/reportes/moc_canon_doc04_impact_001_report.json", moc_impact_report)
+    write_report(root, "06_Automatizacion/reportes/moc_canon_doc04_impact_001_report.md", components["moc_impact"].render_md(moc_impact_report))
+
+    moc_adopt_gate_report = components["moc_adopt_gate"].build_report(root)
+    write_json(root, "06_Automatizacion/reportes/moc_canon_doc04_adopt_gate_001_report.json", moc_adopt_gate_report)
+    write_report(root, "06_Automatizacion/reportes/moc_canon_doc04_adopt_gate_001_report.md", components["moc_adopt_gate"].render_md(moc_adopt_gate_report))
+
+    moc_apply_report = components["moc_apply"].build_report(root)
+    write_json(root, "06_Automatizacion/reportes/moc_canon_doc04_apply_001_report.json", moc_apply_report)
+    write_report(root, "06_Automatizacion/reportes/moc_canon_doc04_apply_001_report.md", components["moc_apply"].render_md(moc_apply_report))
 
     risk_report = components["risk"].build_report(root)
     write_json(root, "06_Automatizacion/reportes/lab_risk_report.json", risk_report)
@@ -234,7 +299,7 @@ def build_run_report(root: Path, scope: str) -> dict[str, Any]:
     write_json(root, "06_Automatizacion/reportes/lab_continuity_report.json", continuity_report)
     write_report(root, "06_Automatizacion/reportes/lab_continuity_report.md", components["continuity"].render_md(continuity_report))
 
-    resultado, recomendacion = combine_result([min_report, med_report, board_report, continuity_report, risk_report, r001_report, ao_ext_report, ao_wide_report, ao_ppi_002_report, ao_ppi_003_report, rl_serial_report, ao_tcs_report, ao_auth_report, ao_ext_cov_report, ao_ppi_004_report, rl_c002_report, moc_report])
+    resultado, recomendacion = combine_result([min_report, med_report, board_report, continuity_report, risk_report, r001_report, ao_ext_report, ao_wide_report, ao_ppi_002_report, ao_ppi_003_report, rl_serial_report, ao_tcs_report, ao_auth_report, ao_ext_cov_report, ao_ppi_004_report, ao_proto_ind_report, ao_eq_gate_report, ao_conf_gate_report, ao_report_promo_report, ao_r4_gamma_gate_report, ao_global_readiness_report, ao_ext_evid_gate_report, ao_ext_real_report, rl_c002_report, moc_report, moc_exp_graph_report, moc_auth_gate_report, moc_impact_report, moc_adopt_gate_report, moc_apply_report])
     run_report = {
         "report_id": "DO-LAB-RUN-" + dt.datetime.now().strftime("%Y%m%d-%H%M%S"),
         "expediente": "AUT-001",
@@ -259,8 +324,21 @@ def build_run_report(root: Path, scope: str) -> dict[str, Any]:
             step_entry("ao_authority_global_001", "AO-AUTH-GLOBAL-001", ao_auth_report, "06_Automatizacion/reportes/ao_authority_global_001_report.md", "06_Automatizacion/reportes/ao_authority_global_001_report.json"),
             step_entry("ao_ext_cov_001", "AO-EXT-COV-001", ao_ext_cov_report, "06_Automatizacion/reportes/ao_ext_cov_001_report.md", "06_Automatizacion/reportes/ao_ext_cov_001_report.json"),
             step_entry("ao_ppi_bridge_004", "AO-PPI-BRIDGE-004", ao_ppi_004_report, "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md", "06_Automatizacion/reportes/ao_ppi_bridge_004_report.json"),
+            step_entry("ao_protocol_independent_001", "AO-PROTO-INDEP-001", ao_proto_ind_report, "06_Automatizacion/reportes/ao_protocol_independent_001_report.md", "06_Automatizacion/reportes/ao_protocol_independent_001_report.json"),
+            step_entry("ao_eq_global_gate_001", "AO-EQ-GLOBAL-GATE-001", ao_eq_gate_report, "06_Automatizacion/reportes/ao_eq_global_gate_001_report.md", "06_Automatizacion/reportes/ao_eq_global_gate_001_report.json"),
+            step_entry("ao_conf_global_gate_001", "AO-CONF-GLOBAL-GATE-001", ao_conf_gate_report, "06_Automatizacion/reportes/ao_conf_global_gate_001_report.md", "06_Automatizacion/reportes/ao_conf_global_gate_001_report.json"),
+            step_entry("ao_report_promo_gate_001", "AO-REPORT-PROMO-GATE-001", ao_report_promo_report, "06_Automatizacion/reportes/ao_report_promo_gate_001_report.md", "06_Automatizacion/reportes/ao_report_promo_gate_001_report.json"),
+            step_entry("ao_r4_gamma_export_gate_002", "AO-R4-GAMMA-EXPORT-GATE-002", ao_r4_gamma_gate_report, "06_Automatizacion/reportes/ao_r4_gamma_export_gate_002_report.md", "06_Automatizacion/reportes/ao_r4_gamma_export_gate_002_report.json"),
+            step_entry("ao_global_readiness_001", "AO-GLOBAL-READINESS-001", ao_global_readiness_report, "06_Automatizacion/reportes/ao_global_readiness_001_report.md", "06_Automatizacion/reportes/ao_global_readiness_001_report.json"),
+            step_entry("ao_external_evidence_gate_001", "AO-EXT-EVID-GATE-001", ao_ext_evid_gate_report, "06_Automatizacion/reportes/ao_external_evidence_gate_001_report.md", "06_Automatizacion/reportes/ao_external_evidence_gate_001_report.json"),
+            step_entry("ao_external_evidence_real_001", "AO-EXT-REAL-001", ao_ext_real_report, "06_Automatizacion/reportes/ao_external_evidence_real_001_report.md", "06_Automatizacion/reportes/ao_external_evidence_real_001_report.json"),
             step_entry("report_layer_c002_gate", "REPORT-LAYER-C002-GATE-001", rl_c002_report, "06_Automatizacion/reportes/report_layer_c002_gate_report.md", "06_Automatizacion/reportes/report_layer_c002_gate_report.json"),
             step_entry("moc_eval", "MOC-EVAL-001", moc_report, "06_Automatizacion/reportes/moc_eval_report.md", "06_Automatizacion/reportes/moc_eval_report.json"),
+            step_entry("moc_experience_graph_001", "MOC-EXP-GRAPH-CHECK-001", moc_exp_graph_report, "06_Automatizacion/reportes/moc_experience_graph_001_report.md", "06_Automatizacion/reportes/moc_experience_graph_001_report.json"),
+            step_entry("moc_exp_graph_authorization_gate_001", "MOC-GRAPH-CANON-DOC04-GATE-001", moc_auth_gate_report, "06_Automatizacion/reportes/moc_exp_graph_authorization_gate_001_report.md", "06_Automatizacion/reportes/moc_exp_graph_authorization_gate_001_report.json"),
+            step_entry("moc_canon_doc04_impact_001", "MOC-CANON-DOC04-IMPACT-001", moc_impact_report, "06_Automatizacion/reportes/moc_canon_doc04_impact_001_report.md", "06_Automatizacion/reportes/moc_canon_doc04_impact_001_report.json"),
+            step_entry("moc_canon_doc04_adopt_gate_001", "MOC-CANON-DOC04-ADOPT-GATE-001", moc_adopt_gate_report, "06_Automatizacion/reportes/moc_canon_doc04_adopt_gate_001_report.md", "06_Automatizacion/reportes/moc_canon_doc04_adopt_gate_001_report.json"),
+            step_entry("moc_canon_doc04_apply_001", "MOC-CANON-DOC04-APPLY-CHECK-001", moc_apply_report, "06_Automatizacion/reportes/moc_canon_doc04_apply_001_report.md", "06_Automatizacion/reportes/moc_canon_doc04_apply_001_report.json"),
         ],
         "next_action": "Decidir o mantener el estatus de cierre de AUT-001 con advertencias visibles.",
     }
@@ -283,7 +361,7 @@ def build_run_report(root: Path, scope: str) -> dict[str, Any]:
         "recomendacion": summary_report.get("recomendacion"),
         "headline": summary_report.get("headline"),
     }
-    run_report["resultado"], run_report["recomendacion"] = combine_result([min_report, med_report, board_report, continuity_report, risk_report, r001_report, ao_ext_report, ao_wide_report, ao_ppi_002_report, ao_ppi_003_report, rl_serial_report, ao_tcs_report, ao_auth_report, ao_ext_cov_report, ao_ppi_004_report, rl_c002_report, moc_report, summary_report])
+    run_report["resultado"], run_report["recomendacion"] = combine_result([min_report, med_report, board_report, continuity_report, risk_report, r001_report, ao_ext_report, ao_wide_report, ao_ppi_002_report, ao_ppi_003_report, rl_serial_report, ao_tcs_report, ao_auth_report, ao_ext_cov_report, ao_ppi_004_report, ao_proto_ind_report, ao_eq_gate_report, ao_conf_gate_report, ao_report_promo_report, ao_r4_gamma_gate_report, ao_global_readiness_report, ao_ext_evid_gate_report, ao_ext_real_report, rl_c002_report, moc_report, moc_exp_graph_report, moc_auth_gate_report, moc_impact_report, moc_adopt_gate_report, moc_apply_report, summary_report])
     if (root / AUT_CLOSE_DECISION).exists() and run_report["resultado"] in {"ok", "advertencia"}:
         run_report["recomendacion"] = "mantener_cierre_operativo"
 

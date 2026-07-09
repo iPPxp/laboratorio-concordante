@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-LAB-RUN-20260706-153516",
+  "report_id": "DO-LAB-RUN-20260708-210447",
   "expediente": "AUT-001",
   "algoritmo": "DO-LAB-RUN-001",
   "resultado": "advertencia",
@@ -12,7 +12,7 @@
       "algorithm": "DO-CHECK-MIN-001",
       "resultado": "advertencia",
       "recomendacion": "continuar_sin_transformar",
-      "findings": 214,
+      "findings": 266,
       "markdown": "06_Automatizacion/reportes/do_check_min_repo.md",
       "json": "06_Automatizacion/reportes/do_check_min_repo.json"
     },
@@ -21,7 +21,7 @@
       "algorithm": "DO-CHECK-MED-001",
       "resultado": "advertencia",
       "recomendacion": "continuar_sin_transformar",
-      "findings": 433,
+      "findings": 474,
       "markdown": "06_Automatizacion/reportes/do_check_med_repo.md",
       "json": "06_Automatizacion/reportes/do_check_med_repo.json"
     },
@@ -39,7 +39,7 @@
       "algorithm": "DO-LAB-CONTINUITY-001",
       "resultado": "advertencia",
       "recomendacion": "continuar_sin_transformar",
-      "findings": 433,
+      "findings": 474,
       "markdown": "06_Automatizacion/reportes/lab_continuity_report.md",
       "json": "06_Automatizacion/reportes/lab_continuity_report.json"
     },
@@ -48,7 +48,7 @@
       "algorithm": "DO-LAB-RISK-001",
       "resultado": "advertencia_clasificada",
       "recomendacion": "mantener_cierre_operativo",
-      "findings": 458,
+      "findings": 551,
       "markdown": "06_Automatizacion/reportes/lab_risk_report.md",
       "json": "06_Automatizacion/reportes/lab_risk_report.json"
     },
@@ -143,6 +143,78 @@
       "json": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.json"
     },
     {
+      "name": "ao_protocol_independent_001",
+      "algorithm": "AO-PROTO-INDEP-001",
+      "resultado": "ok",
+      "recomendacion": "aceptar_protocolo_reproducible_local",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/ao_protocol_independent_001_report.md",
+      "json": "06_Automatizacion/reportes/ao_protocol_independent_001_report.json"
+    },
+    {
+      "name": "ao_eq_global_gate_001",
+      "algorithm": "AO-EQ-GLOBAL-GATE-001",
+      "resultado": "ok",
+      "recomendacion": "mantener_equivalencia_global_no_autorizada",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/ao_eq_global_gate_001_report.md",
+      "json": "06_Automatizacion/reportes/ao_eq_global_gate_001_report.json"
+    },
+    {
+      "name": "ao_conf_global_gate_001",
+      "algorithm": "AO-CONF-GLOBAL-GATE-001",
+      "resultado": "ok",
+      "recomendacion": "mantener_confluencia_global_no_autorizada",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/ao_conf_global_gate_001_report.md",
+      "json": "06_Automatizacion/reportes/ao_conf_global_gate_001_report.json"
+    },
+    {
+      "name": "ao_report_promo_gate_001",
+      "algorithm": "AO-REPORT-PROMO-GATE-001",
+      "resultado": "ok",
+      "recomendacion": "mantener_report_layer_como_candidata_futura_no_promovida",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/ao_report_promo_gate_001_report.md",
+      "json": "06_Automatizacion/reportes/ao_report_promo_gate_001_report.json"
+    },
+    {
+      "name": "ao_r4_gamma_export_gate_002",
+      "algorithm": "AO-R4-GAMMA-EXPORT-GATE-002",
+      "resultado": "ok",
+      "recomendacion": "mantener_r4_gamma_sin_exportacion_general",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/ao_r4_gamma_export_gate_002_report.md",
+      "json": "06_Automatizacion/reportes/ao_r4_gamma_export_gate_002_report.json"
+    },
+    {
+      "name": "ao_global_readiness_001",
+      "algorithm": "AO-GLOBAL-READINESS-001",
+      "resultado": "ok",
+      "recomendacion": "mantener_no_autorizado",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/ao_global_readiness_001_report.md",
+      "json": "06_Automatizacion/reportes/ao_global_readiness_001_report.json"
+    },
+    {
+      "name": "ao_external_evidence_gate_001",
+      "algorithm": "AO-EXT-EVID-GATE-001",
+      "resultado": "ok",
+      "recomendacion": "mantener_no_autorizado_preparar_fuente_externa_real",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/ao_external_evidence_gate_001_report.md",
+      "json": "06_Automatizacion/reportes/ao_external_evidence_gate_001_report.json"
+    },
+    {
+      "name": "ao_external_evidence_real_001",
+      "algorithm": "AO-EXT-REAL-001",
+      "resultado": "ok",
+      "recomendacion": "solicitar_decision_global_posterior",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/ao_external_evidence_real_001_report.md",
+      "json": "06_Automatizacion/reportes/ao_external_evidence_real_001_report.json"
+    },
+    {
       "name": "report_layer_c002_gate",
       "algorithm": "REPORT-LAYER-C002-GATE-001",
       "resultado": "ok",
@@ -159,6 +231,51 @@
       "findings": 0,
       "markdown": "06_Automatizacion/reportes/moc_eval_report.md",
       "json": "06_Automatizacion/reportes/moc_eval_report.json"
+    },
+    {
+      "name": "moc_experience_graph_001",
+      "algorithm": "MOC-EXP-GRAPH-CHECK-001",
+      "resultado": "ok",
+      "recomendacion": "mantener_como_evidencia_local_no_canonica",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/moc_experience_graph_001_report.md",
+      "json": "06_Automatizacion/reportes/moc_experience_graph_001_report.json"
+    },
+    {
+      "name": "moc_exp_graph_authorization_gate_001",
+      "algorithm": "MOC-GRAPH-CANON-DOC04-GATE-001",
+      "resultado": "ok",
+      "recomendacion": "preparar_matriz_impacto_candidata",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/moc_exp_graph_authorization_gate_001_report.md",
+      "json": "06_Automatizacion/reportes/moc_exp_graph_authorization_gate_001_report.json"
+    },
+    {
+      "name": "moc_canon_doc04_impact_001",
+      "algorithm": "MOC-CANON-DOC04-IMPACT-001",
+      "resultado": "ok",
+      "recomendacion": "mantener_como_propuesta_candidata",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/moc_canon_doc04_impact_001_report.md",
+      "json": "06_Automatizacion/reportes/moc_canon_doc04_impact_001_report.json"
+    },
+    {
+      "name": "moc_canon_doc04_adopt_gate_001",
+      "algorithm": "MOC-CANON-DOC04-ADOPT-GATE-001",
+      "resultado": "ok",
+      "recomendacion": "aplicacion_posterior_explicita",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/moc_canon_doc04_adopt_gate_001_report.md",
+      "json": "06_Automatizacion/reportes/moc_canon_doc04_adopt_gate_001_report.json"
+    },
+    {
+      "name": "moc_canon_doc04_apply_001",
+      "algorithm": "MOC-CANON-DOC04-APPLY-CHECK-001",
+      "resultado": "ok",
+      "recomendacion": "mantener_adopcion_acotada",
+      "findings": 0,
+      "markdown": "06_Automatizacion/reportes/moc_canon_doc04_apply_001_report.md",
+      "json": "06_Automatizacion/reportes/moc_canon_doc04_apply_001_report.json"
     },
     {
       "name": "resumen_ejecutivo",

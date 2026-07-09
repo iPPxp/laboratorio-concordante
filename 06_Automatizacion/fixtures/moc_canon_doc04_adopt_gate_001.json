@@ -1,0 +1,67 @@
+{
+  "gate_id": "MOC-CANON-DOC04-ADOPT-GATE-001",
+  "expediente": "MOC-001",
+  "decision": "D-2026-07-09-004",
+  "expected": "lista_para_aplicacion_posterior",
+  "required_documents": [
+    "01_Canon/M-000_Reglas_Fundamentales.md",
+    "01_Canon/M-001_Auditoria_Arquitectonica.md",
+    "02_Documentos/04_Algebra_Operacional.md",
+    "03_Expedientes/MOC-001_Matriz_Impacto_Canon_Doc04_001.md",
+    "03_Expedientes/MOC-001_Propuesta_Candidata_Canon_Doc04_001.md",
+    "03_Expedientes/MOC-001_Auditoria_Matriz_Impacto_Canon_Doc04_001.md",
+    "03_Expedientes/MOC-001_Decision_Matriz_Impacto_Canon_Doc04_001.md"
+  ],
+  "flags": {
+    "impact_matrix_accepted": true,
+    "candidate_text_exact": true,
+    "m000_adoption_recommended": false,
+    "m001_adoption_recommended": true,
+    "doc04_adoption_recommended": true,
+    "official_file_edit_executed": false,
+    "official_edit_requires_explicit_apply_step": true,
+    "mutating_mode_authorized": false,
+    "external_use_authorized": false,
+    "global_closure_authorized": false,
+    "report_layer_promoted": false,
+    "r4_gamma_global_export_authorized": false,
+    "nivel_c_modified": false,
+    "h_xi_admitted": false,
+    "psi_canonized": false,
+    "real_persons_or_regulated_domain": false
+  },
+  "surfaces": [
+    {
+      "surface": "M000",
+      "recommendation": "no_adoptar",
+      "requires_official_edit": false,
+      "reason": "m000_ya_cubre_reglas"
+    },
+    {
+      "surface": "M001",
+      "recommendation": "lista_para_aplicacion_posterior",
+      "requires_official_edit": true,
+      "requires_explicit_apply_step": true,
+      "reason": "matriz_superficies_auditoria"
+    },
+    {
+      "surface": "DOC04",
+      "recommendation": "lista_para_aplicacion_posterior",
+      "requires_official_edit": true,
+      "requires_explicit_apply_step": true,
+      "reason": "entrada_auxiliar_operator_trace"
+    },
+    {
+      "surface": "EXPEDIENTE",
+      "recommendation": "conservar_local",
+      "requires_official_edit": false,
+      "reason": "notacion_psi_y_casos_permanecen_locales"
+    },
+    {
+      "surface": "PROHIBIDO",
+      "recommendation": "bloquear",
+      "requires_official_edit": false,
+      "reason": "prohibiciones_intactas"
+    }
+  ]
+}

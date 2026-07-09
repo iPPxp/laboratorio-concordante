@@ -1,0 +1,155 @@
+{
+  "report_id": "MOC-CANON-DOC04-IMPACT-001-20260708-210446",
+  "expediente": "MOC-001",
+  "algoritmo": "MOC-CANON-DOC04-IMPACT-001",
+  "resultado": "ok",
+  "recomendacion": "mantener_como_propuesta_candidata",
+  "transformacion_permitida": false,
+  "impact_matrix_accepted": true,
+  "candidate_proposal_prepared": true,
+  "m000_text_change_recommended": false,
+  "m001_candidate_amendment_recommended": true,
+  "doc04_candidate_amendment_recommended": true,
+  "official_canon_edit_authorized": false,
+  "official_doc04_edit_authorized": false,
+  "mutating_mode_authorized": false,
+  "external_use_authorized": false,
+  "global_closure_authorized": false,
+  "report_layer_promoted": false,
+  "r4_gamma_global_export_authorized": false,
+  "summary": {
+    "rows": 10,
+    "surfaces": 5,
+    "findings": 0
+  },
+  "matrix": {
+    "matrix_id": "MOC-CANON-DOC04-IMPACT-001",
+    "expediente": "MOC-001",
+    "decision": "D-2026-07-09-003",
+    "expected": "impact_matrix_accepted",
+    "flags": {
+      "official_canon_edit_authorized": false,
+      "official_doc04_edit_authorized": false,
+      "mutating_mode_authorized": false,
+      "external_use_authorized": false,
+      "global_closure_authorized": false,
+      "report_layer_promoted": false,
+      "r4_gamma_global_export_authorized": false,
+      "m000_text_change_recommended": false,
+      "m001_candidate_amendment_recommended": true,
+      "doc04_candidate_amendment_recommended": true
+    },
+    "required_surfaces": [
+      "M000",
+      "M001",
+      "DOC04",
+      "EXPEDIENTE",
+      "PROHIBIDO"
+    ],
+    "rows": [
+      {
+        "id": "MOC-IMPACT-M000-001",
+        "surface": "M000",
+        "target": "M-000.1",
+        "candidate_action": "referenciar_sin_editar",
+        "official_edit_authorized": false,
+        "reason": "separacion_de_niveles"
+      },
+      {
+        "id": "MOC-IMPACT-M000-003",
+        "surface": "M000",
+        "target": "M-000.3",
+        "candidate_action": "bloquear_promocion_automatica",
+        "official_edit_authorized": false,
+        "reason": "casos_no_promueven_canon"
+      },
+      {
+        "id": "MOC-IMPACT-M001-002",
+        "surface": "M001",
+        "target": "procedimiento_paso_8",
+        "candidate_action": "propuesta_candidata_matriz_superficies",
+        "official_edit_authorized": false,
+        "requires_future_decision": true,
+        "reason": "separar_modifica_propone_local_prohibido"
+      },
+      {
+        "id": "MOC-IMPACT-M001-004",
+        "surface": "M001",
+        "target": "salida_esperada",
+        "candidate_action": "propuesta_candidata_salida_superficies",
+        "official_edit_authorized": false,
+        "requires_future_decision": true,
+        "reason": "auditoria_de_nivel_sensible"
+      },
+      {
+        "id": "MOC-IMPACT-DOC04-001",
+        "surface": "DOC04",
+        "target": "contrato_comun_operador",
+        "candidate_action": "propuesta_candidata_entrada_auxiliar_trace",
+        "official_edit_authorized": false,
+        "requires_future_decision": true,
+        "reason": "operator_trace_como_evidencia_local"
+      },
+      {
+        "id": "MOC-IMPACT-DOC04-002",
+        "surface": "DOC04",
+        "target": "Pi_op",
+        "candidate_action": "propuesta_candidata_perfil_restringido",
+        "official_edit_authorized": false,
+        "requires_future_decision": true,
+        "reason": "grafo_local_no_operador_general"
+      },
+      {
+        "id": "MOC-IMPACT-EXP-001",
+        "surface": "EXPEDIENTE",
+        "target": "notacion_psi",
+        "candidate_action": "mantener_en_expediente",
+        "official_edit_authorized": false,
+        "reason": "evitar_promocion_indebida"
+      },
+      {
+        "id": "MOC-IMPACT-EXP-002",
+        "surface": "EXPEDIENTE",
+        "target": "casos_036_043",
+        "candidate_action": "mantener_como_evidencia_local",
+        "official_edit_authorized": false,
+        "reason": "no_muestra_empirica_real"
+      },
+      {
+        "id": "MOC-IMPACT-PROH-001",
+        "surface": "PROHIBIDO",
+        "target": "H-Xi_Xi_Phi_TrueSelf_psi",
+        "candidate_action": "rechazar",
+        "official_edit_authorized": false,
+        "reason": "no_canonizacion"
+      },
+      {
+        "id": "MOC-IMPACT-PROH-003",
+        "surface": "PROHIBIDO",
+        "target": "cierres_globales",
+        "candidate_action": "rechazar",
+        "official_edit_authorized": false,
+        "reason": "confluencia_y_equivalencia_abiertas"
+      }
+    ]
+  },
+  "result": {
+    "matrix_id": "MOC-CANON-DOC04-IMPACT-001",
+    "expected": "impact_matrix_accepted",
+    "actual": "impact_matrix_accepted",
+    "passed": true,
+    "blockers": [],
+    "warnings": [
+      "propuesta_candidata_no_incorporada"
+    ],
+    "surfaces": [
+      "DOC04",
+      "EXPEDIENTE",
+      "M000",
+      "M001",
+      "PROHIBIDO"
+    ],
+    "row_count": 10
+  },
+  "findings": []
+}

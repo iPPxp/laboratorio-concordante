@@ -1,0 +1,120 @@
+{
+  "report_id": "AO-R4-GAMMA-EXPORT-GATE-002-20260708-210446",
+  "expediente": "AO-001",
+  "algoritmo": "AO-R4-GAMMA-EXPORT-GATE-002",
+  "suite_id": "AO-R4-GAMMA-EXPORT-GATE-CASES-002",
+  "resultado": "ok",
+  "recomendacion": "mantener_r4_gamma_sin_exportacion_general",
+  "transformacion_permitida": false,
+  "restricted_interoperable_profile_retained": true,
+  "r4_gamma_global_export_authorized": false,
+  "global_export_authorized": false,
+  "global_closure_authorized": false,
+  "report_layer_promoted": false,
+  "source_evidence": [
+    "R4-FORMAL-AUD-001",
+    "GAMMA-FORMAL-AUD-001",
+    "AO-001_Criterios_Uso_R4_Gamma_Fuera_AUD",
+    "AO-PPI-BRIDGE-004",
+    "AO-AUTH-GLOBAL-001"
+  ],
+  "scope_guard": {
+    "modifica_doc04": false,
+    "modifica_canon": false,
+    "modifica_nivel_c": false,
+    "crea_nivel_c": false,
+    "exporta_r4_gamma": false,
+    "cierra_confluencia_global": false,
+    "cierra_equivalencia_global": false,
+    "promueve_report_layer": false,
+    "autoriza_transformacion": false
+  },
+  "summary": {
+    "cases": 7,
+    "passed": 7,
+    "failed": 0,
+    "findings": 0,
+    "restricted_interoperable_cases": 1,
+    "blocked_cases": 6,
+    "by_outcome": {
+      "perfil_restringido_interoperable": 1,
+      "bloqueo_exportacion_general": 1,
+      "bloqueo_semantica_dependiente_aud": 1,
+      "bloqueo_dominio_externo_insuficiente": 1,
+      "bloqueo_cierre_global_implicito": 1,
+      "bloqueo_modo_mutante": 1,
+      "bloqueo_cambio_nivel_c": 1
+    }
+  },
+  "case_results": [
+    {
+      "case_id": "AO-R4G-EXP-001",
+      "expected": "perfil_restringido_interoperable",
+      "actual": "perfil_restringido_interoperable",
+      "passed": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-R4G-EXP-002",
+      "expected": "bloqueo_exportacion_general",
+      "actual": "bloqueo_exportacion_general",
+      "passed": true,
+      "blockers": [
+        "exportacion_general"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-R4G-EXP-003",
+      "expected": "bloqueo_semantica_dependiente_aud",
+      "actual": "bloqueo_semantica_dependiente_aud",
+      "passed": true,
+      "blockers": [
+        "semantica_dependiente_aud"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-R4G-EXP-004",
+      "expected": "bloqueo_dominio_externo_insuficiente",
+      "actual": "bloqueo_dominio_externo_insuficiente",
+      "passed": true,
+      "blockers": [
+        "dominio_externo_insuficiente"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-R4G-EXP-005",
+      "expected": "bloqueo_cierre_global_implicito",
+      "actual": "bloqueo_cierre_global_implicito",
+      "passed": true,
+      "blockers": [
+        "cierre_global_implicito"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-R4G-EXP-006",
+      "expected": "bloqueo_modo_mutante",
+      "actual": "bloqueo_modo_mutante",
+      "passed": true,
+      "blockers": [
+        "modo_mutante"
+      ],
+      "warnings": []
+    },
+    {
+      "case_id": "AO-R4G-EXP-007",
+      "expected": "bloqueo_cambio_nivel_c",
+      "actual": "bloqueo_cambio_nivel_c",
+      "passed": true,
+      "blockers": [
+        "cambio_nivel_c"
+      ],
+      "warnings": []
+    }
+  ],
+  "findings": []
+}

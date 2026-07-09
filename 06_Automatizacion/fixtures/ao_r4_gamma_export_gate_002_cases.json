@@ -1,0 +1,96 @@
+{
+  "suite_id": "AO-R4-GAMMA-EXPORT-GATE-CASES-002",
+  "source_evidence": [
+    "R4-FORMAL-AUD-001",
+    "GAMMA-FORMAL-AUD-001",
+    "AO-001_Criterios_Uso_R4_Gamma_Fuera_AUD",
+    "AO-PPI-BRIDGE-004",
+    "AO-AUTH-GLOBAL-001"
+  ],
+  "cases": [
+    {
+      "case_id": "AO-R4G-EXP-001",
+      "description": "Perfil restringido interoperable como referencia local controlada.",
+      "export_scope": "restringido",
+      "semantic_independent": true,
+      "external_domain": "sintetico_amplio",
+      "global_closure_claim": false,
+      "transformacion_permitida": false,
+      "modifies_level_c": false,
+      "authority_claim": "local",
+      "expected": "perfil_restringido_interoperable"
+    },
+    {
+      "case_id": "AO-R4G-EXP-002",
+      "description": "La exportacion general queda bloqueada.",
+      "export_scope": "general",
+      "semantic_independent": true,
+      "external_domain": "sintetico_amplio",
+      "global_closure_claim": false,
+      "transformacion_permitida": false,
+      "modifies_level_c": false,
+      "authority_claim": "local",
+      "expected": "bloqueo_exportacion_general"
+    },
+    {
+      "case_id": "AO-R4G-EXP-003",
+      "description": "Dependencia semantica de AUD impide exportacion general.",
+      "export_scope": "restringido",
+      "semantic_independent": false,
+      "external_domain": "sintetico_amplio",
+      "global_closure_claim": false,
+      "transformacion_permitida": false,
+      "modifies_level_c": false,
+      "authority_claim": "local",
+      "expected": "bloqueo_semantica_dependiente_aud"
+    },
+    {
+      "case_id": "AO-R4G-EXP-004",
+      "description": "Dominio externo ausente bloquea exportacion.",
+      "export_scope": "restringido",
+      "semantic_independent": true,
+      "external_domain": "ausente",
+      "global_closure_claim": false,
+      "transformacion_permitida": false,
+      "modifies_level_c": false,
+      "authority_claim": "local",
+      "expected": "bloqueo_dominio_externo_insuficiente"
+    },
+    {
+      "case_id": "AO-R4G-EXP-005",
+      "description": "La exportacion no puede implicar cierre global.",
+      "export_scope": "restringido",
+      "semantic_independent": true,
+      "external_domain": "sintetico_amplio",
+      "global_closure_claim": true,
+      "transformacion_permitida": false,
+      "modifies_level_c": false,
+      "authority_claim": "local",
+      "expected": "bloqueo_cierre_global_implicito"
+    },
+    {
+      "case_id": "AO-R4G-EXP-006",
+      "description": "La compuerta no admite modo mutante.",
+      "export_scope": "restringido",
+      "semantic_independent": true,
+      "external_domain": "sintetico_amplio",
+      "global_closure_claim": false,
+      "transformacion_permitida": true,
+      "modifies_level_c": false,
+      "authority_claim": "local",
+      "expected": "bloqueo_modo_mutante"
+    },
+    {
+      "case_id": "AO-R4G-EXP-007",
+      "description": "R4/Gamma no modifican Nivel C ni Canon por compuerta local.",
+      "export_scope": "restringido",
+      "semantic_independent": true,
+      "external_domain": "sintetico_amplio",
+      "global_closure_claim": false,
+      "transformacion_permitida": false,
+      "modifies_level_c": true,
+      "authority_claim": "canon",
+      "expected": "bloqueo_cambio_nivel_c"
+    }
+  ]
+}

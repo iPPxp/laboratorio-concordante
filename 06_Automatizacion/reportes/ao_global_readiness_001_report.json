@@ -1,0 +1,151 @@
+{
+  "report_id": "AO-GLOBAL-READINESS-001-20260708-210446",
+  "expediente": "AO-001",
+  "algoritmo": "AO-GLOBAL-READINESS-001",
+  "suite_id": "AO-GLOBAL-READINESS-MATRIX-001",
+  "resultado": "ok",
+  "recomendacion": "mantener_no_autorizado",
+  "readiness_result": "mantener_no_autorizado",
+  "ready_for_global_decision": false,
+  "transformacion_permitida": false,
+  "global_closure_authorized": false,
+  "global_export_authorized": false,
+  "global_equivalence_authorized": false,
+  "global_confluence_authorized": false,
+  "report_layer_promoted": false,
+  "r4_gamma_global_export_authorized": false,
+  "source_evidence": [
+    "AO-PPI-BRIDGE-004",
+    "AO-PROTO-INDEP-001",
+    "AO-EQ-GLOBAL-GATE-001",
+    "AO-CONF-GLOBAL-GATE-001",
+    "AO-REPORT-PROMO-GATE-001",
+    "AO-R4-GAMMA-EXPORT-GATE-002"
+  ],
+  "scope_guard": {
+    "modifica_doc04": false,
+    "modifica_canon": false,
+    "modifica_nivel_c": false,
+    "crea_nivel_c": false,
+    "reabre_p_pi_0": false,
+    "reabre_p_pi_1": false,
+    "cierra_confluencia_global": false,
+    "cierra_equivalencia_global": false,
+    "promueve_report_layer": false,
+    "exporta_r4_gamma": false,
+    "autoriza_transformacion": false
+  },
+  "summary": {
+    "conditions": 6,
+    "passed": 6,
+    "failed": 0,
+    "findings": 0,
+    "satisfied_local": 2,
+    "partial_local": 0,
+    "missing_global": 2,
+    "scope_blocked": 0,
+    "no_promotion": 1,
+    "no_export": 1,
+    "local_progress": 4,
+    "global_blocking": 4,
+    "by_status": {
+      "satisfecha_local": 2,
+      "faltante_global": 2,
+      "no_promocion": 1,
+      "no_exportacion": 1
+    },
+    "by_front": {
+      "protocolo_independiente": 1,
+      "equivalencia_global": 1,
+      "confluencia_global": 1,
+      "report_layer": 1,
+      "r4_gamma": 1,
+      "guardas_superiores": 1
+    }
+  },
+  "condition_results": [
+    {
+      "condition_id": "AO-GR-001",
+      "front": "protocolo_independiente",
+      "status": "satisfecha_local",
+      "local_progress": true,
+      "blocks_global_readiness": false,
+      "evidence": [
+        "AO-PROTO-INDEP-001"
+      ],
+      "gap": "reproducibilidad local aceptada, sin validacion externa real",
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-GR-002",
+      "front": "equivalencia_global",
+      "status": "faltante_global",
+      "local_progress": false,
+      "blocks_global_readiness": true,
+      "evidence": [
+        "AO-PPI-BRIDGE-004",
+        "AO-EQ-GLOBAL-GATE-001"
+      ],
+      "gap": "equivalencia global de proyecciones no demostrada fuera de evidencia local/sintetica",
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-GR-003",
+      "front": "confluencia_global",
+      "status": "faltante_global",
+      "local_progress": false,
+      "blocks_global_readiness": true,
+      "evidence": [
+        "AO-PPI-BRIDGE-004",
+        "AO-CONF-GLOBAL-GATE-001"
+      ],
+      "gap": "confluencia global no demostrada en rutas independientes externas",
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-GR-004",
+      "front": "report_layer",
+      "status": "no_promocion",
+      "local_progress": true,
+      "blocks_global_readiness": true,
+      "evidence": [
+        "AO-REPORT-PROMO-GATE-001",
+        "REPORT-LAYER-C002-GATE-001"
+      ],
+      "gap": "REPORT_LAYER queda local pre-C y candidata futura, no promovida",
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-GR-005",
+      "front": "r4_gamma",
+      "status": "no_exportacion",
+      "local_progress": true,
+      "blocks_global_readiness": true,
+      "evidence": [
+        "AO-R4-GAMMA-EXPORT-GATE-002"
+      ],
+      "gap": "R4/Gamma conservan uso restringido interoperable, sin exportacion general",
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "condition_id": "AO-GR-006",
+      "front": "guardas_superiores",
+      "status": "satisfecha_local",
+      "local_progress": true,
+      "blocks_global_readiness": false,
+      "evidence": [
+        "AO-AUTH-GLOBAL-001",
+        "AO-PPI-LOCAL-CLOSE-001"
+      ],
+      "gap": "guardas preservadas; no equivale a autorizacion global",
+      "passed": true,
+      "warnings": []
+    }
+  ],
+  "findings": []
+}

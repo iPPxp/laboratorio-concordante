@@ -1,6 +1,6 @@
 # LAB_CONTINUITY_REPORT
 
-report_id: DO-LAB-CONTINUITY-20260706-153515
+report_id: DO-LAB-CONTINUITY-20260708-210446
 expediente: AUT-001
 algoritmo: DO-LAB-CONTINUITY-001
 resultado: advertencia
@@ -10,16 +10,16 @@ scope: repo
 
 ## Estado operativo
 
-- expediente activo inmediato: `AO-001` queda como frente operativo inmediato con `AO-PPI-BRIDGE-004` aceptado como matriz consolidada local. La siguiente ruta defensible requiere decision separada: protocolo AO reproducible independiente, promocion formal de `REPORT_LAYER`, exportacion R4/Gamma o cierre global; ninguna queda autorizada.
-- proximo objetivo: Conservar `AO-PPI-BRIDGE-004` como matriz consolidada aceptada; no usarla como cierre global.
-- ultima decision operativa: `AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md` (`D-2026-07-06-023`): acepta `AO-PPI-BRIDGE-004` como matriz consolidada local; deja cinco condiciones `satisfecha_local`, dos `parcial_local`, dos `faltante_global` y tres `bloqueada_por_alcance`, con `global_closure_authorized: false`.
+- expediente activo inmediato: `AO-001` queda como frente operativo inmediato con `AO-GLOBAL-READINESS-001` aceptado como matriz de no autorizacion global, `AO-PPI-BRIDGE-004` fijado como estado actual local de deudas, `AO-EXT-INDEP-001` / `AO-EXT-EVID-GATE-001` preparados para admisibilidad externa y `AO-EXT-REAL-001` admitido preliminarmente como evidencia externa real. La siguiente ruta defensible requiere decision separada de reconsideracion; ninguna promocion, exportacion ni cierre global queda autorizado.
+- proximo objetivo: Conservar `AO-GLOBAL-READINESS-001` como matriz vigente de no autorizacion global y `AO-PPI-BRIDGE-004` como estado actual local de deudas `AO-PPI`.
+- ultima decision operativa: `MOC-001_Decision_Aplicacion_Oficial_Canon_Doc04_001.md` (`D-2026-07-09-005`): acepta y ejecuta `MOC-CANON-DOC04-APPLY-001`; `M-001` adopta matriz de superficies para intervenciones de nivel sensible y Documento 04 adopta entrada auxiliar por traza local de grafo. `M-000` queda sin cambio textual; no hay modo mutante, uso externo, Nivel C, cierre global, promocion de `REPORT_LAYER` ni exportacion R4/Gamma.
 
 ## Cobertura integrada
 
 - tablero: ok (0 hallazgos)
-- chequeo medio: advertencia (422 archivos, 433 hallazgos)
+- chequeo medio: advertencia (469 archivos, 474 hallazgos)
 - automatizaciones presentes: 11/7
-- hallazgos combinados: 433
+- hallazgos combinados: 474
 
 ## Riesgos
 
@@ -63,7 +63,7 @@ scope: repo
 - [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/AO
 - [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/C-001/C-002
 - [warning] DO-CHECK-MED-001 CURRENT_STATE.md - referencia_no_materializada: MOC/C-001/C-002
-- ... 393 hallazgos adicionales en JSON.
+- ... 434 hallazgos adicionales en JSON.
 
 ## Siguientes acciones
 

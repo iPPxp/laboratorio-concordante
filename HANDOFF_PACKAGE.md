@@ -70,6 +70,24 @@ Nota posterior 2026-07-06-019: `AO-REPORT-SERIAL-001` queda aceptado por `D-2026
 
 Nota posterior 2026-07-06-023: `AO-TCS-REL-001`, `AO-AUTH-GLOBAL-001`, `AO-EXT-COV-001` y `AO-PPI-BRIDGE-004` quedan aceptados por `D-2026-07-06-020` a `D-2026-07-06-023` como avance local no mutante; la matriz consolidada mantiene `global_closure_authorized: false`, `global_export_authorized: false`, `REPORT_LAYER` local pre-C y `P-PI.0` / `P-PI.1` cerrados como frentes.
 
+Nota posterior 2026-07-06-024: `AO-PPI-LOCAL-CLOSE-001` queda aceptado por `D-2026-07-06-024` como cierre local de fase `AO-PPI`; `AO-PPI-BRIDGE-004` queda fijado como estado actual de deudas. No cierra `AO-001`, no autoriza cierre global, no promueve `REPORT_LAYER`, no exporta R4/Gamma y no reabre `P-PI.0` / `P-PI.1`.
+
+Nota posterior 2026-07-06-030: `AO-PROTO-INDEP-001`, `AO-EQ-GLOBAL-GATE-001`, `AO-CONF-GLOBAL-GATE-001`, `AO-REPORT-PROMO-GATE-001`, `AO-R4-GAMMA-EXPORT-GATE-002` y `AO-GLOBAL-READINESS-001` quedan aceptados por `D-2026-07-06-025` a `D-2026-07-06-030`. La salida vigente es `mantener_no_autorizado`: no hay cierre global, no se promueve `REPORT_LAYER`, no se exporta R4/Gamma y `AO-PPI-BRIDGE-004` sigue como estado local de deudas.
+
+Nota posterior 2026-07-06-034: `AO-EXT-INDEP-001` y `AO-EXT-EVID-GATE-001` quedan aceptados por `D-2026-07-06-031` a `D-2026-07-06-034` como ruta preparada de admisibilidad externa. No hay busqueda, descarga ni ejecucion real; `external_evidence_ready: false` y `AO-GLOBAL-READINESS-001` sigue vigente.
+
+Nota posterior 2026-07-06-035: `AO-EXT-REAL-001` queda aceptado por `D-2026-07-06-035` como evidencia externa independiente real admisible preliminarmente. La suite real produce `external_evidence_ready: true`, pero conserva `external_evidence_executed: false`, `global_closure_authorized: false`, `global_export_authorized: false`, `report_layer_promoted: false` y `r4_gamma_global_export_authorized: false`.
+
+Nota posterior 2026-07-09-001: `MOC-EXP-GRAPH-001` queda aceptado por `D-2026-07-09-001` como grafo local de experiencia, con metrica geometrica local, puente AO por `operator_trace`, herramienta no mutante y casos 036-043 importados como evidencia documental externa estructural. No modifica Canon, Documento 04, Nivel C ni `C-002`.
+
+Nota posterior 2026-07-09-002: `MOC-GRAPH-CANON-DOC04-GATE-001` queda aceptada por `D-2026-07-09-002` como autorizacion interna preparatoria para propuestas candidatas hacia Canon y Documento 04. Esa preparacion queda ejecutada despues por `D-2026-07-09-003`; no hay edicion oficial directa ni uso externo autorizado.
+
+Nota posterior 2026-07-09-003: `MOC-CANON-DOC04-IMPACT-001` queda aceptada por `D-2026-07-09-003` como matriz no mutante y propuesta candidata. No autoriza edicion oficial; deja `M-000` sin cambio textual recomendado, prepara candidata para `M-001`, prepara candidata para Documento 04 y mantiene grafo/notacion/casos solo en expediente.
+
+Nota posterior 2026-07-09-004: `MOC-CANON-DOC04-ADOPT-GATE-001` queda aceptada por `D-2026-07-09-004` como lista para aplicacion posterior explicita. No ejecuta edicion oficial; `M-001` y Documento 04 quedan recomendados para aplicacion posterior, `M-000` queda sin adopcion textual.
+
+Nota posterior 2026-07-09-005: `MOC-CANON-DOC04-APPLY-001` queda aceptada y ejecutada por `D-2026-07-09-005` como aplicacion oficial acotada. `M-001` adopta matriz de superficies y Documento 04 adopta entrada auxiliar por traza local de grafo; `M-000` queda sin cambio textual. Conserva sin promocion Nivel C, `REPORT_LAYER`, R4/Gamma y cierres globales.
+
 Fecha: 2026-07-02.
 
 ## Aviso de desactivacion
@@ -258,6 +276,9 @@ El paquete no cambia autoridad: Canon, estado, documentos oficiales, decisiones 
 - `AO-PPI-BRIDGE-003` queda aceptado por `D-2026-07-06-018` como matriz de condiciones faltantes; sirve como evidencia local y lista de deudas, no como cierre global.
 - `AO-REPORT-SERIAL-001` queda aceptado por `D-2026-07-06-019` como serializacion interfrente local de `REPORT_LAYER`; atiende localmente `AO-PPI-GC-004`, no promueve `REPORT_LAYER` y no autoriza cierre global.
 - `AO-TCS-REL-001`, `AO-AUTH-GLOBAL-001`, `AO-EXT-COV-001` y `AO-PPI-BRIDGE-004` quedan aceptados por `D-2026-07-06-020` a `D-2026-07-06-023`; reducen deudas en grado local o parcial local, no como cierre global.
+- `AO-PPI-LOCAL-CLOSE-001` queda aceptado por `D-2026-07-06-024`; cierra localmente la fase `AO-PPI` y fija `AO-PPI-BRIDGE-004` como estado actual de deudas, no como cierre global.
+- `AO-EXT-INDEP-001` y `AO-EXT-EVID-GATE-001` quedan aceptados por `D-2026-07-06-031` a `D-2026-07-06-034`; preparan admisibilidad externa con compuerta base `external_evidence_ready: false`.
+- `AO-EXT-REAL-001` queda aceptado por `D-2026-07-06-035`; aporta evidencia externa real admisible preliminarmente con `external_evidence_ready: true`, sin ejecucion empirica ni autorizacion global.
 - `RH-002` procesa y cierra el lote historico de Descargas.
 - `REC-001` reconcilia inicialmente Canon/baselines y conserva deudas refinadas sin autorizar canonizacion, importacion o apertura de psicologia.
 - `AUD-001` tiene contratos, matriz basal y proyeccion RFC validados provisionalmente hasta `VAL-029`.
@@ -287,7 +308,7 @@ El paquete no cambia autoridad: Canon, estado, documentos oficiales, decisiones 
 ## Siguiente objetivo
 
 ```text
-Mantener `MOC-ROUTE-011` como ruta teorico-operativa sin ejecucion; conservar AO-001 con `AO-PPI-BRIDGE-004` como evidencia local fuerte consolidada, avanzar solo por decision separada hacia protocolo AO reproducible independiente, promocion/cierre global o exportacion R4/Gamma, y mantener abiertas Confluencia global, Equivalencia de proyecciones, `AO-DOC04-WIDE-001`, `REPORT_LAYER` local pre-C con compuerta no mutante `C-002`, bloqueo de exportacion general R4/Gamma, `PM-001` como deuda condicionada y maduracion posterior de `TCS-001`.
+Mantener `MOC-ROUTE-011` como ruta teorico-operativa sin ejecucion; conservar AO-001 con `AO-PPI-LOCAL-CLOSE-001` como cierre local de fase, `AO-PPI-BRIDGE-004` como estado actual de deudas, `AO-GLOBAL-READINESS-001` como no autorizacion global, `AO-EXT-EVID-GATE-001` como compuerta preparada y `AO-EXT-REAL-001` como evidencia real admitida preliminarmente; avanzar solo por decision separada hacia promocion/cierre global o exportacion R4/Gamma, y mantener abiertas Confluencia global, Equivalencia de proyecciones, `REPORT_LAYER` local pre-C con compuerta no mutante `C-002`, bloqueo de exportacion general R4/Gamma, `PM-001` como deuda condicionada y maduracion posterior de `TCS-001`.
 ```
 
 ## Fuera del paquete

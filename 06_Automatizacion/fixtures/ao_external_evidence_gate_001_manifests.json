@@ -1,0 +1,121 @@
+{
+  "suite_id": "AO-EXT-EVID-GATE-MANIFESTS-001",
+  "real_evidence_supplied": false,
+  "source_evidence": [
+    "AO-GLOBAL-READINESS-001",
+    "AO-PPI-BRIDGE-004",
+    "AO-PROTO-INDEP-001",
+    "AO-AUTH-GLOBAL-001"
+  ],
+  "manifests": [
+    {
+      "manifest_id": "AO-EXT-EVID-001",
+      "source_family": "manifiesto_externo_pendiente",
+      "artifact_type": "registro_politicas_no_regulado",
+      "source_uri": "",
+      "real_external_source": false,
+      "source_identifiable": true,
+      "source_generated_by_lab_fixture": false,
+      "comparable_unit_present": true,
+      "witness_present": true,
+      "restrictions": [
+        "no_personas_reales",
+        "no_clinico",
+        "no_regulado"
+      ],
+      "authority": "documental_externa_identificada",
+      "traceability_present": true,
+      "clinical_domain": false,
+      "regulated_domain": false,
+      "contains_real_persons": false,
+      "expected": "pendiente_fuente_real"
+    },
+    {
+      "manifest_id": "AO-EXT-EVID-002",
+      "source_family": "dominio_no_autorizado",
+      "artifact_type": "registro_clinico",
+      "source_uri": "",
+      "real_external_source": true,
+      "source_identifiable": true,
+      "source_generated_by_lab_fixture": false,
+      "comparable_unit_present": true,
+      "witness_present": true,
+      "restrictions": [
+        "no_uso_empirico"
+      ],
+      "authority": "documental_externa_identificada",
+      "traceability_present": true,
+      "clinical_domain": true,
+      "regulated_domain": true,
+      "contains_real_persons": false,
+      "expected": "rechazada_por_dominio"
+    },
+    {
+      "manifest_id": "AO-EXT-EVID-003",
+      "source_family": "autoridad_historica",
+      "artifact_type": "extracto_historico",
+      "source_uri": "urn:hist:control",
+      "real_external_source": true,
+      "source_identifiable": true,
+      "source_generated_by_lab_fixture": false,
+      "comparable_unit_present": true,
+      "witness_present": true,
+      "restrictions": [
+        "solo_trazabilidad"
+      ],
+      "authority": "registro_historico",
+      "historical_authority_direct": true,
+      "traceability_present": true,
+      "clinical_domain": false,
+      "regulated_domain": false,
+      "contains_real_persons": false,
+      "expected": "rechazada_por_autoridad"
+    },
+    {
+      "manifest_id": "AO-EXT-EVID-004",
+      "source_family": "unidad_no_comparable",
+      "artifact_type": "registro_tecnico_externo",
+      "source_uri": "urn:external:non-comparable-control",
+      "real_external_source": true,
+      "source_identifiable": true,
+      "source_generated_by_lab_fixture": false,
+      "comparable_unit_present": false,
+      "witness_present": true,
+      "restrictions": [
+        "no_personas_reales",
+        "no_clinico",
+        "no_regulado"
+      ],
+      "authority": "documental_externa_identificada",
+      "traceability_present": true,
+      "clinical_domain": false,
+      "regulated_domain": false,
+      "contains_real_persons": false,
+      "expected": "rechazada_por_alcance"
+    },
+    {
+      "manifest_id": "AO-EXT-EVID-005",
+      "source_family": "control_compuerta",
+      "artifact_type": "registro_politicas_no_regulado",
+      "source_uri": "urn:external-control:complete-manifest",
+      "real_external_source": true,
+      "source_identifiable": true,
+      "source_generated_by_lab_fixture": false,
+      "control_manifest": true,
+      "comparable_unit_present": true,
+      "witness_present": true,
+      "restrictions": [
+        "no_personas_reales",
+        "no_clinico",
+        "no_regulado",
+        "no_ejecucion_real"
+      ],
+      "authority": "documental_externa_identificada",
+      "traceability_present": true,
+      "clinical_domain": false,
+      "regulated_domain": false,
+      "contains_real_persons": false,
+      "expected": "admisible_preliminar"
+    }
+  ]
+}

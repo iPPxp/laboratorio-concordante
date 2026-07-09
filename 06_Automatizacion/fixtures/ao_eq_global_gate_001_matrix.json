@@ -1,0 +1,116 @@
+{
+  "suite_id": "AO-EQ-GLOBAL-GATE-MATRIX-001",
+  "source_evidence": [
+    "AO-PPI-BRIDGE-004",
+    "AO-PROTO-INDEP-001",
+    "AO-DOC04-WIDE-001",
+    "AO-REPORT-LAYER-BRIDGE-001",
+    "AO-AUTH-GLOBAL-001"
+  ],
+  "conditions": [
+    {
+      "condition_id": "AO-EQ-GC-001",
+      "domain": "testigo",
+      "status": "satisfecha_local",
+      "local_credit": true,
+      "blocks_global_equivalence": false,
+      "evidence": ["AO-PPI-BRIDGE-004", "AO-PPI-STRONG-001"],
+      "gap": "testigo local compartido, no testigo universal",
+      "global_equivalence_claim": false,
+      "promotes_report_layer": false,
+      "exports_r4_gamma": false,
+      "modifies_level_c": false
+    },
+    {
+      "condition_id": "AO-EQ-GC-002",
+      "domain": "pi_doc_pi_rep_pi_op",
+      "status": "satisfecha_local",
+      "local_credit": true,
+      "blocks_global_equivalence": false,
+      "evidence": ["AO-DOC04-WIDE-TEST-001", "AO-PPI-BRIDGE-002"],
+      "gap": "equivalencia local de proyecciones, no cobertura de todos los dominios",
+      "global_equivalence_claim": false,
+      "promotes_report_layer": false,
+      "exports_r4_gamma": false,
+      "modifies_level_c": false
+    },
+    {
+      "condition_id": "AO-EQ-GC-003",
+      "domain": "report_layer",
+      "status": "parcial_local",
+      "local_credit": true,
+      "blocks_global_equivalence": false,
+      "evidence": ["AO-REPORT-SERIAL-001", "REPORT-LAYER-C002-GATE-001"],
+      "gap": "serializacion local, no contrato exportable global",
+      "global_equivalence_claim": false,
+      "promotes_report_layer": false,
+      "exports_r4_gamma": false,
+      "modifies_level_c": false
+    },
+    {
+      "condition_id": "AO-EQ-GC-004",
+      "domain": "autoridad",
+      "status": "parcial_local",
+      "local_credit": true,
+      "blocks_global_equivalence": false,
+      "evidence": ["AO-AUTH-GLOBAL-001"],
+      "gap": "autoridad local ordenada, no autoridad global autorizada",
+      "global_equivalence_claim": false,
+      "promotes_report_layer": false,
+      "exports_r4_gamma": false,
+      "modifies_level_c": false
+    },
+    {
+      "condition_id": "AO-EQ-GC-005",
+      "domain": "protocolo_independiente",
+      "status": "satisfecha_local",
+      "local_credit": true,
+      "blocks_global_equivalence": false,
+      "evidence": ["AO-PROTO-INDEP-001"],
+      "gap": "reproducibilidad local, no validacion externa independiente",
+      "global_equivalence_claim": false,
+      "promotes_report_layer": false,
+      "exports_r4_gamma": false,
+      "modifies_level_c": false
+    },
+    {
+      "condition_id": "AO-EQ-GC-006",
+      "domain": "cobertura_externa",
+      "status": "faltante_global",
+      "local_credit": false,
+      "blocks_global_equivalence": true,
+      "evidence": ["AO-EXT-COV-001", "AO-PPI-BRIDGE-004"],
+      "gap": "cobertura externa sigue sintetica y no independiente",
+      "global_equivalence_claim": false,
+      "promotes_report_layer": false,
+      "exports_r4_gamma": false,
+      "modifies_level_c": false
+    },
+    {
+      "condition_id": "AO-EQ-GC-007",
+      "domain": "dominio_universal",
+      "status": "bloqueada_por_alcance",
+      "local_credit": false,
+      "blocks_global_equivalence": true,
+      "evidence": ["AO-PPI-LOCAL-CLOSE-001"],
+      "gap": "el expediente no autoriza dominio universal",
+      "global_equivalence_claim": false,
+      "promotes_report_layer": false,
+      "exports_r4_gamma": false,
+      "modifies_level_c": false
+    },
+    {
+      "condition_id": "AO-EQ-GC-008",
+      "domain": "no_promocion",
+      "status": "satisfecha_local",
+      "local_credit": true,
+      "blocks_global_equivalence": false,
+      "evidence": ["AO-REPORT-LAYER-NIVEL-C-001", "AO-R4-GAMMA-EXPORT-GATE-001"],
+      "gap": "guardas locales vigentes",
+      "global_equivalence_claim": false,
+      "promotes_report_layer": false,
+      "exports_r4_gamma": false,
+      "modifies_level_c": false
+    }
+  ]
+}

@@ -1,5 +1,31 @@
 # Changelog
 
+## 2026-07-09
+
+- Aceptada y ejecutada `D-2026-07-09-005`, aplicacion oficial acotada `MOC-CANON-DOC04-APPLY-001`: `M-001` adopta matriz de superficies, Documento 04 adopta entrada auxiliar por traza local de grafo y `M-000` queda sin cambio textual.
+- Agregada herramienta no mutante `moc_canon_doc04_apply_001.py`, fixture, prueba unitaria y reportes para verificar la aplicacion oficial acotada sin modo mutante, sin uso externo, sin Nivel C nuevo y sin cierre global.
+- Aceptada `D-2026-07-09-004`, compuerta `MOC-CANON-DOC04-ADOPT-GATE-001`: `M-001` y Documento 04 quedan listos para aplicacion posterior explicita; no se ejecuta edicion oficial, `M-000` queda sin adopcion textual y las prohibiciones siguen intactas.
+- Agregada herramienta no mutante `moc_canon_doc04_adopt_gate_001.py`, fixture, prueba unitaria y reportes para validar la compuerta de adopcion posterior.
+- Aceptada `D-2026-07-09-003`, matriz no mutante `MOC-CANON-DOC04-IMPACT-001`: `M-000` queda sin cambio textual recomendado, `M-001` y Documento 04 quedan como propuestas candidatas futuras, y lo prohibido permanece bloqueado.
+- Agregada herramienta no mutante `moc_canon_doc04_impact_001.py`, fixture, prueba unitaria y reportes para validar que la matriz no autoriza edicion oficial, uso externo, modo mutante ni cierre global.
+- Aceptada `D-2026-07-09-002`, autorizacion interna preparatoria para que `MOC-EXP-GRAPH-001` prepare matriz de impacto y propuestas candidatas hacia Canon y Documento 04.
+- Agregada compuerta no mutante `moc_exp_graph_authorization_gate_001.py`, fixture, prueba y reportes `moc_exp_graph_authorization_gate_001_report.*`; conserva edicion oficial directa, uso externo y modo mutante en `false`.
+- Aceptado `MOC-EXP-GRAPH-001` como grafo local de experiencia para `MOC-001`, junto con `MOC-GEO-METR-LAB-001` y `MOC-AO-GEO-BRIDGE-001`.
+- Agregada herramienta no mutante `moc_experience_graph_001.py`, fixture `moc_experience_graph_cases.json`, prueba unitaria y reportes `moc_experience_graph_001_report.*`.
+- Importados los casos 036-043 como evidencia documental externa estructural, sin uso clinico, sin personas reales, sin canonizar `psi`/`Xi` y con todos los flags globales en `false`.
+
+## 2026-07-06
+
+- Aceptado `AO-EXT-REAL-001` como primera evidencia externa independiente real admisible preliminarmente; usa RFC 9457 y el registro IANA `HTTP Problem Types` como fuentes documentales externas.
+- Agregado fixture real `ao_external_evidence_real_001_manifests.json`, reporte `ao_external_evidence_real_001_report.*`, prueba unitaria e integracion en `DO-LAB-RUN-001`; conserva `external_evidence_executed: false` y todos los flags globales en `false`.
+- Creados `AO-001_Evidencia_Externa_Real_001.md`, `AO-001_Auditoria_Evidencia_Externa_Real_001.md` y `AO-001_Decision_Evidencia_Externa_Real_001.md`; registrada `D-2026-07-06-035`.
+- Abierto y aceptado `AO-PROTO-INDEP-001` como protocolo reproducible independiente local no mutante; incluye tres perfiles evaluadores, fixture, herramienta, reporte y pruebas.
+- Aceptadas las compuertas `AO-EQ-GLOBAL-GATE-001` y `AO-CONF-GLOBAL-GATE-001`; ambas mantienen Equivalencia global y Confluencia global no autorizadas.
+- Aceptadas las compuertas `AO-REPORT-PROMO-GATE-001` y `AO-R4-GAMMA-EXPORT-GATE-002`; `REPORT_LAYER` queda candidata futura no promovida y R4/Gamma quedan sin exportacion general.
+- Aceptada `AO-GLOBAL-READINESS-001` como matriz consolidada local; resultado vigente `mantener_no_autorizado`.
+- Integradas las seis herramientas nuevas a `DO-LAB-RUN-001` como pasos no mutantes posteriores a `AO-PPI-BRIDGE-004` y previos a `REPORT-LAYER-C002-GATE-001`.
+- Actualizados `CURRENT_STATE.md`, `05_Estado_Proyecto/ESTADO_ACTUAL.md`, `05_Estado_Proyecto/DECISIONES.md`, `05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md`, `README.md`, `HANDOFF.md`, `HANDOFF_PACKAGE.md`, `03_Expedientes/AO-001.md` y documentacion de automatizacion para reflejar D-2026-07-06-025 a D-2026-07-06-030.
+
 ## 2026-07-01
 
 - Creada la estructura inicial del Repositorio del Laboratorio Concordante.
@@ -543,3 +569,11 @@
 - Creadas herramientas `06_Automatizacion/ao_tcs_rel_001.py`, `06_Automatizacion/ao_authority_global_001.py`, `06_Automatizacion/ao_ext_cov_001.py` y `06_Automatizacion/ao_ppi_bridge_004.py`, con fixtures y pruebas unitarias dedicadas; integradas a `DO-LAB-RUN-001`.
 - Creados documentos, auditorias y decisiones `D-2026-07-06-020` a `D-2026-07-06-023` para relacion `AO/TCS`, autoridad local, cobertura externa y matriz consolidada.
 - Actualizados `CURRENT_STATE.md`, `05_Estado_Proyecto/ESTADO_ACTUAL.md`, `README.md`, `05_Estado_Proyecto/DECISIONES.md`, `REVISION_FORMALIZACION_PENDIENTE.md`, `HANDOFF.md`, `HANDOFF_PACKAGE.md`, `AO-001.md`, `06_Automatizacion/README.md` y `06_Automatizacion/reportes/README.md` para reflejar que las tres rutas defendibles quedaron avanzadas localmente y que siguen abiertas Confluencia global, Equivalencia global, protocolo AO reproducible independiente, promocion de `REPORT_LAYER`, exportacion R4/Gamma y maduracion de `TCS-001`.
+- Aceptado `AO-PPI-LOCAL-CLOSE-001` como cierre local de fase `AO-PPI`: `AO-PPI-BRIDGE-004` queda como estado actual de deudas, con `global_closure_authorized: false`, `global_export_authorized: false` y `REPORT_LAYER` sin promocion.
+- Creados `AO-001_Cierre_Local_AO_PPI_001.md`, `AO-001_Auditoria_Cierre_Local_AO_PPI_001.md` y `AO-001_Decision_Cierre_Local_AO_PPI_001.md`; registrada `D-2026-07-06-024`.
+- Actualizados `CURRENT_STATE.md`, `05_Estado_Proyecto/ESTADO_ACTUAL.md`, `README.md`, `05_Estado_Proyecto/DECISIONES.md`, `REVISION_FORMALIZACION_PENDIENTE.md`, `HANDOFF.md`, `HANDOFF_PACKAGE.md` y `AO-001.md` para distinguir cierre local de fase, cierre global no autorizado y deudas globales pendientes.
+- Preparado `AO-EXT-INDEP-001` como ruta local no mutante para evidencia externa independiente no sintetica, sin buscarla, descargarla ni ejecutarla.
+- Creada compuerta `AO-EXT-EVID-GATE-001` en `06_Automatizacion/ao_external_evidence_gate_001.py`, con fixture `ao_external_evidence_gate_001_manifests.json`, prueba unitaria y reportes Markdown/JSON.
+- Integrada `AO-EXT-EVID-GATE-001` a `DO-LAB-RUN-001` despues de `AO-GLOBAL-READINESS-001`; conserva `external_evidence_ready: false`, `global_closure_authorized: false`, `global_export_authorized: false`, `report_layer_promoted: false` y `r4_gamma_global_export_authorized: false`.
+- Creados `AO-001_Evidencia_Externa_Independiente_001.md`, `AO-001_Compuerta_Evidencia_Externa_001.md`, `AO-001_Auditoria_Evidencia_Externa_Independiente_001.md` y `AO-001_Decision_Evidencia_Externa_Independiente_001.md`; registradas `D-2026-07-06-031` a `D-2026-07-06-034`.
+- Actualizados `CURRENT_STATE.md`, `05_Estado_Proyecto/ESTADO_ACTUAL.md`, `README.md`, `05_Estado_Proyecto/DECISIONES.md`, `REVISION_FORMALIZACION_PENDIENTE.md`, `HANDOFF.md`, `HANDOFF_PACKAGE.md`, `AO-001.md`, `06_Automatizacion/README.md` y `06_Automatizacion/reportes/README.md` para marcar la ruta como preparada, no ejecutada empiricamente.

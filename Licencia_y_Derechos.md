@@ -35,6 +35,10 @@ Se permite la lectura, revision, auditoria y modificacion interna del repositori
 - no se presente el MOC como canon definitivo, validacion empirica general, herramienta clinica o producto regulado;
 - se respeten las decisiones, compuertas y restricciones documentadas en el estado vigente del Laboratorio.
 
+## Autorizaciones internas registradas
+
+- `D-2026-07-09-002`: autoriza internamente a `MOC-EXP-GRAPH-001` a preparar propuestas candidatas para Canon y Documento 04 bajo `MOC-GRAPH-CANON-DOC04-GATE-001`. Esta autorizacion no concede uso externo, publicacion, redistribucion, edicion oficial directa ni modo mutante.
+
 ## Usos prohibidos sin autorizacion previa
 
 Sin autorizacion escrita de Laboratorio Concordante, queda prohibido:
@@ -61,4 +65,3 @@ Las automatizaciones del repositorio son no mutantes salvo decision explicita en
 ## Vigencia
 
 Esta licencia permanece vigente hasta que Laboratorio Concordante publique o registre una licencia posterior que la reemplace de forma explicita.
-

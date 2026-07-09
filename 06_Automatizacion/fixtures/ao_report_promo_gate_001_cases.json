@@ -1,0 +1,102 @@
+{
+  "suite_id": "AO-REPORT-PROMO-GATE-CASES-001",
+  "source_evidence": [
+    "AO-REPORT-SERIAL-001",
+    "REPORT-LAYER-C002-GATE-001",
+    "AO-AUTH-GLOBAL-001",
+    "AO-PPI-BRIDGE-004"
+  ],
+  "cases": [
+    {
+      "case_id": "AO-RL-PROMO-001",
+      "description": "REPORT_LAYER queda como candidata futura documentada sin promocion formal.",
+      "contract_exportable": true,
+      "independent_audit": false,
+      "transformacion_permitida": false,
+      "modifies_level_c": false,
+      "authority_claim": "local_pre_c",
+      "global_closure_claim": false,
+      "promotion_by_repetition": false,
+      "authority_source": "decision_local",
+      "expected": "candidata_futura_documentada"
+    },
+    {
+      "case_id": "AO-RL-PROMO-002",
+      "description": "La repeticion de reportes no promueve REPORT_LAYER.",
+      "contract_exportable": true,
+      "independent_audit": true,
+      "transformacion_permitida": false,
+      "modifies_level_c": false,
+      "authority_claim": "local_pre_c",
+      "global_closure_claim": false,
+      "promotion_by_repetition": true,
+      "authority_source": "decision_local",
+      "expected": "bloqueo_promocion_por_repeticion"
+    },
+    {
+      "case_id": "AO-RL-PROMO-003",
+      "description": "El registro historico no opera como autoridad directa.",
+      "contract_exportable": true,
+      "independent_audit": true,
+      "transformacion_permitida": false,
+      "modifies_level_c": false,
+      "authority_claim": "local_pre_c",
+      "global_closure_claim": false,
+      "promotion_by_repetition": false,
+      "authority_source": "registro_historico",
+      "expected": "bloqueo_autoridad_historica"
+    },
+    {
+      "case_id": "AO-RL-PROMO-004",
+      "description": "La promocion no puede implicar cierre global.",
+      "contract_exportable": true,
+      "independent_audit": true,
+      "transformacion_permitida": false,
+      "modifies_level_c": false,
+      "authority_claim": "local_pre_c",
+      "global_closure_claim": true,
+      "promotion_by_repetition": false,
+      "authority_source": "decision_local",
+      "expected": "bloqueo_cierre_global_implicito"
+    },
+    {
+      "case_id": "AO-RL-PROMO-005",
+      "description": "La compuerta de promocion no admite modo mutante.",
+      "contract_exportable": true,
+      "independent_audit": true,
+      "transformacion_permitida": true,
+      "modifies_level_c": false,
+      "authority_claim": "local_pre_c",
+      "global_closure_claim": false,
+      "promotion_by_repetition": false,
+      "authority_source": "decision_local",
+      "expected": "bloqueo_modo_mutante"
+    },
+    {
+      "case_id": "AO-RL-PROMO-006",
+      "description": "REPORT_LAYER no modifica Nivel C ni Canon por compuerta local.",
+      "contract_exportable": true,
+      "independent_audit": true,
+      "transformacion_permitida": false,
+      "modifies_level_c": true,
+      "authority_claim": "nivel_c",
+      "global_closure_claim": false,
+      "promotion_by_repetition": false,
+      "authority_source": "decision_local",
+      "expected": "bloqueo_cambio_nivel_c"
+    },
+    {
+      "case_id": "AO-RL-PROMO-007",
+      "description": "Sin contrato exportable completo, REPORT_LAYER no avanza a promocion.",
+      "contract_exportable": false,
+      "independent_audit": true,
+      "transformacion_permitida": false,
+      "modifies_level_c": false,
+      "authority_claim": "local_pre_c",
+      "global_closure_claim": false,
+      "promotion_by_repetition": false,
+      "authority_source": "decision_local",
+      "expected": "bloqueo_contrato_incompleto"
+    }
+  ]
+}

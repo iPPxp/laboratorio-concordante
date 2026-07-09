@@ -6,6 +6,8 @@ Decision de incorporacion inicial: `D-2026-07-03-011`.
 
 Decision de formalizacion amplia v0: `D-2026-07-06-006`.
 
+Decision de adopcion de entrada auxiliar MOC/grafo: `D-2026-07-09-005`.
+
 Fuentes principales: `AO-001`, `AO-MARCO-001`, `AO-DOC04-FORM-001`, `AO-DOC04-WIDE-001`, `AO-PPI-BRIDGE-001`, `R001-TB-001`, `MOC-AO-BRIDGE-001`, `SRC-010`, `SRC-012`, `SRC-013`, `SRC-023`, `AUD-001_R4_Formal_Local.md`, `AUD-001_Gamma_Formal_Local.md`, `C-001`, `C-002`.
 
 ## Proposito
@@ -371,6 +373,38 @@ Lectura:
 - `Pi_doc` proyecta un artefacto documental sin mutarlo.
 - `Pi_rep` proyecta un reporte o resultado de verificacion.
 - `Pi_op` proyecta una traza operacional y conserva la regla ganadora.
+
+### Entrada auxiliar por traza local de grafo
+
+Adopcion oficial acotada por `D-2026-07-09-005`, desde `MOC-CANON-DOC04-APPLY-001`.
+
+Una estructura local de grafo aceptada por expediente puede entrar a Algebra Operacional solo como evidencia auxiliar si produce una traza de operador.
+
+Forma minima:
+
+```text
+operator_trace_graph =
+  <operator_id, case_id, metric_vector, regla_ganadora,
+   salida_emitida, salida_segura, evidencia, bloqueos, deuda>
+```
+
+Uso permitido:
+
+- alimentar `Pi_op` como evidencia local de regla ganadora;
+- comparar salidas bajo testigo declarado;
+- registrar deuda, bloqueo o candidata provisional;
+- conservar separacion de niveles.
+
+Uso prohibido:
+
+- crear permiso de transformacion;
+- cerrar equivalencia o confluencia global;
+- promover notacion local a Canon;
+- convertir una salida geometrica en diagnostico, consejo practico o autoridad externa.
+
+Si falta contexto, testigo, evidencia, estatus o permiso material, la salida correcta es `B`, `registrar_deuda`, `registrar_problema_abierto` o `emitir_candidata_provisional`, no `ejecutar_cambio_acotado`.
+
+Esta entrada auxiliar no admite `H-Xi`, no canoniza `Xi`, no incorpora vocabulario local como operador oficial y no autoriza dominios clinicos, regulados o con personas reales.
 
 ### Relacion con REPORT_LAYER
 

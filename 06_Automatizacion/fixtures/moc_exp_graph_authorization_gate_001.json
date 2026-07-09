@@ -1,0 +1,35 @@
+{
+  "authorization_id": "MOC-GRAPH-CANON-DOC04-GATE-001",
+  "expediente": "MOC-001",
+  "rights_holder": "Laboratorio Concordante",
+  "license_document": "Licencia_y_Derechos.md",
+  "internal_authorization_document": "03_Expedientes/MOC-001_Autorizacion_Derechos_Grafo_Canon_Doc04.md",
+  "source_documents": [
+    "03_Expedientes/MOC-EXP-GRAPH-001_Grafo_Experiencia_Local.md",
+    "03_Expedientes/MOC-GEO-METR-LAB-001_Metrica_Geometrica_Local.md",
+    "03_Expedientes/MOC-AO-GEO-BRIDGE-001_Puente_AO_Operator_Trace.md"
+  ],
+  "target_surfaces": [
+    "01_Canon/M-000_Reglas_Fundamentales.md",
+    "01_Canon/M-001_Auditoria_Arquitectonica.md",
+    "02_Documentos/04_Algebra_Operacional.md"
+  ],
+  "requested_permission": "candidate_amendment_preparation",
+  "expected": "autorizacion_interna_preparatoria",
+  "flags": {
+    "internal_use_only": true,
+    "rights_holder_declared": true,
+    "license_document_present": true,
+    "candidate_amendment_only": true,
+    "official_edit_requested": false,
+    "external_publication_requested": false,
+    "clinical_or_regulated_use": false,
+    "real_persons": false,
+    "h_xi_admission": false,
+    "xi_canonization": false,
+    "global_closure_requested": false,
+    "mutating_mode_requested": false,
+    "requires_future_decision": true
+  }
+}
+

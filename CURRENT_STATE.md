@@ -28,7 +28,7 @@ Licencia y derechos:
 
 Revision de formalizacion:
 
-- `05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md`: no detecta deuda nueva bloqueante; tras `D-2026-07-06-023`, `AO-TCS-REL-001`, `AO-AUTH-GLOBAL-001`, `AO-EXT-COV-001` y `AO-PPI-BRIDGE-004` quedan aceptados como avance local no mutante. Persisten como pendientes vivos Confluencia global, Equivalencia global, protocolo AO reproducible independiente, exportacion R4/Gamma, promocion formal eventual de `REPORT_LAYER` y maduracion de `TCS-001`.
+- `05_Estado_Proyecto/REVISION_FORMALIZACION_PENDIENTE.md`: no detecta deuda nueva bloqueante; tras `D-2026-07-09-005`, `MOC-CANON-DOC04-APPLY-001` aplica oficialmente en grado acotado la matriz MOC sobre `M-001` y Documento 04, sin modificar `M-000` ni Nivel C. Persisten como pendientes globales vivos Confluencia global, Equivalencia global, promocion formal eventual de `REPORT_LAYER`, exportacion general R4/Gamma, decision posterior sobre uso de evidencia externa real y maduracion de `TCS-001`.
 
 Ultima decision arquitectonica:
 
@@ -36,6 +36,20 @@ Ultima decision arquitectonica:
 
 Ultima decision operativa:
 
+- `MOC-001_Decision_Aplicacion_Oficial_Canon_Doc04_001.md` (`D-2026-07-09-005`): acepta y ejecuta `MOC-CANON-DOC04-APPLY-001`; `M-001` adopta matriz de superficies para intervenciones de nivel sensible y Documento 04 adopta entrada auxiliar por traza local de grafo. `M-000` queda sin cambio textual; no hay modo mutante, uso externo, Nivel C, cierre global, promocion de `REPORT_LAYER` ni exportacion R4/Gamma.
+- `MOC-001_Decision_Compuerta_Incorporacion_Canon_Doc04_001.md` (`D-2026-07-09-004`): acepta `MOC-CANON-DOC04-ADOPT-GATE-001` con salida `lista_para_aplicacion_posterior`; no ejecuta edicion oficial. `M-000` no se adopta; `M-001` y Documento 04 quedan recomendados para aplicacion posterior explicita.
+- `MOC-001_Decision_Matriz_Impacto_Canon_Doc04_001.md` (`D-2026-07-09-003`): acepta `MOC-CANON-DOC04-IMPACT-001` como matriz no mutante y propuesta candidata; no autoriza edicion oficial. `M-000` queda sin cambio textual recomendado; `M-001` y Documento 04 quedan solo como candidatas futuras.
+- `MOC-001_Decision_Autorizacion_Grafo_Canon_Doc04.md` (`D-2026-07-09-002`): acepta `MOC-GRAPH-CANON-DOC04-GATE-001` como autorizacion interna preparatoria; `MOC-EXP-GRAPH-001` puede preparar matriz de impacto y propuestas candidatas para Canon y Documento 04, sin edicion oficial directa, sin uso externo y sin modo mutante.
+- `MOC-001_Decision_Grafo_Experiencia_Local.md` (`D-2026-07-09-001`): acepta `MOC-EXP-GRAPH-001`, `MOC-GEO-METR-LAB-001`, `MOC-AO-GEO-BRIDGE-001` y `MOC-EXP-GRAPH-CHECK-001`; importa casos 036-043 como evidencia documental externa estructural, sin uso clinico, sin canonizar `psi`/`Xi` y con todos los flags globales en `false`.
+- `AO-001_Decision_Evidencia_Externa_Real_001.md` (`D-2026-07-06-035`): acepta `AO-EXT-REAL-001` como evidencia externa independiente real admisible preliminarmente; `external_evidence_ready: true`, `external_evidence_executed: false` y flags globales en `false`.
+- `AO-001_Decision_Evidencia_Externa_Independiente_001.md` (`D-2026-07-06-031` a `D-2026-07-06-034`): acepta `AO-EXT-INDEP-001` y `AO-EXT-EVID-GATE-001`; ruta preparada, no ejecutada empiricamente, con `external_evidence_ready: false` y `AO-GLOBAL-READINESS-001` vigente.
+- `AO-001_Decision_Readiness_Global_001.md` (`D-2026-07-06-030`): acepta `AO-GLOBAL-READINESS-001`; resultado `mantener_no_autorizado`, con `global_closure_authorized: false`, `global_export_authorized: false`, `report_layer_promoted: false` y `r4_gamma_global_export_authorized: false`.
+- `AO-001_Decision_Compuerta_Exportacion_R4_Gamma_002.md` (`D-2026-07-06-029`): acepta `AO-R4-GAMMA-EXPORT-GATE-002`; conserva R4/Gamma como perfil restringido interoperable y bloquea exportacion general.
+- `AO-001_Decision_Compuerta_Promocion_REPORT_LAYER_001.md` (`D-2026-07-06-028`): acepta `AO-REPORT-PROMO-GATE-001`; deja `REPORT_LAYER` como candidata futura documentada, no promovida.
+- `AO-001_Decision_Compuerta_Confluencia_Global_001.md` (`D-2026-07-06-027`): acepta `AO-CONF-GLOBAL-GATE-001`; mantiene `global_confluence_authorized: false`.
+- `AO-001_Decision_Compuerta_Equivalencia_Global_001.md` (`D-2026-07-06-026`): acepta `AO-EQ-GLOBAL-GATE-001`; mantiene `global_equivalence_authorized: false`.
+- `AO-001_Decision_Protocolo_Reproducible_Independiente_001.md` (`D-2026-07-06-025`): acepta `AO-PROTO-INDEP-001` como protocolo reproducible independiente local no mutante.
+- `AO-001_Decision_Cierre_Local_AO_PPI_001.md` (`D-2026-07-06-024`): acepta `AO-PPI-LOCAL-CLOSE-001` como cierre local de fase `AO-PPI`; fija `AO-PPI-BRIDGE-004` como estado actual de deudas y conserva `global_closure_authorized: false`.
 - `AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md` (`D-2026-07-06-023`): acepta `AO-PPI-BRIDGE-004` como matriz consolidada local; deja cinco condiciones `satisfecha_local`, dos `parcial_local`, dos `faltante_global` y tres `bloqueada_por_alcance`, con `global_closure_authorized: false`.
 - `AO-001_Decision_Cobertura_Externa_Amplia_001.md` (`D-2026-07-06-022`): acepta `AO-EXT-COV-001` como cobertura externa amplia sintetica no regulada; reduce `AO-PPI-GC-006` a `parcial_local`.
 - `AO-001_Decision_Criterio_Autoridad_Global_001.md` (`D-2026-07-06-021`): acepta `AO-AUTH-GLOBAL-001` como criterio local de autoridad entre niveles; reduce `AO-PPI-GC-005` a `parcial_local` y conserva `global_authority_authorized: false`.
@@ -179,6 +193,11 @@ Expediente teorico reciente:
 - `MOC-001_Relacion_Documental_C001_C002.md`: `MOC-C001-C002-REL-001`, puente documental local con `C-001` y `C-002`; aceptado por `D-2026-07-06-013`.
 - `MOC-001_Auditoria_Relacion_Documental_C001_C002.md`: auditoria favorable con limites de la relacion `MOC/C-001/C-002`.
 - `MOC-001_Decision_Relacion_Documental_C001_C002.md`: decision que ejecuta `MOC-ROUTE-012`.
+- `MOC-001_Decision_Matriz_Impacto_Canon_Doc04_001.md`: decision que acepta `MOC-CANON-DOC04-IMPACT-001` como matriz no mutante y propuesta candidata, sin edicion oficial.
+- `MOC-001_Decision_Compuerta_Incorporacion_Canon_Doc04_001.md`: decision que acepta `MOC-CANON-DOC04-ADOPT-GATE-001` como lista para aplicacion posterior explicita, sin edicion oficial ejecutada.
+- `MOC-001_Aplicacion_Oficial_Canon_Doc04_001.md`: aplicacion oficial acotada `MOC-CANON-DOC04-APPLY-001`; `M-001` y Documento 04 reciben las secciones adoptadas, `M-000` queda sin cambio textual.
+- `MOC-001_Auditoria_Aplicacion_Oficial_Canon_Doc04_001.md`: auditoria posterior favorable con limites.
+- `MOC-001_Decision_Aplicacion_Oficial_Canon_Doc04_001.md`: decision que acepta y ejecuta la aplicacion oficial acotada por `D-2026-07-09-005`.
 - `TCS-001_Teoria_Concordante_de_Sistemas.md`: propuesta teorica inicial para tratar `Concordance` como propiedad auditable de gobernanza de sistemas, no canonizada.
 - `TCS-001_Analisis_Fondo.md`: analisis provisional de fondo; recomienda mantener `TCS-001` abierto y desarrollar definiciones minimas, tipologia de fallos y casos de prueba.
 - `TCS-001_Definiciones_Minimas.md`, `TCS-001_Tipologia_Fallos_Concordancia.md` y `TCS-001_Casos_Prueba.md`: paquete minimo provisional aceptado por `D-2026-07-03-019`; no canonico.
@@ -216,6 +235,15 @@ Expediente preparatorio reciente:
 - `AO-001_Criterio_Autoridad_Global_001.md`: `AO-AUTH-GLOBAL-001`, criterio local de autoridad entre niveles; aceptado por `D-2026-07-06-021`.
 - `AO-001_Cobertura_Externa_Amplia_001.md`: `AO-EXT-COV-001`, cobertura externa amplia sintetica no regulada; aceptada por `D-2026-07-06-022`.
 - `AO-001_Matriz_Consolidada_Cierre_Global_004.md`: `AO-PPI-BRIDGE-004`, matriz consolidada local posterior a AO/TCS, autoridad y cobertura externa; aceptada por `D-2026-07-06-023`.
+- `AO-001_Cierre_Local_AO_PPI_001.md`: `AO-PPI-LOCAL-CLOSE-001`, cierre local de fase `AO-PPI`; aceptado por `D-2026-07-06-024`.
+- `AO-001_Auditoria_Cierre_Local_AO_PPI_001.md`: auditoria favorable del cierre local `AO-PPI`, con limites globales.
+- `AO-001_Decision_Cierre_Local_AO_PPI_001.md`: decision `D-2026-07-06-024`, fija `AO-PPI-BRIDGE-004` como estado actual de deudas `AO-PPI`.
+- `AO-001_Protocolo_Reproducible_Independiente_001.md`: `AO-PROTO-INDEP-001`, protocolo local con tres perfiles evaluadores; aceptado por `D-2026-07-06-025`.
+- `AO-001_Compuerta_Equivalencia_Global_001.md`: `AO-EQ-GLOBAL-GATE-001`, compuerta local que mantiene Equivalencia global no autorizada; aceptada por `D-2026-07-06-026`.
+- `AO-001_Compuerta_Confluencia_Global_001.md`: `AO-CONF-GLOBAL-GATE-001`, compuerta local que mantiene Confluencia global no autorizada; aceptada por `D-2026-07-06-027`.
+- `AO-001_Compuerta_Promocion_REPORT_LAYER_001.md`: `AO-REPORT-PROMO-GATE-001`, compuerta que deja `REPORT_LAYER` como candidata futura no promovida; aceptada por `D-2026-07-06-028`.
+- `AO-001_Compuerta_Exportacion_R4_Gamma_002.md`: `AO-R4-GAMMA-EXPORT-GATE-002`, compuerta que conserva R4/Gamma sin exportacion general; aceptada por `D-2026-07-06-029`.
+- `AO-001_Readiness_Global_001.md`: `AO-GLOBAL-READINESS-001`, matriz consolidada con resultado `mantener_no_autorizado`; aceptada por `D-2026-07-06-030`.
 - `AO-001_Decision_Matriz_Condiciones_Cierre_Global_003.md`: decision `D-2026-07-06-018`, acepta la matriz y conserva abiertas las deudas globales.
 
 Expediente tecnico reciente:
@@ -254,6 +282,12 @@ Auditoria provisional registrada:
 - `MOC-001_Auditoria_Relacion_Documental_C001_C002.md`.
 - `AO-001_Auditoria_Puente_Confluencia_Equivalencia_002.md`.
 - `AO-001_Auditoria_REPORT_LAYER_Nivel_C.md`.
+- `AO-001_Auditoria_Protocolo_Reproducible_Independiente_001.md`.
+- `AO-001_Auditoria_Compuerta_Equivalencia_Global_001.md`.
+- `AO-001_Auditoria_Compuerta_Confluencia_Global_001.md`.
+- `AO-001_Auditoria_Compuerta_Promocion_REPORT_LAYER_001.md`.
+- `AO-001_Auditoria_Compuerta_Exportacion_R4_Gamma_002.md`.
+- `AO-001_Auditoria_Readiness_Global_001.md`.
 - `AUT-003_Auditoria_Herramienta_REPORT_LAYER_C002.md`.
 - `RH-001_Auditoria_Reconciliacion_PM001.md`.
 - `AO-001_Auditoria_Pruebas_Externas_Confluencia.md`.
@@ -355,6 +389,13 @@ Validacion provisional registrada:
 
 Decision provisional registrada:
 
+- `AO-001_Decision_Readiness_Global_001.md`: acepta `AO-GLOBAL-READINESS-001` como matriz consolidada local; resultado `mantener_no_autorizado`.
+- `AO-001_Decision_Compuerta_Exportacion_R4_Gamma_002.md`: acepta `AO-R4-GAMMA-EXPORT-GATE-002`; `r4_gamma_global_export_authorized` queda en `false`.
+- `AO-001_Decision_Compuerta_Promocion_REPORT_LAYER_001.md`: acepta `AO-REPORT-PROMO-GATE-001`; `report_layer_promoted` queda en `false`.
+- `AO-001_Decision_Compuerta_Confluencia_Global_001.md`: acepta `AO-CONF-GLOBAL-GATE-001`; `global_confluence_authorized` queda en `false`.
+- `AO-001_Decision_Compuerta_Equivalencia_Global_001.md`: acepta `AO-EQ-GLOBAL-GATE-001`; `global_equivalence_authorized` queda en `false`.
+- `AO-001_Decision_Protocolo_Reproducible_Independiente_001.md`: acepta `AO-PROTO-INDEP-001` como protocolo local reproducible, sin validacion externa global.
+- `AO-001_Decision_Cierre_Local_AO_PPI_001.md`: acepta `AO-PPI-LOCAL-CLOSE-001` como cierre local de fase `AO-PPI`; `global_closure_authorized` queda en `false`.
 - `AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md`: acepta `AO-PPI-BRIDGE-004` como matriz consolidada local; `global_closure_authorized` queda en `false`.
 - `AO-001_Decision_Cobertura_Externa_Amplia_001.md`: acepta `AO-EXT-COV-001` como cobertura externa amplia sintetica; no autoriza cierre global.
 - `AO-001_Decision_Criterio_Autoridad_Global_001.md`: acepta `AO-AUTH-GLOBAL-001` como criterio local de autoridad; `global_authority_authorized` queda en `false`.
@@ -366,6 +407,9 @@ Decision provisional registrada:
 - `AUT-003_Decision_Herramienta_REPORT_LAYER_C002.md`: acepta `REPORT-LAYER-C002-GATE-001` como herramienta local no mutante conforme a `C-002`.
 - `AO-001_Decision_REPORT_LAYER_Nivel_C.md`: mantiene `REPORT_LAYER` local pre-C; no crea Nivel C nuevo ni `C-003`.
 - `MOC-001_Decision_Relacion_Documental_C001_C002.md`: acepta `MOC-C001-C002-REL-001`; ejecuta `MOC-ROUTE-012` como relacion documental controlada con `C-001` y `C-002`.
+- `MOC-001_Decision_Matriz_Impacto_Canon_Doc04_001.md`: acepta `MOC-CANON-DOC04-IMPACT-001`; `M-000` queda sin cambio textual recomendado, `M-001` y Documento 04 quedan solo como candidatas futuras, sin edicion oficial.
+- `MOC-001_Decision_Compuerta_Incorporacion_Canon_Doc04_001.md`: acepta `MOC-CANON-DOC04-ADOPT-GATE-001`; `M-001` y Documento 04 quedan listos para aplicacion posterior explicita, sin edicion oficial ejecutada.
+- `MOC-001_Decision_Aplicacion_Oficial_Canon_Doc04_001.md`: acepta y ejecuta `MOC-CANON-DOC04-APPLY-001`; `M-001` y Documento 04 quedan oficialmente actualizados en grado acotado, con `M-000` sin cambio textual.
 - `HXI-001_Decision_Cierre_Mantenimiento_Local.md`: cierra `HXI-001` en mantenimiento local; `H-Xi` sigue no admitida y `Xi_eval` queda solo como herramienta local historica/auxiliar.
 - `AUD-001_Decision_Cierre_Operativo_v0.md`: cierra `AUD-001` como expediente completo en version documental/operativa v0; no exporta `REPORT_LAYER`, R4/Gamma ni la suite completa.
 - `AUT-002_Decision_Cierre_Tecnico.md`: cierra tecnicamente `AUT-002`; conserva `referencia_historica_transferida` como regla tecnica.
@@ -569,6 +613,14 @@ Algoritmo provisional activo:
 - `AO-AUTH-GLOBAL-001` en `06_Automatizacion/ao_authority_global_001.py`.
 - `AO-EXT-COV-001` en `06_Automatizacion/ao_ext_cov_001.py`.
 - `AO-PPI-BRIDGE-004` en `06_Automatizacion/ao_ppi_bridge_004.py`.
+- `AO-PROTO-INDEP-001` en `06_Automatizacion/ao_protocol_independent_001.py`.
+- `AO-EQ-GLOBAL-GATE-001` en `06_Automatizacion/ao_eq_global_gate_001.py`.
+- `AO-CONF-GLOBAL-GATE-001` en `06_Automatizacion/ao_conf_global_gate_001.py`.
+- `AO-REPORT-PROMO-GATE-001` en `06_Automatizacion/ao_report_promo_gate_001.py`.
+- `AO-R4-GAMMA-EXPORT-GATE-002` en `06_Automatizacion/ao_r4_gamma_export_gate_002.py`.
+- `AO-GLOBAL-READINESS-001` en `06_Automatizacion/ao_global_readiness_001.py`.
+- `AO-EXT-EVID-GATE-001` en `06_Automatizacion/ao_external_evidence_gate_001.py`.
+- `AO-EXT-REAL-001` como fixture real en `06_Automatizacion/fixtures/ao_external_evidence_real_001_manifests.json`, evaluado por `AO-EXT-EVID-GATE-001` y reportado en `06_Automatizacion/reportes/ao_external_evidence_real_001_report.md`.
 - `REPORT-LAYER-C002-GATE-001` en `06_Automatizacion/report_layer_c002_gate.py`.
 - `DO-CHECK-001` en `03_Expedientes/DO-001_DO-CHECK-001.md`.
 - `DO-CHECK-MIN-001` en `06_Automatizacion/do_check_min.py`.
@@ -597,15 +649,17 @@ Especificacion candidata promovida:
 
 Proximo objetivo:
 
-- Conservar `AO-PPI-BRIDGE-004` como matriz consolidada aceptada; no usarla como cierre global.
-- Conservar `AO-TCS-REL-001`, `AO-AUTH-GLOBAL-001` y `AO-EXT-COV-001` como avances locales o parciales locales; no leerlos como canonizacion, autoridad global ni cobertura independiente.
-- Preparar solo por decision separada un protocolo AO reproducible independiente, o una compuerta explicita para promocion/cierre global.
-- Conservar `REPORT_LAYER` como capa local pre-C; cualquier promocion a Nivel C exige candidata independiente, contrato exportable, serializacion estable, auditoria y decision nueva.
+- Conservar `AO-GLOBAL-READINESS-001` como matriz vigente de no autorizacion global y `AO-PPI-BRIDGE-004` como estado actual local de deudas `AO-PPI`.
+- Conservar `AO-EXT-INDEP-001` y `AO-EXT-EVID-GATE-001` como ruta preparada de admisibilidad externa; no leer el manifiesto de control como evidencia empirica real.
+- Usar `AO-EXT-REAL-001` solo como evidencia externa independiente real admitida preliminarmente; la decision pendiente es si se reevalua `AO-GLOBAL-READINESS-001`, no si se cierra globalmente por arrastre.
+- Conservar `AO-PROTO-INDEP-001`, `AO-EQ-GLOBAL-GATE-001`, `AO-CONF-GLOBAL-GATE-001`, `AO-REPORT-PROMO-GATE-001` y `AO-R4-GAMMA-EXPORT-GATE-002` como compuertas locales, no como cierre global.
+- Avanzar solo con decision explicita posterior para reconsiderar readiness global, cierre global, promocion formal de `REPORT_LAYER` o exportacion general R4/Gamma usando la evidencia real ya admitida.
+- Conservar `REPORT_LAYER` como capa local pre-C; queda candidata futura documentada por `D-2026-07-06-028`, no promovida.
 - Conservar Documento 04 amplio v0 como formalizacion documental local, sin leerla como cierre global ni como Nivel C.
 - Mantener `MOC-ROUTE-011` como ruta vigente de mantenimiento teorico-operativo sin ejecucion; `MOC-ROUTE-010` ya quedo decidida por `D-2026-07-06-008`.
 - Conservar `MOC-ROUTE-012` como relacion documental local con `C-001` / `C-002`; no leerla como Nivel C, conformidad empirica ni permiso de transformacion.
-- Mantener bloqueada la exportacion general de R4/Gamma salvo nueva compuerta con dominio externo y semantica independiente de expediente.
-- Usar `AO-PPI-BRIDGE-002`, `AO-PPI-BRIDGE-003`, `AO-REPORT-SERIAL-001` y `AO-PPI-BRIDGE-004` solo como evidencia local fuerte para rutas posteriores; no reabrir `P-PI.0` / `P-PI.1`.
+- Mantener bloqueada la exportacion general de R4/Gamma por `D-2026-07-06-029`.
+- Usar `AO-PPI-BRIDGE-002`, `AO-PPI-BRIDGE-003`, `AO-REPORT-SERIAL-001`, `AO-PPI-BRIDGE-004`, `AO-PPI-LOCAL-CLOSE-001` y `AO-GLOBAL-READINESS-001` solo como evidencia local o matriz de no autorizacion para rutas posteriores; no reabrir `P-PI.0` / `P-PI.1`.
 - Usar `R001-TB-001` solo como relacion formal local de apoyo a `AO-001`; no tratarlo como cierre global.
 - Madurar `TCS-001` desde `TCS-MAT-PROV-001` hacia semantica formal, mas casos externos no regulados y relacion controlada con `AO-001` / `C-001`.
 - `HXI-001` queda cerrado en mantenimiento local por `D-2026-07-06-012`; solo se reabre por decision posterior con evidencia nueva, decision puente o promocion separada.
@@ -614,12 +668,12 @@ Proximo objetivo:
 
 Expediente activo inmediato:
 
-- `AO-001` queda como frente operativo inmediato con `AO-PPI-BRIDGE-004` aceptado como matriz consolidada local. La siguiente ruta defensible requiere decision separada: protocolo AO reproducible independiente, promocion formal de `REPORT_LAYER`, exportacion R4/Gamma o cierre global; ninguna queda autorizada.
+- `AO-001` queda como frente operativo inmediato con `AO-GLOBAL-READINESS-001` aceptado como matriz de no autorizacion global, `AO-PPI-BRIDGE-004` fijado como estado actual local de deudas, `AO-EXT-INDEP-001` / `AO-EXT-EVID-GATE-001` preparados para admisibilidad externa y `AO-EXT-REAL-001` admitido preliminarmente como evidencia externa real. La siguiente ruta defensible requiere decision separada de reconsideracion; ninguna promocion, exportacion ni cierre global queda autorizado.
 - `MOC-001` queda como frente integrador teorico-operativo abierto en mantenimiento sin ejecucion; primera ruta valida ejecutada por `MOC-ROUTE-EXEC-001`, bateria ampliada por `MOC-ROUTE-002`, puente formal `MOC/TCS` aceptado por `MOC-ROUTE-003`, puente formal `MOC/AO` aceptado por `MOC-ROUTE-004`, protocolo v0.2 aceptado por `MOC-ROUTE-005`, protocolo documental de piloto futuro preparado por `MOC-ROUTE-006`, compuerta de no autorizacion aplicada por `MOC-ROUTE-007`, paquete pre-ejecucion preparado por `MOC-ROUTE-008`, paquete de registro/auditoria preparado por `MOC-ROUTE-009`, rutas posteriores decididas por `MOC-ROUTE-010` y relacion documental con `C-001` / `C-002` aceptada por `MOC-ROUTE-012`; no canonico, no clinico, no regulado y sin admision de `H-Xi`.
 - `HXI-001` queda cerrado en mantenimiento local; conserva `Xi_eval` solo como herramienta local historica/auxiliar, no admite `H-Xi`, no canoniza `Xi` y no reabre `PSI-001`.
 - `R001-001` queda cerrado tecnicamente; `R001-TABLE-CHECK-001` y `R001-TB-001` se conservan como herramienta/relacion local de apoyo a `AO-001`, mientras siguen vivas Equivalencia global, Confluencia global y pruebas externas adicionales si se exigen.
 - `TCS-001` queda como frente teorico provisional con `TCS-MAT-PROV-001` aceptado; sigue abierto para semantica formal, mas casos externos y relacion controlada con `AO-001` / `C-001`.
-- `P-PI.0` / `P-PI.1` quedan cerrados como frentes de trabajo por `D-2026-07-03-002`; `AO-PPI-BRIDGE-001`, `AO-PPI-BRIDGE-002`, `AO-PPI-BRIDGE-003`, `AO-REPORT-SERIAL-001`, `AO-TCS-REL-001`, `AO-AUTH-GLOBAL-001`, `AO-EXT-COV-001` y `AO-PPI-BRIDGE-004` avanzan localmente Confluencia, Equivalencia, serializacion, autoridad, cobertura y clasificacion de fallos sin cerrar problemas globales. `AUD-001` queda cerrado como expediente completo en version documental/operativa v0; futuras promociones o exportaciones exigen decision separada. `R4-FORMAL-AUD-001` y `GAMMA-FORMAL-AUD-001` siguen como construcciones locales, con exportacion general bloqueada por `D-2026-07-05-009`. `H-B.6` y `H-B.7` quedan congeladas como brotes alternos y originales historicos. `PSI-001` queda transferido a proyecto independiente `Psicologia Concordante` y sin copia local de traspaso. `AUT-001` queda cerrado operativamente; `AUT-002` queda cerrado tecnicamente; `HXI-001` queda cerrado en mantenimiento local, sin admision de `H-Xi`; `B-001.5` queda congelado.
+- `P-PI.0` / `P-PI.1` quedan cerrados como frentes de trabajo por `D-2026-07-03-002`; `AO-PPI-BRIDGE-001`, `AO-PPI-BRIDGE-002`, `AO-PPI-BRIDGE-003`, `AO-REPORT-SERIAL-001`, `AO-TCS-REL-001`, `AO-AUTH-GLOBAL-001`, `AO-EXT-COV-001`, `AO-PPI-BRIDGE-004`, `AO-PPI-LOCAL-CLOSE-001`, `AO-PROTO-INDEP-001`, `AO-EQ-GLOBAL-GATE-001`, `AO-CONF-GLOBAL-GATE-001`, `AO-REPORT-PROMO-GATE-001`, `AO-R4-GAMMA-EXPORT-GATE-002`, `AO-GLOBAL-READINESS-001`, `AO-EXT-INDEP-001`, `AO-EXT-EVID-GATE-001` y `AO-EXT-REAL-001` avanzan localmente sin cerrar problemas globales. `AUD-001` queda cerrado como expediente completo en version documental/operativa v0; futuras promociones o exportaciones exigen decision separada. `R4-FORMAL-AUD-001` y `GAMMA-FORMAL-AUD-001` siguen como construcciones locales, con exportacion general bloqueada por `D-2026-07-06-029`. `H-B.6` y `H-B.7` quedan congeladas como brotes alternos y originales historicos. `PSI-001` queda transferido a proyecto independiente `Psicologia Concordante` y sin copia local de traspaso. `AUT-001` queda cerrado operativamente; `AUT-002` queda cerrado tecnicamente; `HXI-001` queda cerrado en mantenimiento local, sin admision de `H-Xi`; `B-001.5` queda congelado.
 - Vision papers: `VISION_PAPER_PROPUESTA.md` y `VISION_PAPER_FINAL_REFERENCIAS.md` quedan inactivos hasta nuevo aviso.
 
 NO volver a discutir sin reapertura explicita:

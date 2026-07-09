@@ -1,6 +1,6 @@
 # AO_EXT_COV_001_REPORT
 
-report_id: AO-EXT-COV-001-20260706-153515
+report_id: AO-EXT-COV-001-20260708-210446
 expediente: AO-001
 algoritmo: AO-EXT-COV-001
 suite_id: AO-EXT-COV-CASES-001

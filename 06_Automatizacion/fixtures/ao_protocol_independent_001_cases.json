@@ -1,0 +1,119 @@
+{
+  "suite_id": "AO-PROTO-INDEP-CASES-001",
+  "source_evidence": [
+    "AO-PPI-LOCAL-CLOSE-001",
+    "AO-PPI-BRIDGE-004",
+    "AO-PPI-BRIDGE-002",
+    "AO-REPORT-SERIAL-001"
+  ],
+  "cases": [
+    {
+      "case_id": "AO-PROTO-001",
+      "expected": "coincidencia_exacta",
+      "evaluators": [
+        {
+          "evaluator_id": "eval_documental",
+          "state": "equivalencia_local",
+          "family": "equivalencia",
+          "justification": "mismo testigo y misma salida local",
+          "debt": "sin_deuda_local"
+        },
+        {
+          "evaluator_id": "eval_operacional",
+          "state": "equivalencia_local",
+          "family": "equivalencia",
+          "justification": "mismo testigo y misma salida local",
+          "debt": "sin_deuda_local"
+        },
+        {
+          "evaluator_id": "eval_reporte",
+          "state": "equivalencia_local",
+          "family": "equivalencia",
+          "justification": "mismo testigo y misma salida local",
+          "debt": "sin_deuda_local"
+        }
+      ]
+    },
+    {
+      "case_id": "AO-PROTO-002",
+      "expected": "coincidencia_familia",
+      "evaluators": [
+        {
+          "evaluator_id": "eval_documental",
+          "state": "divergencia_clasificada",
+          "family": "divergencia_controlada",
+          "justification": "diferencia local sin aumento de autoridad",
+          "debt": "deuda_report_layer"
+        },
+        {
+          "evaluator_id": "eval_operacional",
+          "state": "friccion_operativa",
+          "family": "divergencia_controlada",
+          "justification": "friccion sin permiso de transformacion",
+          "debt": "deuda_report_layer"
+        },
+        {
+          "evaluator_id": "eval_reporte",
+          "state": "divergencia_reporte",
+          "family": "divergencia_controlada",
+          "justification": "reporte divergente pero trazable",
+          "debt": "deuda_report_layer"
+        }
+      ]
+    },
+    {
+      "case_id": "AO-PROTO-003",
+      "expected": "desacuerdo_justificado",
+      "evaluators": [
+        {
+          "evaluator_id": "eval_documental",
+          "state": "bloqueo_por_testigo",
+          "family": "bloqueo_testigo",
+          "justification": "testigo insuficiente para Documento",
+          "debt": "testigo_insuficiente"
+        },
+        {
+          "evaluator_id": "eval_operacional",
+          "state": "bloqueo_por_autoridad",
+          "family": "bloqueo_autoridad",
+          "justification": "autoridad excedida en ruta operacional",
+          "debt": "autoridad_excedida"
+        },
+        {
+          "evaluator_id": "eval_reporte",
+          "state": "bloqueo_report_layer_incompleto",
+          "family": "bloqueo_reporte",
+          "justification": "faltan campos minimos de reporte",
+          "debt": "report_layer_incompleto"
+        }
+      ]
+    },
+    {
+      "case_id": "AO-PROTO-004",
+      "expected": "coincidencia_exacta",
+      "evaluators": [
+        {
+          "evaluator_id": "eval_documental",
+          "state": "no_comparable",
+          "family": "no_comparabilidad",
+          "justification": "unidad minima no compartida",
+          "debt": "unidad_minima"
+        },
+        {
+          "evaluator_id": "eval_operacional",
+          "state": "no_comparable",
+          "family": "no_comparabilidad",
+          "justification": "unidad minima no compartida",
+          "debt": "unidad_minima"
+        },
+        {
+          "evaluator_id": "eval_reporte",
+          "state": "no_comparable",
+          "family": "no_comparabilidad",
+          "justification": "unidad minima no compartida",
+          "debt": "unidad_minima"
+        }
+      ]
+    }
+  ]
+}

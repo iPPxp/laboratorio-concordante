@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-CHECK-MIN-20260706-153506",
+  "report_id": "DO-CHECK-MIN-20260708-210424",
   "expediente": "AUT-001",
   "algoritmo": "DO-CHECK-MIN-001",
   "resultado": "advertencia",
@@ -14,8 +14,8 @@
     "03_Expedientes/DO-001_DO-CHECK-001.md"
   ],
   "summary": {
-    "files_checked": 422,
-    "findings": 214
+    "files_checked": 469,
+    "findings": 266
   },
   "targets": [
     {
@@ -96,6 +96,30 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Auditoria_Cierre_Local_AO_PPI_001.md",
+      "estatus": "favorable",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Auditoria_Cierre_Local_AO_PPI_001.md",
+          "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Auditoria_Cierre_Local_AO_PPI_001.md",
+          "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Auditoria_Cierre_Local_AO_PPI_001.md",
+          "detail": "06_Automatizacion/reportes/lab_risk_report.md"
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md",
       "estatus": "no_clasificado",
       "findings": [
@@ -114,8 +138,28 @@
       ]
     },
     {
+      "file": "03_Expedientes/AO-001_Auditoria_Compuerta_Confluencia_Global_001.md",
+      "estatus": "favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Compuerta_Equivalencia_Global_001.md",
+      "estatus": "favorable",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Auditoria_Compuerta_Exportacion_R4_Gamma.md",
       "estatus": "auditoria favorable de bloqueo controlado",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Compuerta_Exportacion_R4_Gamma_002.md",
+      "estatus": "favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Compuerta_Promocion_REPORT_LAYER_001.md",
+      "estatus": "favorable",
       "findings": []
     },
     {
@@ -139,6 +183,16 @@
     {
       "file": "03_Expedientes/AO-001_Auditoria_Criterios_Uso_R4_Gamma_Fuera_AUD.md",
       "estatus": "auditoria favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Evidencia_Externa_Independiente_001.md",
+      "estatus": "favorable",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Evidencia_Externa_Real_001.md",
+      "estatus": "favorable con limites",
       "findings": []
     },
     {
@@ -199,6 +253,11 @@
       ]
     },
     {
+      "file": "03_Expedientes/AO-001_Auditoria_Protocolo_Reproducible_Independiente_001.md",
+      "estatus": "favorable",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Auditoria_Prueba_Gamma_Externa.md",
       "estatus": "auditoria provisional favorable",
       "findings": []
@@ -236,6 +295,11 @@
           "detail": "06_Automatizacion/reportes/ao_ppi_bridge_002_report.md"
         }
       ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Auditoria_Readiness_Global_001.md",
+      "estatus": "favorable",
+      "findings": []
     },
     {
       "file": "03_Expedientes/AO-001_Auditoria_Relacion_AO_TCS_001.md",
@@ -278,6 +342,11 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Cierre_Local_AO_PPI_001.md",
+      "estatus": "cierre local de fase",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Cobertura_Externa_Amplia_001.md",
       "estatus": "aceptada localmente",
       "findings": [
@@ -290,9 +359,62 @@
       ]
     },
     {
+      "file": "03_Expedientes/AO-001_Compuerta_Confluencia_Global_001.md",
+      "estatus": "aceptado local",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Compuerta_Confluencia_Global_001.md",
+          "detail": "06_Automatizacion/reportes/ao_conf_global_gate_001_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Compuerta_Equivalencia_Global_001.md",
+      "estatus": "aceptado local",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Compuerta_Equivalencia_Global_001.md",
+          "detail": "06_Automatizacion/reportes/ao_eq_global_gate_001_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Compuerta_Evidencia_Externa_001.md",
+      "estatus": "preparada local",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Compuerta_Exportacion_R4_Gamma.md",
       "estatus": "compuerta provisional aplicada",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Compuerta_Exportacion_R4_Gamma_002.md",
+      "estatus": "aceptado local",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Compuerta_Exportacion_R4_Gamma_002.md",
+          "detail": "06_Automatizacion/reportes/ao_r4_gamma_export_gate_002_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Compuerta_Promocion_REPORT_LAYER_001.md",
+      "estatus": "aceptado local",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Compuerta_Promocion_REPORT_LAYER_001.md",
+          "detail": "06_Automatizacion/reportes/ao_report_promo_gate_001_report.md"
+        }
+      ]
     },
     {
       "file": "03_Expedientes/AO-001_Criterio_Autoridad_Global_001.md",
@@ -317,6 +439,11 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Decision_Cierre_Local_AO_PPI_001.md",
+      "estatus": "aceptada",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Decision_Cobertura_Externa_Amplia_001.md",
       "estatus": "no_clasificado",
       "findings": [
@@ -329,8 +456,28 @@
       ]
     },
     {
+      "file": "03_Expedientes/AO-001_Decision_Compuerta_Confluencia_Global_001.md",
+      "estatus": "aceptada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Compuerta_Equivalencia_Global_001.md",
+      "estatus": "aceptada",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Decision_Compuerta_Exportacion_R4_Gamma.md",
       "estatus": "decision provisional de expediente",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Compuerta_Exportacion_R4_Gamma_002.md",
+      "estatus": "aceptada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Compuerta_Promocion_REPORT_LAYER_001.md",
+      "estatus": "aceptada",
       "findings": []
     },
     {
@@ -376,6 +523,30 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Decision_Evidencia_Externa_Independiente_001.md",
+      "estatus": "aceptadas",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Decision_Evidencia_Externa_Independiente_001.md",
+          "detail": "06_Automatizacion/reportes/ao_external_evidence_gate_001_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Evidencia_Externa_Real_001.md",
+      "estatus": "aceptada con limites",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Decision_Evidencia_Externa_Real_001.md",
+          "detail": "06_Automatizacion/reportes/ao_external_evidence_real_001_report.md"
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/AO-001_Decision_Formalizacion_Acotada_Doc04.md",
       "estatus": "decision documental acotada",
       "findings": []
@@ -410,6 +581,11 @@
       ]
     },
     {
+      "file": "03_Expedientes/AO-001_Decision_Protocolo_Reproducible_Independiente_001.md",
+      "estatus": "aceptada",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/AO-001_Decision_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md",
       "estatus": "decision de expediente aceptada",
       "findings": []
@@ -425,6 +601,11 @@
           "detail": "06_Automatizacion/reportes/ao_ppi_bridge_002_report.md"
         }
       ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Decision_Readiness_Global_001.md",
+      "estatus": "aceptada",
+      "findings": []
     },
     {
       "file": "03_Expedientes/AO-001_Decision_Relacion_AO_TCS_001.md",
@@ -469,6 +650,29 @@
     {
       "file": "03_Expedientes/AO-001_Evaluacion_Formalizacion_Doc04_R001_TB.md",
       "estatus": "evaluacion provisional",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/AO-001_Evidencia_Externa_Independiente_001.md",
+      "estatus": "preparado local, no ejecutado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Evidencia_Externa_Independiente_001.md",
+          "detail": "06_Automatizacion/reportes/ao_external_evidence_gate_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Evidencia_Externa_Independiente_001.md",
+          "detail": "06_Automatizacion/reportes/ao_external_evidence_real_001_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Evidencia_Externa_Real_001.md",
+      "estatus": "admitida preliminarmente, no ejecutada",
       "findings": []
     },
     {
@@ -521,6 +725,18 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/AO-001_Protocolo_Reproducible_Independiente_001.md",
+      "estatus": "aceptado local",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Protocolo_Reproducible_Independiente_001.md",
+          "detail": "06_Automatizacion/reportes/ao_protocol_independent_001_report.md"
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/AO-001_Prueba_Gamma_Externa.md",
       "estatus": "prueba provisional externa local",
       "findings": []
@@ -556,6 +772,18 @@
           "kind": "referencia_no_materializada",
           "file": "03_Expedientes/AO-001_Puente_Confluencia_Equivalencia_002.md",
           "detail": "06_Automatizacion/reportes/ao_ppi_bridge_002_report.md"
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/AO-001_Readiness_Global_001.md",
+      "estatus": "aceptado local",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/AO-001_Readiness_Global_001.md",
+          "detail": "06_Automatizacion/reportes/ao_global_readiness_001_report.md"
         }
       ]
     },
@@ -1828,15 +2056,50 @@
     },
     {
       "file": "03_Expedientes/MOC-001.md",
-      "estatus": "expediente integrador abierto en mantenimiento teorico-operativo sin ejecucion",
+      "estatus": "expediente integrador abierto en mantenimiento teorico-operativo; sin ejecucion empirica",
       "findings": [
         {
           "severity": "warning",
           "kind": "referencia_no_materializada",
           "file": "03_Expedientes/MOC-001.md",
           "detail": "06_Automatizacion/reportes/moc_eval_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001.md",
+          "detail": "06_Automatizacion/reportes/moc_experience_graph_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001.md",
+          "detail": "06_Automatizacion/reportes/moc_exp_graph_authorization_gate_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001.md",
+          "detail": "06_Automatizacion/reportes/moc_canon_doc04_impact_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001.md",
+          "detail": "06_Automatizacion/reportes/moc_canon_doc04_adopt_gate_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001.md",
+          "detail": "06_Automatizacion/reportes/moc_canon_doc04_apply_001_report.md"
         }
       ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Aplicacion_Oficial_Canon_Doc04_001.md",
+      "estatus": "aplicacion oficial ejecutada y acotada",
+      "findings": []
     },
     {
       "file": "03_Expedientes/MOC-001_Auditoria_Apertura.md",
@@ -1851,6 +2114,16 @@
       ]
     },
     {
+      "file": "03_Expedientes/MOC-001_Auditoria_Aplicacion_Oficial_Canon_Doc04_001.md",
+      "estatus": "auditoria posterior favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Autorizacion_Grafo_Canon_Doc04.md",
+      "estatus": "favorable con limites",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/MOC-001_Auditoria_Compuerta_Autorizacion_Ejecucion_Piloto.md",
       "estatus": "auditoria favorable a no autorizacion de ejecucion",
       "findings": [
@@ -1861,6 +2134,11 @@
           "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
         }
       ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Compuerta_Incorporacion_Canon_Doc04_001.md",
+      "estatus": "auditoria favorable con limites; sin edicion oficial ejecutada",
+      "findings": []
     },
     {
       "file": "03_Expedientes/MOC-001_Auditoria_Disenio_Estudio_Empirico.md",
@@ -1907,6 +2185,16 @@
           "detail": "No hay campo Estatus en las primeras 30 lineas."
         }
       ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Grafo_Experiencia_Local.md",
+      "estatus": "favorable con limites",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Auditoria_Matriz_Impacto_Canon_Doc04_001.md",
+      "estatus": "auditoria favorable con limites",
+      "findings": []
     },
     {
       "file": "03_Expedientes/MOC-001_Auditoria_Metricas_Protocolo.md",
@@ -2005,6 +2293,11 @@
       ]
     },
     {
+      "file": "03_Expedientes/MOC-001_Autorizacion_Derechos_Grafo_Canon_Doc04.md",
+      "estatus": "autorizacion interna aceptada, preparatoria y no externa",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/MOC-001_Casos_Congelados_Piloto.md",
       "estatus": "paquete congelado documental, no ejecutado",
       "findings": []
@@ -2027,14 +2320,67 @@
       ]
     },
     {
+      "file": "03_Expedientes/MOC-001_Compuerta_Grafo_Canon_Doc04.md",
+      "estatus": "compuerta preparatoria aceptada",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Compuerta_Incorporacion_Canon_Doc04_001.md",
+      "estatus": "compuerta evaluada; lista para aplicacion posterior, sin edicion oficial ejecutada",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "03_Expedientes/MOC-001_Compuerta_Incorporacion_Canon_Doc04_001.md",
+          "detail": "06_Automatizacion/reportes/moc_canon_doc04_impact_001_report.md"
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/MOC-001_Decision_Apertura.md",
       "estatus": "decision provisional de expediente",
       "findings": []
     },
     {
+      "file": "03_Expedientes/MOC-001_Decision_Aplicacion_Oficial_Canon_Doc04_001.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Decision_Aplicacion_Oficial_Canon_Doc04_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Autorizacion_Grafo_Canon_Doc04.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Decision_Autorizacion_Grafo_Canon_Doc04.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        }
+      ]
+    },
+    {
       "file": "03_Expedientes/MOC-001_Decision_Compuerta_Autorizacion_Ejecucion_Piloto.md",
       "estatus": "decision provisional de expediente",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Compuerta_Incorporacion_Canon_Doc04_001.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Decision_Compuerta_Incorporacion_Canon_Doc04_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        }
+      ]
     },
     {
       "file": "03_Expedientes/MOC-001_Decision_Disenio_Estudio_Empirico.md",
@@ -2060,6 +2406,30 @@
       "file": "03_Expedientes/MOC-001_Decision_Formalizacion_Xi_eval.md",
       "estatus": "decision provisional de expediente",
       "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Grafo_Experiencia_Local.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Decision_Grafo_Experiencia_Local.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        }
+      ]
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Decision_Matriz_Impacto_Canon_Doc04_001.md",
+      "estatus": "no_clasificado",
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "estatus_ausente",
+          "file": "03_Expedientes/MOC-001_Decision_Matriz_Impacto_Canon_Doc04_001.md",
+          "detail": "No hay campo Estatus en las primeras 30 lineas."
+        }
+      ]
     },
     {
       "file": "03_Expedientes/MOC-001_Decision_Metricas_Protocolo.md",
@@ -2219,6 +2589,11 @@
       "findings": []
     },
     {
+      "file": "03_Expedientes/MOC-001_Matriz_Impacto_Canon_Doc04_001.md",
+      "estatus": "matriz no mutante aceptable como propuesta candidata",
+      "findings": []
+    },
+    {
       "file": "03_Expedientes/MOC-001_Metodo_Registro_Sin_Datos_Personales.md",
       "estatus": "metodo documental preparado, no usado en ejecucion real",
       "findings": []
@@ -2241,6 +2616,11 @@
     {
       "file": "03_Expedientes/MOC-001_Plantilla_Respuesta_Evaluadores.md",
       "estatus": "plantilla documental, no usada en ejecucion real",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-001_Propuesta_Candidata_Canon_Doc04_001.md",
+      "estatus": "propuesta candidata aplicada parcialmente por decision posterior",
       "findings": []
     },
     {
@@ -2321,6 +2701,21 @@
     {
       "file": "03_Expedientes/MOC-001_Tabla_Operaciones_Formales.md",
       "estatus": "tabla operativa provisional, no canonica",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-AO-GEO-BRIDGE-001_Puente_AO_Operator_Trace.md",
+      "estatus": "aceptado como puente local provisional no canonico",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-EXP-GRAPH-001_Grafo_Experiencia_Local.md",
+      "estatus": "aceptado como estructura local provisional no canonica",
+      "findings": []
+    },
+    {
+      "file": "03_Expedientes/MOC-GEO-METR-LAB-001_Metrica_Geometrica_Local.md",
+      "estatus": "aceptada como capa local provisional no canonica",
       "findings": []
     },
     {
@@ -2912,6 +3307,84 @@
           "kind": "referencia_no_materializada",
           "file": "05_Estado_Proyecto/DECISIONES.md",
           "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/ao_protocol_independent_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/ao_eq_global_gate_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/ao_conf_global_gate_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/ao_report_promo_gate_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/ao_r4_gamma_export_gate_002_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/ao_global_readiness_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/ao_external_evidence_gate_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/ao_external_evidence_real_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/moc_experience_graph_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/moc_exp_graph_authorization_gate_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/moc_canon_doc04_impact_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/moc_canon_doc04_adopt_gate_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/DECISIONES.md",
+          "detail": "06_Automatizacion/reportes/moc_canon_doc04_apply_001_report.md"
         }
       ]
     },
@@ -2919,6 +3392,12 @@
       "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
       "estatus": "estado operativo vigente",
       "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+          "detail": "06_Automatizacion/reportes/ao_external_evidence_real_001_report.md"
+        },
         {
           "severity": "warning",
           "kind": "referencia_no_materializada",
@@ -3080,6 +3559,54 @@
           "severity": "warning",
           "kind": "referencia_no_materializada",
           "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_protocol_independent_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_eq_global_gate_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_conf_global_gate_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_report_promo_gate_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_r4_gamma_export_gate_002_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_global_readiness_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_external_evidence_gate_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/ao_external_evidence_real_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
           "detail": "reportes/report_layer_c002_gate_report.md"
         },
         {
@@ -3087,6 +3614,30 @@
           "kind": "referencia_no_materializada",
           "file": "06_Automatizacion/README.md",
           "detail": "reportes/moc_eval_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/moc_experience_graph_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/moc_exp_graph_authorization_gate_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/moc_canon_doc04_impact_001_report.md"
+        },
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "06_Automatizacion/README.md",
+          "detail": "reportes/moc_canon_doc04_adopt_gate_001_report.md"
         },
         {
           "severity": "warning",
@@ -3162,6 +3713,12 @@
         },
         {
           "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "CHANGELOG.md",
+          "detail": "06_Automatizacion/reportes/README.md"
+        },
+        {
+          "severity": "warning",
           "kind": "historial_como_autoridad_posible",
           "file": "CHANGELOG.md",
           "detail": "- Actualizado el estado del proyecto: el siguiente objetivo es probar `R4-CANDIDATA` con un expediente que usa Registro Historico como autoridad directa."
@@ -3171,7 +3728,14 @@
     {
       "file": "CURRENT_STATE.md",
       "estatus": "no_clasificado",
-      "findings": []
+      "findings": [
+        {
+          "severity": "warning",
+          "kind": "referencia_no_materializada",
+          "file": "CURRENT_STATE.md",
+          "detail": "06_Automatizacion/reportes/ao_external_evidence_real_001_report.md"
+        }
+      ]
     },
     {
       "file": "HANDOFF.md",
@@ -3502,6 +4066,24 @@
     },
     {
       "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Auditoria_Cierre_Local_AO_PPI_001.md",
+      "detail": "06_Automatizacion/reportes/ao_ppi_bridge_004_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Auditoria_Cierre_Local_AO_PPI_001.md",
+      "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Auditoria_Cierre_Local_AO_PPI_001.md",
+      "detail": "06_Automatizacion/reportes/lab_risk_report.md"
+    },
+    {
+      "severity": "warning",
       "kind": "estatus_ausente",
       "file": "03_Expedientes/AO-001_Auditoria_Cobertura_Externa_Amplia_001.md",
       "detail": "No hay campo Estatus en las primeras 30 lineas."
@@ -3587,6 +4169,30 @@
     {
       "severity": "warning",
       "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Compuerta_Confluencia_Global_001.md",
+      "detail": "06_Automatizacion/reportes/ao_conf_global_gate_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Compuerta_Equivalencia_Global_001.md",
+      "detail": "06_Automatizacion/reportes/ao_eq_global_gate_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Compuerta_Exportacion_R4_Gamma_002.md",
+      "detail": "06_Automatizacion/reportes/ao_r4_gamma_export_gate_002_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Compuerta_Promocion_REPORT_LAYER_001.md",
+      "detail": "06_Automatizacion/reportes/ao_report_promo_gate_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
       "file": "03_Expedientes/AO-001_Criterio_Autoridad_Global_001.md",
       "detail": "06_Automatizacion/reportes/ao_authority_global_001_report.md"
     },
@@ -3601,6 +4207,18 @@
       "kind": "estatus_ausente",
       "file": "03_Expedientes/AO-001_Decision_Criterio_Autoridad_Global_001.md",
       "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Decision_Evidencia_Externa_Independiente_001.md",
+      "detail": "06_Automatizacion/reportes/ao_external_evidence_gate_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Decision_Evidencia_Externa_Real_001.md",
+      "detail": "06_Automatizacion/reportes/ao_external_evidence_real_001_report.md"
     },
     {
       "severity": "warning",
@@ -3641,6 +4259,18 @@
     {
       "severity": "warning",
       "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Evidencia_Externa_Independiente_001.md",
+      "detail": "06_Automatizacion/reportes/ao_external_evidence_gate_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Evidencia_Externa_Independiente_001.md",
+      "detail": "06_Automatizacion/reportes/ao_external_evidence_real_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
       "file": "03_Expedientes/AO-001_Matriz_Condiciones_Cierre_Global_003.md",
       "detail": "06_Automatizacion/reportes/ao_ppi_bridge_003_report.md"
     },
@@ -3653,6 +4283,12 @@
     {
       "severity": "warning",
       "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Protocolo_Reproducible_Independiente_001.md",
+      "detail": "06_Automatizacion/reportes/ao_protocol_independent_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
       "file": "03_Expedientes/AO-001_Pruebas_AO-DOC04-WIDE_REPORT_LAYER.md",
       "detail": "06_Automatizacion/reportes/ao_doc04_wide_report.md"
     },
@@ -3661,6 +4297,12 @@
       "kind": "referencia_no_materializada",
       "file": "03_Expedientes/AO-001_Puente_Confluencia_Equivalencia_002.md",
       "detail": "06_Automatizacion/reportes/ao_ppi_bridge_002_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/AO-001_Readiness_Global_001.md",
+      "detail": "06_Automatizacion/reportes/ao_global_readiness_001_report.md"
     },
     {
       "severity": "warning",
@@ -4018,6 +4660,36 @@
     },
     {
       "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001.md",
+      "detail": "06_Automatizacion/reportes/moc_experience_graph_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001.md",
+      "detail": "06_Automatizacion/reportes/moc_exp_graph_authorization_gate_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001.md",
+      "detail": "06_Automatizacion/reportes/moc_canon_doc04_impact_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001.md",
+      "detail": "06_Automatizacion/reportes/moc_canon_doc04_adopt_gate_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001.md",
+      "detail": "06_Automatizacion/reportes/moc_canon_doc04_apply_001_report.md"
+    },
+    {
+      "severity": "warning",
       "kind": "estatus_ausente",
       "file": "03_Expedientes/MOC-001_Auditoria_Apertura.md",
       "detail": "No hay campo Estatus en las primeras 30 lineas."
@@ -4069,6 +4741,42 @@
       "kind": "referencia_no_materializada",
       "file": "03_Expedientes/MOC-001_Compuerta_Autorizacion_Ejecucion_Piloto.md",
       "detail": "06_Automatizacion/reportes/lab_executive_summary.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "03_Expedientes/MOC-001_Compuerta_Incorporacion_Canon_Doc04_001.md",
+      "detail": "06_Automatizacion/reportes/moc_canon_doc04_impact_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Decision_Aplicacion_Oficial_Canon_Doc04_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Decision_Autorizacion_Grafo_Canon_Doc04.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Decision_Compuerta_Incorporacion_Canon_Doc04_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Decision_Grafo_Experiencia_Local.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
+    },
+    {
+      "severity": "warning",
+      "kind": "estatus_ausente",
+      "file": "03_Expedientes/MOC-001_Decision_Matriz_Impacto_Canon_Doc04_001.md",
+      "detail": "No hay campo Estatus en las primeras 30 lineas."
     },
     {
       "severity": "warning",
@@ -4295,6 +5003,90 @@
     {
       "severity": "warning",
       "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/ao_protocol_independent_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/ao_eq_global_gate_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/ao_conf_global_gate_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/ao_report_promo_gate_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/ao_r4_gamma_export_gate_002_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/ao_global_readiness_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/ao_external_evidence_gate_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/ao_external_evidence_real_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/moc_experience_graph_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/moc_exp_graph_authorization_gate_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/moc_canon_doc04_impact_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/moc_canon_doc04_adopt_gate_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/DECISIONES.md",
+      "detail": "06_Automatizacion/reportes/moc_canon_doc04_apply_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
+      "detail": "06_Automatizacion/reportes/ao_external_evidence_real_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
       "file": "05_Estado_Proyecto/ESTADO_ACTUAL.md",
       "detail": "06_Automatizacion/reportes/lab_status_board.md"
     },
@@ -4422,6 +5214,54 @@
       "severity": "warning",
       "kind": "referencia_no_materializada",
       "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_protocol_independent_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_eq_global_gate_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_conf_global_gate_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_report_promo_gate_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_r4_gamma_export_gate_002_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_global_readiness_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_external_evidence_gate_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/ao_external_evidence_real_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
       "detail": "reportes/report_layer_c002_gate_report.md"
     },
     {
@@ -4429,6 +5269,30 @@
       "kind": "referencia_no_materializada",
       "file": "06_Automatizacion/README.md",
       "detail": "reportes/moc_eval_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/moc_experience_graph_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/moc_exp_graph_authorization_gate_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/moc_canon_doc04_impact_001_report.md"
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "06_Automatizacion/README.md",
+      "detail": "reportes/moc_canon_doc04_adopt_gate_001_report.md"
     },
     {
       "severity": "warning",
@@ -4498,9 +5362,21 @@
     },
     {
       "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "CHANGELOG.md",
+      "detail": "06_Automatizacion/reportes/README.md"
+    },
+    {
+      "severity": "warning",
       "kind": "historial_como_autoridad_posible",
       "file": "CHANGELOG.md",
       "detail": "- Actualizado el estado del proyecto: el siguiente objetivo es probar `R4-CANDIDATA` con un expediente que usa Registro Historico como autoridad directa."
+    },
+    {
+      "severity": "warning",
+      "kind": "referencia_no_materializada",
+      "file": "CURRENT_STATE.md",
+      "detail": "06_Automatizacion/reportes/ao_external_evidence_real_001_report.md"
     },
     {
       "severity": "warning",

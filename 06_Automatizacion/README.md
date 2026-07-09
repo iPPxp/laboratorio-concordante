@@ -20,9 +20,20 @@ Esta carpeta contiene herramientas no mutantes del Laboratorio Concordante.
 - `ao_doc04_wide_tests.py`: pruebas sinteticas no reguladas `AO-DOC04-WIDE-TEST-001` para Documento 04 amplio v0 y la relacion local `REPORT_LAYER` / `Pi_rep`; no crea Nivel C ni cierra problemas globales.
 - `ao_ppi_bridge_002.py`: bateria fuerte no mutante `AO-PPI-BRIDGE-002` para Confluencia y Equivalencia local de proyecciones; conserva abiertos los problemas globales.
 - `ao_ppi_bridge_003.py`: matriz no mutante `AO-PPI-BRIDGE-003` de condiciones faltantes para cierre global, con casos heterogeneos de `REPORT_LAYER`; mantiene cierre global no autorizado.
+- `ao_protocol_independent_001.py`: protocolo reproducible independiente local `AO-PROTO-INDEP-001` con tres perfiles evaluadores; clasifica coincidencia exacta, coincidencia por familia y desacuerdo justificado.
+- `ao_eq_global_gate_001.py`: compuerta no mutante `AO-EQ-GLOBAL-GATE-001`; evalua Equivalencia global de proyecciones y conserva `global_equivalence_authorized: false`.
+- `ao_conf_global_gate_001.py`: compuerta no mutante `AO-CONF-GLOBAL-GATE-001`; evalua Confluencia global y conserva `global_confluence_authorized: false`.
+- `ao_report_promo_gate_001.py`: compuerta no mutante `AO-REPORT-PROMO-GATE-001`; deja `REPORT_LAYER` como candidata futura no promovida.
+- `ao_r4_gamma_export_gate_002.py`: compuerta no mutante `AO-R4-GAMMA-EXPORT-GATE-002`; conserva R4/Gamma como perfil restringido interoperable sin exportacion general.
+- `ao_global_readiness_001.py`: matriz consolidada no mutante `AO-GLOBAL-READINESS-001`; emite `readiness_result: mantener_no_autorizado`.
+- `ao_external_evidence_gate_001.py`: compuerta no mutante `AO-EXT-EVID-GATE-001`; valida manifiestos de evidencia externa independiente. Con el fixture base conserva `external_evidence_ready: false`; con `AO-EXT-REAL-001` emite `external_evidence_ready: true` sin autorizar cierre global.
 - `report_layer_serialization.py`: serializacion local no mutante `AO-REPORT-SERIAL-001` de `REPORT_LAYER` entre frentes internos; conserva versionado, mapa de campos y campos protegidos sin promocion global.
 - `report_layer_c002_gate.py`: compuerta no mutante `REPORT-LAYER-C002-GATE-001` para validar `REPORT_LAYER` como capa local pre-C conforme `C-002`; bloquea campos incompletos, promocion a Nivel C, recomendacion convertida en decision y cualquier modo mutante.
 - `moc_eval.py`: simulacion no mutante `MOC-EVAL-001` para `MOC-001`; evalua `Xi_eval`, estados MOC, puente `MOC/TCS`, puente `MOC/AO`, `operator_trace`, `Pi_moc_trace`, `ao_bridge`, `protocol_v02` y concordancia entre evaluadores simulados con casos sinteticos no clinicos.
+- `moc_experience_graph_001.py`: validador no mutante `MOC-EXP-GRAPH-CHECK-001`; evalua grafo local de experiencia, vector geometrico, casos 036-043 y puente AO por `operator_trace`, sin uso clinico ni autorizacion global.
+- `moc_exp_graph_authorization_gate_001.py`: compuerta no mutante `MOC-GRAPH-CANON-DOC04-GATE-001`; valida autorizacion interna preparatoria para propuestas candidatas hacia Canon y Documento 04, sin edicion oficial directa ni uso externo.
+- `moc_canon_doc04_impact_001.py`: validador no mutante `MOC-CANON-DOC04-IMPACT-001`; valida matriz de impacto sobre `M-000`, `M-001`, Documento 04, expediente y prohibiciones, sin edicion oficial.
+- `moc_canon_doc04_adopt_gate_001.py`: compuerta no mutante `MOC-CANON-DOC04-ADOPT-GATE-001`; evalua adopcion oficial posterior y conserva la edicion material como paso explicito separado.
 
 ## Regla de uso
 
@@ -183,6 +194,27 @@ python 06_Automatizacion/ao_ppi_bridge_004.py --format md --output 06_Automatiza
 python 06_Automatizacion/ao_ppi_bridge_004.py --format json --output 06_Automatizacion/reportes/ao_ppi_bridge_004_report.json
 ```
 
+Para ejecutar las compuertas globales AO y readiness:
+
+```powershell
+python 06_Automatizacion/ao_protocol_independent_001.py --format md --output 06_Automatizacion/reportes/ao_protocol_independent_001_report.md
+python 06_Automatizacion/ao_protocol_independent_001.py --format json --output 06_Automatizacion/reportes/ao_protocol_independent_001_report.json
+python 06_Automatizacion/ao_eq_global_gate_001.py --format md --output 06_Automatizacion/reportes/ao_eq_global_gate_001_report.md
+python 06_Automatizacion/ao_eq_global_gate_001.py --format json --output 06_Automatizacion/reportes/ao_eq_global_gate_001_report.json
+python 06_Automatizacion/ao_conf_global_gate_001.py --format md --output 06_Automatizacion/reportes/ao_conf_global_gate_001_report.md
+python 06_Automatizacion/ao_conf_global_gate_001.py --format json --output 06_Automatizacion/reportes/ao_conf_global_gate_001_report.json
+python 06_Automatizacion/ao_report_promo_gate_001.py --format md --output 06_Automatizacion/reportes/ao_report_promo_gate_001_report.md
+python 06_Automatizacion/ao_report_promo_gate_001.py --format json --output 06_Automatizacion/reportes/ao_report_promo_gate_001_report.json
+python 06_Automatizacion/ao_r4_gamma_export_gate_002.py --format md --output 06_Automatizacion/reportes/ao_r4_gamma_export_gate_002_report.md
+python 06_Automatizacion/ao_r4_gamma_export_gate_002.py --format json --output 06_Automatizacion/reportes/ao_r4_gamma_export_gate_002_report.json
+python 06_Automatizacion/ao_global_readiness_001.py --format md --output 06_Automatizacion/reportes/ao_global_readiness_001_report.md
+python 06_Automatizacion/ao_global_readiness_001.py --format json --output 06_Automatizacion/reportes/ao_global_readiness_001_report.json
+python 06_Automatizacion/ao_external_evidence_gate_001.py --format md --output 06_Automatizacion/reportes/ao_external_evidence_gate_001_report.md
+python 06_Automatizacion/ao_external_evidence_gate_001.py --format json --output 06_Automatizacion/reportes/ao_external_evidence_gate_001_report.json
+python 06_Automatizacion/ao_external_evidence_gate_001.py --case-file 06_Automatizacion/fixtures/ao_external_evidence_real_001_manifests.json --format md --output 06_Automatizacion/reportes/ao_external_evidence_real_001_report.md
+python 06_Automatizacion/ao_external_evidence_gate_001.py --case-file 06_Automatizacion/fixtures/ao_external_evidence_real_001_manifests.json --format json --output 06_Automatizacion/reportes/ao_external_evidence_real_001_report.json
+```
+
 Para ejecutar la compuerta no mutante `REPORT_LAYER` / `C-002`:
 
 ```powershell
@@ -195,6 +227,34 @@ Para ejecutar la simulacion no mutante de `MOC-001`:
 ```powershell
 python 06_Automatizacion/moc_eval.py --format md --output 06_Automatizacion/reportes/moc_eval_report.md
 python 06_Automatizacion/moc_eval.py --format json --output 06_Automatizacion/reportes/moc_eval_report.json
+```
+
+Para validar el grafo local de experiencia de `MOC-001`:
+
+```powershell
+python 06_Automatizacion/moc_experience_graph_001.py --format md --output 06_Automatizacion/reportes/moc_experience_graph_001_report.md
+python 06_Automatizacion/moc_experience_graph_001.py --format json --output 06_Automatizacion/reportes/moc_experience_graph_001_report.json
+```
+
+Para validar la autorizacion interna preparatoria del grafo:
+
+```powershell
+python 06_Automatizacion/moc_exp_graph_authorization_gate_001.py --format md --output 06_Automatizacion/reportes/moc_exp_graph_authorization_gate_001_report.md
+python 06_Automatizacion/moc_exp_graph_authorization_gate_001.py --format json --output 06_Automatizacion/reportes/moc_exp_graph_authorization_gate_001_report.json
+```
+
+Para validar la matriz no mutante de impacto Canon/Documento 04:
+
+```powershell
+python 06_Automatizacion/moc_canon_doc04_impact_001.py --format md --output 06_Automatizacion/reportes/moc_canon_doc04_impact_001_report.md
+python 06_Automatizacion/moc_canon_doc04_impact_001.py --format json --output 06_Automatizacion/reportes/moc_canon_doc04_impact_001_report.json
+```
+
+Para validar la compuerta de adopcion posterior Canon/Documento 04:
+
+```powershell
+python 06_Automatizacion/moc_canon_doc04_adopt_gate_001.py --format md --output 06_Automatizacion/reportes/moc_canon_doc04_adopt_gate_001_report.md
+python 06_Automatizacion/moc_canon_doc04_adopt_gate_001.py --format json --output 06_Automatizacion/reportes/moc_canon_doc04_adopt_gate_001_report.json
 ```
 
 Para validar la implementacion:
@@ -212,8 +272,19 @@ python -m unittest 06_Automatizacion/test_ao_tcs_rel_001.py
 python -m unittest 06_Automatizacion/test_ao_authority_global_001.py
 python -m unittest 06_Automatizacion/test_ao_ext_cov_001.py
 python -m unittest 06_Automatizacion/test_ao_ppi_bridge_004.py
+python -m unittest 06_Automatizacion/test_ao_protocol_independent_001.py
+python -m unittest 06_Automatizacion/test_ao_eq_global_gate_001.py
+python -m unittest 06_Automatizacion/test_ao_conf_global_gate_001.py
+python -m unittest 06_Automatizacion/test_ao_report_promo_gate_001.py
+python -m unittest 06_Automatizacion/test_ao_r4_gamma_export_gate_002.py
+python -m unittest 06_Automatizacion/test_ao_global_readiness_001.py
+python -m unittest 06_Automatizacion/test_ao_external_evidence_gate_001.py
 python -m unittest 06_Automatizacion/test_report_layer_c002_gate.py
 python -m unittest 06_Automatizacion/test_moc_eval.py
+python -m unittest 06_Automatizacion/test_moc_experience_graph_001.py
+python -m unittest 06_Automatizacion/test_moc_exp_graph_authorization_gate_001.py
+python -m unittest 06_Automatizacion/test_moc_canon_doc04_impact_001.py
+python -m unittest 06_Automatizacion/test_moc_canon_doc04_adopt_gate_001.py
 ```
 
 ## Reportes iniciales
@@ -258,10 +329,34 @@ python -m unittest 06_Automatizacion/test_moc_eval.py
 - `reportes/ao_ext_cov_001_report.json`: reporte estructurado de cobertura externa amplia sintetica no regulada.
 - `reportes/ao_ppi_bridge_004_report.md`: reporte de matriz consolidada no mutante `AO-PPI-BRIDGE-004`.
 - `reportes/ao_ppi_bridge_004_report.json`: reporte estructurado de matriz consolidada no mutante `AO-PPI-BRIDGE-004`.
+- `reportes/ao_protocol_independent_001_report.md`: reporte de protocolo reproducible independiente local.
+- `reportes/ao_protocol_independent_001_report.json`: reporte estructurado de protocolo reproducible independiente local.
+- `reportes/ao_eq_global_gate_001_report.md`: reporte de compuerta de Equivalencia global.
+- `reportes/ao_eq_global_gate_001_report.json`: reporte estructurado de compuerta de Equivalencia global.
+- `reportes/ao_conf_global_gate_001_report.md`: reporte de compuerta de Confluencia global.
+- `reportes/ao_conf_global_gate_001_report.json`: reporte estructurado de compuerta de Confluencia global.
+- `reportes/ao_report_promo_gate_001_report.md`: reporte de compuerta de promocion `REPORT_LAYER`.
+- `reportes/ao_report_promo_gate_001_report.json`: reporte estructurado de compuerta de promocion `REPORT_LAYER`.
+- `reportes/ao_r4_gamma_export_gate_002_report.md`: reporte de compuerta de exportacion R4/Gamma.
+- `reportes/ao_r4_gamma_export_gate_002_report.json`: reporte estructurado de compuerta de exportacion R4/Gamma.
+- `reportes/ao_global_readiness_001_report.md`: reporte de matriz consolidada de readiness global.
+- `reportes/ao_global_readiness_001_report.json`: reporte estructurado de matriz consolidada de readiness global.
+- `reportes/ao_external_evidence_gate_001_report.md`: reporte de compuerta de evidencia externa independiente.
+- `reportes/ao_external_evidence_gate_001_report.json`: reporte estructurado de compuerta de evidencia externa independiente.
+- `reportes/ao_external_evidence_real_001_report.md`: reporte de evidencia externa real admisible preliminarmente.
+- `reportes/ao_external_evidence_real_001_report.json`: reporte estructurado de evidencia externa real admisible preliminarmente.
 - `reportes/report_layer_c002_gate_report.md`: reporte de compuerta no mutante `REPORT_LAYER` / `C-002`.
 - `reportes/report_layer_c002_gate_report.json`: reporte estructurado de compuerta no mutante `REPORT_LAYER` / `C-002`.
 - `reportes/moc_eval_report.md`: reporte de simulacion no mutante `MOC-EVAL-001` con trazas de operadores, rol local de puente AO y protocolo v0.2.
 - `reportes/moc_eval_report.json`: reporte estructurado de simulacion no mutante `MOC-EVAL-001` con `operator_trace`, `ao_bridge` y `protocol_v02`.
+- `reportes/moc_experience_graph_001_report.md`: reporte del grafo local de experiencia `MOC-EXP-GRAPH-CHECK-001`.
+- `reportes/moc_experience_graph_001_report.json`: reporte estructurado del grafo local de experiencia con `operator_trace` y puente AO.
+- `reportes/moc_exp_graph_authorization_gate_001_report.md`: reporte de autorizacion interna preparatoria para Canon y Documento 04.
+- `reportes/moc_exp_graph_authorization_gate_001_report.json`: reporte estructurado de autorizacion interna preparatoria.
+- `reportes/moc_canon_doc04_impact_001_report.md`: reporte de matriz no mutante `MOC-CANON-DOC04-IMPACT-001`.
+- `reportes/moc_canon_doc04_impact_001_report.json`: reporte estructurado de matriz no mutante Canon/Documento 04.
+- `reportes/moc_canon_doc04_adopt_gate_001_report.md`: reporte de compuerta `MOC-CANON-DOC04-ADOPT-GATE-001`.
+- `reportes/moc_canon_doc04_adopt_gate_001_report.json`: reporte estructurado de compuerta de adopcion posterior.
 - `fixtures/auditor_v0_cases.json`: matriz externa completa del Auditor v0.
 - `fixtures/auditor_v0_case_schema.json`: esquema operativo inicial de casos externos del Auditor v0.
 - `fixtures/auditor_v0_documental_cases.json`: fixture documental parcial no mutante.
@@ -274,8 +369,20 @@ python -m unittest 06_Automatizacion/test_moc_eval.py
 - `fixtures/ao_authority_global_001_cases.json`: fixture de criterio local de autoridad entre niveles.
 - `fixtures/ao_ext_cov_001_cases.json`: fixture de cobertura externa amplia sintetica.
 - `fixtures/ao_ppi_bridge_004_matrix.json`: fixture de matriz consolidada posterior a las rutas AO defendibles.
+- `fixtures/ao_protocol_independent_001_cases.json`: fixture del protocolo reproducible independiente local.
+- `fixtures/ao_eq_global_gate_001_matrix.json`: fixture de compuerta de Equivalencia global.
+- `fixtures/ao_conf_global_gate_001_matrix.json`: fixture de compuerta de Confluencia global.
+- `fixtures/ao_report_promo_gate_001_cases.json`: fixture de compuerta de promocion `REPORT_LAYER`.
+- `fixtures/ao_r4_gamma_export_gate_002_cases.json`: fixture de compuerta de exportacion R4/Gamma.
+- `fixtures/ao_global_readiness_001_matrix.json`: fixture de matriz de readiness global.
+- `fixtures/ao_external_evidence_gate_001_manifests.json`: fixture de manifiestos para admisibilidad externa.
+- `fixtures/ao_external_evidence_real_001_manifests.json`: fixture real de manifiestos externos `AO-EXT-REAL-001`.
 - `fixtures/report_layer_c002_cases.json`: fixture sintetico para `REPORT-LAYER-C002-GATE-001`.
 - `fixtures/moc_cases.json`: fixture sintetico no clinico para `MOC-EVAL-001`.
+- `fixtures/moc_experience_graph_cases.json`: fixture con casos 036-043 importados como evidencia documental estructural para `MOC-EXP-GRAPH-001`.
+- `fixtures/moc_exp_graph_authorization_gate_001.json`: manifiesto de autorizacion interna preparatoria para `MOC-GRAPH-CANON-DOC04-GATE-001`.
+- `fixtures/moc_canon_doc04_impact_001_matrix.json`: matriz estructurada para `MOC-CANON-DOC04-IMPACT-001`.
+- `fixtures/moc_canon_doc04_adopt_gate_001.json`: manifiesto estructurado para `MOC-CANON-DOC04-ADOPT-GATE-001`.
 
 ## Estado
 
@@ -283,4 +390,4 @@ Esta superficie pertenece a `AUT-001`.
 
 `DO-CHECK-MIN-001` queda aceptado como MVP minimo provisional.
 
-`DO-CHECK-MED-001` queda aceptado como fase media provisional. `DO-STATE-BOARD-001` queda aceptado como tablero de estado provisional. `DO-LAB-CONTINUITY-001` queda aceptado como continuidad integrada provisional. `DO-LAB-RUN-001` queda aceptado como comando unico provisional. `DO-LAB-RISK-001` queda aceptado como clasificador de riesgos provisional. `DO-LAB-SUMMARY-001` queda aceptado como resumen ejecutivo provisional. `AUDITOR-V0-001` queda aceptado como implementacion inicial no mutante conforme `C-002`. `R001-TABLE-CHECK-001` queda integrado como prueba local no mutante y reporta `R001-TB-001` como relacion formal local con AO. `AO-EXT-CONF-001` queda integrado como prueba externa sintetica no regulada para `AO-001`; conserva abiertas Confluencia global, Equivalencia global, exportacion general de R4/Gamma y maduracion de `TCS-001`. `AO-DOC04-WIDE-TEST-001` queda integrado como prueba sintetica de Documento 04 amplio y `REPORT_LAYER`; conserva `REPORT_LAYER` como capa local pre-C y no crea Nivel C. `AO-PPI-BRIDGE-002` queda integrado como bateria fuerte no mutante de Confluencia y Equivalencia local; conserva abiertos los problemas globales. `AO-PPI-BRIDGE-003` queda integrado como matriz de condiciones faltantes para cierre global y ampliacion heterogenea de `REPORT_LAYER`; mantiene cierre global no autorizado. `AO-REPORT-SERIAL-001` queda integrado como serializacion local interfrente de `REPORT_LAYER`; atiende localmente `AO-PPI-GC-004` sin autorizar promocion global. `AO-TCS-REL-001`, `AO-AUTH-GLOBAL-001`, `AO-EXT-COV-001` y `AO-PPI-BRIDGE-004` quedan integrados como rutas locales no mutantes para relacion `AO/TCS`, autoridad entre niveles, cobertura externa y matriz consolidada; reducen deudas en grado local o parcial local, pero mantienen `global_closure_authorized: false`. `REPORT-LAYER-C002-GATE-001` queda integrado como compuerta no mutante previa a cualquier modo mutante de `REPORT_LAYER`. `MOC-EVAL-001` queda integrado como simulacion no mutante de `MOC-001` y emite `operator_trace` para `MOC-TCS-BRIDGE-001`, `Pi_moc_trace` / `ao_bridge` para `MOC-AO-BRIDGE-001` y `protocol_v02` para `MOC-EVAL-PROTO-002`; conserva `MOC-001` provisional, `TCS-001` no canonico y `H-Xi` no admitida. Ninguna herramienta transforma, autoriza cambios o cierra `AUT-001`.
+`DO-CHECK-MED-001` queda aceptado como fase media provisional. `DO-STATE-BOARD-001` queda aceptado como tablero de estado provisional. `DO-LAB-CONTINUITY-001` queda aceptado como continuidad integrada provisional. `DO-LAB-RUN-001` queda aceptado como comando unico provisional. `DO-LAB-RISK-001` queda aceptado como clasificador de riesgos provisional. `DO-LAB-SUMMARY-001` queda aceptado como resumen ejecutivo provisional. `AUDITOR-V0-001` queda aceptado como implementacion inicial no mutante conforme `C-002`. `R001-TABLE-CHECK-001` queda integrado como prueba local no mutante y reporta `R001-TB-001` como relacion formal local con AO. `AO-EXT-CONF-001` queda integrado como prueba externa sintetica no regulada para `AO-001`; conserva abiertas Confluencia global, Equivalencia global, exportacion general de R4/Gamma y maduracion de `TCS-001`. `AO-DOC04-WIDE-TEST-001` queda integrado como prueba sintetica de Documento 04 amplio y `REPORT_LAYER`; conserva `REPORT_LAYER` como capa local pre-C y no crea Nivel C. `AO-PPI-BRIDGE-002` queda integrado como bateria fuerte no mutante de Confluencia y Equivalencia local; conserva abiertos los problemas globales. `AO-PPI-BRIDGE-003` queda integrado como matriz de condiciones faltantes para cierre global y ampliacion heterogenea de `REPORT_LAYER`; mantiene cierre global no autorizado. `AO-REPORT-SERIAL-001` queda integrado como serializacion local interfrente de `REPORT_LAYER`; atiende localmente `AO-PPI-GC-004` sin autorizar promocion global. `AO-TCS-REL-001`, `AO-AUTH-GLOBAL-001`, `AO-EXT-COV-001` y `AO-PPI-BRIDGE-004` quedan integrados como rutas locales no mutantes para relacion `AO/TCS`, autoridad entre niveles, cobertura externa y matriz consolidada; reducen deudas en grado local o parcial local, pero mantienen `global_closure_authorized: false`. `AO-PROTO-INDEP-001`, `AO-EQ-GLOBAL-GATE-001`, `AO-CONF-GLOBAL-GATE-001`, `AO-REPORT-PROMO-GATE-001`, `AO-R4-GAMMA-EXPORT-GATE-002`, `AO-GLOBAL-READINESS-001`, `AO-EXT-EVID-GATE-001` y `AO-EXT-REAL-001` quedan integrados como compuertas locales, matriz/ruta de readiness y evidencia real preliminar; la salida vigente es `mantener_no_autorizado`, con cierre global, exportacion general, promocion de `REPORT_LAYER` y exportacion R4/Gamma en `false`. `REPORT-LAYER-C002-GATE-001` queda integrado como compuerta no mutante previa a cualquier modo mutante de `REPORT_LAYER`. `MOC-EVAL-001` queda integrado como simulacion no mutante de `MOC-001` y emite `operator_trace` para `MOC-TCS-BRIDGE-001`, `Pi_moc_trace` / `ao_bridge` para `MOC-AO-BRIDGE-001` y `protocol_v02` para `MOC-EVAL-PROTO-002`. `MOC-EXP-GRAPH-CHECK-001` queda integrado como validador no mutante del grafo local de experiencia, metrica geometrica y puente AO por `operator_trace`. `MOC-GRAPH-CANON-DOC04-GATE-001` queda integrado como compuerta no mutante de autorizacion interna preparatoria para propuestas candidatas hacia Canon y Documento 04; conserva edicion oficial directa, uso externo y modo mutante en `false`. `MOC-CANON-DOC04-IMPACT-001` queda integrado como matriz no mutante de impacto: `M-000` sin cambio textual recomendado, `M-001` y Documento 04 como candidatas futuras, y prohibiciones intactas. `MOC-CANON-DOC04-ADOPT-GATE-001` queda integrado como compuerta no mutante de adopcion posterior: recomienda aplicacion explicita para `M-001` y Documento 04, sin ejecutar edicion oficial. Ninguna herramienta transforma, autoriza cambios oficiales automaticos o cierra `AUT-001`.

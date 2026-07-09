@@ -1,6 +1,6 @@
 # LAB_EXECUTIVE_SUMMARY
 
-report_id: DO-LAB-SUMMARY-20260706-153516
+report_id: DO-LAB-SUMMARY-20260708-210447
 expediente: AUT-001
 algoritmo: DO-LAB-SUMMARY-001
 resultado: advertencia
@@ -15,15 +15,15 @@ transformacion_permitida: false
 
 ## Estado operativo
 
-- frente activo: `AO-001` queda como frente operativo inmediato con `AO-PPI-BRIDGE-004` aceptado como matriz consolidada local. La siguiente ruta defensible requiere decision separada: protocolo AO reproducible independiente, promocion formal de `REPORT_LAYER`, exportacion R4/Gamma o cierre global; ninguna queda autorizada.
-- ultima decision: `AO-001_Decision_Matriz_Consolidada_Cierre_Global_004.md` (`D-2026-07-06-023`): acepta `AO-PPI-BRIDGE-004` como matriz consolidada local; deja cinco condiciones `satisfecha_local`, dos `parcial_local`, dos `faltante_global` y tres `bloqueada_por_alcance`, con `global_closure_authorized: false`.
-- proximo objetivo: Conservar `AO-PPI-BRIDGE-004` como matriz consolidada aceptada; no usarla como cierre global.
+- frente activo: `AO-001` queda como frente operativo inmediato con `AO-GLOBAL-READINESS-001` aceptado como matriz de no autorizacion global, `AO-PPI-BRIDGE-004` fijado como estado actual local de deudas, `AO-EXT-INDEP-001` / `AO-EXT-EVID-GATE-001` preparados para admisibilidad externa y `AO-EXT-REAL-001` admitido preliminarmente como evidencia externa real. La siguiente ruta defensible requiere decision separada de reconsideracion; ninguna promocion, exportacion ni cierre global queda autorizado.
+- ultima decision: `MOC-001_Decision_Aplicacion_Oficial_Canon_Doc04_001.md` (`D-2026-07-09-005`): acepta y ejecuta `MOC-CANON-DOC04-APPLY-001`; `M-001` adopta matriz de superficies para intervenciones de nivel sensible y Documento 04 adopta entrada auxiliar por traza local de grafo. `M-000` queda sin cambio textual; no hay modo mutante, uso externo, Nivel C, cierre global, promocion de `REPORT_LAYER` ni exportacion R4/Gamma.
+- proximo objetivo: Conservar `AO-GLOBAL-READINESS-001` como matriz vigente de no autorizacion global y `AO-PPI-BRIDGE-004` como estado actual local de deudas `AO-PPI`.
 
 ## Riesgos clasificados
 
 - riesgo_activo: 0
-- advertencia_controlada: 25
-- deuda_documental: 309
+- advertencia_controlada: 29
+- deuda_documental: 398
 - advertencia_heredada: 63
 - observacion: 61
 
@@ -31,16 +31,16 @@ transformacion_permitida: false
 
 - bitacora_historica: 15
 - control_auditoria: 1
-- decision_registrada: 37
-- guardrail: 95
+- decision_registrada: 47
+- guardrail: 104
 - meta_check: 12
-- riesgo_real: 298
+- riesgo_real: 372
 
 ## Severidad
 
-- alta: 4
-- media: 206
-- baja: 248
+- alta: 5
+- media: 268
+- baja: 278
 
 ## Riesgos activos principales
 
@@ -48,11 +48,11 @@ transformacion_permitida: false
 
 ## Automatizacion
 
-- DO-CHECK-MIN-001: advertencia (214 hallazgos)
-- DO-CHECK-MED-001: advertencia (433 hallazgos)
+- DO-CHECK-MIN-001: advertencia (266 hallazgos)
+- DO-CHECK-MED-001: advertencia (474 hallazgos)
 - DO-STATE-BOARD-001: ok (0 hallazgos)
-- DO-LAB-CONTINUITY-001: advertencia (433 hallazgos)
-- DO-LAB-RISK-001: advertencia_clasificada (458 hallazgos)
+- DO-LAB-CONTINUITY-001: advertencia (474 hallazgos)
+- DO-LAB-RISK-001: advertencia_clasificada (551 hallazgos)
 - R001-TABLE-CHECK-001: ok (0 hallazgos)
 - AO-EXT-CONF-001: ok (0 hallazgos)
 - AO-DOC04-WIDE-TEST-001: ok (0 hallazgos)
@@ -63,8 +63,21 @@ transformacion_permitida: false
 - AO-AUTH-GLOBAL-001: ok (0 hallazgos)
 - AO-EXT-COV-001: ok (0 hallazgos)
 - AO-PPI-BRIDGE-004: ok (0 hallazgos)
+- AO-PROTO-INDEP-001: ok (0 hallazgos)
+- AO-EQ-GLOBAL-GATE-001: ok (0 hallazgos)
+- AO-CONF-GLOBAL-GATE-001: ok (0 hallazgos)
+- AO-REPORT-PROMO-GATE-001: ok (0 hallazgos)
+- AO-R4-GAMMA-EXPORT-GATE-002: ok (0 hallazgos)
+- AO-GLOBAL-READINESS-001: ok (0 hallazgos)
+- AO-EXT-EVID-GATE-001: ok (0 hallazgos)
+- AO-EXT-REAL-001: ok (0 hallazgos)
 - REPORT-LAYER-C002-GATE-001: ok (0 hallazgos)
 - MOC-EVAL-001: ok (0 hallazgos)
+- MOC-EXP-GRAPH-CHECK-001: ok (0 hallazgos)
+- MOC-GRAPH-CANON-DOC04-GATE-001: ok (0 hallazgos)
+- MOC-CANON-DOC04-IMPACT-001: ok (0 hallazgos)
+- MOC-CANON-DOC04-ADOPT-GATE-001: ok (0 hallazgos)
+- MOC-CANON-DOC04-APPLY-CHECK-001: ok (0 hallazgos)
 
 ## Siguientes acciones
 

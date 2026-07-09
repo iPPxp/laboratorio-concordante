@@ -1,0 +1,102 @@
+{
+  "suite_id": "AO-CONF-GLOBAL-GATE-MATRIX-001",
+  "source_evidence": [
+    "AO-PPI-BRIDGE-004",
+    "AO-PROTO-INDEP-001",
+    "AO-AUTH-GLOBAL-001",
+    "AO-EXT-COV-001"
+  ],
+  "conditions": [
+    {
+      "condition_id": "AO-CONF-GC-001",
+      "route_set": "estado_decision_reporte",
+      "status": "satisfecha_local",
+      "local_credit": true,
+      "blocks_global_confluence": false,
+      "evidence": ["AO-PPI-CONF-001", "AO-PPI-BRIDGE-002"],
+      "gap": "rutas locales coinciden bajo testigo compartido",
+      "global_confluence_claim": false,
+      "promotes_report_layer": false,
+      "exports_r4_gamma": false,
+      "mutating_route": false
+    },
+    {
+      "condition_id": "AO-CONF-GC-002",
+      "route_set": "autoridad",
+      "status": "parcial_local",
+      "local_credit": true,
+      "blocks_global_confluence": false,
+      "evidence": ["AO-AUTH-GLOBAL-001"],
+      "gap": "autoridad local comparable, no autoridad global",
+      "global_confluence_claim": false,
+      "promotes_report_layer": false,
+      "exports_r4_gamma": false,
+      "mutating_route": false
+    },
+    {
+      "condition_id": "AO-CONF-GC-003",
+      "route_set": "report_layer_serializado",
+      "status": "satisfecha_local",
+      "local_credit": true,
+      "blocks_global_confluence": false,
+      "evidence": ["AO-REPORT-SERIAL-001"],
+      "gap": "serializacion local estable, no contrato global",
+      "global_confluence_claim": false,
+      "promotes_report_layer": false,
+      "exports_r4_gamma": false,
+      "mutating_route": false
+    },
+    {
+      "condition_id": "AO-CONF-GC-004",
+      "route_set": "protocolo_independiente",
+      "status": "satisfecha_local",
+      "local_credit": true,
+      "blocks_global_confluence": false,
+      "evidence": ["AO-PROTO-INDEP-001"],
+      "gap": "reproducibilidad local sin validacion externa real",
+      "global_confluence_claim": false,
+      "promotes_report_layer": false,
+      "exports_r4_gamma": false,
+      "mutating_route": false
+    },
+    {
+      "condition_id": "AO-CONF-GC-005",
+      "route_set": "cobertura_externa",
+      "status": "parcial_local",
+      "local_credit": true,
+      "blocks_global_confluence": false,
+      "evidence": ["AO-EXT-COV-001"],
+      "gap": "cobertura externa sintetica, no independiente",
+      "global_confluence_claim": false,
+      "promotes_report_layer": false,
+      "exports_r4_gamma": false,
+      "mutating_route": false
+    },
+    {
+      "condition_id": "AO-CONF-GC-006",
+      "route_set": "dominio_global",
+      "status": "faltante_global",
+      "local_credit": false,
+      "blocks_global_confluence": true,
+      "evidence": ["AO-PPI-BRIDGE-004", "AO-PPI-LOCAL-CLOSE-001"],
+      "gap": "no existe cobertura global independiente de dominios",
+      "global_confluence_claim": false,
+      "promotes_report_layer": false,
+      "exports_r4_gamma": false,
+      "mutating_route": false
+    },
+    {
+      "condition_id": "AO-CONF-GC-007",
+      "route_set": "modo_mutante",
+      "status": "bloqueada_por_alcance",
+      "local_credit": false,
+      "blocks_global_confluence": true,
+      "evidence": ["C-002", "REPORT-LAYER-C002-GATE-001"],
+      "gap": "el laboratorio no autoriza rutas mutantes para cierre global",
+      "global_confluence_claim": false,
+      "promotes_report_layer": false,
+      "exports_r4_gamma": false,
+      "mutating_route": false
+    }
+  ]
+}
