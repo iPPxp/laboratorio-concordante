@@ -1,0 +1,78 @@
+﻿{
+    "artifact_id":  "MOC-EXTRACTOR-001-C-BASELINE-CANDIDATE",
+    "state":  "MATERIALIZED_FOR_HUMAN_REVIEW_NOT_CANONICAL",
+    "provisional_git_anchor":  {
+                                   "commit":  "b1f41059de6e4e2d255062054484453d4d69420d",
+                                   "tree":  "b54e9549d50b8d81a956b5c1dd9b321f0f11093d",
+                                   "role":  "HOST_WORKTREE_ANCHOR_NOT_CANONICAL_AUTHORITY"
+                               },
+    "source":  {
+                   "locator":  "LOCAL_IGNORED_WORKTREE",
+                   "source_manifest_sha256":  "dcfed415db34653d5599adf9df7bd4c58a1571cd815ab08dfb086a8783f250a1",
+                   "source_manifest_entries":  34,
+                   "source_manifest_verified":  34,
+                   "selection":  "Contract, prompt, schema, source code, tests and operational metric correction."
+               },
+    "included":  [
+                     {
+                         "path":  "MOC-EXTRACTOR-001-C.md",
+                         "sha256":  "906f72c645b428367b24db1eb981dd9057c87930ec88fb3525217eff45941224",
+                         "bytes":  3203,
+                         "source_manifest_covered":  true
+                     },
+                     {
+                         "path":  "MOC-EXTRACTOR-001-C-DEV-REPORT.md",
+                         "sha256":  "51fe0de32b6c1bc3bc75bf04432883562aaf460cb6521057a62a0545ae2678c7",
+                         "bytes":  8542,
+                         "source_manifest_covered":  true
+                     },
+                     {
+                         "path":  "MOC-EXTRACTOR-001-C-DEV-METRIC-CORRECTION.md",
+                         "sha256":  "291cdc4f7c35e7f5b37adf60449db43d489f4e74791f0056d12ffe7608fe4439",
+                         "bytes":  2307,
+                         "source_manifest_covered":  false
+                     },
+                     {
+                         "path":  "prompts/MOC-EXTRACTOR-001-C_PROMPT.md",
+                         "sha256":  "3f826fed61a0b7876878ccdedde4a1cac91be970111756a7c831f9d43352acf8",
+                         "bytes":  4095,
+                         "source_manifest_covered":  true
+                     },
+                     {
+                         "path":  "schema/moc_extractor_001_c.schema.json",
+                         "sha256":  "0288105505bd2b69ee9f2287594b1de3e005f0339bc71db7551ca2768f1cda70",
+                         "bytes":  4683,
+                         "source_manifest_covered":  true
+                     },
+                     {
+                         "path":  "src/moc_extractor_001_c.py",
+                         "sha256":  "ae2e158ec3a9387229be59cf79b937dd7387a886e173b6760d81cdf856a5a6b1",
+                         "bytes":  52339,
+                         "source_manifest_covered":  true
+                     },
+                     {
+                         "path":  "src/run_dev.py",
+                         "sha256":  "ceb9e203b629f844124bca4e5d554509ba704d38cd8a346ebcfb850ffe80319b",
+                         "bytes":  13177,
+                         "source_manifest_covered":  true
+                     },
+                     {
+                         "path":  "tests/test_moc_extractor_001_c.py",
+                         "sha256":  "c5255719d3910dc3f7ffad2049edfa0ab00e7468efb7dc0cdc1f26b05e40add6",
+                         "bytes":  5014,
+                         "source_manifest_covered":  true
+                     }
+                 ],
+    "excluded":  {
+                     "frozen_execution_evidence":  "runs/DEV-2026-08-06-v5-frozen/**",
+                     "prior_execution_evidence":  "runs/DEV-2026-08-06-v1..v4/**",
+                     "python_cache":  "src/__pycache__/** and tests/__pycache__/**",
+                     "source_manifest":  "SHA256SUMS-MOC-EXTRACTOR-001-C.txt is retained only in the external evidence record because it names excluded runs and local paths."
+                 },
+    "review_requirements":  [
+                                "Review provisional Git anchor before any commit.",
+                                "Review excluded evidence separately.",
+                                "Do not treat this materialization as canonical incorporation.",
+                                "No H3 incorporation is authorized by this artifact."
+                            ]
+}
