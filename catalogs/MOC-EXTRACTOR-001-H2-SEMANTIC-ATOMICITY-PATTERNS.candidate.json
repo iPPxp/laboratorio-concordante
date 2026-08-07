@@ -1,0 +1,44 @@
+{
+  "artifact_id": "MOC-EXTRACTOR-001-H2-SEMANTIC-ATOMICITY-PATTERNS",
+  "version": "2026-08-06.h2.1",
+  "status": "CANDIDATE_NOT_INCORPORATED",
+  "decision": "closed_pattern_may_block_or_abstain_but_never_proves_universal_semantic_atomicity",
+  "patterns": [
+    {
+      "pattern_id": "H1-ATOM-ACTION-ALTERNATIVE-O-001",
+      "scope": "record",
+      "fields": ["accion_candidata", "accion_rechazada"],
+      "regex": "\\s+o\\s+",
+      "result": "SEMANTIC_REVIEW_REQUIRED",
+      "positive_examples": ["renovar o comprar pesas"],
+      "counterexamples": ["actualizar el perfil para recibir clientes"]
+    },
+    {
+      "pattern_id": "H1-ATOM-ACTION-COORDINATION-Y-001",
+      "scope": "record",
+      "fields": ["accion_candidata", "accion_rechazada"],
+      "regex": "\\s+y\\s+",
+      "result": "SEMANTIC_REVIEW_REQUIRED",
+      "positive_examples": ["renovar y comprar pesas"],
+      "counterexamples": ["actualizar el perfil para recibir clientes"]
+    },
+    {
+      "pattern_id": "H1-ATOM-RESOURCE-COORDINATION-Y-001",
+      "scope": "record",
+      "fields": ["recurso_mencionado"],
+      "regex": "\\s+y\\s+",
+      "result": "SEMANTIC_REVIEW_REQUIRED",
+      "positive_examples": ["un servidor y una licencia"],
+      "counterexamples": ["suscripción de 5TB"]
+    },
+    {
+      "pattern_id": "H1-ATOM-CONTRADICTION-POLE-Y-001",
+      "scope": "contradiction_refs",
+      "fields": [],
+      "regex": "\\s+y\\s+",
+      "result": "SEMANTIC_REVIEW_REQUIRED",
+      "positive_examples": ["Quiero renovar y viajar"],
+      "counterexamples": ["Quiero renovar"]
+    }
+  ]
+}

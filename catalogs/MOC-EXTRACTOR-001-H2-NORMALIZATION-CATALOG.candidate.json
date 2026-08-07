@@ -1,0 +1,74 @@
+{
+  "artifact_id": "MOC-EXTRACTOR-001-H2-NORMALIZATION-CATALOG",
+  "version": "2026-08-06.h2.1",
+  "status": "CANDIDATE_NOT_INCORPORATED",
+  "provenance": "signed_mapping_catalog",
+  "mappings": [
+    {
+      "mapping_id": "MAP-H2-CONST-EXT-001",
+      "normalization_rule": "NORM-CONST-EXT-01",
+      "input_field": "restriccion_externa",
+      "input_match": {
+        "surface_value": "el proveedor local no entrega",
+        "required_context": {}
+      },
+      "output_value": "incumplimiento_terceros",
+      "transformation_class": "exact_closed_mapping",
+      "semantic_effects": {
+        "adds_causality": false,
+        "adds_intensity": false,
+        "adds_certainty": false,
+        "adds_temporality": false,
+        "adds_operational_effect": false
+      },
+      "version": "2026-08-06.h2.1",
+      "provenance": "signed_mapping_contract",
+      "normalization_family": "incumplimiento_terceros",
+      "normalization_subtype": "incumplimiento_proveedor_local_entrega"
+    },
+    {
+      "mapping_id": "MAP-H2-RESOURCE-005",
+      "normalization_rule": "NORM-RESOURCE-001",
+      "input_field": "recurso_mencionado",
+      "input_match": {
+        "surface_value": "suscripción de 5TB en la nube y herramientas IA",
+        "required_context": {}
+      },
+      "output_value": "infraestructura_digital",
+      "transformation_class": "exact_closed_mapping",
+      "semantic_effects": {
+        "adds_causality": false,
+        "adds_intensity": false,
+        "adds_certainty": false,
+        "adds_temporality": false,
+        "adds_operational_effect": false
+      },
+      "version": "2026-08-06.h2.1",
+      "provenance": "signed_mapping_contract",
+      "normalization_family": "infraestructura_digital",
+      "normalization_subtype": "almacenamiento_nube_y_herramientas_ia"
+    },
+    {
+      "mapping_id": "MAP-H2-RESOURCE-008",
+      "normalization_rule": "NORM-RESOURCE-001",
+      "input_field": "recurso_mencionado",
+      "input_match": {
+        "surface_value": "boletos protegidos",
+        "required_context": {}
+      },
+      "output_value": "entradas_adquiridas",
+      "transformation_class": "exact_closed_mapping",
+      "semantic_effects": {
+        "adds_causality": false,
+        "adds_intensity": false,
+        "adds_certainty": false,
+        "adds_temporality": false,
+        "adds_operational_effect": false
+      },
+      "version": "2026-08-06.h2.1",
+      "provenance": "signed_mapping_contract",
+      "normalization_family": "entradas_adquiridas",
+      "normalization_subtype": "boletos_protegidos"
+    }
+  ]
+}

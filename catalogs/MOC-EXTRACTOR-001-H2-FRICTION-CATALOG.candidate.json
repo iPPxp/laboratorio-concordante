@@ -1,0 +1,84 @@
+{
+  "artifact_id": "MOC-EXTRACTOR-001-H2-FRICTION-CATALOG",
+  "version": "2026-08-06.h2.1",
+  "status": "CANDIDATE_NOT_INCORPORATED",
+  "provenance": "signed_friction_rule_catalog",
+  "rules": [
+    {
+      "rule_id": "FRICTION-AMBIG-001",
+      "type": "ambiguity",
+      "allowed_claim_types": ["estado_factual", "intencion_declarada", "accion_candidata", "explicit_unknown"],
+      "allowed_provenances": ["reported", "explicit_unknown"],
+      "cardinality": {"minimum": 1, "maximum": 2},
+      "reference_slots": [],
+      "slots_any_order": true,
+      "required_relation": "The same explicit referent admits unresolved readings.",
+      "structured_predicate": null,
+      "positive_examples": ["A referent remains explicitly unresolved."],
+      "counterexamples": ["Two unrelated goals coexist."],
+      "prohibited_expansions": ["Inventing or resolving an interpretation"]
+    },
+    {
+      "rule_id": "FRICTION-AMBIG-TIME-001",
+      "type": "ambiguity",
+      "allowed_claim_types": ["horizonte_temporal", "estado_temporal", "explicit_unknown"],
+      "allowed_provenances": ["reported", "explicit_unknown"],
+      "cardinality": {"minimum": 1, "maximum": 2},
+      "reference_slots": [],
+      "slots_any_order": true,
+      "required_relation": "An explicit temporal expression remains unresolved.",
+      "structured_predicate": null,
+      "positive_examples": ["The duration is explicitly unknown."],
+      "counterexamples": ["A precise date is reported."],
+      "prohibited_expansions": ["Calculating a date or duration"]
+    },
+    {
+      "rule_id": "FRICTION-CONTRA-001",
+      "type": "contradiction",
+      "allowed_claim_types": ["estado_factual", "intencion_declarada", "accion_candidata", "accion_rechazada", "obligacion_declarada", "valor_declarado"],
+      "allowed_provenances": ["reported"],
+      "cardinality": {"minimum": 2, "maximum": 2},
+      "reference_slots": [
+        {"role": "pole_a", "allowed_fields": ["estado_factual", "intencion_declarada", "accion_candidata", "accion_rechazada", "obligacion_declarada", "valor_declarado"], "allowed_provenances": ["reported"]},
+        {"role": "pole_b", "allowed_fields": ["estado_factual", "intencion_declarada", "accion_candidata", "accion_rechazada", "obligacion_declarada", "valor_declarado"], "allowed_provenances": ["reported"]}
+      ],
+      "slots_any_order": true,
+      "required_relation": "Two deterministic facts assert opposite booleans for the same dimension.",
+      "structured_predicate": "same_dimension_opposite_boolean",
+      "positive_examples": ["The same structured dimension is true and false."],
+      "counterexamples": ["Two unrelated dimensions have different values."],
+      "prohibited_expansions": ["Creating either pole from narrative text"]
+    },
+    {
+      "rule_id": "FRICTION-TENSION-001",
+      "type": "tension",
+      "allowed_claim_types": ["intencion_declarada", "obligacion_declarada", "restriccion_financiera", "restriccion_externa", "restriccion_tecnica"],
+      "allowed_provenances": ["reported", "reported_constraint"],
+      "cardinality": {"minimum": 2, "maximum": 2},
+      "reference_slots": [
+        {"role": "goal_or_obligation", "allowed_fields": ["intencion_declarada", "obligacion_declarada"], "allowed_provenances": ["reported"]},
+        {"role": "reported_constraint", "allowed_fields": ["restriccion_financiera", "restriccion_externa", "restriccion_tecnica"], "allowed_provenances": ["reported_constraint"]}
+      ],
+      "slots_any_order": false,
+      "required_relation": "A goal is substantively impeded by a reported constraint.",
+      "structured_predicate": null,
+      "positive_examples": ["A goal is explicitly linked to its blocking condition."],
+      "counterexamples": ["Compatible fields coexist without a relation."],
+      "prohibited_expansions": ["Selecting refs by keyword or field compatibility alone"]
+    },
+    {
+      "rule_id": "FRICTION-TENSION-002",
+      "type": "tension",
+      "allowed_claim_types": ["valor_declarado", "accion_candidata", "accion_rechazada", "obligacion_declarada", "condicion_futura"],
+      "allowed_provenances": ["reported"],
+      "cardinality": {"minimum": 2, "maximum": 2},
+      "reference_slots": [],
+      "slots_any_order": true,
+      "required_relation": "Two explicit priorities compete without logical contradiction.",
+      "structured_predicate": null,
+      "positive_examples": ["Two routes explicitly compete."],
+      "counterexamples": ["Two unrelated resources are mentioned."],
+      "prohibited_expansions": ["Upgrading tension to contradiction"]
+    }
+  ]
+}

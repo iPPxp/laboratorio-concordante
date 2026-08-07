@@ -1,0 +1,44 @@
+{
+  "artifact_id": "MOC-EXTRACTOR-001-H3-CONTRACT-DELTA",
+  "frozen_suite_sha256": "7b15230339f95708400ee635fbb02f520002901792625ea6c0e02ba7436597cf",
+  "frozen_suite_modified": false,
+  "result_against_h2": {
+    "tests_run": 83,
+    "passed": 76,
+    "failed": 7,
+    "errors": 0,
+    "skipped": 0,
+    "negative_controls": 52,
+    "positive_controls": 31,
+    "return_code": 1
+  },
+  "result_against_h3": {
+    "tests_run": 83,
+    "passed": 79,
+    "failed": 1,
+    "errors": 3,
+    "skipped": 0,
+    "negative_controls": 52,
+    "positive_controls": 31,
+    "return_code": 1
+  },
+  "incompatible_expected": [
+    {
+      "test": "InternalCardinalityBypassControls.test_positive_honest_list_subclass_preserves_one_case",
+      "reason": "H3 exige type(cases) is list; toda subclase debe rechazarse."
+    },
+    {
+      "test": "InternalFrictionBypassControls.test_negative_serialized_forged_verified_state_is_rejected",
+      "reason": "Su setup construye directamente el proof; H3 lo bloquea antes de llegar a la deserialización."
+    },
+    {
+      "test": "InternalFrictionBypassControls.test_positive_forged_internal_model_cannot_enter_extraction_payload",
+      "reason": "Su setup construye directamente el proof; H3 lo bloquea antes de la inyección posterior."
+    },
+    {
+      "test": "PublicFrictionControls.test_negative_false_structured_predicate_requires_review",
+      "reason": "H3 descarta dimension/boolean externos y recalcula desde claims; alterar esos valores ya no debe decidir el resultado."
+    }
+  ],
+  "conclusion": "Los cuatro expected no pueden conservarse simultáneamente con las reglas H3 expresamente ordenadas; permanecen congelados y se sustituyen sólo para H3 por controles nuevos versionados."
+}
