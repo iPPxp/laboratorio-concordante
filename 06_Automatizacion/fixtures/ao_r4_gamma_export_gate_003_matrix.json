@@ -1,0 +1,84 @@
+{
+  "suite_id": "AO-R4-GAMMA-EXPORT-GATE-003-MATRIX",
+  "source_evidence": [
+    "R4-FORMAL-AUD-001",
+    "GAMMA-FORMAL-AUD-001",
+    "AO-R4-GAMMA-USE-001",
+    "GAMMA-EXT-AO-001",
+    "AO-R4-GAMMA-EXPORT-GATE-002",
+    "AO-EXT-REAL-001",
+    "AO-PPI-BRIDGE-004"
+  ],
+  "conditions": [
+    {
+      "condition_id": "AO-R4G-GE-001",
+      "front": "definiciones_formales_locales",
+      "status": "satisfecha_local",
+      "local_credit": true,
+      "blocks_general_export": false,
+      "evidence": ["R4-FORMAL-AUD-001", "GAMMA-FORMAL-AUD-001"],
+      "gap": "definiciones formales locales existen en AUD-001",
+      "expected": "satisfecha_local"
+    },
+    {
+      "condition_id": "AO-R4G-GE-002",
+      "front": "uso_controlado_fuera_aud",
+      "status": "satisfecha_local",
+      "local_credit": true,
+      "blocks_general_export": false,
+      "evidence": ["AO-R4-GAMMA-USE-001", "GAMMA-EXT-AO-001"],
+      "gap": "uso externo local controlado existe; no equivale a exportacion general",
+      "expected": "satisfecha_local"
+    },
+    {
+      "condition_id": "AO-R4G-GE-003",
+      "front": "evidencia_externa_real",
+      "status": "satisfecha_preliminar",
+      "local_credit": true,
+      "blocks_general_export": false,
+      "evidence": ["AO-EXT-REAL-001"],
+      "gap": "evidencia documental real existe, pero no prueba independencia semantica universal",
+      "expected": "satisfecha_preliminar"
+    },
+    {
+      "condition_id": "AO-R4G-GE-004",
+      "front": "independencia_semantica_aud",
+      "status": "faltante_global",
+      "local_credit": false,
+      "blocks_general_export": true,
+      "evidence": ["AO-R4-GAMMA-EXPORT-GATE-002"],
+      "gap": "R4/Gamma siguen definidos por dependencia historica y semantica de AUD-001",
+      "expected": "faltante_global"
+    },
+    {
+      "condition_id": "AO-R4G-GE-005",
+      "front": "equivalencia_confluencia_global",
+      "status": "faltante_global",
+      "local_credit": false,
+      "blocks_general_export": true,
+      "evidence": ["AO-EQ-GLOBAL-GATE-001", "AO-CONF-GLOBAL-GATE-001"],
+      "gap": "no hay Equivalencia ni Confluencia global autorizadas para transportar R4/Gamma",
+      "expected": "faltante_global"
+    },
+    {
+      "condition_id": "AO-R4G-GE-006",
+      "front": "dominio_externo_independiente",
+      "status": "no_ejecutado",
+      "local_credit": false,
+      "blocks_general_export": true,
+      "evidence": ["AO-EXT-REAL-001"],
+      "gap": "la fuente externa real es manifiesto admisible, no bateria independiente ejecutada de R4/Gamma",
+      "expected": "no_ejecutado"
+    },
+    {
+      "condition_id": "AO-R4G-GE-007",
+      "front": "autoridad_exportacion_general",
+      "status": "no_autorizada",
+      "local_credit": false,
+      "blocks_general_export": true,
+      "evidence": ["AO-AUTH-GLOBAL-001", "AO-GLOBAL-READINESS-001"],
+      "gap": "no existe decision superior que autorice exportacion general o cambios a Nivel C/Canon",
+      "expected": "no_autorizada"
+    }
+  ]
+}

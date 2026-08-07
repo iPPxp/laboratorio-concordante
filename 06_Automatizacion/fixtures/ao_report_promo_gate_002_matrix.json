@@ -1,0 +1,83 @@
+{
+  "suite_id": "AO-REPORT-PROMO-GATE-002-MATRIX",
+  "source_evidence": [
+    "AO-REPORT-SERIAL-001",
+    "REPORT-LAYER-C002-GATE-001",
+    "AO-REPORT-PROMO-GATE-001",
+    "AO-AUTH-GLOBAL-001",
+    "AO-PPI-BRIDGE-004",
+    "AO-EXT-REAL-001"
+  ],
+  "conditions": [
+    {
+      "condition_id": "AO-RL-FP-001",
+      "front": "serializacion_report_layer",
+      "status": "satisfecha_local",
+      "local_credit": true,
+      "blocks_formal_promotion": false,
+      "evidence": ["AO-REPORT-SERIAL-001"],
+      "gap": "serializacion local disponible con versionado y campos protegidos",
+      "expected": "satisfecha_local"
+    },
+    {
+      "condition_id": "AO-RL-FP-002",
+      "front": "conformidad_c002",
+      "status": "satisfecha_local",
+      "local_credit": true,
+      "blocks_formal_promotion": false,
+      "evidence": ["REPORT-LAYER-C002-GATE-001"],
+      "gap": "conformidad no mutante local; no crea Nivel C nuevo",
+      "expected": "satisfecha_local"
+    },
+    {
+      "condition_id": "AO-RL-FP-003",
+      "front": "evidencia_externa_real",
+      "status": "satisfecha_preliminar",
+      "local_credit": true,
+      "blocks_formal_promotion": false,
+      "evidence": ["AO-EXT-REAL-001"],
+      "gap": "fuente externa real admisible preliminarmente; no equivale a validacion independiente de REPORT_LAYER",
+      "expected": "satisfecha_preliminar"
+    },
+    {
+      "condition_id": "AO-RL-FP-004",
+      "front": "equivalencia_global_proyecciones",
+      "status": "faltante_global",
+      "local_credit": false,
+      "blocks_formal_promotion": true,
+      "evidence": ["AO-EQ-GLOBAL-GATE-001", "AO-PPI-BRIDGE-004"],
+      "gap": "Pi_rep no esta demostrada globalmente frente a Pi_doc y Pi_op fuera de la evidencia local",
+      "expected": "faltante_global"
+    },
+    {
+      "condition_id": "AO-RL-FP-005",
+      "front": "confluencia_global",
+      "status": "faltante_global",
+      "local_credit": false,
+      "blocks_formal_promotion": true,
+      "evidence": ["AO-CONF-GLOBAL-GATE-001", "AO-PPI-BRIDGE-004"],
+      "gap": "REPORT_LAYER no tiene confluencia global demostrada entre rutas independientes",
+      "expected": "faltante_global"
+    },
+    {
+      "condition_id": "AO-RL-FP-006",
+      "front": "revision_externa_independiente",
+      "status": "no_ejecutada",
+      "local_credit": false,
+      "blocks_formal_promotion": true,
+      "evidence": ["AO-PROTO-INDEP-001", "AO-EXT-REAL-001"],
+      "gap": "hay protocolo local y fuente real, pero no hay evaluacion externa ejecutada sobre REPORT_LAYER",
+      "expected": "no_ejecutada"
+    },
+    {
+      "condition_id": "AO-RL-FP-007",
+      "front": "autoridad_nivel_c",
+      "status": "no_autorizada",
+      "local_credit": false,
+      "blocks_formal_promotion": true,
+      "evidence": ["AO-AUTH-GLOBAL-001", "AO-REPORT-PROMO-GATE-001"],
+      "gap": "no hay decision que cree C-003, modifique Nivel C o convierta REPORT_LAYER en contrato global",
+      "expected": "no_autorizada"
+    }
+  ]
+}

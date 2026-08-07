@@ -1,0 +1,82 @@
+{
+  "suite_id": "AO-GLOBAL-RECONSIDER-001-MATRIX",
+  "source_evidence": [
+    "AO-EXT-REAL-001",
+    "AO-REPORT-PROMO-GATE-002",
+    "AO-R4-GAMMA-EXPORT-GATE-003",
+    "AO-GLOBAL-READINESS-001",
+    "AO-PPI-BRIDGE-004"
+  ],
+  "conditions": [
+    {
+      "condition_id": "AO-GR2-001",
+      "front": "evidencia_externa_real",
+      "status": "satisfecha_preliminar",
+      "local_credit": true,
+      "blocks_global_reconsideration": false,
+      "evidence": ["AO-EXT-REAL-001"],
+      "gap": "fuente real admitida preliminarmente, sin ejecucion empirica",
+      "expected": "satisfecha_preliminar"
+    },
+    {
+      "condition_id": "AO-GR2-002",
+      "front": "perfil_formal_report_layer",
+      "status": "preparado_condicionado",
+      "local_credit": true,
+      "blocks_global_reconsideration": false,
+      "evidence": ["AO-REPORT-PROMO-GATE-002"],
+      "gap": "perfil formal preparado, promocion no autorizada",
+      "expected": "preparado_condicionado"
+    },
+    {
+      "condition_id": "AO-GR2-003",
+      "front": "perfil_exportable_r4_gamma",
+      "status": "preparado_condicionado",
+      "local_credit": true,
+      "blocks_global_reconsideration": false,
+      "evidence": ["AO-R4-GAMMA-EXPORT-GATE-003"],
+      "gap": "perfil exportable condicionado preparado, exportacion general no autorizada",
+      "expected": "preparado_condicionado"
+    },
+    {
+      "condition_id": "AO-GR2-004",
+      "front": "equivalencia_global",
+      "status": "faltante_global",
+      "local_credit": false,
+      "blocks_global_reconsideration": true,
+      "evidence": ["AO-EQ-GLOBAL-GATE-001"],
+      "gap": "Equivalencia global sigue no autorizada",
+      "expected": "faltante_global"
+    },
+    {
+      "condition_id": "AO-GR2-005",
+      "front": "confluencia_global",
+      "status": "faltante_global",
+      "local_credit": false,
+      "blocks_global_reconsideration": true,
+      "evidence": ["AO-CONF-GLOBAL-GATE-001"],
+      "gap": "Confluencia global sigue no autorizada",
+      "expected": "faltante_global"
+    },
+    {
+      "condition_id": "AO-GR2-006",
+      "front": "validacion_externa_independiente",
+      "status": "no_ejecutada",
+      "local_credit": false,
+      "blocks_global_reconsideration": true,
+      "evidence": ["AO-PROTO-INDEP-001", "AO-EXT-REAL-001"],
+      "gap": "no existe evaluacion independiente real ejecutada con protocolo AO",
+      "expected": "no_ejecutada"
+    },
+    {
+      "condition_id": "AO-GR2-007",
+      "front": "autoridad_superior_promocion_exportacion",
+      "status": "no_autorizada",
+      "local_credit": false,
+      "blocks_global_reconsideration": true,
+      "evidence": ["AO-AUTH-GLOBAL-001", "AO-GLOBAL-READINESS-001"],
+      "gap": "no hay decision de Nivel C/Canon ni cierre global que autorice promocion/exportacion",
+      "expected": "no_autorizada"
+    }
+  ]
+}
