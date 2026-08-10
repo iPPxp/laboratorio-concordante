@@ -1,0 +1,51 @@
+# LAB-RESEARCH-PROVENANCE-001 — Corpus canónico y procedencia
+
+DOCUMENT_STATUS=CANONICAL_RECORD_CANDIDATE
+CANONIZATION_DECISION=HUMAN_APPROVED
+GIT_GOVERNANCE_RECORD=PENDING_HUMAN_REVIEW_AND_COMMIT
+
+## Objeto canónico
+
+CANONICAL_OBJECT=RESEARCH_CORPUS_AND_PROVENANCE
+CANONICAL_ROUTE_COUNT=39
+
+Se reconoce oficialmente la identidad del corpus de investigación ubicado en
+investigacion_empaquetamientos_esfericos_degenerantes/ y su cadena de
+procedencia. La lista cerrada de rutas y las huellas permanecen en:
+
+- 03_Expedientes/LAB-RESEARCH-PROVENANCE-001_PATHS.txt
+- 03_Expedientes/LAB-RESEARCH-PROVENANCE-001_SHA256SUMS.txt
+- 03_Expedientes/LAB-RESEARCH-PROVENANCE-001_PROVENANCE.md
+
+## Identidades fijadas
+
+SOURCE_COMMIT=96843d913fb21e673707f01da8e2929cda8c33be
+SOURCE_TREE=fd3ed364c515ede6adf341f125da8d17549a0147
+INCORPORATION_COMMIT=2c3264c473c865835571a1df4b28e1a022790695
+INCORPORATION_TREE=5a73192bc7e95304f5275e8383a26013af35c226
+MANIFEST_SHA256=193feb51aaffc0f029bb3812acb68f0a746500eaf3f6bb55262f81d17b8923c8
+
+## Alcance
+
+CORPUS_IDENTITY_CANONICAL=YES
+PROVENANCE_CHAIN_CANONICAL=YES
+SCIENTIFIC_CLAIMS_CANONIZED_AS_TRUE=NO
+MATHEMATICAL_CLAIMS_CANONIZED_AS_PROVEN=NO
+EMPIRICAL_VALIDATION_CANONIZED=NO
+OPERATIONAL_ACTIVATION=NO
+
+La canonización fija qué corpus y qué procedencia reconoce Concordante Lab. No
+convierte automáticamente las afirmaciones contenidas en verdades, teoremas,
+resultados empíricamente validados ni instrucciones operativas.
+
+## Límites
+
+HISTORICAL_PAYLOAD_RETROACTIVE_MODIFICATION=NO
+CONCORDIA_CONTRACT_ACTIVATION=NO
+PROJECTIVE_VALIDATOR_ACTIVATION=NO
+MOC_SEMANTIC_AUTHORITY_GRANTED_BY_THIS_RECORD=NO
+C_OR_H3_STATUS_CHANGED=NO
+ECO_CAN_LEY_STATUS_CHANGED=NO
+
+Cualquier evaluación científica, formal, empírica, semántica u operacional
+requiere su propia evidencia y decisión.

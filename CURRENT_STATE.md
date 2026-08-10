@@ -695,16 +695,18 @@ Entrada recomendada mientras `HANDOFF.md` y `HANDOFF_PACKAGE.md` estan inactivos
 8. `02_Documentos/C-002_RFC_Operativo_Auditor_v0.md`
 9. `03_Expedientes/AUD-001_Decision_Promocion_SPEC-RFC-AUDITOR-V0.md`
 
-## Preparación aislada pendiente de revisión humana
+## LAB-RESEARCH-PROVENANCE-001
 
-LAB_RESEARCH_PROVENANCE_CANDIDATE=PREPARED_NOT_INCORPORATED
-RESEARCH_STATUS=INCORPORATION_CANDIDATE
-PROVENANCE_STATUS=VERIFIED
-SEMANTIC_AUTHORITY=NONE
-COMPUTATIONAL_AUTHORITY=NONE
-CANONIZATION=NO
+LAB_MAIN_RESEARCH_INCORPORATION=YES
+CANONICAL_OBJECT=RESEARCH_CORPUS_AND_PROVENANCE
+CANONIZATION_DECISION=HUMAN_APPROVED
+CANONICAL_ROUTE_COUNT=39
+SCIENTIFIC_CLAIMS_CANONIZED_AS_TRUE=NO
+MATHEMATICAL_CLAIMS_CANONIZED_AS_PROVEN=NO
+EMPIRICAL_VALIDATION_CANONIZED=NO
 ACTIVATION=NO
+GIT_GOVERNANCE_RECORD=PENDING_HUMAN_REVIEW_AND_COMMIT
 
-La candidata vive sólo en un worktree detached. main y origin/main permanecen
-sin esta investigación. Cualquier rama, commit, merge o push requiere una
-decisión humana posterior.
+La decisión `D-2026-08-09-001` reconoce oficialmente el corpus y su
+procedencia. No modifica retrospectivamente el payload histórico ni autoriza
+operación, push, tag o cambios en otros frentes.

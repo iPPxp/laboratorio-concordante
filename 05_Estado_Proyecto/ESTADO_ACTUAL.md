@@ -12,6 +12,16 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - [x] Documento 03 - Ontologia: consolidado desde fuentes previas por `D-2026-07-03-011`.
 - [x] Documento 04 - Algebra Operacional: actualizado como version amplia v0 por `D-2026-07-06-006` sobre la consolidacion inicial de `D-2026-07-03-011`; probado localmente contra casos iniciales y precisado frente a `REPORT_LAYER` por `D-2026-07-06-007`; `REPORT_LAYER` queda local pre-C por `D-2026-07-06-014` y con compuerta no mutante `C-002` por `D-2026-07-06-015`; adopta entrada auxiliar por traza local de grafo por `D-2026-07-09-005`, sin cerrar problemas globales.
 
+## Corpus canónicos de investigación y procedencia
+
+- [x] `LAB-RESEARCH-PROVENANCE-001`: decisión humana `D-2026-08-09-001`
+  canoniza la identidad del corpus de 39 rutas y su cadena de procedencia,
+  ligadas a `96843d913fb21e673707f01da8e2929cda8c33be` y
+  `2c3264c473c865835571a1df4b28e1a022790695`. No canoniza como
+  verdaderas o demostradas las afirmaciones científicas, no declara validación
+  empírica y no implica activación operacional. Registro Git pendiente de
+  revisión humana y commit.
+
 ## Documentos oficiales de Nivel C
 
 - [x] `C-002_RFC_Operativo_Auditor_v0.md`: RFC operativo oficial del Auditor v0; complementa `C-001` y quedo alineado el 2026-07-03 con JSON, fixtures y adaptador no mutante.

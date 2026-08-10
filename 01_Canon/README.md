@@ -8,4 +8,7 @@ Archivos vigentes:
 
 - `M-000_Reglas_Fundamentales.md`
 - `M-001_Auditoria_Arquitectonica.md`
+- `LAB-RESEARCH-PROVENANCE-001_Corpus_Canonico.md`: identidad canónica
+  del corpus y su procedencia; no canoniza como verdaderas sus afirmaciones ni
+  implica validación empírica o activación.
 

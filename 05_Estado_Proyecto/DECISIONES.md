@@ -4163,3 +4163,30 @@ No se recomienda otra adopcion oficial inmediata. La ruta defensible posterior e
 ```text
 MOC-CANON-DOC04-POST-ADOPT-MONITOR-001
 ```
+
+## D-2026-08-09-001 - Canonización de LAB-RESEARCH-PROVENANCE-001
+
+Estatus: decisión canónica humana; registro Git pendiente.
+
+Fecha: 2026-08-09.
+
+## Decisión
+
+Se canonizan el corpus de investigación LAB-RESEARCH-PROVENANCE-001, sus 39
+rutas, su identidad archivística y su cadena de procedencia. La fuente queda
+fijada en el commit `96843d913fb21e673707f01da8e2929cda8c33be` con árbol
+`fd3ed364c515ede6adf341f125da8d17549a0147`. Su incorporación en Lab
+queda ligada al commit `2c3264c473c865835571a1df4b28e1a022790695` con
+árbol `5a73192bc7e95304f5275e8383a26013af35c226`.
+
+## Alcance
+
+La decisión canoniza el corpus y la procedencia. No canoniza automáticamente
+como verdaderas, demostradas o empíricamente validadas las afirmaciones del
+corpus. No activa operación alguna y no autoriza modificar retrospectivamente
+los documentos históricos incorporados.
+
+## Estado de ejecución Git
+
+El registro mínimo de gobernanza está preparado para revisión humana. No existe
+todavía autorización de commit, push o tag para este cambio.
