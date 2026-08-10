@@ -1,0 +1,36 @@
+{
+  "ontology_id": "spherepack.degenerate-centered.initial.v1",
+  "status": "DEFINICION_PROPUESTA",
+  "scope": "Euclidean geometry of finite centered hard-sphere configurations",
+  "types": {
+    "Sphere": {"required": ["id", "center", "radius", "role"]},
+    "CenteredConfiguration": {"required": ["n", "epsilon", "directions", "outer_radius", "centeredness_evidence"]},
+    "ContactRelation": {"required": ["source", "target", "delta", "relation"]},
+    "SphericalCode": {"required": ["directions", "minimum_angle"]},
+    "Lattice": {"required": ["kind", "vectors", "basis"]},
+    "TransitionQuery": {"required": ["source", "target", "preservation_mode"]},
+    "Claim": {"required": ["epistemic_label", "scope", "evidence"]}
+  },
+  "relations": ["surrounds", "has_direction", "has_clearance", "induced_by", "has_basis", "queries", "supports"],
+  "constraints": [
+    "outer_radius == 1",
+    "epsilon > 0 for a realized configuration",
+    "delta >= 0 for a hard-sphere configuration",
+    "HCP.kind != BRAVAIS_SIMPLE",
+    "transition.preservation_mode is explicit",
+    "computed claim has command, inputs and outputs"
+  ],
+  "epistemic_labels": [
+    "DEFINICION_PROPUESTA",
+    "RESULTADO_CLASICO",
+    "DEMOSTRADO_EN_ESTE_TRABAJO",
+    "DERIVACION_SIMBOLICA",
+    "RESULTADO_COMPUTADO",
+    "OBSERVACION_NUMERICA",
+    "OBSERVACION_VISUAL",
+    "CONJETURA",
+    "INTERPRETACION",
+    "PENDIENTE_DE_VERIFICACION",
+    "REFUTADO_POR_CONTRAEJEMPLO"
+  ]
+}

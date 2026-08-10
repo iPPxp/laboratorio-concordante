@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="es"><meta charset="utf-8"><title>Capas locales FCC y HCP</title>
+<style>body{font-family:system-ui;margin:1rem} canvas{border:1px solid #90a4ae} label{margin-right:1rem}</style>
+<h1>Capas locales FCC y HCP</h1>
+<p><strong>OBSERVACION_VISUAL.</strong> Visor local de direcciones unitarias; no demuestra rigidez ni optimalidad.</p>
+<label>Configuración <select id="set"></select></label><label>Rotación X <input id="rx" type="range" min="-180" max="180" value="18"></label><label>Rotación Y <input id="ry" type="range" min="-180" max="180" value="-28"></label>
+<canvas id="view" width="720" height="560"></canvas>
+<script>
+const sets={"n6_octahedron": [[1.0, 0.0, 0.0], [-1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, -1.0, 0.0], [0.0, 0.0, 1.0], [0.0, 0.0, -1.0]], "n12_cuboctahedron_fcc_shell": [[0.0, -0.707106781187, -0.707106781187], [0.0, -0.707106781187, 0.707106781187], [0.0, 0.707106781187, -0.707106781187], [0.0, 0.707106781187, 0.707106781187], [-0.707106781187, 0.0, -0.707106781187], [-0.707106781187, 0.0, 0.707106781187], [0.707106781187, 0.0, -0.707106781187], [0.707106781187, 0.0, 0.707106781187], [-0.707106781187, -0.707106781187, 0.0], [-0.707106781187, 0.707106781187, 0.0], [0.707106781187, -0.707106781187, 0.0], [0.707106781187, 0.707106781187, 0.0]], "n12_hcp_shell": [[1.0, 0.0, 0.0], [0.5, 0.866025403784, 0.0], [-0.5, 0.866025403784, 0.0], [-1.0, 0.0, 0.0], [-0.5, -0.866025403784, 0.0], [0.5, -0.866025403784, 0.0], [0.5, 0.288675134595, -0.816496580928], [-0.5, 0.288675134595, -0.816496580928], [-0.0, -0.57735026919, -0.816496580928], [0.5, 0.288675134595, 0.816496580928], [-0.5, 0.288675134595, 0.816496580928], [-0.0, -0.57735026919, 0.816496580928]]}; const canvas=document.querySelector('#view'), ctx=canvas.getContext('2d');
+const select=document.querySelector('#set'); Object.keys(sets).forEach(k=>select.add(new Option(k,k)));
+function draw(){const rx=+document.querySelector('#rx').value*Math.PI/180, ry=+document.querySelector('#ry').value*Math.PI/180;
+ const cx=Math.cos(rx),sx=Math.sin(rx),cy=Math.cos(ry),sy=Math.sin(ry); const pts=sets[select.value].map((p,i)=>{let [x,y,z]=p; let x1=cy*x+sy*z,z1=-sy*x+cy*z; let y1=cx*y-sx*z1,z2=sx*y+cx*z1; return {i,x:x1,y:y1,z:z2}}).sort((a,b)=>a.z-b.z);
+ ctx.clearRect(0,0,720,560);ctx.fillStyle='#fafafa';ctx.fillRect(0,0,720,560);ctx.strokeStyle='#b0bec5';ctx.beginPath();ctx.arc(360,280,210,0,Math.PI*2);ctx.stroke();
+ ctx.fillStyle='#455a64';ctx.fillText('Proyección 3D local — '+select.value,20,28);pts.forEach(p=>{const r=6+2*(p.z+1);ctx.beginPath();ctx.fillStyle='#1565c0';ctx.arc(360+205*p.x,280-205*p.y,r,0,Math.PI*2);ctx.fill();ctx.fillStyle='#111';ctx.fillText(String(p.i),368+205*p.x,274-205*p.y)})}
+[select,document.querySelector('#rx'),document.querySelector('#ry')].forEach(e=>e.addEventListener('input',draw));draw();
+</script></html>

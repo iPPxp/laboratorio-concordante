@@ -1,0 +1,256 @@
+{
+  "epistemic_status": "RESULTADO_COMPUTADO",
+  "model_scope": "finite_named_configurations_only",
+  "configuration_reports": [
+    {
+      "name": "n2_antipodal",
+      "n": 2,
+      "minimum_unit_chord": 2.0,
+      "epsilon_infimum": 0.0,
+      "epsilon_realization_example": 1e-06,
+      "contact_pair_count_at_infimum": 1,
+      "centroid_at_origin": true,
+      "affine_rank": 1,
+      "centeredness_claim": "CENTERED_WEAK_OR_UNCERTIFIED"
+    },
+    {
+      "name": "n4_tetrahedron",
+      "n": 4,
+      "minimum_unit_chord": 1.6329931618554523,
+      "epsilon_infimum": 0.22474487139158894,
+      "epsilon_realization_example": 0.22474587139158894,
+      "contact_pair_count_at_infimum": 6,
+      "centroid_at_origin": true,
+      "affine_rank": 3,
+      "centeredness_claim": "CENTERED_FULL_DIMENSIONAL_BY_EQUAL_WEIGHT_CERTIFICATE"
+    },
+    {
+      "name": "n4_square_transition_witness",
+      "n": 4,
+      "minimum_unit_chord": 1.4142135623730951,
+      "epsilon_infimum": 0.4142135623730949,
+      "epsilon_realization_example": 0.4142145623730949,
+      "contact_pair_count_at_infimum": 4,
+      "centroid_at_origin": true,
+      "affine_rank": 2,
+      "centeredness_claim": "CENTERED_WEAK_OR_UNCERTIFIED"
+    },
+    {
+      "name": "n6_octahedron",
+      "n": 6,
+      "minimum_unit_chord": 1.4142135623730951,
+      "epsilon_infimum": 0.4142135623730949,
+      "epsilon_realization_example": 0.4142145623730949,
+      "contact_pair_count_at_infimum": 12,
+      "centroid_at_origin": true,
+      "affine_rank": 3,
+      "centeredness_claim": "CENTERED_FULL_DIMENSIONAL_BY_EQUAL_WEIGHT_CERTIFICATE"
+    },
+    {
+      "name": "n12_cuboctahedron_fcc_shell",
+      "n": 12,
+      "minimum_unit_chord": 1.0,
+      "epsilon_infimum": 1.0,
+      "epsilon_realization_example": 1.000001,
+      "contact_pair_count_at_infimum": 24,
+      "centroid_at_origin": true,
+      "affine_rank": 3,
+      "centeredness_claim": "CENTERED_FULL_DIMENSIONAL_BY_EQUAL_WEIGHT_CERTIFICATE"
+    },
+    {
+      "name": "n12_hcp_shell",
+      "n": 12,
+      "minimum_unit_chord": 0.9999999999999996,
+      "epsilon_infimum": 1.0000000000000009,
+      "epsilon_realization_example": 1.0000010000000008,
+      "contact_pair_count_at_infimum": 24,
+      "centroid_at_origin": true,
+      "affine_rank": 3,
+      "centeredness_claim": "CENTERED_FULL_DIMENSIONAL_BY_EQUAL_WEIGHT_CERTIFICATE"
+    },
+    {
+      "name": "n12_icosahedron_comparator",
+      "n": 12,
+      "minimum_unit_chord": 1.0514622242382672,
+      "epsilon_infimum": 0.9021130325903073,
+      "epsilon_realization_example": 0.9021140325903073,
+      "contact_pair_count_at_infimum": 30,
+      "centroid_at_origin": true,
+      "affine_rank": 3,
+      "centeredness_claim": "CENTERED_FULL_DIMENSIONAL_BY_EQUAL_WEIGHT_CERTIFICATE"
+    }
+  ],
+  "transition_reports": [
+    {
+      "source": "n2_antipodal",
+      "target": "n4_square_transition_witness",
+      "cardinality_delta": 2,
+      "source_epsilon_infimum": 0.0,
+      "target_epsilon_infimum": 0.4142135623730949,
+      "literal_direction_inclusion": true,
+      "preserves_nonoverlap_at_target_infimum": true,
+      "scope": "ONLY_NAMED_REPRESENTATIVES_AND_LITERAL_DIRECTION_INCLUSION",
+      "conclusion": "WITNESS_FOR_THIS_REPRESENTATIVE_ONLY"
+    },
+    {
+      "source": "n4_square_transition_witness",
+      "target": "n6_octahedron",
+      "cardinality_delta": 2,
+      "source_epsilon_infimum": 0.4142135623730949,
+      "target_epsilon_infimum": 0.4142135623730949,
+      "literal_direction_inclusion": true,
+      "preserves_nonoverlap_at_target_infimum": true,
+      "scope": "ONLY_NAMED_REPRESENTATIVES_AND_LITERAL_DIRECTION_INCLUSION",
+      "conclusion": "WITNESS_FOR_THIS_REPRESENTATIVE_ONLY"
+    },
+    {
+      "source": "n4_tetrahedron",
+      "target": "n6_octahedron",
+      "cardinality_delta": 2,
+      "source_epsilon_infimum": 0.22474487139158894,
+      "target_epsilon_infimum": 0.4142135623730949,
+      "literal_direction_inclusion": false,
+      "preserves_nonoverlap_at_target_infimum": true,
+      "scope": "ONLY_NAMED_REPRESENTATIVES_AND_LITERAL_DIRECTION_INCLUSION",
+      "conclusion": "NO_LITERAL_INCLUSION_WITNESS_FOR_THIS_REPRESENTATIVE"
+    },
+    {
+      "source": "n6_octahedron",
+      "target": "n12_cuboctahedron_fcc_shell",
+      "cardinality_delta": 6,
+      "source_epsilon_infimum": 0.4142135623730949,
+      "target_epsilon_infimum": 1.0,
+      "literal_direction_inclusion": false,
+      "preserves_nonoverlap_at_target_infimum": true,
+      "scope": "ONLY_NAMED_REPRESENTATIVES_AND_LITERAL_DIRECTION_INCLUSION",
+      "conclusion": "NO_LITERAL_INCLUSION_WITNESS_FOR_THIS_REPRESENTATIVE"
+    }
+  ],
+  "lattice_catalog": {
+    "SC": {
+      "kind": "BRAVAIS",
+      "basis": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "vectors": [
+        [
+          2.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "coordination_number": 6,
+      "nearest_shell": "regular_octahedron",
+      "packing_fraction": "pi/6"
+    },
+    "FCC": {
+      "kind": "BRAVAIS",
+      "basis": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "vectors": [
+        [
+          0.0,
+          1.4142135623730951,
+          1.4142135623730951
+        ],
+        [
+          1.4142135623730951,
+          0.0,
+          1.4142135623730951
+        ],
+        [
+          1.4142135623730951,
+          1.4142135623730951,
+          0.0
+        ]
+      ],
+      "coordination_number": 12,
+      "nearest_shell": "cuboctahedron",
+      "packing_fraction": "pi/(3*sqrt(2))"
+    },
+    "HCP": {
+      "kind": "PERIODIC_LATTICE_WITH_BASIS_NOT_SIMPLE_BRAVAIS",
+      "basis": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.5773502691896257,
+          1.632993161855452
+        ]
+      ],
+      "vectors": [
+        [
+          2.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.7320508075688772,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          3.265986323710904
+        ]
+      ],
+      "coordination_number": 12,
+      "nearest_shell": "hcp_neighbour_shell",
+      "packing_fraction": "pi/(3*sqrt(2))"
+    },
+    "BCC": {
+      "kind": "BRAVAIS",
+      "basis": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "vectors": [
+        [
+          1.1547005383792517,
+          1.1547005383792517,
+          -1.1547005383792517
+        ],
+        [
+          1.1547005383792517,
+          -1.1547005383792517,
+          1.1547005383792517
+        ],
+        [
+          -1.1547005383792517,
+          1.1547005383792517,
+          1.1547005383792517
+        ]
+      ],
+      "coordination_number": 8,
+      "nearest_shell": "cube",
+      "packing_fraction": "sqrt(3)*pi/8"
+    }
+  }
+}

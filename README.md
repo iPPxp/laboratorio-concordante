@@ -176,3 +176,14 @@ Problemas abiertos relevantes:
 - Evidencia externa independiente real si una decision futura exige mas evidencia para Confluencia o Equivalencia global.
 
 Este estado debe validarse y enriquecerse a medida que se incorporen documentos previos, expedientes completos o conversaciones historicas.
+
+## Candidata aislada de investigación
+
+Se preparó una candidata de investigación y procedencia para
+investigacion_empaquetamientos_esfericos_degenerantes/. Su estado es
+INCORPORATION_CANDIDATE: no tiene rama, staging, commit, merge o push y no
+concede autoridad semántica, canonización ni activación.
+
+La unidad proyectiva N2 queda conservada aquí como procedencia. Su autoridad de
+trabajo corresponde a una candidata separada de ConcordIA y no concede al
+Laboratorio autoridad semántica MOC.

@@ -1,0 +1,23 @@
+{
+  "schema": "spherepack.dsl.initial.v1",
+  "cases": [
+    {
+      "case_id": "C2-antipodal-epsilon-0.10",
+      "kind": "CENTERED_CONFIGURATION",
+      "n": 2,
+      "outer_radius": 1,
+      "central_radius": 0.1,
+      "directions": [[1, 0, 0], [-1, 0, 0]],
+      "epistemic_status": "DERIVACION_SIMBOLICA"
+    },
+    {
+      "case_id": "C6-octahedral-threshold",
+      "kind": "CENTERED_CONFIGURATION",
+      "n": 6,
+      "outer_radius": 1,
+      "central_radius": 0.414214,
+      "directions": [[1, 0, 0], [-1, 0, 0], [0, 1, 0], [0, -1, 0], [0, 0, 1], [0, 0, -1]],
+      "epistemic_status": "RESULTADO_COMPUTADO"
+    }
+  ]
+}

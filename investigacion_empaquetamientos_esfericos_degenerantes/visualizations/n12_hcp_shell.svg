@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="460" viewBox="0 0 460 460">
+  <rect width="100%" height="100%" fill="white"/>
+  <line x1="30" y1="230" x2="430" y2="230" stroke="#b0bec5"/>
+  <line x1="230" y1="30" x2="230" y2="430" stroke="#b0bec5"/>
+  <text x="20" y="28" font-size="16" font-family="sans-serif">n12_hcp_shell</text>
+  <text x="20" y="448" font-size="11" font-family="sans-serif">OBSERVACION_VISUAL: proyeccion ortografica fija; no sustituye la configuracion 3D.</text>
+  <circle cx="385.885" cy="178.038" r="7" fill="#1565c0"/><text x="395.885" y="170.038" font-size="12">0</text>
+  <circle cx="230.000" cy="126.077" r="7" fill="#1565c0"/><text x="240.000" y="118.077" font-size="12">1</text>
+  <circle cx="74.115" cy="178.038" r="7" fill="#1565c0"/><text x="84.115" y="170.038" font-size="12">2</text>
+  <circle cx="74.115" cy="281.962" r="7" fill="#1565c0"/><text x="84.115" y="273.962" font-size="12">3</text>
+  <circle cx="230.000" cy="333.923" r="7" fill="#1565c0"/><text x="240.000" y="325.923" font-size="12">4</text>
+  <circle cx="385.885" cy="281.962" r="7" fill="#1565c0"/><text x="395.885" y="273.962" font-size="12">5</text>
+  <circle cx="281.962" cy="58.038" r="7" fill="#1565c0"/><text x="291.962" y="50.038" font-size="12">6</text>
+  <circle cx="126.077" cy="110.000" r="7" fill="#1565c0"/><text x="136.077" y="102.000" font-size="12">7</text>
+  <circle cx="281.962" cy="161.962" r="7" fill="#1565c0"/><text x="291.962" y="153.962" font-size="12">8</text>
+  <circle cx="281.962" cy="298.038" r="7" fill="#1565c0"/><text x="291.962" y="290.038" font-size="12">9</text>
+  <circle cx="126.077" cy="350.000" r="7" fill="#1565c0"/><text x="136.077" y="342.000" font-size="12">10</text>
+  <circle cx="281.962" cy="401.962" r="7" fill="#1565c0"/><text x="291.962" y="393.962" font-size="12">11</text>
+</svg>

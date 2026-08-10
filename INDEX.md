@@ -38,3 +38,14 @@ Si hay conflicto entre fuentes, usar este orden:
 7. Registro historico.
 
 El registro historico nunca vence por si mismo a un documento oficial o a una decision registrada.
+
+## Candidata aislada de investigación y procedencia
+
+- investigacion_empaquetamientos_esfericos_degenerantes/: payload de
+  investigación candidato, sin autoridad semántica, canonización o activación.
+- 03_Expedientes/LAB-RESEARCH-PROVENANCE-001.md: registro candidato.
+- 03_Expedientes/LAB-RESEARCH-PROVENANCE-001_PROVENANCE.md: identidad,
+  procedencia y límites de la transferencia.
+
+Esta navegación está preparada para revisión humana. No demuestra incorporación
+en main ni en origin/main.

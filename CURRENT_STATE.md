@@ -694,3 +694,17 @@ Entrada recomendada mientras `HANDOFF.md` y `HANDOFF_PACKAGE.md` estan inactivos
 7. `01_Canon/M-001_Auditoria_Arquitectonica.md`
 8. `02_Documentos/C-002_RFC_Operativo_Auditor_v0.md`
 9. `03_Expedientes/AUD-001_Decision_Promocion_SPEC-RFC-AUDITOR-V0.md`
+
+## Preparación aislada pendiente de revisión humana
+
+LAB_RESEARCH_PROVENANCE_CANDIDATE=PREPARED_NOT_INCORPORATED
+RESEARCH_STATUS=INCORPORATION_CANDIDATE
+PROVENANCE_STATUS=VERIFIED
+SEMANTIC_AUTHORITY=NONE
+COMPUTATIONAL_AUTHORITY=NONE
+CANONIZATION=NO
+ACTIVATION=NO
+
+La candidata vive sólo en un worktree detached. main y origin/main permanecen
+sin esta investigación. Cualquier rama, commit, merge o push requiere una
+decisión humana posterior.

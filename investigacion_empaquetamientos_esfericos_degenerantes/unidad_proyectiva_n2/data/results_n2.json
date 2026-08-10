@@ -1,0 +1,26 @@
+{
+  "epistemic_status": "RESULTADO_COMPUTADO",
+  "scope": "n2_antipodal_algebra_only",
+  "q_sign_invariance_residual": 0.0,
+  "gram": [
+    [
+      1.0,
+      -1.0
+    ],
+    [
+      -1.0,
+      1.0
+    ]
+  ],
+  "gram_rank": 1,
+  "gram_eigenvalues": [
+    0.0,
+    2.0
+  ],
+  "gram_kernel_residual": 0.0,
+  "pair_sum_residual": 0.0,
+  "additive_cross_difference": 2.0,
+  "relational_nonadditivity_witness": true,
+  "physical_energy_claim": "NONE",
+  "central_source_claim": "NOT_DETERMINED"
+}
