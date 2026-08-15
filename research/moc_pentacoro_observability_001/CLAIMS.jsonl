@@ -1,0 +1,12 @@
+{"id":"MPO-001-C01","claim":"MOC reconoce nominalmente cinco componentes P,Eaf,Act,V,S.","status":"SOURCE_SUPPORTED","evidence":"SOURCE_AND_SCOPE.md","authority":"MOC"}
+{"id":"MPO-001-C02","claim":"Las reglas observacionales de este paquete están aprobadas por autoridad humana MOC.","status":"NOT_APPROVED","evidence":"HUMAN_REVIEW_FORM.md","authority":"pending"}
+{"id":"MPO-001-C03","claim":"Presence y change son campos instrumentales distintos.","status":"CANDIDATE_RULE","evidence":"STATE_SEMANTICS.md","authority":"human review required"}
+{"id":"MPO-001-C04","claim":"El silencio narrativo demuestra ABSENT.","status":"REJECTED_CANDIDATE_ANTIPATTERN","evidence":"STATE_SEMANTICS.md","authority":"candidate"}
+{"id":"MPO-001-C05","claim":"Contexto narrado basta para S.","status":"REJECTED_CANDIDATE_ANTIPATTERN","evidence":"components/S.md","authority":"candidate"}
+{"id":"MPO-001-C06","claim":"Preferencia puntual basta para V.","status":"REJECTED_CANDIDATE_ANTIPATTERN","evidence":"components/V.md","authority":"candidate"}
+{"id":"MPO-001-C07","claim":"Una palabra emocional basta para Eaf.","status":"REJECTED_CANDIDATE_ANTIPATTERN","evidence":"components/EAF.md","authority":"candidate"}
+{"id":"MPO-001-C08","claim":"Conducta exteriorizada equivale a Act.","status":"REJECTED_SOURCE_BOUNDARY","evidence":"components/ACT.md","authority":"MOC boundary"}
+{"id":"MPO-001-C09","claim":"La aprobación del paquete autoriza automáticamente G0.","status":"REJECTED_GOVERNANCE_ANTIPATTERN","evidence":"HUMAN_REVIEW_FORM.md","authority":"governance"}
+{"id":"MPO-001-C10","claim":"Se generaron ejemplos G0 dentro de este paquete.","status":"FALSE","evidence":"README.md","authority":"artifact inspection"}
+{"id":"MPO-001-C11","claim":"El paquete valida científicamente la factorización MOC.","status":"NOT_TESTED","evidence":"STATUS.md","authority":"none"}
+{"id":"MPO-001-C12","claim":"El paquete está activado o canonizado.","status":"FALSE","evidence":"STATUS.md","authority":"none"}
