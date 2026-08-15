@@ -1,0 +1,14 @@
+{"id":"F02-C001","claim":"La autoridad MOC fija cinco componentes nominales del Pentacoro.","status":"SUPPORTED_DEFINITION","evidence":"AUTHORITY_BASELINE.md","scope":"identidad nominal, no observabilidad"}
+{"id":"F02-C002","claim":"La autoridad localizada no fija criterios narrativos completos para P.","status":"SUPPORTED_AUDIT_FINDING","evidence":"AUTHORITY_BASELINE.md#P","scope":"fuentes auditadas"}
+{"id":"F02-C003","claim":"La autoridad localizada no fija criterios narrativos completos para Eaf.","status":"SUPPORTED_AUDIT_FINDING","evidence":"AUTHORITY_BASELINE.md#Eaf","scope":"fuentes auditadas"}
+{"id":"F02-C004","claim":"La autoridad localizada no fija criterios narrativos completos para Act.","status":"SUPPORTED_AUDIT_FINDING","evidence":"AUTHORITY_BASELINE.md#Act","scope":"fuentes auditadas"}
+{"id":"F02-C005","claim":"La autoridad localizada no fija criterios narrativos completos para V.","status":"SUPPORTED_AUDIT_FINDING","evidence":"AUTHORITY_BASELINE.md#V","scope":"fuentes auditadas"}
+{"id":"F02-C006","claim":"La autoridad localizada no fija criterios narrativos completos para S.","status":"SUPPORTED_AUDIT_FINDING","evidence":"AUTHORITY_BASELINE.md#S","scope":"fuentes auditadas"}
+{"id":"F02-C007","claim":"Un mapping biyectivo de cinco identificadores neutrales a cinco componentes MOC fue sellado antes de generar ejemplos.","status":"SUPPORTED_PROVENANCE","evidence":"MAPPING_ATTESTATION.md","scope":"integridad y secuencia procedimental; payload no incorporado"}
+{"id":"F02-C008","claim":"El sellado del mapping constituye cifrado o ceguera criptográfica.","status":"REJECTED","evidence":"MAPPING_ATTESTATION.md","scope":"el control es procedimental"}
+{"id":"F02-C009","claim":"G0 fue ejecutado.","status":"REJECTED","evidence":"g0_pilot/G0_RESULT.md","scope":"piloto"}
+{"id":"F02-C010","claim":"G1 identificó instrumentalmente los factores MOC.","status":"NOT_TESTED","evidence":"G1 no autorizado","scope":"identificabilidad"}
+{"id":"F02-C011","claim":"G2 estableció readiness de dataset.","status":"NOT_TESTED","evidence":"G2 no autorizado","scope":"dataset"}
+{"id":"F02-C012","claim":"F0.2 valida la factorización MOC.","status":"NOT_TESTED","evidence":"ningún gate empírico ejecutado","scope":"factorización"}
+{"id":"F02-C013","claim":"Se entrenó un modelo en F0.2.","status":"REJECTED","evidence":"MODEL_TRAINING_EXECUTED=NO","scope":"modelado"}
+{"id":"F02-C014","claim":"F0.2 cambia el estado canónico de MOC.","status":"REJECTED","evidence":"CANONICAL_STATUS_CHANGE=NOT_AUTHORIZED","scope":"gobernanza"}

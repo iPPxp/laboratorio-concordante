@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0-structural-only",
+  "artifact_status": "NOT_AUTHORIZED_FOR_ANNOTATION",
+  "semantic_authority": "MOC",
+  "computational_authority": "VALIDATION_ONLY",
+  "reason": "SEMANTIC_DEFINITION_INSUFFICIENT_5_OF_5",
+  "component_enum": ["P", "EAF", "ACT", "V", "S"],
+  "record_shape": {
+    "component": "component_enum",
+    "presence_status": ["PRESENT", "ABSENT", "AMBIGUOUS", "UNKNOWN"],
+    "change_status": ["INCREASED", "DECREASED", "CHANGED_OTHER", "STABLE", "AMBIGUOUS", "UNKNOWN", "NOT_APPLICABLE"],
+    "evidence": [{
+      "span": "literal substring of raw text",
+      "evidence_mode": ["EXPLICIT", "IMPLICIT", "CONTRASTIVE", "NEGATIVE"],
+      "reason": "component-specific justification"
+    }],
+    "confidence": {
+      "value": "number in [0,1]",
+      "rationale": "short justification"
+    }
+  },
+  "structural_constraints": [
+    "presence_status and change_status are distinct fields",
+    "ABSENT normally requires NOT_APPLICABLE change",
+    "PRESENT may coexist with STABLE",
+    "evidence spans must be literal substrings",
+    "confidence never replaces categorical status"
+  ],
+  "specialized_fields_not_semantically_closed": {
+    "S.context_role": ["INCIDENTAL_CONTEXT", "FUNCTIONAL_SITUATION", "BOTH", "NONE", "AMBIGUOUS", "UNKNOWN"],
+    "V.orientation_type": ["VALUE_DIRECTION", "IMPORTANCE_CRITERION", "CONFLICTING_CRITERIA", "INSTRUMENTAL_OBJECTIVE_ONLY", "PREFERENCE_ONLY", "NONE", "AMBIGUOUS", "UNKNOWN"],
+    "EAF.affective_vocabulary": ["PRESENT", "ABSENT"],
+    "EAF.eaf_observability": ["EXPLICIT", "IMPLICIT", "ABSENT", "DECOY", "AMBIGUOUS", "UNKNOWN"]
+  },
+  "use_prohibited_until": "MOC authority supplies operational criteria and a ManualAuthor freezes a version before G0"
+}
