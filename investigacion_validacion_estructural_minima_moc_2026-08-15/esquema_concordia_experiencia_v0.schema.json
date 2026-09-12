@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:concordia:research:experience-state:v0",
+  "title": "concordIA research-only typed relational transition record",
+  "description": "Non-canonical schema. It preserves claims and provenance without asserting geometric hypotheses.",
+  "type": "object",
+  "required": ["record_id", "status", "components", "relations", "context", "provenance"],
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "time": {"type": ["string", "null"]},
+    "status": {"const": "RESEARCH_ONLY"},
+    "scope": {"type": "string"},
+    "components": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {"$ref": "#/$defs/component"}
+    },
+    "relations": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/relation"}
+    },
+    "context": {"type": "object", "additionalProperties": true},
+    "transition": {"oneOf": [{"$ref": "#/$defs/transition"}, {"type": "null"}]},
+    "constraints": {"type": "array", "items": {"$ref": "#/$defs/claim"}},
+    "observations": {"type": "array", "items": {"$ref": "#/$defs/claim"}},
+    "provenance": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/provenance"}}
+  },
+  "$defs": {
+    "epistemicStatus": {
+      "enum": ["OBSERVED", "DECLARED", "INFERRED", "DERIVED", "HYPOTHESIZED", "REJECTED"]
+    },
+    "component": {
+      "type": "object",
+      "required": ["component_id", "semantic_type", "state", "uncertainty", "epistemic_status", "provenance_ids"],
+      "properties": {
+        "component_id": {"enum": ["P_psi", "Eaf_psi", "Act_psi", "V_psi", "S_psi"]},
+        "semantic_type": {"type": "string"},
+        "state": {},
+        "measurement_scale": {"enum": ["NOMINAL", "ORDINAL", "INTERVAL", "RATIO", "STRUCTURED", "UNSPECIFIED"]},
+        "uncertainty": {"type": "number", "minimum": 0, "maximum": 1},
+        "epistemic_status": {"$ref": "#/$defs/epistemicStatus"},
+        "provenance_ids": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "relation": {
+      "type": "object",
+      "required": ["relation_id", "endpoints", "arity", "relation_type", "directed", "epistemic_status", "evidence_level", "provenance_ids"],
+      "properties": {
+        "relation_id": {"type": "string"},
+        "endpoints": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string"}},
+        "arity": {"type": "integer", "minimum": 2, "maximum": 5},
+        "relation_type": {"type": "string"},
+        "directed": {"type": "boolean"},
+        "sign": {"enum": ["POSITIVE", "NEGATIVE", "MIXED", "NONE", "UNKNOWN"]},
+        "weight": {"type": ["number", "null"]},
+        "context_selector": {"type": ["object", "null"]},
+        "epistemic_status": {"$ref": "#/$defs/epistemicStatus"},
+        "evidence_level": {"type": "integer", "minimum": 0, "maximum": 5},
+        "irreducibility_tested": {"type": "boolean", "default": false},
+        "provenance_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "transition": {
+      "type": "object",
+      "required": ["source_record_id", "target_record_id", "operator", "epistemic_status", "provenance_ids"],
+      "properties": {
+        "source_record_id": {"type": "string"},
+        "target_record_id": {"type": "string"},
+        "operator": {"type": "string"},
+        "preconditions": {"type": "array", "items": {"type": "string"}},
+        "changed_fields": {"type": "array", "items": {"type": "string"}},
+        "preserved_predicates": {"type": "array", "items": {"type": "string"}},
+        "reversibility": {"enum": ["REVERSIBLE", "IRREVERSIBLE", "UNKNOWN", "NOT_APPLICABLE"]},
+        "epistemic_status": {"$ref": "#/$defs/epistemicStatus"},
+        "provenance_ids": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "claim": {
+      "type": "object",
+      "required": ["claim_id", "value", "epistemic_status", "evidence_level", "provenance_ids"],
+      "properties": {
+        "claim_id": {"type": "string"},
+        "value": {},
+        "epistemic_status": {"$ref": "#/$defs/epistemicStatus"},
+        "evidence_level": {"type": "integer", "minimum": 0, "maximum": 5},
+        "provenance_ids": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["provenance_id", "source_kind", "source_locator", "authority_scope"],
+      "properties": {
+        "provenance_id": {"type": "string"},
+        "source_kind": {"enum": ["DOCUMENT", "OBSERVATION", "ANNOTATION", "MODEL", "DERIVATION", "EXPERIMENT"]},
+        "source_locator": {"type": "string"},
+        "authority_scope": {"type": "string"},
+        "content_hash": {"type": ["string", "null"]},
+        "annotator": {"type": ["string", "null"]},
+        "timestamp": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
+
