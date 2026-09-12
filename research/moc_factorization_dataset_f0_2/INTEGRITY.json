@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "study": "MOC_F0_2_SEMANTIC_CALIBRATION_IDENTIFIABILITY",
+  "result": "PRE_G0_BLOCKED",
+  "semantic_definition_sufficient_components": 0,
+  "semantic_definition_insufficient_components": 5,
+  "gates": {
+    "G0_MANUAL_CALIBRATION": "NOT_RUN",
+    "G1_SEMANTIC_IDENTIFIABILITY": "NOT_RUN",
+    "G2_DATASET_READINESS": "NOT_RUN"
+  },
+  "mapping_verification": {
+    "canonical_payload_bytes_declared": 604,
+    "canonical_payload_bytes_computed": 604,
+    "payload_sha256_declared": "c962a76fafa7004a9e658ef79471d9e4edac713362281eae0f3c7d5610ab7028",
+    "payload_sha256_computed": "c962a76fafa7004a9e658ef79471d9e4edac713362281eae0f3c7d5610ab7028",
+    "digest_match": true,
+    "mapping_cardinality": 5,
+    "unique_targets": 5,
+    "sequence_claim": "ATTESTED_AND_INTERNALLY_CONSISTENT_NOT_INDEPENDENTLY_VERIFIED",
+    "secrecy": "PROCEDURAL_NOT_CRYPTOGRAPHIC"
+  },
+  "claims_verification": {
+    "records": 14,
+    "unique_ids": 14,
+    "json_parse_errors": 0
+  },
+  "execution_absence": {
+    "g1_directory_exists": false,
+    "forbidden_execution_artifacts_found": 0,
+    "pilot_examples_created": 0,
+    "pilot_annotations_created": 0,
+    "models_trained": 0
+  },
+  "artifact_hashes": {
+    "ANNOTATION_MANUAL.md": "f83833efd0d56f1674eb57dd47acb64745386ef0949dd5730189764e1f9325da",
+    "ANNOTATION_SCHEMA.json": "0465f923ee4cce46888dac676e8a05c354c55990c82cc73c5b62a77ea8b7dc76",
+    "AUTHORITY_BASELINE.md": "1cfefd9905481070a32165e682c47a3f80c066eb4e8b3566076a2e990129e1c8",
+    "CLAIMS.jsonl": "a97380686a77b2ee02c6be338cbd7ae23ec733557cf86d7ca59d61f8f08e6fcd",
+    "FINAL_REPORT.md": "d03c77e148c04039c57b7919bb60847b0ec5ee9e9bb0a616103e573cd676c91c",
+    "g0_pilot/CALIBRATION_REPORT.md": "1918da521c0c65ceb056d4002c536eff295b950aa309dad3c5490c614fa8af89",
+    "g0_pilot/G0_RESULT.md": "63daecee560112e007e328f73f940a8a6e88d5d0df6341e2747ea765ca9251f0",
+    "g0_pilot/PILOT_DESIGN.md": "53d8edf7c316411333a329de869e0190967ad58f708bd9ecdc9e3e963ec99c48",
+    "G2_SPECIFICATION.md": "caddb3a506aace740fd002f4d358a6697c153131a101a89110b493b839c10cd0",
+    "mapping/MANIFEST.sha256": "a9e406a7b7a9a30c3b363ba9eb32bb55520038c9336c206b8313e951495a59ea",
+    "NEGATIVE_NEIGHBORS.md": "52515eed3df8b837b187282e5f1361b7c8d932bd7561e155b2510ef1990e9ebc",
+    "ROLE_MATRIX.md": "c5ba6f41477aaa6afd9babd3e0e0ca5b449afc367a8717a20c30bfdea5049fcd",
+    "SEALED_MAPPING_MANIFEST.json": "96e348200d2fbcfefbe7366d90f6b905b0f5e2cec60b1f738c4a675629361d11",
+    "SEMANTIC_DEFINITIONS.md": "964acafa5d314a9a4cae149f9546183bf8eb2d9b7ac18f4d7b35b28cb7cea3e5"
+  },
+  "final_states": {
+    "MODEL_TRAINING_EXECUTED": "NO",
+    "MOC_FACTORIZATION_VALIDATION": "NOT_TESTED",
+    "CANONICAL_STATUS_CHANGE": "NOT_AUTHORIZED",
+    "GIT_INCORPORATION": "NOT_EXECUTED"
+  }
+}

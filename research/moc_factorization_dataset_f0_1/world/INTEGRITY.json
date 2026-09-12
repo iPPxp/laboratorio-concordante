@@ -1,0 +1,76 @@
+{
+  "artifact": "F0.1 sealed synthetic world",
+  "generator_role": "WORLD_GENERATOR",
+  "freeze_date": "2026-08-15",
+  "declared_inputs": [
+    "PREREGISTRATION.md",
+    "ROLE_MATRIX.md",
+    "GATE_0_1.md"
+  ],
+  "scope": {
+    "families": 60,
+    "texts_per_family": 1,
+    "core_families": 40,
+    "adversarial_families": 20,
+    "splits": {
+      "train": 35,
+      "validation": 10,
+      "test": 15
+    },
+    "intervention_unavailable": {
+      "total": 12,
+      "train": 6,
+      "validation": 3,
+      "test": 3
+    },
+    "latent_signal_mode": {
+      "explicit": 15,
+      "implicit": 15,
+      "absent": 15,
+      "decoy": 15
+    }
+  },
+  "checks": {
+    "exact_60_unique_world_ids": "PASS",
+    "exact_60_unique_projection_ids": "PASS",
+    "world_projection_id_set_match": "PASS",
+    "splits_35_10_15": "PASS",
+    "core_40_adversarial_20": "PASS",
+    "ten_pair_blocks_present": "PASS",
+    "four_cells_per_pair_block": "PASS",
+    "all_unordered_neutral_slot_pairs_present": "PASS",
+    "intervention_unavailable_ge_12": "PASS",
+    "intervention_unavailable_ge_2_each_split": "PASS",
+    "four_latent_signal_modes_present": "PASS",
+    "projection_omits_pair_cell_slot_and_future_fields": "PASS",
+    "projection_forbidden_theory_tokens_exact_match_scan": "PASS",
+    "all_records_synthetic_nonclinical": "PASS",
+    "narrative_authored_here": "NO",
+    "generic_outcomes_authored_here": "NO",
+    "annotations_authored_here": "NO"
+  },
+  "pair_blocks": {
+    "B01": ["U1", "U2"],
+    "B02": ["U1", "U3"],
+    "B03": ["U1", "U4"],
+    "B04": ["U1", "U5"],
+    "B05": ["U2", "U3"],
+    "B06": ["U2", "U4"],
+    "B07": ["U2", "U5"],
+    "B08": ["U3", "U4"],
+    "B09": ["U3", "U5"],
+    "B10": ["U4", "U5"]
+  },
+  "payload_sha256": {
+    "world_states.jsonl": "44b79f67f237a998b560aabcdb2ffc31d2abb12360cd3c70ffcba202f43a70a7",
+    "narrator_projection.jsonl": "f33c2f12e5cb299bcd0549646116bbac75cb6c409a7be0c150d547001a9c2eec",
+    "WORLD_SCHEMA.md": "f443c858410ec27274ce3eddabb8fb6aab3841ae10e27abe0d08e4af1ab74a55"
+  },
+  "epistemic_status": {
+    "world_layer_integrity": "SUPPORTED",
+    "full_gate_0_1_readiness": "NOT_EVALUATED_BY_THIS_ROLE",
+    "training_executed": false,
+    "canonical": false,
+    "clinical": false
+  }
+}

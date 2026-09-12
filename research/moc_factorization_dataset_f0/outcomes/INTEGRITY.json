@@ -1,0 +1,28 @@
+{
+  "schema": "MOC-F0-OUTCOME-INTEGRITY/v1",
+  "outcome_schema": "MOC-F0-GENERIC-OUTCOME/v1",
+  "outcome_author": "OUTCOME_AUTHOR_F0_INDEPENDENT",
+  "derivation": "SEALED_TRAJECTORY_RULES/v1",
+  "counts": {
+    "sealed_trajectories": 72,
+    "raw_model_inputs": 72,
+    "outcomes": 72,
+    "unique_outcome_case_ids": 72
+  },
+  "checks": {
+    "trajectory_outcome_id_match": true,
+    "raw_outcome_id_match": true,
+    "all_jsonl_records_parse": true,
+    "single_outcome_schema": true,
+    "prohibited_moc_field_name_matches": 0,
+    "moc_annotations_read": false,
+    "dataset_design_read": false,
+    "model_code_read": false
+  },
+  "sha256": {
+    "sealed_design/trajectories.jsonl": "f77bde50cc0d95c9694aee2df76d3abdc63a08436cb9336ccd0fa4097a3ef813",
+    "raw/model_input.jsonl": "d83c32a6571e4b6d46b9df79bb0359cd61d9192b96593618acd81bb6b34a46a5",
+    "outcomes/outcomes.jsonl": "50dbe67ba082d509917e1cf6d693b5ade2ea5cb1944ceb8ec1ae9f297c4c81b3"
+  },
+  "epistemic_status": "SYNTHETIC_INSTRUMENT_VALIDATION_ONLY"
+}

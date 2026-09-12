@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "SEALED_NEUTRAL_TO_MOC_MAPPING",
+  "custodian_role": "MappingCustodian",
+  "sealed_payload": {
+    "access_policy": {
+      "allowed_before_freeze": [
+        "MappingCustodian"
+      ],
+      "denied_until_freeze": [
+        "AuthorityAuditor",
+        "ManualAuthor",
+        "WorldGenerator",
+        "ProjectionDesigner",
+        "Narrator",
+        "AnnotatorA",
+        "AnnotatorB",
+        "Adjudicator",
+        "GateEvaluator"
+      ],
+      "release_condition": "AFTER_WORLD_PROJECTIONS_NARRATIVES_OBSERVATIONAL_TARGETS_ANNOTATIONS_AND_ADJUDICATION_FREEZE",
+      "release_to": [
+        "GateEvaluator"
+      ]
+    },
+    "artifact_id": "MOC-F0.2-SEALED-MAPPING-001",
+    "mapping": {
+      "U1": "P",
+      "U2": "EAF",
+      "U3": "ACT",
+      "U4": "V",
+      "U5": "S"
+    },
+    "public_nonce": "941cd72364074e5c8a0c726431ea6d83",
+    "sealed_at_utc": "2026-08-15T21:42:41.925Z",
+    "state": "SEALED_BEFORE_EXAMPLES"
+  },
+  "canonicalization": {
+    "scheme": "RFC_8785_JSON_CANONICALIZATION_SCHEME_JCS",
+    "digest_target": "sealed_payload",
+    "encoding": "UTF-8",
+    "byte_order_mark": "ABSENT",
+    "object_member_order": "LEXICOGRAPHIC_AS_DEFINED_BY_RFC_8785",
+    "array_order": "PRESERVED",
+    "insignificant_whitespace": "REMOVED",
+    "canonical_payload_utf8": "{\"access_policy\":{\"allowed_before_freeze\":[\"MappingCustodian\"],\"denied_until_freeze\":[\"AuthorityAuditor\",\"ManualAuthor\",\"WorldGenerator\",\"ProjectionDesigner\",\"Narrator\",\"AnnotatorA\",\"AnnotatorB\",\"Adjudicator\",\"GateEvaluator\"],\"release_condition\":\"AFTER_WORLD_PROJECTIONS_NARRATIVES_OBSERVATIONAL_TARGETS_ANNOTATIONS_AND_ADJUDICATION_FREEZE\",\"release_to\":[\"GateEvaluator\"]},\"artifact_id\":\"MOC-F0.2-SEALED-MAPPING-001\",\"mapping\":{\"U1\":\"P\",\"U2\":\"EAF\",\"U3\":\"ACT\",\"U4\":\"V\",\"U5\":\"S\"},\"public_nonce\":\"941cd72364074e5c8a0c726431ea6d83\",\"sealed_at_utc\":\"2026-08-15T21:42:41.925Z\",\"state\":\"SEALED_BEFORE_EXAMPLES\"}"
+  },
+  "digest": {
+    "algorithm": "SHA-256",
+    "canonical_payload_utf8_byte_length": 604,
+    "sha256": "c962a76fafa7004a9e658ef79471d9e4edac713362281eae0f3c7d5610ab7028"
+  },
+  "seal_policy": {
+    "mapping_mutability": "IMMUTABLE_FOR_F0.2",
+    "retrospective_inference_or_reconstruction": "PROHIBITED",
+    "reveal_before_freeze": "PROHIBITED",
+    "reveal_after_freeze": "GateEvaluator_ONLY",
+    "secrecy_guarantee": "PROCEDURAL_ACCESS_CONTROL_ONLY_NOT_CRYPTOGRAPHIC_ENCRYPTION",
+    "public_nonce_disclosure": "AUTHORIZED"
+  },
+  "sequence_attestation": {
+    "mapping_state": "SEALED_BEFORE_EXAMPLES",
+    "examples_generated_by_custodian": false,
+    "examples_evaluated_by_custodian": false,
+    "mapping_reconstructed_retrospectively": false,
+    "prior_f0_or_f0_1_material_read": false,
+    "semantic_moc_sources_read": false,
+    "future_world_or_manual_or_annotation_artifacts_read": false
+  },
+  "input_declaration": {
+    "mandate_path": "C:/Users/IximM/.codex/attachments/ed6af203-625b-46cd-9b88-684f2900b99c/pasted-text.txt",
+    "mandate_sha256": "f51ac2ed373144597f585a1d5a04bf6e09cec445f6daaa13532ff92fee6a6093",
+    "applicable_agents_md_found": 0,
+    "other_inputs_read": false
+  },
+  "epistemic_status": {
+    "mapping_integrity": "SEALED",
+    "mapping_sequence": "SEALED_BEFORE_EXAMPLES",
+    "semantic_validation": "NOT_EVALUATED",
+    "gate_evaluation": "NOT_EXECUTED",
+    "model_training": "NOT_EXECUTED",
+    "canonical_status_change": "NOT_AUTHORIZED"
+  }
+}

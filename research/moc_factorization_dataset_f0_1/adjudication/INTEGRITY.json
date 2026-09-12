@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "artifact": "F0.1 adjudication integrity declaration",
+  "role": "ADJUDICATOR_F0_1",
+  "adjudicator_id": "ADJUDICATOR_F0_1",
+  "date": "2026-08-15",
+  "declared_inputs": [
+    {"path": "raw/model_input.jsonl", "bytes": 20743, "sha256": "608d1c27c934da9476ffaf776925daa776edc144842671e86d48f153f17dfec4"},
+    {"path": "ANNOTATION_MANUAL.md", "bytes": 1812, "sha256": "2aaf6eaad22b1d455d931a3e5c1bdb05ec7f8dd211d7645a12332f416829196a"},
+    {"path": "annotations_a/annotations.jsonl", "bytes": 66372, "sha256": "bcabdac35518f21a748eebacda7a9bd5f910d5684ba4bfea33f29ed3d14eeee1"},
+    {"path": "annotations_a/INTEGRITY.json", "bytes": 1861, "sha256": "5071e5477647784a26891dbff8b79d43cca6af58436a5d3da0f2563afb556cc3"},
+    {"path": "annotations_a/MANIFEST.sha256", "bytes": 506, "sha256": "0bcce982b582ccb9dc12344568e7dc70d95ebe1bf5cce34ff788d6bef03047eb"},
+    {"path": "annotations_b/annotations.jsonl", "bytes": 67404, "sha256": "96d0ca420f9b1c8e49a780122598938a8bd88e7016bb8ae6f3b3db4187d39e27"},
+    {"path": "annotations_b/INTEGRITY.json", "bytes": 2174, "sha256": "fafd9b16ddc92f94587c132fdff166e77b9e139714f74e522e5d3ac4a4843f47"},
+    {"path": "annotations_b/MANIFEST.sha256", "bytes": 241, "sha256": "1a787aba83abfddf73f1ad1ec60f9f89bb1dd6905f0f72747fae72a3f7f26ca3"}
+  ],
+  "access_attestation": {
+    "only_declared_inputs_read": true,
+    "world_read": false,
+    "outcomes_read": false,
+    "preregistered_pair_or_cell_registry_read": false,
+    "gate_read": false,
+    "model_code_read": false,
+    "model_results_read": false,
+    "role_matrix_read": false,
+    "quota_used": false,
+    "note": "ROLE_MATRIX.md is named inside annotator integrity declarations but was not opened by the adjudicator. This is an access declaration; digests alone do not prove blindness."
+  },
+  "input_verification": {
+    "raw_records": 60,
+    "raw_unique_case_ids": 60,
+    "annotations_a_records": 60,
+    "annotations_a_unique_case_ids": 60,
+    "annotations_b_records": 60,
+    "annotations_b_unique_case_ids": 60,
+    "raw_a_b_id_sets_exact_match": true,
+    "missing_ids": [],
+    "extra_ids": [],
+    "duplicate_ids": [],
+    "raw_digest_matches_both_integrity_declarations": true,
+    "manual_digest_matches_both_integrity_declarations": true,
+    "annotation_digests_match_integrity_and_manifests": true,
+    "allowed_manifest_entries_verified": true,
+    "foreign_manifest_entries_opened": false
+  },
+  "agreement": {
+    "component_records": 300,
+    "raw_exact_agreements": 251,
+    "raw_exact_rate": 0.8366666667,
+    "binary_present_agreements": 268,
+    "binary_present_rate": 0.8933333333,
+    "status_disagreements": 49,
+    "per_factor_exact": {
+      "P": {"agreements": 44, "total": 60, "rate": 0.7333333333},
+      "EAF": {"agreements": 57, "total": 60, "rate": 0.95},
+      "ACT": {"agreements": 57, "total": 60, "rate": 0.95},
+      "V": {"agreements": 35, "total": 60, "rate": 0.5833333333},
+      "S": {"agreements": 58, "total": 60, "rate": 0.9666666667}
+    },
+    "unknown_counts": {
+      "A": {"P": 20, "EAF": 35, "ACT": 38, "V": 33, "S": 0, "total": 126},
+      "B": {"P": 20, "EAF": 36, "ACT": 36, "V": 51, "S": 0, "total": 143}
+    }
+  },
+  "adjudication": {
+    "executed": true,
+    "cases": 60,
+    "unique_case_ids": 60,
+    "component_records": 300,
+    "disagreements_resolved": 49,
+    "unresolved_components": 0,
+    "resolution_sources": {"ANNOTATOR_A": 1, "ANNOTATOR_B": 32, "SYNTHESIS": 16},
+    "relations": 1,
+    "relation_disagreements_resolved": 1,
+    "shared_span_component_pairs": 25,
+    "cases_with_shared_spans": 21,
+    "cloned_reason_flags": 0,
+    "status_counts": {
+      "P": {"PRESENT": 38, "ABSENT": 0, "AMBIGUOUS": 2, "UNKNOWN": 20, "UNRESOLVED": 0},
+      "EAF": {"PRESENT": 3, "ABSENT": 0, "AMBIGUOUS": 21, "UNKNOWN": 36, "UNRESOLVED": 0},
+      "ACT": {"PRESENT": 15, "ABSENT": 8, "AMBIGUOUS": 1, "UNKNOWN": 36, "UNRESOLVED": 0},
+      "V": {"PRESENT": 3, "ABSENT": 0, "AMBIGUOUS": 20, "UNKNOWN": 37, "UNRESOLVED": 0},
+      "S": {"PRESENT": 60, "ABSENT": 0, "AMBIGUOUS": 0, "UNKNOWN": 0, "UNRESOLVED": 0}
+    }
+  },
+  "output_validation": {
+    "jsonl_parseable": true,
+    "id_set_exact_match_to_raw": true,
+    "all_components_present": true,
+    "controlled_vocabularies_valid": true,
+    "all_evidence_spans_literal": true,
+    "all_relation_spans_literal": true,
+    "shared_spans_require_distinct_reasons": true,
+    "validation_errors": 0
+  },
+  "outputs": [
+    {"path": "adjudication/adjudicated.jsonl", "bytes": 125395, "sha256": "96950a07c63935906456a5205fa1d6d4fe06a61e27bae3157ad78fd5045ea9c7"},
+    {"path": "adjudication/CONFUSION_MATRICES.json", "bytes": 3974, "sha256": "cfedb241ca30e844101f461f3a8e41b5a45414c441ca4a90975640c829cf90b4"},
+    {"path": "adjudication/AGREEMENT_REPORT.md", "bytes": 6202, "sha256": "694d331bc483c757ba8e356c50b077f0c4d130617ebef53ce1f9a77a11133401"}
+  ],
+  "epistemic_scope": {
+    "text_adjudication_integrity": "SUPPORTED",
+    "inter_annotator_agreement": "MEASURED",
+    "outcome_alignment": "NOT_EVALUATED",
+    "confirmatory_benchmark_readiness": "NOT_EVALUATED",
+    "model_training": "NOT_EXECUTED"
+  }
+}

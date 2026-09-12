@@ -1,0 +1,25 @@
+{"id":"F01-001","claim":"F0.1 contiene 60 familias independientes.","status":"SUPPORTED","evidence":"60 unique family_id","scope":"synthetic"}
+{"id":"F01-002","claim":"Los splits son 35/10/15 sin paráfrasis como réplicas.","status":"SUPPORTED","evidence":"raw audit","scope":"synthetic"}
+{"id":"F01-003","claim":"Diez pares neutrales tienen celdas 00/01/10/11.","status":"SUPPORTED","evidence":"world pair blocks","scope":"U1..U5"}
+{"id":"F01-004","claim":"Los pares neutrales corresponden preregistradamente a las diez fronteras MOC.","status":"NOT_SUPPORTED","evidence":"no MOC slot codebook","scope":"pairwise MOC claim"}
+{"id":"F01-005","claim":"El narrador estuvo separado del mundo sellado y outcome.","status":"SUPPORTED_BY_ACCESS_DECLARATION","evidence":"narrator integrity","scope":"process"}
+{"id":"F01-006","claim":"El autor de outcomes estuvo separado del narrador y anotadores.","status":"SUPPORTED_BY_ACCESS_DECLARATION","evidence":"outcome integrity","scope":"process"}
+{"id":"F01-007","claim":"Los outcomes incluyen 12 intervenciones no disponibles.","status":"SUPPORTED","evidence":"12 total; 6/3/3","scope":"synthetic"}
+{"id":"F01-008","claim":"El test tiene 15 familias independientes.","status":"SUPPORTED","evidence":"split audit","scope":"synthetic"}
+{"id":"F01-009","claim":"No hay textos duplicados ni alta similitud 5-gram.","status":"SUPPORTED","evidence":"duplicates=0; max Jaccard=.0923","scope":"raw"}
+{"id":"F01-010","claim":"Dos anotadores ciegos completaron 60 casos.","status":"SUPPORTED_BY_PROVENANCE_DECLARATION","evidence":"A/B manifests","scope":"instrumental"}
+{"id":"F01-011","claim":"La adjudicación resolvió 49 desacuerdos.","status":"SUPPORTED","evidence":"adjudication integrity","scope":"text annotation"}
+{"id":"F01-012","claim":"V supera el umbral de acuerdo exacto .65.","status":"NOT_SUPPORTED","evidence":"raw agreement=.5833","scope":"annotation"}
+{"id":"F01-013","claim":"Todas las tasas UNKNOWN quedan bajo .65.","status":"NOT_SUPPORTED","evidence":"V annotator B=.85","scope":"annotation"}
+{"id":"F01-014","claim":"Los cinco factores tienen cobertura positiva/negativa/ambigua por split.","status":"NOT_SUPPORTED","evidence":"coverage gate failed","scope":"A and B annotations"}
+{"id":"F01-015","claim":"Eaf explícito/implícito/ausente/decoy es observable en anotación.","status":"NOT_SUPPORTED","evidence":"adjudicated PRESENT=3 ABSENT=0","scope":"factor observability"}
+{"id":"F01-016","claim":"S tiene variación positiva y negativa.","status":"NOT_SUPPORTED","evidence":"adjudicated PRESENT=60","scope":"factor observability"}
+{"id":"F01-017","claim":"Presence y change fueron distinguidos consistentemente.","status":"NOT_SUPPORTED","evidence":"11 A ABSENT reasons describe stability","scope":"annotation semantics"}
+{"id":"F01-018","claim":"Shared spans implican shared constructs.","status":"INSUFFICIENT_EVIDENCE","evidence":"25 pairs, 0 cloned reason flags","scope":"annotation"}
+{"id":"F01-019","claim":"El manifest de permutación está congelado antes de modelar.","status":"SUPPORTED","evidence":"source adjudication digest matches","scope":"sanity plan"}
+{"id":"F01-020","claim":"La sanity check de performance permutado fue ejecutada.","status":"NOT_APPLICABLE","evidence":"no model phase","scope":"F0.1"}
+{"id":"F01-021","claim":"Gate 0.1 pasa todas sus condiciones.","status":"NOT_SUPPORTED","evidence":"12 pass / 5 fail","scope":"conjunctive gate"}
+{"id":"F01-022","claim":"F0.1 está listo para entrenamiento confirmatorio.","status":"NOT_SUPPORTED","evidence":"7 blockers including semantic blockers","scope":"current corpus"}
+{"id":"F01-023","claim":"F0.1 valida la factorización MOC.","status":"INSUFFICIENT_EVIDENCE","evidence":"instrument gate failed","scope":"MOC"}
+{"id":"F01-024","claim":"F0.1 contiene evidencia humana o clínica.","status":"NOT_APPLICABLE","evidence":"fully synthetic nonclinical","scope":"human claims"}
+{"id":"F01-025","claim":"F0.2 debe separar presence_status y change_status antes de generar.","status":"SUPPORTED_AS_GOVERNANCE_RULE","evidence":"F0.1 semantic confusion","scope":"next instrument"}

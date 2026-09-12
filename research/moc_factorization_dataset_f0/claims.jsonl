@@ -1,0 +1,21 @@
+{"id":"F0-001","claim":"La capa raw contiene 72 registros con schema visible exacto.","status":"SUPPORTED","evidence":"audit_dataset.py","scope":"F0 synthetic"}
+{"id":"F0-002","claim":"Las 72 observaciones corresponden a 24 familias independientes.","status":"SUPPORTED","evidence":"family_id audit","scope":"F0 synthetic"}
+{"id":"F0-003","claim":"Ninguna familia cruza splits.","status":"SUPPORTED","evidence":"family_leakage=false","scope":"F0 synthetic"}
+{"id":"F0-004","claim":"Los conjuntos de IDs raw, anotación y outcome coinciden.","status":"SUPPORTED","evidence":"72/72/72 exact set match","scope":"F0 synthetic"}
+{"id":"F0-005","claim":"Los cuatro digests primarios coinciden con sus manifests.","status":"SUPPORTED","evidence":"SHA256 audit","scope":"current files"}
+{"id":"F0-006","claim":"El anotador MOC no leyó trayectorias ni outcomes.","status":"SUPPORTED_BY_PROVENANCE_DECLARATION","evidence":"moc_annotations/INTEGRITY.json","scope":"process declaration"}
+{"id":"F0-007","claim":"El autor de outcomes no leyó anotaciones MOC.","status":"SUPPORTED_BY_PROVENANCE_DECLARATION","evidence":"outcomes/INTEGRITY.json","scope":"process declaration"}
+{"id":"F0-008","claim":"Los outcomes no contienen claves MOC prohibidas.","status":"SUPPORTED","evidence":"recursive key scan=0","scope":"outcomes schema"}
+{"id":"F0-009","claim":"Los identificadores de diseñador, anotador y autor de outcomes son distintos.","status":"SUPPORTED","evidence":"role ID audit","scope":"declared authorship"}
+{"id":"F0-010","claim":"La fuente de outcomes es externa al diseñador del corpus.","status":"NOT_SUPPORTED","evidence":"source_author=DATASET_DESIGNER_F0","scope":"F0 synthetic"}
+{"id":"F0-011","claim":"Eaf tiene cobertura positiva suficiente.","status":"NOT_SUPPORTED","evidence":"PRESENT=0","scope":"annotations"}
+{"id":"F0-012","claim":"Existe acuerdo interevaluador.","status":"NOT_APPLICABLE","evidence":"single instrumental annotator","scope":"F0"}
+{"id":"F0-013","claim":"El corpus contiene controles de intervención no disponible.","status":"NOT_SUPPORTED","evidence":"intervention_unavailable=0","scope":"outcomes"}
+{"id":"F0-014","claim":"El test tiene tamaño efectivo suficiente.","status":"NOT_SUPPORTED","evidence":"4 independent test families","scope":"confirmatory benchmark"}
+{"id":"F0-015","claim":"Los outcomes de posibilidades son completos.","status":"PARTIALLY_SUPPORTED","evidence":"UNKNOWN=30/72","scope":"outcomes"}
+{"id":"F0-016","claim":"La evidencia anotada es específica de componente.","status":"INSUFFICIENT_EVIDENCE","evidence":"duplicated evidence in 48/72 cases","scope":"single annotation pass"}
+{"id":"F0-017","claim":"F0 contiene negativos y ambigüedad adversarial.","status":"SUPPORTED","evidence":"sealed family inventory","scope":"design coverage"}
+{"id":"F0-018","claim":"F0 está listo para benchmark confirmatorio.","status":"NOT_SUPPORTED","evidence":"7 blocking conditions","scope":"current version"}
+{"id":"F0-019","claim":"F0 valida los cinco factores MOC.","status":"INSUFFICIENT_EVIDENCE","evidence":"instrument-only synthetic corpus","scope":"MOC claims"}
+{"id":"F0-020","claim":"F0 produce evidencia sobre experiencia humana o clínica.","status":"NOT_APPLICABLE","evidence":"fully synthetic non-clinical","scope":"human claims"}
+{"id":"F0-021","claim":"F0.1 debe ser una versión nueva, no una reparación post-hoc de F0.","status":"SUPPORTED_AS_GOVERNANCE_RULE","evidence":"avoid dataset optimization after audit","scope":"next phase"}

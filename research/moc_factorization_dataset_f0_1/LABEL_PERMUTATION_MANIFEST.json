@@ -1,0 +1,25 @@
+{
+  "schema": "F0.1-LABEL-PERMUTATION/v1",
+  "status": "FROZEN_BEFORE_MODELING",
+  "source": {
+    "path": "adjudication/adjudicated.jsonl",
+    "sha256": "96950a07c63935906456a5205fa1d6d4fe06a61e27bae3157ad78fd5045ea9c7",
+    "records": 60
+  },
+  "ordering": "lexicographic case_id within split",
+  "per_component_cyclic_offsets": {
+    "P": 7,
+    "EAF": 11,
+    "ACT": 13,
+    "V": 17,
+    "S": 19
+  },
+  "application": "For each component and split, assign the status/evidence-free label from index (i+offset) mod n. Preserve split and component marginal counts; discard evidence and relations.",
+  "required_checks": [
+    "same_case_ids",
+    "same_per_split_component_marginals",
+    "at_least_one_case_assignment_changed_per_component_per_split"
+  ],
+  "performance_sanity_check": "PENDING_MODEL_PHASE",
+  "interpretation": "High predictive performance after this permutation is evidence of leakage or target shortcut, not MOC value."
+}

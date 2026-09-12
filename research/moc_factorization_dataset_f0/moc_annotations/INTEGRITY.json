@@ -1,0 +1,35 @@
+{
+  "schema": "MOC-F0-ANNOTATION-INTEGRITY-001",
+  "phase": "F0",
+  "annotator_role": "MOC_ANNOTATOR",
+  "annotator_id": "F0_MOC_ANNOTATOR_INDEPENDENT",
+  "source": {
+    "path": "raw/model_input.jsonl",
+    "sha256": "d83c32a6571e4b6d46b9df79bb0359cd61d9192b96593618acd81bb6b34a46a5",
+    "record_count": 72
+  },
+  "annotations": {
+    "path": "moc_annotations/annotations.jsonl",
+    "sha256": "de72db413753ff7b98699ceb672e380e826482fca04af8c6b51f055e83a95c32",
+    "record_count": 72,
+    "unique_case_ids": 72,
+    "case_id_set_matches_source": true,
+    "allowed_statuses": ["PRESENT", "ABSENT", "AMBIGUOUS", "UNKNOWN"],
+    "invalid_status_count": 0
+  },
+  "blindness_declaration": {
+    "sealed_design_accessed": false,
+    "outcomes_accessed": false,
+    "dataset_design_accessed": false,
+    "model_code_accessed": false,
+    "model_predictions_accessed": false,
+    "benchmark_specific_hypotheses_used": false
+  },
+  "semantic_guards": {
+    "act_is_not_conduct": true,
+    "act_is_not_uppercase_ACT": true,
+    "v_is_not_reward": true,
+    "human_or_clinical_claims": false
+  },
+  "status": "ANNOTATED_INDEPENDENTLY_F0"
+}

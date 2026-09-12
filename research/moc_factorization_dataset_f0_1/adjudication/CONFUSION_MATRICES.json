@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "artifact": "F0.1 inter-annotator confusion matrices",
+  "unit": "component status per case",
+  "n_cases": 60,
+  "n_component_records": 300,
+  "orientation": "rows=ANNOTATOR_A, columns=ANNOTATOR_B",
+  "status_order": ["PRESENT", "ABSENT", "AMBIGUOUS", "UNKNOWN"],
+  "matrices": {
+    "P": {
+      "PRESENT": {"PRESENT": 25, "ABSENT": 0, "AMBIGUOUS": 0, "UNKNOWN": 0},
+      "ABSENT": {"PRESENT": 13, "ABSENT": 0, "AMBIGUOUS": 1, "UNKNOWN": 1},
+      "AMBIGUOUS": {"PRESENT": 0, "ABSENT": 0, "AMBIGUOUS": 0, "UNKNOWN": 0},
+      "UNKNOWN": {"PRESENT": 0, "ABSENT": 0, "AMBIGUOUS": 1, "UNKNOWN": 19}
+    },
+    "EAF": {
+      "PRESENT": {"PRESENT": 1, "ABSENT": 0, "AMBIGUOUS": 0, "UNKNOWN": 0},
+      "ABSENT": {"PRESENT": 2, "ABSENT": 0, "AMBIGUOUS": 0, "UNKNOWN": 1},
+      "AMBIGUOUS": {"PRESENT": 0, "ABSENT": 0, "AMBIGUOUS": 21, "UNKNOWN": 0},
+      "UNKNOWN": {"PRESENT": 0, "ABSENT": 0, "AMBIGUOUS": 0, "UNKNOWN": 35}
+    },
+    "ACT": {
+      "PRESENT": {"PRESENT": 12, "ABSENT": 1, "AMBIGUOUS": 0, "UNKNOWN": 0},
+      "ABSENT": {"PRESENT": 0, "ABSENT": 8, "AMBIGUOUS": 0, "UNKNOWN": 0},
+      "AMBIGUOUS": {"PRESENT": 0, "ABSENT": 0, "AMBIGUOUS": 1, "UNKNOWN": 0},
+      "UNKNOWN": {"PRESENT": 0, "ABSENT": 0, "AMBIGUOUS": 2, "UNKNOWN": 36}
+    },
+    "V": {
+      "PRESENT": {"PRESENT": 2, "ABSENT": 0, "AMBIGUOUS": 6, "UNKNOWN": 7},
+      "ABSENT": {"PRESENT": 0, "ABSENT": 0, "AMBIGUOUS": 0, "UNKNOWN": 9},
+      "AMBIGUOUS": {"PRESENT": 1, "ABSENT": 0, "AMBIGUOUS": 0, "UNKNOWN": 2},
+      "UNKNOWN": {"PRESENT": 0, "ABSENT": 0, "AMBIGUOUS": 0, "UNKNOWN": 33}
+    },
+    "S": {
+      "PRESENT": {"PRESENT": 58, "ABSENT": 0, "AMBIGUOUS": 0, "UNKNOWN": 0},
+      "ABSENT": {"PRESENT": 2, "ABSENT": 0, "AMBIGUOUS": 0, "UNKNOWN": 0},
+      "AMBIGUOUS": {"PRESENT": 0, "ABSENT": 0, "AMBIGUOUS": 0, "UNKNOWN": 0},
+      "UNKNOWN": {"PRESENT": 0, "ABSENT": 0, "AMBIGUOUS": 0, "UNKNOWN": 0}
+    },
+    "POOLED": {
+      "PRESENT": {"PRESENT": 98, "ABSENT": 1, "AMBIGUOUS": 6, "UNKNOWN": 7},
+      "ABSENT": {"PRESENT": 17, "ABSENT": 8, "AMBIGUOUS": 1, "UNKNOWN": 11},
+      "AMBIGUOUS": {"PRESENT": 1, "ABSENT": 0, "AMBIGUOUS": 22, "UNKNOWN": 2},
+      "UNKNOWN": {"PRESENT": 0, "ABSENT": 0, "AMBIGUOUS": 3, "UNKNOWN": 123}
+    }
+  },
+  "raw_agreement": {
+    "P": {"agreements": 44, "total": 60, "rate": 0.7333333333},
+    "EAF": {"agreements": 57, "total": 60, "rate": 0.95},
+    "ACT": {"agreements": 57, "total": 60, "rate": 0.95},
+    "V": {"agreements": 35, "total": 60, "rate": 0.5833333333},
+    "S": {"agreements": 58, "total": 60, "rate": 0.9666666667},
+    "POOLED": {"agreements": 251, "total": 300, "rate": 0.8366666667}
+  },
+  "binary_present_vs_non_present": {
+    "orientation": "rows=A, columns=B; POS=PRESENT, NEG=ABSENT|AMBIGUOUS|UNKNOWN",
+    "P": {"POS_POS": 25, "POS_NEG": 0, "NEG_POS": 13, "NEG_NEG": 22, "agreements": 47, "rate": 0.7833333333},
+    "EAF": {"POS_POS": 1, "POS_NEG": 0, "NEG_POS": 2, "NEG_NEG": 57, "agreements": 58, "rate": 0.9666666667},
+    "ACT": {"POS_POS": 12, "POS_NEG": 1, "NEG_POS": 0, "NEG_NEG": 47, "agreements": 59, "rate": 0.9833333333},
+    "V": {"POS_POS": 2, "POS_NEG": 13, "NEG_POS": 1, "NEG_NEG": 44, "agreements": 46, "rate": 0.7666666667},
+    "S": {"POS_POS": 58, "POS_NEG": 0, "NEG_POS": 2, "NEG_NEG": 0, "agreements": 58, "rate": 0.9666666667},
+    "POOLED": {"POS_POS": 98, "POS_NEG": 14, "NEG_POS": 18, "NEG_NEG": 170, "agreements": 268, "rate": 0.8933333333}
+  },
+  "unknown_rates": {
+    "P": {"A_count": 20, "A_rate": 0.3333333333, "B_count": 20, "B_rate": 0.3333333333},
+    "EAF": {"A_count": 35, "A_rate": 0.5833333333, "B_count": 36, "B_rate": 0.6},
+    "ACT": {"A_count": 38, "A_rate": 0.6333333333, "B_count": 36, "B_rate": 0.6},
+    "V": {"A_count": 33, "A_rate": 0.55, "B_count": 51, "B_rate": 0.85},
+    "S": {"A_count": 0, "A_rate": 0.0, "B_count": 0, "B_rate": 0.0},
+    "POOLED": {"A_count": 126, "A_rate": 0.42, "B_count": 143, "B_rate": 0.4766666667}
+  }
+}

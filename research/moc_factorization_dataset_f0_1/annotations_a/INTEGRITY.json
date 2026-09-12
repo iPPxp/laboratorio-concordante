@@ -1,0 +1,59 @@
+{
+  "artifact": "F0.1 ANNOTATOR_A integrity declaration",
+  "role": "ANNOTATOR_A",
+  "annotator_id": "ANNOTATOR_A",
+  "access_scope": {
+    "declared_inputs": [
+      {
+        "path": "raw/model_input.jsonl",
+        "sha256": "608d1c27c934da9476ffaf776925daa776edc144842671e86d48f153f17dfec4"
+      },
+      {
+        "path": "ANNOTATION_MANUAL.md",
+        "sha256": "2aaf6eaad22b1d455d931a3e5c1bdb05ec7f8dd211d7645a12332f416829196a"
+      },
+      {
+        "path": "ROLE_MATRIX.md",
+        "sha256": "5229e3f63f018e3a813f8761218e929941e8ae5631e88bf5deb9bb505578a14c"
+      }
+    ],
+    "undeclared_inputs_read": false,
+    "world_read": false,
+    "outcomes_read": false,
+    "other_annotations_read": false,
+    "adjudication_read": false,
+    "models_read": false,
+    "pair_or_cell_registry_read": false,
+    "foreign_manifests_read": false
+  },
+  "annotation_policy": {
+    "quota_used": false,
+    "five_components_forced": false,
+    "conduct_treated_as_act": false,
+    "reward_treated_as_v": false,
+    "incidental_detail_treated_as_s": false,
+    "cooccurrence_treated_as_causality": false,
+    "shared_spans_require_distinct_reasons": true
+  },
+  "result": {
+    "cases": 60,
+    "unique_case_ids": 60,
+    "expected_case_ids_match": true,
+    "component_records": 300,
+    "relations": 1,
+    "jsonl_parse_ok": true,
+    "component_schema_ok": true,
+    "literal_evidence_span_match": true,
+    "literal_relation_span_match": true,
+    "validation_errors": 0,
+    "annotations_sha256": "bcabdac35518f21a748eebacda7a9bd5f910d5684ba4bfea33f29ed3d14eeee1"
+  },
+  "epistemic_scope": {
+    "independent_text_annotation": "SUPPORTED",
+    "inter_annotator_agreement": "NOT_EVALUATED",
+    "adjudication": "NOT_EXECUTED",
+    "outcome_alignment": "NOT_EVALUATED",
+    "benchmark_readiness": "NOT_EVALUATED",
+    "model_training": "NOT_EXECUTED"
+  }
+}

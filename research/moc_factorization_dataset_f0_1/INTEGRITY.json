@@ -1,0 +1,66 @@
+{
+  "artifact": "F0.1 narrator visible layer",
+  "role": "NARRATOR",
+  "status": "SEALED",
+  "date": "2026-08-15",
+  "scope": "synthetic_non_clinical_non_canonical",
+  "records": 60,
+  "independent_families": 60,
+  "texts_per_family": 1,
+  "split_counts": {
+    "train": 35,
+    "validation": 10,
+    "test": 15
+  },
+  "visible_schema": [
+    "case_id",
+    "raw_text",
+    "time_index",
+    "context_id",
+    "family_id",
+    "split"
+  ],
+  "identifier_rules": {
+    "case_id": "F01- + family_id",
+    "context_id": "CTX- + family_id",
+    "time_index": 0
+  },
+  "input": {
+    "path": "world/narrator_projection.jsonl",
+    "sha256": "f33c2f12e5cb299bcd0549646116bbac75cb6c409a7be0c150d547001a9c2eec"
+  },
+  "output": {
+    "path": "raw/model_input.jsonl",
+    "sha256": "608d1c27c934da9476ffaf776925daa776edc144842671e86d48f153f17dfec4"
+  },
+  "checks": {
+    "valid_jsonl": true,
+    "exact_schema_and_order": true,
+    "source_family_order_preserved": true,
+    "source_family_split_mapping_preserved": true,
+    "unique_family_ids": 60,
+    "unique_case_ids": 60,
+    "unique_context_ids": 60,
+    "duplicate_raw_texts": 0,
+    "prohibited_token_matches": 0,
+    "word_count_min": 28,
+    "word_count_max": 45,
+    "word_count_mean": 37.18,
+    "max_pairwise_5gram_jaccard": 0.0923
+  },
+  "access_declaration": {
+    "read": [
+      "world/narrator_projection.jsonl",
+      "PREREGISTRATION.md",
+      "ROLE_MATRIX.md"
+    ],
+    "excluded": [
+      "sealed world states",
+      "hidden payload manifests",
+      "evaluation gates",
+      "downstream layers"
+    ]
+  },
+  "model_training_executed": false,
+  "readiness_claimed": false
+}

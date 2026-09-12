@@ -1,0 +1,25 @@
+{
+  "instrument_id": "MOC-FACTORIZATION-DATASET-F0-SYNTHETIC",
+  "status": "INSTRUMENT_ONLY",
+  "synthetic": true,
+  "non_clinical": true,
+  "episode_count": 72,
+  "family_count": 24,
+  "variants_per_family": 3,
+  "split_counts": {
+    "train": 48,
+    "validation": 12,
+    "test": 12
+  },
+  "visible_fields": [
+    "case_id",
+    "raw_text",
+    "time_index",
+    "context_id",
+    "family_id",
+    "split"
+  ],
+  "family_split_integrity": "REQUIRED",
+  "raw_sha256": "d83c32a6571e4b6d46b9df79bb0359cd61d9192b96593618acd81bb6b34a46a5",
+  "sealed_sha256": "f77bde50cc0d95c9694aee2df76d3abdc63a08436cb9336ccd0fa4097a3ef813"
+}
