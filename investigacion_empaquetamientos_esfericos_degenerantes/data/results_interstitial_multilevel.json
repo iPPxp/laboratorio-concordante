@@ -1,0 +1,1188 @@
+{
+  "epistemic_status": "RESULTADO_COMPUTADO",
+  "epistemic_scope": "familias geometricas y grafos tipados declarados en este paquete",
+  "regular_ring_family": [
+    {
+      "n": 3,
+      "center_to_outer_ratio": 0.15470053837925168,
+      "contact_graph": "K4",
+      "center_is_smaller_than_outer": true
+    },
+    {
+      "n": 4,
+      "center_to_outer_ratio": 0.4142135623730949,
+      "contact_graph": "C4_join_K1",
+      "center_is_smaller_than_outer": true
+    },
+    {
+      "n": 5,
+      "center_to_outer_ratio": 0.7013016167040798,
+      "contact_graph": "C5_join_K1",
+      "center_is_smaller_than_outer": true
+    },
+    {
+      "n": 6,
+      "center_to_outer_ratio": 1.0000000000000004,
+      "contact_graph": "C6_join_K1",
+      "center_is_smaller_than_outer": false
+    },
+    {
+      "n": 7,
+      "center_to_outer_ratio": 1.3047648709624866,
+      "contact_graph": "C7_join_K1",
+      "center_is_smaller_than_outer": false
+    },
+    {
+      "n": 8,
+      "center_to_outer_ratio": 1.6131259297527532,
+      "contact_graph": "C8_join_K1",
+      "center_is_smaller_than_outer": false
+    }
+  ],
+  "unequal_ring_example": {
+    "outer_radii": [
+      1.0,
+      0.6,
+      1.4,
+      0.8
+    ],
+    "center_radius": 0.3638837973876434,
+    "angle_sum": 6.283185307179602,
+    "minimum_non_neighbour_clearance": 0.7239860330086878,
+    "non_overlapping": true,
+    "centers": [
+      [
+        1.3638837973876434,
+        0.0
+      ],
+      [
+        0.08404344566672955,
+        0.9602128275059061
+      ],
+      [
+        -1.7552168594350448,
+        0.17464199678665915
+      ],
+      [
+        -0.009236671573556817,
+        -1.1638471453415709
+      ]
+    ],
+    "pairs": [
+      {
+        "left": 0,
+        "right": 1,
+        "cyclic_neighbours": true,
+        "clearance": -2.220446049250313e-16
+      },
+      {
+        "left": 0,
+        "right": 2,
+        "cyclic_neighbours": false,
+        "clearance": 0.7239860330086878
+      },
+      {
+        "left": 0,
+        "right": 3,
+        "cyclic_neighbours": true,
+        "clearance": -1.3988810110276972e-14
+      },
+      {
+        "left": 1,
+        "right": 2,
+        "cyclic_neighbours": true,
+        "clearance": 0.0
+      },
+      {
+        "left": 1,
+        "right": 3,
+        "cyclic_neighbours": false,
+        "clearance": 0.7261072288398784
+      },
+      {
+        "left": 2,
+        "right": 3,
+        "cyclic_neighbours": true,
+        "clearance": 4.440892098500626e-16
+      }
+    ]
+  },
+  "simplex_gap_ratios": {
+    "2": 0.15470053837925146,
+    "3": 0.22474487139158894,
+    "4": 0.26491106406735176,
+    "5": 0.2909944487358056
+  },
+  "octahedral_gap_ratio": 0.41421356237309515,
+  "descartes_seed": {
+    "outer_curvatures": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "inner_curvature": 6.464101615137754,
+    "inner_radius": 0.15470053837925155,
+    "first_reflections_replacing_outer_circle": [
+      {
+        "replaced_index": 0,
+        "curvatures": [
+          15.928203230275507,
+          1.0,
+          1.0,
+          6.464101615137754
+        ]
+      },
+      {
+        "replaced_index": 1,
+        "curvatures": [
+          1.0,
+          15.928203230275507,
+          1.0,
+          6.464101615137754
+        ]
+      },
+      {
+        "replaced_index": 2,
+        "curvatures": [
+          1.0,
+          1.0,
+          15.928203230275507,
+          6.464101615137754
+        ]
+      }
+    ]
+  },
+  "six_matchings": [
+    {
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "matching": [
+        [
+          "A0",
+          "H0"
+        ],
+        [
+          "A1",
+          "H1"
+        ],
+        [
+          "A2",
+          "H2"
+        ]
+      ],
+      "cross_cycle": [
+        [
+          "A0",
+          "H1"
+        ],
+        [
+          "A0",
+          "H2"
+        ],
+        [
+          "A1",
+          "H0"
+        ],
+        [
+          "A1",
+          "H2"
+        ],
+        [
+          "A2",
+          "H0"
+        ],
+        [
+          "A2",
+          "H1"
+        ]
+      ],
+      "cross_cycle_is_C6": true,
+      "prism_edge_count": 9,
+      "octahedron_edge_count": 12,
+      "same_matching_intersection": [
+        [
+          "A0",
+          "A1"
+        ],
+        [
+          "A0",
+          "A2"
+        ],
+        [
+          "A1",
+          "A2"
+        ],
+        [
+          "H0",
+          "H1"
+        ],
+        [
+          "H0",
+          "H2"
+        ],
+        [
+          "H1",
+          "H2"
+        ]
+      ],
+      "same_matching_union_is_K6": true,
+      "prism_degrees": {
+        "H0": 3,
+        "H1": 3,
+        "H2": 3,
+        "A0": 3,
+        "A1": 3,
+        "A2": 3
+      },
+      "octahedron_degrees": {
+        "H0": 4,
+        "H1": 4,
+        "H2": 4,
+        "A0": 4,
+        "A1": 4,
+        "A2": 4
+      },
+      "prism_invariants": {
+        "vertices": 6,
+        "edges": 9,
+        "components": 1,
+        "degree_multiset": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "cycle_rank_beta1": 4,
+        "simple_cycle_counts": {
+          "3": 2,
+          "4": 3,
+          "5": 6,
+          "6": 3
+        }
+      },
+      "octahedron_invariants": {
+        "vertices": 6,
+        "edges": 12,
+        "components": 1,
+        "degree_multiset": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "cycle_rank_beta1": 7,
+        "simple_cycle_counts": {
+          "3": 8,
+          "4": 15,
+          "5": 24,
+          "6": 16
+        }
+      },
+      "cross_cycle_invariants": {
+        "vertices": 6,
+        "edges": 6,
+        "components": 1,
+        "degree_multiset": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "cycle_rank_beta1": 1,
+        "simple_cycle_counts": {
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1
+        }
+      }
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "matching": [
+        [
+          "A0",
+          "H0"
+        ],
+        [
+          "A1",
+          "H2"
+        ],
+        [
+          "A2",
+          "H1"
+        ]
+      ],
+      "cross_cycle": [
+        [
+          "A0",
+          "H1"
+        ],
+        [
+          "A0",
+          "H2"
+        ],
+        [
+          "A1",
+          "H0"
+        ],
+        [
+          "A1",
+          "H1"
+        ],
+        [
+          "A2",
+          "H0"
+        ],
+        [
+          "A2",
+          "H2"
+        ]
+      ],
+      "cross_cycle_is_C6": true,
+      "prism_edge_count": 9,
+      "octahedron_edge_count": 12,
+      "same_matching_intersection": [
+        [
+          "A0",
+          "A1"
+        ],
+        [
+          "A0",
+          "A2"
+        ],
+        [
+          "A1",
+          "A2"
+        ],
+        [
+          "H0",
+          "H1"
+        ],
+        [
+          "H0",
+          "H2"
+        ],
+        [
+          "H1",
+          "H2"
+        ]
+      ],
+      "same_matching_union_is_K6": true,
+      "prism_degrees": {
+        "H0": 3,
+        "H1": 3,
+        "H2": 3,
+        "A0": 3,
+        "A1": 3,
+        "A2": 3
+      },
+      "octahedron_degrees": {
+        "H0": 4,
+        "H1": 4,
+        "H2": 4,
+        "A0": 4,
+        "A1": 4,
+        "A2": 4
+      },
+      "prism_invariants": {
+        "vertices": 6,
+        "edges": 9,
+        "components": 1,
+        "degree_multiset": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "cycle_rank_beta1": 4,
+        "simple_cycle_counts": {
+          "3": 2,
+          "4": 3,
+          "5": 6,
+          "6": 3
+        }
+      },
+      "octahedron_invariants": {
+        "vertices": 6,
+        "edges": 12,
+        "components": 1,
+        "degree_multiset": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "cycle_rank_beta1": 7,
+        "simple_cycle_counts": {
+          "3": 8,
+          "4": 15,
+          "5": 24,
+          "6": 16
+        }
+      },
+      "cross_cycle_invariants": {
+        "vertices": 6,
+        "edges": 6,
+        "components": 1,
+        "degree_multiset": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "cycle_rank_beta1": 1,
+        "simple_cycle_counts": {
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1
+        }
+      }
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "matching": [
+        [
+          "A0",
+          "H1"
+        ],
+        [
+          "A1",
+          "H0"
+        ],
+        [
+          "A2",
+          "H2"
+        ]
+      ],
+      "cross_cycle": [
+        [
+          "A0",
+          "H0"
+        ],
+        [
+          "A0",
+          "H2"
+        ],
+        [
+          "A1",
+          "H1"
+        ],
+        [
+          "A1",
+          "H2"
+        ],
+        [
+          "A2",
+          "H0"
+        ],
+        [
+          "A2",
+          "H1"
+        ]
+      ],
+      "cross_cycle_is_C6": true,
+      "prism_edge_count": 9,
+      "octahedron_edge_count": 12,
+      "same_matching_intersection": [
+        [
+          "A0",
+          "A1"
+        ],
+        [
+          "A0",
+          "A2"
+        ],
+        [
+          "A1",
+          "A2"
+        ],
+        [
+          "H0",
+          "H1"
+        ],
+        [
+          "H0",
+          "H2"
+        ],
+        [
+          "H1",
+          "H2"
+        ]
+      ],
+      "same_matching_union_is_K6": true,
+      "prism_degrees": {
+        "H0": 3,
+        "H1": 3,
+        "H2": 3,
+        "A0": 3,
+        "A1": 3,
+        "A2": 3
+      },
+      "octahedron_degrees": {
+        "H0": 4,
+        "H1": 4,
+        "H2": 4,
+        "A0": 4,
+        "A1": 4,
+        "A2": 4
+      },
+      "prism_invariants": {
+        "vertices": 6,
+        "edges": 9,
+        "components": 1,
+        "degree_multiset": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "cycle_rank_beta1": 4,
+        "simple_cycle_counts": {
+          "3": 2,
+          "4": 3,
+          "5": 6,
+          "6": 3
+        }
+      },
+      "octahedron_invariants": {
+        "vertices": 6,
+        "edges": 12,
+        "components": 1,
+        "degree_multiset": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "cycle_rank_beta1": 7,
+        "simple_cycle_counts": {
+          "3": 8,
+          "4": 15,
+          "5": 24,
+          "6": 16
+        }
+      },
+      "cross_cycle_invariants": {
+        "vertices": 6,
+        "edges": 6,
+        "components": 1,
+        "degree_multiset": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "cycle_rank_beta1": 1,
+        "simple_cycle_counts": {
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1
+        }
+      }
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "matching": [
+        [
+          "A0",
+          "H2"
+        ],
+        [
+          "A1",
+          "H0"
+        ],
+        [
+          "A2",
+          "H1"
+        ]
+      ],
+      "cross_cycle": [
+        [
+          "A0",
+          "H0"
+        ],
+        [
+          "A0",
+          "H1"
+        ],
+        [
+          "A1",
+          "H1"
+        ],
+        [
+          "A1",
+          "H2"
+        ],
+        [
+          "A2",
+          "H0"
+        ],
+        [
+          "A2",
+          "H2"
+        ]
+      ],
+      "cross_cycle_is_C6": true,
+      "prism_edge_count": 9,
+      "octahedron_edge_count": 12,
+      "same_matching_intersection": [
+        [
+          "A0",
+          "A1"
+        ],
+        [
+          "A0",
+          "A2"
+        ],
+        [
+          "A1",
+          "A2"
+        ],
+        [
+          "H0",
+          "H1"
+        ],
+        [
+          "H0",
+          "H2"
+        ],
+        [
+          "H1",
+          "H2"
+        ]
+      ],
+      "same_matching_union_is_K6": true,
+      "prism_degrees": {
+        "H0": 3,
+        "H1": 3,
+        "H2": 3,
+        "A0": 3,
+        "A1": 3,
+        "A2": 3
+      },
+      "octahedron_degrees": {
+        "H0": 4,
+        "H1": 4,
+        "H2": 4,
+        "A0": 4,
+        "A1": 4,
+        "A2": 4
+      },
+      "prism_invariants": {
+        "vertices": 6,
+        "edges": 9,
+        "components": 1,
+        "degree_multiset": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "cycle_rank_beta1": 4,
+        "simple_cycle_counts": {
+          "3": 2,
+          "4": 3,
+          "5": 6,
+          "6": 3
+        }
+      },
+      "octahedron_invariants": {
+        "vertices": 6,
+        "edges": 12,
+        "components": 1,
+        "degree_multiset": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "cycle_rank_beta1": 7,
+        "simple_cycle_counts": {
+          "3": 8,
+          "4": 15,
+          "5": 24,
+          "6": 16
+        }
+      },
+      "cross_cycle_invariants": {
+        "vertices": 6,
+        "edges": 6,
+        "components": 1,
+        "degree_multiset": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "cycle_rank_beta1": 1,
+        "simple_cycle_counts": {
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1
+        }
+      }
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "matching": [
+        [
+          "A0",
+          "H1"
+        ],
+        [
+          "A1",
+          "H2"
+        ],
+        [
+          "A2",
+          "H0"
+        ]
+      ],
+      "cross_cycle": [
+        [
+          "A0",
+          "H0"
+        ],
+        [
+          "A0",
+          "H2"
+        ],
+        [
+          "A1",
+          "H0"
+        ],
+        [
+          "A1",
+          "H1"
+        ],
+        [
+          "A2",
+          "H1"
+        ],
+        [
+          "A2",
+          "H2"
+        ]
+      ],
+      "cross_cycle_is_C6": true,
+      "prism_edge_count": 9,
+      "octahedron_edge_count": 12,
+      "same_matching_intersection": [
+        [
+          "A0",
+          "A1"
+        ],
+        [
+          "A0",
+          "A2"
+        ],
+        [
+          "A1",
+          "A2"
+        ],
+        [
+          "H0",
+          "H1"
+        ],
+        [
+          "H0",
+          "H2"
+        ],
+        [
+          "H1",
+          "H2"
+        ]
+      ],
+      "same_matching_union_is_K6": true,
+      "prism_degrees": {
+        "H0": 3,
+        "H1": 3,
+        "H2": 3,
+        "A0": 3,
+        "A1": 3,
+        "A2": 3
+      },
+      "octahedron_degrees": {
+        "H0": 4,
+        "H1": 4,
+        "H2": 4,
+        "A0": 4,
+        "A1": 4,
+        "A2": 4
+      },
+      "prism_invariants": {
+        "vertices": 6,
+        "edges": 9,
+        "components": 1,
+        "degree_multiset": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "cycle_rank_beta1": 4,
+        "simple_cycle_counts": {
+          "3": 2,
+          "4": 3,
+          "5": 6,
+          "6": 3
+        }
+      },
+      "octahedron_invariants": {
+        "vertices": 6,
+        "edges": 12,
+        "components": 1,
+        "degree_multiset": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "cycle_rank_beta1": 7,
+        "simple_cycle_counts": {
+          "3": 8,
+          "4": 15,
+          "5": 24,
+          "6": 16
+        }
+      },
+      "cross_cycle_invariants": {
+        "vertices": 6,
+        "edges": 6,
+        "components": 1,
+        "degree_multiset": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "cycle_rank_beta1": 1,
+        "simple_cycle_counts": {
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1
+        }
+      }
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "matching": [
+        [
+          "A0",
+          "H2"
+        ],
+        [
+          "A1",
+          "H1"
+        ],
+        [
+          "A2",
+          "H0"
+        ]
+      ],
+      "cross_cycle": [
+        [
+          "A0",
+          "H0"
+        ],
+        [
+          "A0",
+          "H1"
+        ],
+        [
+          "A1",
+          "H0"
+        ],
+        [
+          "A1",
+          "H2"
+        ],
+        [
+          "A2",
+          "H1"
+        ],
+        [
+          "A2",
+          "H2"
+        ]
+      ],
+      "cross_cycle_is_C6": true,
+      "prism_edge_count": 9,
+      "octahedron_edge_count": 12,
+      "same_matching_intersection": [
+        [
+          "A0",
+          "A1"
+        ],
+        [
+          "A0",
+          "A2"
+        ],
+        [
+          "A1",
+          "A2"
+        ],
+        [
+          "H0",
+          "H1"
+        ],
+        [
+          "H0",
+          "H2"
+        ],
+        [
+          "H1",
+          "H2"
+        ]
+      ],
+      "same_matching_union_is_K6": true,
+      "prism_degrees": {
+        "H0": 3,
+        "H1": 3,
+        "H2": 3,
+        "A0": 3,
+        "A1": 3,
+        "A2": 3
+      },
+      "octahedron_degrees": {
+        "H0": 4,
+        "H1": 4,
+        "H2": 4,
+        "A0": 4,
+        "A1": 4,
+        "A2": 4
+      },
+      "prism_invariants": {
+        "vertices": 6,
+        "edges": 9,
+        "components": 1,
+        "degree_multiset": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "cycle_rank_beta1": 4,
+        "simple_cycle_counts": {
+          "3": 2,
+          "4": 3,
+          "5": 6,
+          "6": 3
+        }
+      },
+      "octahedron_invariants": {
+        "vertices": 6,
+        "edges": 12,
+        "components": 1,
+        "degree_multiset": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "cycle_rank_beta1": 7,
+        "simple_cycle_counts": {
+          "3": 8,
+          "4": 15,
+          "5": 24,
+          "6": 16
+        }
+      },
+      "cross_cycle_invariants": {
+        "vertices": 6,
+        "edges": 6,
+        "components": 1,
+        "degree_multiset": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "cycle_rank_beta1": 1,
+        "simple_cycle_counts": {
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1
+        }
+      }
+    }
+  ],
+  "cell_refinements": {
+    "triangle": {
+      "parent": {
+        "cell_id": "f3_parent",
+        "level": 0,
+        "boundary": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "center": "g3",
+      "children": [
+        {
+          "cell_id": "f3_parent.0",
+          "level": 1,
+          "boundary": [
+            "g3",
+            "a",
+            "b"
+          ]
+        },
+        {
+          "cell_id": "f3_parent.1",
+          "level": 1,
+          "boundary": [
+            "g3",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "cell_id": "f3_parent.2",
+          "level": 1,
+          "boundary": [
+            "g3",
+            "c",
+            "a"
+          ]
+        }
+      ],
+      "roles": {
+        "0": [
+          "CENTRO_DE_CELDA_PADRE"
+        ],
+        "1": [
+          "VERTICE_DE_FRONTERA_DE_CELDAS_HIJAS"
+        ]
+      }
+    },
+    "square": {
+      "parent": {
+        "cell_id": "f4_parent",
+        "level": 0,
+        "boundary": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "center": "g4",
+      "children": [
+        {
+          "cell_id": "f4_parent.0",
+          "level": 1,
+          "boundary": [
+            "g4",
+            "a",
+            "b"
+          ]
+        },
+        {
+          "cell_id": "f4_parent.1",
+          "level": 1,
+          "boundary": [
+            "g4",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "cell_id": "f4_parent.2",
+          "level": 1,
+          "boundary": [
+            "g4",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "cell_id": "f4_parent.3",
+          "level": 1,
+          "boundary": [
+            "g4",
+            "d",
+            "a"
+          ]
+        }
+      ],
+      "roles": {
+        "0": [
+          "CENTRO_DE_CELDA_PADRE"
+        ],
+        "1": [
+          "VERTICE_DE_FRONTERA_DE_CELDAS_HIJAS"
+        ]
+      }
+    }
+  },
+  "typed_overlay_example": {
+    "intersection_kind": "CRUCE_DE_PROYECCION_NO_VERTICE"
+  }
+}

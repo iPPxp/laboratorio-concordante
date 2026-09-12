@@ -12,6 +12,12 @@
    Uso: antecedente historico para el numero de besos tridimensional; requiere obtener y revisar la fuente primaria antes de citar detalle de su prueba.
 5. **OpenStax (consulta institucional, 2026-08-09).** *Estructuras de red en los solidos cristalinos.* [Enlace](https://openstax.org/books/qu%C3%ADmica-2ed/pages/10-6-estructuras-de-red-en-los-solidos-cristalinos).  
    Uso: contraste didactico de las distinciones FCC/HCP y coordinacion, nunca como sustituto de una prueba de geometria discreta.
+6. **Graham, R. L., Lagarias, J. C., Mallows, C. L., Wilks, A. R. & Yan, C. H. (2003).** *Apollonian Circle Packings: Number Theory.* Journal of Number Theory 100(1), 1-45. [Prepublicacion](https://arxiv.org/abs/math/0009113).  
+   Uso: ecuacion de Descartes, reflexiones sobre cuádruplas y genealogia apoloniana. La extension actual implementa sólo el paso local de curvaturas.
+7. **Coxeter, H. S. M. (1968).** *The Problem of Apollonius.* American Mathematical Monthly 75(1), 5-15. DOI: [10.2307/2315097](https://doi.org/10.2307/2315097).  
+   Uso: formulacion geometrica clasica de circulos tangentes; no identifica una superposicion Farey con un empaquetamiento apoloniano.
+8. **Edelsbrunner, H. & Mücke, E. P. (1994).** *Three-Dimensional Alpha Shapes.* ACM Transactions on Graphics 13(1), 43-72. DOI: [10.1145/174462.156635](https://doi.org/10.1145/174462.156635).  
+   Uso futuro: candidato para definir y medir vacios a escala; no se usa en los resultados actuales.
 
 ## Afirmaciones y alcance de sus fuentes
 
@@ -21,6 +27,8 @@
 | Una capa de centros sobre una esfera se relaciona con codigos esfericos | RESULTADO_CLASICO / DERIVACION_SIMBOLICA | Rankin 1955 y formula incluida | Optimo de cualquier conjunto especifico |
 | FCC y HCP tienen coordinacion 12 en el modelo ideal | RESULTADO_CLASICO | Cristalografia estandar; coordenadas verificadas localmente por el codigo | Que FCC y HCP sean la misma red o mismo grafo global |
 | Los valores de `data/results_initial.*` | RESULTADO_COMPUTADO | Script y pruebas de este directorio | Demostracion independiente de los teoremas generales |
+| La raiz interior y las reflexiones de Descartes | RESULTADO_CLASICO + IMPLEMENTACION | Graham et al. 2003; pruebas unitarias | Que la superposicion Farey sea apoloniana |
+| Los conteos `16/7/1/1` de R3 | RESULTADO_COMPUTADO | Enumeracion del grafo R3 y geometria baricentrica en `r3_audit.py` | Semantica psicologica de `C6` |
 
 ## Necesidades bibliograficas antes de ampliar las pretensiones
 

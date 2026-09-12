@@ -10,6 +10,10 @@ Primera version funcional y reproducible de un proyecto de geometria discreta. E
 - Calculo de holguras, contactos, umbrales de no solapamiento y transiciones por inclusion de direcciones.
 - Ontologia humana y ontologia legible por maquina; DSL declarativo minimo.
 - Datos JSON/CSV, pruebas unitarias, SVG y un visor 3D local HTML sin dependencias de red.
+- Extensión intersticial plana y multinivel: anillos de 3 a 8 círculos, radios centrales,
+  recursión de Descartes, seis correspondencias entre dos ternas, prisma/octaedro
+  tipados, refinamientos `F3/F4` y cruces de proyección que no se promueven
+  automáticamente a vértices.
 
 ## Lo que esta version no afirma
 
@@ -20,11 +24,16 @@ Primera version funcional y reproducible de un proyecto de geometria discreta. E
 
 ## Ejecucion reproducible
 
-Se requiere Python 3.12+ y `numpy` (no hay dependencias de red ni de visualizacion de terceros).
+Se requiere Python 3.12+ con las versiones de `numpy` y `Pillow` declaradas en
+`requirements.txt`. La ejecución no requiere acceso de red; Pillow se usa sólo
+para generar el resumen PNG.
 
 ```powershell
 $py = 'C:\Users\IximM\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
 & $py .\scripts\run_initial_study.py
+& $py .\scripts\run_interstitial_multilevel.py
+$bundle = 'ruta\a\ConcordIA_R3_chat_bundle_2026-08-17.zip'
+& $py .\scripts\audit_r3_cycles.py $bundle --output .\data\r3_bundle_cycle_audit.json
 $env:PYTHONPATH = (Join-Path $PWD 'src')
 & $py -m unittest discover -s tests -v
 ```
@@ -39,6 +48,10 @@ Los artefactos se regeneran en `data/` y `visualizations/`. Se debe interpretar 
 - `ESPECIFICACION_DSL.md`, `examples/initial_cases.json`: lenguaje declarativo inicial.
 - `src/spherepack/`: modelo reproducible.
 - `tests/`: controles de identidades geometricas y limites de transicion.
+- `INTERSTICIOS_Y_CAPAS_MULTINIVEL.md`: resultados exactos, computados y abiertos
+  de la extensión solicitada.
+- `FOTOS_TRIANGULOS_PROTOCOLO.md`: entradas verificadas y protocolo para
+  distinguir juntas, cruces, capas, links y caras en las cinco fotografías.
 
 ## Convencion de etiquetas
 

@@ -1,0 +1,29 @@
+{
+  "bundle_name": "ConcordIA_R3_chat_bundle_2026-08-17.zip",
+  "bundle_sha256": "C40AB025189F39666D8421A205BE363D5FDE3534D4D488C5706A33C50CA84562",
+  "entries": {
+    "summary": "ConcordIA_R3_chat_bundle_2026-08-17/R3_exact_experiment/R1_R5_summary.csv",
+    "cycles": "ConcordIA_R3_chat_bundle_2026-08-17/R3_exact_experiment/R3_C6_cycles.csv",
+    "readme": "ConcordIA_R3_chat_bundle_2026-08-17/README_MASTER_RESULTS.md"
+  },
+  "r3_declared": {
+    "abstract_C6_cycles": 16,
+    "six_corner_cycles": 7,
+    "convex_six_corner_cycles": 1,
+    "regular_hexagons": 1
+  },
+  "r3_recomputed": {
+    "abstract_C6_cycles": 16,
+    "six_corner_cycles": 7,
+    "convex_six_corner_cycles": 1,
+    "regular_hexagons": 1,
+    "regular_cycle_ids": [
+      9
+    ]
+  },
+  "cycle_set_matches_csv": true,
+  "geometry_flags_match_csv": true,
+  "geometry_flag_mismatches": [],
+  "csv_counts_consistent": true,
+  "readme_declares_one_canonical_central_hexagon": true
+}
