@@ -5,7 +5,9 @@
 `repository_coherence.py` verifica sin modificar archivos el corte
 `MAPA_COHERENCIA_2026-09-12`: estados Git reconciliados, expedientes abiertos,
 ruta MOC vigente, índice TCS y los manifiestos protegidos del corpus científico
-y del recovery. No concede autoridad ni activación.
+y del recovery. También comprueba que `LAB-INC-SCI-001` a `LAB-INC-SCI-005`
+permanezcan como revisiones con payload fuera de `origin/main`, sin decisión de
+incorporación, canonización o activación. No concede autoridad ni activación.
 
 ```powershell
 python .\repository_coherence.py

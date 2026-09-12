@@ -31,9 +31,49 @@
       "status": "OPEN_PROVISIONAL_NONCANONICAL_THEORY"
     }
   ],
+  "open_scientific_incorporation_expedientes": [
+    {
+      "id": "LAB-INC-SCI-001",
+      "family": "MOC_FACTORIZATION_AND_IDENTIFIABILITY",
+      "manifest_entries": 109,
+      "payload_in_origin_main": false
+    },
+    {
+      "id": "LAB-INC-SCI-002",
+      "family": "MOC_RC1_GEOMETRY_AND_OBSERVABILITY",
+      "manifest_entries": 30,
+      "payload_in_origin_main": false,
+      "variant_conflict": true
+    },
+    {
+      "id": "LAB-INC-SCI-003",
+      "family": "CONCORDIA_REFLEXIVE_ARCHITECTURES",
+      "manifest_entries": 84,
+      "payload_in_origin_main": false
+    },
+    {
+      "id": "LAB-INC-SCI-004",
+      "family": "MOC_REPRESENTATIONAL_NECESSITY",
+      "manifest_entries": 19,
+      "payload_in_origin_main": false
+    },
+    {
+      "id": "LAB-INC-SCI-005",
+      "family": "MOC_CONCORDIA_MINIMUM_STRUCTURAL_VALIDATION",
+      "manifest_entries": 6,
+      "payload_in_origin_main": false
+    }
+  ],
   "transferred_expedientes": ["PSI-001"],
   "frozen_items": ["B-001.5", "H-B.6", "H-B.7"],
   "latest_historical_processing_close": "RH-003",
+  "latest_workspace_cleanup": {
+    "id": "CLN-001",
+    "preflight_status_entries": 478,
+    "snapshot_hashes_verified": "1308/1308",
+    "post_cleanup_status_entries": 0,
+    "same_disk_recovery_only": true
+  },
   "research_corpus": {
     "id": "LAB-RESEARCH-PROVENANCE-001",
     "route_count": 39,
@@ -76,7 +116,7 @@
     "psi_vocabulary_canonized": false
   },
   "validation": {
-    "repository_tests": "110/110",
+    "repository_tests": "111/111",
     "json_parse_errors": 0,
     "csv_parse_errors": 0,
     "markdown_link_errors": 0
@@ -90,6 +130,7 @@
     "TCS_001_MATURATION",
     "OPTIONAL_MOC_POST_ADOPTION_MONITOR",
     "INDEPENDENT_SCIENTIFIC_REVIEW",
+    "SCIENTIFIC_FAMILY_INCORPORATION_REVIEWS",
     "EXTERNAL_PSI_CANON_SOURCE_RECOVERY"
   ]
 }

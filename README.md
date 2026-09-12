@@ -177,6 +177,11 @@ Problemas abiertos relevantes:
 
 Este estado debe validarse y enriquecerse a medida que se incorporen documentos previos, expedientes completos o conversaciones historicas.
 
+Se abrieron cinco expedientes administrativos para revisar las familias
+científicas locales: `LAB-INC-SCI-001` a `LAB-INC-SCI-005`. La entrada común es
+`03_Expedientes/LAB-INC-SCI-000_Registro_Incorporacion_Familias_Cientificas.md`.
+Abrirlos no incorpora sus payloads ni cambia Canon, validación o activación.
+
 ## Corpus de investigación y procedencia
 
 `investigacion_empaquetamientos_esfericos_degenerantes/` está materializado en

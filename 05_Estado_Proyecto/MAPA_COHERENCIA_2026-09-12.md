@@ -68,6 +68,22 @@ por las decisiones más recientes.
 `TCS-001.md` funciona desde este corte como índice padre de sus diez documentos;
 no introduce axiomas ni decisiones nuevas.
 
+### Expedientes de incorporación científica abiertos
+
+`LAB-INC-SCI-000` registra cinco revisiones administrativas independientes:
+
+| Expediente | Familia | Payload en `origin/main` | Transición permitida |
+| --- | --- | --- | --- |
+| `LAB-INC-SCI-001` | factorización e identificabilidad MOC | no | revisión documental de 109 objetos |
+| `LAB-INC-SCI-002` | geometría y observabilidad MOC/RC1 | no | reconciliar variantes y someter a revisión humana |
+| `LAB-INC-SCI-003` | arquitecturas reflexivas ConcordIA | no | revisar resultados adversariales y posible división |
+| `LAB-INC-SCI-004` | necesidad representacional | no | revisar diseño y contrato experimental |
+| `LAB-INC-SCI-005` | validación estructural mínima | no | revisar como investigación no canónica |
+
+Abrir estos expedientes no incorpora sus 248 objetos manifestados. Los commits
+fuente permanecen locales y cada incorporación requiere decisión separada sobre
+un conjunto cerrado de rutas.
+
 ### Expedientes cerrados, congelados y transferidos
 
 - `RH-003` es el procesamiento histórico cerrado más reciente; organiza el
@@ -130,7 +146,8 @@ es `04_Registro_Historico/2026-09-11_chatgpt_recovery_001/CATALOGO_CONTENIDO.md`
 - Una prueba aprobada confirma únicamente su contrato comprobado.
 - Los reportes guardados son cortes reproducibles, no autoridad superior ni
   garantía de actualidad indefinida.
-- La suite de repositorio del corte de coherencia pasa 110/110 pruebas.
+- La suite de repositorio, incluida la custodia de los expedientes de
+  incorporación, pasa 111/111 pruebas.
 
 ### Archivos raíz inactivos
 
@@ -163,6 +180,8 @@ entrada recomendada ni autoridad vigente.
 - Revisión independiente de resultados científicos y manuscritos recuperados.
 - Recuperación de las fuentes `PSI-CANON-001/002` dentro de su proyecto externo,
   no dentro del Laboratorio por defecto.
+- Revisión y decisión individual de los cinco expedientes `LAB-INC-SCI-001` a
+  `LAB-INC-SCI-005`; ninguno tiene incorporación automática.
 
 ## Entrada recomendada
 
@@ -172,6 +191,8 @@ entrada recomendada ni autoridad vigente.
 4. `01_Canon/M-000_Reglas_Fundamentales.md`
 5. `05_Estado_Proyecto/ESTADO_ACTUAL.md`
 6. el expediente padre del frente que se vaya a trabajar
+7. `03_Expedientes/LAB-INC-SCI-000_Registro_Incorporacion_Familias_Cientificas.md`
+   si la tarea trata las familias científicas locales
 
 ## Dictamen
 

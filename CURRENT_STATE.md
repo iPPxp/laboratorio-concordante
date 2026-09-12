@@ -13,6 +13,11 @@ Corte de coherencia: 2026-09-12.
   sustantivos anteriores conservan su significado y no se reabren.
 - Frentes abiertos: `MOC-001`, `AO-001` y `TCS-001`, todos con límites ya
   registrados y sin nueva autorización global.
+- Incorporación científica: abiertos `LAB-INC-SCI-001` a `LAB-INC-SCI-005`;
+  sus 248 objetos permanecen en commits locales, fuera de `origin/main`, con
+  revisión y decisión individual pendientes.
+- Limpieza local `CLN-001`: el workspace quedó sin entradas pendientes después
+  de una preservación verificable; la cápsula es local al mismo disco.
 
 Ultimos expedientes sustantivos cerrados:
 

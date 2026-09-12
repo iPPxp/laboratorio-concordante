@@ -34,6 +34,11 @@ class RepositoryCoherenceTests(unittest.TestCase):
             item = next(check for check in self.report["checks"] if check["check_id"] == check_id)
             self.assertTrue(item["pass"])
 
+    def test_scientific_incorporation_expedients_remain_nonmutating(self):
+        for check_id in ("COH-016", "COH-017", "COH-018"):
+            item = next(check for check in self.report["checks"] if check["check_id"] == check_id)
+            self.assertTrue(item["pass"])
+
 
 if __name__ == "__main__":
     unittest.main()

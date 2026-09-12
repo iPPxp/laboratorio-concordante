@@ -7,6 +7,10 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 Última reconciliación administrativa: 2026-09-12. Véase
 `MAPA_COHERENCIA_2026-09-12.md`.
 
+Última apertura administrativa: `LAB-INC-SCI-001` a `LAB-INC-SCI-005`, cinco
+familias científicas preservadas localmente y todavía no incorporadas a
+`origin/main`. Registro común: `LAB-INC-SCI-000`.
+
 ## Documentos oficiales consolidados
 
 - [x] Documento 00 - Naturaleza: consolidado desde fuentes previas por `D-2026-07-03-011`.

@@ -16,6 +16,13 @@ RESEARCH_MANIFEST = ROOT / "03_Expedientes" / "LAB-RESEARCH-PROVENANCE-001_SHA25
 RECOVERY_DIR = ROOT / "04_Registro_Historico" / "2026-09-11_chatgpt_recovery_001"
 RECOVERY_MANIFEST = RECOVERY_DIR / "MANIFEST.json"
 COHERENCE_MAP = ROOT / "05_Estado_Proyecto" / "MAPA_COHERENCIA_2026-09-12.json"
+INCORPORATION_EXPEDIENTS = {
+    "LAB-INC-SCI-001": "LAB-INC-SCI-001_Factorizacion_Identificabilidad.md",
+    "LAB-INC-SCI-002": "LAB-INC-SCI-002_Geometria_Observabilidad.md",
+    "LAB-INC-SCI-003": "LAB-INC-SCI-003_Arquitecturas_Reflexivas_ConcordIA.md",
+    "LAB-INC-SCI-004": "LAB-INC-SCI-004_Necesidad_Representacional.md",
+    "LAB-INC-SCI-005": "LAB-INC-SCI-005_Validacion_Estructural_Minima.md",
+}
 
 
 def sha256(path: Path) -> str:
@@ -95,6 +102,13 @@ def build_report() -> dict[str, Any]:
     governance_reachable = git_ancestor(governance)
 
     open_ids = {item["id"] for item in map_data["open_expedientes"]}
+    incorporation_items = map_data["open_scientific_incorporation_expedientes"]
+    incorporation_ids = {item["id"] for item in incorporation_items}
+    incorporation_docs = {
+        item_id: (ROOT / "03_Expedientes" / filename).read_text(encoding="utf-8")
+        for item_id, filename in INCORPORATION_EXPEDIENTS.items()
+    }
+    cleanup = (ROOT / "03_Expedientes" / "CLN-001_Limpieza_Workspace_2026-09-12.md").read_text(encoding="utf-8")
     checks = [
         check(map_data["status"] == "REPOSITORY_COHERENT_WITH_EXPLICIT_OPEN_DEBTS", "COH-001", "map status"),
         check(open_ids == {"MOC-001", "AO-001", "TCS-001"}, "COH-002", "open expediente set"),
@@ -111,6 +125,25 @@ def build_report() -> dict[str, Any]:
         check(map_data["research_corpus"]["scientific_claims_canonical_as_true"] is False, "COH-013", "scientific claims remain noncanonical"),
         check(map_data["research_corpus"]["activation"] is False, "COH-014", "research remains inactive"),
         check(map_data["chatgpt_recovery"]["canon"] is False, "COH-015", "recovery remains noncanonical"),
+        check(incorporation_ids == set(INCORPORATION_EXPEDIENTS), "COH-016", "five scientific incorporation expedients registered"),
+        check(all(item["payload_in_origin_main"] is False for item in incorporation_items), "COH-017", "candidate payloads remain outside origin/main"),
+        check(
+            all(
+                "PAYLOAD_IN_ORIGIN_MAIN=NO" in document
+                and "INCORPORATION_DECISION=PENDING" in document
+                and "CANONIZATION=NO" in document
+                and "ACTIVATION=NO" in document
+                for document in incorporation_docs.values()
+            ),
+            "COH-018",
+            "incorporation authority gates remain closed",
+        ),
+        check(
+            map_data["latest_workspace_cleanup"]["post_cleanup_status_entries"] == 0
+            and "WORKSPACE_STATUS_AFTER_CLEANUP=0" in cleanup,
+            "COH-019",
+            "conservative workspace cleanup recorded",
+        ),
     ]
     failures = [item for item in checks if not item["pass"]]
     return {

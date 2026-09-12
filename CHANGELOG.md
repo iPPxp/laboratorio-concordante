@@ -2,6 +2,8 @@
 
 ## 2026-09-12
 
+- Abiertos `LAB-INC-SCI-001` a `LAB-INC-SCI-005` para revisar por separado cinco familias científicas locales; 248 objetos quedan manifestados pero no incorporados a `origin/main`.
+- Registrada `CLN-001`: snapshot 1308/1308, cinco commits locales de preservación, 97/97 pruebas científicas y limpieza recuperable de salidas/temporales; sin canonización ni activación.
 - Reconciliada la coherencia administrativa del repositorio mediante `COH-001`: corregidos estados Git obsoletos del corpus `LAB-RESEARCH-PROVENANCE-001`, sin ampliar su objeto canónico ni promover claims científicos.
 - Añadidos `MAPA_COHERENCIA_2026-09-12.md/.json` y el índice padre `TCS-001.md`; actualizadas las rutas de entrada, el estado de `RH-003` y la secuencia vigente posterior a `MOC-CANON-DOC04-APPLY-001`.
 - Verificados 39/39 hashes del corpus científico, 12/12 pruebas del estudio principal, 6/6 pruebas N2 y 110/110 pruebas generales; los payloads de investigación y recovery permanecen intactos.

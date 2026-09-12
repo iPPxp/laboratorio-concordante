@@ -63,6 +63,18 @@ activación.
   evidencia y límites de la reconciliación.
 - `03_Expedientes/TCS-001.md`: entrada padre al expediente provisional TCS.
 
+## Familias científicas pendientes de incorporación
+
+- `03_Expedientes/LAB-INC-SCI-000_Registro_Incorporacion_Familias_Cientificas.md`:
+  registro transversal.
+- `LAB-INC-SCI-001` a `LAB-INC-SCI-005`: cinco expedientes abiertos, cada uno
+  con commit fuente local, manifiesto, límites y compuertas propios.
+- `03_Expedientes/CLN-001_Limpieza_Workspace_2026-09-12.md`: custodia y limpieza
+  conservadora del workspace.
+
+Los payloads de esas familias no están en `origin/main`. Las pruebas y hashes
+registrados no sustituyen revisión humana ni decisión de incorporación.
+
 ## Recovery ChatGPT 2026-09-11
 
 - `04_Registro_Historico/2026-09-11_chatgpt_recovery_001/CATALOGO_CONTENIDO.md`: mapa analítico y conflictos.

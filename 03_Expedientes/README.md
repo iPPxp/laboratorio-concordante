@@ -12,6 +12,10 @@ alfabético. Para los frentes abiertos vigentes:
 El mapa transversal vigente está en
 `05_Estado_Proyecto/MAPA_COHERENCIA_2026-09-12.md`.
 
+Las familias científicas locales pendientes de incorporación se recorren desde
+`LAB-INC-SCI-000_Registro_Incorporacion_Familias_Cientificas.md`. Sus cinco
+expedientes no incorporan payload, no canonizan claims y no activan software.
+
 Un expediente debe tener:
 
 - identificador
