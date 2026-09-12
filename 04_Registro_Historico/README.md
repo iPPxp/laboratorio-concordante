@@ -30,4 +30,5 @@ Registrar:
 - `2026-07-01_chatgpt_share_001.md`: referencia externa del enlace compartido.
 - `2026-07-01_chatgpt_share_001_transcripcion.md`: transcripcion visible y sintesis operativa no normativa del chat compartido; procesada por `03_Expedientes/RH-001.md`.
 - `2026-07-01_descargas_usuario_001/`: lote historico de 23 archivos de Descargas, materializado y procesado por `03_Expedientes/RH-002.md`.
+- `2026-09-11_chatgpt_recovery_001/`: recuperación conservadora de 23 objetos de payload procedentes de ChatGPT Library, con paquete original, tamaños, SHA-256 y límites explícitos de autoridad.
 

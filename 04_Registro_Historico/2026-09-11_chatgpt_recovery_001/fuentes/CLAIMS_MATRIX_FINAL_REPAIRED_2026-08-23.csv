@@ -1,0 +1,29 @@
+claim_id,statement,phase,status,proof_type,dependencies,computational_support,literature_status,paper_candidate
+C00,Paper IIII qualitative classification: unbounded gaps iff U has at least two nonparallel orientations,baseline,PROVED,paper proof,Paper IIII two-rail lemma; determinant dichotomy,original ESM regression,established prior manuscript,no
+C01,Universal one-turn obstruction: K_free<=1 implies K_H=O_U(1),2,PROVED_AFTER_REPAIR,support-line counting with explicit zero-turn case,model definitions,,neighboring literature does not state exact-trace version,yes
+C02,Rectilinear low-turn rigidity: K_free<=3 implies K_H=K_free,1,PROVED_AFTER_REPAIR,hierarchical finite geometric clipping proof,four-link normal form; corrected L+column classification,rectilinear scan,not found in targeted literature,yes
+C03,tau_H(U_square)=4,1,PROVED_AFTER_REPAIR,C02 + explicit four-turn ladder,C02,"exact DP on t=3,5,7",not found in targeted literature,yes
+C04,sup over finite-threshold alphabets tau_H(U)=4,1/2,PROVED_AFTER_REPAIR,global tau classification with corrected domain,C03; C11,,not found in targeted literature,yes
+C05,tau_H(U_{1})=3,2.2/final repair,PROVED_AFTER_REPAIR,explicit exceptional two-turn clipping + 3-turn amplifying family,C01; support-line counting; first-host bridge table,"exact DP on family n=2..12; bridge-table certificate",not found in targeted literature,yes
+C06,"tau_H(U_{1,2})=3",2.3/final repair,PROVED_AFTER_REPAIR,explicit exceptional two-turn clipping + 3-turn amplifying family,C01; support-line counting; first-host bridge table,"exact DP on extremal family; bridge-table certificate",not found in targeted literature,yes
+C07,Repaired top-gap theorem: top gap >=2 implies tau=2,2/RAG,PROVED_AFTER_REPAIR,exact-trace cap + forced single rung,C01,exact DP on several J,not found in targeted literature,yes
+C08,"Consecutive-block theorem: m>=2, m,m+1 in J, m-1 notin J => tau=2",2.4,PROVED,explicit 2-turn family + cut lemma,C01; Paper IIII cut lemma,finite DP controls,not found in targeted literature,yes
+C09,"Full initial block J={1,...,K}, K>=3 has tau=2",RAG repair,PROVED_AFTER_REPAIR,single cross family + parity Hamiltonian path,C01,"finite DP K=3,4",not found in targeted literature,yes
+C10,Coset normalization transfers pencil thresholds exactly,RAG repair,PROVED_AFTER_REPAIR,lattice-coset bijection preserving host/turns,Paper IIII pencil structure,,standard lattice reasoning; exact application appears new,yes
+C11,"Global tau classification with values infinity,4,3,2",2/final repair,PROVED_AFTER_REPAIR,exhaustive generic/pencil case split,C01-C10; Paper IIII dichotomy,family regressions,not found in targeted literature,yes
+C12,Bounded-to-linear jump for Gamma across tau,3/final repair,PROVED_AFTER_REPAIR,definition below tau; Theta(p) bounded-gap classification families above,C11,finite family regressions,not found in targeted literature,yes
+C13,"Improved rectilinear family: K_free=4, K_H=|S|-3",3,PROVED,forced Hamiltonian path + C02,C02,"exact DP t=2,4,6",not found in targeted literature,yes
+C14,gamma_U_square(4)=1,3,PROVED,C13 + sharp linear bounds,C13,,not found in targeted literature,yes
+C15,U_12 extremal family: K_free=3 and K_H=|S|-2,3.3,PROVED_AFTER_REPAIR,single-rung forcing + exact threshold,C06,"exact DP p=2,4,6",not found in targeted literature,yes
+C16,U_23 extremal family: K_free=2 and K_H=|S|-2,3.2,PROVED,single-rung forcing + one-turn obstruction,C01,"exact DP p=2,4,6",not found in targeted literature,yes
+C17,"U_{m,m+1}, m>=2, has tau=2 and threshold extremal coefficient 1",3.2/3.4,PROVED,uniform single-rung construction,C01; C08,"exact DP m=2,3,4",not found in targeted literature,yes
+C18,All pencil alphabets J != {1} have eta=1,3.4,PROVED_AFTER_REPAIR,casewise single-rung / rectilinear construction,"C11,C13,C15,C17",finite controls for representative cases,not found in targeted literature,yes
+C19,eta(U_{1})=2/3,3.3/3.4,CONJECTURE,triangular-strip proof sketch incomplete,C05,exact DP pattern n=2..12,no direct source found,future
+C20,"Balanced triple implies, after signs, w=u+v in generated sublattice",3.4,PROVED,determinant algebra,,,related to rank-2 determinant structure,future
+C21,Every determinant-balanced triple has eta=2/3,3.4,CONJECTURE,host-compatible reduction incomplete,C20,unit-pencil evidence,no direct source found,future
+C22,Singleton transverse determinant class implies eta=1,3.4,CONJECTURE,single-rung mechanism; generic host control incomplete,,pencil examples,no direct source found,future
+C23A,Every set of exactly four distinct direction classes has a singleton determinant class,3.4/final repair,PROVED,rank-2 Pluecker relation and odd-sign contradiction,,,rank-2 determinant identity,yes
+C23B,Every primitive direction set of size >=5 has a singleton determinant class,3.4,OPEN,unproved determinant multiplicity combinatorics,C23A,finite search for size 5,"Heller/Oxley-Walsh adjacent, not equivalent",future
+C24,No counterexample to singleton lemma among norm-infinity<=5 sets of size 4 or 5,3.4,COMPUTATION_ONLY,exhaustive finite enumeration,,"91,390 four-sets; 658,008 five-sets",finite evidence only,no
+C25,Old top-gap construction with unvisited cap,2 pre-RAG,SUPERSEDED,invalid exact trace,,counterexample found by audit,,no
+C26,Old numerical bounds K_H<=12 or <=16 in exceptional low-two-turn clipping,2.2/2.3 pre-repair,SUPERSEDED,proof omitted partially visible connector cases,,,replaced by explicit O_U(1) theorem,no

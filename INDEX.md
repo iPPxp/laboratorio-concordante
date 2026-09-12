@@ -21,6 +21,7 @@ Nota: `HANDOFF.md`, `HANDOFF_PACKAGE.md`, `VISION_PAPER_PROPUESTA.md` y `VISION_
 - `02_Documentos`: documentos oficiales por tema.
 - `03_Expedientes`: investigacion activa o cerrada.
 - `04_Registro_Historico`: conversaciones y trazabilidad historica.
+- `04_Registro_Historico/2026-09-11_chatgpt_recovery_001`: cápsula de custodia del recovery pack de ChatGPT Library; material histórico, no Canon.
 - `05_Estado_Proyecto`: estado operativo, decisiones y prioridades.
 - `06_Automatizacion`: herramientas no mutantes y reportes ejecutables.
 - `Licencia_y_Derechos.md`: reserva de derechos del MOC y Concordante Lab.

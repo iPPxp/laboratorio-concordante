@@ -1,0 +1,40 @@
+claim_id,statement,phase,status,proof_type,dependencies,computational_support,literature_status,paper_candidate
+C00,Paper IIII qualitative classification: unbounded gaps iff U has at least two nonparallel orientations,baseline,PROVED,paper proof,Paper IIII two-rail lemma; determinant dichotomy,original ESM regression,established prior manuscript,no
+C01,Universal one-turn obstruction: K_free<=1 implies K_H=O_U(1),2,PROVED_AFTER_REPAIR,support-line counting,model definitions,,neighboring literature does not state exact-trace version,yes
+C02,Rectilinear low-turn rigidity: K_free<=3 implies K_H=K_free,1,PROVED_AFTER_REPAIR,finite geometric clipping proof,four-link normal form; adjacency classification,rectilinear scan,not found in targeted literature,yes
+C03,tau_H(U_square)=4,1,PROVED_AFTER_REPAIR,C02 + explicit ladder,C02,exact DP finite families,not found in targeted literature,yes
+C04,"Global tau classification: values infinity,4,3,2",2/RAG,PROVED_AFTER_REPAIR,generic/pencil exhaustive classification,"C01-C03,C05-C10; Paper IIII dichotomy",family regressions,not found in targeted literature,yes
+C05,tau_H(U_{1})=3,2.2/Phase5 repair,PROVED_AFTER_REPAIR,two-turn support reduction + explicit boundary-entry bridge certificate + threshold-3 family,C01; C37,finite DP family,not found in targeted literature,yes
+C06,"tau_H(U_{1,2})=3",2.3/Phase5 repair,PROVED_AFTER_REPAIR,two-turn support reduction + explicit boundary-entry bridge certificate + threshold-3 family,C01; C37,finite DP family,not found in targeted literature,yes
+C07,Repaired top-gap theorem: top gap >=2 implies tau=2,2/RAG,PROVED_AFTER_REPAIR,exact-trace cap + forced rung,C01,finite DP controls,not found in targeted literature,yes
+C08,"Consecutive-block theorem: m>=2, m,m+1 in J, m-1 notin J => tau=2",2.4,PROVED,explicit 2-turn family + cut lemma,C01; Paper IIII cut lemma,finite controls,not found in targeted literature,yes
+C09,"Full initial block J={1,...,K}, K>=3 has tau=2",2/RAG,PROVED_AFTER_REPAIR,explicit rail family,C01,finite DP controls,not found in targeted literature,yes
+C10,Coset normalization transfers pencil thresholds exactly,RAG,PROVED_AFTER_REPAIR,coset bijection preserving host/turns,Paper IIII pencil structure,,standard lattice reasoning; exact application appears new,yes
+C11,Bounded-to-linear jump for Gamma across tau,3,PROVED_AFTER_REPAIR,definition below tau; explicit linear threshold families above tau,C04,family regressions,not found in targeted literature,yes
+C12,"Improved rectilinear family: K_free=4, K_H=|S|-3",3,PROVED,forced Hamiltonian path + low-turn rigidity,C02,exact DP controls,not found in targeted literature,yes
+C13,gamma_U_square(4)=1,3,PROVED,C12 + trivial upper bound,C12,,not found in targeted literature,yes
+C14,"U_12 extremal family: K_free=3, K_H=|S|-2",3.3,PROVED_AFTER_REPAIR,single-rung forcing,C06,exact DP controls,not found in targeted literature,yes
+C15,"U_23 extremal family: K_free=2, K_H=|S|-2",3.2,PROVED,single-rung forcing,C01,exact DP controls,not found in targeted literature,yes
+C16,"U_{m,m+1}, m>=2, has eta=1 at threshold",3.2/3.4,PROVED,uniform single-rung construction,C01,exact DP representative cases,not found in targeted literature,yes
+C17,Every pencil J != {1} has eta=1,3.4,PROVED_AFTER_REPAIR,casewise single-rung / rectilinear construction,"C04,C12,C14,C16",representative controls,not found in targeted literature,yes
+C18,"Balanced triple implies, after signs, w=u+v",3.4/4.1,PROVED,determinant algebra,,,rank-2 determinant literature adjacent,yes
+C19,Singleton Determinant Theorem: |U|>=4 implies a singleton determinant class,4.1,PROVED_AFTER_REPAIR,maximal determinant triangle + hexagonal contraction,C18,finite exhaustive search corroboration,no direct equivalent found in prior targeted search,yes
+C20,"Nonhorizontal singleton determinant class implies (tau,eta)=(2,1)",4.2,PROVED_AFTER_REPAIR,single-rung generic construction,"C01,C19",representative finite controls,no direct source found,yes
+C21,"Horizontal+balanced divisible branch has eta=1; subcase a=b=1 has tau=3, else tau=2",4.3,PROVED_AFTER_REPAIR,height divisibility + explicit cap/single-rung family,"C18,C06",representative controls,no direct source found,yes
+C22,Terminal-constrained canonical triangular strip theorem: K_H^term=floor(2|V|/3),4.4/Phase5/v2 repair,PROVED_AFTER_REPAIR,four-state cut automaton with specified terminal states,,endpoint-constrained exact DP regression,triangular ladder literature adjacent; turn theorem not located,yes
+C23,"Horizontal+balanced nondivisible branch has (tau,eta)=(2,2/3)",4.3-4.4,PROVED_AFTER_REPAIR,three-link triangular reduction + connectivity-aware strip transfer,"C18,C36",finite representative checks,no direct source found,yes
+C24,Distinguished Singleton Theorem: |U|>=5 avoids any fixed e,4.5-4.6,PROVED_AFTER_REPAIR,maximum-det graph + paired-star parity collapse,C19,"1,020,096 distinguished finite cases reported in Phase5",no direct source found,yes
+C25,"For |U|>=5, (tau,eta)=(2,1)",4.6,PROVED_AFTER_REPAIR,C24 with horizontal distinguished + C20,"C20,C24",finite corroboration,no direct source found,yes
+C26,eta(U_{1})=2/3,VI,PROVED_AFTER_REPAIR,four-link unique-core reduction + connectivity-aware strip transfer,"C05,C36",DP family + four-link scan regression,no direct source found,yes
+C27,Every determinant-balanced triple has eta=2/3,4.4/VI,PROVED_AFTER_REPAIR,balanced reduction + terminal exact theorem for lower gadgets + connectivity transfer for arbitrary ends,"C18,C22,C26,C36",representative controls,no direct source found,yes
+C28,"Global intensity classification eta(U) in {1,2/3}",VI,PROVED_AFTER_REPAIR,cardinality/determinant case classification,"C17,C20-C27,C36,C37",,requires dedicated novelty audit,yes
+C29,"Global finite pair classification {(4,1),(3,1),(3,2/3),(2,1),(2,2/3)}",VI,PROVED_AFTER_REPAIR,global tau + global eta classification,"C04,C28,C36,C37",,requires dedicated novelty audit,yes
+C30,Old top-gap construction with unvisited cap,2 pre-RAG,SUPERSEDED,invalid exact trace,,counterexample found by audit,,no
+C31,Old numerical clipping bounds K_H<=12 or <=16,2.2/2.3 pre-repair,SUPERSEDED,partially visible connector omitted,,,replaced by O_U(1),no
+C32,Old claim: singleton determinant class (without host qualification) directly implies eta=1,3.4,SUPERSEDED,host orientation omitted,,,replaced by C20+C21+C23+C24,no
+C33,Old conflict-triangle / unrestricted-strip formulation of exact 2/3 theorem,4.4 pre-RAG,SUPERSEDED,local exclusion incomplete,,DP agreed with theorem,replaced by terminal-constrained four-state automaton theorem,no
+C34,Phase-4 premature freeze of eta(U_1)=2/3 before four-link upper bound,4.4 pre-Phase5,SUPERSEDED,three-link reduction did not cover budget-3 four-link witnesses,,,repaired by C26,no
+C35,Finite singleton search at ||u||_infty<=5 found no size-4/5 counterexample,3.4/4.1,COMPUTATION_ONLY,exhaustive finite enumeration,,"91,390 four-sets; 658,008 five-sets",finite evidence only,no
+C36,Connectivity-aware triangular-strip transfer: every feasible boundary pairing has turn cost <=2|V|/3+O(1),v2.1 extreme-RAG repair,PROVED_AFTER_REPAIR,12-state 17-transition frontier connectivity automaton + finite max-plus certificate,strip local geometry,"exact certificate supp(A^6) subset supp(A^3), A^6>=A^3+2; all-length consequence",requires dedicated novelty audit,yes
+C37,"Explicit exceptional boundary-entry bridge lemma for U_1 and U_{1,2}",v2.1 extreme-RAG repair,PROVED_AFTER_REPAIR,determinant connector bound + exhaustive finite first-host residue table,C01,"22 exact certificate rows, all pass",local proof lemma,yes
+C38,v2 parity-only bounded-port replacement claim without connectivity state,VI/v2,SUPERSEDED,cut parity did not encode component pairing,,extreme RAG found feasible terminal types requiring connectivity tracking,replaced by C36,no
