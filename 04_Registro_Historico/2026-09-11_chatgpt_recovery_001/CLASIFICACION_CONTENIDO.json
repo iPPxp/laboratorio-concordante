@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "generated_on": "2026-09-12",
+  "batch_id": "RH-BATCH-2026-09-11-CHATGPT-RECOVERY-001",
+  "status": "DERIVED_NON_NORMATIVE_CONTENT_INDEX",
+  "payload_modified": false,
+  "payload_moved": false,
+  "payload_deleted": false,
+  "authority_changed": false,
+  "groups": {
+    "custodia": 3,
+    "exact_trace": 8,
+    "geometria_heart_paper_ii": 4,
+    "moc_conceptual_visual": 5,
+    "psicologia_concordante": 1,
+    "paper_i": 2
+  },
+  "key_findings": [
+    "No exact-name or SHA-256 duplicate was found outside the capsule among tracked repository files.",
+    "Three loose Exact Trace files are byte-identical to entries inside the v2.1 ZIP and are retained intentionally.",
+    "The loose Paper I PDF is byte-identical to the PDF inside the submission ZIP and is retained intentionally.",
+    "The Exact Trace v2.1 package is chronologically later than the extreme RAG and contains explicit repairs responding to it.",
+    "MOC-FRON-ONT Phase 2 revises the stronger primitive-independence reading explored in Phase 1.",
+    "The PSI-HEART draft depends on PSI-CANON-001 and PSI-CANON-002, which are absent from this repository snapshot.",
+    "Visual MOC assets contain noncanonical local vocabulary and require review before external publication."
+  ],
+  "items": [
+    {
+      "path": "fuentes/CONCORDANTE_STORAGE_AUDIT_2026-09-11.md",
+      "group": "custodia",
+      "role": "human_readable_storage_audit",
+      "interpreted_status": "HISTORICAL_SNAPSHOT",
+      "authority": "historical_evidence_only",
+      "recommended_action": "retain_and_refresh_separately_if_current_state_is_needed"
+    },
+    {
+      "path": "fuentes/CONCORDANTE_STORAGE_AUDIT_2026-09-11.json",
+      "group": "custodia",
+      "role": "machine_readable_storage_audit",
+      "interpreted_status": "HISTORICAL_SNAPSHOT",
+      "authority": "historical_evidence_only",
+      "recommended_action": "retain_with_markdown_counterpart"
+    },
+    {
+      "path": "paquete/CONCORDANTE_CHATGPT_RECOVERY_PACK_2026-09-11.zip",
+      "group": "custodia",
+      "role": "preserved_master_recovery_package",
+      "interpreted_status": "PRESERVED_PAYLOAD",
+      "authority": "custody_not_semantic_authority",
+      "recommended_action": "retain_byte_exact"
+    },
+    {
+      "path": "fuentes/FINAL_REPAIR_AND_FREEZE_2026-08-23.md",
+      "group": "exact_trace",
+      "role": "historical_internal_freeze",
+      "interpreted_status": "SUPERSEDED_FOR_LATER_CLAIM_STATUS_BY_V2_1",
+      "authority": "internal_mathematical_record",
+      "sequence": 1,
+      "recommended_action": "read_as_chronological_predecessor"
+    },
+    {
+      "path": "fuentes/CLAIMS_MATRIX_FINAL_REPAIRED_2026-08-23.csv",
+      "group": "exact_trace",
+      "role": "historical_claim_matrix_28_rows",
+      "interpreted_status": "SUPERSEDED_FOR_LATER_CLAIM_STATUS_BY_V2_1",
+      "authority": "internal_mathematical_record",
+      "sequence": 2,
+      "recommended_action": "do_not_merge_by_claim_id_without_migration_map"
+    },
+    {
+      "path": "fuentes/15_RAG_EXTREMO_POST_V2.md",
+      "group": "exact_trace",
+      "role": "adversarial_audit",
+      "interpreted_status": "HISTORICAL_OBJECTIONS_ANSWERED_INSIDE_V2_1",
+      "authority": "internal_adversarial_review",
+      "sequence": 3,
+      "duplicate_of_nested_entry_in": "fuentes/EXACT_TRACE_THRESHOLD_EXTREMAL_PACKAGE_V2_1_2026-08-24.zip",
+      "recommended_action": "retain_and_read_before_v2_1_repair"
+    },
+    {
+      "path": "fuentes/EXACT_TRACE_THRESHOLD_EXTREMAL_PACKAGE_V2_1_2026-08-24.zip",
+      "group": "exact_trace",
+      "role": "consolidated_research_and_reproducibility_package",
+      "interpreted_status": "LATEST_INTERNAL_V2_1_FREEZE",
+      "authority": "not_independently_refereed",
+      "sequence": 4,
+      "recommended_action": "use_as_primary_internal_package"
+    },
+    {
+      "path": "fuentes/CLAIMS_MATRIX.csv",
+      "group": "exact_trace",
+      "role": "v2_1_claim_matrix_39_rows",
+      "interpreted_status": "LATEST_INTERNAL_MATRIX_IN_BATCH",
+      "authority": "not_independently_refereed",
+      "sequence": 5,
+      "duplicate_of_nested_entry_in": "fuentes/EXACT_TRACE_THRESHOLD_EXTREMAL_PACKAGE_V2_1_2026-08-24.zip",
+      "recommended_action": "interpret_only_with_v2_1_definitions_and_repairs"
+    },
+    {
+      "path": "fuentes/THEOREM_DEPENDENCY_GRAPH.md",
+      "group": "exact_trace",
+      "role": "v2_1_dependency_graph",
+      "interpreted_status": "LATEST_INTERNAL_GRAPH_IN_BATCH",
+      "authority": "not_independently_refereed",
+      "sequence": 6,
+      "duplicate_of_nested_entry_in": "fuentes/EXACT_TRACE_THRESHOLD_EXTREMAL_PACKAGE_V2_1_2026-08-24.zip",
+      "recommended_action": "retain_for_navigation"
+    },
+    {
+      "path": "fuentes/Exact_Trace_Thresholds_Preprint_v0_1.tex",
+      "group": "exact_trace",
+      "role": "preprint_source",
+      "interpreted_status": "EXTERNAL_REVIEW_DRAFT_V0_1",
+      "authority": "manuscript_not_accepted_publication",
+      "sequence": 7,
+      "recommended_action": "edit_only_in_separate_scientific_worktree"
+    },
+    {
+      "path": "fuentes/Exact_Trace_Thresholds_Preprint_v0_1.pdf",
+      "group": "exact_trace",
+      "role": "compiled_preprint",
+      "interpreted_status": "EXTERNAL_REVIEW_DRAFT_V0_1",
+      "authority": "manuscript_not_accepted_publication",
+      "sequence": 8,
+      "recommended_action": "retain_as_compiled_reference"
+    },
+    {
+      "path": "fuentes/HEART1_C_OBJECT_REPORT.md",
+      "group": "geometria_heart_paper_ii",
+      "role": "formal_research_report_1",
+      "interpreted_status": "FORMAL_RESEARCH_NOT_LAB_CANON",
+      "authority": "mathematical_source_requires_separate_review",
+      "sequence": 1,
+      "recommended_action": "read_before_heart2"
+    },
+    {
+      "path": "fuentes/HEART2_REPORT.md",
+      "group": "geometria_heart_paper_ii",
+      "role": "formal_research_report_2",
+      "interpreted_status": "FORMAL_RESEARCH_NOT_LAB_CANON",
+      "authority": "mathematical_source_requires_separate_review",
+      "sequence": 2,
+      "recommended_action": "read_after_heart1"
+    },
+    {
+      "path": "fuentes/HEART3_REPORT.md",
+      "group": "geometria_heart_paper_ii",
+      "role": "formal_research_report_3",
+      "interpreted_status": "FORMAL_RESEARCH_NOT_LAB_CANON",
+      "authority": "mathematical_source_requires_separate_review",
+      "sequence": 3,
+      "recommended_action": "use_to_constrain_cross_coder_interpretations"
+    },
+    {
+      "path": "fuentes/Paper_II_ARXIV_CANDIDATE.pdf",
+      "group": "geometria_heart_paper_ii",
+      "role": "paper_ii_candidate_manuscript",
+      "interpreted_status": "ARXIV_CANDIDATE",
+      "authority": "candidate_not_accepted_publication",
+      "sequence": 4,
+      "recommended_action": "retain_as_mathematical_manuscript_without_source_tex"
+    },
+    {
+      "path": "fuentes/MOC-IPP-NOMENCLATURE-AND-AGREEMENT-FAMILY-RESEARCH-001.md",
+      "group": "moc_conceptual_visual",
+      "role": "external_nomenclature_research",
+      "interpreted_status": "AUXILIARY_RESEARCH_NOT_CURRENT_AUTHORITY",
+      "authority": "historical_external_evidence",
+      "sequence": 1,
+      "recommended_action": "compare_against_current_canon_before_use"
+    },
+    {
+      "path": "fuentes/MOC-FRON-ONT-001_Auditoría_II_Fase_1_Rigurosa.md",
+      "group": "moc_conceptual_visual",
+      "role": "ontology_boundary_audit_phase_1",
+      "interpreted_status": "EARLIER_PHASE_REVISED_BY_PHASE_2",
+      "authority": "noncanonical_audit",
+      "sequence": 2,
+      "recommended_action": "read_with_phase_2"
+    },
+    {
+      "path": "fuentes/MOC-FRON-ONT-001_Auditoria_II_Fase_2_Operadores_Canonicos.md",
+      "group": "moc_conceptual_visual",
+      "role": "ontology_boundary_audit_phase_2",
+      "interpreted_status": "LATER_AUDIT_CONCLUSION",
+      "authority": "noncanonical_audit",
+      "sequence": 3,
+      "recommended_action": "treat_as_later_conclusion_not_as_canon"
+    },
+    {
+      "path": "fuentes/Infografía MOC - Mapa de Concordancia Experiencial.png",
+      "group": "moc_conceptual_visual",
+      "role": "public_facing_infographic_candidate",
+      "interpreted_status": "NONCANONICAL_VISUAL_ASSET",
+      "authority": "communication_candidate",
+      "sequence": 4,
+      "recommended_action": "review_terminology_provenance_and_rights_before_publication"
+    },
+    {
+      "path": "fuentes/MOC-Pentacoron-Experiencial-4D.pptx",
+      "group": "moc_conceptual_visual",
+      "role": "theoretical_visual_deck",
+      "interpreted_status": "NONCLINICAL_NONCANONICAL_DECK",
+      "authority": "communication_and_modeling_candidate",
+      "sequence": 5,
+      "recommended_action": "reconcile_component_labels_and_noncanonical_operators_before_use"
+    },
+    {
+      "path": "fuentes/PSI-HEART-PROJECTION-ARCHITECTURE_DRAFT.md",
+      "group": "psicologia_concordante",
+      "role": "cross_domain_architecture_draft",
+      "interpreted_status": "DRAFT_WITH_MISSING_SOURCE_DEPENDENCIES",
+      "authority": "external_project_not_lab_canon",
+      "missing_dependencies": [
+        "PSI-CANON-001_Fundamentos_Psicologia_Concordante.md",
+        "PSI-CANON-002_Atlas_Corazon_Poder_Transformacion.md"
+      ],
+      "recommended_action": "preserve_but_block_activation_and_conceptual_incorporation"
+    },
+    {
+      "path": "fuentes/Paper_I_EXPERIMENTAL_MATHEMATICS_SUBMISSION_PACKAGE.zip",
+      "group": "paper_i",
+      "role": "editorial_submission_package",
+      "interpreted_status": "RESUBMISSION_PACKAGE",
+      "authority": "editorial_artifact_not_acceptance_evidence",
+      "sequence": 1,
+      "recommended_action": "retain_complete_for_editorial_work"
+    },
+    {
+      "path": "fuentes/Paper_I_EXPERIMENTAL_MATHEMATICS_RESUBMISSION.pdf",
+      "group": "paper_i",
+      "role": "direct_reading_copy",
+      "interpreted_status": "RESUBMISSION_MANUSCRIPT",
+      "authority": "manuscript_not_acceptance_evidence",
+      "sequence": 2,
+      "duplicate_of_nested_entry_in": "fuentes/Paper_I_EXPERIMENTAL_MATHEMATICS_SUBMISSION_PACKAGE.zip",
+      "recommended_action": "retain_as_convenience_copy"
+    }
+  ]
+}

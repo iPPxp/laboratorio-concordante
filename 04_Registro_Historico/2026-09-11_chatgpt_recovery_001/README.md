@@ -22,7 +22,14 @@ Este directorio incorpora al historial del Laboratorio el respaldo conservador p
 - `paquete/`: el ZIP original completo, conservado byte a byte.
 - `MANIFEST.md`: inventario legible con tamaños y SHA-256.
 - `MANIFEST.json`: inventario estructurado y banderas de autoridad.
+- `CATALOGO_CONTENIDO.md`: análisis humano por conjuntos, cronología, conflictos y dependencias.
+- `CLASIFICACION_CONTENIDO.json`: clasificación derivada procesable por máquina.
+- `RUTAS_DE_LECTURA.md`: secuencias de lectura por propósito.
 - `.gitattributes`: desactiva normalización de texto y diffs sobre el payload para preservar los bytes exactos en Git.
+
+Los tres índices añadidos el 2026-09-12 son derivados y no forman parte del
+payload recuperado. El procesamiento está registrado en
+`03_Expedientes/RH-003_Procesamiento_Recovery_ChatGPT_2026-09-11.md`.
 
 ## Nota de compatibilidad
 

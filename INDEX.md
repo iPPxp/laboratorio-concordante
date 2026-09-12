@@ -21,7 +21,7 @@ Nota: `HANDOFF.md`, `HANDOFF_PACKAGE.md`, `VISION_PAPER_PROPUESTA.md` y `VISION_
 - `02_Documentos`: documentos oficiales por tema.
 - `03_Expedientes`: investigacion activa o cerrada.
 - `04_Registro_Historico`: conversaciones y trazabilidad historica.
-- `04_Registro_Historico/2026-09-11_chatgpt_recovery_001`: cápsula de custodia del recovery pack de ChatGPT Library; material histórico, no Canon.
+- `04_Registro_Historico/2026-09-11_chatgpt_recovery_001`: cápsula de custodia del recovery pack de ChatGPT Library; incluye catálogo y rutas de lectura, pero sigue siendo material histórico no canónico.
 - `05_Estado_Proyecto`: estado operativo, decisiones y prioridades.
 - `06_Automatizacion`: herramientas no mutantes y reportes ejecutables.
 - `Licencia_y_Derechos.md`: reserva de derechos del MOC y Concordante Lab.
@@ -50,3 +50,10 @@ El registro historico nunca vence por si mismo a un documento oficial o a una de
 
 Esta navegación está preparada para revisión humana. No demuestra incorporación
 en main ni en origin/main.
+
+## Recovery ChatGPT 2026-09-11
+
+- `04_Registro_Historico/2026-09-11_chatgpt_recovery_001/CATALOGO_CONTENIDO.md`: mapa analítico y conflictos.
+- `04_Registro_Historico/2026-09-11_chatgpt_recovery_001/RUTAS_DE_LECTURA.md`: navegación por custodia, Exact Trace, HEART, MOC, PSI y publicaciones.
+- `04_Registro_Historico/2026-09-11_chatgpt_recovery_001/CLASIFICACION_CONTENIDO.json`: índice estructurado.
+- `03_Expedientes/RH-003_Procesamiento_Recovery_ChatGPT_2026-09-11.md`: expediente de procesamiento sin promoción.

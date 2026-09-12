@@ -2,6 +2,9 @@
 
 ## 2026-09-12
 
+- Procesado `RH-BATCH-2026-09-11-CHATGPT-RECOVERY-001` mediante `RH-003`: añadidos catálogo analítico, clasificación JSON y rutas de lectura, sin mover ni modificar payload y sin promoción a Canon.
+- Separados documentalmente seis conjuntos: custodia, Exact Trace, geometría HEART/Paper II, MOC conceptual/visual, Psicología Concordante y Paper I; registrados conflictos de cronología, vocabulario y dependencias ausentes.
+- Confirmados duplicados editoriales intencionales dentro de ZIP y copias sueltas; se conservan todos, sin deduplicación ni limpieza destructiva.
 - Incorporado `RH-BATCH-2026-09-11-CHATGPT-RECOVERY-001` en `04_Registro_Historico`: 23 objetos de payload, incluidos los tres HEART originales, 17 artefactos prioritarios adicionales, las auditorías MD/JSON y el recovery pack ZIP original.
 - Agregados manifiestos Markdown/JSON con tamaños y SHA-256; verificada la identidad del paquete y de sus entradas frente a la fuente local previamente cotejada con Google Drive y Dropbox.
 - La incorporación es de custodia y procedencia: no modifica Canon, autoridad semántica, estatus probatorio, validación empírica, activación ni publicación; `PSI-001` permanece fuera del Laboratorio como proyecto independiente.
