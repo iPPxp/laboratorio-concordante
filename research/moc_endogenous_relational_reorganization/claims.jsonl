@@ -1,0 +1,35 @@
+{"id":"P01","claim":"Un reencuadre P puede abrir posibilidades mediante cambios estructurales.","status":"HYPOTHESIZED","baseline":"B5/B6","falsifier":"B5 o B6 iguala estructura y coste sin ventaja MOC."}
+{"id":"P02","claim":"Un cambio P no obliga a cambiar todas sus relaciones.","status":"HYPOTHESIZED","baseline":"control nulo","falsifier":"Propagación completa reproducible en casos independientes."}
+{"id":"P03","claim":"Una relación puede cambiar el campo con vértices fijos.","status":"SUPPORTED_LOCAL_SYNTHETIC","baseline":"B4","falsifier":"La edición relacional no cambia ningún campo en replicación."}
+{"id":"P04","claim":"Una distinción nueva puede cambiar consultas y posibilidades.","status":"INSUFFICIENT_EVIDENCE","baseline":"B6","falsifier":"Sólo renombra y nunca cambia estructura observable."}
+{"id":"P05","claim":"Fusionar distinciones puede mejorar parsimonia.","status":"INSUFFICIENT_EVIDENCE","baseline":"add-only","falsifier":"Toda fusión empeora coste o error en replicación."}
+{"id":"P06","claim":"Retirar una restricción falsa puede expandir el campo.","status":"SUPPORTED_LOCAL_SYNTHETIC","baseline":"B4/B5/B6","falsifier":"No aparece expansión bajo intervención controlada."}
+{"id":"P07","claim":"Añadir un límite real puede contraer correctamente el campo.","status":"SUPPORTED_LOCAL_SYNTHETIC","baseline":"always-expand","falsifier":"Persisten posibilidades declaradas inviables."}
+{"id":"P08","claim":"Más opciones no implica mejor reorganización.","status":"SUPPORTED_LOCAL_SYNTHETIC","baseline":"B5","falsifier":"La expansión genérica predice siempre la estructura correcta."}
+{"id":"P09","claim":"Transitabilidad puede cambiar sin opción nueva.","status":"PARTIALLY_SUPPORTED_LOCAL","baseline":"B6","falsifier":"Una medida externa exige expansión en todos los casos."}
+{"id":"P10","claim":"Una acción nueva puede ser sólo selección.","status":"SUPPORTED_LOCAL_SYNTHETIC","baseline":"B4","falsifier":"Todo cambio de acción fuerza D/R/K."}
+{"id":"P11","claim":"La reorganización puede conservar la acción.","status":"SUPPORTED_LOCAL_SYNTHETIC","baseline":"B6","falsifier":"Toda edición estructural cambia necesariamente la elección."}
+{"id":"P12","claim":"Act_psi no equivale a output.","status":"SEMANTIC_BASELINE","baseline":"filtro externo","falsifier":"Una autoridad MOC vigente los identifica explícitamente."}
+{"id":"P13","claim":"Act puede cambiar sin output.","status":"HYPOTHESIZED","baseline":"wait control","falsifier":"No se observa divergencia en datos permitidos."}
+{"id":"P14","claim":"Clarificar V no siempre cambia el campo.","status":"SUPPORTED_LOCAL_SYNTHETIC","baseline":"B6","falsifier":"Toda clarificación cambia PC/TC en replicación externa."}
+{"id":"P15","claim":"Nueva información S puede expandir o contraer.","status":"SUPPORTED_LOCAL_SYNTHETIC","baseline":"static-S","falsifier":"El efecto es siempre unidireccional."}
+{"id":"P16","claim":"B5 puede igualar la acción sin igualar la estructura.","status":"SUPPORTED_LOCAL_SYNTHETIC","baseline":"B5","falsifier":"B5 preserva toda la traza objetivo con igual presupuesto."}
+{"id":"P17","claim":"B6 puede ser isomorfo a MOC_R.","status":"SUPPORTED_LOCAL_SYNTHETIC","baseline":"B6","falsifier":"Un testigo estable rompe el mapeo simple en holdout."}
+{"id":"P18","claim":"Los nombres MOC por sí solos no añaden capacidad.","status":"SUPPORTED_BY_ALPHA_NORMALIZATION_LOCAL","baseline":"renamed B6","falsifier":"Permutar nombres cambia desempeño con operaciones fijas."}
+{"id":"P19","claim":"El tipado MOC puede mejorar generalización externa.","status":"INSUFFICIENT_EVIDENCE","baseline":"untyped B6","falsifier":"B6 iguala transferencia con presupuesto y datos equivalentes."}
+{"id":"P20","claim":"El tipado MOC puede aportar sólo explicación.","status":"INSUFFICIENT_EVIDENCE","baseline":"B6","falsifier":"Auditores ciegos no mejoran comprensión o predicción."}
+{"id":"P21","claim":"UNKNOWN evita atribuir falsa invariancia.","status":"SUPPORTED_BY_ORACLE_CONTRACT","baseline":"binary diff","falsifier":"El modelo binario iguala calibración sin errores adicionales."}
+{"id":"P22","claim":"NOT_APPLICABLE no equivale a UNCHANGED.","status":"SUPPORTED_BY_FORMAL_DEFINITION","baseline":"naive matrix","falsifier":"No altera denominadores ni inferencias en datos dispersos."}
+{"id":"P23","claim":"Editar Gamma debe distinguirse de ampliar búsqueda.","status":"PARTIALLY_SUPPORTED_LOCAL","baseline":"B5","falsifier":"La búsqueda iguala soporte, coste y traza estructural."}
+{"id":"P24","claim":"Xi-stop no prueba Xi-organize.","status":"SUPPORTED_BY_AUTHORITY_AUDIT","baseline":"stop-only","falsifier":"Fuente vigente autoriza explícitamente Xi transformativo."}
+{"id":"P25","claim":"C_choose no es R_MOC.","status":"SUPPORTED_BY_ARCHITECTURAL_SEPARATION","baseline":"chooser","falsifier":"La elección sola ejecuta y explica todas las ediciones."}
+{"id":"P26","claim":"Holdout de transformación discrimina mejor que sólo casos.","status":"INSUFFICIENT_EVIDENCE","baseline":"B6","falsifier":"Ambos holdouts tienen igual sensibilidad en replicaciones."}
+{"id":"P27","claim":"Cambiar un threshold no basta para meta-reorganización.","status":"SUPPORTED_BY_FORMAL_DEFINITION","baseline":"tuner","falsifier":"El threshold modifica D/R/K del policy de forma demostrable."}
+{"id":"R01","claim":"B4 no reproduce reorganización estructural en este dominio.","status":"SUPPORTED_LOCAL_SYNTHETIC","evidence":"target_structure_rate=0.0833","scope":"12 fixtures"}
+{"id":"R02","claim":"B5 no reproduce los objetivos estructurales ni campos exactos.","status":"SUPPORTED_LOCAL_SYNTHETIC","evidence":"structure=0.0; field=0.0","scope":"12 fixtures"}
+{"id":"R03","claim":"B6 y MOC_R empatan en estructura, campo, traza y holdout.","status":"SUPPORTED_LOCAL_SYNTHETIC","evidence":"all rates=1.0","scope":"12 fixtures"}
+{"id":"R04","claim":"El mapeo simple B6-MOC_R es exacto.","status":"SUPPORTED_LOCAL_SYNTHETIC","evidence":"GIR=1.0; holdout GIR=1.0","scope":"mapping frozen"}
+{"id":"R05","claim":"La unicidad algorítmica MOC no está apoyada.","status":"NOT_SUPPORTED","evidence":"B6 isomorfo 12/12","scope":"dominio sintético probado"}
+{"id":"R06","claim":"El valor representacional incremental sigue abierto.","status":"INSUFFICIENT_EVIDENCE","evidence":"sin auditoría humana ciega ni transferencia externa","scope":"no empírico"}
+{"id":"R07","claim":"Siete expectativas de distinción no son observables en D neutral.","status":"SUPPORTED_LOCAL_SYNTHETIC","evidence":"oracle UNKNOWN=7/12","scope":"interfaz actual"}
+{"id":"R08","claim":"No existe validación empírica MOC en este frente.","status":"INSUFFICIENT_EVIDENCE","evidence":"fixtures sintéticos","scope":"experiencias reales"}
