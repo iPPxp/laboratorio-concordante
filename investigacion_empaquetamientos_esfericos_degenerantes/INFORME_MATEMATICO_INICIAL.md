@@ -2,7 +2,7 @@
 
 ## 1. Pregunta y limites
 
-Este estudio pregunta por familias finitas de esferas exteriores unitarias que rodean una esfera central de radio `epsilon`, y por transiciones cuidadosamente tipadas entre representantes de cardinalidades distintas. El objeto no es una teoria de personas, lenguaje, clinica o eficacia; es geometria euclidea discreta.
+Este estudio pregunta por familias finitas de bolas exteriores unitarias que rodean una bola central de radio `epsilon` en una dimensión ambiente declarada, y por transiciones cuidadosamente tipadas entre representantes de cardinalidades distintas. El objeto no es una teoria de personas, lenguaje, clinica o eficacia; es geometria euclidea discreta.
 
 **[DEFINICION_PROPUESTA]** Se fija `R = 1` para cada esfera exterior y se escribe
 
@@ -18,6 +18,22 @@ Las exteriores no se solapan cuando \(\|p_i-p_j\|\geq 2\). Para direcciones unit
 
 La configuracion realizada requiere `epsilon > 0`; por ello, \(\varepsilon_*=0\) es un infimo, no una esfera central de radio cero aceptada por la definicion.
 
+**[DERIVACION_SIMBOLICA — CASO `n=2`]** Para dos exteriores colineales de
+radio `R` y una central de radio `r` situada en su punto medio, la tangencia a
+ambas exige:
+
+\[
+D=2(R+r),
+\qquad
+r=\frac{D-2R}{2}.
+\]
+
+Así, una burbuja minúscula pero positiva está incluida como `r=epsilon R` con
+`epsilon>0` pequeño. Cuando `epsilon -> 0`, `D -> 2R`: las exteriores se tocan
+y la central se degenera en el punto de contacto. Dos exteriores sin las
+condiciones de punto medio, colinealidad y distancia no determinan por sí solas
+una cavidad acotada ni una burbuja única.
+
 ## 2. Contacto, holgura y codigo esferico
 
 **[DEFINICION_PROPUESTA]** Para dos esferas, \(\delta_{ij}=\|p_i-p_j\|-(r_i+r_j)\):
@@ -27,6 +43,11 @@ La configuracion realizada requiere `epsilon > 0`; por ello, \(\varepsilon_*=0\)
 | \(>0\) | Separacion |
 | \(=0\) | Tangencia exacta |
 | \(<0\) | Solapamiento fisico |
+
+La implementación clasifica el signo después de dividir distancias y radios por
+el radio exterior `R`. Así, la tolerancia es adimensional y el grafo de contacto
+se conserva al reescalar una configuración; `delta` sigue reportándose en las
+unidades físicas de la entrada.
 
 **[DERIVACION_SIMBOLICA]** Si \(\theta_{ij}\) es el angulo entre direcciones,
 
@@ -42,17 +63,19 @@ Por tanto cada configuracion inducida por direcciones unitarias es un problema d
 
 **[DERIVACION_SIMBOLICA]** Los siguientes umbrales salen de las cuerdas minimas de representantes simetricos. Las cifras que aparecen al ejecutar el programa se etiquetan separadamente como `RESULTADO_COMPUTADO`.
 
-| `n` | Representante | \(d_{\min}\) unitario | \(\varepsilon_*\) | Alcance |
-|---:|---|---:|---:|---|
-| 2 | Par antipodal | \(2\) | \(0\) | Centracion debil: rango affine 1 |
-| 4 | Tetraedro regular | \(\sqrt{8/3}\) | \(\sqrt{3/2}-1\) | Centrado tridimensional |
-| 4 | Cuadrado ecuatorial | \(\sqrt2\) | \(\sqrt2-1\) | Testigo de transicion; rango affine 2 |
-| 6 | Octaedro regular | \(\sqrt2\) | \(\sqrt2-1\) | Entorno SC |
-| 12 | Cuboctaedro | \(1\) | \(1\) | Primera capa FCC |
-| 12 | Anticuboctaedro local HCP | \(1\) | \(1\) | Primera capa HCP |
-| 12 | Icosaedro regular | \(4/\sqrt{10+2\sqrt5}\) | \(\sqrt{10+2\sqrt5}/2-1\) | Comparador de codigo, no capa de esferas unitarias en contacto entre si a \(\varepsilon=1\) |
+| `n` | `d` ambiente | Representante | \(d_{\min}\) unitario | \(\varepsilon_*\) | Alcance |
+|---:|---:|---|---:|---:|---|
+| 2 | 3 | Par antipodal | \(2\) | \(0\) | Límite colineal; rango afín 1 |
+| 4 | 3 | Tetraedro regular | \(\sqrt{8/3}\) | \(\sqrt{3/2}-1\) | Centrado tridimensional |
+| 4 | 3 | Cuadrado ecuatorial | \(\sqrt2\) | \(\sqrt2-1\) | Testigo de transición; rango afín 2 |
+| 5 | 4 | 4-simplex regular | \(\sqrt{5/2}\) | \(\sqrt{8/5}-1\) | Intersticio simplex; grafo exterior `K5` |
+| 6 | 3 | Octaedro regular | \(\sqrt2\) | \(\sqrt2-1\) | Entorno SC |
+| 12 | 3 | Cuboctaedro | \(1\) | \(1\) | Primera capa FCC |
+| 12 | 3 | Anticuboctaedro local HCP | \(1\) | \(1\) | Primera capa HCP |
+| 12 | 3 | Icosaedro regular | \(4/\sqrt{10+2\sqrt5}\) | \(\sqrt{10+2\sqrt5}/2-1\) | Comparador de codigo, no capa de esferas unitarias en contacto entre si a \(\varepsilon=1\) |
+| 24 | 4 | 24-cell / raíces `D4` | \(1\) | \(1\) | Capa kissing óptima en `R^4` |
 
-La configuracion `n=12` no se reduce a una unica geometria: FCC y HCP tienen doce vecinos a distancia de contacto, pero sus grafos y apilamientos globales difieren. La etiqueta de `HCP` en este estudio es una red periodica con base, no una red de Bravais simple.
+La configuracion `n=12` no se reduce a una unica geometria: FCC y HCP tienen doce vecinos a distancia de contacto, pero sus grafos y apilamientos globales difieren. La etiqueta de `HCP` en este estudio es una red periodica con base, no una red de Bravais simple. El caso `n=24` pertenece a `R^4` y no se inserta en una cadena tridimensional por mera cardinalidad.
 
 ## 4. Redes reticulares y empaquetamientos periodicos
 
@@ -82,7 +105,15 @@ La configuracion `n=12` no se reduce a una unica geometria: FCC y HCP tienen doc
 
 ## 6. Vacios: resultados exactos y riesgos de analogia
 
-**[DERIVACION_SIMBOLICA]** Si tres exteriores unitarias son mutuamente tangentes y sus centros forman un triangulo equilatero de lado 2, el radio de una esfera que cabe en el hueco tetraedrico respecto de cuatro centros equivalentes satisface
+**[DERIVACION_SIMBOLICA]** Para `d+1` exteriores unitarias mutuamente
+tangentes cuyos centros forman un simplex regular de dimensión `d`, la posición
+intersticial central satisface:
+
+\[
+r_{simplex}(d)/R=\sqrt{\frac{2d}{d+1}}-1.
+\]
+
+En dimensión tres se usan cuatro anfitrionas y:
 
 \[
 r_{tetra}/R=\sqrt{3/2}-1.
@@ -90,12 +121,27 @@ r_{tetra}/R=\sqrt{3/2}-1.
 
 Para el hueco octaedrico regular, \(r_{octa}/R=\sqrt2-1\). Estas identidades son geometricas para modelos ideales de esferas congruentes; no autorizan a denominar “hueco” a toda separacion, ni a extrapolar a redes no regulares.
 
+En dimensión cuatro, cinco anfitrionas forman el 4-simplex y:
+
+\[
+r_{4-simplex}/R=\sqrt{8/5}-1.
+\]
+
+Su grafo anfitrión es `K5` con 10 aristas; al incluir la bola central, el grafo
+de las seis bolas mutuamente tangentes es `K6` con 15 aristas.
+
+**[RESULTADO_CLASICO + IMPLEMENTACION]** La regla anterior no es la regla de
+kissing. Para vecinas congruentes con la central, `tau_d` denota el máximo
+admisible. En `R^4`, `tau_4=24`. Las direcciones incorporadas
+`(+-e_i +-e_j)/sqrt(2)` realizan el 24-cell: el grafo exterior es 8-regular y
+tiene 96 aristas; con los 24 contactos centrales tiene 120.
+
 ## 7. Que ha quedado demostrado, computado y abierto
 
 | Etiqueta | En esta primera version |
 |---|---|
 | `DEMOSTRADO_EN_ESTE_TRABAJO` | Solo correccion de las identidades implementadas respecto de las pruebas unitarias, condicionado a la ejecucion mostrada. |
-| `RESULTADO_COMPUTADO` | Valores para siete conjuntos finitos y cuatro consultas de transicion en `data/results_initial.*`. |
+| `RESULTADO_COMPUTADO` | Valores para nueve conjuntos finitos —siete en `R^3` y dos en `R^4`— y cuatro consultas de transicion en `data/results_initial.*`. |
 | `OBSERVACION_VISUAL` | Proyecciones SVG, sin inferencia de profundidad ni de rigidez. |
 | `CONJETURA` | No se promueve ninguna como resultado. |
 | `PENDIENTE_DE_VERIFICACION` | Optimos generales para cada familia, transiciones deformables, jamming, y pruebas asistidas/certificadas. |

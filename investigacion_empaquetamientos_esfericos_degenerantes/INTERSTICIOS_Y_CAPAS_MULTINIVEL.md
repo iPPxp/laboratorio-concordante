@@ -26,6 +26,43 @@ plana acotada. El centro es especialmente pequeño en ese caso. Con dos
 exteriores, la tangencia deja una familia continua de posiciones posibles y se
 necesita otra relación o frontera para seleccionar una.
 
+### 1.1 El caso de dos: burbuja positiva y límite puntual
+
+El caso `n=2` ya pertenece a la familia centrada original. Sean dos bolas
+anfitrionas congruentes de radio `R`, una bola central de radio `r`, y supóngase
+que sus tres centros son colineales, con la central exactamente en el punto
+medio. Si la central toca a ambas anfitrionas, la distancia `D` entre los
+centros exteriores satisface:
+
+\[
+D=2(R+r),
+\qquad
+r=\frac{D-2R}{2}.
+\]
+
+Por tanto, para cada `r>0` existe una burbuja central positiva y las dos
+anfitrionas quedan separadas por una holgura superficial `2r`. Si
+`r=\varepsilon R`, entonces:
+
+\[
+D=2R(1+\varepsilon),
+\qquad
+\varepsilon\downarrow0
+\Longrightarrow
+D\downarrow2R.
+\]
+
+En el límite, las anfitrionas se tocan y la burbuja central se degenera en el
+punto de tangencia. Una burbuja **minúscula pero positiva** corresponde a
+`0<\varepsilon\ll1`; no es todavía el punto límite `\varepsilon=0`.
+
+Esto no contradice el mínimo `n=3` anterior. Dos anfitrionas, tomadas por sí
+solas, no delimitan una cavidad plana acotada ni determinan un radio único. La
+solución anterior queda seleccionada al imponer simultáneamente centralidad,
+colinealidad y la distancia `D`. Si las dos anfitrionas ya son tangentes y no
+se impone colinealidad, existe una familia continua de bolas tangentes a ambas;
+su tamaño y posición requieren información adicional.
+
 Para radios exteriores desiguales `R_i`, la ecuación de cierre implementada es:
 
 \[
@@ -62,7 +99,104 @@ que lo genera** y se vuelve **parte de la frontera de cavidades hijas**.
 
 Ésta es una relación de nivel, no una contradicción de rol.
 
-## 3. La igualdad de radios no implica igualdad de estructura
+## 3. Dos reglas dimensionales expresamente separadas
+
+El motor usa ahora puntos de `R^d`, con la dimensión ambiente declarada por el
+número de coordenadas. Se distinguen dos problemas que pueden compartir una
+imagen de una esfera central, pero no el mismo contrato matemático.
+
+### 3.1 Regla intersticial simplex `I(d)`
+
+Para `d>=2`, sean `d+1` bolas anfitrionas congruentes de radio `R`, mutuamente
+tangentes, cuyos centros forman un simplex regular. La bola intersticial
+centrada en el circuncentro tiene radio:
+
+\[
+N_{\mathrm{hosts}}=d+1,
+\qquad
+\frac{r_{\mathrm{int}}}{R}
+=\sqrt{\frac{2d}{d+1}}-1.
+\]
+
+Aquí «intersticial» significa que el centro se encuentra en el interior del
+simplex de centros y que la bola central toca todas las anfitrionas. No se usa
+como afirmación adicional sobre componentes conexas del complemento.
+
+El grafo de contacto de las anfitrionas es `K_(d+1)`. Al agregar la bola
+intersticial, que toca a cada anfitriona, el grafo total es `K_(d+2)`.
+
+En `d=4` se obtienen cinco anfitrionas y una bola central:
+
+\[
+\frac{r_{\mathrm{int}}}{R}
+=\sqrt{\frac85}-1
+\approx0.2649110640673518,
+\]
+
+\[
+G_{\mathrm{hosts}}=K_5,
+\quad |E_{\mathrm{hosts}}|=10,
+\qquad
+G_{\mathrm{total}}=K_6,
+\quad |E_{\mathrm{total}}|=15.
+\]
+
+La implementación `regular_simplex(d)` construye coordenadas unitarias en
+`R^d` mediante una base de Helmert. Para `d=4`, sus cinco filas satisfacen
+`||u_i||=1` y `u_i . u_j=-1/4` cuando `i!=j`.
+
+### 3.2 Regla de kissing `K(d)`
+
+Sea una bola central de radio `R` y una familia de vecinas también de radio
+`R`. El número de kissing `tau_d` es el máximo número de vecinas congruentes
+que pueden tocar simultáneamente a la central sin solaparse. Si `u_i` son sus
+direcciones unitarias, los centros vecinos son `p_i=2R u_i` y:
+
+\[
+u_i\cdot u_j\le\frac12
+\quad\Longleftrightarrow\quad
+\|p_i-p_j\|\ge2R.
+\]
+
+Dos vecinas se tocan exactamente cuando `u_i . u_j=1/2`. El grafo exterior no
+tiene por qué ser completo y `tau_d` no cuenta los vértices de un simplex.
+
+En `d=4`, `tau_4=24`. La realización incorporada usa las direcciones del
+sistema de raíces `D4`, equivalentes a los vértices del 24-cell:
+
+\[
+\mathcal U_{24}
+=\left\{
+\frac{\sigma e_i+\tau e_j}{\sqrt2}:
+1\le i<j\le4,\;\sigma,\tau\in\{-1,+1\}
+\right\}.
+\]
+
+El grafo de contacto exterior es el 1-esqueleto del 24-cell: tiene 24 vértices,
+es 8-regular y contiene 96 aristas. Incluyendo la bola central:
+
+\[
+G_{\mathrm{total}}=K_1\vee G_{24\text{-cell}},
+\qquad
+|E_{\mathrm{total}}|=96+24=120.
+\]
+
+La separación que debe conservarse en todo uso posterior es:
+
+\[
+\boxed{I(d):\ d+1\text{ anfitrionas alrededor de una bola desigual}}
+\]
+
+frente a:
+
+\[
+\boxed{K(d):\ \tau_d\text{ vecinas congruentes alrededor de una central congruente}.}
+\]
+
+En cuatro dimensiones: `5 != 24`, `0.264911...R != R` y
+`K6 != K1 join G_24-cell`.
+
+## 4. La igualdad de radios no implica igualdad de estructura
 
 El hueco cuadrangular plano y el hueco octaédrico tridimensional comparten el
 valor:
@@ -80,7 +214,7 @@ Sus grafos de contacto son distintos:
 La coincidencia métrica es exacta; la identificación estructural no se sigue de
 ella.
 
-## 4. Prisma y octaedro como dos tipos de enlace sobre las mismas ternas
+## 5. Prisma y octaedro como dos tipos de enlace sobre las mismas ternas
 
 Sean `H={H0,H1,H2}` y `A={A0,A1,A2}`, cada una con sus tres aristas internas, y
 sea `M` una correspondencia perfecta entre ambas. Entonces:
@@ -126,7 +260,7 @@ selecciones tipadas de enlaces sobre el mismo soporte de seis posiciones:
 - `M`: correspondencias directas del prisma;
 - `K3,3 \ M`: enlaces cruzados del octaedro, que forman `C6`.
 
-## 5. Celdas triangulares y cuadrangulares en distintos niveles
+## 6. Celdas triangulares y cuadrangulares en distintos niveles
 
 Se define una celda `Fk` por una frontera ordenada de `k` vértices y un nivel
 `l`. La inserción estelar de un centro `g` genera:
@@ -151,7 +285,7 @@ se sustituye por un hub y `k` triángulos, el cambio es
 `Δ=(1,4,3)`. El registro jerárquico padre-hijos es un objeto adicional y no se
 cuenta como si todas esas caras pertenecieran simultáneamente al mismo nivel.
 
-## 6. Cruces visibles y vértices reales
+## 7. Cruces visibles y vértices reales
 
 Una superposición proyectada conserva el tipo de cada segmento. Dos aristas de
 capas distintas pueden:
@@ -166,13 +300,18 @@ El cruce interior de dos segmentos con extremos distintos se clasifica como
 de incidencia lo declara. Esta distinción es necesaria para digitalizar las
 fotografías de varillas sin convertir cada cruce visual en una unión.
 
-## 7. Qué está establecido y qué queda abierto
+## 8. Qué está establecido y qué queda abierto
 
 | Afirmación | Estado |
 |---|---|
 | Fórmula del anillo regular | derivación exacta |
 | Fórmula desigual y solución numérica | derivación exacta + cómputo reproducible |
 | Recursión por reflexión de Descartes | resultado clásico implementado |
+| Familia colineal `n=2`, `r>0`, y límite `r -> 0` | derivación exacta + caso computacional existente |
+| Regla intersticial simplex `I(d)` | derivación exacta + implementación en `R^d` |
+| Coordenadas y contactos del 4-simplex | construcción exacta + pruebas computacionales |
+| Regla kissing `K(d)` y `tau_4=24` | resultado clásico + realización `D4` verificada |
+| Grafo exterior del 24-cell: 24 vértices, grado 8 y 96 aristas | resultado computado a partir de coordenadas exactas |
 | Seis matchings y descomposición prisma/octaedro | demostración combinatoria + pruebas exhaustivas finitas |
 | Refinamiento `Fk -> k F3` | definición combinatoria verificada |
 | Identificación de cruces en las cinco fotos | experimento de digitalización pendiente |
@@ -198,7 +337,7 @@ Una infografía generada que atribuye tres hexágonos regulares a ese mismo cent
 no coincide con las tablas fuente y queda clasificada como visualización
 derivada no utilizable para ese conteo.
 
-## 8. Visualizaciones
+## 9. Visualizaciones
 
 - `visualizations/interstitial_regular_rings.svg`
 - `visualizations/prism_octahedron_typed.svg`

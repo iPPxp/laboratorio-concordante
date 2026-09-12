@@ -11,10 +11,20 @@ import numpy as np
 from .geometry import normalize_rows
 
 
+def _normalized_points_3d(points: np.ndarray) -> np.ndarray:
+    normalized = normalize_rows(points)
+    if normalized.shape[1] != 3:
+        raise ValueError(
+            "El exportador visual actual acepta solo R^3; "
+            "una configuracion R^4 requiere un proyector 4D declarado."
+        )
+    return normalized
+
+
 def _project(points: np.ndarray) -> np.ndarray:
     # Proyeccion ortografica fija: permite inspeccion reproducible, no perspectiva.
     matrix = np.asarray(((0.8660254, -0.5, 0.0), (0.2886751, 0.5, -0.8164966)))
-    return normalize_rows(points) @ matrix.T
+    return _normalized_points_3d(points) @ matrix.T
 
 
 def write_shell_svg(path: Path, title: str, points: np.ndarray) -> None:
@@ -44,7 +54,10 @@ def write_interactive_html(path: Path, title: str, point_sets: dict[str, np.ndar
     El archivo es una herramienta de inspeccion: su rotacion no calcula rigidez,
     contacto ni optimalidad. Esos valores proceden del modelo geometrico aparte.
     """
-    serializable = {name: normalize_rows(points).round(12).tolist() for name, points in point_sets.items()}
+    serializable = {
+        name: _normalized_points_3d(points).round(12).tolist()
+        for name, points in point_sets.items()
+    }
     payload = json.dumps(serializable, ensure_ascii=False)
     path.write_text(
         f'''<!doctype html>

@@ -15,6 +15,8 @@ from .geometry import TOLERANCE, epsilon_threshold, normalize_rows
 def direction_subset(source: np.ndarray, target: np.ndarray, tolerance: float = TOLERANCE) -> bool:
     source = normalize_rows(source)
     target = normalize_rows(target)
+    if source.shape[1] != target.shape[1]:
+        raise ValueError("source y target deben pertenecer al mismo R^d.")
     return all(any(np.linalg.norm(point - candidate) <= tolerance for candidate in target) for point in source)
 
 
