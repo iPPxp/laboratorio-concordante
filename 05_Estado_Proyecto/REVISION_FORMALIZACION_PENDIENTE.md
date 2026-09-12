@@ -1,6 +1,8 @@
 # Revision de formalizacion pendiente
 
-Fecha: 2026-07-06.
+Fecha original: 2026-07-06.
+
+Última reconciliación: 2026-09-12.
 
 Estatus: revision operativa no decisoria.
 
@@ -25,7 +27,8 @@ No aparece una deuda nueva bloqueante para el estado actual. Documento 04 amplio
 | `MOC-001` | grafo local de experiencia y metrica geometrica | atendido por `D-2026-07-09-001`; queda como evidencia estructural auxiliar, no canonica |
 | `MOC-001` | autorizacion interna para propuestas candidatas a Canon y Documento 04 | atendida por `D-2026-07-09-002`; sin edicion oficial |
 | `MOC-001` | `MOC-CANON-DOC04-IMPACT-001` | atendido por `D-2026-07-09-003`; matriz/propuesta candidata, sin incorporacion oficial |
-| `MOC-001` | `MOC-CANON-DOC04-ADOPT-GATE-001` | atendido por `D-2026-07-09-004`; lista para aplicacion posterior, sin edicion oficial ejecutada |
+| `MOC-001` | `MOC-CANON-DOC04-ADOPT-GATE-001` | atendido por `D-2026-07-09-004`; la aplicación posterior fue ejecutada después por `D-2026-07-09-005` |
+| `MOC-001` | `MOC-CANON-DOC04-APPLY-001` | atendido y ejecutado por `D-2026-07-09-005`; sólo queda monitoreo posterior si se abre por decisión explícita |
 | `MOC-001` | criterio futuro de evaluadores, solo si alguna decision posterior evita la via de simulacion documental | bloqueado hasta decision |
 | `MOC-001` | formato final de reporte agregado si alguna vez se autoriza ejecucion o simulacion adicional | deuda futura |
 | `AO-001` | formalizacion amplia posterior de Documento 04 mas alla de `Pi_tb` / `Eq_tb` acotados | atendido en v0 documental por `D-2026-07-06-006` |
@@ -90,4 +93,8 @@ No falta formalizar nada para conservar el estado actual del Laboratorio.
 
 Si se continua el frente AO, la siguiente ruta defensible debe solicitar una decision explicita posterior para usar `AO-EXT-REAL-001` en una reconsideracion de readiness global, cierre global, promocion formal de `REPORT_LAYER` o exportacion general R4/Gamma. `AO-GLOBAL-READINESS-001` fija por ahora `mantener_no_autorizado`, la compuerta base `AO-EXT-EVID-GATE-001` deja `external_evidence_ready: false`, la suite real `AO-EXT-REAL-001` deja `external_evidence_ready: true` sin autorizacion global, y `AO-PPI-BRIDGE-004` queda como estado actual local de deudas `AO-PPI`, no como cierre global.
 
-Si se continua el frente MOC, `MOC-CANON-DOC04-ADOPT-GATE-001` ya queda atendida por `D-2026-07-09-004`. La siguiente ruta posible, solo si se decide editar oficialmente, es `MOC-CANON-DOC04-APPLY-001`: aplicar de forma acotada a `M-001` y Documento 04, ejecutar verificacion posterior y conservar `M-000` sin cambio textual.
+Si se continúa el frente MOC, `MOC-CANON-DOC04-ADOPT-GATE-001` y
+`MOC-CANON-DOC04-APPLY-001` ya están atendidos por `D-2026-07-09-004` y
+`D-2026-07-09-005`. La ruta posterior defensible es únicamente
+`MOC-CANON-DOC04-POST-ADOPT-MONITOR-001`, si una decisión explícita abre la
+revisión de nuevas interacciones con AO. No hay otra adopción oficial pendiente.

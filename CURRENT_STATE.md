@@ -2,7 +2,19 @@
 
 Estamos aqui.
 
-Ultimo expediente cerrado:
+Corte de coherencia: 2026-09-12.
+
+- Mapa vigente: `05_Estado_Proyecto/MAPA_COHERENCIA_2026-09-12.md`.
+- El corpus `LAB-RESEARCH-PROVENANCE-001` está materializado en `origin/main`;
+  sólo su identidad y procedencia son canónicas, no sus claims científicos.
+- El recovery de ChatGPT está preservado y clasificado en Registro Histórico;
+  no es Canon ni superficie activa.
+- `RH-003` es el último procesamiento histórico cerrado. Los cierres
+  sustantivos anteriores conservan su significado y no se reabren.
+- Frentes abiertos: `MOC-001`, `AO-001` y `TCS-001`, todos con límites ya
+  registrados y sin nueva autorización global.
+
+Ultimos expedientes sustantivos cerrados:
 
 - `HXI-001` cerrado en mantenimiento local por `D-2026-07-06-012`; `H-Xi` sigue no admitida y `Xi_eval` queda solo como herramienta local historica/auxiliar.
 - `AUD-001` cerrado como expediente completo en version documental/operativa v0 por `D-2026-07-06-011`; cualquier promocion futura de `REPORT_LAYER`, R4/Gamma, suite completa o parser ampliado requiere decision separada.
@@ -686,14 +698,15 @@ NO volver a discutir sin reapertura explicita:
 Entrada recomendada mientras `HANDOFF.md` y `HANDOFF_PACKAGE.md` estan inactivos:
 
 1. `CURRENT_STATE.md`
-2. `05_Estado_Proyecto/ESTADO_ACTUAL.md`
-3. `README.md`
-4. `INDEX.md`
-5. `PROMPT_MAESTRO.md`
-6. `01_Canon/M-000_Reglas_Fundamentales.md`
-7. `01_Canon/M-001_Auditoria_Arquitectonica.md`
-8. `02_Documentos/C-002_RFC_Operativo_Auditor_v0.md`
-9. `03_Expedientes/AUD-001_Decision_Promocion_SPEC-RFC-AUDITOR-V0.md`
+2. `05_Estado_Proyecto/MAPA_COHERENCIA_2026-09-12.md`
+3. `05_Estado_Proyecto/ESTADO_ACTUAL.md`
+4. `README.md`
+5. `INDEX.md`
+6. `PROMPT_MAESTRO.md`
+7. `01_Canon/M-000_Reglas_Fundamentales.md`
+8. `01_Canon/M-001_Auditoria_Arquitectonica.md`
+9. `02_Documentos/C-002_RFC_Operativo_Auditor_v0.md`
+10. expediente padre del frente elegido.
 
 ## LAB-RESEARCH-PROVENANCE-001
 
@@ -705,8 +718,11 @@ SCIENTIFIC_CLAIMS_CANONIZED_AS_TRUE=NO
 MATHEMATICAL_CLAIMS_CANONIZED_AS_PROVEN=NO
 EMPIRICAL_VALIDATION_CANONIZED=NO
 ACTIVATION=NO
-GIT_GOVERNANCE_RECORD=PENDING_HUMAN_REVIEW_AND_COMMIT
+GIT_GOVERNANCE_RECORD=MATERIALIZED_IN_ORIGIN_MAIN
+INCORPORATION_COMMIT=2c3264c473c865835571a1df4b28e1a022790695
+GOVERNANCE_COMMIT=f6ba1f7e35ae5f8b771ba6c0a73cb18d65c19317
 
 La decisión `D-2026-08-09-001` reconoce oficialmente el corpus y su
-procedencia. No modifica retrospectivamente el payload histórico ni autoriza
-operación, push, tag o cambios en otros frentes.
+procedencia. La materialización Git posterior no modifica retrospectivamente el
+payload histórico, no canoniza claims y no autoriza operación, tag, activación
+o cambios en otros frentes.

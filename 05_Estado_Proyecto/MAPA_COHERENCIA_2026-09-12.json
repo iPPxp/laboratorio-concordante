@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-09-12",
+  "audit_base": "a3fb716898db6f425bcd539c2dc6415f28f53d6a",
+  "status": "REPOSITORY_COHERENT_WITH_EXPLICIT_OPEN_DEBTS",
+  "authority_changed": false,
+  "canon_scope_changed": false,
+  "activation_changed": false,
+  "repository_inventory_at_audit_base": {
+    "tracked_files": 711,
+    "root": 11,
+    "canon": 4,
+    "official_documents": 9,
+    "expedientes": 411,
+    "historical_registry": 60,
+    "project_state": 9,
+    "automation": 168,
+    "degenerate_sphere_research": 39
+  },
+  "open_expedientes": [
+    {
+      "id": "MOC-001",
+      "status": "OPEN_THEORETICAL_OPERATIONAL_MAINTENANCE_NO_EMPIRICAL_EXECUTION"
+    },
+    {
+      "id": "AO-001",
+      "status": "OPEN_GLOBAL_READINESS_REMAINS_UNAUTHORIZED"
+    },
+    {
+      "id": "TCS-001",
+      "status": "OPEN_PROVISIONAL_NONCANONICAL_THEORY"
+    }
+  ],
+  "transferred_expedientes": ["PSI-001"],
+  "frozen_items": ["B-001.5", "H-B.6", "H-B.7"],
+  "latest_historical_processing_close": "RH-003",
+  "research_corpus": {
+    "id": "LAB-RESEARCH-PROVENANCE-001",
+    "route_count": 39,
+    "source_commit": "96843d913fb21e673707f01da8e2929cda8c33be",
+    "source_commit_is_ancestor_of_origin_main": false,
+    "incorporation_commit": "2c3264c473c865835571a1df4b28e1a022790695",
+    "incorporation_commit_is_ancestor_of_origin_main": true,
+    "governance_commit": "f6ba1f7e35ae5f8b771ba6c0a73cb18d65c19317",
+    "governance_commit_is_ancestor_of_origin_main": true,
+    "corpus_identity_canonical": true,
+    "provenance_chain_canonical": true,
+    "scientific_claims_canonical_as_true": false,
+    "mathematical_claims_canonical_as_proven": false,
+    "empirical_validation": false,
+    "activation": false,
+    "manifest_hashes_verified": "39/39",
+    "main_research_tests": "12/12",
+    "projective_n2_tests": "6/6"
+  },
+  "chatgpt_recovery": {
+    "batch_id": "RH-BATCH-2026-09-11-CHATGPT-RECOVERY-001",
+    "payload_files": 23,
+    "custody_commit": "c3a4855b71ada97c940adba7d7820418c67c8a9c",
+    "organization_commit": "a3fb716898db6f425bcd539c2dc6415f28f53d6a",
+    "custody_preserved": true,
+    "git_incorporation": true,
+    "content_classified": true,
+    "canon": false,
+    "semantic_authority": false,
+    "activation": false
+  },
+  "moc_doc04_application": {
+    "decision": "D-2026-07-09-005",
+    "route": "MOC-CANON-DOC04-APPLY-001",
+    "executed": true,
+    "m000_changed": false,
+    "m001_changed": true,
+    "document_04_changed": true,
+    "global_closure_authorized": false,
+    "psi_vocabulary_canonized": false
+  },
+  "validation": {
+    "repository_tests": "110/110",
+    "json_parse_errors": 0,
+    "csv_parse_errors": 0,
+    "markdown_link_errors": 0
+  },
+  "open_debts": [
+    "GLOBAL_CONFLUENCE",
+    "GLOBAL_PROJECTION_EQUIVALENCE",
+    "REPORT_LAYER_PROMOTION",
+    "R4_GAMMA_GLOBAL_EXPORT",
+    "AO_GLOBAL_READINESS_RECONSIDERATION",
+    "TCS_001_MATURATION",
+    "OPTIONAL_MOC_POST_ADOPTION_MONITOR",
+    "INDEPENDENT_SCIENTIFIC_REVIEW",
+    "EXTERNAL_PSI_CANON_SOURCE_RECOVERY"
+  ]
+}

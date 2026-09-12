@@ -1,8 +1,11 @@
 # LAB-RESEARCH-PROVENANCE-001 — Corpus canónico y procedencia
 
-DOCUMENT_STATUS=CANONICAL_RECORD_CANDIDATE
+DOCUMENT_STATUS=CANONICAL_RECORD
 CANONIZATION_DECISION=HUMAN_APPROVED
-GIT_GOVERNANCE_RECORD=PENDING_HUMAN_REVIEW_AND_COMMIT
+GIT_GOVERNANCE_RECORD=MATERIALIZED_IN_ORIGIN_MAIN
+GOVERNANCE_COMMIT=f6ba1f7e35ae5f8b771ba6c0a73cb18d65c19317
+GIT_STATUS_RECONCILED_ON=2026-09-12
+SEMANTIC_SCOPE_CHANGED_BY_RECONCILIATION=NO
 
 ## Objeto canónico
 
@@ -49,3 +52,16 @@ ECO_CAN_LEY_STATUS_CHANGED=NO
 
 Cualquier evaluación científica, formal, empírica, semántica u operacional
 requiere su propia evidencia y decisión.
+
+## Reconciliación factual de gobernanza
+
+La versión inicial de este registro conservaba
+`GIT_GOVERNANCE_RECORD=PENDING_HUMAN_REVIEW_AND_COMMIT`, que describía el estado
+previo a su materialización. El registro entró en Git mediante
+`f6ba1f7e35ae5f8b771ba6c0a73cb18d65c19317`, commit alcanzable desde
+`origin/main` en el corte del 2026-09-12.
+
+Esta corrección actualiza únicamente el estado factual de Git. No amplía el
+objeto canónico, no canoniza claims, no declara validación y no activa ningún
+contrato, validador o frente operativo. Evidencia de la reconciliación:
+`03_Expedientes/COH-001_Auditoria_Coherencia_Repositorio_2026-09-12.md`.

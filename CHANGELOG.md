@@ -2,6 +2,9 @@
 
 ## 2026-09-12
 
+- Reconciliada la coherencia administrativa del repositorio mediante `COH-001`: corregidos estados Git obsoletos del corpus `LAB-RESEARCH-PROVENANCE-001`, sin ampliar su objeto canónico ni promover claims científicos.
+- Añadidos `MAPA_COHERENCIA_2026-09-12.md/.json` y el índice padre `TCS-001.md`; actualizadas las rutas de entrada, el estado de `RH-003` y la secuencia vigente posterior a `MOC-CANON-DOC04-APPLY-001`.
+- Verificados 39/39 hashes del corpus científico, 12/12 pruebas del estudio principal, 6/6 pruebas N2 y 110/110 pruebas generales; los payloads de investigación y recovery permanecen intactos.
 - Procesado `RH-BATCH-2026-09-11-CHATGPT-RECOVERY-001` mediante `RH-003`: añadidos catálogo analítico, clasificación JSON y rutas de lectura, sin mover ni modificar payload y sin promoción a Canon.
 - Separados documentalmente seis conjuntos: custodia, Exact Trace, geometría HEART/Paper II, MOC conceptual/visual, Psicología Concordante y Paper I; registrados conflictos de cronología, vocabulario y dependencias ausentes.
 - Confirmados duplicados editoriales intencionales dentro de ZIP y copias sueltas; se conservan todos, sin deduplicación ni limpieza destructiva.

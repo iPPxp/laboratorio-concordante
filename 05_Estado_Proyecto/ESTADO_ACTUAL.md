@@ -4,6 +4,9 @@ Estatus: estado operativo vigente.
 
 Fecha de inicializacion del repositorio: 2026-07-01.
 
+Última reconciliación administrativa: 2026-09-12. Véase
+`MAPA_COHERENCIA_2026-09-12.md`.
+
 ## Documentos oficiales consolidados
 
 - [x] Documento 00 - Naturaleza: consolidado desde fuentes previas por `D-2026-07-03-011`.
@@ -19,8 +22,9 @@ Fecha de inicializacion del repositorio: 2026-07-01.
   ligadas a `96843d913fb21e673707f01da8e2929cda8c33be` y
   `2c3264c473c865835571a1df4b28e1a022790695`. No canoniza como
   verdaderas o demostradas las afirmaciones científicas, no declara validación
-  empírica y no implica activación operacional. Registro Git pendiente de
-  revisión humana y commit.
+  empírica y no implica activación operacional. La incorporación
+  `2c3264c...` y el registro de gobernanza `f6ba1f7...` son alcanzables desde
+  `origin/main`; esto corrige el estado Git, no amplía la autoridad.
 
 ## Documentos oficiales de Nivel C
 
@@ -55,6 +59,7 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 - `DO-001`
 - `RH-001`
 - `RH-002`
+- `RH-003` (procesamiento histórico del recovery; sin promoción)
 - `REC-001`
 - `AUT-001`
 - `R001-001`
@@ -740,6 +745,9 @@ Fecha de inicializacion del repositorio: 2026-07-01.
 ## Ultimo expediente cerrado
 
 `HXI-001` (cerrado en mantenimiento local por `D-2026-07-06-012`); `AUD-001` (cerrado como version documental/operativa v0 por `D-2026-07-06-011`); `DOCS-001`.
+
+Último procesamiento histórico cerrado: `RH-003`, organización documental del
+recovery de ChatGPT sin promoción semántica.
 
 Ultimo expediente tecnico cerrado: `AUT-002` por `D-2026-07-06-010`; `R001-001` por `D-2026-07-06-009`; `AUT-001`.
 

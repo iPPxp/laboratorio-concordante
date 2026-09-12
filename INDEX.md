@@ -5,13 +5,14 @@ Este archivo es el mapa de entrada del Laboratorio Concordante.
 ## Lectura recomendada para una IA nueva
 
 1. Leer `CURRENT_STATE.md`.
-2. Leer `05_Estado_Proyecto/ESTADO_ACTUAL.md`.
-3. Leer `README.md`.
-4. Leer `Licencia_y_Derechos.md` si la tarea implica uso, copia, publicacion, redistribucion o salida externa.
-5. Leer `PROMPT_MAESTRO.md`.
-6. Leer `01_Canon/M-000_Reglas_Fundamentales.md`.
-7. Leer `01_Canon/M-001_Auditoria_Arquitectonica.md`.
-8. Leer solo los documentos o expedientes necesarios para la tarea.
+2. Leer `05_Estado_Proyecto/MAPA_COHERENCIA_2026-09-12.md`.
+3. Leer `05_Estado_Proyecto/ESTADO_ACTUAL.md`.
+4. Leer `README.md`.
+5. Leer `Licencia_y_Derechos.md` si la tarea implica uso, copia, publicacion, redistribucion o salida externa.
+6. Leer `PROMPT_MAESTRO.md`.
+7. Leer `01_Canon/M-000_Reglas_Fundamentales.md`.
+8. Leer `01_Canon/M-001_Auditoria_Arquitectonica.md`.
+9. Leer solo el expediente padre y los documentos necesarios para la tarea.
 
 Nota: `HANDOFF.md`, `HANDOFF_PACKAGE.md`, `VISION_PAPER_PROPUESTA.md` y `VISION_PAPER_FINAL_REFERENCIAS.md` estan inactivos hasta nuevo aviso.
 
@@ -40,16 +41,27 @@ Si hay conflicto entre fuentes, usar este orden:
 
 El registro historico nunca vence por si mismo a un documento oficial o a una decision registrada.
 
-## Candidata aislada de investigación y procedencia
+## Corpus de investigación y procedencia
 
 - investigacion_empaquetamientos_esfericos_degenerantes/: payload de
-  investigación candidato, sin autoridad semántica, canonización o activación.
-- 03_Expedientes/LAB-RESEARCH-PROVENANCE-001.md: registro candidato.
+  investigación incorporado en Git; su identidad y procedencia son canónicas,
+  pero sus claims no quedan canonizados como verdaderos o demostrados.
+- 03_Expedientes/LAB-RESEARCH-PROVENANCE-001.md: registro vigente.
 - 03_Expedientes/LAB-RESEARCH-PROVENANCE-001_PROVENANCE.md: identidad,
-  procedencia y límites de la transferencia.
+  procedencia y límites de la fase de transferencia aislada.
 
-Esta navegación está preparada para revisión humana. No demuestra incorporación
-en main ni en origin/main.
+Los commits `2c3264c...` y `f6ba1f7...` son alcanzables desde `origin/main`.
+Esto demuestra materialización Git, no autoridad semántica, validación ni
+activación.
+
+## Corte de coherencia vigente
+
+- `05_Estado_Proyecto/MAPA_COHERENCIA_2026-09-12.md`: mapa humano de autoridad,
+  estados y deudas vivas.
+- `05_Estado_Proyecto/MAPA_COHERENCIA_2026-09-12.json`: estado estructurado.
+- `03_Expedientes/COH-001_Auditoria_Coherencia_Repositorio_2026-09-12.md`:
+  evidencia y límites de la reconciliación.
+- `03_Expedientes/TCS-001.md`: entrada padre al expediente provisional TCS.
 
 ## Recovery ChatGPT 2026-09-11
 

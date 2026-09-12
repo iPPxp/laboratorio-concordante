@@ -177,13 +177,18 @@ Problemas abiertos relevantes:
 
 Este estado debe validarse y enriquecerse a medida que se incorporen documentos previos, expedientes completos o conversaciones historicas.
 
-## Candidata aislada de investigación
+## Corpus de investigación y procedencia
 
-Se preparó una candidata de investigación y procedencia para
-investigacion_empaquetamientos_esfericos_degenerantes/. Su estado es
-INCORPORATION_CANDIDATE: no tiene rama, staging, commit, merge o push y no
-concede autoridad semántica, canonización ni activación.
+`investigacion_empaquetamientos_esfericos_degenerantes/` está materializado en
+`origin/main` mediante el commit de incorporación `2c3264c...`; su registro de
+gobernanza fue incorporado por `f6ba1f7...`. `D-2026-08-09-001` canoniza
+únicamente la identidad de sus 39 rutas y la cadena de procedencia.
 
-La unidad proyectiva N2 queda conservada aquí como procedencia. Su autoridad de
-trabajo corresponde a una candidata separada de ConcordIA y no concede al
-Laboratorio autoridad semántica MOC.
+La materialización no canoniza como verdaderas sus afirmaciones científicas, no
+declara demostrados todos sus claims, no aporta validación empírica y no activa
+ConcordIA, la unidad proyectiva N2 ni autoridad semántica MOC. La fase de
+“candidata aislada” se conserva como historial de preparación en
+`03_Expedientes/LAB-RESEARCH-PROVENANCE-001_PROVENANCE.md`.
+
+Mapa operativo actualizado:
+`05_Estado_Proyecto/MAPA_COHERENCIA_2026-09-12.md`.

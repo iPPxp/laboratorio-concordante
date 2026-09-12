@@ -1,5 +1,16 @@
 # Automatizacion
 
+## Coherencia del repositorio
+
+`repository_coherence.py` verifica sin modificar archivos el corte
+`MAPA_COHERENCIA_2026-09-12`: estados Git reconciliados, expedientes abiertos,
+ruta MOC vigente, índice TCS y los manifiestos protegidos del corpus científico
+y del recovery. No concede autoridad ni activación.
+
+```powershell
+python .\repository_coherence.py
+```
+
 Estatus: superficie ejecutable provisional.
 
 Esta carpeta contiene herramientas no mutantes del Laboratorio Concordante.

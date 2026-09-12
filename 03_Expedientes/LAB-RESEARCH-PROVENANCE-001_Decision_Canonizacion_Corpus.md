@@ -1,7 +1,7 @@
 # LAB-RESEARCH-PROVENANCE-001 — Decisión de canonización del corpus
 
 DECISION_ID=D-2026-08-09-001
-DECISION_STATUS=HUMAN_APPROVED_GIT_RECORD_PENDING
+DECISION_STATUS=HUMAN_APPROVED_GIT_RECORD_MATERIALIZED
 DECISION_DATE=2026-08-09
 
 ## Decisión
@@ -36,7 +36,7 @@ MANIFEST_SHA256=193feb51aaffc0f029bb3812acb68f0a746500eaf3f6bb55262f81d17b8923c8
 - No se modifican retrospectivamente los documentos históricos incorporados.
 - No cambian ConcordIA 2A–2C, MOC 3A–3B, C, H3 o ECO-CAN-LEY-001.
 
-## Estado de materialización
+## Estado al emitirse la decisión
 
 HUMAN_CANONIZATION_DECISION=YES
 GIT_RECORD_PREPARED=YES
@@ -45,4 +45,20 @@ PUSH_EXECUTED=NO
 TAG_CREATED=NO
 ACTIVATION_EXECUTED=NO
 
-El diff de gobernanza debe recibir revisión humana antes de cualquier commit.
+Estas banderas conservan el corte del 2026-08-09 antes del commit de gobernanza.
+
+## Reconciliación factual posterior
+
+```text
+GOVERNANCE_COMMIT=f6ba1f7e35ae5f8b771ba6c0a73cb18d65c19317
+GOVERNANCE_COMMIT_REACHABLE_FROM_ORIGIN_MAIN=YES
+GIT_RECORD_COMMITTED_CURRENT=YES
+PUSH_EXECUTED_CURRENT=YES
+TAG_CREATED=NO
+ACTIVATION_EXECUTED=NO
+SEMANTIC_SCOPE_CHANGED=NO
+```
+
+El commit materializa el registro aprobado; no añade autoridad científica,
+empírica, semántica u operacional. Reconciliación documentada por `COH-001` el
+2026-09-12.

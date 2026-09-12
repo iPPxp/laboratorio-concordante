@@ -1,6 +1,8 @@
 # LAB-RESEARCH-PROVENANCE-001 — Procedencia de la candidata
 
 DOCUMENT_STATUS=ISOLATED_PREPARATION_CANDIDATE
+HISTORICAL_PHASE_RECORD=YES
+CURRENT_GIT_STATUS_SEE=LAB-RESEARCH-PROVENANCE-001.md
 HUMAN_DECISION_ID=LAB-RESEARCH-PROVENANCE-ISOLATED-PREPARATION-001
 PLAN_ID=LAB-RESEARCH-PROVENANCE-INCORPORATION-001
 
@@ -63,3 +65,12 @@ ACTIVATION_EXECUTED=NO
 
 La candidata requiere revisión humana del diff completo antes de cualquier
 autorización Git posterior.
+
+## Nota de fase posterior
+
+Las banderas anteriores describen fielmente la preparación aislada y no se
+reescriben retrospectivamente. La incorporación limitada ocurrió después en
+`2c3264c473c865835571a1df4b28e1a022790695` y el registro de gobernanza en
+`f6ba1f7e35ae5f8b771ba6c0a73cb18d65c19317`; ambos son alcanzables desde
+`origin/main` en el corte del 2026-09-12. Esta nota no altera la procedencia ni
+los límites de autoridad.
