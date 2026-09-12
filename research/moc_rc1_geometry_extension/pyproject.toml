@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moc-rc1-geometry-extension"
+version = "0.1.0"
+description = "Candidate non-mutating relational geometry sidecar for MOC Base 1.0-RC1"
+requires-python = ">=3.12,<3.13"
+dependencies = []
+
+[tool.setuptools]
+py-modules = ["moc_geometry_extension"]
+
