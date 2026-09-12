@@ -1,0 +1,33 @@
+{"id":"DEC-001","claim":"La unicidad algorítmica general de MOC pasa a cierre negativo provisional local.","status":"PROPOSED_CLOSED_NEGATIVE","authority":"RESEARCH_ONLY","canon_change":false}
+{"id":"DEC-002","claim":"La irreducibilidad algorítmica de Xi pasa a cierre negativo provisional local.","status":"PROPOSED_CLOSED_NEGATIVE","authority":"RESEARCH_ONLY","canon_change":false}
+{"id":"DEC-003","claim":"La distintividad algorítmica de reorganización pasa a cierre negativo provisional local.","status":"PROPOSED_CLOSED_NEGATIVE","authority":"RESEARCH_ONLY","canon_change":false}
+{"id":"H-001","claim":"P y V tienen efectos predictivos diferenciables.","status":"HYPOTHESIZED","test":"merge P/V and paired counterfactuals"}
+{"id":"H-002","claim":"P y Eaf tienen efectos predictivos diferenciables.","status":"HYPOTHESIZED","test":"merge P/Eaf"}
+{"id":"H-003","claim":"P y Act tienen efectos predictivos diferenciables.","status":"HYPOTHESIZED","test":"merge P/Act"}
+{"id":"H-004","claim":"P y S tienen efectos predictivos diferenciables.","status":"HYPOTHESIZED","test":"merge P/S"}
+{"id":"H-005","claim":"Eaf y Act tienen efectos predictivos diferenciables.","status":"HYPOTHESIZED","test":"merge Eaf/Act"}
+{"id":"H-006","claim":"Eaf y V tienen efectos predictivos diferenciables.","status":"HYPOTHESIZED","test":"merge Eaf/V"}
+{"id":"H-007","claim":"Eaf y S tienen efectos predictivos diferenciables.","status":"HYPOTHESIZED","test":"merge Eaf/S"}
+{"id":"H-008","claim":"Act y V tienen efectos predictivos diferenciables.","status":"HYPOTHESIZED","test":"merge Act/V"}
+{"id":"H-009","claim":"Act y S tienen efectos predictivos diferenciables.","status":"HYPOTHESIZED","test":"merge Act/S"}
+{"id":"H-010","claim":"V y S tienen efectos predictivos diferenciables.","status":"HYPOTHESIZED","test":"merge V/S"}
+{"id":"H-011","claim":"Los cinco factores son conjuntamente suficientes para las tareas registradas.","status":"HYPOTHESIZED","test":"M-CBM vs G-CAP"}
+{"id":"H-012","claim":"Ningún componente es redundante.","status":"HYPOTHESIZED","test":"drop-one equivalence"}
+{"id":"H-013","claim":"Cinco factores superan cuatro slots igualados.","status":"HYPOTHESIZED","test":"5-slot vs 4-slot"}
+{"id":"H-014","claim":"Un sexto estado D no añade valor incremental.","status":"HYPOTHESIZED","test":"M-CBM vs M+D-state"}
+{"id":"H-015","claim":"D como operación supera D como estado.","status":"HYPOTHESIZED","test":"D3 vs D1"}
+{"id":"H-016","claim":"MOC mejora eficiencia de muestra.","status":"HYPOTHESIZED","test":"learning curves"}
+{"id":"H-017","claim":"MOC mejora predicción de transiciones.","status":"HYPOTHESIZED","test":"transformation holdout"}
+{"id":"H-018","claim":"Relaciones MOC mejoran predicción del campo de posibilidades.","status":"HYPOTHESIZED","test":"M-REL vs M-CBM"}
+{"id":"H-019","claim":"MOC mejora predicción de intervención frente a slots anónimos.","status":"HYPOTHESIZED","test":"do(component) holdout"}
+{"id":"H-020","claim":"MOC mejora transferencia de dominio.","status":"HYPOTHESIZED","test":"domain holdout"}
+{"id":"H-021","claim":"MOC mejora calibración.","status":"HYPOTHESIZED","test":"Brier ECE coverage"}
+{"id":"H-022","claim":"Una ventaja MOC no depende sólo de nombres.","status":"HYPOTHESIZED","test":"type permutation"}
+{"id":"H-023","claim":"Una ventaja MOC sobrevive label budget igualado.","status":"HYPOTHESIZED","test":"G-SLOTS matched supervision"}
+{"id":"H-024","claim":"Los tipos permanecen estables temporalmente.","status":"HYPOTHESIZED","test":"longitudinal factor alignment"}
+{"id":"H-025","claim":"Las intervenciones por tipo producen matrices de efectos diferenciables.","status":"HYPOTHESIZED","test":"intervention specificity"}
+{"id":"OBS-001","claim":"La interfaz ejecutable contiene diez fronteras y veinte direcciones.","status":"SUPPORTED_BY_CONTRACT_TEST","scope":"protocol only"}
+{"id":"OBS-002","claim":"La vista de modelo excluye el oracle estructural.","status":"SUPPORTED_BY_CONTRACT_TEST","scope":"schema only"}
+{"id":"OBS-003","claim":"La supervisión conceptual desigual invalida igualdad de presupuesto.","status":"SUPPORTED_BY_CONTRACT_TEST","scope":"budget audit"}
+{"id":"OBS-004","claim":"No existe corpus ni resultado empírico en este módulo.","status":"SUPPORTED_BY_INVENTORY","scope":"current module"}
+{"id":"OBS-005","claim":"El valor predictivo incremental MOC permanece sin resolver.","status":"UNRESOLVED","scope":"requires external data"}
