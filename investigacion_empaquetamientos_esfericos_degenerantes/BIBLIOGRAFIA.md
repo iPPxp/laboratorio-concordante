@@ -18,6 +18,10 @@
    Uso: formulacion geometrica clasica de circulos tangentes; no identifica una superposicion Farey con un empaquetamiento apoloniano.
 8. **Edelsbrunner, H. & Mücke, E. P. (1994).** *Three-Dimensional Alpha Shapes.* ACM Transactions on Graphics 13(1), 43-72. DOI: [10.1145/174462.156635](https://doi.org/10.1145/174462.156635).  
    Uso futuro: candidato para definir y medir vacios a escala; no se usa en los resultados actuales.
+9. **Musin, O. R. (2008).** *The kissing number in four dimensions.* Annals of Mathematics 168(1), 1-32. DOI: [10.4007/annals.2008.168.1](https://doi.org/10.4007/annals.2008.168.1).
+
+   Uso: cota superior clásica `tau_4=24`. La realización inferior concreta se
+   verifica por separado con las 24 direcciones `D4` incorporadas al código.
 
 ## Afirmaciones y alcance de sus fuentes
 
@@ -29,6 +33,8 @@
 | Los valores de `data/results_initial.*` | RESULTADO_COMPUTADO | Script y pruebas de este directorio | Demostracion independiente de los teoremas generales |
 | La raiz interior y las reflexiones de Descartes | RESULTADO_CLASICO + IMPLEMENTACION | Graham et al. 2003; pruebas unitarias | Que la superposicion Farey sea apoloniana |
 | Los conteos `16/7/1/1` de R3 | RESULTADO_COMPUTADO | Enumeracion del grafo R3 y geometria baricentrica en `r3_audit.py` | Semantica psicologica de `C6` |
+| El número de kissing en `R^4` es `tau_4=24` | RESULTADO_CLASICO | Musin 2008 | Que cualquier conjunto de 24 direcciones sea realizable o equivalente al 24-cell |
+| Las direcciones `D4` producen 24 contactos centrales y 96 exteriores | DERIVACION_SIMBOLICA + RESULTADO_COMPUTADO | Coordenadas explícitas y pruebas de `spherepack` | La cota superior `tau_4<=24` sin usar el resultado clásico |
 
 ## Necesidades bibliograficas antes de ampliar las pretensiones
 

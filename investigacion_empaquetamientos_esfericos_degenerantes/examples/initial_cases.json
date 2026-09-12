@@ -1,10 +1,11 @@
 {
-  "schema": "spherepack.dsl.initial.v1",
+  "schema": "spherepack.dsl.dimension-aware.v2",
   "cases": [
     {
       "case_id": "C2-antipodal-epsilon-0.10",
       "kind": "CENTERED_CONFIGURATION",
       "n": 2,
+      "ambient_dimension": 3,
       "outer_radius": 1,
       "central_radius": 0.1,
       "directions": [[1, 0, 0], [-1, 0, 0]],
@@ -14,10 +15,27 @@
       "case_id": "C6-octahedral-threshold",
       "kind": "CENTERED_CONFIGURATION",
       "n": 6,
+      "ambient_dimension": 3,
       "outer_radius": 1,
       "central_radius": 0.414214,
       "directions": [[1, 0, 0], [-1, 0, 0], [0, 1, 0], [0, -1, 0], [0, 0, 1], [0, 0, -1]],
       "epistemic_status": "RESULTADO_COMPUTADO"
+    },
+    {
+      "case_id": "C5-4-simplex-threshold",
+      "kind": "CENTERED_CONFIGURATION",
+      "n": 5,
+      "ambient_dimension": 4,
+      "outer_radius": 1,
+      "central_radius": 0.2649110640673518,
+      "directions": [
+        [0.790569415042095, 0.456435464587638, 0.322748612183951, 0.25],
+        [-0.790569415042095, 0.456435464587638, 0.322748612183951, 0.25],
+        [0, -0.912870929175277, 0.322748612183951, 0.25],
+        [0, 0, -0.968245836551854, 0.25],
+        [0, 0, 0, -1]
+      ],
+      "epistemic_status": "DERIVACION_SIMBOLICA"
     }
   ]
 }

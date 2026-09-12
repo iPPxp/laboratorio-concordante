@@ -36,7 +36,16 @@ def main() -> None:
     data_dir = PROJECT / "data"
     data_dir.mkdir(exist_ok=True)
     (data_dir / "results_initial.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
-    fields = ["name", "n", "minimum_unit_chord", "epsilon_infimum", "contact_pair_count_at_infimum", "affine_rank", "centeredness_claim"]
+    fields = [
+        "name",
+        "n",
+        "minimum_unit_chord",
+        "epsilon_infimum",
+        "contact_pair_count_at_infimum",
+        "affine_rank",
+        "centeredness_claim",
+        "ambient_dimension",
+    ]
     with (data_dir / "results_initial.csv").open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields)
         writer.writeheader()
@@ -49,7 +58,10 @@ def main() -> None:
         "Capas locales FCC y HCP",
         {name: configurations[name] for name in ("n6_octahedron", "n12_cuboctahedron_fcc_shell", "n12_hcp_shell")},
     )
-    print("RESULTADO_COMPUTADO: 7 configuraciones, 4 consultas de transicion, 3 SVG, visor 3D local, CSV y JSON.")
+    print(
+        f"RESULTADO_COMPUTADO: {len(reports)} configuraciones, "
+        f"{len(transitions)} consultas de transicion, 3 SVG, visor 3D local, CSV y JSON."
+    )
 
 
 if __name__ == "__main__":

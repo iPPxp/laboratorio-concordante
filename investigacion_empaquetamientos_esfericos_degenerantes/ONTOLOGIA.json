@@ -1,13 +1,16 @@
 {
-  "ontology_id": "spherepack.degenerate-centered.initial.v1",
+  "ontology_id": "spherepack.degenerate-centered.dimension-aware.v2",
   "status": "DEFINICION_PROPUESTA",
   "scope": "Euclidean geometry of finite centered hard-sphere configurations",
   "types": {
-    "Sphere": {"required": ["id", "center", "radius", "role"]},
-    "CenteredConfiguration": {"required": ["n", "epsilon", "directions", "outer_radius", "centeredness_evidence"]},
+    "Sphere": {"required": ["id", "ambient_dimension", "center", "radius", "role"]},
+    "CenteredConfiguration": {"required": ["n", "ambient_dimension", "epsilon", "directions", "outer_radius", "centeredness_evidence"]},
     "ContactRelation": {"required": ["source", "target", "delta", "relation"]},
-    "SphericalCode": {"required": ["directions", "minimum_angle"]},
+    "SphericalCode": {"required": ["ambient_dimension", "directions", "minimum_angle"]},
     "Lattice": {"required": ["kind", "vectors", "basis"]},
+    "SimplexInterstitial": {"required": ["ambient_dimension", "host_count", "host_radius", "interstitial_radius", "contact_graph"]},
+    "KissingShell": {"required": ["ambient_dimension", "neighbour_count", "common_radius", "contact_graph"]},
+    "TwoHostCollinearLimit": {"required": ["host_radius", "central_radius", "host_center_distance", "limit_status"]},
     "TransitionQuery": {"required": ["source", "target", "preservation_mode"]},
     "Claim": {"required": ["epistemic_label", "scope", "evidence"]}
   },
@@ -18,7 +21,12 @@
     "delta >= 0 for a hard-sphere configuration",
     "HCP.kind != BRAVAIS_SIMPLE",
     "transition.preservation_mode is explicit",
-    "computed claim has command, inputs and outputs"
+    "computed claim has command, inputs and outputs",
+    "all points in a configuration share one ambient dimension d >= 1",
+    "SimplexInterstitial(d).host_count == d + 1",
+    "KissingShell(d) is distinct from SimplexInterstitial(d)",
+    "TwoHostCollinearLimit.host_center_distance == 2 * (host_radius + central_radius)",
+    "central_radius == 0 is a point limit, not a realized positive-radius sphere"
   ],
   "epistemic_labels": [
     "DEFINICION_PROPUESTA",

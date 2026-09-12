@@ -7,10 +7,65 @@
       "n": 2,
       "minimum_unit_chord": 2.0,
       "epsilon_infimum": 0.0,
+      "central_radius_at_infimum": 0.0,
+      "central_object_status_at_infimum": "DEGENERATE_ZERO_RADIUS_LIMIT",
       "epsilon_realization_example": 1e-06,
       "contact_pair_count_at_infimum": 1,
+      "central_contact_count_at_infimum": 2,
+      "outer_contact_graph_at_infimum": {
+        "vertex_count": 2,
+        "edge_count": 1,
+        "edge_list": [
+          [
+            0,
+            1
+          ]
+        ],
+        "component_count": 1,
+        "degree_multiset": [
+          1,
+          1
+        ],
+        "regular_degree": 1,
+        "diameter": 1,
+        "triangle_count": 0,
+        "cycle_rank_beta1": 0,
+        "is_complete": true
+      },
+      "centered_contact_graph_at_infimum": {
+        "central_vertex": 2,
+        "central_vertex_status": "DEGENERATE_ZERO_RADIUS_LIMIT",
+        "vertex_count": 3,
+        "edge_count": 3,
+        "edge_list": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "component_count": 1,
+        "degree_multiset": [
+          2,
+          2,
+          2
+        ],
+        "regular_degree": 2,
+        "diameter": 1,
+        "triangle_count": 1,
+        "cycle_rank_beta1": 1,
+        "is_complete": true
+      },
       "centroid_at_origin": true,
       "affine_rank": 1,
+      "ambient_dimension": 3,
       "centeredness_claim": "CENTERED_WEAK_OR_UNCERTIFIED"
     },
     {
@@ -18,10 +73,117 @@
       "n": 4,
       "minimum_unit_chord": 1.6329931618554523,
       "epsilon_infimum": 0.22474487139158894,
+      "central_radius_at_infimum": 0.22474487139158894,
+      "central_object_status_at_infimum": "POSITIVE_RADIUS_CENTRAL_SPHERE",
       "epsilon_realization_example": 0.22474587139158894,
       "contact_pair_count_at_infimum": 6,
+      "central_contact_count_at_infimum": 4,
+      "outer_contact_graph_at_infimum": {
+        "vertex_count": 4,
+        "edge_count": 6,
+        "edge_list": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "component_count": 1,
+        "degree_multiset": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "regular_degree": 3,
+        "diameter": 1,
+        "triangle_count": 4,
+        "cycle_rank_beta1": 3,
+        "is_complete": true
+      },
+      "centered_contact_graph_at_infimum": {
+        "central_vertex": 4,
+        "central_vertex_status": "POSITIVE_RADIUS_CENTRAL_SPHERE",
+        "vertex_count": 5,
+        "edge_count": 10,
+        "edge_list": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "component_count": 1,
+        "degree_multiset": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "regular_degree": 4,
+        "diameter": 1,
+        "triangle_count": 10,
+        "cycle_rank_beta1": 6,
+        "is_complete": true
+      },
       "centroid_at_origin": true,
       "affine_rank": 3,
+      "ambient_dimension": 3,
       "centeredness_claim": "CENTERED_FULL_DIMENSIONAL_BY_EQUAL_WEIGHT_CERTIFICATE"
     },
     {
@@ -29,32 +191,745 @@
       "n": 4,
       "minimum_unit_chord": 1.4142135623730951,
       "epsilon_infimum": 0.4142135623730949,
+      "central_radius_at_infimum": 0.4142135623730949,
+      "central_object_status_at_infimum": "POSITIVE_RADIUS_CENTRAL_SPHERE",
       "epsilon_realization_example": 0.4142145623730949,
       "contact_pair_count_at_infimum": 4,
+      "central_contact_count_at_infimum": 4,
+      "outer_contact_graph_at_infimum": {
+        "vertex_count": 4,
+        "edge_count": 4,
+        "edge_list": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "component_count": 1,
+        "degree_multiset": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "regular_degree": 2,
+        "diameter": 2,
+        "triangle_count": 0,
+        "cycle_rank_beta1": 1,
+        "is_complete": false
+      },
+      "centered_contact_graph_at_infimum": {
+        "central_vertex": 4,
+        "central_vertex_status": "POSITIVE_RADIUS_CENTRAL_SPHERE",
+        "vertex_count": 5,
+        "edge_count": 8,
+        "edge_list": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "component_count": 1,
+        "degree_multiset": [
+          3,
+          3,
+          3,
+          3,
+          4
+        ],
+        "regular_degree": null,
+        "diameter": 2,
+        "triangle_count": 4,
+        "cycle_rank_beta1": 4,
+        "is_complete": false
+      },
       "centroid_at_origin": true,
       "affine_rank": 2,
+      "ambient_dimension": 3,
       "centeredness_claim": "CENTERED_WEAK_OR_UNCERTIFIED"
+    },
+    {
+      "name": "n5_4_simplex",
+      "n": 5,
+      "minimum_unit_chord": 1.5811388300841895,
+      "epsilon_infimum": 0.26491106406735176,
+      "central_radius_at_infimum": 0.26491106406735176,
+      "central_object_status_at_infimum": "POSITIVE_RADIUS_CENTRAL_SPHERE",
+      "epsilon_realization_example": 0.26491206406735174,
+      "contact_pair_count_at_infimum": 10,
+      "central_contact_count_at_infimum": 5,
+      "outer_contact_graph_at_infimum": {
+        "vertex_count": 5,
+        "edge_count": 10,
+        "edge_list": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "component_count": 1,
+        "degree_multiset": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "regular_degree": 4,
+        "diameter": 1,
+        "triangle_count": 10,
+        "cycle_rank_beta1": 6,
+        "is_complete": true
+      },
+      "centered_contact_graph_at_infimum": {
+        "central_vertex": 5,
+        "central_vertex_status": "POSITIVE_RADIUS_CENTRAL_SPHERE",
+        "vertex_count": 6,
+        "edge_count": 15,
+        "edge_list": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "component_count": 1,
+        "degree_multiset": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "regular_degree": 5,
+        "diameter": 1,
+        "triangle_count": 20,
+        "cycle_rank_beta1": 10,
+        "is_complete": true
+      },
+      "centroid_at_origin": true,
+      "affine_rank": 4,
+      "ambient_dimension": 4,
+      "centeredness_claim": "CENTERED_FULL_DIMENSIONAL_BY_EQUAL_WEIGHT_CERTIFICATE"
     },
     {
       "name": "n6_octahedron",
       "n": 6,
       "minimum_unit_chord": 1.4142135623730951,
       "epsilon_infimum": 0.4142135623730949,
+      "central_radius_at_infimum": 0.4142135623730949,
+      "central_object_status_at_infimum": "POSITIVE_RADIUS_CENTRAL_SPHERE",
       "epsilon_realization_example": 0.4142145623730949,
       "contact_pair_count_at_infimum": 12,
+      "central_contact_count_at_infimum": 6,
+      "outer_contact_graph_at_infimum": {
+        "vertex_count": 6,
+        "edge_count": 12,
+        "edge_list": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "component_count": 1,
+        "degree_multiset": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "regular_degree": 4,
+        "diameter": 2,
+        "triangle_count": 8,
+        "cycle_rank_beta1": 7,
+        "is_complete": false
+      },
+      "centered_contact_graph_at_infimum": {
+        "central_vertex": 6,
+        "central_vertex_status": "POSITIVE_RADIUS_CENTRAL_SPHERE",
+        "vertex_count": 7,
+        "edge_count": 18,
+        "edge_list": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "component_count": 1,
+        "degree_multiset": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          6
+        ],
+        "regular_degree": null,
+        "diameter": 2,
+        "triangle_count": 20,
+        "cycle_rank_beta1": 12,
+        "is_complete": false
+      },
       "centroid_at_origin": true,
       "affine_rank": 3,
+      "ambient_dimension": 3,
       "centeredness_claim": "CENTERED_FULL_DIMENSIONAL_BY_EQUAL_WEIGHT_CERTIFICATE"
     },
     {
       "name": "n12_cuboctahedron_fcc_shell",
       "n": 12,
-      "minimum_unit_chord": 1.0,
-      "epsilon_infimum": 1.0,
-      "epsilon_realization_example": 1.000001,
+      "minimum_unit_chord": 0.9999999999999999,
+      "epsilon_infimum": 1.0000000000000004,
+      "central_radius_at_infimum": 1.0000000000000004,
+      "central_object_status_at_infimum": "POSITIVE_RADIUS_CENTRAL_SPHERE",
+      "epsilon_realization_example": 1.0000010000000004,
       "contact_pair_count_at_infimum": 24,
+      "central_contact_count_at_infimum": 12,
+      "outer_contact_graph_at_infimum": {
+        "vertex_count": 12,
+        "edge_count": 24,
+        "edge_list": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            10
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            7,
+            10
+          ],
+          [
+            7,
+            11
+          ]
+        ],
+        "component_count": 1,
+        "degree_multiset": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "regular_degree": 4,
+        "diameter": 3,
+        "triangle_count": 8,
+        "cycle_rank_beta1": 13,
+        "is_complete": false
+      },
+      "centered_contact_graph_at_infimum": {
+        "central_vertex": 12,
+        "central_vertex_status": "POSITIVE_RADIUS_CENTRAL_SPHERE",
+        "vertex_count": 13,
+        "edge_count": 36,
+        "edge_list": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            10
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            7,
+            10
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            7,
+            12
+          ],
+          [
+            8,
+            12
+          ],
+          [
+            9,
+            12
+          ],
+          [
+            10,
+            12
+          ],
+          [
+            11,
+            12
+          ]
+        ],
+        "component_count": 1,
+        "degree_multiset": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          12
+        ],
+        "regular_degree": null,
+        "diameter": 2,
+        "triangle_count": 32,
+        "cycle_rank_beta1": 24,
+        "is_complete": false
+      },
       "centroid_at_origin": true,
       "affine_rank": 3,
+      "ambient_dimension": 3,
       "centeredness_claim": "CENTERED_FULL_DIMENSIONAL_BY_EQUAL_WEIGHT_CERTIFICATE"
     },
     {
@@ -62,21 +937,1625 @@
       "n": 12,
       "minimum_unit_chord": 0.9999999999999996,
       "epsilon_infimum": 1.0000000000000009,
+      "central_radius_at_infimum": 1.0000000000000009,
+      "central_object_status_at_infimum": "POSITIVE_RADIUS_CENTRAL_SPHERE",
       "epsilon_realization_example": 1.0000010000000008,
       "contact_pair_count_at_infimum": 24,
+      "central_contact_count_at_infimum": 12,
+      "outer_contact_graph_at_infimum": {
+        "vertex_count": 12,
+        "edge_count": 24,
+        "edge_list": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            11
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "component_count": 1,
+        "degree_multiset": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "regular_degree": 4,
+        "diameter": 3,
+        "triangle_count": 8,
+        "cycle_rank_beta1": 13,
+        "is_complete": false
+      },
+      "centered_contact_graph_at_infimum": {
+        "central_vertex": 12,
+        "central_vertex_status": "POSITIVE_RADIUS_CENTRAL_SPHERE",
+        "vertex_count": 13,
+        "edge_count": 36,
+        "edge_list": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            11
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            7,
+            12
+          ],
+          [
+            8,
+            12
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            9,
+            12
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            10,
+            12
+          ],
+          [
+            11,
+            12
+          ]
+        ],
+        "component_count": 1,
+        "degree_multiset": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          12
+        ],
+        "regular_degree": null,
+        "diameter": 2,
+        "triangle_count": 32,
+        "cycle_rank_beta1": 24,
+        "is_complete": false
+      },
       "centroid_at_origin": true,
       "affine_rank": 3,
+      "ambient_dimension": 3,
       "centeredness_claim": "CENTERED_FULL_DIMENSIONAL_BY_EQUAL_WEIGHT_CERTIFICATE"
     },
     {
       "name": "n12_icosahedron_comparator",
       "n": 12,
-      "minimum_unit_chord": 1.0514622242382672,
-      "epsilon_infimum": 0.9021130325903073,
-      "epsilon_realization_example": 0.9021140325903073,
+      "minimum_unit_chord": 1.051462224238267,
+      "epsilon_infimum": 0.9021130325903075,
+      "central_radius_at_infimum": 0.9021130325903075,
+      "central_object_status_at_infimum": "POSITIVE_RADIUS_CENTRAL_SPHERE",
+      "epsilon_realization_example": 0.9021140325903075,
       "contact_pair_count_at_infimum": 30,
+      "central_contact_count_at_infimum": 12,
+      "outer_contact_graph_at_infimum": {
+        "vertex_count": 12,
+        "edge_count": 30,
+        "edge_list": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            6,
+            9
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            9,
+            11
+          ]
+        ],
+        "component_count": 1,
+        "degree_multiset": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "regular_degree": 5,
+        "diameter": 3,
+        "triangle_count": 20,
+        "cycle_rank_beta1": 19,
+        "is_complete": false
+      },
+      "centered_contact_graph_at_infimum": {
+        "central_vertex": 12,
+        "central_vertex_status": "POSITIVE_RADIUS_CENTRAL_SPHERE",
+        "vertex_count": 13,
+        "edge_count": 42,
+        "edge_list": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            6,
+            9
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            7,
+            12
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            8,
+            12
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            9,
+            12
+          ],
+          [
+            10,
+            12
+          ],
+          [
+            11,
+            12
+          ]
+        ],
+        "component_count": 1,
+        "degree_multiset": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          12
+        ],
+        "regular_degree": null,
+        "diameter": 2,
+        "triangle_count": 50,
+        "cycle_rank_beta1": 30,
+        "is_complete": false
+      },
       "centroid_at_origin": true,
       "affine_rank": 3,
+      "ambient_dimension": 3,
+      "centeredness_claim": "CENTERED_FULL_DIMENSIONAL_BY_EQUAL_WEIGHT_CERTIFICATE"
+    },
+    {
+      "name": "n24_24_cell_kissing_shell",
+      "n": 24,
+      "minimum_unit_chord": 0.9999999999999999,
+      "epsilon_infimum": 1.0000000000000004,
+      "central_radius_at_infimum": 1.0000000000000004,
+      "central_object_status_at_infimum": "POSITIVE_RADIUS_CENTRAL_SPHERE",
+      "epsilon_realization_example": 1.0000010000000004,
+      "contact_pair_count_at_infimum": 96,
+      "central_contact_count_at_infimum": 24,
+      "outer_contact_graph_at_infimum": {
+        "vertex_count": 24,
+        "edge_count": 96,
+        "edge_list": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            0,
+            13
+          ],
+          [
+            0,
+            16
+          ],
+          [
+            0,
+            17
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            1,
+            18
+          ],
+          [
+            1,
+            19
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            2,
+            16
+          ],
+          [
+            2,
+            17
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            3,
+            15
+          ],
+          [
+            3,
+            18
+          ],
+          [
+            3,
+            19
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            4,
+            14
+          ],
+          [
+            4,
+            20
+          ],
+          [
+            4,
+            21
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            5,
+            13
+          ],
+          [
+            5,
+            15
+          ],
+          [
+            5,
+            22
+          ],
+          [
+            5,
+            23
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            20
+          ],
+          [
+            6,
+            21
+          ],
+          [
+            7,
+            10
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            7,
+            13
+          ],
+          [
+            7,
+            15
+          ],
+          [
+            7,
+            22
+          ],
+          [
+            7,
+            23
+          ],
+          [
+            8,
+            16
+          ],
+          [
+            8,
+            18
+          ],
+          [
+            8,
+            20
+          ],
+          [
+            8,
+            22
+          ],
+          [
+            9,
+            17
+          ],
+          [
+            9,
+            19
+          ],
+          [
+            9,
+            21
+          ],
+          [
+            9,
+            23
+          ],
+          [
+            10,
+            16
+          ],
+          [
+            10,
+            18
+          ],
+          [
+            10,
+            20
+          ],
+          [
+            10,
+            22
+          ],
+          [
+            11,
+            17
+          ],
+          [
+            11,
+            19
+          ],
+          [
+            11,
+            21
+          ],
+          [
+            11,
+            23
+          ],
+          [
+            12,
+            16
+          ],
+          [
+            12,
+            17
+          ],
+          [
+            12,
+            20
+          ],
+          [
+            12,
+            21
+          ],
+          [
+            13,
+            16
+          ],
+          [
+            13,
+            17
+          ],
+          [
+            13,
+            22
+          ],
+          [
+            13,
+            23
+          ],
+          [
+            14,
+            18
+          ],
+          [
+            14,
+            19
+          ],
+          [
+            14,
+            20
+          ],
+          [
+            14,
+            21
+          ],
+          [
+            15,
+            18
+          ],
+          [
+            15,
+            19
+          ],
+          [
+            15,
+            22
+          ],
+          [
+            15,
+            23
+          ],
+          [
+            16,
+            20
+          ],
+          [
+            16,
+            22
+          ],
+          [
+            17,
+            21
+          ],
+          [
+            17,
+            23
+          ],
+          [
+            18,
+            20
+          ],
+          [
+            18,
+            22
+          ],
+          [
+            19,
+            21
+          ],
+          [
+            19,
+            23
+          ]
+        ],
+        "component_count": 1,
+        "degree_multiset": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "regular_degree": 8,
+        "diameter": 3,
+        "triangle_count": 96,
+        "cycle_rank_beta1": 73,
+        "is_complete": false
+      },
+      "centered_contact_graph_at_infimum": {
+        "central_vertex": 24,
+        "central_vertex_status": "POSITIVE_RADIUS_CENTRAL_SPHERE",
+        "vertex_count": 25,
+        "edge_count": 120,
+        "edge_list": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            0,
+            13
+          ],
+          [
+            0,
+            16
+          ],
+          [
+            0,
+            17
+          ],
+          [
+            0,
+            24
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            1,
+            18
+          ],
+          [
+            1,
+            19
+          ],
+          [
+            1,
+            24
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            2,
+            16
+          ],
+          [
+            2,
+            17
+          ],
+          [
+            2,
+            24
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            3,
+            15
+          ],
+          [
+            3,
+            18
+          ],
+          [
+            3,
+            19
+          ],
+          [
+            3,
+            24
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            4,
+            14
+          ],
+          [
+            4,
+            20
+          ],
+          [
+            4,
+            21
+          ],
+          [
+            4,
+            24
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            5,
+            13
+          ],
+          [
+            5,
+            15
+          ],
+          [
+            5,
+            22
+          ],
+          [
+            5,
+            23
+          ],
+          [
+            5,
+            24
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            20
+          ],
+          [
+            6,
+            21
+          ],
+          [
+            6,
+            24
+          ],
+          [
+            7,
+            10
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            7,
+            13
+          ],
+          [
+            7,
+            15
+          ],
+          [
+            7,
+            22
+          ],
+          [
+            7,
+            23
+          ],
+          [
+            7,
+            24
+          ],
+          [
+            8,
+            16
+          ],
+          [
+            8,
+            18
+          ],
+          [
+            8,
+            20
+          ],
+          [
+            8,
+            22
+          ],
+          [
+            8,
+            24
+          ],
+          [
+            9,
+            17
+          ],
+          [
+            9,
+            19
+          ],
+          [
+            9,
+            21
+          ],
+          [
+            9,
+            23
+          ],
+          [
+            9,
+            24
+          ],
+          [
+            10,
+            16
+          ],
+          [
+            10,
+            18
+          ],
+          [
+            10,
+            20
+          ],
+          [
+            10,
+            22
+          ],
+          [
+            10,
+            24
+          ],
+          [
+            11,
+            17
+          ],
+          [
+            11,
+            19
+          ],
+          [
+            11,
+            21
+          ],
+          [
+            11,
+            23
+          ],
+          [
+            11,
+            24
+          ],
+          [
+            12,
+            16
+          ],
+          [
+            12,
+            17
+          ],
+          [
+            12,
+            20
+          ],
+          [
+            12,
+            21
+          ],
+          [
+            12,
+            24
+          ],
+          [
+            13,
+            16
+          ],
+          [
+            13,
+            17
+          ],
+          [
+            13,
+            22
+          ],
+          [
+            13,
+            23
+          ],
+          [
+            13,
+            24
+          ],
+          [
+            14,
+            18
+          ],
+          [
+            14,
+            19
+          ],
+          [
+            14,
+            20
+          ],
+          [
+            14,
+            21
+          ],
+          [
+            14,
+            24
+          ],
+          [
+            15,
+            18
+          ],
+          [
+            15,
+            19
+          ],
+          [
+            15,
+            22
+          ],
+          [
+            15,
+            23
+          ],
+          [
+            15,
+            24
+          ],
+          [
+            16,
+            20
+          ],
+          [
+            16,
+            22
+          ],
+          [
+            16,
+            24
+          ],
+          [
+            17,
+            21
+          ],
+          [
+            17,
+            23
+          ],
+          [
+            17,
+            24
+          ],
+          [
+            18,
+            20
+          ],
+          [
+            18,
+            22
+          ],
+          [
+            18,
+            24
+          ],
+          [
+            19,
+            21
+          ],
+          [
+            19,
+            23
+          ],
+          [
+            19,
+            24
+          ],
+          [
+            20,
+            24
+          ],
+          [
+            21,
+            24
+          ],
+          [
+            22,
+            24
+          ],
+          [
+            23,
+            24
+          ]
+        ],
+        "component_count": 1,
+        "degree_multiset": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          24
+        ],
+        "regular_degree": null,
+        "diameter": 2,
+        "triangle_count": 192,
+        "cycle_rank_beta1": 96,
+        "is_complete": false
+      },
+      "centroid_at_origin": true,
+      "affine_rank": 4,
+      "ambient_dimension": 4,
       "centeredness_claim": "CENTERED_FULL_DIMENSIONAL_BY_EQUAL_WEIGHT_CERTIFICATE"
     }
   ],
@@ -119,7 +2598,7 @@
       "target": "n12_cuboctahedron_fcc_shell",
       "cardinality_delta": 6,
       "source_epsilon_infimum": 0.4142135623730949,
-      "target_epsilon_infimum": 1.0,
+      "target_epsilon_infimum": 1.0000000000000004,
       "literal_direction_inclusion": false,
       "preserves_nonoverlap_at_target_infimum": true,
       "scope": "ONLY_NAMED_REPRESENTATIVES_AND_LITERAL_DIRECTION_INCLUSION",
