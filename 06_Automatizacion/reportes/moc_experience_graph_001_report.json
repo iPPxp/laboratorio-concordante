@@ -1,5 +1,5 @@
 {
-  "report_id": "MOC-EXP-GRAPH-CHECK-001-20260708-210446",
+  "report_id": "MOC-EXP-GRAPH-CHECK-001-20260810-054133",
   "expediente": "MOC-001",
   "algoritmo": "MOC-EXP-GRAPH-CHECK-001",
   "suite_id": "MOC-EXP-GRAPH-001-CASES-036-043",
@@ -20,8 +20,14 @@
     "MOC-AO-GEO-BRIDGE-001"
   ],
   "source_evidence": [
-    "C:\\Users\\IximM\\OneDrive\\Documentos\\v.1.5.2\\psicologia\\MOC-GEO-METR-001_Metricas_Geometricas_Casos.md"
+    "external:MOC-GEO-METR-001"
   ],
+  "source_provenance": {
+    "document_id": "MOC-GEO-METR-001",
+    "relationship": "external_documental_structural",
+    "location_policy": "logical_identifier_only",
+    "runtime_dependency": false
+  },
   "scope_guard": {
     "admite_h_xi": false,
     "canoniza_xi": false,

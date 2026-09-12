@@ -282,6 +282,7 @@ python -m unittest 06_Automatizacion/test_ao_external_evidence_gate_001.py
 python -m unittest 06_Automatizacion/test_report_layer_c002_gate.py
 python -m unittest 06_Automatizacion/test_moc_eval.py
 python -m unittest 06_Automatizacion/test_moc_experience_graph_001.py
+python -m unittest 06_Automatizacion/test_legacy_workspace_references.py
 python -m unittest 06_Automatizacion/test_moc_exp_graph_authorization_gate_001.py
 python -m unittest 06_Automatizacion/test_moc_canon_doc04_impact_001.py
 python -m unittest 06_Automatizacion/test_moc_canon_doc04_adopt_gate_001.py

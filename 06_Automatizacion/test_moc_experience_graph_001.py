@@ -23,6 +23,10 @@ class MOCExperienceGraph001Tests(unittest.TestCase):
         self.assertFalse(report["r4_gamma_global_export_authorized"])
         self.assertFalse(report["scope_guard"]["admite_h_xi"])
         self.assertFalse(report["scope_guard"]["uso_clinico"])
+        self.assertEqual(report["source_evidence"], ["external:MOC-GEO-METR-001"])
+        self.assertEqual(report["source_provenance"]["document_id"], "MOC-GEO-METR-001")
+        self.assertEqual(report["source_provenance"]["location_policy"], "logical_identifier_only")
+        self.assertFalse(report["source_provenance"]["runtime_dependency"])
 
     def test_outputs_cover_imported_cases_036_to_043(self) -> None:
         report = moc_experience_graph_001.build_report()
@@ -66,4 +70,3 @@ class MOCExperienceGraph001Tests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

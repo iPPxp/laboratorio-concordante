@@ -302,6 +302,7 @@ def build_report(root: Path | None = None, case_file: Path | None = None) -> dic
             "MOC-AO-GEO-BRIDGE-001",
         ],
         "source_evidence": suite.get("source_evidence", []),
+        "source_provenance": suite.get("source_provenance", {}),
         "scope_guard": {
             "admite_h_xi": False,
             "canoniza_xi": False,
@@ -391,4 +392,3 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

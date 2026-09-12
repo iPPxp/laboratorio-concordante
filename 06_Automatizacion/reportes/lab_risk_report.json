@@ -1,5 +1,5 @@
 {
-  "report_id": "DO-LAB-RISK-20260708-210447",
+  "report_id": "DO-LAB-RISK-20260810-054134",
   "expediente": "AUT-001",
   "algoritmo": "DO-LAB-RISK-001",
   "resultado": "advertencia_clasificada",
@@ -8518,19 +8518,11 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 31,
+        "matched_line": 33,
         "lines": [
           {
-            "line": 25,
-            "text": "## Evidencia integrada"
-          },
-          {
-            "line": 26,
-            "text": ""
-          },
-          {
             "line": 27,
-            "text": "El archivo se incorpora como herramienta local con salida Markdown y JSON."
+            "text": "## Evidencia integrada"
           },
           {
             "line": 28,
@@ -8538,7 +8530,7 @@
           },
           {
             "line": 29,
-            "text": "La herramienta genera:"
+            "text": "El archivo se incorpora como herramienta local con salida Markdown y JSON."
           },
           {
             "line": 30,
@@ -8546,19 +8538,19 @@
           },
           {
             "line": 31,
-            "text": "- `06_Automatizacion/reportes/r001_table_checks_report.md`;"
+            "text": "La herramienta genera:"
           },
           {
             "line": 32,
-            "text": "- `06_Automatizacion/reportes/r001_table_checks_report.json`."
-          },
-          {
-            "line": 33,
             "text": ""
           },
           {
+            "line": 33,
+            "text": "- `06_Automatizacion/reportes/r001_table_checks_report.md`;"
+          },
+          {
             "line": 34,
-            "text": "La prueba unitaria queda registrada en:"
+            "text": "- `06_Automatizacion/reportes/r001_table_checks_report.json`."
           },
           {
             "line": 35,
@@ -8566,10 +8558,18 @@
           },
           {
             "line": 36,
-            "text": "- `06_Automatizacion/test_r001_table_checks.py`."
+            "text": "La prueba unitaria queda registrada en:"
           },
           {
             "line": 37,
+            "text": ""
+          },
+          {
+            "line": 38,
+            "text": "- `06_Automatizacion/test_r001_table_checks.py`."
+          },
+          {
+            "line": 39,
             "text": ""
           }
         ]
@@ -10639,58 +10639,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 213,
+        "matched_line": 223,
         "lines": [
           {
-            "line": 207,
+            "line": 217,
             "text": "- `AO-EQ-GLOBAL-GATE-001`: compuerta no mutante de Equivalencia global en `06_Automatizacion/ao_eq_global_gate_001.py`; usa `06_Automatizacion/fixtures/ao_eq_global_gate_001_matrix.json` y genera reportes Markdown/JSON."
           },
           {
-            "line": 208,
+            "line": 218,
             "text": "- `AO-CONF-GLOBAL-GATE-001`: compuerta no mutante de Confluencia global en `06_Automatizacion/ao_conf_global_gate_001.py`; usa `06_Automatizacion/fixtures/ao_conf_global_gate_001_matrix.json` y genera reportes Markdown/JSON."
           },
           {
-            "line": 209,
+            "line": 219,
             "text": "- `AO-REPORT-PROMO-GATE-001`: compuerta no mutante de promocion de `REPORT_LAYER` en `06_Automatizacion/ao_report_promo_gate_001.py`; usa `06_Automatizacion/fixtures/ao_report_promo_gate_001_cases.json` y genera reportes Markdown/JSON."
           },
           {
-            "line": 210,
+            "line": 220,
             "text": "- `AO-R4-GAMMA-EXPORT-GATE-002`: compuerta no mutante de exportacion R4/Gamma en `06_Automatizacion/ao_r4_gamma_export_gate_002.py`; usa `06_Automatizacion/fixtures/ao_r4_gamma_export_gate_002_cases.json` y genera reportes Markdown/JSON."
           },
           {
-            "line": 211,
+            "line": 221,
             "text": "- `AO-GLOBAL-READINESS-001`: matriz consolidada no mutante de readiness global en `06_Automatizacion/ao_global_readiness_001.py`; usa `06_Automatizacion/fixtures/ao_global_readiness_001_matrix.json` y genera reportes Markdown/JSON."
           },
           {
-            "line": 212,
+            "line": 222,
             "text": "- `AO-EXT-EVID-GATE-001`: compuerta no mutante de evidencia externa independiente en `06_Automatizacion/ao_external_evidence_gate_001.py`; usa `06_Automatizacion/fixtures/ao_external_evidence_gate_001_manifests.json` y genera reportes Markdown/JSON."
           },
           {
-            "line": 213,
+            "line": 223,
             "text": "- `AO-EXT-REAL-001`: suite real de manifiestos externos en `06_Automatizacion/fixtures/ao_external_evidence_real_001_manifests.json`, evaluada por `AO-EXT-EVID-GATE-001` y reportada en `06_Automatizacion/reportes/ao_external_evidence_real_001_report.md`; produce `external_evidence_ready: true` sin autorizar cierre global."
           },
           {
-            "line": 214,
+            "line": 224,
             "text": "- `REPORT-LAYER-C002-GATE-001`: compuerta no mutante conforme a `C-002` en `06_Automatizacion/report_layer_c002_gate.py`; usa `06_Automatizacion/fixtures/report_layer_c002_cases.json`, genera reportes Markdown/JSON y queda integrada a `DO-LAB-RUN-001` por `D-2026-07-06-015`."
           },
           {
-            "line": 215,
+            "line": 225,
             "text": "- `DO-CHECK-001`: verificador no mutante de trazabilidad y estatus en `03_Expedientes/DO-001_DO-CHECK-001.md`; validado inicialmente contra tres archivos locales."
           },
           {
-            "line": 216,
+            "line": 226,
             "text": "- `DO-CHECK-MIN-001`: implementacion minima no mutante en `06_Automatizacion/do_check_min.py`; validada provisionalmente por ejecucion equivalente en `AUT-001`."
           },
           {
-            "line": 217,
+            "line": 227,
             "text": "- `DO-CHECK-MED-001`: implementacion media no mutante en `06_Automatizacion/do_check_med.py`; validada provisionalmente por ejecucion equivalente en `AUT-001`."
           },
           {
-            "line": 218,
+            "line": 228,
             "text": "- `DO-STATE-BOARD-001`: tablero no mutante en `06_Automatizacion/lab_status_board.py`; validado provisionalmente por ejecucion equivalente en `AUT-001`."
           },
           {
-            "line": 219,
+            "line": 229,
             "text": "- `DO-LAB-CONTINUITY-001`: continuidad integrada no mutante en `06_Automatizacion/lab_continuity_report.py`; validada provisionalmente por reportes fuente en `AUT-001`."
           }
         ]
@@ -10714,58 +10714,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 521,
+        "matched_line": 531,
         "lines": [
           {
-            "line": 515,
-            "text": ""
-          },
-          {
-            "line": 516,
-            "text": "- `HXI-001_Mantenimiento_Local.md`: `HXI-MAINT-001`, regimen de mantenimiento local; conserva `Xi_eval` y trazabilidad de `H-Xi`, sin frente activo de admision."
-          },
-          {
-            "line": 517,
-            "text": ""
-          },
-          {
-            "line": 518,
-            "text": "## Tableros de automatizacion"
-          },
-          {
-            "line": 519,
-            "text": ""
-          },
-          {
-            "line": 520,
-            "text": "- `06_Automatizacion/lab_status_board.py`: tablero no mutante `DO-STATE-BOARD-001`."
-          },
-          {
-            "line": 521,
-            "text": "- `06_Automatizacion/reportes/lab_status_board.md`: reporte Markdown conservado."
-          },
-          {
-            "line": 522,
-            "text": "- `06_Automatizacion/reportes/lab_status_board.json`: reporte JSON conservado."
-          },
-          {
-            "line": 523,
-            "text": ""
-          },
-          {
-            "line": 524,
-            "text": ""
-          },
-          {
             "line": 525,
-            "text": "- `EX-PSI-001` a `EX-PSI-005`: antecedentes historicos transferidos; sin archivo local activo tras `D-2026-07-03-012`."
+            "text": ""
           },
           {
             "line": 526,
-            "text": ""
+            "text": "- `HXI-001_Mantenimiento_Local.md`: `HXI-MAINT-001`, regimen de mantenimiento local; conserva `Xi_eval` y trazabilidad de `H-Xi`, sin frente activo de admision."
           },
           {
             "line": 527,
+            "text": ""
+          },
+          {
+            "line": 528,
+            "text": "## Tableros de automatizacion"
+          },
+          {
+            "line": 529,
+            "text": ""
+          },
+          {
+            "line": 530,
+            "text": "- `06_Automatizacion/lab_status_board.py`: tablero no mutante `DO-STATE-BOARD-001`."
+          },
+          {
+            "line": 531,
+            "text": "- `06_Automatizacion/reportes/lab_status_board.md`: reporte Markdown conservado."
+          },
+          {
+            "line": 532,
+            "text": "- `06_Automatizacion/reportes/lab_status_board.json`: reporte JSON conservado."
+          },
+          {
+            "line": 533,
+            "text": ""
+          },
+          {
+            "line": 534,
+            "text": ""
+          },
+          {
+            "line": 535,
+            "text": "- `EX-PSI-001` a `EX-PSI-005`: antecedentes historicos transferidos; sin archivo local activo tras `D-2026-07-03-012`."
+          },
+          {
+            "line": 536,
+            "text": ""
+          },
+          {
+            "line": 537,
             "text": "## Criterios de evaluacion de expediente"
           }
         ]
@@ -10789,58 +10789,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 292,
+        "matched_line": 293,
         "lines": [
           {
-            "line": 286,
+            "line": 287,
             "text": "python -m unittest 06_Automatizacion/test_moc_canon_doc04_impact_001.py"
           },
           {
-            "line": 287,
+            "line": 288,
             "text": "python -m unittest 06_Automatizacion/test_moc_canon_doc04_adopt_gate_001.py"
           },
           {
-            "line": 288,
+            "line": 289,
             "text": "```"
           },
           {
-            "line": 289,
-            "text": ""
-          },
-          {
             "line": 290,
-            "text": "## Reportes iniciales"
+            "text": ""
           },
           {
             "line": 291,
-            "text": ""
+            "text": "## Reportes iniciales"
           },
           {
             "line": 292,
-            "text": "- `reportes/do_check_min_claves.md`: revision minima de archivos clave."
+            "text": ""
           },
           {
             "line": 293,
-            "text": "- `reportes/do_check_min_repo.md`: barrido informativo del repositorio."
+            "text": "- `reportes/do_check_min_claves.md`: revision minima de archivos clave."
           },
           {
             "line": 294,
-            "text": "- `reportes/do_check_min_repo.json`: barrido informativo en formato estructurado."
+            "text": "- `reportes/do_check_min_repo.md`: barrido informativo del repositorio."
           },
           {
             "line": 295,
-            "text": "- `reportes/do_check_med_claves.md`: revision media de archivos clave."
+            "text": "- `reportes/do_check_min_repo.json`: barrido informativo en formato estructurado."
           },
           {
             "line": 296,
-            "text": "- `reportes/do_check_med_repo.md`: barrido medio del repositorio."
+            "text": "- `reportes/do_check_med_claves.md`: revision media de archivos clave."
           },
           {
             "line": 297,
-            "text": "- `reportes/do_check_med_repo.json`: barrido medio en formato estructurado."
+            "text": "- `reportes/do_check_med_repo.md`: barrido medio del repositorio."
           },
           {
             "line": 298,
+            "text": "- `reportes/do_check_med_repo.json`: barrido medio en formato estructurado."
+          },
+          {
+            "line": 299,
             "text": "- `reportes/lab_status_board.md`: tablero de estado en formato Markdown."
           }
         ]
@@ -11389,58 +11389,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 306,
+        "matched_line": 307,
         "lines": [
           {
-            "line": 300,
+            "line": 301,
             "text": "- `reportes/lab_continuity_report.md`: continuidad integrada en formato Markdown."
           },
           {
-            "line": 301,
+            "line": 302,
             "text": "- `reportes/lab_continuity_report.json`: continuidad integrada en formato estructurado."
           },
           {
-            "line": 302,
+            "line": 303,
             "text": "- `reportes/lab_risk_report.md`: clasificacion de riesgos en formato Markdown."
           },
           {
-            "line": 303,
+            "line": 304,
             "text": "- `reportes/lab_risk_report.json`: clasificacion de riesgos en formato estructurado."
           },
           {
-            "line": 304,
+            "line": 305,
             "text": "- `reportes/lab_executive_summary.md`: resumen ejecutivo en formato Markdown."
           },
           {
-            "line": 305,
+            "line": 306,
             "text": "- `reportes/lab_executive_summary.json`: resumen ejecutivo en formato estructurado."
           },
           {
-            "line": 306,
+            "line": 307,
             "text": "- `reportes/lab_run_report.md`: corrida unificada en formato Markdown."
           },
           {
-            "line": 307,
+            "line": 308,
             "text": "- `reportes/lab_run_report.json`: corrida unificada en formato estructurado."
           },
           {
-            "line": 308,
+            "line": 309,
             "text": "- `reportes/auditor_v0_report.md`: reporte del Auditor v0 no mutante."
           },
           {
-            "line": 309,
+            "line": 310,
             "text": "- `reportes/auditor_v0_report.json`: reporte estructurado del Auditor v0 no mutante."
           },
           {
-            "line": 310,
+            "line": 311,
             "text": "- `reportes/auditor_do_check_adapter_report.md`: reporte del adaptador `DO_CHECK_REPORT`."
           },
           {
-            "line": 311,
+            "line": 312,
             "text": "- `reportes/auditor_do_check_adapter_report.json`: reporte estructurado del adaptador `DO_CHECK_REPORT`."
           },
           {
-            "line": 312,
+            "line": 313,
             "text": "- `reportes/r001_table_checks_report.md`: reporte de chequeos tabulares `R-001` / `Xi`."
           }
         ]
@@ -23598,23 +23598,15 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 34,
+        "matched_line": 36,
         "lines": [
-          {
-            "line": 28,
-            "text": "C:\\Users\\IximM\\OneDrive\\Documentos\\v.1.5.2\\psicologia\\MOC-GEO-METR-001_Metricas_Geometricas_Casos.md"
-          },
-          {
-            "line": 29,
-            "text": "```"
-          },
           {
             "line": 30,
             "text": ""
           },
           {
             "line": 31,
-            "text": "Evidencia interna:"
+            "text": "La ubicacion absoluta usada durante la revision inicial permanece recuperable en Git como procedencia historica, pero no es una dependencia activa ni una fuente de autoridad para el Laboratorio."
           },
           {
             "line": 32,
@@ -23622,34 +23614,42 @@
           },
           {
             "line": 33,
-            "text": "- el grafo se normaliza como estructura local;"
+            "text": "Evidencia interna:"
           },
           {
             "line": 34,
-            "text": "- la metrica se limita a escala ordinal `0/1/2`;"
-          },
-          {
-            "line": 35,
-            "text": "- los casos 036-043 se importan como evidencia documental estructural;"
-          },
-          {
-            "line": 36,
-            "text": "- `operator_trace` queda como unico puente con AO;"
-          },
-          {
-            "line": 37,
-            "text": "- la herramienta no mutante conserva todos los flags globales en `false`."
-          },
-          {
-            "line": 38,
             "text": ""
           },
           {
+            "line": 35,
+            "text": "- el grafo se normaliza como estructura local;"
+          },
+          {
+            "line": 36,
+            "text": "- la metrica se limita a escala ordinal `0/1/2`;"
+          },
+          {
+            "line": 37,
+            "text": "- los casos 036-043 se importan como evidencia documental estructural;"
+          },
+          {
+            "line": 38,
+            "text": "- `operator_trace` queda como unico puente con AO;"
+          },
+          {
             "line": 39,
-            "text": "## Hallazgos"
+            "text": "- la herramienta no mutante conserva todos los flags globales en `false`."
           },
           {
             "line": 40,
+            "text": ""
+          },
+          {
+            "line": 41,
+            "text": "## Hallazgos"
+          },
+          {
+            "line": 42,
             "text": ""
           }
         ]
@@ -25904,47 +25904,39 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 41,
+        "matched_line": 43,
         "lines": [
           {
-            "line": 35,
+            "line": 37,
             "text": "Permitido:"
           },
           {
-            "line": 36,
-            "text": ""
-          },
-          {
-            "line": 37,
-            "text": "- representar una unidad local de experiencia como grafo;"
-          },
-          {
             "line": 38,
-            "text": "- evaluar casos sinteticos o documentales no clinicos;"
+            "text": ""
           },
           {
             "line": 39,
-            "text": "- usar notacion `psi` solo como notacion externa importada;"
+            "text": "- representar una unidad local de experiencia como grafo;"
           },
           {
             "line": 40,
-            "text": "- producir `operator_trace` local;"
+            "text": "- evaluar casos sinteticos o documentales no clinicos;"
           },
           {
             "line": 41,
-            "text": "- usar la salida como evidencia auxiliar para `MOC/AO`;"
+            "text": "- usar notacion `psi` solo como notacion externa importada;"
           },
           {
             "line": 42,
-            "text": "- registrar deudas cuando falte evidencia, proyeccion o unidad comparable."
+            "text": "- producir `operator_trace` local;"
           },
           {
             "line": 43,
-            "text": ""
+            "text": "- usar la salida como evidencia auxiliar para `MOC/AO`;"
           },
           {
             "line": 44,
-            "text": "Prohibido:"
+            "text": "- registrar deudas cuando falte evidencia, proyeccion o unidad comparable."
           },
           {
             "line": 45,
@@ -25952,10 +25944,18 @@
           },
           {
             "line": 46,
-            "text": "- admitir `H-Xi`;"
+            "text": "Prohibido:"
           },
           {
             "line": 47,
+            "text": ""
+          },
+          {
+            "line": 48,
+            "text": "- admitir `H-Xi`;"
+          },
+          {
+            "line": 49,
             "text": "- canonizar `Xi`, `Xi_psi`, `Phi_psi` o `TrueSelf_psi`;"
           }
         ]
@@ -27684,58 +27684,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 120,
+        "matched_line": 130,
         "lines": [
           {
-            "line": 114,
+            "line": 124,
             "text": "- `MOC-001_Casos_No_Clinicos.md`: `MOC-CASE-BAT-001`, bateria sintetica no clinica para `MOC-EVAL-001`; ampliada por `MOC-ROUTE-002` y aceptada por `D-2026-07-05-018`."
           },
           {
-            "line": 115,
+            "line": 125,
             "text": "- `MOC-001_Disenio_Estudio_Empirico.md`: `MOC-EMP-STUDY-001`, diseno documental de comparacion empirica futura; aceptado por `D-2026-07-05-015`."
           },
           {
-            "line": 116,
+            "line": 126,
             "text": "- `MOC-001_Ejecucion_Ruta_Valida_001.md`: `MOC-ROUTE-EXEC-001`, primera ruta valida ejecutada favorablemente; aceptada por `D-2026-07-05-016`."
           },
           {
-            "line": 117,
+            "line": 127,
             "text": "- `MOC-001_Siguientes_Rutas_Validas.md`: `MOC-NEXT-ROUTES-001`, matriz de rutas posteriores; aceptada por `D-2026-07-05-017`."
           },
           {
-            "line": 118,
+            "line": 128,
             "text": "- `MOC-001_Ejecucion_Ruta_002.md`: `MOC-ROUTE-002`, ampliacion de bateria sintetica no clinica con desacuerdos justificados y casos limite; aceptada por `D-2026-07-05-018`."
           },
           {
-            "line": 119,
+            "line": 129,
             "text": "- `MOC-001_Rutas_Posteriores_Ruta_002.md`: `MOC-NEXT-ROUTES-002`, matriz posterior que recomienda `MOC-ROUTE-003`; aceptada por `D-2026-07-05-019`."
           },
           {
-            "line": 120,
+            "line": 130,
             "text": "- `MOC-001_Puente_Formal_MOC_TCS.md`: `MOC-TCS-BRIDGE-001`, formalizacion ejecutable local de operadores `MOC/TCS`; aceptada por `D-2026-07-05-020`."
           },
           {
-            "line": 121,
+            "line": 131,
             "text": "- `MOC-001_Rutas_Posteriores_Ruta_003.md`: `MOC-NEXT-ROUTES-003`, matriz posterior que recomienda `MOC-ROUTE-004`; aceptada por `D-2026-07-05-021`."
           },
           {
-            "line": 122,
+            "line": 132,
             "text": "- `MOC-001_Puente_Formal_MOC_AO.md`: `MOC-AO-BRIDGE-001`, formalizacion local del puente `MOC/AO` mediante `operator_trace`, `Pi_moc_trace` y `ao_bridge`; aceptada por `D-2026-07-05-022`."
           },
           {
-            "line": 123,
+            "line": 133,
             "text": "- `MOC-EXP-GRAPH-001_Grafo_Experiencia_Local.md`, `MOC-GEO-METR-LAB-001_Metrica_Geometrica_Local.md` y `MOC-AO-GEO-BRIDGE-001_Puente_AO_Operator_Trace.md`: grafo local de experiencia, metrica geometrica ordinal y puente AO por `operator_trace`; aceptados por `D-2026-07-09-001`."
           },
           {
-            "line": 124,
+            "line": 134,
             "text": "- `MOC-001_Autorizacion_Derechos_Grafo_Canon_Doc04.md` y `MOC-001_Compuerta_Grafo_Canon_Doc04.md`: autorizacion interna preparatoria para propuestas candidatas hacia Canon y Documento 04; aceptada por `D-2026-07-09-002`."
           },
           {
-            "line": 125,
+            "line": 135,
             "text": "- `MOC-001_Matriz_Impacto_Canon_Doc04_001.md` y `MOC-001_Propuesta_Candidata_Canon_Doc04_001.md`: matriz no mutante y propuesta candidata; `M-000` queda sin cambio textual recomendado, `M-001` y Documento 04 quedan solo como candidatas futuras; aceptadas por `D-2026-07-09-003`."
           },
           {
-            "line": 126,
+            "line": 136,
             "text": "- `MOC-001_Compuerta_Incorporacion_Canon_Doc04_001.md`: compuerta de incorporacion posterior; `M-001` y Documento 04 quedan listos para aplicacion posterior explicita, sin edicion oficial ejecutada; aceptada por `D-2026-07-09-004`."
           }
         ]
@@ -27759,58 +27759,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 122,
+        "matched_line": 132,
         "lines": [
           {
-            "line": 116,
+            "line": 126,
             "text": "- `MOC-001_Ejecucion_Ruta_Valida_001.md`: `MOC-ROUTE-EXEC-001`, primera ruta valida ejecutada favorablemente; aceptada por `D-2026-07-05-016`."
           },
           {
-            "line": 117,
+            "line": 127,
             "text": "- `MOC-001_Siguientes_Rutas_Validas.md`: `MOC-NEXT-ROUTES-001`, matriz de rutas posteriores; aceptada por `D-2026-07-05-017`."
           },
           {
-            "line": 118,
+            "line": 128,
             "text": "- `MOC-001_Ejecucion_Ruta_002.md`: `MOC-ROUTE-002`, ampliacion de bateria sintetica no clinica con desacuerdos justificados y casos limite; aceptada por `D-2026-07-05-018`."
           },
           {
-            "line": 119,
+            "line": 129,
             "text": "- `MOC-001_Rutas_Posteriores_Ruta_002.md`: `MOC-NEXT-ROUTES-002`, matriz posterior que recomienda `MOC-ROUTE-003`; aceptada por `D-2026-07-05-019`."
           },
           {
-            "line": 120,
+            "line": 130,
             "text": "- `MOC-001_Puente_Formal_MOC_TCS.md`: `MOC-TCS-BRIDGE-001`, formalizacion ejecutable local de operadores `MOC/TCS`; aceptada por `D-2026-07-05-020`."
           },
           {
-            "line": 121,
+            "line": 131,
             "text": "- `MOC-001_Rutas_Posteriores_Ruta_003.md`: `MOC-NEXT-ROUTES-003`, matriz posterior que recomienda `MOC-ROUTE-004`; aceptada por `D-2026-07-05-021`."
           },
           {
-            "line": 122,
+            "line": 132,
             "text": "- `MOC-001_Puente_Formal_MOC_AO.md`: `MOC-AO-BRIDGE-001`, formalizacion local del puente `MOC/AO` mediante `operator_trace`, `Pi_moc_trace` y `ao_bridge`; aceptada por `D-2026-07-05-022`."
           },
           {
-            "line": 123,
+            "line": 133,
             "text": "- `MOC-EXP-GRAPH-001_Grafo_Experiencia_Local.md`, `MOC-GEO-METR-LAB-001_Metrica_Geometrica_Local.md` y `MOC-AO-GEO-BRIDGE-001_Puente_AO_Operator_Trace.md`: grafo local de experiencia, metrica geometrica ordinal y puente AO por `operator_trace`; aceptados por `D-2026-07-09-001`."
           },
           {
-            "line": 124,
+            "line": 134,
             "text": "- `MOC-001_Autorizacion_Derechos_Grafo_Canon_Doc04.md` y `MOC-001_Compuerta_Grafo_Canon_Doc04.md`: autorizacion interna preparatoria para propuestas candidatas hacia Canon y Documento 04; aceptada por `D-2026-07-09-002`."
           },
           {
-            "line": 125,
+            "line": 135,
             "text": "- `MOC-001_Matriz_Impacto_Canon_Doc04_001.md` y `MOC-001_Propuesta_Candidata_Canon_Doc04_001.md`: matriz no mutante y propuesta candidata; `M-000` queda sin cambio textual recomendado, `M-001` y Documento 04 quedan solo como candidatas futuras; aceptadas por `D-2026-07-09-003`."
           },
           {
-            "line": 126,
+            "line": 136,
             "text": "- `MOC-001_Compuerta_Incorporacion_Canon_Doc04_001.md`: compuerta de incorporacion posterior; `M-001` y Documento 04 quedan listos para aplicacion posterior explicita, sin edicion oficial ejecutada; aceptada por `D-2026-07-09-004`."
           },
           {
-            "line": 127,
+            "line": 137,
             "text": "- `MOC-001_Aplicacion_Oficial_Canon_Doc04_001.md`: aplicacion oficial acotada; `M-001` adopta matriz de superficies y Documento 04 adopta entrada auxiliar por traza local de grafo, con `M-000` sin cambio textual; aceptada por `D-2026-07-09-005`."
           },
           {
-            "line": 128,
+            "line": 138,
             "text": "- `MOC-001_Rutas_Posteriores_Ruta_004.md`: `MOC-NEXT-ROUTES-004`, matriz posterior que recomienda `MOC-ROUTE-005`; aceptada por `D-2026-07-05-023`."
           }
         ]
@@ -27834,58 +27834,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 159,
+        "matched_line": 169,
         "lines": [
           {
-            "line": 153,
+            "line": 163,
             "text": "- `AO-001_Casos_Prueba_Algebra_Operacional.md`: `AO-CASE-BAT-001`, casos `AO-CASE-001` a `AO-CASE-006` aceptados por `D-2026-07-03-016`."
           },
           {
-            "line": 154,
+            "line": 164,
             "text": "- `AO-001_Criterios_Uso_R4_Gamma_Fuera_AUD.md`: `AO-R4-GAMMA-USE-001`, criterio local para referencia formal, prueba controlada o puente de problema; aceptado por `D-2026-07-03-017`."
           },
           {
-            "line": 155,
+            "line": 165,
             "text": "- `AO-001_Puente_Confluencia_Equivalencia.md`: `AO-PPI-BRIDGE-001`, avance local con `AO-PPI-EQ-001` y `AO-PPI-CONF-001`; aceptado por `D-2026-07-03-018`."
           },
           {
-            "line": 156,
+            "line": 166,
             "text": "- `AO-001_Puente_Confluencia_Equivalencia_002.md`: `AO-PPI-BRIDGE-002`, bateria fuerte local no mutante con 8/8 casos; aceptada por `D-2026-07-06-017`."
           },
           {
-            "line": 157,
+            "line": 167,
             "text": "- `AO-001_Matriz_Condiciones_Cierre_Global_003.md`: `AO-PPI-BRIDGE-003`, matriz local no mutante con 10 condiciones y 9 casos heterogeneos de `REPORT_LAYER`; aceptada por `D-2026-07-06-018`."
           },
           {
-            "line": 158,
+            "line": 168,
             "text": "- `AO-001_Serializacion_REPORT_LAYER_001.md`: `AO-REPORT-SERIAL-001`, serializacion local interfrente de `REPORT_LAYER`; aceptada por `D-2026-07-06-019`."
           },
           {
-            "line": 159,
+            "line": 169,
             "text": "- `AO-001_Relacion_AO_TCS_001.md`: `AO-TCS-REL-001`, relacion local `AO/TCS`; aceptada por `D-2026-07-06-020`."
           },
           {
-            "line": 160,
+            "line": 170,
             "text": "- `AO-001_Criterio_Autoridad_Global_001.md`: `AO-AUTH-GLOBAL-001`, criterio local de autoridad entre niveles; aceptado por `D-2026-07-06-021`."
           },
           {
-            "line": 161,
+            "line": 171,
             "text": "- `AO-001_Cobertura_Externa_Amplia_001.md`: `AO-EXT-COV-001`, cobertura externa amplia sintetica; aceptada por `D-2026-07-06-022`."
           },
           {
-            "line": 162,
+            "line": 172,
             "text": "- `AO-001_Matriz_Consolidada_Cierre_Global_004.md`: `AO-PPI-BRIDGE-004`, matriz consolidada local; aceptada por `D-2026-07-06-023`."
           },
           {
-            "line": 163,
+            "line": 173,
             "text": "- `AO-001_Cierre_Local_AO_PPI_001.md`: `AO-PPI-LOCAL-CLOSE-001`, cierre local de fase `AO-PPI`; aceptado por `D-2026-07-06-024`."
           },
           {
-            "line": 164,
+            "line": 174,
             "text": "- `AO-001_Auditoria_Cierre_Local_AO_PPI_001.md`: auditoria favorable del cierre local `AO-PPI`."
           },
           {
-            "line": 165,
+            "line": 175,
             "text": "- `AO-001_Decision_Cierre_Local_AO_PPI_001.md`: decision `D-2026-07-06-024`, fija `AO-PPI-BRIDGE-004` como estado actual de deudas `AO-PPI`."
           }
         ]
@@ -28434,58 +28434,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 292,
+        "matched_line": 293,
         "lines": [
           {
-            "line": 286,
+            "line": 287,
             "text": "python -m unittest 06_Automatizacion/test_moc_canon_doc04_impact_001.py"
           },
           {
-            "line": 287,
+            "line": 288,
             "text": "python -m unittest 06_Automatizacion/test_moc_canon_doc04_adopt_gate_001.py"
           },
           {
-            "line": 288,
+            "line": 289,
             "text": "```"
           },
           {
-            "line": 289,
-            "text": ""
-          },
-          {
             "line": 290,
-            "text": "## Reportes iniciales"
+            "text": ""
           },
           {
             "line": 291,
-            "text": ""
+            "text": "## Reportes iniciales"
           },
           {
             "line": 292,
-            "text": "- `reportes/do_check_min_claves.md`: revision minima de archivos clave."
+            "text": ""
           },
           {
             "line": 293,
-            "text": "- `reportes/do_check_min_repo.md`: barrido informativo del repositorio."
+            "text": "- `reportes/do_check_min_claves.md`: revision minima de archivos clave."
           },
           {
             "line": 294,
-            "text": "- `reportes/do_check_min_repo.json`: barrido informativo en formato estructurado."
+            "text": "- `reportes/do_check_min_repo.md`: barrido informativo del repositorio."
           },
           {
             "line": 295,
-            "text": "- `reportes/do_check_med_claves.md`: revision media de archivos clave."
+            "text": "- `reportes/do_check_min_repo.json`: barrido informativo en formato estructurado."
           },
           {
             "line": 296,
-            "text": "- `reportes/do_check_med_repo.md`: barrido medio del repositorio."
+            "text": "- `reportes/do_check_med_claves.md`: revision media de archivos clave."
           },
           {
             "line": 297,
-            "text": "- `reportes/do_check_med_repo.json`: barrido medio en formato estructurado."
+            "text": "- `reportes/do_check_med_repo.md`: barrido medio del repositorio."
           },
           {
             "line": 298,
+            "text": "- `reportes/do_check_med_repo.json`: barrido medio en formato estructurado."
+          },
+          {
+            "line": 299,
             "text": "- `reportes/lab_status_board.md`: tablero de estado en formato Markdown."
           }
         ]
@@ -28584,58 +28584,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 294,
+        "matched_line": 295,
         "lines": [
           {
-            "line": 288,
+            "line": 289,
             "text": "```"
           },
           {
-            "line": 289,
-            "text": ""
-          },
-          {
             "line": 290,
-            "text": "## Reportes iniciales"
+            "text": ""
           },
           {
             "line": 291,
-            "text": ""
+            "text": "## Reportes iniciales"
           },
           {
             "line": 292,
-            "text": "- `reportes/do_check_min_claves.md`: revision minima de archivos clave."
+            "text": ""
           },
           {
             "line": 293,
-            "text": "- `reportes/do_check_min_repo.md`: barrido informativo del repositorio."
+            "text": "- `reportes/do_check_min_claves.md`: revision minima de archivos clave."
           },
           {
             "line": 294,
-            "text": "- `reportes/do_check_min_repo.json`: barrido informativo en formato estructurado."
+            "text": "- `reportes/do_check_min_repo.md`: barrido informativo del repositorio."
           },
           {
             "line": 295,
-            "text": "- `reportes/do_check_med_claves.md`: revision media de archivos clave."
+            "text": "- `reportes/do_check_min_repo.json`: barrido informativo en formato estructurado."
           },
           {
             "line": 296,
-            "text": "- `reportes/do_check_med_repo.md`: barrido medio del repositorio."
+            "text": "- `reportes/do_check_med_claves.md`: revision media de archivos clave."
           },
           {
             "line": 297,
-            "text": "- `reportes/do_check_med_repo.json`: barrido medio en formato estructurado."
+            "text": "- `reportes/do_check_med_repo.md`: barrido medio del repositorio."
           },
           {
             "line": 298,
-            "text": "- `reportes/lab_status_board.md`: tablero de estado en formato Markdown."
+            "text": "- `reportes/do_check_med_repo.json`: barrido medio en formato estructurado."
           },
           {
             "line": 299,
-            "text": "- `reportes/lab_status_board.json`: tablero de estado en formato estructurado."
+            "text": "- `reportes/lab_status_board.md`: tablero de estado en formato Markdown."
           },
           {
             "line": 300,
+            "text": "- `reportes/lab_status_board.json`: tablero de estado en formato estructurado."
+          },
+          {
+            "line": 301,
             "text": "- `reportes/lab_continuity_report.md`: continuidad integrada en formato Markdown."
           }
         ]
@@ -28959,58 +28959,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 299,
+        "matched_line": 300,
         "lines": [
           {
-            "line": 293,
+            "line": 294,
             "text": "- `reportes/do_check_min_repo.md`: barrido informativo del repositorio."
           },
           {
-            "line": 294,
+            "line": 295,
             "text": "- `reportes/do_check_min_repo.json`: barrido informativo en formato estructurado."
           },
           {
-            "line": 295,
+            "line": 296,
             "text": "- `reportes/do_check_med_claves.md`: revision media de archivos clave."
           },
           {
-            "line": 296,
+            "line": 297,
             "text": "- `reportes/do_check_med_repo.md`: barrido medio del repositorio."
           },
           {
-            "line": 297,
+            "line": 298,
             "text": "- `reportes/do_check_med_repo.json`: barrido medio en formato estructurado."
           },
           {
-            "line": 298,
+            "line": 299,
             "text": "- `reportes/lab_status_board.md`: tablero de estado en formato Markdown."
           },
           {
-            "line": 299,
+            "line": 300,
             "text": "- `reportes/lab_status_board.json`: tablero de estado en formato estructurado."
           },
           {
-            "line": 300,
+            "line": 301,
             "text": "- `reportes/lab_continuity_report.md`: continuidad integrada en formato Markdown."
           },
           {
-            "line": 301,
+            "line": 302,
             "text": "- `reportes/lab_continuity_report.json`: continuidad integrada en formato estructurado."
           },
           {
-            "line": 302,
+            "line": 303,
             "text": "- `reportes/lab_risk_report.md`: clasificacion de riesgos en formato Markdown."
           },
           {
-            "line": 303,
+            "line": 304,
             "text": "- `reportes/lab_risk_report.json`: clasificacion de riesgos en formato estructurado."
           },
           {
-            "line": 304,
+            "line": 305,
             "text": "- `reportes/lab_executive_summary.md`: resumen ejecutivo en formato Markdown."
           },
           {
-            "line": 305,
+            "line": 306,
             "text": "- `reportes/lab_executive_summary.json`: resumen ejecutivo en formato estructurado."
           }
         ]
@@ -29109,58 +29109,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 301,
+        "matched_line": 302,
         "lines": [
           {
-            "line": 295,
+            "line": 296,
             "text": "- `reportes/do_check_med_claves.md`: revision media de archivos clave."
           },
           {
-            "line": 296,
+            "line": 297,
             "text": "- `reportes/do_check_med_repo.md`: barrido medio del repositorio."
           },
           {
-            "line": 297,
+            "line": 298,
             "text": "- `reportes/do_check_med_repo.json`: barrido medio en formato estructurado."
           },
           {
-            "line": 298,
+            "line": 299,
             "text": "- `reportes/lab_status_board.md`: tablero de estado en formato Markdown."
           },
           {
-            "line": 299,
+            "line": 300,
             "text": "- `reportes/lab_status_board.json`: tablero de estado en formato estructurado."
           },
           {
-            "line": 300,
+            "line": 301,
             "text": "- `reportes/lab_continuity_report.md`: continuidad integrada en formato Markdown."
           },
           {
-            "line": 301,
+            "line": 302,
             "text": "- `reportes/lab_continuity_report.json`: continuidad integrada en formato estructurado."
           },
           {
-            "line": 302,
+            "line": 303,
             "text": "- `reportes/lab_risk_report.md`: clasificacion de riesgos en formato Markdown."
           },
           {
-            "line": 303,
+            "line": 304,
             "text": "- `reportes/lab_risk_report.json`: clasificacion de riesgos en formato estructurado."
           },
           {
-            "line": 304,
+            "line": 305,
             "text": "- `reportes/lab_executive_summary.md`: resumen ejecutivo en formato Markdown."
           },
           {
-            "line": 305,
+            "line": 306,
             "text": "- `reportes/lab_executive_summary.json`: resumen ejecutivo en formato estructurado."
           },
           {
-            "line": 306,
+            "line": 307,
             "text": "- `reportes/lab_run_report.md`: corrida unificada en formato Markdown."
           },
           {
-            "line": 307,
+            "line": 308,
             "text": "- `reportes/lab_run_report.json`: corrida unificada en formato estructurado."
           }
         ]
@@ -29259,58 +29259,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 303,
+        "matched_line": 304,
         "lines": [
           {
-            "line": 297,
+            "line": 298,
             "text": "- `reportes/do_check_med_repo.json`: barrido medio en formato estructurado."
           },
           {
-            "line": 298,
+            "line": 299,
             "text": "- `reportes/lab_status_board.md`: tablero de estado en formato Markdown."
           },
           {
-            "line": 299,
+            "line": 300,
             "text": "- `reportes/lab_status_board.json`: tablero de estado en formato estructurado."
           },
           {
-            "line": 300,
+            "line": 301,
             "text": "- `reportes/lab_continuity_report.md`: continuidad integrada en formato Markdown."
           },
           {
-            "line": 301,
+            "line": 302,
             "text": "- `reportes/lab_continuity_report.json`: continuidad integrada en formato estructurado."
           },
           {
-            "line": 302,
+            "line": 303,
             "text": "- `reportes/lab_risk_report.md`: clasificacion de riesgos en formato Markdown."
           },
           {
-            "line": 303,
+            "line": 304,
             "text": "- `reportes/lab_risk_report.json`: clasificacion de riesgos en formato estructurado."
           },
           {
-            "line": 304,
+            "line": 305,
             "text": "- `reportes/lab_executive_summary.md`: resumen ejecutivo en formato Markdown."
           },
           {
-            "line": 305,
+            "line": 306,
             "text": "- `reportes/lab_executive_summary.json`: resumen ejecutivo en formato estructurado."
           },
           {
-            "line": 306,
+            "line": 307,
             "text": "- `reportes/lab_run_report.md`: corrida unificada en formato Markdown."
           },
           {
-            "line": 307,
+            "line": 308,
             "text": "- `reportes/lab_run_report.json`: corrida unificada en formato estructurado."
           },
           {
-            "line": 308,
+            "line": 309,
             "text": "- `reportes/auditor_v0_report.md`: reporte del Auditor v0 no mutante."
           },
           {
-            "line": 309,
+            "line": 310,
             "text": "- `reportes/auditor_v0_report.json`: reporte estructurado del Auditor v0 no mutante."
           }
         ]
@@ -29409,58 +29409,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 305,
+        "matched_line": 306,
         "lines": [
           {
-            "line": 299,
+            "line": 300,
             "text": "- `reportes/lab_status_board.json`: tablero de estado en formato estructurado."
           },
           {
-            "line": 300,
+            "line": 301,
             "text": "- `reportes/lab_continuity_report.md`: continuidad integrada en formato Markdown."
           },
           {
-            "line": 301,
+            "line": 302,
             "text": "- `reportes/lab_continuity_report.json`: continuidad integrada en formato estructurado."
           },
           {
-            "line": 302,
+            "line": 303,
             "text": "- `reportes/lab_risk_report.md`: clasificacion de riesgos en formato Markdown."
           },
           {
-            "line": 303,
+            "line": 304,
             "text": "- `reportes/lab_risk_report.json`: clasificacion de riesgos en formato estructurado."
           },
           {
-            "line": 304,
+            "line": 305,
             "text": "- `reportes/lab_executive_summary.md`: resumen ejecutivo en formato Markdown."
           },
           {
-            "line": 305,
+            "line": 306,
             "text": "- `reportes/lab_executive_summary.json`: resumen ejecutivo en formato estructurado."
           },
           {
-            "line": 306,
+            "line": 307,
             "text": "- `reportes/lab_run_report.md`: corrida unificada en formato Markdown."
           },
           {
-            "line": 307,
+            "line": 308,
             "text": "- `reportes/lab_run_report.json`: corrida unificada en formato estructurado."
           },
           {
-            "line": 308,
+            "line": 309,
             "text": "- `reportes/auditor_v0_report.md`: reporte del Auditor v0 no mutante."
           },
           {
-            "line": 309,
+            "line": 310,
             "text": "- `reportes/auditor_v0_report.json`: reporte estructurado del Auditor v0 no mutante."
           },
           {
-            "line": 310,
+            "line": 311,
             "text": "- `reportes/auditor_do_check_adapter_report.md`: reporte del adaptador `DO_CHECK_REPORT`."
           },
           {
-            "line": 311,
+            "line": 312,
             "text": "- `reportes/auditor_do_check_adapter_report.json`: reporte estructurado del adaptador `DO_CHECK_REPORT`."
           }
         ]
@@ -29484,58 +29484,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 306,
+        "matched_line": 307,
         "lines": [
           {
-            "line": 300,
+            "line": 301,
             "text": "- `reportes/lab_continuity_report.md`: continuidad integrada en formato Markdown."
           },
           {
-            "line": 301,
+            "line": 302,
             "text": "- `reportes/lab_continuity_report.json`: continuidad integrada en formato estructurado."
           },
           {
-            "line": 302,
+            "line": 303,
             "text": "- `reportes/lab_risk_report.md`: clasificacion de riesgos en formato Markdown."
           },
           {
-            "line": 303,
+            "line": 304,
             "text": "- `reportes/lab_risk_report.json`: clasificacion de riesgos en formato estructurado."
           },
           {
-            "line": 304,
+            "line": 305,
             "text": "- `reportes/lab_executive_summary.md`: resumen ejecutivo en formato Markdown."
           },
           {
-            "line": 305,
+            "line": 306,
             "text": "- `reportes/lab_executive_summary.json`: resumen ejecutivo en formato estructurado."
           },
           {
-            "line": 306,
+            "line": 307,
             "text": "- `reportes/lab_run_report.md`: corrida unificada en formato Markdown."
           },
           {
-            "line": 307,
+            "line": 308,
             "text": "- `reportes/lab_run_report.json`: corrida unificada en formato estructurado."
           },
           {
-            "line": 308,
+            "line": 309,
             "text": "- `reportes/auditor_v0_report.md`: reporte del Auditor v0 no mutante."
           },
           {
-            "line": 309,
+            "line": 310,
             "text": "- `reportes/auditor_v0_report.json`: reporte estructurado del Auditor v0 no mutante."
           },
           {
-            "line": 310,
+            "line": 311,
             "text": "- `reportes/auditor_do_check_adapter_report.md`: reporte del adaptador `DO_CHECK_REPORT`."
           },
           {
-            "line": 311,
+            "line": 312,
             "text": "- `reportes/auditor_do_check_adapter_report.json`: reporte estructurado del adaptador `DO_CHECK_REPORT`."
           },
           {
-            "line": 312,
+            "line": 313,
             "text": "- `reportes/r001_table_checks_report.md`: reporte de chequeos tabulares `R-001` / `Xi`."
           }
         ]
@@ -29559,58 +29559,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 307,
+        "matched_line": 308,
         "lines": [
           {
-            "line": 301,
+            "line": 302,
             "text": "- `reportes/lab_continuity_report.json`: continuidad integrada en formato estructurado."
           },
           {
-            "line": 302,
+            "line": 303,
             "text": "- `reportes/lab_risk_report.md`: clasificacion de riesgos en formato Markdown."
           },
           {
-            "line": 303,
+            "line": 304,
             "text": "- `reportes/lab_risk_report.json`: clasificacion de riesgos en formato estructurado."
           },
           {
-            "line": 304,
+            "line": 305,
             "text": "- `reportes/lab_executive_summary.md`: resumen ejecutivo en formato Markdown."
           },
           {
-            "line": 305,
+            "line": 306,
             "text": "- `reportes/lab_executive_summary.json`: resumen ejecutivo en formato estructurado."
           },
           {
-            "line": 306,
+            "line": 307,
             "text": "- `reportes/lab_run_report.md`: corrida unificada en formato Markdown."
           },
           {
-            "line": 307,
+            "line": 308,
             "text": "- `reportes/lab_run_report.json`: corrida unificada en formato estructurado."
           },
           {
-            "line": 308,
+            "line": 309,
             "text": "- `reportes/auditor_v0_report.md`: reporte del Auditor v0 no mutante."
           },
           {
-            "line": 309,
+            "line": 310,
             "text": "- `reportes/auditor_v0_report.json`: reporte estructurado del Auditor v0 no mutante."
           },
           {
-            "line": 310,
+            "line": 311,
             "text": "- `reportes/auditor_do_check_adapter_report.md`: reporte del adaptador `DO_CHECK_REPORT`."
           },
           {
-            "line": 311,
+            "line": 312,
             "text": "- `reportes/auditor_do_check_adapter_report.json`: reporte estructurado del adaptador `DO_CHECK_REPORT`."
           },
           {
-            "line": 312,
+            "line": 313,
             "text": "- `reportes/r001_table_checks_report.md`: reporte de chequeos tabulares `R-001` / `Xi`."
           },
           {
-            "line": 313,
+            "line": 314,
             "text": "- `reportes/r001_table_checks_report.json`: reporte estructurado de chequeos tabulares `R-001` / `Xi`."
           }
         ]
@@ -33459,58 +33459,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 361,
+        "matched_line": 362,
         "lines": [
           {
-            "line": 355,
+            "line": 356,
             "text": "- `reportes/moc_exp_graph_authorization_gate_001_report.json`: reporte estructurado de autorizacion interna preparatoria."
           },
           {
-            "line": 356,
+            "line": 357,
             "text": "- `reportes/moc_canon_doc04_impact_001_report.md`: reporte de matriz no mutante `MOC-CANON-DOC04-IMPACT-001`."
           },
           {
-            "line": 357,
+            "line": 358,
             "text": "- `reportes/moc_canon_doc04_impact_001_report.json`: reporte estructurado de matriz no mutante Canon/Documento 04."
           },
           {
-            "line": 358,
+            "line": 359,
             "text": "- `reportes/moc_canon_doc04_adopt_gate_001_report.md`: reporte de compuerta `MOC-CANON-DOC04-ADOPT-GATE-001`."
           },
           {
-            "line": 359,
+            "line": 360,
             "text": "- `reportes/moc_canon_doc04_adopt_gate_001_report.json`: reporte estructurado de compuerta de adopcion posterior."
           },
           {
-            "line": 360,
+            "line": 361,
             "text": "- `fixtures/auditor_v0_cases.json`: matriz externa completa del Auditor v0."
           },
           {
-            "line": 361,
+            "line": 362,
             "text": "- `fixtures/auditor_v0_case_schema.json`: esquema operativo inicial de casos externos del Auditor v0."
           },
           {
-            "line": 362,
+            "line": 363,
             "text": "- `fixtures/auditor_v0_documental_cases.json`: fixture documental parcial no mutante."
           },
           {
-            "line": 363,
+            "line": 364,
             "text": "- `fixtures/ao_ext_confluence_cases.json`: fixture sintetico no regulado para `EXT-CONF-001` y `EXT-CONF-002`."
           },
           {
-            "line": 364,
+            "line": 365,
             "text": "- `fixtures/ao_doc04_wide_cases.json`: fixture sintetico no regulado para `AO-DOC04-WIDE-TEST-001`."
           },
           {
-            "line": 365,
+            "line": 366,
             "text": "- `fixtures/ao_ppi_bridge_002_cases.json`: fixture sintetico fuerte para `AO-PPI-BRIDGE-002`."
           },
           {
-            "line": 366,
+            "line": 367,
             "text": "- `fixtures/ao_ppi_bridge_003_matrix.json`: fixture de matriz de condiciones faltantes y casos heterogeneos `REPORT_LAYER` para `AO-PPI-BRIDGE-003`."
           },
           {
-            "line": 367,
+            "line": 368,
             "text": "- `fixtures/report_layer_serialization_cases.json`: fixture de serializacion interfrente local `AO-REPORT-SERIAL-001`."
           }
         ]
@@ -33609,58 +33609,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 363,
+        "matched_line": 364,
         "lines": [
           {
-            "line": 357,
+            "line": 358,
             "text": "- `reportes/moc_canon_doc04_impact_001_report.json`: reporte estructurado de matriz no mutante Canon/Documento 04."
           },
           {
-            "line": 358,
+            "line": 359,
             "text": "- `reportes/moc_canon_doc04_adopt_gate_001_report.md`: reporte de compuerta `MOC-CANON-DOC04-ADOPT-GATE-001`."
           },
           {
-            "line": 359,
+            "line": 360,
             "text": "- `reportes/moc_canon_doc04_adopt_gate_001_report.json`: reporte estructurado de compuerta de adopcion posterior."
           },
           {
-            "line": 360,
+            "line": 361,
             "text": "- `fixtures/auditor_v0_cases.json`: matriz externa completa del Auditor v0."
           },
           {
-            "line": 361,
+            "line": 362,
             "text": "- `fixtures/auditor_v0_case_schema.json`: esquema operativo inicial de casos externos del Auditor v0."
           },
           {
-            "line": 362,
+            "line": 363,
             "text": "- `fixtures/auditor_v0_documental_cases.json`: fixture documental parcial no mutante."
           },
           {
-            "line": 363,
+            "line": 364,
             "text": "- `fixtures/ao_ext_confluence_cases.json`: fixture sintetico no regulado para `EXT-CONF-001` y `EXT-CONF-002`."
           },
           {
-            "line": 364,
+            "line": 365,
             "text": "- `fixtures/ao_doc04_wide_cases.json`: fixture sintetico no regulado para `AO-DOC04-WIDE-TEST-001`."
           },
           {
-            "line": 365,
+            "line": 366,
             "text": "- `fixtures/ao_ppi_bridge_002_cases.json`: fixture sintetico fuerte para `AO-PPI-BRIDGE-002`."
           },
           {
-            "line": 366,
+            "line": 367,
             "text": "- `fixtures/ao_ppi_bridge_003_matrix.json`: fixture de matriz de condiciones faltantes y casos heterogeneos `REPORT_LAYER` para `AO-PPI-BRIDGE-003`."
           },
           {
-            "line": 367,
+            "line": 368,
             "text": "- `fixtures/report_layer_serialization_cases.json`: fixture de serializacion interfrente local `AO-REPORT-SERIAL-001`."
           },
           {
-            "line": 368,
+            "line": 369,
             "text": "- `fixtures/ao_tcs_rel_001_cases.json`: fixture de relacion local `AO/TCS`."
           },
           {
-            "line": 369,
+            "line": 370,
             "text": "- `fixtures/ao_authority_global_001_cases.json`: fixture de criterio local de autoridad entre niveles."
           }
         ]
@@ -33684,58 +33684,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 364,
+        "matched_line": 365,
         "lines": [
           {
-            "line": 358,
+            "line": 359,
             "text": "- `reportes/moc_canon_doc04_adopt_gate_001_report.md`: reporte de compuerta `MOC-CANON-DOC04-ADOPT-GATE-001`."
           },
           {
-            "line": 359,
+            "line": 360,
             "text": "- `reportes/moc_canon_doc04_adopt_gate_001_report.json`: reporte estructurado de compuerta de adopcion posterior."
           },
           {
-            "line": 360,
+            "line": 361,
             "text": "- `fixtures/auditor_v0_cases.json`: matriz externa completa del Auditor v0."
           },
           {
-            "line": 361,
+            "line": 362,
             "text": "- `fixtures/auditor_v0_case_schema.json`: esquema operativo inicial de casos externos del Auditor v0."
           },
           {
-            "line": 362,
+            "line": 363,
             "text": "- `fixtures/auditor_v0_documental_cases.json`: fixture documental parcial no mutante."
           },
           {
-            "line": 363,
+            "line": 364,
             "text": "- `fixtures/ao_ext_confluence_cases.json`: fixture sintetico no regulado para `EXT-CONF-001` y `EXT-CONF-002`."
           },
           {
-            "line": 364,
+            "line": 365,
             "text": "- `fixtures/ao_doc04_wide_cases.json`: fixture sintetico no regulado para `AO-DOC04-WIDE-TEST-001`."
           },
           {
-            "line": 365,
+            "line": 366,
             "text": "- `fixtures/ao_ppi_bridge_002_cases.json`: fixture sintetico fuerte para `AO-PPI-BRIDGE-002`."
           },
           {
-            "line": 366,
+            "line": 367,
             "text": "- `fixtures/ao_ppi_bridge_003_matrix.json`: fixture de matriz de condiciones faltantes y casos heterogeneos `REPORT_LAYER` para `AO-PPI-BRIDGE-003`."
           },
           {
-            "line": 367,
+            "line": 368,
             "text": "- `fixtures/report_layer_serialization_cases.json`: fixture de serializacion interfrente local `AO-REPORT-SERIAL-001`."
           },
           {
-            "line": 368,
+            "line": 369,
             "text": "- `fixtures/ao_tcs_rel_001_cases.json`: fixture de relacion local `AO/TCS`."
           },
           {
-            "line": 369,
+            "line": 370,
             "text": "- `fixtures/ao_authority_global_001_cases.json`: fixture de criterio local de autoridad entre niveles."
           },
           {
-            "line": 370,
+            "line": 371,
             "text": "- `fixtures/ao_ext_cov_001_cases.json`: fixture de cobertura externa amplia sintetica."
           }
         ]
@@ -33759,58 +33759,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 365,
+        "matched_line": 366,
         "lines": [
           {
-            "line": 359,
+            "line": 360,
             "text": "- `reportes/moc_canon_doc04_adopt_gate_001_report.json`: reporte estructurado de compuerta de adopcion posterior."
           },
           {
-            "line": 360,
+            "line": 361,
             "text": "- `fixtures/auditor_v0_cases.json`: matriz externa completa del Auditor v0."
           },
           {
-            "line": 361,
+            "line": 362,
             "text": "- `fixtures/auditor_v0_case_schema.json`: esquema operativo inicial de casos externos del Auditor v0."
           },
           {
-            "line": 362,
+            "line": 363,
             "text": "- `fixtures/auditor_v0_documental_cases.json`: fixture documental parcial no mutante."
           },
           {
-            "line": 363,
+            "line": 364,
             "text": "- `fixtures/ao_ext_confluence_cases.json`: fixture sintetico no regulado para `EXT-CONF-001` y `EXT-CONF-002`."
           },
           {
-            "line": 364,
+            "line": 365,
             "text": "- `fixtures/ao_doc04_wide_cases.json`: fixture sintetico no regulado para `AO-DOC04-WIDE-TEST-001`."
           },
           {
-            "line": 365,
+            "line": 366,
             "text": "- `fixtures/ao_ppi_bridge_002_cases.json`: fixture sintetico fuerte para `AO-PPI-BRIDGE-002`."
           },
           {
-            "line": 366,
+            "line": 367,
             "text": "- `fixtures/ao_ppi_bridge_003_matrix.json`: fixture de matriz de condiciones faltantes y casos heterogeneos `REPORT_LAYER` para `AO-PPI-BRIDGE-003`."
           },
           {
-            "line": 367,
+            "line": 368,
             "text": "- `fixtures/report_layer_serialization_cases.json`: fixture de serializacion interfrente local `AO-REPORT-SERIAL-001`."
           },
           {
-            "line": 368,
+            "line": 369,
             "text": "- `fixtures/ao_tcs_rel_001_cases.json`: fixture de relacion local `AO/TCS`."
           },
           {
-            "line": 369,
+            "line": 370,
             "text": "- `fixtures/ao_authority_global_001_cases.json`: fixture de criterio local de autoridad entre niveles."
           },
           {
-            "line": 370,
+            "line": 371,
             "text": "- `fixtures/ao_ext_cov_001_cases.json`: fixture de cobertura externa amplia sintetica."
           },
           {
-            "line": 371,
+            "line": 372,
             "text": "- `fixtures/ao_ppi_bridge_004_matrix.json`: fixture de matriz consolidada posterior a las rutas AO defendibles."
           }
         ]
@@ -33834,58 +33834,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 366,
+        "matched_line": 367,
         "lines": [
           {
-            "line": 360,
+            "line": 361,
             "text": "- `fixtures/auditor_v0_cases.json`: matriz externa completa del Auditor v0."
           },
           {
-            "line": 361,
+            "line": 362,
             "text": "- `fixtures/auditor_v0_case_schema.json`: esquema operativo inicial de casos externos del Auditor v0."
           },
           {
-            "line": 362,
+            "line": 363,
             "text": "- `fixtures/auditor_v0_documental_cases.json`: fixture documental parcial no mutante."
           },
           {
-            "line": 363,
+            "line": 364,
             "text": "- `fixtures/ao_ext_confluence_cases.json`: fixture sintetico no regulado para `EXT-CONF-001` y `EXT-CONF-002`."
           },
           {
-            "line": 364,
+            "line": 365,
             "text": "- `fixtures/ao_doc04_wide_cases.json`: fixture sintetico no regulado para `AO-DOC04-WIDE-TEST-001`."
           },
           {
-            "line": 365,
+            "line": 366,
             "text": "- `fixtures/ao_ppi_bridge_002_cases.json`: fixture sintetico fuerte para `AO-PPI-BRIDGE-002`."
           },
           {
-            "line": 366,
+            "line": 367,
             "text": "- `fixtures/ao_ppi_bridge_003_matrix.json`: fixture de matriz de condiciones faltantes y casos heterogeneos `REPORT_LAYER` para `AO-PPI-BRIDGE-003`."
           },
           {
-            "line": 367,
+            "line": 368,
             "text": "- `fixtures/report_layer_serialization_cases.json`: fixture de serializacion interfrente local `AO-REPORT-SERIAL-001`."
           },
           {
-            "line": 368,
+            "line": 369,
             "text": "- `fixtures/ao_tcs_rel_001_cases.json`: fixture de relacion local `AO/TCS`."
           },
           {
-            "line": 369,
+            "line": 370,
             "text": "- `fixtures/ao_authority_global_001_cases.json`: fixture de criterio local de autoridad entre niveles."
           },
           {
-            "line": 370,
+            "line": 371,
             "text": "- `fixtures/ao_ext_cov_001_cases.json`: fixture de cobertura externa amplia sintetica."
           },
           {
-            "line": 371,
+            "line": 372,
             "text": "- `fixtures/ao_ppi_bridge_004_matrix.json`: fixture de matriz consolidada posterior a las rutas AO defendibles."
           },
           {
-            "line": 372,
+            "line": 373,
             "text": "- `fixtures/ao_protocol_independent_001_cases.json`: fixture del protocolo reproducible independiente local."
           }
         ]
@@ -33909,58 +33909,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 367,
+        "matched_line": 368,
         "lines": [
           {
-            "line": 361,
+            "line": 362,
             "text": "- `fixtures/auditor_v0_case_schema.json`: esquema operativo inicial de casos externos del Auditor v0."
           },
           {
-            "line": 362,
+            "line": 363,
             "text": "- `fixtures/auditor_v0_documental_cases.json`: fixture documental parcial no mutante."
           },
           {
-            "line": 363,
+            "line": 364,
             "text": "- `fixtures/ao_ext_confluence_cases.json`: fixture sintetico no regulado para `EXT-CONF-001` y `EXT-CONF-002`."
           },
           {
-            "line": 364,
+            "line": 365,
             "text": "- `fixtures/ao_doc04_wide_cases.json`: fixture sintetico no regulado para `AO-DOC04-WIDE-TEST-001`."
           },
           {
-            "line": 365,
+            "line": 366,
             "text": "- `fixtures/ao_ppi_bridge_002_cases.json`: fixture sintetico fuerte para `AO-PPI-BRIDGE-002`."
           },
           {
-            "line": 366,
+            "line": 367,
             "text": "- `fixtures/ao_ppi_bridge_003_matrix.json`: fixture de matriz de condiciones faltantes y casos heterogeneos `REPORT_LAYER` para `AO-PPI-BRIDGE-003`."
           },
           {
-            "line": 367,
+            "line": 368,
             "text": "- `fixtures/report_layer_serialization_cases.json`: fixture de serializacion interfrente local `AO-REPORT-SERIAL-001`."
           },
           {
-            "line": 368,
+            "line": 369,
             "text": "- `fixtures/ao_tcs_rel_001_cases.json`: fixture de relacion local `AO/TCS`."
           },
           {
-            "line": 369,
+            "line": 370,
             "text": "- `fixtures/ao_authority_global_001_cases.json`: fixture de criterio local de autoridad entre niveles."
           },
           {
-            "line": 370,
+            "line": 371,
             "text": "- `fixtures/ao_ext_cov_001_cases.json`: fixture de cobertura externa amplia sintetica."
           },
           {
-            "line": 371,
+            "line": 372,
             "text": "- `fixtures/ao_ppi_bridge_004_matrix.json`: fixture de matriz consolidada posterior a las rutas AO defendibles."
           },
           {
-            "line": 372,
+            "line": 373,
             "text": "- `fixtures/ao_protocol_independent_001_cases.json`: fixture del protocolo reproducible independiente local."
           },
           {
-            "line": 373,
+            "line": 374,
             "text": "- `fixtures/ao_eq_global_gate_001_matrix.json`: fixture de compuerta de Equivalencia global."
           }
         ]
@@ -33984,58 +33984,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 368,
+        "matched_line": 369,
         "lines": [
           {
-            "line": 362,
+            "line": 363,
             "text": "- `fixtures/auditor_v0_documental_cases.json`: fixture documental parcial no mutante."
           },
           {
-            "line": 363,
+            "line": 364,
             "text": "- `fixtures/ao_ext_confluence_cases.json`: fixture sintetico no regulado para `EXT-CONF-001` y `EXT-CONF-002`."
           },
           {
-            "line": 364,
+            "line": 365,
             "text": "- `fixtures/ao_doc04_wide_cases.json`: fixture sintetico no regulado para `AO-DOC04-WIDE-TEST-001`."
           },
           {
-            "line": 365,
+            "line": 366,
             "text": "- `fixtures/ao_ppi_bridge_002_cases.json`: fixture sintetico fuerte para `AO-PPI-BRIDGE-002`."
           },
           {
-            "line": 366,
+            "line": 367,
             "text": "- `fixtures/ao_ppi_bridge_003_matrix.json`: fixture de matriz de condiciones faltantes y casos heterogeneos `REPORT_LAYER` para `AO-PPI-BRIDGE-003`."
           },
           {
-            "line": 367,
+            "line": 368,
             "text": "- `fixtures/report_layer_serialization_cases.json`: fixture de serializacion interfrente local `AO-REPORT-SERIAL-001`."
           },
           {
-            "line": 368,
+            "line": 369,
             "text": "- `fixtures/ao_tcs_rel_001_cases.json`: fixture de relacion local `AO/TCS`."
           },
           {
-            "line": 369,
+            "line": 370,
             "text": "- `fixtures/ao_authority_global_001_cases.json`: fixture de criterio local de autoridad entre niveles."
           },
           {
-            "line": 370,
+            "line": 371,
             "text": "- `fixtures/ao_ext_cov_001_cases.json`: fixture de cobertura externa amplia sintetica."
           },
           {
-            "line": 371,
+            "line": 372,
             "text": "- `fixtures/ao_ppi_bridge_004_matrix.json`: fixture de matriz consolidada posterior a las rutas AO defendibles."
           },
           {
-            "line": 372,
+            "line": 373,
             "text": "- `fixtures/ao_protocol_independent_001_cases.json`: fixture del protocolo reproducible independiente local."
           },
           {
-            "line": 373,
+            "line": 374,
             "text": "- `fixtures/ao_eq_global_gate_001_matrix.json`: fixture de compuerta de Equivalencia global."
           },
           {
-            "line": 374,
+            "line": 375,
             "text": "- `fixtures/ao_conf_global_gate_001_matrix.json`: fixture de compuerta de Confluencia global."
           }
         ]
@@ -34059,58 +34059,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 369,
+        "matched_line": 370,
         "lines": [
           {
-            "line": 363,
+            "line": 364,
             "text": "- `fixtures/ao_ext_confluence_cases.json`: fixture sintetico no regulado para `EXT-CONF-001` y `EXT-CONF-002`."
           },
           {
-            "line": 364,
+            "line": 365,
             "text": "- `fixtures/ao_doc04_wide_cases.json`: fixture sintetico no regulado para `AO-DOC04-WIDE-TEST-001`."
           },
           {
-            "line": 365,
+            "line": 366,
             "text": "- `fixtures/ao_ppi_bridge_002_cases.json`: fixture sintetico fuerte para `AO-PPI-BRIDGE-002`."
           },
           {
-            "line": 366,
+            "line": 367,
             "text": "- `fixtures/ao_ppi_bridge_003_matrix.json`: fixture de matriz de condiciones faltantes y casos heterogeneos `REPORT_LAYER` para `AO-PPI-BRIDGE-003`."
           },
           {
-            "line": 367,
+            "line": 368,
             "text": "- `fixtures/report_layer_serialization_cases.json`: fixture de serializacion interfrente local `AO-REPORT-SERIAL-001`."
           },
           {
-            "line": 368,
+            "line": 369,
             "text": "- `fixtures/ao_tcs_rel_001_cases.json`: fixture de relacion local `AO/TCS`."
           },
           {
-            "line": 369,
+            "line": 370,
             "text": "- `fixtures/ao_authority_global_001_cases.json`: fixture de criterio local de autoridad entre niveles."
           },
           {
-            "line": 370,
+            "line": 371,
             "text": "- `fixtures/ao_ext_cov_001_cases.json`: fixture de cobertura externa amplia sintetica."
           },
           {
-            "line": 371,
+            "line": 372,
             "text": "- `fixtures/ao_ppi_bridge_004_matrix.json`: fixture de matriz consolidada posterior a las rutas AO defendibles."
           },
           {
-            "line": 372,
+            "line": 373,
             "text": "- `fixtures/ao_protocol_independent_001_cases.json`: fixture del protocolo reproducible independiente local."
           },
           {
-            "line": 373,
+            "line": 374,
             "text": "- `fixtures/ao_eq_global_gate_001_matrix.json`: fixture de compuerta de Equivalencia global."
           },
           {
-            "line": 374,
+            "line": 375,
             "text": "- `fixtures/ao_conf_global_gate_001_matrix.json`: fixture de compuerta de Confluencia global."
           },
           {
-            "line": 375,
+            "line": 376,
             "text": "- `fixtures/ao_report_promo_gate_001_cases.json`: fixture de compuerta de promocion `REPORT_LAYER`."
           }
         ]
@@ -34134,58 +34134,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 370,
+        "matched_line": 371,
         "lines": [
           {
-            "line": 364,
+            "line": 365,
             "text": "- `fixtures/ao_doc04_wide_cases.json`: fixture sintetico no regulado para `AO-DOC04-WIDE-TEST-001`."
           },
           {
-            "line": 365,
+            "line": 366,
             "text": "- `fixtures/ao_ppi_bridge_002_cases.json`: fixture sintetico fuerte para `AO-PPI-BRIDGE-002`."
           },
           {
-            "line": 366,
+            "line": 367,
             "text": "- `fixtures/ao_ppi_bridge_003_matrix.json`: fixture de matriz de condiciones faltantes y casos heterogeneos `REPORT_LAYER` para `AO-PPI-BRIDGE-003`."
           },
           {
-            "line": 367,
+            "line": 368,
             "text": "- `fixtures/report_layer_serialization_cases.json`: fixture de serializacion interfrente local `AO-REPORT-SERIAL-001`."
           },
           {
-            "line": 368,
+            "line": 369,
             "text": "- `fixtures/ao_tcs_rel_001_cases.json`: fixture de relacion local `AO/TCS`."
           },
           {
-            "line": 369,
+            "line": 370,
             "text": "- `fixtures/ao_authority_global_001_cases.json`: fixture de criterio local de autoridad entre niveles."
           },
           {
-            "line": 370,
+            "line": 371,
             "text": "- `fixtures/ao_ext_cov_001_cases.json`: fixture de cobertura externa amplia sintetica."
           },
           {
-            "line": 371,
+            "line": 372,
             "text": "- `fixtures/ao_ppi_bridge_004_matrix.json`: fixture de matriz consolidada posterior a las rutas AO defendibles."
           },
           {
-            "line": 372,
+            "line": 373,
             "text": "- `fixtures/ao_protocol_independent_001_cases.json`: fixture del protocolo reproducible independiente local."
           },
           {
-            "line": 373,
+            "line": 374,
             "text": "- `fixtures/ao_eq_global_gate_001_matrix.json`: fixture de compuerta de Equivalencia global."
           },
           {
-            "line": 374,
+            "line": 375,
             "text": "- `fixtures/ao_conf_global_gate_001_matrix.json`: fixture de compuerta de Confluencia global."
           },
           {
-            "line": 375,
+            "line": 376,
             "text": "- `fixtures/ao_report_promo_gate_001_cases.json`: fixture de compuerta de promocion `REPORT_LAYER`."
           },
           {
-            "line": 376,
+            "line": 377,
             "text": "- `fixtures/ao_r4_gamma_export_gate_002_cases.json`: fixture de compuerta de exportacion R4/Gamma."
           }
         ]
@@ -34209,58 +34209,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 371,
+        "matched_line": 372,
         "lines": [
           {
-            "line": 365,
+            "line": 366,
             "text": "- `fixtures/ao_ppi_bridge_002_cases.json`: fixture sintetico fuerte para `AO-PPI-BRIDGE-002`."
           },
           {
-            "line": 366,
+            "line": 367,
             "text": "- `fixtures/ao_ppi_bridge_003_matrix.json`: fixture de matriz de condiciones faltantes y casos heterogeneos `REPORT_LAYER` para `AO-PPI-BRIDGE-003`."
           },
           {
-            "line": 367,
+            "line": 368,
             "text": "- `fixtures/report_layer_serialization_cases.json`: fixture de serializacion interfrente local `AO-REPORT-SERIAL-001`."
           },
           {
-            "line": 368,
+            "line": 369,
             "text": "- `fixtures/ao_tcs_rel_001_cases.json`: fixture de relacion local `AO/TCS`."
           },
           {
-            "line": 369,
+            "line": 370,
             "text": "- `fixtures/ao_authority_global_001_cases.json`: fixture de criterio local de autoridad entre niveles."
           },
           {
-            "line": 370,
+            "line": 371,
             "text": "- `fixtures/ao_ext_cov_001_cases.json`: fixture de cobertura externa amplia sintetica."
           },
           {
-            "line": 371,
+            "line": 372,
             "text": "- `fixtures/ao_ppi_bridge_004_matrix.json`: fixture de matriz consolidada posterior a las rutas AO defendibles."
           },
           {
-            "line": 372,
+            "line": 373,
             "text": "- `fixtures/ao_protocol_independent_001_cases.json`: fixture del protocolo reproducible independiente local."
           },
           {
-            "line": 373,
+            "line": 374,
             "text": "- `fixtures/ao_eq_global_gate_001_matrix.json`: fixture de compuerta de Equivalencia global."
           },
           {
-            "line": 374,
+            "line": 375,
             "text": "- `fixtures/ao_conf_global_gate_001_matrix.json`: fixture de compuerta de Confluencia global."
           },
           {
-            "line": 375,
+            "line": 376,
             "text": "- `fixtures/ao_report_promo_gate_001_cases.json`: fixture de compuerta de promocion `REPORT_LAYER`."
           },
           {
-            "line": 376,
+            "line": 377,
             "text": "- `fixtures/ao_r4_gamma_export_gate_002_cases.json`: fixture de compuerta de exportacion R4/Gamma."
           },
           {
-            "line": 377,
+            "line": 378,
             "text": "- `fixtures/ao_global_readiness_001_matrix.json`: fixture de matriz de readiness global."
           }
         ]
@@ -34284,58 +34284,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 372,
+        "matched_line": 373,
         "lines": [
           {
-            "line": 366,
+            "line": 367,
             "text": "- `fixtures/ao_ppi_bridge_003_matrix.json`: fixture de matriz de condiciones faltantes y casos heterogeneos `REPORT_LAYER` para `AO-PPI-BRIDGE-003`."
           },
           {
-            "line": 367,
+            "line": 368,
             "text": "- `fixtures/report_layer_serialization_cases.json`: fixture de serializacion interfrente local `AO-REPORT-SERIAL-001`."
           },
           {
-            "line": 368,
+            "line": 369,
             "text": "- `fixtures/ao_tcs_rel_001_cases.json`: fixture de relacion local `AO/TCS`."
           },
           {
-            "line": 369,
+            "line": 370,
             "text": "- `fixtures/ao_authority_global_001_cases.json`: fixture de criterio local de autoridad entre niveles."
           },
           {
-            "line": 370,
+            "line": 371,
             "text": "- `fixtures/ao_ext_cov_001_cases.json`: fixture de cobertura externa amplia sintetica."
           },
           {
-            "line": 371,
+            "line": 372,
             "text": "- `fixtures/ao_ppi_bridge_004_matrix.json`: fixture de matriz consolidada posterior a las rutas AO defendibles."
           },
           {
-            "line": 372,
+            "line": 373,
             "text": "- `fixtures/ao_protocol_independent_001_cases.json`: fixture del protocolo reproducible independiente local."
           },
           {
-            "line": 373,
+            "line": 374,
             "text": "- `fixtures/ao_eq_global_gate_001_matrix.json`: fixture de compuerta de Equivalencia global."
           },
           {
-            "line": 374,
+            "line": 375,
             "text": "- `fixtures/ao_conf_global_gate_001_matrix.json`: fixture de compuerta de Confluencia global."
           },
           {
-            "line": 375,
+            "line": 376,
             "text": "- `fixtures/ao_report_promo_gate_001_cases.json`: fixture de compuerta de promocion `REPORT_LAYER`."
           },
           {
-            "line": 376,
+            "line": 377,
             "text": "- `fixtures/ao_r4_gamma_export_gate_002_cases.json`: fixture de compuerta de exportacion R4/Gamma."
           },
           {
-            "line": 377,
+            "line": 378,
             "text": "- `fixtures/ao_global_readiness_001_matrix.json`: fixture de matriz de readiness global."
           },
           {
-            "line": 378,
+            "line": 379,
             "text": "- `fixtures/ao_external_evidence_gate_001_manifests.json`: fixture de manifiestos para admisibilidad externa."
           }
         ]
@@ -34359,58 +34359,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 373,
+        "matched_line": 374,
         "lines": [
           {
-            "line": 367,
+            "line": 368,
             "text": "- `fixtures/report_layer_serialization_cases.json`: fixture de serializacion interfrente local `AO-REPORT-SERIAL-001`."
           },
           {
-            "line": 368,
+            "line": 369,
             "text": "- `fixtures/ao_tcs_rel_001_cases.json`: fixture de relacion local `AO/TCS`."
           },
           {
-            "line": 369,
+            "line": 370,
             "text": "- `fixtures/ao_authority_global_001_cases.json`: fixture de criterio local de autoridad entre niveles."
           },
           {
-            "line": 370,
+            "line": 371,
             "text": "- `fixtures/ao_ext_cov_001_cases.json`: fixture de cobertura externa amplia sintetica."
           },
           {
-            "line": 371,
+            "line": 372,
             "text": "- `fixtures/ao_ppi_bridge_004_matrix.json`: fixture de matriz consolidada posterior a las rutas AO defendibles."
           },
           {
-            "line": 372,
+            "line": 373,
             "text": "- `fixtures/ao_protocol_independent_001_cases.json`: fixture del protocolo reproducible independiente local."
           },
           {
-            "line": 373,
+            "line": 374,
             "text": "- `fixtures/ao_eq_global_gate_001_matrix.json`: fixture de compuerta de Equivalencia global."
           },
           {
-            "line": 374,
+            "line": 375,
             "text": "- `fixtures/ao_conf_global_gate_001_matrix.json`: fixture de compuerta de Confluencia global."
           },
           {
-            "line": 375,
+            "line": 376,
             "text": "- `fixtures/ao_report_promo_gate_001_cases.json`: fixture de compuerta de promocion `REPORT_LAYER`."
           },
           {
-            "line": 376,
+            "line": 377,
             "text": "- `fixtures/ao_r4_gamma_export_gate_002_cases.json`: fixture de compuerta de exportacion R4/Gamma."
           },
           {
-            "line": 377,
+            "line": 378,
             "text": "- `fixtures/ao_global_readiness_001_matrix.json`: fixture de matriz de readiness global."
           },
           {
-            "line": 378,
+            "line": 379,
             "text": "- `fixtures/ao_external_evidence_gate_001_manifests.json`: fixture de manifiestos para admisibilidad externa."
           },
           {
-            "line": 379,
+            "line": 380,
             "text": "- `fixtures/ao_external_evidence_real_001_manifests.json`: fixture real de manifiestos externos `AO-EXT-REAL-001`."
           }
         ]
@@ -34434,58 +34434,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 374,
+        "matched_line": 375,
         "lines": [
           {
-            "line": 368,
+            "line": 369,
             "text": "- `fixtures/ao_tcs_rel_001_cases.json`: fixture de relacion local `AO/TCS`."
           },
           {
-            "line": 369,
+            "line": 370,
             "text": "- `fixtures/ao_authority_global_001_cases.json`: fixture de criterio local de autoridad entre niveles."
           },
           {
-            "line": 370,
+            "line": 371,
             "text": "- `fixtures/ao_ext_cov_001_cases.json`: fixture de cobertura externa amplia sintetica."
           },
           {
-            "line": 371,
+            "line": 372,
             "text": "- `fixtures/ao_ppi_bridge_004_matrix.json`: fixture de matriz consolidada posterior a las rutas AO defendibles."
           },
           {
-            "line": 372,
+            "line": 373,
             "text": "- `fixtures/ao_protocol_independent_001_cases.json`: fixture del protocolo reproducible independiente local."
           },
           {
-            "line": 373,
+            "line": 374,
             "text": "- `fixtures/ao_eq_global_gate_001_matrix.json`: fixture de compuerta de Equivalencia global."
           },
           {
-            "line": 374,
+            "line": 375,
             "text": "- `fixtures/ao_conf_global_gate_001_matrix.json`: fixture de compuerta de Confluencia global."
           },
           {
-            "line": 375,
+            "line": 376,
             "text": "- `fixtures/ao_report_promo_gate_001_cases.json`: fixture de compuerta de promocion `REPORT_LAYER`."
           },
           {
-            "line": 376,
+            "line": 377,
             "text": "- `fixtures/ao_r4_gamma_export_gate_002_cases.json`: fixture de compuerta de exportacion R4/Gamma."
           },
           {
-            "line": 377,
+            "line": 378,
             "text": "- `fixtures/ao_global_readiness_001_matrix.json`: fixture de matriz de readiness global."
           },
           {
-            "line": 378,
+            "line": 379,
             "text": "- `fixtures/ao_external_evidence_gate_001_manifests.json`: fixture de manifiestos para admisibilidad externa."
           },
           {
-            "line": 379,
+            "line": 380,
             "text": "- `fixtures/ao_external_evidence_real_001_manifests.json`: fixture real de manifiestos externos `AO-EXT-REAL-001`."
           },
           {
-            "line": 380,
+            "line": 381,
             "text": "- `fixtures/report_layer_c002_cases.json`: fixture sintetico para `REPORT-LAYER-C002-GATE-001`."
           }
         ]
@@ -34509,58 +34509,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 375,
+        "matched_line": 376,
         "lines": [
           {
-            "line": 369,
+            "line": 370,
             "text": "- `fixtures/ao_authority_global_001_cases.json`: fixture de criterio local de autoridad entre niveles."
           },
           {
-            "line": 370,
+            "line": 371,
             "text": "- `fixtures/ao_ext_cov_001_cases.json`: fixture de cobertura externa amplia sintetica."
           },
           {
-            "line": 371,
+            "line": 372,
             "text": "- `fixtures/ao_ppi_bridge_004_matrix.json`: fixture de matriz consolidada posterior a las rutas AO defendibles."
           },
           {
-            "line": 372,
+            "line": 373,
             "text": "- `fixtures/ao_protocol_independent_001_cases.json`: fixture del protocolo reproducible independiente local."
           },
           {
-            "line": 373,
+            "line": 374,
             "text": "- `fixtures/ao_eq_global_gate_001_matrix.json`: fixture de compuerta de Equivalencia global."
           },
           {
-            "line": 374,
+            "line": 375,
             "text": "- `fixtures/ao_conf_global_gate_001_matrix.json`: fixture de compuerta de Confluencia global."
           },
           {
-            "line": 375,
+            "line": 376,
             "text": "- `fixtures/ao_report_promo_gate_001_cases.json`: fixture de compuerta de promocion `REPORT_LAYER`."
           },
           {
-            "line": 376,
+            "line": 377,
             "text": "- `fixtures/ao_r4_gamma_export_gate_002_cases.json`: fixture de compuerta de exportacion R4/Gamma."
           },
           {
-            "line": 377,
+            "line": 378,
             "text": "- `fixtures/ao_global_readiness_001_matrix.json`: fixture de matriz de readiness global."
           },
           {
-            "line": 378,
+            "line": 379,
             "text": "- `fixtures/ao_external_evidence_gate_001_manifests.json`: fixture de manifiestos para admisibilidad externa."
           },
           {
-            "line": 379,
+            "line": 380,
             "text": "- `fixtures/ao_external_evidence_real_001_manifests.json`: fixture real de manifiestos externos `AO-EXT-REAL-001`."
           },
           {
-            "line": 380,
+            "line": 381,
             "text": "- `fixtures/report_layer_c002_cases.json`: fixture sintetico para `REPORT-LAYER-C002-GATE-001`."
           },
           {
-            "line": 381,
+            "line": 382,
             "text": "- `fixtures/moc_cases.json`: fixture sintetico no clinico para `MOC-EVAL-001`."
           }
         ]
@@ -34584,58 +34584,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 376,
+        "matched_line": 377,
         "lines": [
           {
-            "line": 370,
+            "line": 371,
             "text": "- `fixtures/ao_ext_cov_001_cases.json`: fixture de cobertura externa amplia sintetica."
           },
           {
-            "line": 371,
+            "line": 372,
             "text": "- `fixtures/ao_ppi_bridge_004_matrix.json`: fixture de matriz consolidada posterior a las rutas AO defendibles."
           },
           {
-            "line": 372,
+            "line": 373,
             "text": "- `fixtures/ao_protocol_independent_001_cases.json`: fixture del protocolo reproducible independiente local."
           },
           {
-            "line": 373,
+            "line": 374,
             "text": "- `fixtures/ao_eq_global_gate_001_matrix.json`: fixture de compuerta de Equivalencia global."
           },
           {
-            "line": 374,
+            "line": 375,
             "text": "- `fixtures/ao_conf_global_gate_001_matrix.json`: fixture de compuerta de Confluencia global."
           },
           {
-            "line": 375,
+            "line": 376,
             "text": "- `fixtures/ao_report_promo_gate_001_cases.json`: fixture de compuerta de promocion `REPORT_LAYER`."
           },
           {
-            "line": 376,
+            "line": 377,
             "text": "- `fixtures/ao_r4_gamma_export_gate_002_cases.json`: fixture de compuerta de exportacion R4/Gamma."
           },
           {
-            "line": 377,
+            "line": 378,
             "text": "- `fixtures/ao_global_readiness_001_matrix.json`: fixture de matriz de readiness global."
           },
           {
-            "line": 378,
+            "line": 379,
             "text": "- `fixtures/ao_external_evidence_gate_001_manifests.json`: fixture de manifiestos para admisibilidad externa."
           },
           {
-            "line": 379,
+            "line": 380,
             "text": "- `fixtures/ao_external_evidence_real_001_manifests.json`: fixture real de manifiestos externos `AO-EXT-REAL-001`."
           },
           {
-            "line": 380,
+            "line": 381,
             "text": "- `fixtures/report_layer_c002_cases.json`: fixture sintetico para `REPORT-LAYER-C002-GATE-001`."
           },
           {
-            "line": 381,
+            "line": 382,
             "text": "- `fixtures/moc_cases.json`: fixture sintetico no clinico para `MOC-EVAL-001`."
           },
           {
-            "line": 382,
+            "line": 383,
             "text": "- `fixtures/moc_experience_graph_cases.json`: fixture con casos 036-043 importados como evidencia documental estructural para `MOC-EXP-GRAPH-001`."
           }
         ]
@@ -34659,58 +34659,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 377,
+        "matched_line": 378,
         "lines": [
           {
-            "line": 371,
+            "line": 372,
             "text": "- `fixtures/ao_ppi_bridge_004_matrix.json`: fixture de matriz consolidada posterior a las rutas AO defendibles."
           },
           {
-            "line": 372,
+            "line": 373,
             "text": "- `fixtures/ao_protocol_independent_001_cases.json`: fixture del protocolo reproducible independiente local."
           },
           {
-            "line": 373,
+            "line": 374,
             "text": "- `fixtures/ao_eq_global_gate_001_matrix.json`: fixture de compuerta de Equivalencia global."
           },
           {
-            "line": 374,
+            "line": 375,
             "text": "- `fixtures/ao_conf_global_gate_001_matrix.json`: fixture de compuerta de Confluencia global."
           },
           {
-            "line": 375,
+            "line": 376,
             "text": "- `fixtures/ao_report_promo_gate_001_cases.json`: fixture de compuerta de promocion `REPORT_LAYER`."
           },
           {
-            "line": 376,
+            "line": 377,
             "text": "- `fixtures/ao_r4_gamma_export_gate_002_cases.json`: fixture de compuerta de exportacion R4/Gamma."
           },
           {
-            "line": 377,
+            "line": 378,
             "text": "- `fixtures/ao_global_readiness_001_matrix.json`: fixture de matriz de readiness global."
           },
           {
-            "line": 378,
+            "line": 379,
             "text": "- `fixtures/ao_external_evidence_gate_001_manifests.json`: fixture de manifiestos para admisibilidad externa."
           },
           {
-            "line": 379,
+            "line": 380,
             "text": "- `fixtures/ao_external_evidence_real_001_manifests.json`: fixture real de manifiestos externos `AO-EXT-REAL-001`."
           },
           {
-            "line": 380,
+            "line": 381,
             "text": "- `fixtures/report_layer_c002_cases.json`: fixture sintetico para `REPORT-LAYER-C002-GATE-001`."
           },
           {
-            "line": 381,
+            "line": 382,
             "text": "- `fixtures/moc_cases.json`: fixture sintetico no clinico para `MOC-EVAL-001`."
           },
           {
-            "line": 382,
+            "line": 383,
             "text": "- `fixtures/moc_experience_graph_cases.json`: fixture con casos 036-043 importados como evidencia documental estructural para `MOC-EXP-GRAPH-001`."
           },
           {
-            "line": 383,
+            "line": 384,
             "text": "- `fixtures/moc_exp_graph_authorization_gate_001.json`: manifiesto de autorizacion interna preparatoria para `MOC-GRAPH-CANON-DOC04-GATE-001`."
           }
         ]
@@ -34734,58 +34734,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 378,
+        "matched_line": 379,
         "lines": [
           {
-            "line": 372,
+            "line": 373,
             "text": "- `fixtures/ao_protocol_independent_001_cases.json`: fixture del protocolo reproducible independiente local."
           },
           {
-            "line": 373,
+            "line": 374,
             "text": "- `fixtures/ao_eq_global_gate_001_matrix.json`: fixture de compuerta de Equivalencia global."
           },
           {
-            "line": 374,
+            "line": 375,
             "text": "- `fixtures/ao_conf_global_gate_001_matrix.json`: fixture de compuerta de Confluencia global."
           },
           {
-            "line": 375,
+            "line": 376,
             "text": "- `fixtures/ao_report_promo_gate_001_cases.json`: fixture de compuerta de promocion `REPORT_LAYER`."
           },
           {
-            "line": 376,
+            "line": 377,
             "text": "- `fixtures/ao_r4_gamma_export_gate_002_cases.json`: fixture de compuerta de exportacion R4/Gamma."
           },
           {
-            "line": 377,
+            "line": 378,
             "text": "- `fixtures/ao_global_readiness_001_matrix.json`: fixture de matriz de readiness global."
           },
           {
-            "line": 378,
+            "line": 379,
             "text": "- `fixtures/ao_external_evidence_gate_001_manifests.json`: fixture de manifiestos para admisibilidad externa."
           },
           {
-            "line": 379,
+            "line": 380,
             "text": "- `fixtures/ao_external_evidence_real_001_manifests.json`: fixture real de manifiestos externos `AO-EXT-REAL-001`."
           },
           {
-            "line": 380,
+            "line": 381,
             "text": "- `fixtures/report_layer_c002_cases.json`: fixture sintetico para `REPORT-LAYER-C002-GATE-001`."
           },
           {
-            "line": 381,
+            "line": 382,
             "text": "- `fixtures/moc_cases.json`: fixture sintetico no clinico para `MOC-EVAL-001`."
           },
           {
-            "line": 382,
+            "line": 383,
             "text": "- `fixtures/moc_experience_graph_cases.json`: fixture con casos 036-043 importados como evidencia documental estructural para `MOC-EXP-GRAPH-001`."
           },
           {
-            "line": 383,
+            "line": 384,
             "text": "- `fixtures/moc_exp_graph_authorization_gate_001.json`: manifiesto de autorizacion interna preparatoria para `MOC-GRAPH-CANON-DOC04-GATE-001`."
           },
           {
-            "line": 384,
+            "line": 385,
             "text": "- `fixtures/moc_canon_doc04_impact_001_matrix.json`: matriz estructurada para `MOC-CANON-DOC04-IMPACT-001`."
           }
         ]
@@ -34884,58 +34884,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 380,
+        "matched_line": 381,
         "lines": [
           {
-            "line": 374,
+            "line": 375,
             "text": "- `fixtures/ao_conf_global_gate_001_matrix.json`: fixture de compuerta de Confluencia global."
           },
           {
-            "line": 375,
+            "line": 376,
             "text": "- `fixtures/ao_report_promo_gate_001_cases.json`: fixture de compuerta de promocion `REPORT_LAYER`."
           },
           {
-            "line": 376,
+            "line": 377,
             "text": "- `fixtures/ao_r4_gamma_export_gate_002_cases.json`: fixture de compuerta de exportacion R4/Gamma."
           },
           {
-            "line": 377,
+            "line": 378,
             "text": "- `fixtures/ao_global_readiness_001_matrix.json`: fixture de matriz de readiness global."
           },
           {
-            "line": 378,
+            "line": 379,
             "text": "- `fixtures/ao_external_evidence_gate_001_manifests.json`: fixture de manifiestos para admisibilidad externa."
           },
           {
-            "line": 379,
+            "line": 380,
             "text": "- `fixtures/ao_external_evidence_real_001_manifests.json`: fixture real de manifiestos externos `AO-EXT-REAL-001`."
           },
           {
-            "line": 380,
+            "line": 381,
             "text": "- `fixtures/report_layer_c002_cases.json`: fixture sintetico para `REPORT-LAYER-C002-GATE-001`."
           },
           {
-            "line": 381,
+            "line": 382,
             "text": "- `fixtures/moc_cases.json`: fixture sintetico no clinico para `MOC-EVAL-001`."
           },
           {
-            "line": 382,
+            "line": 383,
             "text": "- `fixtures/moc_experience_graph_cases.json`: fixture con casos 036-043 importados como evidencia documental estructural para `MOC-EXP-GRAPH-001`."
           },
           {
-            "line": 383,
+            "line": 384,
             "text": "- `fixtures/moc_exp_graph_authorization_gate_001.json`: manifiesto de autorizacion interna preparatoria para `MOC-GRAPH-CANON-DOC04-GATE-001`."
           },
           {
-            "line": 384,
+            "line": 385,
             "text": "- `fixtures/moc_canon_doc04_impact_001_matrix.json`: matriz estructurada para `MOC-CANON-DOC04-IMPACT-001`."
           },
           {
-            "line": 385,
+            "line": 386,
             "text": "- `fixtures/moc_canon_doc04_adopt_gate_001.json`: manifiesto estructurado para `MOC-CANON-DOC04-ADOPT-GATE-001`."
           },
           {
-            "line": 386,
+            "line": 387,
             "text": ""
           }
         ]
@@ -34959,58 +34959,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 381,
+        "matched_line": 382,
         "lines": [
           {
-            "line": 375,
+            "line": 376,
             "text": "- `fixtures/ao_report_promo_gate_001_cases.json`: fixture de compuerta de promocion `REPORT_LAYER`."
           },
           {
-            "line": 376,
+            "line": 377,
             "text": "- `fixtures/ao_r4_gamma_export_gate_002_cases.json`: fixture de compuerta de exportacion R4/Gamma."
           },
           {
-            "line": 377,
+            "line": 378,
             "text": "- `fixtures/ao_global_readiness_001_matrix.json`: fixture de matriz de readiness global."
           },
           {
-            "line": 378,
+            "line": 379,
             "text": "- `fixtures/ao_external_evidence_gate_001_manifests.json`: fixture de manifiestos para admisibilidad externa."
           },
           {
-            "line": 379,
+            "line": 380,
             "text": "- `fixtures/ao_external_evidence_real_001_manifests.json`: fixture real de manifiestos externos `AO-EXT-REAL-001`."
           },
           {
-            "line": 380,
+            "line": 381,
             "text": "- `fixtures/report_layer_c002_cases.json`: fixture sintetico para `REPORT-LAYER-C002-GATE-001`."
           },
           {
-            "line": 381,
+            "line": 382,
             "text": "- `fixtures/moc_cases.json`: fixture sintetico no clinico para `MOC-EVAL-001`."
           },
           {
-            "line": 382,
+            "line": 383,
             "text": "- `fixtures/moc_experience_graph_cases.json`: fixture con casos 036-043 importados como evidencia documental estructural para `MOC-EXP-GRAPH-001`."
           },
           {
-            "line": 383,
+            "line": 384,
             "text": "- `fixtures/moc_exp_graph_authorization_gate_001.json`: manifiesto de autorizacion interna preparatoria para `MOC-GRAPH-CANON-DOC04-GATE-001`."
           },
           {
-            "line": 384,
+            "line": 385,
             "text": "- `fixtures/moc_canon_doc04_impact_001_matrix.json`: matriz estructurada para `MOC-CANON-DOC04-IMPACT-001`."
           },
           {
-            "line": 385,
+            "line": 386,
             "text": "- `fixtures/moc_canon_doc04_adopt_gate_001.json`: manifiesto estructurado para `MOC-CANON-DOC04-ADOPT-GATE-001`."
           },
           {
-            "line": 386,
+            "line": 387,
             "text": ""
           },
           {
-            "line": 387,
+            "line": 388,
             "text": "## Estado"
           }
         ]
@@ -35034,58 +35034,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 382,
+        "matched_line": 383,
         "lines": [
           {
-            "line": 376,
+            "line": 377,
             "text": "- `fixtures/ao_r4_gamma_export_gate_002_cases.json`: fixture de compuerta de exportacion R4/Gamma."
           },
           {
-            "line": 377,
+            "line": 378,
             "text": "- `fixtures/ao_global_readiness_001_matrix.json`: fixture de matriz de readiness global."
           },
           {
-            "line": 378,
+            "line": 379,
             "text": "- `fixtures/ao_external_evidence_gate_001_manifests.json`: fixture de manifiestos para admisibilidad externa."
           },
           {
-            "line": 379,
+            "line": 380,
             "text": "- `fixtures/ao_external_evidence_real_001_manifests.json`: fixture real de manifiestos externos `AO-EXT-REAL-001`."
           },
           {
-            "line": 380,
+            "line": 381,
             "text": "- `fixtures/report_layer_c002_cases.json`: fixture sintetico para `REPORT-LAYER-C002-GATE-001`."
           },
           {
-            "line": 381,
+            "line": 382,
             "text": "- `fixtures/moc_cases.json`: fixture sintetico no clinico para `MOC-EVAL-001`."
           },
           {
-            "line": 382,
+            "line": 383,
             "text": "- `fixtures/moc_experience_graph_cases.json`: fixture con casos 036-043 importados como evidencia documental estructural para `MOC-EXP-GRAPH-001`."
           },
           {
-            "line": 383,
+            "line": 384,
             "text": "- `fixtures/moc_exp_graph_authorization_gate_001.json`: manifiesto de autorizacion interna preparatoria para `MOC-GRAPH-CANON-DOC04-GATE-001`."
           },
           {
-            "line": 384,
+            "line": 385,
             "text": "- `fixtures/moc_canon_doc04_impact_001_matrix.json`: matriz estructurada para `MOC-CANON-DOC04-IMPACT-001`."
           },
           {
-            "line": 385,
+            "line": 386,
             "text": "- `fixtures/moc_canon_doc04_adopt_gate_001.json`: manifiesto estructurado para `MOC-CANON-DOC04-ADOPT-GATE-001`."
           },
           {
-            "line": 386,
+            "line": 387,
             "text": ""
           },
           {
-            "line": 387,
+            "line": 388,
             "text": "## Estado"
           },
           {
-            "line": 388,
+            "line": 389,
             "text": ""
           }
         ]
@@ -35109,58 +35109,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 383,
+        "matched_line": 384,
         "lines": [
           {
-            "line": 377,
+            "line": 378,
             "text": "- `fixtures/ao_global_readiness_001_matrix.json`: fixture de matriz de readiness global."
           },
           {
-            "line": 378,
+            "line": 379,
             "text": "- `fixtures/ao_external_evidence_gate_001_manifests.json`: fixture de manifiestos para admisibilidad externa."
           },
           {
-            "line": 379,
+            "line": 380,
             "text": "- `fixtures/ao_external_evidence_real_001_manifests.json`: fixture real de manifiestos externos `AO-EXT-REAL-001`."
           },
           {
-            "line": 380,
+            "line": 381,
             "text": "- `fixtures/report_layer_c002_cases.json`: fixture sintetico para `REPORT-LAYER-C002-GATE-001`."
           },
           {
-            "line": 381,
+            "line": 382,
             "text": "- `fixtures/moc_cases.json`: fixture sintetico no clinico para `MOC-EVAL-001`."
           },
           {
-            "line": 382,
+            "line": 383,
             "text": "- `fixtures/moc_experience_graph_cases.json`: fixture con casos 036-043 importados como evidencia documental estructural para `MOC-EXP-GRAPH-001`."
           },
           {
-            "line": 383,
+            "line": 384,
             "text": "- `fixtures/moc_exp_graph_authorization_gate_001.json`: manifiesto de autorizacion interna preparatoria para `MOC-GRAPH-CANON-DOC04-GATE-001`."
           },
           {
-            "line": 384,
+            "line": 385,
             "text": "- `fixtures/moc_canon_doc04_impact_001_matrix.json`: matriz estructurada para `MOC-CANON-DOC04-IMPACT-001`."
           },
           {
-            "line": 385,
+            "line": 386,
             "text": "- `fixtures/moc_canon_doc04_adopt_gate_001.json`: manifiesto estructurado para `MOC-CANON-DOC04-ADOPT-GATE-001`."
           },
           {
-            "line": 386,
-            "text": ""
-          },
-          {
             "line": 387,
-            "text": "## Estado"
+            "text": ""
           },
           {
             "line": 388,
-            "text": ""
+            "text": "## Estado"
           },
           {
             "line": 389,
+            "text": ""
+          },
+          {
+            "line": 390,
             "text": "Esta superficie pertenece a `AUT-001`."
           }
         ]
@@ -35184,58 +35184,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 384,
+        "matched_line": 385,
         "lines": [
           {
-            "line": 378,
+            "line": 379,
             "text": "- `fixtures/ao_external_evidence_gate_001_manifests.json`: fixture de manifiestos para admisibilidad externa."
           },
           {
-            "line": 379,
+            "line": 380,
             "text": "- `fixtures/ao_external_evidence_real_001_manifests.json`: fixture real de manifiestos externos `AO-EXT-REAL-001`."
           },
           {
-            "line": 380,
+            "line": 381,
             "text": "- `fixtures/report_layer_c002_cases.json`: fixture sintetico para `REPORT-LAYER-C002-GATE-001`."
           },
           {
-            "line": 381,
+            "line": 382,
             "text": "- `fixtures/moc_cases.json`: fixture sintetico no clinico para `MOC-EVAL-001`."
           },
           {
-            "line": 382,
+            "line": 383,
             "text": "- `fixtures/moc_experience_graph_cases.json`: fixture con casos 036-043 importados como evidencia documental estructural para `MOC-EXP-GRAPH-001`."
           },
           {
-            "line": 383,
+            "line": 384,
             "text": "- `fixtures/moc_exp_graph_authorization_gate_001.json`: manifiesto de autorizacion interna preparatoria para `MOC-GRAPH-CANON-DOC04-GATE-001`."
           },
           {
-            "line": 384,
+            "line": 385,
             "text": "- `fixtures/moc_canon_doc04_impact_001_matrix.json`: matriz estructurada para `MOC-CANON-DOC04-IMPACT-001`."
           },
           {
-            "line": 385,
+            "line": 386,
             "text": "- `fixtures/moc_canon_doc04_adopt_gate_001.json`: manifiesto estructurado para `MOC-CANON-DOC04-ADOPT-GATE-001`."
           },
           {
-            "line": 386,
-            "text": ""
-          },
-          {
             "line": 387,
-            "text": "## Estado"
+            "text": ""
           },
           {
             "line": 388,
-            "text": ""
+            "text": "## Estado"
           },
           {
             "line": 389,
-            "text": "Esta superficie pertenece a `AUT-001`."
+            "text": ""
           },
           {
             "line": 390,
+            "text": "Esta superficie pertenece a `AUT-001`."
+          },
+          {
+            "line": 391,
             "text": ""
           }
         ]
@@ -35259,58 +35259,58 @@
       "treatment_status": "pendiente_normalizacion_documental",
       "risk_blocks_closure": false,
       "source_context": {
-        "matched_line": 385,
+        "matched_line": 386,
         "lines": [
           {
-            "line": 379,
+            "line": 380,
             "text": "- `fixtures/ao_external_evidence_real_001_manifests.json`: fixture real de manifiestos externos `AO-EXT-REAL-001`."
           },
           {
-            "line": 380,
+            "line": 381,
             "text": "- `fixtures/report_layer_c002_cases.json`: fixture sintetico para `REPORT-LAYER-C002-GATE-001`."
           },
           {
-            "line": 381,
+            "line": 382,
             "text": "- `fixtures/moc_cases.json`: fixture sintetico no clinico para `MOC-EVAL-001`."
           },
           {
-            "line": 382,
+            "line": 383,
             "text": "- `fixtures/moc_experience_graph_cases.json`: fixture con casos 036-043 importados como evidencia documental estructural para `MOC-EXP-GRAPH-001`."
           },
           {
-            "line": 383,
+            "line": 384,
             "text": "- `fixtures/moc_exp_graph_authorization_gate_001.json`: manifiesto de autorizacion interna preparatoria para `MOC-GRAPH-CANON-DOC04-GATE-001`."
           },
           {
-            "line": 384,
+            "line": 385,
             "text": "- `fixtures/moc_canon_doc04_impact_001_matrix.json`: matriz estructurada para `MOC-CANON-DOC04-IMPACT-001`."
           },
           {
-            "line": 385,
+            "line": 386,
             "text": "- `fixtures/moc_canon_doc04_adopt_gate_001.json`: manifiesto estructurado para `MOC-CANON-DOC04-ADOPT-GATE-001`."
           },
           {
-            "line": 386,
-            "text": ""
-          },
-          {
             "line": 387,
-            "text": "## Estado"
+            "text": ""
           },
           {
             "line": 388,
-            "text": ""
+            "text": "## Estado"
           },
           {
             "line": 389,
-            "text": "Esta superficie pertenece a `AUT-001`."
-          },
-          {
-            "line": 390,
             "text": ""
           },
           {
+            "line": 390,
+            "text": "Esta superficie pertenece a `AUT-001`."
+          },
+          {
             "line": 391,
+            "text": ""
+          },
+          {
+            "line": 392,
             "text": "`DO-CHECK-MIN-001` queda aceptado como MVP minimo provisional."
           }
         ]

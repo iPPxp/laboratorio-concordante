@@ -22,11 +22,13 @@ La aceptacion es local, no clinica, no canonica, no regulada y no mutante.
 
 ## Evidencia revisada
 
-Fuente externa:
+Fuente externa identificada de forma estable:
 
 ```text
-C:\Users\IximM\OneDrive\Documentos\v.1.5.2\psicologia\MOC-GEO-METR-001_Metricas_Geometricas_Casos.md
+external:MOC-GEO-METR-001
 ```
+
+La ubicacion absoluta usada durante la revision inicial permanece recuperable en Git como procedencia historica, pero no es una dependencia activa ni una fuente de autoridad para el Laboratorio.
 
 Evidencia interna:
 
@@ -63,4 +65,3 @@ Evidencia interna:
 `MOC-EXP-GRAPH-001` y sus capas asociadas pueden quedar aceptadas como ruta local de `MOC-001`.
 
 No hay autorizacion para Canon, Documento 04, Nivel C, cierre global, exportacion general ni modo mutante.
-

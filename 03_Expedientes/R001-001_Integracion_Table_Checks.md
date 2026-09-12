@@ -8,6 +8,8 @@ Identificador local: `R001-TABLE-CHECK-001`.
 
 Fuente recibida: `C:\Users\IximM\OneDrive\Documentos\v.1.5.2\checks\r001_table_checks.py`.
 
+Clasificacion de esta ruta: procedencia historica valida. No es una dependencia activa; el archivo operativo es la copia integrada indicada a continuacion.
+
 Archivo integrado: `06_Automatizacion/r001_table_checks.py`.
 
 ## Proposito

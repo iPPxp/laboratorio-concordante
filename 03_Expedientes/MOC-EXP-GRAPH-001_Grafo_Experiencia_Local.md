@@ -16,11 +16,13 @@ La incorporacion es estructural y defensiva: el grafo sirve para ordenar casos n
 
 ## Fuente externa admitida como evidencia auxiliar
 
-Fuente primaria revisada:
+Fuente primaria revisada, expresada mediante identificador estable:
 
 ```text
-C:\Users\IximM\OneDrive\Documentos\v.1.5.2\psicologia\MOC-GEO-METR-001_Metricas_Geometricas_Casos.md
+external:MOC-GEO-METR-001
 ```
+
+La ubicacion absoluta usada durante la importacion inicial queda en la historia Git del expediente. No constituye una dependencia de ejecucion, una ruta vigente ni una fuente de autoridad semantica.
 
 Tipo de evidencia:
 
