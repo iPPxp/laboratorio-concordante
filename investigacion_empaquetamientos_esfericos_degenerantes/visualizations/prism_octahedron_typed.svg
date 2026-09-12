@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="430" viewBox="0 0 920 430">
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#262626}.title{font-size:18px;font-weight:600}.small{font-size:13px}.h{stroke:#2266aa}.a{stroke:#c46920}.m{stroke:#2d8a4b}.x{stroke:#8a43a8}.edge{fill:none;stroke-width:3}.nodeh{fill:#b9dbff;stroke:#2266aa;stroke-width:2}.nodea{fill:#ffd0a8;stroke:#c46920;stroke-width:2}</style>
+<text x="460" y="28" text-anchor="middle" class="title">Dos C3 tipados sobre los mismos seis vertices</text>
+<line class="edge h" x1="235.00" y1="92.00" x2="345.85" y2="284.00"/>
+<line class="edge h" x1="345.85" y1="284.00" x2="124.15" y2="284.00"/>
+<line class="edge h" x1="124.15" y1="284.00" x2="235.00" y2="92.00"/>
+<line class="edge a" x1="235.00" y1="290.00" x2="174.38" y2="185.00"/>
+<line class="edge a" x1="174.38" y1="185.00" x2="295.62" y2="185.00"/>
+<line class="edge a" x1="295.62" y1="185.00" x2="235.00" y2="290.00"/>
+<line class="edge m" x1="235.00" y1="290.00" x2="235.00" y2="92.00" opacity="0.83"/>
+<line class="edge m" x1="174.38" y1="185.00" x2="345.85" y2="284.00" opacity="0.83"/>
+<line class="edge m" x1="295.62" y1="185.00" x2="124.15" y2="284.00" opacity="0.83"/>
+<circle class="nodeh" cx="235.00" cy="92.00" r="17"/>
+<text x="235.00" y="97.00" text-anchor="middle" class="small">H0</text>
+<circle class="nodeh" cx="345.85" cy="284.00" r="17"/>
+<text x="345.85" y="289.00" text-anchor="middle" class="small">H1</text>
+<circle class="nodeh" cx="124.15" cy="284.00" r="17"/>
+<text x="124.15" y="289.00" text-anchor="middle" class="small">H2</text>
+<circle class="nodea" cx="235.00" cy="290.00" r="17"/>
+<text x="235.00" y="295.00" text-anchor="middle" class="small">A0</text>
+<circle class="nodea" cx="174.38" cy="185.00" r="17"/>
+<text x="174.38" y="190.00" text-anchor="middle" class="small">A1</text>
+<circle class="nodea" cx="295.62" cy="185.00" r="17"/>
+<text x="295.62" y="190.00" text-anchor="middle" class="small">A2</text>
+<text x="235.0" y="395" text-anchor="middle" class="title">Prisma: matching M</text>
+<line class="edge h" x1="685.00" y1="92.00" x2="795.85" y2="284.00"/>
+<line class="edge h" x1="795.85" y1="284.00" x2="574.15" y2="284.00"/>
+<line class="edge h" x1="574.15" y1="284.00" x2="685.00" y2="92.00"/>
+<line class="edge a" x1="685.00" y1="290.00" x2="624.38" y2="185.00"/>
+<line class="edge a" x1="624.38" y1="185.00" x2="745.62" y2="185.00"/>
+<line class="edge a" x1="745.62" y1="185.00" x2="685.00" y2="290.00"/>
+<line class="edge x" x1="685.00" y1="290.00" x2="795.85" y2="284.00" opacity="0.83"/>
+<line class="edge x" x1="685.00" y1="290.00" x2="574.15" y2="284.00" opacity="0.83"/>
+<line class="edge x" x1="624.38" y1="185.00" x2="685.00" y2="92.00" opacity="0.83"/>
+<line class="edge x" x1="624.38" y1="185.00" x2="574.15" y2="284.00" opacity="0.83"/>
+<line class="edge x" x1="745.62" y1="185.00" x2="685.00" y2="92.00" opacity="0.83"/>
+<line class="edge x" x1="745.62" y1="185.00" x2="795.85" y2="284.00" opacity="0.83"/>
+<circle class="nodeh" cx="685.00" cy="92.00" r="17"/>
+<text x="685.00" y="97.00" text-anchor="middle" class="small">H0</text>
+<circle class="nodeh" cx="795.85" cy="284.00" r="17"/>
+<text x="795.85" y="289.00" text-anchor="middle" class="small">H1</text>
+<circle class="nodeh" cx="574.15" cy="284.00" r="17"/>
+<text x="574.15" y="289.00" text-anchor="middle" class="small">H2</text>
+<circle class="nodea" cx="685.00" cy="290.00" r="17"/>
+<text x="685.00" y="295.00" text-anchor="middle" class="small">A0</text>
+<circle class="nodea" cx="624.38" cy="185.00" r="17"/>
+<text x="624.38" y="190.00" text-anchor="middle" class="small">A1</text>
+<circle class="nodea" cx="745.62" cy="185.00" r="17"/>
+<text x="745.62" y="190.00" text-anchor="middle" class="small">A2</text>
+<text x="685.0" y="395" text-anchor="middle" class="title">Octaedro: K3,3 \ M</text>
+</svg>

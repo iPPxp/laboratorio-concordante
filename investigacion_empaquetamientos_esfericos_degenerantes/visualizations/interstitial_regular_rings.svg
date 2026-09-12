@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="290" viewBox="0 0 840 290">
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#262626}.title{font-size:17px;font-weight:600}.small{font-size:13px}.outer{fill:#d8e8ff;stroke:#3567a8;stroke-width:2}.center{fill:#ffd77a;stroke:#9c6513;stroke-width:2}</style>
+<text x="420" y="25" text-anchor="middle" class="title">Centros intersticiales en anillos regulares</text>
+<circle class="outer" cx="140.000" cy="105.740" r="34.000"/>
+<circle class="outer" cx="174.000" cy="164.630" r="34.000"/>
+<circle class="outer" cx="106.000" cy="164.630" r="34.000"/>
+<circle class="center" cx="140.000" cy="145.000" r="5.260"/>
+<text x="140.0" y="245" text-anchor="middle" class="title">n=3</text>
+<text x="140.0" y="266" text-anchor="middle" class="small">r/R=0.154701</text>
+<circle class="outer" cx="420.000" cy="96.917" r="34.000"/>
+<circle class="outer" cx="468.083" cy="145.000" r="34.000"/>
+<circle class="outer" cx="420.000" cy="193.083" r="34.000"/>
+<circle class="outer" cx="371.917" cy="145.000" r="34.000"/>
+<circle class="center" cx="420.000" cy="145.000" r="14.083"/>
+<text x="420.0" y="245" text-anchor="middle" class="title">n=4</text>
+<text x="420.0" y="266" text-anchor="middle" class="small">r/R=0.414214</text>
+<circle class="outer" cx="700.000" cy="77.000" r="34.000"/>
+<circle class="outer" cx="758.890" cy="111.000" r="34.000"/>
+<circle class="outer" cx="758.890" cy="179.000" r="34.000"/>
+<circle class="outer" cx="700.000" cy="213.000" r="34.000"/>
+<circle class="outer" cx="641.110" cy="179.000" r="34.000"/>
+<circle class="outer" cx="641.110" cy="111.000" r="34.000"/>
+<circle class="center" cx="700.000" cy="145.000" r="34.000"/>
+<text x="700.0" y="245" text-anchor="middle" class="title">n=6</text>
+<text x="700.0" y="266" text-anchor="middle" class="small">r/R=1.000000</text>
+</svg>
