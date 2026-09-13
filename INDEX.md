@@ -49,10 +49,20 @@ El registro historico nunca vence por si mismo a un documento oficial o a una de
 - 03_Expedientes/LAB-RESEARCH-PROVENANCE-001.md: registro vigente.
 - 03_Expedientes/LAB-RESEARCH-PROVENANCE-001_PROVENANCE.md: identidad,
   procedencia y límites de la fase de transferencia aislada.
+- `03_Expedientes/LAB-RESEARCH-PROVENANCE-002.md`: entrada a la extensión 4D de
+  37 rutas, con manifiesto y huellas propios.
+- `03_Expedientes/MOC-PSI-GEO-BRIDGE-001_Puente_4Simplex_24Cell.md`: puente
+  exacto entre la geometría del Lab y el commit semántico autoritativo de
+  Psicología Concordante.
 
 Los commits `2c3264c...` y `f6ba1f7...` son alcanzables desde `origin/main`.
 Esto demuestra materialización Git, no autoridad semántica, validación ni
 activación.
+
+La extensión 4D está preparada en `8b7ad0e...`: 17 rutas nuevas, 20 revisadas y
+45/45 pruebas `unittest`. Su commit de gobernanza y publicación están pendientes
+de revisión final. La semántica PSI enlazada vive en el commit externo
+`f068faf9...`.
 
 ## Corte de coherencia vigente
 

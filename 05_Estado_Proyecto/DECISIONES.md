@@ -4190,3 +4190,66 @@ los documentos históricos incorporados.
 
 El registro mínimo de gobernanza está preparado para revisión humana. No existe
 todavía autorización de commit, push o tag para este cambio.
+
+## D-2026-09-12-001 - Extensión 4D y puente con Psicología Concordante
+
+Estatus: decisión canónica humana de alcance acotado; materialización Git
+preparada y pendiente de revisión final.
+
+Fecha: 2026-09-12.
+
+Documento de decisión:
+`03_Expedientes/MOC-001_Decision_Puente_Psicologia_Concordante_4D_001.md`.
+
+Registro:
+`03_Expedientes/LAB-RESEARCH-PROVENANCE-002.md`.
+
+Puente:
+`03_Expedientes/MOC-PSI-GEO-BRIDGE-001_Puente_4Simplex_24Cell.md`.
+
+Auditoría:
+`03_Expedientes/MOC-PSI-GEO-BRIDGE-001_Auditoria.md`.
+
+### Decisión
+
+Se canonizan exclusivamente la identidad, procedencia, custodia y clasificación
+de investigación de las 37 rutas de `LAB-RESEARCH-PROVENANCE-002`: 17 rutas
+nuevas y 20 rutas revisadas procedentes de `679e898...` y `d65aab8...`.
+
+Se acepta `MOC-PSI-GEO-BRIDGE-001` como referencia documental exacta al
+repositorio independiente `psicologia-concordante`, commit
+`f068faf9dca98408b1a3b93b43f97401f8768795` y árbol
+`e47e28e752ab6ad00f2fa97b6e92a81754547d0b`.
+
+### Alcance
+
+- `PSI-CANON-004` conserva la autoridad semántica del 4-simplex.
+- El 24-cell conserva estatus de investigación.
+- El `K6` completo no se identifica con el ciclo `C6`.
+- Los conjuntos de raíces `A4` y `D4` no reciben una biyección canónica.
+- `RAT`, `RLF`, Higher Mind y Personalidad permanecen abiertos.
+- La burbuja diminuta entre dos queda registrada como parte del contrato
+  matemático/computacional ya probado.
+
+### Evidencia
+
+```text
+DELTA_HASHES=37/37
+LAB_UNITTEST=45/45_PASS
+LAB_REPOSITORY_UNITTEST=115/115_PASS
+PSI_D4_CHECKS=20/20_PASS
+PAYLOAD_DIRECTORY_DIFF=EMPTY
+CHERRY_PICK_CONFLICTS=0
+```
+
+### Estado Git de esta fase
+
+```text
+PAYLOAD_INTEGRATION_HEAD=8b7ad0e02ca231a0f35ddd2ccff7c4d2d18ef2db
+PAYLOAD_INTEGRATION_TREE=89efdef2a066c0e9432dd5ebcf15efa8f1f4fc29
+GOVERNANCE_COMMIT=PENDING_AFTER_REVIEW
+PUSH_EXECUTED=NO
+```
+
+El hash del commit de gobernanza se registrará mediante una reconciliación
+factual posterior; no se introduce una autorreferencia ni un hash anticipado.

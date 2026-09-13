@@ -1,11 +1,20 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "as_of": "2026-09-12",
   "audit_base": "a3fb716898db6f425bcd539c2dc6415f28f53d6a",
   "status": "REPOSITORY_COHERENT_WITH_EXPLICIT_OPEN_DEBTS",
   "authority_changed": false,
-  "canon_scope_changed": false,
+  "canon_scope_changed": true,
   "activation_changed": false,
+  "post_audit_update": {
+    "target_base": "71a84f655ff4ec71a89640cca1f1b781fc523d79",
+    "payload_integration_head": "8b7ad0e02ca231a0f35ddd2ccff7c4d2d18ef2db",
+    "payload_integration_tree": "89efdef2a066c0e9432dd5ebcf15efa8f1f4fc29",
+    "governance_commit": null,
+    "governance_status": "PENDING_AFTER_REVIEW",
+    "push_executed": false,
+    "semantic_authority_changed_in_lab": false
+  },
   "repository_inventory_at_audit_base": {
     "tracked_files": 711,
     "root": 11,
@@ -93,6 +102,44 @@
     "main_research_tests": "12/12",
     "projective_n2_tests": "6/6"
   },
+  "research_corpus_extensions": [
+    {
+      "id": "LAB-RESEARCH-PROVENANCE-002",
+      "status": "PREPARED_PENDING_FINAL_GIT_REVIEW",
+      "delta_routes": 37,
+      "added_routes": 17,
+      "revised_routes": 20,
+      "source_commits": [
+        "679e898b66b28e4f72d1f7bd38bc5469e940ad7a",
+        "d65aab858df6bd0cc11609ec24a09b40eb8fec12"
+      ],
+      "prepared_commits": [
+        "4b59c3bd13d6bd8ae3d09a3c5f847fe1b3ef1b8e",
+        "8b7ad0e02ca231a0f35ddd2ccff7c4d2d18ef2db"
+      ],
+      "manifest_hashes_verified": "37/37",
+      "unittest": "45/45",
+      "identity_provenance_custody_and_research_status_canonical": true,
+      "scientific_claims_canonical_as_true": false,
+      "activation": false
+    }
+  ],
+  "moc_psi_geo_bridge": {
+    "id": "MOC-PSI-GEO-BRIDGE-001",
+    "decision": "D-2026-09-12-001",
+    "psi_repository": "https://github.com/iPPxp/psicologia-concordante.git",
+    "psi_commit": "f068faf9dca98408b1a3b93b43f97401f8768795",
+    "psi_tree": "e47e28e752ab6ad00f2fa97b6e92a81754547d0b",
+    "four_simplex_semantic_authority": "PSI-CANON-004",
+    "twenty_four_cell_status": "RESEARCH",
+    "k6_complete_equals_c6_cycle": false,
+    "a4_d4_canonical_bijection": false,
+    "rat_status": "OPEN_RESEARCH",
+    "rlf_status": "OPEN_RESEARCH",
+    "higher_mind_status": "OPEN_RESEARCH",
+    "personality_status": "OPEN_RESEARCH",
+    "psi_project_reopened_inside_lab": false
+  },
   "chatgpt_recovery": {
     "batch_id": "RH-BATCH-2026-09-11-CHATGPT-RECOVERY-001",
     "payload_files": 23,
@@ -116,11 +163,26 @@
     "psi_vocabulary_canonized": false
   },
   "validation": {
-    "repository_tests": "111/111",
+    "repository_tests_at_original_audit_base": "111/111",
+    "repository_tests_after_4d_extension": "115/115",
+    "four_dimensional_extension_unittest": "45/45",
+    "psi_d4_verifier_checks": "20/20",
+    "tiny_positive_center_between_two_test": true,
     "json_parse_errors": 0,
     "csv_parse_errors": 0,
     "markdown_link_errors": 0
   },
+  "resolved_debts": [
+    {
+      "id": "EXTERNAL_PSI_CANON_SOURCE_RECOVERY",
+      "status": "RESOLVED_BY_PINNED_EXTERNAL_AUTHORITY",
+      "repository": "https://github.com/iPPxp/psicologia-concordante.git",
+      "commit": "f068faf9dca98408b1a3b93b43f97401f8768795",
+      "tree": "e47e28e752ab6ad00f2fa97b6e92a81754547d0b",
+      "imports_psi_canon_into_lab": false,
+      "reopens_psi_001": false
+    }
+  ],
   "open_debts": [
     "GLOBAL_CONFLUENCE",
     "GLOBAL_PROJECTION_EQUIVALENCE",
@@ -131,6 +193,9 @@
     "OPTIONAL_MOC_POST_ADOPTION_MONITOR",
     "INDEPENDENT_SCIENTIFIC_REVIEW",
     "SCIENTIFIC_FAMILY_INCORPORATION_REVIEWS",
-    "EXTERNAL_PSI_CANON_SOURCE_RECOVERY"
+    "LAB_RESEARCH_PROVENANCE_002_GIT_RECONCILIATION",
+    "A4_D4_EXPLICIT_BRIDGE",
+    "TWENTY_FOUR_CELL_SEMANTICS",
+    "RAT_RLF_HIGHER_MIND_PERSONALITY"
   ]
 }

@@ -6,6 +6,10 @@ Fecha de corte: 2026-09-12.
 
 Base Git auditada: `origin/main@a3fb716898db6f425bcd539c2dc6415f28f53d6a`.
 
+Actualización preparada sobre `origin/main@71a84f655ff4ec71a89640cca1f1b781fc523d79`:
+payload 4D en `8b7ad0e02ca231a0f35ddd2ccff7c4d2d18ef2db`; registro de
+gobernanza y push pendientes de revisión final.
+
 Este documento reconcilia las superficies del repositorio después de la
 incorporación del corpus de investigación y del recovery de ChatGPT. No sustituye
 el Canon, no reescribe documentos históricos y no cambia el estatus científico,
@@ -27,7 +31,7 @@ afirmación contiene cada uno:
 Una frase de estado incluida en un documento histórico describe su fase de
 creación. No vence por sí misma a un corte Git posterior verificable.
 
-## Inventario de superficies
+## Inventario de superficies en la base auditada
 
 | Superficie | Archivos versionados | Función coherente |
 | --- | ---: | --- |
@@ -38,7 +42,7 @@ creación. No vence por sí misma a un corte Git posterior verificable.
 | `04_Registro_Historico` | 60 | historial y cápsulas de custodia |
 | `05_Estado_Proyecto` | 9 antes de este mapa | estado, decisiones y revisión de formalización |
 | `06_Automatizacion` | 168 | herramientas no mutantes, fixtures y reportes |
-| investigación degenerante | 39 | corpus científico con identidad canónica, no claims canónicos |
+| investigación degenerante | 39 en la base auditada; extensión preparada de 17 altas y 20 revisiones | corpus científico con identidad canónica, no claims canónicos |
 
 El gran volumen de `03_Expedientes` responde a la conservación de cada paso de
 MOC, AO, AUD, HXI y automatización. No debe recorrerse alfabéticamente como si
@@ -54,6 +58,9 @@ por las decisiones más recientes.
   oficial acotada de `operator_trace_graph` decidida por `D-2026-07-09-005`.
 - `C-001` y `C-002` siguen siendo las únicas especificaciones oficiales de
   Nivel C registradas.
+- `LAB-RESEARCH-PROVENANCE-002` amplía el objeto canónico sólo con identidad,
+  procedencia, custodia y clasificación de investigación de 37 rutas; no añade
+  autoridad semántica psicológica ni canoniza claims.
 - No se crea `C-003`, no se promueve `REPORT_LAYER` y no se autoriza modo
   mutante.
 
@@ -61,7 +68,7 @@ por las decisiones más recientes.
 
 | Expediente | Estado vigente | Próxima transición permitida |
 | --- | --- | --- |
-| `MOC-001` | abierto en mantenimiento teórico-operativo, no clínico y sin ejecución empírica | monitoreo post-adopción sólo mediante decisión explícita |
+| `MOC-001` | abierto en mantenimiento teórico-operativo; puente 4D externo aceptado | investigar el mapa `A4`–`D4`, 24-cell, `RAT`, `RLF`, Higher Mind y Personalidad |
 | `AO-001` | abierto; readiness global `mantener_no_autorizado` | reconsideración separada usando evidencia externa si se autoriza |
 | `TCS-001` | teoría provisional no canónica | maduración semántica y más casos no regulados |
 
@@ -92,7 +99,11 @@ un conjunto cerrado de rutas.
   los demás cierres registrados permanecen cerrados.
 - `H-B.6`, `H-B.7` y `B-001.5` permanecen congelados.
 - `PSI-001` permanece transferido al proyecto independiente Psicología
-  Concordante. El borrador PSI recuperado no lo reabre.
+  Concordante. `MOC-PSI-GEO-BRIDGE-001` referencia el commit externo exacto
+  `f068faf9...` sin restaurar una copia ni reabrir `PSI-001` dentro del Lab.
+- La deuda `EXTERNAL_PSI_CANON_SOURCE_RECOVERY` queda resuelta explícitamente
+  por esa autoridad externa fijada (repositorio, commit, árbol y blobs), no por
+  importación del Canon PSI al Lab ni por una nueva autoridad semántica local.
 
 ### Corpus de investigación degenerante
 
@@ -123,6 +134,26 @@ principal pasan 12/12 y las de la unidad proyectiva N2 pasan 6/6. Estos controle
 demuestran reproducibilidad local acotada, no verdad universal ni validación
 empírica.
 
+La extensión `LAB-RESEARCH-PROVENANCE-002` conserva por separado:
+
+```text
+DELTA_ROUTES=37
+ADDED_ROUTES=17
+REVISED_ROUTES=20
+DELTA_HASHES_VERIFIED=37/37
+SOURCE_COMMITS=679e898b66b28e4f72d1f7bd38bc5469e940ad7a,d65aab858df6bd0cc11609ec24a09b40eb8fec12
+PAYLOAD_INTEGRATION_HEAD=8b7ad0e02ca231a0f35ddd2ccff7c4d2d18ef2db
+PAYLOAD_INTEGRATION_TREE=89efdef2a066c0e9432dd5ebcf15efa8f1f4fc29
+UNITTEST=45/45_PASS
+GOVERNANCE_COMMIT=PENDING_AFTER_REVIEW
+PUSH_EXECUTED=NO
+```
+
+`MOC-PSI-GEO-BRIDGE-001` enlaza ese payload con
+`psicologia-concordante@f068faf9...`. `PSI-CANON-004` es la autoridad semántica
+del 4-simplex; el 24-cell sigue en investigación. El `K6` completo no es el
+ciclo `C6`, y `A4`/`D4` no tienen una biyección canónica.
+
 ### Recovery de ChatGPT
 
 ```text
@@ -148,6 +179,11 @@ es `04_Registro_Historico/2026-09-11_chatgpt_recovery_001/CATALOGO_CONTENIDO.md`
   garantía de actualidad indefinida.
 - La suite de repositorio, incluida la custodia de los expedientes de
   incorporación, pasa 111/111 pruebas.
+- La suite específica de la extensión 4D pasa 45/45 pruebas `unittest`; incluye
+  la prueba de una burbuja positiva diminuta entre dos anfitrionas.
+- Después de incorporar el verificador de manifiestos versionados, la suite
+  general pasa 115/115: P001 se valida contra su snapshot histórico y P002 como
+  overlay presente.
 
 ### Archivos raíz inactivos
 
@@ -168,6 +204,9 @@ entrada recomendada ni autoridad vigente.
 5. `TCS-001` recibe una entrada padre para evitar navegar diez piezas aisladas.
 6. El recovery y el corpus científico quedan separados: compartir vecindad en
    el repositorio no implica relación matemática o semántica.
+7. `LAB-RESEARCH-PROVENANCE-002` extiende el corpus sin reescribir
+   `LAB-RESEARCH-PROVENANCE-001`; la autoridad semántica PSI se enlaza por
+   commit y blobs exactos.
 
 ## Deudas vivas, sin autorización automática
 
@@ -178,8 +217,11 @@ entrada recomendada ni autoridad vigente.
 - Maduración posterior de `TCS-001`.
 - Monitoreo post-adopción de MOC, sólo si se abre explícitamente.
 - Revisión independiente de resultados científicos y manuscritos recuperados.
-- Recuperación de las fuentes `PSI-CANON-001/002` dentro de su proyecto externo,
-  no dentro del Laboratorio por defecto.
+- Semántica y dinámica del 24-cell y mapa explícito `A4`–`D4`.
+- `RAT`, `RLF`, Higher Mind y factorización de Personalidad/Mente-coder/
+  `Theta_psi` en el proyecto PSI externo.
+- Reconciliación factual del commit de gobernanza de
+  `LAB-RESEARCH-PROVENANCE-002` después de su revisión y materialización.
 - Revisión y decisión individual de los cinco expedientes `LAB-INC-SCI-001` a
   `LAB-INC-SCI-005`; ninguno tiene incorporación automática.
 
@@ -193,6 +235,8 @@ entrada recomendada ni autoridad vigente.
 6. el expediente padre del frente que se vaya a trabajar
 7. `03_Expedientes/LAB-INC-SCI-000_Registro_Incorporacion_Familias_Cientificas.md`
    si la tarea trata las familias científicas locales
+8. `03_Expedientes/MOC-PSI-GEO-BRIDGE-001_Puente_4Simplex_24Cell.md` si la
+   tarea cruza geometría 4D y semántica de Psicología Concordante
 
 ## Dictamen
 

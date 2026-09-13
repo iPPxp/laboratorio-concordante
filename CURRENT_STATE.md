@@ -7,6 +7,17 @@ Corte de coherencia: 2026-09-12.
 - Mapa vigente: `05_Estado_Proyecto/MAPA_COHERENCIA_2026-09-12.md`.
 - El corpus `LAB-RESEARCH-PROVENANCE-001` está materializado en `origin/main`;
   sólo su identidad y procedencia son canónicas, no sus claims científicos.
+- `LAB-RESEARCH-PROVENANCE-002` registra la extensión 4D: 37 rutas delta
+  (17 altas y 20 revisiones), 37/37 huellas y 45/45 pruebas `unittest`. Su
+  identidad, procedencia, custodia y clasificación como investigación están
+  aprobadas; el commit de gobernanza y el push siguen pendientes de revisión.
+- El verificador de coherencia admite ahora manifiestos versionados: comprueba
+  39/39 rutas de P001 contra su snapshot histórico, 37/37 de P002 contra el
+  snapshot y worktree actuales, y un overlay vivo de 56/56; la suite general
+  pasa 115/115.
+- `MOC-PSI-GEO-BRIDGE-001` enlaza esa geometría con Psicología Concordante en el
+  corte exacto `f068faf9dca98408b1a3b93b43f97401f8768795`: `PSI-CANON-004`
+  gobierna la semántica del 4-simplex y el 24-cell permanece investigación.
 - El recovery de ChatGPT está preservado y clasificado en Registro Histórico;
   no es Canon ni superficie activa.
 - `RH-003` es el último procesamiento histórico cerrado. Los cierres
@@ -27,7 +38,7 @@ Ultimos expedientes sustantivos cerrados:
 
 Ultimo expediente tecnico cerrado:
 
-- `AUT-002` cerrado tecnicamente por `D-2026-07-06-010`; conserva `referencia_historica_transferida` como regla tecnica y exige decision puente si aparece dependencia psicologica sustantiva.
+- `AUT-002` cerrado tecnicamente por `D-2026-07-06-010`; conserva `referencia_historica_transferida` como regla tecnica. La dependencia 4D queda atendida por `MOC-PSI-GEO-BRIDGE-001`; otros contenidos PSI requieren una decisión puente propia.
 - `R001-001` cerrado tecnicamente por `D-2026-07-06-009`; conserva `R001-TABLE-CHECK-001` y `R001-TB-001` como herramienta/relacion local sin cerrar problemas globales.
 - `AUT-001`
 
@@ -53,6 +64,11 @@ Ultima decision arquitectonica:
 
 Ultima decision operativa:
 
+- `MOC-001_Decision_Puente_Psicologia_Concordante_4D_001.md`
+  (`D-2026-09-12-001`): acepta la extensión canónica de identidad/procedencia
+  `LAB-RESEARCH-PROVENANCE-002` y el puente documental externo
+  `MOC-PSI-GEO-BRIDGE-001`; conserva `K6 != C6`, la falta de biyección canónica
+  `A4`–`D4` y `RAT`/`RLF`/Higher Mind/Personalidad como investigación abierta.
 - `MOC-001_Decision_Aplicacion_Oficial_Canon_Doc04_001.md` (`D-2026-07-09-005`): acepta y ejecuta `MOC-CANON-DOC04-APPLY-001`; `M-001` adopta matriz de superficies para intervenciones de nivel sensible y Documento 04 adopta entrada auxiliar por traza local de grafo. `M-000` queda sin cambio textual; no hay modo mutante, uso externo, Nivel C, cierre global, promocion de `REPORT_LAYER` ni exportacion R4/Gamma.
 - `MOC-001_Decision_Compuerta_Incorporacion_Canon_Doc04_001.md` (`D-2026-07-09-004`): acepta `MOC-CANON-DOC04-ADOPT-GATE-001` con salida `lista_para_aplicacion_posterior`; no ejecuta edicion oficial. `M-000` no se adopta; `M-001` y Documento 04 quedan recomendados para aplicacion posterior explicita.
 - `MOC-001_Decision_Matriz_Impacto_Canon_Doc04_001.md` (`D-2026-07-09-003`): acepta `MOC-CANON-DOC04-IMPACT-001` como matriz no mutante y propuesta candidata; no autoriza edicion oficial. `M-000` queda sin cambio textual recomendado; `M-001` y Documento 04 quedan solo como candidatas futuras.
@@ -731,3 +747,25 @@ La decisión `D-2026-08-09-001` reconoce oficialmente el corpus y su
 procedencia. La materialización Git posterior no modifica retrospectivamente el
 payload histórico, no canoniza claims y no autoriza operación, tag, activación
 o cambios en otros frentes.
+
+## LAB-RESEARCH-PROVENANCE-002
+
+```text
+CANONICAL_OBJECT=RESEARCH_DELTA_IDENTITY_PROVENANCE_CUSTODY_AND_STATUS
+CANONIZATION_DECISION=HUMAN_APPROVED
+DELTA_ROUTE_COUNT=37
+ADDED_ROUTE_COUNT=17
+REVISED_ROUTE_COUNT=20
+HISTORICAL_P001_VERIFIED=39/39
+LIVE_OVERLAY_VERIFIED=56/56
+SCIENTIFIC_CLAIMS_CANONIZED_AS_TRUE=NO
+PSI_24CELL_STATUS=RESEARCH
+PAYLOAD_INTEGRATION_HEAD=8b7ad0e02ca231a0f35ddd2ccff7c4d2d18ef2db
+GOVERNANCE_COMMIT=PENDING_AFTER_REVIEW
+PUSH_EXECUTED=NO
+```
+
+La decisión `D-2026-09-12-001` enlaza la geometría con el commit PSI
+`f068faf9...` mediante `MOC-PSI-GEO-BRIDGE-001`. `PSI-CANON-004` conserva la
+autoridad semántica del 4-simplex; el Lab conserva custodia y evidencia
+matemática/computacional.

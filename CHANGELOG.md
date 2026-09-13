@@ -2,6 +2,20 @@
 
 ## 2026-09-12
 
+- Preparada `LAB-RESEARCH-PROVENANCE-002`, extensión canónica sólo de identidad,
+  procedencia, custodia y clasificación de investigación para 37 rutas del
+  corpus geométrico: 17 altas y 20 revisiones.
+- Preparado `MOC-PSI-GEO-BRIDGE-001` contra el commit PSI autoritativo
+  `f068faf9...`: `PSI-CANON-004` conserva la autoridad semántica del 4-simplex;
+  el 24-cell permanece investigación, `K6 != C6` y no se postula biyección
+  canónica `A4`–`D4`.
+- Verificadas 37/37 huellas, 45/45 pruebas `unittest` del Lab y 20/20 controles
+  del verificador PSI `D4`; la suite incluye expresamente la burbuja diminuta
+  entre dos anfitrionas.
+- Actualizado el verificador de coherencia para manifiestos versionados: P001 se
+  comprueba contra `2c3264c...` usando filtros de checkout, P002 contra
+  `8b7ad0e...` y el worktree, y el overlay vivo contiene exactamente 20 rutas
+  revisadas, 17 añadidas y 19 heredadas; suite general 115/115.
 - Abiertos `LAB-INC-SCI-001` a `LAB-INC-SCI-005` para revisar por separado cinco familias científicas locales; 248 objetos quedan manifestados pero no incorporados a `origin/main`.
 - Registrada `CLN-001`: snapshot 1308/1308, cinco commits locales de preservación, 97/97 pruebas científicas y limpieza recuperable de salidas/temporales; sin canonización ni activación.
 - Reconciliada la coherencia administrativa del repositorio mediante `COH-001`: corregidos estados Git obsoletos del corpus `LAB-RESEARCH-PROVENANCE-001`, sin ampliar su objeto canónico ni promover claims científicos.

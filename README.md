@@ -121,7 +121,7 @@ Estado operativo resumido:
 - Avance MOC reciente: `MOC-ROUTE-012` relaciona documentalmente MOC con `C-001` / `C-002`; `D-2026-07-09-001` a `D-2026-07-09-005` aceptan grafo local, autorizacion preparatoria, matriz candidata, compuerta de incorporacion y aplicacion oficial acotada sobre `M-001` y Documento 04. Nivel C, `C-001`, `C-002`, cierre global, uso clinico/regulado, modo mutante, `REPORT_LAYER` y exportacion R4/Gamma permanecen sin promocion.
 - Decision teorica reciente: `TCS-001_Decision_Maduracion_Provisional.md` (`D-2026-07-05-010`) acepta `TCS-METRIC-PROV-001`, `TCS-EXT-CASE-001` y `TCS-AUTH-CONF-001`; no canoniza `Concordance`, no crea Nivel C ni usa vision papers como fuente activa.
 - Avance AO reciente: `AO-DOC04-WIDE-001` queda aceptado por `D-2026-07-06-006` como formalizacion amplia v0 del Documento 04 y probado localmente por `D-2026-07-06-007`; `REPORT_LAYER` queda precisado por `AO-REPORT-LAYER-BRIDGE-001`, mantenido local pre-C por `D-2026-07-06-014` y cubierto por la compuerta no mutante `REPORT-LAYER-C002-GATE-001` aceptada por `D-2026-07-06-015`. `AO-PPI-BRIDGE-002`, `AO-PPI-BRIDGE-003`, `AO-REPORT-SERIAL-001`, `AO-TCS-REL-001`, `AO-AUTH-GLOBAL-001`, `AO-EXT-COV-001`, `AO-PPI-BRIDGE-004` y `AO-PPI-LOCAL-CLOSE-001` quedan aceptados por `D-2026-07-06-017` a `D-2026-07-06-024`; `AO-PROTO-INDEP-001`, `AO-EQ-GLOBAL-GATE-001`, `AO-CONF-GLOBAL-GATE-001`, `AO-REPORT-PROMO-GATE-001`, `AO-R4-GAMMA-EXPORT-GATE-002` y `AO-GLOBAL-READINESS-001` quedan aceptados por `D-2026-07-06-025` a `D-2026-07-06-030`; `AO-EXT-INDEP-001` y `AO-EXT-EVID-GATE-001` quedan preparados por `D-2026-07-06-031` a `D-2026-07-06-034`; `AO-EXT-REAL-001` queda aceptado por `D-2026-07-06-035` como evidencia externa real admisible preliminarmente. La salida vigente sigue siendo `mantener_no_autorizado`: no cierra Confluencia global, Equivalencia global, `P-107`, `P-200`, promocion de `REPORT_LAYER` ni exportacion general R4/Gamma.
-- Saneamiento tecnico reciente: `AUT-002_Decision_Cierre_Tecnico.md` (`D-2026-07-06-010`) cierra tecnicamente el tratamiento de `referencia_historica_transferida`; cualquier dependencia psicologica sustantiva requiere decision puente futura.
+- Saneamiento tecnico reciente: `AUT-002_Decision_Cierre_Tecnico.md` (`D-2026-07-06-010`) cierra tecnicamente el tratamiento de `referencia_historica_transferida`; la dependencia geométrica/semántica 4D queda atendida de forma acotada por `MOC-PSI-GEO-BRIDGE-001`, y cualquier dependencia distinta requiere otra decisión puente.
 - Limpieza reciente: `PSI-TRASPASO-001_Decision_Eliminacion_Copia.md` (`D-2026-07-03-012`) elimina la copia local de traspaso de `PSI-001`; `HB-001_Decision_Congelamiento_Brotes_Alternos.md` (`D-2026-07-03-013`) congela `H-B.6` y `H-B.7` como brotes alternos y originales historicos.
 - Decision documental reciente: `DOCS-001_Decision_Consolidacion_Documentos_00-04.md` (`D-2026-07-03-011`) consolida documentos 00-03 desde fuentes previas y actualiza el Documento 04 como version inicial de Algebra Operacional; no promueve Canon ni autoriza transformaciones materiales.
 - Decision formal local reciente: `AUD-001_Decision_Cierre_Operativo_v0.md` (`D-2026-07-06-011`) cierra `AUD-001` como version documental/operativa v0; `R4-FORMAL-AUD-001`, `GAMMA-FORMAL-AUD-001`, `REPORT_LAYER` y la suite completa quedan conservados solo en perfil local, sin exportacion general.
@@ -188,6 +188,18 @@ Abrirlos no incorpora sus payloads ni cambia Canon, validación o activación.
 `origin/main` mediante el commit de incorporación `2c3264c...`; su registro de
 gobernanza fue incorporado por `f6ba1f7...`. `D-2026-08-09-001` canoniza
 únicamente la identidad de sus 39 rutas y la cadena de procedencia.
+
+`LAB-RESEARCH-PROVENANCE-002` añade una extensión cerrada de 37 rutas sobre
+intersticios, carriers multinivel y geometría `R^4`: 17 altas y 20 revisiones.
+Los commits de payload están preparados sobre `origin/main` en `4b59c3b...` y
+`8b7ad0e...`; 37/37 huellas y 45/45 pruebas `unittest` fueron verificadas. El
+commit de gobernanza y el push permanecen pendientes de revisión final.
+
+`MOC-PSI-GEO-BRIDGE-001` referencia, sin copiar, el repositorio independiente
+Psicología Concordante en `f068faf9...`. Allí `PSI-CANON-004` gobierna la
+semántica del 4-simplex; el 24-cell, `RAT`, `RLF`, Higher Mind, Personalidad y
+el mapa `A4`–`D4` siguen en investigación. El `K6` completo de la realización
+intersticial no equivale al ciclo `C6`.
 
 La materialización no canoniza como verdaderas sus afirmaciones científicas, no
 declara demostrados todos sus claims, no aporta validación empírica y no activa

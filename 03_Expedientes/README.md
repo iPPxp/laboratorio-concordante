@@ -16,6 +16,12 @@ Las familias científicas locales pendientes de incorporación se recorren desde
 `LAB-INC-SCI-000_Registro_Incorporacion_Familias_Cientificas.md`. Sus cinco
 expedientes no incorporan payload, no canonizan claims y no activan software.
 
+La extensión 4D del corpus degenerante se recorre desde
+`LAB-RESEARCH-PROVENANCE-002.md`. Su enlace semántico exacto con el proyecto
+externo Psicología Concordante se consulta en
+`MOC-PSI-GEO-BRIDGE-001_Puente_4Simplex_24Cell.md`; el puente no restaura una
+copia local de `PSI-001`.
+
 Un expediente debe tener:
 
 - identificador

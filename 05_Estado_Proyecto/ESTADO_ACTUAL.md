@@ -28,7 +28,12 @@ familias científicas preservadas localmente y todavía no incorporadas a
   verdaderas o demostradas las afirmaciones científicas, no declara validación
   empírica y no implica activación operacional. La incorporación
   `2c3264c...` y el registro de gobernanza `f6ba1f7...` son alcanzables desde
-  `origin/main`; esto corrige el estado Git, no amplía la autoridad.
+   `origin/main`; esto corrige el estado Git, no amplía la autoridad.
+- [x] `LAB-RESEARCH-PROVENANCE-002`: decisión humana `D-2026-09-12-001`
+  canoniza únicamente identidad, procedencia, custodia y clasificación de
+  investigación de 37 rutas delta (17 altas y 20 revisiones). El payload está
+  preparado en `4b59c3b...` y `8b7ad0e...`, con 37/37 huellas y 45/45 pruebas;
+  el commit de gobernanza y el push están pendientes de revisión final.
 
 ## Documentos oficiales de Nivel C
 
@@ -45,13 +50,13 @@ familias científicas preservadas localmente y todavía no incorporadas a
 
 ## Expedientes abiertos
 
-- `MOC-001` (expediente integrador teorico-operativo abierto por `D-2026-07-05-011`; `Xi_eval`, metricas, protocolo, simulacion, diseno empirico futuro, rutas ejecutadas, puentes formales, paquete pre-ejecucion, paquete de registro/auditoria, rutas posteriores y relacion documental con `C-001` / `C-002` aceptadas por `D-2026-07-05-012` a `D-2026-07-06-013`; grafo local de experiencia, metrica geometrica local, puente AO por `operator_trace` y herramienta no mutante aceptados por `D-2026-07-09-001`; autorizacion interna preparatoria para propuestas candidatas a Canon y Documento 04 aceptada por `D-2026-07-09-002`; matriz no mutante de impacto aceptada por `D-2026-07-09-003`; compuerta de incorporacion aceptada por `D-2026-07-09-004`; aplicacion oficial acotada sobre `M-001` y Documento 04 ejecutada por `D-2026-07-09-005`; queda sin ejecucion empirica, no clinico, no regulado)
+- `MOC-001` (expediente integrador teorico-operativo abierto por `D-2026-07-05-011`; `Xi_eval`, metricas, protocolo, simulacion, diseno empirico futuro, rutas ejecutadas, puentes formales, paquete pre-ejecucion, paquete de registro/auditoria, rutas posteriores y relacion documental con `C-001` / `C-002` aceptadas por `D-2026-07-05-012` a `D-2026-07-06-013`; grafo local de experiencia, metrica geometrica local, puente AO por `operator_trace` y herramienta no mutante aceptados por `D-2026-07-09-001`; autorizacion interna preparatoria para propuestas candidatas a Canon y Documento 04 aceptada por `D-2026-07-09-002`; matriz no mutante de impacto aceptada por `D-2026-07-09-003`; compuerta de incorporacion aceptada por `D-2026-07-09-004`; aplicacion oficial acotada sobre `M-001` y Documento 04 ejecutada por `D-2026-07-09-005`; extensión 4D y puente documental exacto con Psicología Concordante aceptados por `D-2026-09-12-001`; queda sin ejecucion empirica, no clinico, no regulado)
 - `TCS-001` (expediente teorico provisional; paquete minimo aceptado por `D-2026-07-03-019` y maduracion provisional `TCS-MAT-PROV-001` aceptada por `D-2026-07-05-010`; no Canon, no documento oficial)
 - `AO-001` (expediente preparatorio abierto para Algebra Operacional; `AO-MARCO-001`, `GAMMA-EXT-AO-001`, `AO-CASE-BAT-001`, `AO-R4-GAMMA-USE-001`, `AO-PPI-BRIDGE-001`, `AO-PPI-BRIDGE-002`, `AO-PPI-BRIDGE-003`, `AO-REPORT-SERIAL-001`, `AO-TCS-REL-001`, `AO-AUTH-GLOBAL-001`, `AO-EXT-COV-001`, `AO-PPI-BRIDGE-004`, `AO-PPI-LOCAL-CLOSE-001`, `AO-PROTO-INDEP-001`, `AO-EQ-GLOBAL-GATE-001`, `AO-CONF-GLOBAL-GATE-001`, `AO-REPORT-PROMO-GATE-001`, `AO-R4-GAMMA-EXPORT-GATE-002`, `AO-GLOBAL-READINESS-001`, `AO-EXT-INDEP-001`, `AO-EXT-EVID-GATE-001`, `AO-EXT-REAL-001`, `AO-DOC04-FORM-CHK-001`, `AO-CONF-EXT-OPTIONS-001`, `AO-EXT-CONF-EXEC-001`, `AO-DOC04-FORM-001`, `AO-R4-GAMMA-EXPORT-GATE-001`, `AO-DOC04-WIDE-001`, `AO-DOC04-WIDE-TEST-001`, `AO-REPORT-LAYER-BRIDGE-001` y `AO-REPORT-LAYER-NIVEL-C-001` aceptados localmente; sigue abierto, con `readiness_result: mantener_no_autorizado`, compuerta base `external_evidence_ready: false` y suite real `external_evidence_ready: true` sin autorizacion global)
 
 ## Expedientes transferidos
 
-- `PSI-001` (independizado por `D-2026-07-03-006` como proyecto `Psicologia Concordante`; copia local de traspaso eliminada por `D-2026-07-03-012`, sin continuidad activa interna)
+- `PSI-001` (independizado por `D-2026-07-03-006` como proyecto `Psicologia Concordante`; copia local de traspaso eliminada por `D-2026-07-03-012`; `MOC-PSI-GEO-BRIDGE-001` habilita sólo una referencia externa exacta a `f068faf9...`, sin restaurar continuidad interna)
 
 ## Expedientes cerrados
 
@@ -103,6 +108,10 @@ familias científicas preservadas localmente y todavía no incorporadas a
 - Promocion formal o exportacion global de `REPORT_LAYER`; evaluada por `AO-REPORT-PROMO-GATE-001` y no promovida por `D-2026-07-06-028`.
 - Maduracion de `TCS-001` mas alla de `TCS-MAT-PROV-001`.
 - Validacion externa independiente real del protocolo AO; `AO-PROTO-INDEP-001` atiende solo el protocolo local por `D-2026-07-06-025`, `AO-EXT-INDEP-001` / `AO-EXT-EVID-GATE-001` preparan admisibilidad por `D-2026-07-06-031` a `D-2026-07-06-034` y `AO-EXT-REAL-001` aporta primera evidencia documental real admitida preliminarmente por `D-2026-07-06-035`; falta decision posterior de uso global.
+- Semántica del 24-cell y puente `A4`–`D4`: la geometría está verificada, pero
+  no existe una biyección canónica ni una semántica de transición promovida.
+- `RAT`, `RLF`, Higher Mind y la factorización de Personalidad,
+  Mente/coder y `Theta_psi`: investigación activa en el proyecto PSI externo.
 - Relacion global posterior entre `R001-TB-001`, `AO-PPI-BRIDGE-002`, `AO-PPI-BRIDGE-003`, `AO-PPI-BRIDGE-004`, `AO-PPI-LOCAL-CLOSE-001`, Equivalencia global y Confluencia global.
 - Decision posterior sobre uso de `AO-EXT-REAL-001` si se quiere fortalecer Confluencia o Equivalencia global; la evidencia real ya fue admitida preliminarmente, pero no ejecutada empiricamente ni usada para cierre.
 
@@ -140,6 +149,12 @@ familias científicas preservadas localmente y todavía no incorporadas a
 - `MOC-001_Rutas_Posteriores_Ruta_003.md`: `MOC-NEXT-ROUTES-003`, matriz posterior que recomienda `MOC-ROUTE-004`; aceptada por `D-2026-07-05-021`.
 - `MOC-001_Puente_Formal_MOC_AO.md`: `MOC-AO-BRIDGE-001`, formalizacion local del puente `MOC/AO` mediante `operator_trace`, `Pi_moc_trace` y `ao_bridge`; aceptada por `D-2026-07-05-022`.
 - `MOC-EXP-GRAPH-001_Grafo_Experiencia_Local.md`, `MOC-GEO-METR-LAB-001_Metrica_Geometrica_Local.md` y `MOC-AO-GEO-BRIDGE-001_Puente_AO_Operator_Trace.md`: grafo local de experiencia, metrica geometrica ordinal y puente AO por `operator_trace`; aceptados por `D-2026-07-09-001`.
+- `LAB-RESEARCH-PROVENANCE-002.md` y sus manifiestos: extensión 4D de 37 rutas,
+  con identidad, procedencia, custodia y clasificación de investigación
+  aprobadas por `D-2026-09-12-001`.
+- `MOC-PSI-GEO-BRIDGE-001_Puente_4Simplex_24Cell.md`: puente documental
+  exacto entre geometría Lab y semántica PSI; aceptado por
+  `D-2026-09-12-001`.
 - `MOC-001_Autorizacion_Derechos_Grafo_Canon_Doc04.md` y `MOC-001_Compuerta_Grafo_Canon_Doc04.md`: autorizacion interna preparatoria para propuestas candidatas hacia Canon y Documento 04; aceptada por `D-2026-07-09-002`.
 - `MOC-001_Matriz_Impacto_Canon_Doc04_001.md` y `MOC-001_Propuesta_Candidata_Canon_Doc04_001.md`: matriz no mutante y propuesta candidata; `M-000` queda sin cambio textual recomendado, `M-001` y Documento 04 quedan solo como candidatas futuras; aceptadas por `D-2026-07-09-003`.
 - `MOC-001_Compuerta_Incorporacion_Canon_Doc04_001.md`: compuerta de incorporacion posterior; `M-001` y Documento 04 quedan listos para aplicacion posterior explicita, sin edicion oficial ejecutada; aceptada por `D-2026-07-09-004`.
@@ -246,10 +261,16 @@ familias científicas preservadas localmente y todavía no incorporadas a
 - `AUT-RISK-REFINE-001`: refinamiento contextual de riesgos en `03_Expedientes/AUT-001_Refinamiento_DO-LAB-RISK.md`.
 - `AUT-RISK-REFINE-002`: refinamiento de contexto de guardrails en `03_Expedientes/AUT-001_Refinamiento_Contexto_Guardrails.md`.
 - `AUT-CLOSE-TECH-001`: cierre tecnico provisional en `03_Expedientes/AUT-001_Decision_Cierre_Tecnico_Provisional.md`.
-- No hay algoritmos, matrices ni compuertas PSI activas dentro del Laboratorio; el paquete local `PSI-001*` fue eliminado por `D-2026-07-03-012`.
+- No hay algoritmos, matrices ni compuertas PSI copiadas o activas dentro del
+  Laboratorio; el paquete local `PSI-001*` fue eliminado por
+  `D-2026-07-03-012`. El verificador PSI se referencia por blob externo desde
+  `MOC-PSI-GEO-BRIDGE-001`.
 
 ## Auditorias provisionales registradas
 
+- `MOC-PSI-GEO-BRIDGE-001_Auditoria.md`: auditoría favorable de 37/37 huellas,
+  45/45 pruebas `unittest`, 20/20 controles `D4` y fronteras de autoridad del
+  puente 4D.
 - `MOC-001_Auditoria_Apertura.md`: auditoria favorable de apertura de `MOC-001`.
 - `MOC-001_Auditoria_Formalizacion_Xi_eval.md`: auditoria favorable de `MOC-XI-EVAL-FORMAL-001`.
 - `MOC-001_Auditoria_Metricas_Protocolo.md`: auditoria favorable de metricas y protocolo.
@@ -358,6 +379,10 @@ familias científicas preservadas localmente y todavía no incorporadas a
 
 ## Decisiones provisionales de expediente
 
+- `MOC-001_Decision_Puente_Psicologia_Concordante_4D_001.md`
+  (`D-2026-09-12-001`): acepta `LAB-RESEARCH-PROVENANCE-002` y
+  `MOC-PSI-GEO-BRIDGE-001`; el 4-simplex remite a `PSI-CANON-004`, el 24-cell
+  permanece investigación, `K6 != C6` y no se selecciona biyección `A4`–`D4`.
 - `AO-001_Decision_Evidencia_Externa_Real_001.md` (`D-2026-07-06-035`): acepta `AO-EXT-REAL-001` como evidencia externa independiente real admisible preliminarmente; `external_evidence_ready: true`, sin ejecucion empirica ni autorizacion global.
 - `AO-001_Decision_Evidencia_Externa_Independiente_001.md` (`D-2026-07-06-031` a `D-2026-07-06-034`): acepta ruta y compuerta de admisibilidad externa; conserva `external_evidence_ready: false` y readiness global vigente.
 - `AO-001_Decision_Readiness_Global_001.md` (`D-2026-07-06-030`): acepta `AO-GLOBAL-READINESS-001` como matriz consolidada local; resultado `mantener_no_autorizado`.
@@ -785,7 +810,7 @@ Madurar `TCS-001` desde `TCS-MAT-PROV-001` hacia semantica formal, mas casos ext
 
 `PSI-001` ya no se continua dentro del Laboratorio y no tiene copia local de traspaso; cualquier continuidad de psicologia vive en el proyecto independiente `Psicologia Concordante`.
 
-`AUT-002` queda cerrado tecnicamente; conserva el tratamiento minimo de referencias historicas transferidas. Si una ruta futura requiere contenido sustantivo de psicologia, debe abrir decision puente hacia el proyecto independiente.
+`AUT-002` queda cerrado tecnicamente; conserva el tratamiento minimo de referencias historicas transferidas. La dependencia 4D ya tiene la decisión puente `D-2026-09-12-001`; cualquier dependencia sustantiva distinta requiere su propia decisión hacia el proyecto independiente.
 
 `HXI-001` queda cerrado en mantenimiento local; solo se reabre por decision posterior con evidencia nueva, decision puente o promocion separada.
 
@@ -808,7 +833,7 @@ Madurar `TCS-001` desde `TCS-MAT-PROV-001` hacia semantica formal, mas casos ext
 - `HXI-001`: cerrado en mantenimiento local; conserva `Xi_eval` solo como herramienta local historica/auxiliar, mantiene `H-Xi` no admitida y no es frente activo inmediato.
 - `P-PI.0` / `P-PI.1`: cerrados como frentes de trabajo; `PPI-EQ-001`, `PPI-EQ-002`, `PPI-CONF-001`, `AO-EQ-GLOBAL-GATE-001` y `AO-CONF-GLOBAL-GATE-001` quedan como evidencia local; Confluencia global y Equivalencia global permanecen no autorizadas.
 - Vision papers: `VISION_PAPER_PROPUESTA.md` y `VISION_PAPER_FINAL_REFERENCIAS.md` quedan inactivos hasta nueva decision; no usarlos como autoridad, agenda o fuente para promocion.
-- `PSI-001`: transferido a proyecto independiente; copia local eliminada; deuda restante: no usarlo como frente activo interno y abrir decision puente si se requiere dependencia externa.
+- `PSI-001`: transferido a proyecto independiente; copia local eliminada; el puente externo 4D está abierto por `D-2026-09-12-001` y no reactiva el frente interno.
 - Automatizacion: `AUT-002` queda cerrado tecnicamente tras atender el falso bloqueo por referencias historicas transferidas; permanece abierta la mejora futura del detector si aparecen dependencias activas nuevas.
 - `AUD-001`: cerrado como expediente completo en version documental/operativa v0; no promover `REPORT_LAYER`, `R4-CANDIDATA`, `R4-FORMAL-AUD-001` ni `GAMMA-FORMAL-AUD-001` fuera de su perfil local sin decision posterior; exportacion general de R4/Gamma queda bloqueada por `D-2026-07-06-029`.
 - `AO-001`: mantener `AO-GLOBAL-READINESS-001` como matriz vigente de no autorizacion global; conservar `AO-DOC04-WIDE-TEST-001`, `AO-PPI-BRIDGE-002`, `AO-PPI-BRIDGE-003`, `AO-REPORT-SERIAL-001`, `AO-TCS-REL-001`, `AO-AUTH-GLOBAL-001`, `AO-EXT-COV-001`, `AO-PPI-BRIDGE-004`, `AO-PPI-LOCAL-CLOSE-001`, `AO-PROTO-INDEP-001`, `AO-EQ-GLOBAL-GATE-001`, `AO-CONF-GLOBAL-GATE-001`, `AO-REPORT-PROMO-GATE-001`, `AO-R4-GAMMA-EXPORT-GATE-002`, `AO-EXT-INDEP-001` y `AO-EXT-EVID-GATE-001` como evidencia local no mutante o ruta preparada; cualquier cierre global, promocion o exportacion general requiere evidencia externa real admisible o decision separada.
