@@ -4,9 +4,10 @@ DOCUMENT_STATUS=CANONICAL_RECORD
 CANONIZATION_DECISION=HUMAN_APPROVED
 DECISION_ID=D-2026-09-12-001
 DATE=2026-09-12
-GIT_MATERIALIZATION_STATUS=LOCAL_GOVERNANCE_COMMIT_RECORDED
+GIT_MATERIALIZATION_STATUS=MATERIALIZED_IN_ORIGIN_MAIN
 FINAL_GOVERNANCE_COMMIT=90762c11cd75b8f41c61b17ff82a9174d220935b
-PUSH_EXECUTED=NO
+PUBLICATION_BASE_COMMIT=e52bacf5dc453e3c934dcef89d1e50a55ec63343
+PUSH_EXECUTED=YES
 
 ## Objeto canónico
 
@@ -77,7 +78,8 @@ El enlace verificable y sus fronteras viven en
 ## Fase Git
 
 Los dos commits de payload y el primer registro de gobernanza quedaron
-materializados localmente sobre `origin/main` en el worktree aislado
-`C:\w\lab4d-0912`. El commit factual es
-`90762c11cd75b8f41c61b17ff82a9174d220935b`; su publicación todavía está
-pendiente. La fase preparada previa permanece documentada en el historial Git.
+materializados y publicados en `origin/main`. El commit de gobernanza es
+`90762c11cd75b8f41c61b17ff82a9174d220935b`; la cadena factual publicada antes
+de esta reconciliación culmina en
+`e52bacf5dc453e3c934dcef89d1e50a55ec63343`. Las fases preparada y local previa
+permanecen documentadas en el historial Git.

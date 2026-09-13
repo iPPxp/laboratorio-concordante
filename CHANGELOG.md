@@ -2,6 +2,9 @@
 
 ## 2026-09-12
 
+- Publicada en `origin/main` y en la rama de integración la cadena de
+  `LAB-RESEARCH-PROVENANCE-002` hasta `e52bacf...` antes de la reconciliación
+  final de estado.
 - Materializado localmente el registro de gobernanza de
   `LAB-RESEARCH-PROVENANCE-002` y `MOC-PSI-GEO-BRIDGE-001` en `90762c1...`;
   publicación remota pendiente en este corte.

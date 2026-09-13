@@ -4193,8 +4193,8 @@ todavía autorización de commit, push o tag para este cambio.
 
 ## D-2026-09-12-001 - Extensión 4D y puente con Psicología Concordante
 
-Estatus: decisión canónica humana de alcance acotado; materialización Git local
-registrada y publicación pendiente.
+Estatus: decisión canónica humana de alcance acotado; materialización Git y
+publicación en `origin/main` registradas.
 
 Fecha: 2026-09-12.
 
@@ -4248,10 +4248,12 @@ CHERRY_PICK_CONFLICTS=0
 PAYLOAD_INTEGRATION_HEAD=8b7ad0e02ca231a0f35ddd2ccff7c4d2d18ef2db
 PAYLOAD_INTEGRATION_TREE=89efdef2a066c0e9432dd5ebcf15efa8f1f4fc29
 GOVERNANCE_COMMIT=90762c11cd75b8f41c61b17ff82a9174d220935b
-PUSH_EXECUTED=NO
+PUBLICATION_BASE_COMMIT=e52bacf5dc453e3c934dcef89d1e50a55ec63343
+PUSH_EXECUTED=YES
 ```
 
 Reconciliación factual posterior: el primer commit de gobernanza es
 `90762c11cd75b8f41c61b17ff82a9174d220935b`. Este registro no se autorreferencia:
-el hash corresponde al commit inmediatamente anterior. La publicación remota
-permanece pendiente en este corte.
+el hash corresponde al commit de gobernanza anterior. La cadena publicada
+antes de esta reconciliación culmina en
+`e52bacf5dc453e3c934dcef89d1e50a55ec63343`.

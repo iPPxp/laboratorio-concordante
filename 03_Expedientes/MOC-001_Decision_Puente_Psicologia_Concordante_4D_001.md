@@ -4,8 +4,8 @@ Decisión: `D-2026-09-12-001`.
 
 Fecha: 2026-09-12.
 
-Estado: aceptada por autoridad humana y materializada localmente; publicación
-Git pendiente.
+Estado: aceptada por autoridad humana, materializada en Git y publicada en
+`origin/main`.
 
 Expediente: `MOC-001`.
 
@@ -60,14 +60,14 @@ LAB_REPOSITORY_UNITTEST=115/115_PASS
 PSI_COMMIT=f068faf9dca98408b1a3b93b43f97401f8768795
 PSI_TREE=e47e28e752ab6ad00f2fa97b6e92a81754547d0b
 FINAL_LAB_GOVERNANCE_COMMIT=90762c11cd75b8f41c61b17ff82a9174d220935b
-PUSH_EXECUTED=NO
+PUBLICATION_BASE_COMMIT=e52bacf5dc453e3c934dcef89d1e50a55ec63343
+PUSH_EXECUTED=YES
 ```
 
 ## Resultado
 
-La extensión 4D y su gobernanza quedaron materializadas localmente. La
+La extensión 4D y su gobernanza quedaron materializadas y publicadas. La
 identidad, procedencia, custodia y clasificación de investigación están
 aprobadas; sus claims científicos conservan el estado declarado por cada
 artefacto. La semántica del 4-simplex sigue gobernada por `PSI-CANON-004` y el
-24-cell continúa abierto como investigación. Falta publicar la cadena en el
-remoto autorizado.
+24-cell continúa abierto como investigación.

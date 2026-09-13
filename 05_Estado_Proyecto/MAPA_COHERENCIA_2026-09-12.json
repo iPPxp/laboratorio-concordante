@@ -11,8 +11,9 @@
     "payload_integration_head": "8b7ad0e02ca231a0f35ddd2ccff7c4d2d18ef2db",
     "payload_integration_tree": "89efdef2a066c0e9432dd5ebcf15efa8f1f4fc29",
     "governance_commit": "90762c11cd75b8f41c61b17ff82a9174d220935b",
-    "governance_status": "MATERIALIZED_LOCALLY_PENDING_PUBLICATION",
-    "push_executed": false,
+    "governance_status": "MATERIALIZED_IN_ORIGIN_MAIN",
+    "publication_base_commit": "e52bacf5dc453e3c934dcef89d1e50a55ec63343",
+    "push_executed": true,
     "semantic_authority_changed_in_lab": false
   },
   "repository_inventory_at_audit_base": {
@@ -105,7 +106,7 @@
   "research_corpus_extensions": [
     {
       "id": "LAB-RESEARCH-PROVENANCE-002",
-      "status": "MATERIALIZED_LOCALLY_PENDING_PUBLICATION",
+      "status": "MATERIALIZED_IN_ORIGIN_MAIN",
       "delta_routes": 37,
       "added_routes": 17,
       "revised_routes": 20,
@@ -193,7 +194,6 @@
     "OPTIONAL_MOC_POST_ADOPTION_MONITOR",
     "INDEPENDENT_SCIENTIFIC_REVIEW",
     "SCIENTIFIC_FAMILY_INCORPORATION_REVIEWS",
-    "LAB_RESEARCH_PROVENANCE_002_PUBLICATION_RECONCILIATION",
     "A4_D4_EXPLICIT_BRIDGE",
     "TWENTY_FOUR_CELL_SEMANTICS",
     "RAT_RLF_HIGHER_MIND_PERSONALITY"

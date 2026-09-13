@@ -1,6 +1,6 @@
 # LAB-RESEARCH-PROVENANCE-002 — Procedencia de la extensión 4D
 
-DOCUMENT_STATUS=LOCAL_GIT_MATERIALIZATION_RECORDED
+DOCUMENT_STATUS=GIT_MATERIALIZED_IN_ORIGIN_MAIN
 DATE=2026-09-12
 DECISION_ID=D-2026-09-12-001
 
@@ -100,8 +100,11 @@ PSI_CANON_004_REMAINS_EXTERNAL_SEMANTIC_AUTHORITY=YES
 TWENTY_FOUR_CELL_PSYCHOLOGICAL_STATUS=RESEARCH
 ACTIVATION=NO
 FINAL_GIT_COMMIT=90762c11cd75b8f41c61b17ff82a9174d220935b
-PUSH_EXECUTED=NO
+PUBLICATION_BASE_COMMIT=e52bacf5dc453e3c934dcef89d1e50a55ec63343
+PUSH_EXECUTED=YES
 ```
 
 El hash anterior identifica el primer commit que materializa este registro y
-el puente de gobernanza. La publicación remota queda pendiente en este corte.
+el puente de gobernanza. La cadena fue publicada en `origin/main` y en
+`origin/ipp/lab-4d-semantic-integration-20260912` hasta
+`e52bacf5dc453e3c934dcef89d1e50a55ec63343` antes de esta reconciliación.

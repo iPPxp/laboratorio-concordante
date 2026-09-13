@@ -10,8 +10,8 @@ Corte de coherencia: 2026-09-12.
 - `LAB-RESEARCH-PROVENANCE-002` registra la extensión 4D: 37 rutas delta
   (17 altas y 20 revisiones), 37/37 huellas y 45/45 pruebas `unittest`. Su
   identidad, procedencia, custodia y clasificación como investigación están
-  aprobadas; el commit de gobernanza `90762c1...` quedó materializado
-  localmente y su publicación sigue pendiente.
+  aprobadas; el commit de gobernanza `90762c1...` y su reconciliación factual
+  quedaron publicados en `origin/main` hasta `e52bacf...`.
 - El verificador de coherencia admite ahora manifiestos versionados: comprueba
   39/39 rutas de P001 contra su snapshot histórico, 37/37 de P002 contra el
   snapshot y worktree actuales, y un overlay vivo de 56/56; la suite general
@@ -763,7 +763,8 @@ SCIENTIFIC_CLAIMS_CANONIZED_AS_TRUE=NO
 PSI_24CELL_STATUS=RESEARCH
 PAYLOAD_INTEGRATION_HEAD=8b7ad0e02ca231a0f35ddd2ccff7c4d2d18ef2db
 GOVERNANCE_COMMIT=90762c11cd75b8f41c61b17ff82a9174d220935b
-PUSH_EXECUTED=NO
+PUBLICATION_BASE_COMMIT=e52bacf5dc453e3c934dcef89d1e50a55ec63343
+PUSH_EXECUTED=YES
 ```
 
 La decisión `D-2026-09-12-001` enlaza la geometría con el commit PSI
@@ -772,5 +773,6 @@ autoridad semántica del 4-simplex; el Lab conserva custodia y evidencia
 matemática/computacional.
 
 Reconciliación factual: la revisión cerrada y el commit de gobernanza se
-materializaron localmente en `90762c11cd75b8f41c61b17ff82a9174d220935b`. El
-push aún no se había ejecutado en este corte.
+materializaron en `90762c11cd75b8f41c61b17ff82a9174d220935b`; la cadena se
+publicó en `origin/main` y en la rama de integración hasta
+`e52bacf5dc453e3c934dcef89d1e50a55ec63343` antes de este registro.

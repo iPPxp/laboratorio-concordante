@@ -33,8 +33,8 @@ familias científicas preservadas localmente y todavía no incorporadas a
   canoniza únicamente identidad, procedencia, custodia y clasificación de
   investigación de 37 rutas delta (17 altas y 20 revisiones). El payload está
   preparado en `4b59c3b...` y `8b7ad0e...`, con 37/37 huellas y 45/45 pruebas;
-  el commit de gobernanza `90762c1...` quedó materializado localmente y el push
-  está pendiente.
+  el commit de gobernanza `90762c1...` y su reconciliación factual quedaron
+  publicados en `origin/main` hasta `e52bacf...`.
 
 ## Documentos oficiales de Nivel C
 

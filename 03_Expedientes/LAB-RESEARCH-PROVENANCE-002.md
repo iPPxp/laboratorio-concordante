@@ -42,7 +42,7 @@ PSYCHOLOGICAL_SEMANTIC_AUTHORITY=EXTERNAL_PSI_CANON_EXACT_COMMIT
 ACTIVATION=NO
 ```
 
-## Estado Git materializado localmente
+## Estado Git publicado
 
 ```text
 TARGET_BASE=origin/main@71a84f655ff4ec71a89640cca1f1b781fc523d79
@@ -51,7 +51,8 @@ PREPARED_TREE=89efdef2a066c0e9432dd5ebcf15efa8f1f4fc29
 PAYLOAD_MATCHES_SOURCE_BRANCH=YES
 CHERRY_PICK_CONFLICTS=0
 FINAL_GOVERNANCE_COMMIT=90762c11cd75b8f41c61b17ff82a9174d220935b
-PUSH_EXECUTED=NO
+PUBLICATION_BASE_COMMIT=e52bacf5dc453e3c934dcef89d1e50a55ec63343
+PUSH_EXECUTED=YES
 ```
 
 ## Criterio de cierre
@@ -68,5 +69,6 @@ El registro queda materialmente completo cuando:
 6. la rama autorizada se publique o incorpore a `origin/main`.
 
 Los puntos 1 a 5 quedaron satisfechos en el commit de gobernanza
-`90762c11cd75b8f41c61b17ff82a9174d220935b`. El punto 6 permanece pendiente en
-este corte factual.
+`90762c11cd75b8f41c61b17ff82a9174d220935b`; el punto 6 quedó satisfecho al
+publicar la cadena hasta `e52bacf5dc453e3c934dcef89d1e50a55ec63343` en
+`origin/main` y en la rama autorizada.
