@@ -2,6 +2,9 @@
 
 ## 2026-09-12
 
+- Materializado localmente el registro de gobernanza de
+  `LAB-RESEARCH-PROVENANCE-002` y `MOC-PSI-GEO-BRIDGE-001` en `90762c1...`;
+  publicación remota pendiente en este corte.
 - Preparada `LAB-RESEARCH-PROVENANCE-002`, extensión canónica sólo de identidad,
   procedencia, custodia y clasificación de investigación para 37 rutas del
   corpus geométrico: 17 altas y 20 revisiones.

@@ -42,7 +42,7 @@ PSYCHOLOGICAL_SEMANTIC_AUTHORITY=EXTERNAL_PSI_CANON_EXACT_COMMIT
 ACTIVATION=NO
 ```
 
-## Estado Git preparado
+## Estado Git materializado localmente
 
 ```text
 TARGET_BASE=origin/main@71a84f655ff4ec71a89640cca1f1b781fc523d79
@@ -50,7 +50,7 @@ PAYLOAD_COMMITS=4b59c3bd13d6bd8ae3d09a3c5f847fe1b3ef1b8e,8b7ad0e02ca231a0f35ddd2
 PREPARED_TREE=89efdef2a066c0e9432dd5ebcf15efa8f1f4fc29
 PAYLOAD_MATCHES_SOURCE_BRANCH=YES
 CHERRY_PICK_CONFLICTS=0
-FINAL_GOVERNANCE_COMMIT=PENDING_AFTER_REVIEW
+FINAL_GOVERNANCE_COMMIT=90762c11cd75b8f41c61b17ff82a9174d220935b
 PUSH_EXECUTED=NO
 ```
 
@@ -65,5 +65,8 @@ El registro queda materialmente completo cuando:
 4. el diff completo de gobernanza sea revisado;
 5. el commit final y su alcance se registren sin alterar los identificadores de
    fuente;
-6. la rama autorizada se publique o incorpore a `origin/main` mediante decisión
-   Git posterior.
+6. la rama autorizada se publique o incorpore a `origin/main`.
+
+Los puntos 1 a 5 quedaron satisfechos en el commit de gobernanza
+`90762c11cd75b8f41c61b17ff82a9174d220935b`. El punto 6 permanece pendiente en
+este corte factual.

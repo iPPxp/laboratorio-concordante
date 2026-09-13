@@ -145,9 +145,13 @@ SOURCE_COMMITS=679e898b66b28e4f72d1f7bd38bc5469e940ad7a,d65aab858df6bd0cc11609ec
 PAYLOAD_INTEGRATION_HEAD=8b7ad0e02ca231a0f35ddd2ccff7c4d2d18ef2db
 PAYLOAD_INTEGRATION_TREE=89efdef2a066c0e9432dd5ebcf15efa8f1f4fc29
 UNITTEST=45/45_PASS
-GOVERNANCE_COMMIT=PENDING_AFTER_REVIEW
+GOVERNANCE_COMMIT=90762c11cd75b8f41c61b17ff82a9174d220935b
 PUSH_EXECUTED=NO
 ```
+
+El diff de gobernanza fue revisado y materializado localmente en
+`90762c11cd75b8f41c61b17ff82a9174d220935b`; la publicación remota permanece
+pendiente en este corte.
 
 `MOC-PSI-GEO-BRIDGE-001` enlaza ese payload con
 `psicologia-concordante@f068faf9...`. `PSI-CANON-004` es la autoridad semántica
@@ -220,8 +224,8 @@ entrada recomendada ni autoridad vigente.
 - Semántica y dinámica del 24-cell y mapa explícito `A4`–`D4`.
 - `RAT`, `RLF`, Higher Mind y factorización de Personalidad/Mente-coder/
   `Theta_psi` en el proyecto PSI externo.
-- Reconciliación factual del commit de gobernanza de
-  `LAB-RESEARCH-PROVENANCE-002` después de su revisión y materialización.
+- Reconciliación factual de la publicación remota de
+  `LAB-RESEARCH-PROVENANCE-002` después de su materialización local.
 - Revisión y decisión individual de los cinco expedientes `LAB-INC-SCI-001` a
   `LAB-INC-SCI-005`; ninguno tiene incorporación automática.
 

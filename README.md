@@ -193,7 +193,8 @@ gobernanza fue incorporado por `f6ba1f7...`. `D-2026-08-09-001` canoniza
 intersticios, carriers multinivel y geometría `R^4`: 17 altas y 20 revisiones.
 Los commits de payload están preparados sobre `origin/main` en `4b59c3b...` y
 `8b7ad0e...`; 37/37 huellas y 45/45 pruebas `unittest` fueron verificadas. El
-commit de gobernanza y el push permanecen pendientes de revisión final.
+commit de gobernanza `90762c1...` quedó materializado localmente; falta su
+publicación remota.
 
 `MOC-PSI-GEO-BRIDGE-001` referencia, sin copiar, el repositorio independiente
 Psicología Concordante en `f068faf9...`. Allí `PSI-CANON-004` gobierna la

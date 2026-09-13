@@ -1,7 +1,7 @@
 # MOC-PSI-GEO-BRIDGE-001 — Auditoría del puente 4D
 
-Estatus: favorable para revisión Git final, con fronteras de autoridad
-verificadas.
+Estatus: revisión Git final favorable y primer commit de gobernanza
+materializado localmente; publicación pendiente.
 
 Fecha: 2026-09-12.
 
@@ -105,6 +105,7 @@ es alcanzable desde `origin/main` de Psicología Concordante.
 
 ## Dictamen
 
-`MOC-PSI-GEO-BRIDGE-001` es documentalmente consistente y reproducible. Puede
-acompañar la incorporación Git de la extensión 4D después de revisar el diff
-completo. El commit final y el push permanecen pendientes.
+`MOC-PSI-GEO-BRIDGE-001` es documentalmente consistente y reproducible. El
+diff completo quedó revisado y su primer registro de gobernanza se materializó
+en `90762c11cd75b8f41c61b17ff82a9174d220935b`. La publicación remota permanece
+pendiente en este corte.
